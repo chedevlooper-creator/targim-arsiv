@@ -1,0 +1,722 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="3680" viewBox="0 0 1672 3680" fill="none">
+  <defs>
+    <linearGradient id="heroLeftShade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#07090C" stop-opacity="0.97"/>
+      <stop offset="52%" stop-color="#07090C" stop-opacity="0.82"/>
+      <stop offset="82%" stop-color="#07090C" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#07090C" stop-opacity="0.78"/>
+    </linearGradient>
+    <linearGradient id="heroBottomShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#07090C" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#07090C" stop-opacity="0.98"/>
+    </linearGradient>
+    <linearGradient id="cardBottomShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0D1016" stop-opacity="0"/>
+      <stop offset="68%" stop-color="#0D1016" stop-opacity="0.72"/>
+      <stop offset="100%" stop-color="#0D1016" stop-opacity="0.96"/>
+    </linearGradient>
+  </defs>
+
+  <g id="Kahramanlar — Tarihe İz Bırakanlar">
+    <rect width="1672" height="3680" fill="#07090C"/>
+
+    <!-- Topografik arka plan süsleme eğrileri -->
+    <g id="Topographic-Background-Lines">
+      <path d="M0 920 C420 860, 860 980, 1280 900 C1460 868, 1580 910, 1672 890" stroke="#C8A45D" stroke-opacity="0.08" stroke-width="1.2"/>
+      <path d="M0 1720 C380 1650, 790 1790, 1220 1700 C1440 1660, 1560 1730, 1672 1705" stroke="#C8A45D" stroke-opacity="0.07" stroke-width="1.2"/>
+      <path d="M0 2540 C410 2480, 850 2610, 1290 2520 C1480 2485, 1590 2545, 1672 2525" stroke="#C8A45D" stroke-opacity="0.07" stroke-width="1.2"/>
+    </g>
+
+    <!-- 1. ÜST GEZİNME (1672 x 74) -->
+    <g id="Üst gezinme">
+      <rect width="1672" height="74" fill="#07090C"/>
+      <text x="82" y="42" fill="#E6C98A" font-family="Cormorant Garamond, Georgia, serif" font-size="30" font-weight="600" letter-spacing="7">TARGİM</text>
+      <text x="108" y="60" fill="#D6CDBB" fill-opacity="0.85" font-family="Inter, Arial, sans-serif" font-size="8.5" font-weight="500" letter-spacing="6">ARCHIVE</text>
+
+      <g id="Ana gezinme">
+        <text x="500" y="42" text-anchor="middle" fill="#D6CDBB" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" letter-spacing="2">ANA SAYFA</text><text x="597" y="42" text-anchor="middle" fill="#F5E4BA" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" letter-spacing="2">KİŞİLER</text>
+        <g id="Active-Kisiler-Underline">
+          <line x1="561" y1="65" x2="633" y2="65" stroke="#C8A45D" stroke-width="1.3"/>
+          <rect x="593.5" y="61.5" width="7" height="7" transform="rotate(45 597 65)" fill="#F5E4BA" stroke="#C8A45D" stroke-width="1"/>
+        </g><text x="676" y="42" text-anchor="middle" fill="#D6CDBB" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" letter-spacing="2">ARŞİV</text><text x="792" y="42" text-anchor="middle" fill="#D6CDBB" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" letter-spacing="2">ZAMAN ÇİZELGESİ</text><text x="912" y="42" text-anchor="middle" fill="#D6CDBB" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" letter-spacing="2">HARİTA</text><text x="1002" y="42" text-anchor="middle" fill="#D6CDBB" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" letter-spacing="2">SERGİLER</text><text x="1094" y="42" text-anchor="middle" fill="#D6CDBB" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" letter-spacing="2">KÜLTÜR</text><text x="1188" y="42" text-anchor="middle" fill="#D6CDBB" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" letter-spacing="2">HAKKINDA</text>
+      </g>
+
+      <g id="Dil ve Araçlar">
+        <rect x="1410" y="20" width="54" height="34" rx="2" fill="#101318" stroke="#C8A45D" stroke-opacity="0.45" stroke-width="1"/>
+        <text x="1430" y="41" text-anchor="middle" fill="#EFE6D5" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" letter-spacing="1.2">TR</text>
+        <path d="M1446 35L1450 39L1454 35" stroke="#C8A45D" stroke-width="1.3" stroke-linecap="round"/>
+
+        <circle cx="1505" cy="36" r="7.5" stroke="#EFE6D5" stroke-width="1.5"/>
+        <line x1="1510.5" y1="41.5" x2="1516" y2="47" stroke="#EFE6D5" stroke-width="1.5" stroke-linecap="round"/>
+
+        <line x1="1552" y1="30" x2="1574" y2="30" stroke="#EFE6D5" stroke-width="1.6" stroke-linecap="round"/>
+        <line x1="1552" y1="37" x2="1574" y2="37" stroke="#C8A45D" stroke-width="1.6" stroke-linecap="round"/>
+        <line x1="1552" y1="44" x2="1574" y2="44" stroke="#EFE6D5" stroke-width="1.6" stroke-linecap="round"/>
+      </g>
+      <line x1="0" y1="73.5" x2="1672" y2="73.5" stroke="#C8A45D" stroke-opacity="0.32" stroke-width="1"/>
+    </g>
+
+    <!-- 2. HERO SAHNESİ — KAFKASYA'NIN KAHRAMANLARI (y = 74..504, h = 430) -->
+    <g id="Kahramanlar Hero Sahnesi">
+      <g id="PhotoSlot-00-HeroBanner">
+        <rect x="0" y="74" width="1672" height="430" fill="#131820"/>
+      </g>
+      <rect x="0" y="74" width="1672" height="430" fill="url(#heroLeftShade)"/>
+      <rect x="0" y="344" width="1672" height="160" fill="url(#heroBottomShade)"/>
+      <line x1="0" y1="504" x2="1672" y2="504" stroke="#C8A45D" stroke-opacity="0.35" stroke-width="1"/>
+
+      <!-- Sol Bölüm: Breadcrumb & Başlık -->
+      <g id="Hero Başlık ve Açıklama">
+        <text x="82" y="132" fill="#A79E8E" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" letter-spacing="2.8">ANA SAYFA</text>
+        <rect x="172" y="125" width="5" height="5" transform="rotate(45 174.5 127.5)" fill="#C8A45D"/>
+        <text x="190" y="132" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" letter-spacing="2.8">KAHRAMANLAR &amp; ŞAHSİYETLER</text>
+
+        <text x="82" y="182" fill="#C8A45D" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" letter-spacing="4.5">TARİHE İZ BIRAKANLAR · 1760 – 2000</text>
+        <text x="80" y="254" fill="#F5E4BA" font-family="Cormorant Garamond, Georgia, serif" font-size="68" font-weight="600" letter-spacing="3">KAFKASYA’NIN</text>
+        <text x="80" y="324" fill="#E6C98A" font-family="Cormorant Garamond, Georgia, serif" font-size="68" font-weight="600" letter-spacing="3">KAHRAMANLARI.</text>
+
+        <text x="82" y="372" fill="#D6CDBB" font-family="Inter, Arial, sans-serif" font-size="16">Direniş önderleri, imamlar, naipler, manevi rehberler, abrekler, tarihçiler ve kültür elçileri —</text>
+        <text x="82" y="398" fill="#D6CDBB" font-family="Inter, Arial, sans-serif" font-size="16">Çeçen, İnguş ve Kuzey Kafkasya halklarının onur, bilgelik ve özgürlük silsilesi.</text>
+      </g>
+
+      <!-- Sağ Bölüm: Envanter & Atasözü Plakası -->
+      <g id="Envanter ve Atasözü Plakası" transform="translate(1156, 146)">
+        <rect width="460" height="284" fill="#080B10" fill-opacity="0.88" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1.2"/>
+        <rect x="6" y="6" width="448" height="272" stroke="#C8A45D" stroke-opacity="0.2" stroke-width="1"/>
+
+        <text x="32" y="44" fill="#C8A45D" font-family="Inter, Arial, sans-serif" font-size="10.5" font-weight="500" letter-spacing="3.2">BİYOGRAFİ KOLEKSİYONU ENVANTERİ</text>
+        <line x1="32" y1="58" x2="428" y2="58" stroke="#C8A45D" stroke-opacity="0.28" stroke-width="1"/>
+
+        <text x="32" y="114" fill="#F5E4BA" font-family="Cormorant Garamond, Georgia, serif" font-size="48" font-weight="600">16</text>
+        <text x="32" y="138" fill="#A79E8E" font-family="Inter, Arial, sans-serif" font-size="10.5" letter-spacing="2">ÖZGÜN PORTRE</text>
+
+        <line x1="168" y1="78" x2="168" y2="148" stroke="#C8A45D" stroke-opacity="0.24" stroke-width="1"/>
+        <text x="192" y="114" fill="#F5E4BA" font-family="Cormorant Garamond, Georgia, serif" font-size="48" font-weight="600">4</text>
+        <text x="192" y="138" fill="#A79E8E" font-family="Inter, Arial, sans-serif" font-size="10.5" letter-spacing="2">TARİHSEL ÇAĞ</text>
+
+        <line x1="304" y1="78" x2="304" y2="148" stroke="#C8A45D" stroke-opacity="0.24" stroke-width="1"/>
+        <text x="324" y="114" fill="#F5E4BA" font-family="Cormorant Garamond, Georgia, serif" font-size="34" font-weight="600">240 Yıl</text>
+        <text x="324" y="138" fill="#A79E8E" font-family="Inter, Arial, sans-serif" font-size="10.5" letter-spacing="2">HAFIZA HATTI</text>
+
+        <line x1="32" y1="168" x2="428" y2="168" stroke="#C8A45D" stroke-opacity="0.28" stroke-width="1"/>
+        <text x="32" y="208" fill="#C8A45D" font-family="Cormorant Garamond, Georgia, serif" font-size="36">“</text>
+        <text x="58" y="210" fill="#EFE6D5" font-family="Cormorant Garamond, Georgia, serif" font-size="20" font-style="italic">Cesaret dağlardan yüksek,</text>
+        <text x="58" y="236" fill="#EFE6D5" font-family="Cormorant Garamond, Georgia, serif" font-size="20" font-style="italic">hafıza ise taştan kalıcıdır.</text>
+        <rect x="418" y="246" width="7" height="7" transform="rotate(45 421.5 249.5)" fill="#E6C98A"/>
+      </g>
+    </g>
+
+    <!-- 3. ÖNE ÇIKAN ÖNDER VİTRİNİ — İMAM ŞEYH ŞAMİL (y = 544..896) -->
+    <g id="Öne Çıkan Kahraman — Şeyh Şamil">
+      <rect x="56" y="544" width="1560" height="352" fill="#0D1016" stroke="#C8A45D" stroke-opacity="0.62" stroke-width="1.2"/>
+      <rect x="62" y="550" width="1548" height="340" stroke="#C8A45D" stroke-opacity="0.22" stroke-width="1"/>
+
+      <g id="PhotoSlot-01-SpotlightSamil">
+        <rect x="76" y="564" width="268" height="312" fill="#171C24"/>
+      </g>
+      <rect x="76" y="564" width="268" height="312" stroke="#C8A45D" stroke-opacity="0.45" stroke-width="1"/>
+
+      <rect x="380" y="572" width="246" height="28" fill="#C8A45D" fill-opacity="0.16" stroke="#E6C98A" stroke-width="1"/>
+      <text x="503" y="590" text-anchor="middle" fill="#F5E4BA" font-family="Inter, Arial, sans-serif" font-size="10.5" font-weight="500" letter-spacing="2.4">ÖNE ÇIKAN TARİHÎ ÖNDER</text>
+
+      <text x="646" y="590" fill="#C8A45D" font-family="Inter, Arial, sans-serif" font-size="11" letter-spacing="2.5">İMAMET ÇAĞI · 1797 – 1871</text>
+
+      <text x="380" y="646" fill="#F5ECD8" font-family="Cormorant Garamond, Georgia, serif" font-size="46" font-weight="600" letter-spacing="1.5">İmam Şeyh Şamil</text>
+      <text x="380" y="676" fill="#E6C98A" font-family="Cormorant Garamond, Georgia, serif" font-size="21" font-style="italic">Kafkasya’nın Üçüncü İmamı · Devlet Adamı, Alim ve Başkomutan</text>
+
+      <text x="380" y="714" fill="#D6CDBB" font-family="Inter, Arial, sans-serif" font-size="14.5">1834'ten 1859'a kadar çeyrek asır boyunca Çeçenya ve Dağıstan'ı 'Nizam' hukuk düzeni, divan meclisi, top dökümhaneleri</text>
+      <text x="380" y="738" fill="#D6CDBB" font-family="Inter, Arial, sans-serif" font-size="14.5">ve naiplik sistemi altında birleştiren efsanevi önder. Ahulgo, Dargo ve başkent Vedeno direnişinin mimarı.</text>
+
+      <!-- Künye Kutuları -->
+      <g id="Şamil Künye Bilgileri">
+        <rect x="380" y="764" width="250" height="54" fill="#090C10" stroke="#C8A45D" stroke-opacity="0.32" stroke-width="1"/>
+        <text x="396" y="784" fill="#A79E8E" font-family="Inter, Arial, sans-serif" font-size="9.5" letter-spacing="2">DOĞUM &amp; VEFAT</text>
+        <text x="396" y="805" fill="#EFE6D5" font-family="Inter, Arial, sans-serif" font-size="12.5" font-weight="500">Gimri (1797) — Medine (1871)</text>
+
+        <rect x="646" y="764" width="290" height="54" fill="#090C10" stroke="#C8A45D" stroke-opacity="0.32" stroke-width="1"/>
+        <text x="662" y="784" fill="#A79E8E" font-family="Inter, Arial, sans-serif" font-size="9.5" letter-spacing="2">TARİHSEL MERKEZLER</text>
+        <text x="662" y="805" fill="#EFE6D5" font-family="Inter, Arial, sans-serif" font-size="12.5" font-weight="500">Ahulgo · Dargo · Vedeno · Gunib</text>
+
+        <rect x="952" y="764" width="248" height="54" fill="#090C10" stroke="#C8A45D" stroke-opacity="0.32" stroke-width="1"/>
+        <text x="968" y="784" fill="#A79E8E" font-family="Inter, Arial, sans-serif" font-size="9.5" letter-spacing="2">BAĞLANTILI ARŞİV</text>
+        <text x="968" y="805" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="12.5" font-weight="500">1261 H. Divan Mektubu + 2 Belge</text>
+      </g>
+
+      
+      <g id="Spotlight-Filigree-CTA" transform="translate(1296, 767)">
+        <path d="M18 1L5 24L18 47" stroke="#C8A45D" stroke-opacity="0.9" stroke-width="1.2"/>
+        <path d="M18 6L9 24L18 42" stroke="#C8A45D" stroke-opacity="0.42" stroke-width="0.95"/>
+        <rect x="1.6" y="21.6" width="4.8" height="4.8" transform="rotate(45 4 24)" fill="#07090C" stroke="#E6C98A" stroke-width="1"/>
+        <rect x="18" y="1" width="248" height="46" fill="#0A0D12"/>
+        <line x1="18" y1="1" x2="266" y2="1" stroke="#C8A45D" stroke-opacity="0.9" stroke-width="1.2"/>
+        <line x1="18" y1="47" x2="266" y2="47" stroke="#C8A45D" stroke-opacity="0.9" stroke-width="1.2"/>
+        <line x1="18" y1="6" x2="266" y2="6" stroke="#C8A45D" stroke-opacity="0.35" stroke-width="0.9"/>
+        <line x1="18" y1="42" x2="266" y2="42" stroke="#C8A45D" stroke-opacity="0.35" stroke-width="0.9"/>
+        <text x="38" y="29" fill="#F5E4BA" font-family="Cormorant Garamond, Georgia, serif" font-size="14.5" font-weight="600" letter-spacing="3.5">BİYOGRAFİYİ AÇ</text>
+        <line x1="230" y1="24" x2="246" y2="24" stroke="#E6C98A" stroke-width="1.4" stroke-linecap="round"/>
+        <path d="M241 19L247 24L241 29" stroke="#E6C98A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <g transform="translate(266, 0)">
+          <path d="M0 1L13 24L0 47" stroke="#C8A45D" stroke-opacity="0.9" stroke-width="1.2"/>
+          <path d="M0 6L9 24L0 42" stroke="#C8A45D" stroke-opacity="0.42" stroke-width="0.95"/>
+          <rect x="11.6" y="21.6" width="4.8" height="4.8" transform="rotate(45 14 24)" fill="#07090C" stroke="#E6C98A" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- 4. MÜZE FİLTRE VE ARAMA KONSOLU (y = 930..1074) -->
+    <g id="Müze Filtre ve Arama Konsolu">
+      <rect x="56" y="930" width="1560" height="142" fill="#0D1016" stroke="#C8A45D" stroke-opacity="0.45" stroke-width="1.1"/>
+      <rect x="61" y="935" width="1550" height="132" stroke="#C8A45D" stroke-opacity="0.16" stroke-width="1"/>
+
+      <!-- Arama Kutusu -->
+      <rect x="78" y="950" width="840" height="44" fill="#07090C" stroke="#C8A45D" stroke-opacity="0.38" stroke-width="1"/>
+      <circle cx="104" cy="971" r="6.5" stroke="#C8A45D" stroke-width="1.4"/>
+      <line x1="109" y1="976" x2="114" y2="981" stroke="#C8A45D" stroke-width="1.4" stroke-linecap="round"/>
+      <text x="128" y="976" fill="#9E9585" font-family="Inter, Arial, sans-serif" font-size="13">Kahraman adı, unvan, tarihsel merkez veya bölge ara…</text>
+
+      <!-- Bölge Seçici -->
+      <rect x="936" y="950" width="320" height="44" fill="#07090C" stroke="#C8A45D" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="956" y="976" fill="#EFE6D5" font-family="Inter, Arial, sans-serif" font-size="12" letter-spacing="1.2">Bölge: Tüm Kafkasya Bölgeleri</text>
+      <path d="M1230 969L1235 974L1240 969" stroke="#C8A45D" stroke-width="1.4" stroke-linecap="round"/>
+
+      <!-- Sıralama Seçici -->
+      <rect x="1274" y="950" width="320" height="44" fill="#07090C" stroke="#C8A45D" stroke-opacity="0.38" stroke-width="1"/>
+      <text x="1294" y="976" fill="#EFE6D5" font-family="Inter, Arial, sans-serif" font-size="12" letter-spacing="1.2">Sıralama: Kronolojik (1760 → 2000)</text>
+      <path d="M1568 969L1573 974L1578 969" stroke="#C8A45D" stroke-width="1.4" stroke-linecap="round"/>
+
+      <!-- Dönem Sekmeleri -->
+      <g id="Dönem Filtre Sekmeleri">
+        
+        <g id="Filter-Chip-TÜM ŞAHSİYETLE">
+          <rect x="56" y="1014" width="206" height="36" fill="#C8A45D" fill-opacity="0.18" stroke="#C8A45D" stroke-opacity="0.9" stroke-width="1.1"/>
+          <text x="159.0" y="1036" text-anchor="middle" fill="#F5E4BA" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" letter-spacing="1.6">TÜM ŞAHSİYETLER (16)</text>
+        </g>
+        <g id="Filter-Chip-İMAMET ÇAĞI · ">
+          <rect x="276" y="1014" width="248" height="36" fill="#0D1016" fill-opacity="0.9" stroke="#C8A45D" stroke-opacity="0.32" stroke-width="1.1"/>
+          <text x="400.0" y="1036" text-anchor="middle" fill="#C9BFA9" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" letter-spacing="1.6">İMAMET ÇAĞI · 1760–1859 (8)</text>
+        </g>
+        <g id="Filter-Chip-İMPARATORLUK Ç">
+          <rect x="538" y="1014" width="286" height="36" fill="#0D1016" fill-opacity="0.9" stroke="#C8A45D" stroke-opacity="0.32" stroke-width="1.1"/>
+          <text x="681.0" y="1036" text-anchor="middle" fill="#C9BFA9" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" letter-spacing="1.6">İMPARATORLUK ÇAĞI · 1859–1917 (3)</text>
+        </g>
+        <g id="Filter-Chip-SÜRGÜN VE DÖNÜ">
+          <rect x="838" y="1014" width="274" height="36" fill="#0D1016" fill-opacity="0.9" stroke="#C8A45D" stroke-opacity="0.32" stroke-width="1.1"/>
+          <text x="975.0" y="1036" text-anchor="middle" fill="#C9BFA9" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" letter-spacing="1.6">SÜRGÜN VE DÖNÜŞ · 1917–1957 (3)</text>
+        </g>
+        <g id="Filter-Chip-YAKIN DÖNEM · ">
+          <rect x="1126" y="1014" width="244" height="36" fill="#0D1016" fill-opacity="0.9" stroke="#C8A45D" stroke-opacity="0.32" stroke-width="1.1"/>
+          <text x="1248.0" y="1036" text-anchor="middle" fill="#C9BFA9" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" letter-spacing="1.6">YAKIN DÖNEM · 1957–2000 (2)</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Envanter Sayaç Satırı -->
+    <g id="Envanter Sayaç Satırı">
+      <text x="56" y="1112" fill="#A79E8E" font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="500" letter-spacing="3">16 KAHRAMAN VE ŞAHSİYET LİSTELENİYOR</text>
+      <line x1="418" y1="1108" x2="1248" y2="1108" stroke="#C8A45D" stroke-opacity="0.22" stroke-width="1"/>
+      <rect x="829.5" y="1104.5" width="7" height="7" transform="rotate(45 833 1108)" fill="#C8A45D"/>
+      <text x="1616" y="1112" text-anchor="end" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="500" letter-spacing="3">1760 – 2000 KRONOLOJİK PORTRE ARŞİVİ</text>
+    </g>
+
+    <!-- 5. 16 KAHRAMAN PORTRE GALERİSİ (4 SÜTUN x 4 SATIR) -->
+    <g id="Kahramanlar Portre Galerisi (16 Şahsiyet)">
+      
+      <g id="Kahraman-Karti-01-seyh-mansur">
+        <rect x="56" y="1138" width="372" height="528" fill="#0D1016" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1.2"/>
+
+        <g id="PhotoSlot-02-seyh-mansur">
+          <rect x="68" y="1150" width="348" height="306" fill="#161B24"/>
+        </g>
+
+        <rect x="68" y="1344" width="348" height="112" fill="url(#cardBottomShade)"/>
+
+        <g id="Region-Badge-01">
+          <rect x="78" y="1160" width="92" height="26" fill="#07090C" fill-opacity="0.82" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1"/>
+          <text x="124.0" y="1177" text-anchor="middle" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="9.5" font-weight="500" letter-spacing="1.6">ÇEÇENYA</text>
+        </g>
+
+        <text x="80" y="1442" fill="#F5E4BA" font-family="Cormorant Garamond, Georgia, serif" font-size="15.5" font-weight="600" letter-spacing="1.5">1760 – 1794</text>
+
+        <text x="78" y="1482" fill="#C8A45D" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" letter-spacing="2">İMAMET ÇAĞI · 1760–1859</text>
+        <text x="78" y="1512" fill="#F5ECD8" font-family="Cormorant Garamond, Georgia, serif" font-size="25" font-weight="600">Şeyh Mansur</text>
+        <text x="78" y="1536" fill="#E6C98A" font-family="Cormorant Garamond, Georgia, serif" font-size="15" font-style="italic">Kafkas direnişinin öncüsü</text>
+
+        <text x="78" y="1564" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">1785&#x27;te başlattığı birlik hareketiyle Kuzey</text>
+        <text x="78" y="1583" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">Kafkasya halklarını ilk kez ortak bir sancak…</text>
+
+        <line x1="78" y1="1614" x2="406" y2="1614" stroke="#C8A45D" stroke-opacity="0.24" stroke-width="1"/>
+        <text x="78" y="1640" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="500" letter-spacing="1.5">Biyografiyi İncele</text>
+        <path d="M390 1636H404M404 1636L399 1631M404 1636L399 1641" stroke="#E6C98A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <rect x="61" y="1143" width="362" height="518" stroke="#C8A45D" stroke-opacity="0.2" stroke-width="1"/>
+      </g>
+      <g id="Kahraman-Karti-02-tasav-haci">
+        <rect x="452" y="1138" width="372" height="528" fill="#0D1016" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1.2"/>
+
+        <g id="PhotoSlot-03-tasav-haci">
+          <rect x="464" y="1150" width="348" height="306" fill="#161B24"/>
+        </g>
+
+        <rect x="464" y="1344" width="348" height="112" fill="url(#cardBottomShade)"/>
+
+        <g id="Region-Badge-02">
+          <rect x="474" y="1160" width="92" height="26" fill="#07090C" fill-opacity="0.82" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1"/>
+          <text x="520.0" y="1177" text-anchor="middle" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="9.5" font-weight="500" letter-spacing="1.6">ÇEÇENYA</text>
+        </g>
+
+        <text x="476" y="1442" fill="#F5E4BA" font-family="Cormorant Garamond, Georgia, serif" font-size="15.5" font-weight="600" letter-spacing="1.5">1770 – 1843</text>
+
+        <text x="474" y="1482" fill="#C8A45D" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" letter-spacing="2">İMAMET ÇAĞI · 1760–1859</text>
+        <text x="474" y="1512" fill="#F5ECD8" font-family="Cormorant Garamond, Georgia, serif" font-size="25" font-weight="600">Taşav Hacı Endireyevski</text>
+        <text x="474" y="1536" fill="#E6C98A" font-family="Cormorant Garamond, Georgia, serif" font-size="15" font-style="italic">Çeçen ve Kumuk alimi, baş naip</text>
+
+        <text x="474" y="1564" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">İmamet hareketinin Çeçenya&#x27;da kök salmasını</text>
+        <text x="474" y="1583" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">sağlayan büyük alim, stratejist ve Şeyh…</text>
+
+        <line x1="474" y1="1614" x2="802" y2="1614" stroke="#C8A45D" stroke-opacity="0.24" stroke-width="1"/>
+        <text x="474" y="1640" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="500" letter-spacing="1.5">Biyografiyi İncele</text>
+        <path d="M786 1636H800M800 1636L795 1631M800 1636L795 1641" stroke="#E6C98A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <rect x="457" y="1143" width="362" height="518" stroke="#C8A45D" stroke-opacity="0.2" stroke-width="1"/>
+      </g>
+      <g id="Kahraman-Karti-03-beybulat-taymiyev">
+        <rect x="848" y="1138" width="372" height="528" fill="#0D1016" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1.2"/>
+
+        <g id="PhotoSlot-04-beybulat-taymiyev">
+          <rect x="860" y="1150" width="348" height="306" fill="#161B24"/>
+        </g>
+
+        <rect x="860" y="1344" width="348" height="112" fill="url(#cardBottomShade)"/>
+
+        <g id="Region-Badge-03">
+          <rect x="870" y="1160" width="92" height="26" fill="#07090C" fill-opacity="0.82" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1"/>
+          <text x="916.0" y="1177" text-anchor="middle" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="9.5" font-weight="500" letter-spacing="1.6">ÇEÇENYA</text>
+        </g>
+
+        <text x="872" y="1442" fill="#F5E4BA" font-family="Cormorant Garamond, Georgia, serif" font-size="15.5" font-weight="600" letter-spacing="1.5">1779 – 1831</text>
+
+        <text x="870" y="1482" fill="#C8A45D" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" letter-spacing="2">İMAMET ÇAĞI · 1760–1859</text>
+        <text x="870" y="1512" fill="#F5ECD8" font-family="Cormorant Garamond, Georgia, serif" font-size="25" font-weight="600">Beybulat Taymiyev</text>
+        <text x="870" y="1536" fill="#E6C98A" font-family="Cormorant Garamond, Georgia, serif" font-size="15" font-style="italic">Çeçen siyasi ve askeri önderi</text>
+
+        <text x="870" y="1564" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">Çeçen toplumunu ortak bir meclis çatısı</text>
+        <text x="870" y="1583" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">altında birleştirmeye çalışan mahir komutan…</text>
+
+        <line x1="870" y1="1614" x2="1198" y2="1614" stroke="#C8A45D" stroke-opacity="0.24" stroke-width="1"/>
+        <text x="870" y="1640" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="500" letter-spacing="1.5">Biyografiyi İncele</text>
+        <path d="M1182 1636H1196M1196 1636L1191 1631M1196 1636L1191 1641" stroke="#E6C98A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <rect x="853" y="1143" width="362" height="518" stroke="#C8A45D" stroke-opacity="0.2" stroke-width="1"/>
+      </g>
+      <g id="Kahraman-Karti-04-hamzat-bek">
+        <rect x="1244" y="1138" width="372" height="528" fill="#0D1016" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1.2"/>
+
+        <g id="PhotoSlot-05-hamzat-bek">
+          <rect x="1256" y="1150" width="348" height="306" fill="#161B24"/>
+        </g>
+
+        <rect x="1256" y="1344" width="348" height="112" fill="url(#cardBottomShade)"/>
+
+        <g id="Region-Badge-04">
+          <rect x="1266" y="1160" width="92" height="26" fill="#07090C" fill-opacity="0.82" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1"/>
+          <text x="1312.0" y="1177" text-anchor="middle" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="9.5" font-weight="500" letter-spacing="1.6">DAĞISTAN</text>
+        </g>
+
+        <text x="1268" y="1442" fill="#F5E4BA" font-family="Cormorant Garamond, Georgia, serif" font-size="15.5" font-weight="600" letter-spacing="1.5">1789 – 1834</text>
+
+        <text x="1266" y="1482" fill="#C8A45D" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" letter-spacing="2">İMAMET ÇAĞI · 1760–1859</text>
+        <text x="1266" y="1512" fill="#F5ECD8" font-family="Cormorant Garamond, Georgia, serif" font-size="25" font-weight="600">Hamzat Bek</text>
+        <text x="1266" y="1536" fill="#E6C98A" font-family="Cormorant Garamond, Georgia, serif" font-size="15" font-style="italic">Kafkasya&#x27;nın İkinci İmamı</text>
+
+        <text x="1266" y="1564" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">Gazi Muhammed&#x27;in şehadetinin ardından</text>
+        <text x="1266" y="1583" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">1832–1834 yıllarında İmamet sancağını…</text>
+
+        <line x1="1266" y1="1614" x2="1594" y2="1614" stroke="#C8A45D" stroke-opacity="0.24" stroke-width="1"/>
+        <text x="1266" y="1640" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="500" letter-spacing="1.5">Biyografiyi İncele</text>
+        <path d="M1578 1636H1592M1592 1636L1587 1631M1592 1636L1587 1641" stroke="#E6C98A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <rect x="1249" y="1143" width="362" height="518" stroke="#C8A45D" stroke-opacity="0.2" stroke-width="1"/>
+      </g>
+      <g id="Kahraman-Karti-05-baysangur-benoyski">
+        <rect x="56" y="1694" width="372" height="528" fill="#0D1016" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1.2"/>
+
+        <g id="PhotoSlot-06-baysangur-benoyski">
+          <rect x="68" y="1706" width="348" height="306" fill="#161B24"/>
+        </g>
+
+        <rect x="68" y="1900" width="348" height="112" fill="url(#cardBottomShade)"/>
+
+        <g id="Region-Badge-05">
+          <rect x="78" y="1716" width="92" height="26" fill="#07090C" fill-opacity="0.82" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1"/>
+          <text x="124.0" y="1733" text-anchor="middle" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="9.5" font-weight="500" letter-spacing="1.6">ÇEÇENYA</text>
+        </g>
+
+        <text x="80" y="1998" fill="#F5E4BA" font-family="Cormorant Garamond, Georgia, serif" font-size="15.5" font-weight="600" letter-spacing="1.5">1794 – 1861</text>
+
+        <text x="78" y="2038" fill="#C8A45D" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" letter-spacing="2">İMAMET ÇAĞI · 1760–1859</text>
+        <text x="78" y="2068" fill="#F5ECD8" font-family="Cormorant Garamond, Georgia, serif" font-size="25" font-weight="600">Baysangur Benoyski</text>
+        <text x="78" y="2092" fill="#E6C98A" font-family="Cormorant Garamond, Georgia, serif" font-size="15" font-style="italic">Benoy naibi, efsanevi Çeçen komutan</text>
+
+        <text x="78" y="2120" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">Bir kolunu, bir bacağını ve bir gözünü</text>
+        <text x="78" y="2139" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">kaybetmesine rağmen atına bağlanarak cepheye…</text>
+
+        <line x1="78" y1="2170" x2="406" y2="2170" stroke="#C8A45D" stroke-opacity="0.24" stroke-width="1"/>
+        <text x="78" y="2196" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="500" letter-spacing="1.5">Biyografiyi İncele</text>
+        <path d="M390 2192H404M404 2192L399 2187M404 2192L399 2197" stroke="#E6C98A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <rect x="61" y="1699" width="362" height="518" stroke="#C8A45D" stroke-opacity="0.2" stroke-width="1"/>
+      </g>
+      <g id="Kahraman-Karti-06-gazi-muhammed">
+        <rect x="452" y="1694" width="372" height="528" fill="#0D1016" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1.2"/>
+
+        <g id="PhotoSlot-07-gazi-muhammed">
+          <rect x="464" y="1706" width="348" height="306" fill="#161B24"/>
+        </g>
+
+        <rect x="464" y="1900" width="348" height="112" fill="url(#cardBottomShade)"/>
+
+        <g id="Region-Badge-06">
+          <rect x="474" y="1716" width="92" height="26" fill="#07090C" fill-opacity="0.82" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1"/>
+          <text x="520.0" y="1733" text-anchor="middle" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="9.5" font-weight="500" letter-spacing="1.6">DAĞISTAN</text>
+        </g>
+
+        <text x="476" y="1998" fill="#F5E4BA" font-family="Cormorant Garamond, Georgia, serif" font-size="15.5" font-weight="600" letter-spacing="1.5">1795 – 1832</text>
+
+        <text x="474" y="2038" fill="#C8A45D" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" letter-spacing="2">İMAMET ÇAĞI · 1760–1859</text>
+        <text x="474" y="2068" fill="#F5ECD8" font-family="Cormorant Garamond, Georgia, serif" font-size="25" font-weight="600">Gazi Muhammed</text>
+        <text x="474" y="2092" fill="#E6C98A" font-family="Cormorant Garamond, Georgia, serif" font-size="15" font-style="italic">Kafkasya&#x27;nın Birinci İmamı</text>
+
+        <text x="474" y="2120" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">Dağıstan ve Çeçenya İmameti&#x27;nin kurucusu;</text>
+        <text x="474" y="2139" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">Kafkasya&#x27;da hukuki ve siyasi birliğin ilk…</text>
+
+        <line x1="474" y1="2170" x2="802" y2="2170" stroke="#C8A45D" stroke-opacity="0.24" stroke-width="1"/>
+        <text x="474" y="2196" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="500" letter-spacing="1.5">Biyografiyi İncele</text>
+        <path d="M786 2192H800M800 2192L795 2187M800 2192L795 2197" stroke="#E6C98A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <rect x="457" y="1699" width="362" height="518" stroke="#C8A45D" stroke-opacity="0.2" stroke-width="1"/>
+      </g>
+      <g id="Kahraman-Karti-07-seyh-samil">
+        <rect x="848" y="1694" width="372" height="528" fill="#0D1016" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1.2"/>
+
+        <g id="PhotoSlot-08-seyh-samil">
+          <rect x="860" y="1706" width="348" height="306" fill="#161B24"/>
+        </g>
+
+        <rect x="860" y="1900" width="348" height="112" fill="url(#cardBottomShade)"/>
+
+        <g id="Region-Badge-07">
+          <rect x="870" y="1716" width="168" height="26" fill="#07090C" fill-opacity="0.82" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1"/>
+          <text x="954.0" y="1733" text-anchor="middle" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="9.5" font-weight="500" letter-spacing="1.6">DAĞISTAN – ÇEÇENYA</text>
+        </g>
+
+        <text x="872" y="1998" fill="#F5E4BA" font-family="Cormorant Garamond, Georgia, serif" font-size="15.5" font-weight="600" letter-spacing="1.5">1797 – 1871</text>
+
+        <text x="870" y="2038" fill="#C8A45D" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" letter-spacing="2">İMAMET ÇAĞI · 1760–1859</text>
+        <text x="870" y="2068" fill="#F5ECD8" font-family="Cormorant Garamond, Georgia, serif" font-size="25" font-weight="600">Şeyh Şamil</text>
+        <text x="870" y="2092" fill="#E6C98A" font-family="Cormorant Garamond, Georgia, serif" font-size="15" font-style="italic">Kafkasya&#x27;nın Üçüncü İmamı</text>
+
+        <text x="870" y="2120" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">Çeyrek asır boyunca Çeçenya ve Dağıstan&#x27;ı</text>
+        <text x="870" y="2139" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">düzenli devlet, divan, ordu ve naiplik…</text>
+
+        <line x1="870" y1="2170" x2="1198" y2="2170" stroke="#C8A45D" stroke-opacity="0.24" stroke-width="1"/>
+        <text x="870" y="2196" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="500" letter-spacing="1.5">Biyografiyi İncele</text>
+        <path d="M1182 2192H1196M1196 2192L1191 2187M1196 2192L1191 2197" stroke="#E6C98A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <rect x="853" y="1699" width="362" height="518" stroke="#C8A45D" stroke-opacity="0.2" stroke-width="1"/>
+      </g>
+      <g id="Kahraman-Karti-08-haci-murad">
+        <rect x="1244" y="1694" width="372" height="528" fill="#0D1016" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1.2"/>
+
+        <g id="PhotoSlot-09-haci-murad">
+          <rect x="1256" y="1706" width="348" height="306" fill="#161B24"/>
+        </g>
+
+        <rect x="1256" y="1900" width="348" height="112" fill="url(#cardBottomShade)"/>
+
+        <g id="Region-Badge-08">
+          <rect x="1266" y="1716" width="92" height="26" fill="#07090C" fill-opacity="0.82" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1"/>
+          <text x="1312.0" y="1733" text-anchor="middle" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="9.5" font-weight="500" letter-spacing="1.6">DAĞISTAN</text>
+        </g>
+
+        <text x="1268" y="1998" fill="#F5E4BA" font-family="Cormorant Garamond, Georgia, serif" font-size="15.5" font-weight="600" letter-spacing="1.5">1798 – 1852</text>
+
+        <text x="1266" y="2038" fill="#C8A45D" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" letter-spacing="2">İMAMET ÇAĞI · 1760–1859</text>
+        <text x="1266" y="2068" fill="#F5ECD8" font-family="Cormorant Garamond, Georgia, serif" font-size="25" font-weight="600">Hacı Murad</text>
+        <text x="1266" y="2092" fill="#E6C98A" font-family="Cormorant Garamond, Georgia, serif" font-size="15" font-style="italic">Avar naibi ve süvari komutanı</text>
+
+        <text x="1266" y="2120" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">Yıldırım hızındaki süvari baskınlarıyla</text>
+        <text x="1266" y="2139" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">efsaneleşen Avar naibi; Tolstoy&#x27;un ünlü…</text>
+
+        <line x1="1266" y1="2170" x2="1594" y2="2170" stroke="#C8A45D" stroke-opacity="0.24" stroke-width="1"/>
+        <text x="1266" y="2196" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="500" letter-spacing="1.5">Biyografiyi İncele</text>
+        <path d="M1578 2192H1592M1592 2192L1587 2187M1592 2192L1587 2197" stroke="#E6C98A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <rect x="1249" y="1699" width="362" height="518" stroke="#C8A45D" stroke-opacity="0.2" stroke-width="1"/>
+      </g>
+      <g id="Kahraman-Karti-09-kunta-haci">
+        <rect x="56" y="2250" width="372" height="528" fill="#0D1016" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1.2"/>
+
+        <g id="PhotoSlot-10-kunta-haci">
+          <rect x="68" y="2262" width="348" height="306" fill="#161B24"/>
+        </g>
+
+        <rect x="68" y="2456" width="348" height="112" fill="url(#cardBottomShade)"/>
+
+        <g id="Region-Badge-09">
+          <rect x="78" y="2272" width="176" height="26" fill="#07090C" fill-opacity="0.82" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1"/>
+          <text x="166.0" y="2289" text-anchor="middle" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="9.5" font-weight="500" letter-spacing="1.6">ÇEÇENYA – İNGUŞETYA</text>
+        </g>
+
+        <text x="80" y="2554" fill="#F5E4BA" font-family="Cormorant Garamond, Georgia, serif" font-size="15.5" font-weight="600" letter-spacing="1.5">1812 – 1867</text>
+
+        <text x="78" y="2594" fill="#C8A45D" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" letter-spacing="2">İMPARATORLUK ÇAĞI · 1859–1917</text>
+        <text x="78" y="2624" fill="#F5ECD8" font-family="Cormorant Garamond, Georgia, serif" font-size="25" font-weight="600">Kunta Hacı Kişiyev</text>
+        <text x="78" y="2648" fill="#E6C98A" font-family="Cormorant Garamond, Georgia, serif" font-size="15" font-style="italic">Mutasavvıf ve manevi rehber</text>
+
+        <text x="78" y="2676" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">Savaşların yaralarını merhamet, sabır ve</text>
+        <text x="78" y="2695" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">toplumsal dayanışmayla saran büyük Vaynah…</text>
+
+        <line x1="78" y1="2726" x2="406" y2="2726" stroke="#C8A45D" stroke-opacity="0.24" stroke-width="1"/>
+        <text x="78" y="2752" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="500" letter-spacing="1.5">Biyografiyi İncele</text>
+        <path d="M390 2748H404M404 2748L399 2743M404 2748L399 2753" stroke="#E6C98A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <rect x="61" y="2255" width="362" height="518" stroke="#C8A45D" stroke-opacity="0.2" stroke-width="1"/>
+      </g>
+      <g id="Kahraman-Karti-10-uzun-haci">
+        <rect x="452" y="2250" width="372" height="528" fill="#0D1016" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1.2"/>
+
+        <g id="PhotoSlot-11-uzun-haci">
+          <rect x="464" y="2262" width="348" height="306" fill="#161B24"/>
+        </g>
+
+        <rect x="464" y="2456" width="348" height="112" fill="url(#cardBottomShade)"/>
+
+        <g id="Region-Badge-10">
+          <rect x="474" y="2272" width="168" height="26" fill="#07090C" fill-opacity="0.82" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1"/>
+          <text x="558.0" y="2289" text-anchor="middle" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="9.5" font-weight="500" letter-spacing="1.6">DAĞISTAN – ÇEÇENYA</text>
+        </g>
+
+        <text x="476" y="2554" fill="#F5E4BA" font-family="Cormorant Garamond, Georgia, serif" font-size="15.5" font-weight="600" letter-spacing="1.5">1848 – 1920</text>
+
+        <text x="474" y="2594" fill="#C8A45D" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" letter-spacing="2">SÜRGÜN VE DÖNÜŞ · 1917–1957</text>
+        <text x="474" y="2624" fill="#F5ECD8" font-family="Cormorant Garamond, Georgia, serif" font-size="25" font-weight="600">Uzun Hacı Saltinski</text>
+        <text x="474" y="2648" fill="#E6C98A" font-family="Cormorant Garamond, Georgia, serif" font-size="15" font-style="italic">Kuzey Kafkasya Emirliği&#x27;nin kurucusu</text>
+
+        <text x="474" y="2676" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">Sibirya sürgününden dönerek 1919&#x27;da Vedeno</text>
+        <text x="474" y="2695" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">merkezli Kuzey Kafkasya Emirliği&#x27;ni kuran…</text>
+
+        <line x1="474" y1="2726" x2="802" y2="2726" stroke="#C8A45D" stroke-opacity="0.24" stroke-width="1"/>
+        <text x="474" y="2752" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="500" letter-spacing="1.5">Biyografiyi İncele</text>
+        <path d="M786 2748H800M800 2748L795 2743M800 2748L795 2753" stroke="#E6C98A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <rect x="457" y="2255" width="362" height="518" stroke="#C8A45D" stroke-opacity="0.2" stroke-width="1"/>
+      </g>
+      <g id="Kahraman-Karti-11-alibek-haci">
+        <rect x="848" y="2250" width="372" height="528" fill="#0D1016" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1.2"/>
+
+        <g id="PhotoSlot-12-alibek-haci">
+          <rect x="860" y="2262" width="348" height="306" fill="#161B24"/>
+        </g>
+
+        <rect x="860" y="2456" width="348" height="112" fill="url(#cardBottomShade)"/>
+
+        <g id="Region-Badge-11">
+          <rect x="870" y="2272" width="92" height="26" fill="#07090C" fill-opacity="0.82" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1"/>
+          <text x="916.0" y="2289" text-anchor="middle" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="9.5" font-weight="500" letter-spacing="1.6">ÇEÇENYA</text>
+        </g>
+
+        <text x="872" y="2554" fill="#F5E4BA" font-family="Cormorant Garamond, Georgia, serif" font-size="15.5" font-weight="600" letter-spacing="1.5">1850 – 1878</text>
+
+        <text x="870" y="2594" fill="#C8A45D" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" letter-spacing="2">İMPARATORLUK ÇAĞI · 1859–1917</text>
+        <text x="870" y="2624" fill="#F5ECD8" font-family="Cormorant Garamond, Georgia, serif" font-size="25" font-weight="600">Alibek Hacı Aldamov</text>
+        <text x="870" y="2648" fill="#E6C98A" font-family="Cormorant Garamond, Georgia, serif" font-size="15" font-style="italic">1877 kıyamının genç imamı</text>
+
+        <text x="870" y="2676" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">Henüz 27 yaşındayken İçkeriya ormanlarında</text>
+        <text x="870" y="2695" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">imam seçilerek 1877–1878 büyük Kafkas…</text>
+
+        <line x1="870" y1="2726" x2="1198" y2="2726" stroke="#C8A45D" stroke-opacity="0.24" stroke-width="1"/>
+        <text x="870" y="2752" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="500" letter-spacing="1.5">Biyografiyi İncele</text>
+        <path d="M1182 2748H1196M1196 2748L1191 2743M1196 2748L1191 2753" stroke="#E6C98A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <rect x="853" y="2255" width="362" height="518" stroke="#C8A45D" stroke-opacity="0.2" stroke-width="1"/>
+      </g>
+      <g id="Kahraman-Karti-12-zelimhan">
+        <rect x="1244" y="2250" width="372" height="528" fill="#0D1016" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1.2"/>
+
+        <g id="PhotoSlot-13-zelimhan">
+          <rect x="1256" y="2262" width="348" height="306" fill="#161B24"/>
+        </g>
+
+        <rect x="1256" y="2456" width="348" height="112" fill="url(#cardBottomShade)"/>
+
+        <g id="Region-Badge-12">
+          <rect x="1266" y="2272" width="92" height="26" fill="#07090C" fill-opacity="0.82" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1"/>
+          <text x="1312.0" y="2289" text-anchor="middle" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="9.5" font-weight="500" letter-spacing="1.6">ÇEÇENYA</text>
+        </g>
+
+        <text x="1268" y="2554" fill="#F5E4BA" font-family="Cormorant Garamond, Georgia, serif" font-size="15.5" font-weight="600" letter-spacing="1.5">1872 – 1913</text>
+
+        <text x="1266" y="2594" fill="#C8A45D" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" letter-spacing="2">İMPARATORLUK ÇAĞI · 1859–1917</text>
+        <text x="1266" y="2624" fill="#F5ECD8" font-family="Cormorant Garamond, Georgia, serif" font-size="25" font-weight="600">Zelimhan Guşmazukayev</text>
+        <text x="1266" y="2648" fill="#E6C98A" font-family="Cormorant Garamond, Georgia, serif" font-size="15" font-style="italic">Harachoylu efsanevi abrek</text>
+
+        <text x="1266" y="2676" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">Adaletsizliğe karşı on iki yıl dağlardan</text>
+        <text x="1266" y="2695" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">meydan okuyan, yoksullara kol kanat geren…</text>
+
+        <line x1="1266" y1="2726" x2="1594" y2="2726" stroke="#C8A45D" stroke-opacity="0.24" stroke-width="1"/>
+        <text x="1266" y="2752" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="500" letter-spacing="1.5">Biyografiyi İncele</text>
+        <path d="M1578 2748H1592M1592 2748L1587 2743M1592 2748L1587 2753" stroke="#E6C98A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <rect x="1249" y="2255" width="362" height="518" stroke="#C8A45D" stroke-opacity="0.2" stroke-width="1"/>
+      </g>
+      <g id="Kahraman-Karti-13-aslanbek-seripov">
+        <rect x="56" y="2806" width="372" height="528" fill="#0D1016" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1.2"/>
+
+        <g id="PhotoSlot-14-aslanbek-seripov">
+          <rect x="68" y="2818" width="348" height="306" fill="#161B24"/>
+        </g>
+
+        <rect x="68" y="3012" width="348" height="112" fill="url(#cardBottomShade)"/>
+
+        <g id="Region-Badge-13">
+          <rect x="78" y="2828" width="92" height="26" fill="#07090C" fill-opacity="0.82" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1"/>
+          <text x="124.0" y="2845" text-anchor="middle" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="9.5" font-weight="500" letter-spacing="1.6">ÇEÇENYA</text>
+        </g>
+
+        <text x="80" y="3110" fill="#F5E4BA" font-family="Cormorant Garamond, Georgia, serif" font-size="15.5" font-weight="600" letter-spacing="1.5">1897 – 1919</text>
+
+        <text x="78" y="3150" fill="#C8A45D" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" letter-spacing="2">SÜRGÜN VE DÖNÜŞ · 1917–1957</text>
+        <text x="78" y="3180" fill="#F5ECD8" font-family="Cormorant Garamond, Georgia, serif" font-size="25" font-weight="600">Aslanbek Şeripov</text>
+        <text x="78" y="3204" fill="#E6C98A" font-family="Cormorant Garamond, Georgia, serif" font-size="15" font-style="italic">Siyasi hatip, yazar ve komutan</text>
+
+        <text x="78" y="3232" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">22 yıllık ömrüne Çeçen halk destanları</text>
+        <text x="78" y="3251" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">derlemeleri, makaleler ve cephe komutanlığı…</text>
+
+        <line x1="78" y1="3282" x2="406" y2="3282" stroke="#C8A45D" stroke-opacity="0.24" stroke-width="1"/>
+        <text x="78" y="3308" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="500" letter-spacing="1.5">Biyografiyi İncele</text>
+        <path d="M390 3304H404M404 3304L399 3299M404 3304L399 3309" stroke="#E6C98A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <rect x="61" y="2811" width="362" height="518" stroke="#C8A45D" stroke-opacity="0.2" stroke-width="1"/>
+      </g>
+      <g id="Kahraman-Karti-14-abdurrahman-avtorhanov">
+        <rect x="452" y="2806" width="372" height="528" fill="#0D1016" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1.2"/>
+
+        <g id="PhotoSlot-15-abdurrahman-avtorhanov">
+          <rect x="464" y="2818" width="348" height="306" fill="#161B24"/>
+        </g>
+
+        <rect x="464" y="3012" width="348" height="112" fill="url(#cardBottomShade)"/>
+
+        <g id="Region-Badge-14">
+          <rect x="474" y="2828" width="92" height="26" fill="#07090C" fill-opacity="0.82" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1"/>
+          <text x="520.0" y="2845" text-anchor="middle" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="9.5" font-weight="500" letter-spacing="1.6">ÇEÇENYA</text>
+        </g>
+
+        <text x="476" y="3110" fill="#F5E4BA" font-family="Cormorant Garamond, Georgia, serif" font-size="15.5" font-weight="600" letter-spacing="1.5">1908 – 1997</text>
+
+        <text x="474" y="3150" fill="#C8A45D" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" letter-spacing="2">SÜRGÜN VE DÖNÜŞ · 1917–1957</text>
+        <text x="474" y="3180" fill="#F5ECD8" font-family="Cormorant Garamond, Georgia, serif" font-size="25" font-weight="600">Abdurrahman Avtorhanov</text>
+        <text x="474" y="3204" fill="#E6C98A" font-family="Cormorant Garamond, Georgia, serif" font-size="15" font-style="italic">Tarihçi ve siyaset bilimci</text>
+
+        <text x="474" y="3232" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">1944 Çeçen-İnguş sürgününü dünya akademisine</text>
+        <text x="474" y="3251" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">ve uluslararası kamuoyuna belgeleyen öncü…</text>
+
+        <line x1="474" y1="3282" x2="802" y2="3282" stroke="#C8A45D" stroke-opacity="0.24" stroke-width="1"/>
+        <text x="474" y="3308" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="500" letter-spacing="1.5">Biyografiyi İncele</text>
+        <path d="M786 3304H800M800 3304L795 3299M800 3304L795 3309" stroke="#E6C98A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <rect x="457" y="2811" width="362" height="518" stroke="#C8A45D" stroke-opacity="0.2" stroke-width="1"/>
+      </g>
+      <g id="Kahraman-Karti-15-idris-bazorkin">
+        <rect x="848" y="2806" width="372" height="528" fill="#0D1016" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1.2"/>
+
+        <g id="PhotoSlot-16-idris-bazorkin">
+          <rect x="860" y="2818" width="348" height="306" fill="#161B24"/>
+        </g>
+
+        <rect x="860" y="3012" width="348" height="112" fill="url(#cardBottomShade)"/>
+
+        <g id="Region-Badge-15">
+          <rect x="870" y="2828" width="96" height="26" fill="#07090C" fill-opacity="0.82" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1"/>
+          <text x="918.0" y="2845" text-anchor="middle" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="9.5" font-weight="500" letter-spacing="1.6">İNGUŞETYA</text>
+        </g>
+
+        <text x="872" y="3110" fill="#F5E4BA" font-family="Cormorant Garamond, Georgia, serif" font-size="15.5" font-weight="600" letter-spacing="1.5">1910 – 1993</text>
+
+        <text x="870" y="3150" fill="#C8A45D" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" letter-spacing="2">YAKIN DÖNEM · 1957–2000</text>
+        <text x="870" y="3180" fill="#F5ECD8" font-family="Cormorant Garamond, Georgia, serif" font-size="25" font-weight="600">İdris Bazorkin</text>
+        <text x="870" y="3204" fill="#E6C98A" font-family="Cormorant Garamond, Georgia, serif" font-size="15" font-style="italic">İnguş edebiyatının kurucu romancısı</text>
+
+        <text x="870" y="3232" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">&#x27;Asırların Karanlığından&#x27; destanıyla İnguş</text>
+        <text x="870" y="3251" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">kule kültürünü ve Ezdel ahlakını dünya…</text>
+
+        <line x1="870" y1="3282" x2="1198" y2="3282" stroke="#C8A45D" stroke-opacity="0.24" stroke-width="1"/>
+        <text x="870" y="3308" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="500" letter-spacing="1.5">Biyografiyi İncele</text>
+        <path d="M1182 3304H1196M1196 3304L1191 3299M1196 3304L1191 3309" stroke="#E6C98A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <rect x="853" y="2811" width="362" height="518" stroke="#C8A45D" stroke-opacity="0.2" stroke-width="1"/>
+      </g>
+      <g id="Kahraman-Karti-16-mahmud-esambayev">
+        <rect x="1244" y="2806" width="372" height="528" fill="#0D1016" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1.2"/>
+
+        <g id="PhotoSlot-17-mahmud-esambayev">
+          <rect x="1256" y="2818" width="348" height="306" fill="#161B24"/>
+        </g>
+
+        <rect x="1256" y="3012" width="348" height="112" fill="url(#cardBottomShade)"/>
+
+        <g id="Region-Badge-16">
+          <rect x="1266" y="2828" width="92" height="26" fill="#07090C" fill-opacity="0.82" stroke="#C8A45D" stroke-opacity="0.55" stroke-width="1"/>
+          <text x="1312.0" y="2845" text-anchor="middle" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="9.5" font-weight="500" letter-spacing="1.6">ÇEÇENYA</text>
+        </g>
+
+        <text x="1268" y="3110" fill="#F5E4BA" font-family="Cormorant Garamond, Georgia, serif" font-size="15.5" font-weight="600" letter-spacing="1.5">1924 – 2000</text>
+
+        <text x="1266" y="3150" fill="#C8A45D" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" letter-spacing="2">YAKIN DÖNEM · 1957–2000</text>
+        <text x="1266" y="3180" fill="#F5ECD8" font-family="Cormorant Garamond, Georgia, serif" font-size="25" font-weight="600">Mahmud Esambayev</text>
+        <text x="1266" y="3204" fill="#E6C98A" font-family="Cormorant Garamond, Georgia, serif" font-size="15" font-style="italic">Dünya sahnelerinin Kafkasyalı koreografı</text>
+
+        <text x="1266" y="3232" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">Başından çıkarmadığı papahasıyla sürgün</text>
+        <text x="1266" y="3251" fill="#B8AE9C" font-family="Inter, Arial, sans-serif" font-size="12">yıllarından dünya bale sahnelerinin…</text>
+
+        <line x1="1266" y1="3282" x2="1594" y2="3282" stroke="#C8A45D" stroke-opacity="0.24" stroke-width="1"/>
+        <text x="1266" y="3308" fill="#E6C98A" font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="500" letter-spacing="1.5">Biyografiyi İncele</text>
+        <path d="M1578 3304H1592M1592 3304L1587 3299M1592 3304L1587 3309" stroke="#E6C98A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <rect x="1249" y="2811" width="362" height="518" stroke="#C8A45D" stroke-opacity="0.2" stroke-width="1"/>
+      </g>
+    </g>
+
+    <!-- 6. ALT BİLGİ VE MÜZE KOLOFONU (y = 3390..3680) -->
+    <g id="Alt Bilgi — Müze Kolofonu" transform="translate(0, 3390)">
+      <rect width="1672" height="290" fill="#05070A"/>
+      <line x1="0" y1="1" x2="1672" y2="1" stroke="#C8A45D" stroke-opacity="0.38" stroke-width="1"/>
+      <rect x="832" y="-3" width="8" height="8" transform="rotate(45 836 1)" fill="#E6C98A"/>
+
+      <text x="82" y="74" fill="#E6C98A" font-family="Cormorant Garamond, Georgia, serif" font-size="32" font-weight="600" letter-spacing="7">TARGİM</text>
+      <text x="86" y="94" fill="#D6CDBB" font-family="Inter, Arial, sans-serif" font-size="9.5" letter-spacing="6">ARCHIVE</text>
+      <text x="82" y="134" fill="#A79E8E" font-family="Inter, Arial, sans-serif" font-size="13.5">Çeçen, İnguş ve Kuzey Kafkasya halklarının tarihini, kahramanlarını,</text>
+      <text x="82" y="156" fill="#A79E8E" font-family="Inter, Arial, sans-serif" font-size="13.5">el yazmalarını ve taş kule mirasını belgeleyen bağımsız dijital hafıza arşivi.</text>
+
+      <g id="Footer-Arsiv-Bolumleri" transform="translate(760, 62)">
+        <text x="0" y="0" fill="#C8A45D" font-family="Inter, Arial, sans-serif" font-size="11" letter-spacing="3">ARŞİV BÖLÜMLERİ</text>
+        <text x="0" y="34" fill="#F5E4BA" font-family="Inter, Arial, sans-serif" font-size="13">◆ Kahramanlar &amp; Kişiler (16)</text>
+        <text x="0" y="60" fill="#EFE6D5" font-family="Inter, Arial, sans-serif" font-size="13">Arşiv Belgeleri &amp; El Yazmaları</text>
+        <text x="0" y="86" fill="#EFE6D5" font-family="Inter, Arial, sans-serif" font-size="13">Zaman Çizelgesi (1700–2000)</text>
+        <text x="0" y="112" fill="#EFE6D5" font-family="Inter, Arial, sans-serif" font-size="13">Kafkasya Tarih Atlası</text>
+      </g>
+
+      <g id="Footer-Kultur-Ve-Katki" transform="translate(1160, 62)">
+        <text x="0" y="0" fill="#C8A45D" font-family="Inter, Arial, sans-serif" font-size="11" letter-spacing="3">MİRAS &amp; KATKI</text>
+        <text x="0" y="34" fill="#EFE6D5" font-family="Inter, Arial, sans-serif" font-size="13">Tematik Dijital Sergiler</text>
+        <text x="0" y="60" fill="#EFE6D5" font-family="Inter, Arial, sans-serif" font-size="13">Kültür, Nohçalla &amp; Ezdel</text>
+        <text x="0" y="86" fill="#EFE6D5" font-family="Inter, Arial, sans-serif" font-size="13">Aile Arşivi &amp; Belge Katkısı</text>
+        <text x="0" y="112" fill="#EFE6D5" font-family="Inter, Arial, sans-serif" font-size="13">Hakkında &amp; Metodoloji</text>
+      </g>
+
+      <line x1="82" y1="226" x2="1590" y2="226" stroke="#C8A45D" stroke-opacity="0.22" stroke-width="1"/>
+      <text x="82" y="258" fill="#8C8374" font-family="Inter, Arial, sans-serif" font-size="12">© Targim Archive · Sayfa 02 — Kahramanlar &amp; Tarihe İz Bırakanlar</text>
+      <text x="1590" y="258" text-anchor="end" fill="#C8A45D" font-family="Cormorant Garamond, Georgia, serif" font-size="15.5" font-style="italic">“Toprak unutmaz, insan bazen unutur.”</text>
+    </g>
+  </g>
+</svg>
