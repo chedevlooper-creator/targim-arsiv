@@ -773,9 +773,9 @@ export function MobileIntroFilm() {
     <>
       <button
         onClick={() => setOpen(true)}
-        className="group inline-flex h-12 items-center gap-2.5 rounded-full border border-white/15 bg-white/[0.06] px-5 text-xs font-medium tracking-[0.12em] text-white/90 uppercase backdrop-blur-md transition hover:border-white/30 hover:bg-white/12 lg:hidden"
+        className="group inline-flex h-10 items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-4 text-[0.7rem] font-medium tracking-[0.1em] text-white/90 uppercase backdrop-blur-md transition hover:border-white/30 hover:bg-white/12 lg:hidden"
       >
-        <Play size={13} className="fill-gold-light text-gold-light" />
+        <Play size={12} className="fill-gold-light text-gold-light" />
         <span>Tanıtım Filmi</span>
       </button>
       <IntroFilmModal open={open} onClose={() => setOpen(false)} />

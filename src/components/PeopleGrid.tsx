@@ -3,8 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { ArrowRight, RotateCcw, Search } from "lucide-react";
-import { ERAS, PEOPLE, eraLabel, type Era } from "@/lib/data";
+import { ChevronDown, RotateCcw, Search } from "lucide-react";
+import { ERAS, PEOPLE, type Era } from "@/lib/data";
 
 const parseYear = (s: string) => parseInt(s.replace(/\D/g, "").slice(0, 4) || "0", 10);
 
@@ -37,42 +37,48 @@ export default function PeopleGrid() {
 
   return (
     <div>
-      {/* Müze Filtre Konsolu */}
-      <div className="museum-card p-5">
-        <div className="flex flex-wrap items-center gap-3">
-          <label className="relative min-w-[240px] flex-1">
-            <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gold/80" />
+      {/* Filtre Araç Çubuğu */}
+      <div className="flex flex-col gap-4">
+        <div className="flex flex-wrap items-center gap-2.5">
+          <label className="relative min-w-[220px] flex-1 sm:max-w-sm">
+            <Search size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-white/40" />
             <input
               value={q}
               onChange={(e) => setQ(e.target.value)}
-              placeholder="İsim, unvan veya bölge ara…"
-              className="input-dark w-full py-2.5 pl-10 pr-4 text-sm"
+              placeholder="İsim, unvan veya bölge ara"
+              className="h-10 w-full rounded-full border border-white/10 bg-white/[0.04] pl-10 pr-4 text-sm text-white outline-none transition placeholder:text-white/35 focus:border-white/30 focus:bg-white/[0.07]"
             />
           </label>
 
-          <select
-            value={region}
-            onChange={(e) => setRegion(e.target.value)}
-            className="input-dark px-3.5 py-2.5 text-xs tracking-wider"
-            aria-label="Bölge seçimi"
-          >
-            <option value="all">Tüm Bölgeler</option>
-            {regions.map((r) => (
-              <option key={r} value={r}>
-                {r}
-              </option>
-            ))}
-          </select>
+          <div className="relative">
+            <select
+              value={region}
+              onChange={(e) => setRegion(e.target.value)}
+              className="h-10 appearance-none rounded-full border border-white/10 bg-white/[0.04] pl-4 pr-9 text-xs font-medium text-white/80 outline-none transition hover:border-white/25 focus:border-white/30 [&>option]:bg-panel"
+              aria-label="Bölge seçimi"
+            >
+              <option value="all">Tüm bölgeler</option>
+              {regions.map((r) => (
+                <option key={r} value={r}>
+                  {r}
+                </option>
+              ))}
+            </select>
+            <ChevronDown size={13} className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-white/45" />
+          </div>
 
-          <select
-            value={sort}
-            onChange={(e) => setSort(e.target.value as "born" | "name")}
-            className="input-dark px-3.5 py-2.5 text-xs tracking-wider"
-            aria-label="Sıralama"
-          >
-            <option value="born">Kronolojik (Doğum Yılı)</option>
-            <option value="name">Alfabetik (A–Z)</option>
-          </select>
+          <div className="relative">
+            <select
+              value={sort}
+              onChange={(e) => setSort(e.target.value as "born" | "name")}
+              className="h-10 appearance-none rounded-full border border-white/10 bg-white/[0.04] pl-4 pr-9 text-xs font-medium text-white/80 outline-none transition hover:border-white/25 focus:border-white/30 [&>option]:bg-panel"
+              aria-label="Sıralama"
+            >
+              <option value="born">Doğum yılına göre</option>
+              <option value="name">A&apos;dan Z&apos;ye</option>
+            </select>
+            <ChevronDown size={13} className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-white/45" />
+          </div>
 
           {hasFilters && (
             <button
@@ -81,81 +87,78 @@ export default function PeopleGrid() {
                 setRegion("all");
                 setQ("");
               }}
-              className="inline-flex items-center gap-1.5 border border-gold/30 px-3 py-2.5 text-xs text-gold-light transition hover:border-gold"
+              className="inline-flex h-10 items-center gap-1.5 rounded-full px-3 text-xs text-white/60 transition hover:text-white"
             >
               <RotateCcw size={13} /> Sıfırla
             </button>
           )}
         </div>
 
-        <div className="mt-4 flex flex-wrap items-center gap-2 border-t border-gold/15 pt-4">
-          <button onClick={() => setEra("all")} className={`chip ${era === "all" ? "chip-active" : ""}`}>
-            Tümü ({PEOPLE.length})
-          </button>
-          {ERAS.map((e) => (
-            <button
-              key={e.id}
-              onClick={() => setEra(e.id)}
-              className={`chip ${era === e.id ? "chip-active" : ""}`}
-            >
-              {e.label} · {e.range} ({PEOPLE.filter((p) => p.era === e.id).length})
-            </button>
-          ))}
+        {/* Dönem Sekmeleri */}
+        <div className="no-scrollbar -mx-5 overflow-x-auto px-5 md:mx-0 md:px-0">
+          <div className="inline-flex gap-1 rounded-full border border-white/[0.08] bg-white/[0.03] p-1">
+            {[{ id: "all" as const, label: "Tümü", range: "" }, ...ERAS].map((e) => {
+              const active = era === e.id;
+              const count = e.id === "all" ? PEOPLE.length : PEOPLE.filter((p) => p.era === e.id).length;
+              return (
+                <button
+                  key={e.id}
+                  onClick={() => setEra(e.id)}
+                  className={`inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-full px-3.5 py-1.5 text-xs font-medium transition ${
+                    active ? "bg-white/[0.12] text-white" : "text-white/55 hover:text-white"
+                  }`}
+                >
+                  <span>{e.label}</span>
+                  {e.range && <span className={active ? "text-white/50" : "text-white/30"}>{e.range}</span>}
+                  <span
+                    className={`rounded-full px-1.5 py-px text-[0.62rem] tabular-nums ${
+                      active ? "bg-gold-light text-[#090b10]" : "bg-white/[0.07] text-white/50"
+                    }`}
+                  >
+                    {count}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
         </div>
       </div>
 
-      <div className="mt-8 flex items-center justify-between text-xs tracking-[0.22em] text-mist uppercase">
-        <span>{list.length} ŞAHSİYET LİSTELENİYOR</span>
-        <span>1760 – 2000 BİYOGRAFİ ENVANTERİ</span>
-      </div>
+      <p className="mt-7 text-xs text-white/45">
+        <span className="font-medium text-white/80">{list.length}</span> şahsiyet gösteriliyor
+      </p>
 
-      {/* Portre Galerisi */}
-      <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      {/* Portre Galerisi: çerçevesiz siyah beyaz portre, altında isim, unvan, yıllar ve bölge */}
+      <div className="mt-5 grid grid-cols-2 gap-x-5 gap-y-9 md:grid-cols-3 lg:grid-cols-4">
         {list.map((p) => (
-          <Link
-            key={p.slug}
-            href={`/kisiler/${p.slug}`}
-            className="museum-card group flex flex-col overflow-hidden animate-fade-up"
-          >
-            <div className="relative aspect-[3/4] overflow-hidden bg-ink">
+          <Link key={p.slug} href={`/kisiler/${p.slug}`} className="group flex flex-col animate-fade-up">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-xl bg-panel">
               <Image
                 src={p.image}
                 alt={p.name}
                 fill
-                sizes="(max-width:640px) 100vw, (max-width:1024px) 33vw, 25vw"
-                className="object-cover transition duration-700 group-hover:scale-105"
+                sizes="(max-width:768px) 50vw, (max-width:1024px) 33vw, 25vw"
+                className="object-cover grayscale transition duration-500 group-hover:scale-[1.03] group-hover:grayscale-0"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent" />
-              <span className="absolute left-3 top-3 border border-gold/35 bg-ink/80 px-2.5 py-1 text-[0.62rem] tracking-widest text-gold-light backdrop-blur-sm">
-                {p.region}
-              </span>
-              <span className="absolute bottom-3 left-3 font-display text-xs tracking-widest text-[#efe5d0]">
-                {p.born} – {p.died}
-              </span>
             </div>
 
-            <div className="flex flex-1 flex-col justify-between p-5">
-              <div>
-                <p className="text-[0.63rem] tracking-[0.2em] text-gold uppercase">{eraLabel(p.era)}</p>
-                <h2 className="mt-1 font-display text-xl font-medium text-[#f5ecd8] transition group-hover:text-gold-light">
-                  {p.name}
-                </h2>
-                <p className="mt-1 font-serif text-base italic text-gold-light/85">{p.title}</p>
-                <p className="mt-3 line-clamp-2 font-serif text-base leading-relaxed text-[#cfc6b4]">
-                  {p.summary}
-                </p>
-              </div>
-              <span className="mt-4 inline-flex items-center gap-1.5 border-t border-gold/15 pt-3 text-[0.68rem] tracking-[0.2em] text-gold-light uppercase group-hover:text-white">
-                Portre ve Biyografi <ArrowRight size={12} className="transition-transform group-hover:translate-x-1" />
-              </span>
-            </div>
+            <h2 className="mt-3.5 text-[0.95rem] font-semibold text-white transition group-hover:text-gold-light">
+              {p.name}
+            </h2>
+            <p className="mt-0.5 line-clamp-1 text-sm text-white/55">{p.title}</p>
+            <p className="mt-1.5 text-xs text-white/40">
+              <span className="font-mono">
+                {p.born}–{p.died}
+              </span>{" "}
+              · {p.region}
+            </p>
           </Link>
         ))}
       </div>
 
       {list.length === 0 && (
         <div className="museum-card mt-8 py-16 text-center">
-          <p className="font-serif text-2xl text-mist">Seçilen kriterlere uygun şahsiyet kaydı bulunamadı.</p>
+          <p className="text-sm text-white/55">Bu filtrelere uyan şahsiyet bulunamadı.</p>
         </div>
       )}
     </div>

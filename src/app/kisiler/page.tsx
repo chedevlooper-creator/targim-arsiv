@@ -17,6 +17,7 @@ export default function KisilerPage() {
         subtitle={`Kuzey Kafkasya tarihinden ${PEOPLE.length} öncü şahsiyet; İmamet Çağı'ndan yakın döneme dört tarihsel evrede, özgün portreleri ve arşiv kaynaklarıyla.`}
         image="/images/kisiler.jpg"
         crumbs={[{ label: "Kişiler" }]}
+        count={PEOPLE.length}
       />
       <section className="mx-auto max-w-[1440px] px-5 pt-10 md:px-10">
         <PeopleGrid />

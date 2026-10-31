@@ -45,17 +45,29 @@ export function FiligreeLink({
   href,
   children,
   className = "",
+  size = "md",
 }: {
   href: string;
   children: React.ReactNode;
   className?: string;
+  size?: "sm" | "md";
 }) {
   const isAnchor = href.startsWith("#");
+  const sizing =
+    size === "sm"
+      ? "h-10 gap-2.5 px-5 text-[0.7rem] tracking-[0.1em]"
+      : "h-12 gap-3 px-6 text-[0.78rem] tracking-[0.12em]";
   const inner = (
-    <span className="group relative inline-flex h-12 items-center gap-3 rounded-full bg-[#f4ead5] px-6 font-sans text-[0.78rem] font-semibold tracking-[0.12em] text-[#090b10] uppercase shadow-[0_10px_30px_-8px_rgba(244,234,213,0.4)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:shadow-[0_14px_34px_-6px_rgba(255,255,255,0.45)]">
+    <span
+      className={`group relative inline-flex items-center rounded-full bg-[#f4ead5] font-sans font-semibold text-[#090b10] uppercase shadow-[0_10px_30px_-8px_rgba(244,234,213,0.4)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:shadow-[0_14px_34px_-6px_rgba(255,255,255,0.45)] ${sizing}`}
+    >
       <span>{children}</span>
-      <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#090b10]/10 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
-        <ArrowUpRight size={14} className="text-[#090b10]" />
+      <span
+        className={`flex items-center justify-center rounded-full bg-[#090b10]/10 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 ${
+          size === "sm" ? "h-5 w-5" : "h-6 w-6"
+        }`}
+      >
+        <ArrowUpRight size={size === "sm" ? 12 : 14} className="text-[#090b10]" />
       </span>
     </span>
   );

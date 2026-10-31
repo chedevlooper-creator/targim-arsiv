@@ -35,36 +35,38 @@ export default function Home() {
             <SectionRail />
 
             {/* Ana Başlık ve İki Yönlü Geçiş (Arşiv / Kahramanlar) */}
-            <div className="max-w-[740px]">
+            <div className="max-w-[600px]">
               <div className="animate-fade-up">
-                <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-3.5 py-1.5 text-[0.68rem] font-medium tracking-[0.2em] text-gold-light uppercase backdrop-blur-md">
-                  <span className="h-1.5 w-1.5 rounded-full bg-gold-light shadow-[0_0_8px_rgba(242,226,190,0.9)]" />
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/[0.06] px-3 py-1 text-[0.6rem] font-medium tracking-[0.18em] text-gold-light uppercase backdrop-blur-md">
+                  <span className="h-1 w-1 rounded-full bg-gold-light shadow-[0_0_6px_rgba(242,226,190,0.9)]" />
                   Bir Halkın Dijital Hafızası
                 </span>
               </div>
 
-              <h1 className="mt-5 font-display text-[2.5rem] font-semibold leading-[1.04] tracking-tight sm:text-5xl lg:text-[3.75rem] xl:text-[4.25rem] animate-fade-up [animation-delay:100ms]">
+              <h1 className="mt-4 font-display text-[2rem] font-semibold leading-[1.06] tracking-tight sm:text-[2.5rem] lg:text-[2.9rem] xl:text-[3.25rem] animate-fade-up [animation-delay:100ms]">
                 <span className="gold-text block">DAĞLAR SUSAR</span>
                 <span className="gold-text block">TARİH KONUŞUR.</span>
               </h1>
 
-              <p className="mt-5 max-w-[540px] text-base leading-relaxed text-white/80 md:text-lg animate-fade-up [animation-delay:200ms]">
+              <p className="mt-4 max-w-[460px] text-sm leading-relaxed text-white/75 md:text-[0.95rem] animate-fade-up [animation-delay:200ms]">
                 Targim Archive; Çeçen, İnguş ve Kafkasya&apos;nın tarihini, insanlarını ve kültürel mirasını birincil
                 belgelerle bir araya getiren modern bir dijital hafıza arşividir.
               </p>
 
               <div
                 data-hero-cta-row
-                className="mt-8 flex flex-wrap items-center gap-3.5 animate-fade-up [animation-delay:300ms]"
+                className="mt-6 flex flex-wrap items-center gap-2.5 animate-fade-up [animation-delay:300ms]"
               >
-                <FiligreeLink href="/arsiv">Arşive Gir</FiligreeLink>
+                <FiligreeLink href="/arsiv" size="sm">
+                  Arşive Gir
+                </FiligreeLink>
                 <Link
                   href="/kisiler"
-                  className="group inline-flex h-12 items-center gap-2.5 rounded-full border border-white/20 bg-white/[0.07] px-6 text-[0.78rem] font-semibold tracking-[0.12em] text-white uppercase backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5 hover:border-white/40 hover:bg-white/14"
+                  className="group inline-flex h-10 items-center gap-2 rounded-full border border-white/20 bg-white/[0.07] px-5 text-[0.7rem] font-semibold tracking-[0.1em] text-white uppercase backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5 hover:border-white/40 hover:bg-white/14"
                 >
                   <span>Kahramanlar</span>
                   <ArrowUpRight
-                    size={15}
+                    size={13}
                     className="text-gold-light transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                   />
                 </Link>
