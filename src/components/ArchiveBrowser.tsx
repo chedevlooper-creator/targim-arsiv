@@ -44,7 +44,7 @@ export default function ArchiveBrowser() {
       .filter(
         (d) =>
           !term ||
-          `${d.title} ${d.description} ${d.region} ${d.catalogNo} ${d.language}`
+          `${d.title} ${d.description} ${d.region} ${d.catalogNo} ${d.language} ${d.author ?? ""} ${d.source} ${d.transcription ?? ""} ${d.translation ?? ""}`
             .toLocaleLowerCase("tr-TR")
             .includes(term)
       )

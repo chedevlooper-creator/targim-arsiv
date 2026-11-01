@@ -15,7 +15,6 @@ export default function KisilerPage() {
         eyebrow="Biyografik Hafıza Koleksiyonu"
         title="Tarihe İz Bırakanlar"
         subtitle={`Kuzey Kafkasya tarihinden ${PEOPLE.length} öncü şahsiyet; İmamet Çağı'ndan yakın döneme dört tarihsel evrede, özgün portreleri ve arşiv kaynaklarıyla.`}
-        image="/images/kisiler.jpg"
         crumbs={[{ label: "Kişiler" }]}
         count={PEOPLE.length}
       />

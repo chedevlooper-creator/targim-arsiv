@@ -16,11 +16,10 @@ export default function HaritaPage() {
         eyebrow="Kartografik Hafıza"
         title="Kafkasya Tarih Atlası"
         subtitle="Vaynah kule vadileri, İmamet başkentleri, meydan muharebeleri ve sürgün rotaları. Haritayı sürükleyin, yakınlaştırın ve zaman kaydırıcısıyla yüzyıllar arasında gezinin."
-        image="/images/atlas.jpg"
         crumbs={[{ label: "Harita" }]}
         count={PLACES.length}
       />
-      <section className="mx-auto max-w-[1600px] px-5 pb-20 pt-10 md:px-10">
+      <section className="mx-auto max-w-[1440px] px-5 pb-20 pt-10 md:px-10">
         <Suspense fallback={<div className="py-24 text-center text-mist">Kafkasya Tarih Atlası yükleniyor...</div>}>
           <AtlasMap />
         </Suspense>

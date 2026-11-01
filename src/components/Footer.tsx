@@ -53,13 +53,13 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="eyebrow mb-5">Arşive Katkıda Bulunun</h3>
+          <h3 className="eyebrow mb-5">Dijital Koleksiyon</h3>
           <p className="text-sm leading-relaxed text-white/60">
-            Aile sandığınızda korunan bir fotoğraf, Osmanlıca veya Arapça bir mektup ya da 1944 sürgün tanıklığı mı var?
-            Asılları sizde kalmak üzere dijital hafızaya kaydedelim.
+            Birincil kaynak mektupları, kartografik haritaları, taş kule yerleşimlerini ve 330 tarihi şahsiyetin
+            biyografisini açık erişimli arşivimizde inceleyin.
           </p>
           <div className="mt-6">
-            <FiligreeLink href="/hakkinda#katki" size="sm">Belge Gönder</FiligreeLink>
+            <FiligreeLink href="/arsiv" size="sm">Arşivi Keşfet</FiligreeLink>
           </div>
         </div>
       </div>

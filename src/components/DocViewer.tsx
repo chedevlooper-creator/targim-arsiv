@@ -3,8 +3,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Check, ChevronLeft, ChevronRight, Copy, Download, Maximize2, Minus, Plus, X } from "lucide-react";
-import type { ArchiveDoc } from "@/lib/data";
+import {
+  Check,
+  ChevronLeft,
+  ChevronRight,
+  Copy,
+  Download,
+  ExternalLink,
+  Maximize2,
+  Minus,
+  Plus,
+  X,
+} from "lucide-react";
+import { formatDocCitation, type ArchiveDoc } from "@/lib/data";
 
 export function DocViewer({
   doc,
@@ -27,7 +38,7 @@ export function DocViewer({
   }, []);
 
   const copyCitation = () => {
-    const cite = `${doc.title} (${doc.dateLabel}), ${doc.source}, Katalog No: ${doc.catalogNo}, Targim Archive Dijital Koleksiyonu.`;
+    const cite = formatDocCitation(doc);
     navigator.clipboard?.writeText(cite);
     setCopied(true);
     setTimeout(() => setCopied(false), 2200);
@@ -121,6 +132,14 @@ export function DocViewer({
           {copied ? <Check size={14} className="text-gold-light" /> : <Copy size={14} />}
           {copied ? "Künye Kopyalandı" : "Kaynak Göster"}
         </button>
+        <a
+          href={doc.sourceUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-glass"
+        >
+          <ExternalLink size={14} /> Orijinal Arşiv Kaynağı
+        </a>
       </div>
 
       {/* Tam Ekran Işıklı Masa */}

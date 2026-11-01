@@ -16,7 +16,6 @@ export default function KulturPage() {
         eyebrow="Somut ve Somut Olmayan Miras"
         title="Kültür ve Yaşam"
         subtitle="Nohçalla ve Ezdel görgü yasalarından savatlı gümüş işçiliğine, taş kulelerden üç telli pondar ezgilerine Kafkas dağ kültürünün dokusu."
-        image="/images/kultur.jpg"
         crumbs={[{ label: "Kültür" }]}
         count={CULTURE_ITEMS.length}
       />

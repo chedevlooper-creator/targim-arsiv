@@ -46,16 +46,17 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Aldı",
     "deathPlace": "Şlisselburg Kalesi",
     "center": "Aldı, Sunja Havzası",
-    "image": "/images/people/seyh-mansur.webp",
+    "image": "/images/people/seyh-mansur.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/seyh-mansur.webp",
+        "src": "/images/people/seyh-mansur.webp?v=4",
         "caption": "Şeyh Mansur (1760–1794)"
       }
     ],
     "docs": [
-      "kafkas-atlasi",
-      "kafkasya-haritasi-1871"
+      "sheikh-mansur-1787-winkler-harita-gravuru",
+      "spencer-seyh-mansur-evi-gravuru-1838",
+      "baddeley-russian-conquest-of-the-caucasus-1908"
     ],
     "summary": "Asıl adı Uşurma. 1785’te başlattığı birlik ve direniş hareketiyle Kuzey Kafkasya halklarını ilk kez ortak bir siyasi ve manevi sancak etrafında topladı.",
     "bio": [
@@ -79,15 +80,17 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Mayurtup",
     "deathPlace": "Çeçenya",
     "center": "Şali, Mayurtup",
-    "image": "/images/people/beybulat-taymiyev.webp",
+    "image": "/images/people/beybulat-taymiyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/beybulat-taymiyev.webp",
+        "src": "/images/people/beybulat-taymiyev.webp?v=4",
         "caption": "Beybulat Taymiyev (1779–1831)"
       }
     ],
     "docs": [
-      "kafkas-atlasi"
+      "dubois-kafkasya-genel-haritasi-1843",
+      "kucuk-cecenya-askeri-topografya-haritasi-1848",
+      "baddeley-russian-conquest-of-the-caucasus-1908"
     ],
     "summary": "19. yüzyılın ilk çeyreğinde Çeçen toplumunu ortak bir meclis çatısı altında birleştirmeye çalışan mahir komutan ve diplomat.",
     "bio": [
@@ -110,16 +113,17 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Endirey",
     "deathPlace": "Çeçenya",
     "center": "Sayasan, İçkeriya",
-    "image": "/images/people/tasav-haci.webp",
+    "image": "/images/people/tasav-haci.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/tasav-haci.webp",
+        "src": "/images/people/tasav-haci.webp?v=4",
         "caption": "Taşav Hacı Endireyevski (1770–1843)"
       }
     ],
     "docs": [
-      "samil-donemi-mektup",
-      "imamet-dergisi-notlari"
+      "imamet-askeri-surasi-protokolu-1832",
+      "meyer-dogu-kafkasya-samil-haritasi-1856",
+      "baddeley-russian-conquest-of-the-caucasus-1908"
     ],
     "summary": "İmamet hareketinin Çeçenya’da kök salmasını sağlayan büyük alim ve stratejist; Şeyh Şamil’in erken dönemdeki en güçlü müttefiki ve baş naibi.",
     "bio": [
@@ -142,10 +146,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Tsentoroy",
     "deathPlace": "Çeçenya",
     "center": "Tsentoroy",
-    "image": "/images/people/suayip-molla.webp",
+    "image": "/images/people/suayip-molla.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/suayip-molla.webp",
+        "src": "/images/people/suayip-molla.webp?v=4",
         "caption": "Şuayip Molla Tsentoroyevski (1805–1844)"
       }
     ],
@@ -153,6 +157,11 @@ export const PEOPLE: Person[] = [
     "bio": [
       "1805 yılında Tsentoroy köyünde doğan Şuayip Molla, genç yaşta İslami ilimlerde derinleşmiş ve İmam Şamil’in Çeçenistan’daki en güvendiği askeri dehalardan biri olarak Miçik ve İçkerya Naibliği görevini üstlenmiştir.",
       "Mayıs 1842’de gerçekleşen tarihi İtçkeri (İçkerya) Ormanları Muharebesi’nde General Grabbe komutasındaki Çarlık ordusunu ağır bir bozguna uğratarak yüzlerce Rus askerini ve topçu bataryalarını etkisiz hale getirmiştir. Kafkasya İmamlığı’nın en parlak taktik zekâlarından biri olarak tarihe geçen Şuayip Molla, Mart 1844’te vatan müdafaası yolunda şehit düşmüştür."
+    ],
+    "docs": [
+      "lermontov-valerik-el-yazmasi-1840",
+      "imam-samil-naib-isa-mektubu-1842",
+      "meyer-dogu-kafkasya-samil-haritasi-1856"
     ]
   },
   {
@@ -166,10 +175,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/isa-gendargeno.webp",
+    "image": "/images/people/isa-gendargeno.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/isa-gendargeno.webp",
+        "src": "/images/people/isa-gendargeno.webp?v=4",
         "caption": "İsa Gendargeno (1795–1845)"
       }
     ],
@@ -177,6 +186,11 @@ export const PEOPLE: Person[] = [
     "bio": [
       "1795 yılında Gendargen teypinde dünyaya gelen İsa Gendargeno, 1840 yılında Çeçen halkının İmam Şamil’e biat ederek Kafkasya İmamlığı bayrağı altında birleşmesinde başrol oynayan büyük Çeçen komutanıdır.",
       "Büyük Çeçenistan Naibi olarak Valerik ve İtçkeri muharebelerinde ön saflarda çarpışmış; Temmuz 1845’te Kont Vorontsov’un 20 bin kişilik ordusunun imha edildiği ünlü Dargo Seferi’nde Çeçen birliklerine komuta etmiştir. Dargo zaferinin hemen ardından Temmuz 1845’te vatan topraklarını savunurken şehadet mertebesine ulaşan İsa Gendargeno, cesaretiyle kuşaklar boyu anılmıştır."
+    ],
+    "docs": [
+      "imam-samil-naib-isa-mektubu-1842",
+      "lermontov-valerik-el-yazmasi-1840",
+      "lermontov-valerik-muharebesi-suluboya-1840"
     ]
   },
   {
@@ -190,10 +204,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Avtury",
     "deathPlace": "Çeçenya",
     "center": "Avtury",
-    "image": "/images/people/ahmad-avturinski.webp",
+    "image": "/images/people/ahmad-avturinski.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ahmad-avturinski.webp",
+        "src": "/images/people/ahmad-avturinski.webp?v=4",
         "caption": "Ahmad Avturinski (1824–1852)"
       }
     ],
@@ -214,10 +228,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Tsentoroy",
     "deathPlace": "Çeçenya",
     "center": "Tsentoroy",
-    "image": "/images/people/dada-tsentoroyevski.webp",
+    "image": "/images/people/dada-tsentoroyevski.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/dada-tsentoroyevski.webp",
+        "src": "/images/people/dada-tsentoroyevski.webp?v=4",
         "caption": "Dada Tsentoroyevski (1800–1852)"
       }
     ],
@@ -238,10 +252,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Auh",
     "deathPlace": "Çeçenya",
     "center": "Auh",
-    "image": "/images/people/goytemir-auhovski.webp",
+    "image": "/images/people/goytemir-auhovski.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/goytemir-auhovski.webp",
+        "src": "/images/people/goytemir-auhovski.webp?v=4",
         "caption": "Goytemir Auhovski (1810–1853)"
       }
     ],
@@ -249,6 +263,11 @@ export const PEOPLE: Person[] = [
     "bio": [
       "1810 yılında doğan ve Tsentoroy teypinden olan Goytemir Auhovski, İmam Şamil’in Auh Naibi ve Kafkasya İmamlığı Süvari Kuvvetleri Başkomutanı olarak görev yapmış efsanevi bir askeri liderdir.",
       "Yamansu ve Yarıksı nehirleri arasında inşa ettirdiği ünlü ‘Goytemir Kapıları’ tahkimatıyla Çarlık ordularına geçit vermemiş; Kumuk düzlüğü ve Hasavyurt hattında düzenlediği yıldırım süvari akınlarıyla büyük zaferler kazanmıştır. İmam Şamil’in en güvendiği uç beylerinden biri olan Goytemir Auhovski, 1853 yılında Çarlık ordularına karşı cephede en ön safta çarpışırken şehadet mertebesine ulaşmıştır."
+    ],
+    "docs": [
+      "imam-samil-nisanlari-arapca-yazitli",
+      "imam-samil-kirmizi-dag-sancagi",
+      "yurt-auh-cecenleri-frunze-istasyonu-donus-1957"
     ]
   },
   {
@@ -262,10 +281,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Dey",
     "deathPlace": "Çeçenya",
     "center": "Dey, Çanti-Argun",
-    "image": "/images/people/bokka-deyski.webp",
+    "image": "/images/people/bokka-deyski.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/bokka-deyski.webp",
+        "src": "/images/people/bokka-deyski.webp?v=4",
         "caption": "Bokka Deyski (1810–1858)"
       }
     ],
@@ -286,10 +305,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/batuko-satoyski.webp",
+    "image": "/images/people/batuko-satoyski.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/batuko-satoyski.webp",
+        "src": "/images/people/batuko-satoyski.webp?v=4",
         "caption": "Batuko Şatoyski (1802–1859)"
       }
     ],
@@ -297,6 +316,10 @@ export const PEOPLE: Person[] = [
     "bio": [
       "1802 yılında doğan Batuko Şatoyski, dağlık Çeçenistan’ın merkezi olan Şatoy bölgesinin naibi, bilge devlet adamı ve Kafkasya İmamlığı’nın en tecrübeli komutanlarından biridir.",
       "İmam Şamil’in devlet divanında Çeçen halkını temsil etmiş; yirmi yılı aşkın süre boyunca Güney Çeçenistan dağlarındaki savunma hatlarını ve kale tahkimatlarını bizzat yönetmiştir. Kafkas Savaşları’nın en çetin evresi olan 1859 yılında vatan topraklarını savunurken şehadet mertebesine ulaşmıştır."
+    ],
+    "docs": [
+      "berje-cecenya-haritasi-1859",
+      "saroy-kule-yerlesimi-19-yuzyil-fotografi"
     ]
   },
   {
@@ -310,16 +333,17 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Benoy",
     "deathPlace": "Hasavyurt",
     "center": "Benoy, Gunib",
-    "image": "/images/people/baysangur-benoyski.webp",
+    "image": "/images/people/baysangur-benoyski.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/baysangur-benoyski.webp",
+        "src": "/images/people/baysangur-benoyski.webp?v=4",
         "caption": "Benoylu Baysungur (1794–1861)"
       }
     ],
     "docs": [
-      "samil-donemi-mektup",
-      "imamet-dergisi-notlari"
+      "baysangur-idam-emri-kafkas-ordusu-1861",
+      "imam-samil-nisanlari-arapca-yazitli",
+      "samil-ve-cecen-dagistan-naibleri-portreleri"
     ],
     "summary": "Çatışmalarda bir kolunu, bir bacağını ve bir gözünü kaybetmesine rağmen atına bağlanarak cepheye atılan, boyun eğmezliğin Çeçen hafızasındaki simgesi.",
     "bio": [
@@ -342,10 +366,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/talhig-salinski.webp",
+    "image": "/images/people/talhig-salinski.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/talhig-salinski.webp",
+        "src": "/images/people/talhig-salinski.webp?v=4",
         "caption": "Talhig Şalinski (1800–1861)"
       }
     ],
@@ -353,6 +377,11 @@ export const PEOPLE: Person[] = [
     "bio": [
       "1800 yılında doğan Talhig Şalinski, İmam Şamil’in Büyük Çeçenistan ve Şali Naibi olarak yirmi yılı aşkın süre Kafkasya İmamlığı’nın en geniş cephesini savunmuş büyük komutandır.",
       "Kafkasya İmamlığı’nda modern topçu birliklerinin kurulmasına öncülük etmiş; savaşlarda aldığı ağır yaralara rağmen Grozni ve Şali arasındaki Rus kalelerine karşı yüzlerce harekât yönetmiştir. Ömrünü Kafkasya’nın hürriyetine adayan Talhig Şalinski, 1861 yılında vatan mücadelesinin sönmeyen meşalesi olarak hayata gözlerini yummuştur."
+    ],
+    "docs": [
+      "gagarin-sali-ovasi-orman-kesimi-1847",
+      "imam-samil-nisanlari-arapca-yazitli",
+      "samil-ve-cecen-dagistan-naibleri-portreleri"
     ]
   },
   {
@@ -366,10 +395,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Benoy",
     "deathPlace": "Çeçenya",
     "center": "Benoy",
-    "image": "/images/people/soltamurad-benoyevski.webp",
+    "image": "/images/people/soltamurad-benoyevski.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/soltamurad-benoyevski.webp",
+        "src": "/images/people/soltamurad-benoyevski.webp?v=4",
         "caption": "Soltamurad Benoyevski (1807–1878)"
       }
     ],
@@ -377,6 +406,10 @@ export const PEOPLE: Person[] = [
     "bio": [
       "1807 yılında Benoy’da doğan Soltamurad Benoyevski, 1859 sonrasında Baysangur Benoyski ile birlikte Çeçenistan dağlarında direniş sancağını yeniden yükselten en önemli askeri önderlerden biridir.",
       "1860–1861 Benoy ayaklanmasında ve 1877 Büyük Çeçen-Dağıstan Kıyamı’nda Alibek-Hacı Aldamov ve Uma Duyev ile omuz omuza çarpışarak Çarlık garnizonlarına ağır darbeler indirmiştir. 70 yaşını aşmış olmasına rağmen 1877–1878 kışında karlı Kafkas dağlarında Rus kuşatmasına teslim olmayarak son nefesine kadar çarpışmış ve şehit düşmüştür."
+    ],
+    "docs": [
+      "baysangur-idam-emri-kafkas-ordusu-1861",
+      "terskaya-oblast-etnografya-haritasi-1892"
     ]
   },
   {
@@ -390,10 +423,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Zumsoy",
     "deathPlace": "Grozni",
     "center": "Zumsoy, Argun Vadisi",
-    "image": "/images/people/uma-duyev.webp",
+    "image": "/images/people/uma-duyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/uma-duyev.webp",
+        "src": "/images/people/uma-duyev.webp?v=4",
         "caption": "Uma Duyev (1809–1878)"
       }
     ],
@@ -401,6 +434,11 @@ export const PEOPLE: Person[] = [
     "bio": [
       "1809 yılında Argun vadisinin sarp Zumsoy bölgesinde doğan Uma Duyev, İmam Şamil’in Zumsoy Naibi olarak görev yapmış ve Şamil sonrasında da Baysangur ile birlikte direnişi sürdürmüştür.",
       "Sürgünden döndükten sonra, 70 yaşına yaklaşmışken 1877 Büyük Çeçen Kıyamı’na katılarak Argun ve Şatoy dağlarındaki halk güçlerine yeniden komuta etmiştir. 9 Mart 1878 tarihinde Grozni’de oğlu Dadaş ve silah arkadaşlarıyla birlikte Çarlık mahkemesinin idam sehpasında boyun eğmeden şehadet mertebesine ulaşmıştır."
+    ],
+    "docs": [
+      "zumsoy-epigrafik-tas-yaziti",
+      "berje-cecenya-haritasi-1859",
+      "samil-ve-cecen-dagistan-naibleri-portreleri"
     ]
   },
   {
@@ -414,15 +452,17 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Simsir",
     "deathPlace": "Grozni",
     "center": "Simsir, Vedeno",
-    "image": "/images/people/alibek-haci.webp",
+    "image": "/images/people/alibek-haci.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/alibek-haci.webp",
+        "src": "/images/people/alibek-haci.webp?v=4",
         "caption": "Alibek Hacı Aldamov (1850–1878)"
       }
     ],
     "docs": [
-      "kafkasya-haritasi-1871"
+      "berje-cecenya-haritasi-1859",
+      "terskaya-oblast-etnografya-haritasi-1892",
+      "musa-kunduhov-1865-muhaceret-arsiv-portresi"
     ],
     "summary": "Henüz 27 yaşındayken 1877–1878 Osmanlı-Rus Harbi sırasında İçkeriya ormanlarında imam seçilerek Çeçenya ve Dağıstan’daki büyük kıyamı yöneten önder.",
     "bio": [
@@ -442,16 +482,17 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Harachoy",
     "deathPlace": "Şali yakınları",
     "center": "Harachoy, Assa ve Argun Vadileri",
-    "image": "/images/people/zelimhan-haracoyn.webp",
+    "image": "/images/people/zelimhan-haracoyn.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/zelimhan-haracoyn.webp",
+        "src": "/images/people/zelimhan-haracoyn.webp?v=4",
         "caption": "Zelimhan Guşmazukayev (Harachoyski) (1872–1913)"
       }
     ],
     "docs": [
-      "targim-kuleleri-fotografi",
-      "atli-birlik-fotografi"
+      "abrek-zelimhan-haracoylu-arsiv-fotografi-1913",
+      "terskaya-oblast-etnografya-haritasi-1892",
+      "george-kennan-cecenler-fotografi-1870"
     ],
     "summary": "Çarlık idaresinin keyfi cezalarına karşı on iki yıl boyunca sarp dağlardan meydan okuyan, yoksullara dağıttığı adaletle Kafkas folkloruna geçen abrek.",
     "bio": [
@@ -471,10 +512,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Zandak-Ara",
     "deathPlace": "Grozni",
     "center": "Nadtereçni, Çeçenya",
-    "image": "/images/people/deni-arsanov.webp",
+    "image": "/images/people/deni-arsanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/deni-arsanov.webp",
+        "src": "/images/people/deni-arsanov.webp?v=4",
         "caption": "Şeyh Deni Arsanov (1851–1917)"
       }
     ],
@@ -482,6 +523,11 @@ export const PEOPLE: Person[] = [
     "bio": [
       "1851 yılında Çeçenistan’ın Nadtereçni bölgesindeki Zandak-Ara köyünde, köklü Nohçi Enganoy taypına mensup bir ailede doğan Şeyh Deni Arsanov, Kuzey Kafkasya’nın en büyük Nakşibendi şeyhi ve manevi önderlerindendir.",
       "Çarlık Rusyası’nın baskılarına boyun eğmeyerek Çeçen ve İnguş halklarının dinî, millî ve toplumsal birliğini sağlamış; binlerce müridiyle Kafkasya dağlılarının hukukunu tavizsiz biçimde korumuştur. 1917 ihtilali sonrasında baş gösteren Rus Kazak saldırılarına karşı halkını korumak için gittiği Grozni’de, 27 Aralık 1917 tarihinde kurulan hain pusuda müritleriyle birlikte çatışarak şehit düşmüştür."
+    ],
+    "docs": [
+      "kafkas-yerli-suvari-tugayi-subaylari-1914",
+      "daglilar-cumhuriyeti-diplomatik-pasaport-1918",
+      "tapa-cermoyev-resmi-mektubu-1918"
     ]
   },
   {
@@ -495,10 +541,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hamid-molla.webp",
+    "image": "/images/people/hamid-molla.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/hamid-molla.webp",
+        "src": "/images/people/hamid-molla.webp?v=4",
         "caption": "Hamid-Molla Mustapayev (1897–1929)"
       }
     ],
@@ -506,6 +552,10 @@ export const PEOPLE: Person[] = [
     "bio": [
       "1897 yılında Çeçenistan’ın dağlık bölgesinde doğan İslam âlimi Hamid-Molla Mustapayev, Bolşevik rejiminin camileri kapatma, âlimleri tutuklama ve zorla kolektifleştirme politikalarına karşı halk direnişinin başına geçmiştir.",
       "1929 yılında Şali, Goity ve Benoy bölgelerinde başlayan büyük Çeçen ayaklanmasına liderlik ederek Kızıl Ordu ve OGPU tümenlerine karşı vatanını ve inancını savunmuştur. 18 Aralık 1929 tarihinde Sovyet birlikleriyle girilen çetin muharebede silah arkadaşlarıyla birlikte son mermisine kadar çarpışarak şehit düşmüştür."
+    ],
+    "docs": [
+      "kuzey-kafkasya-emirligi-100-ruble-vedeno-1919",
+      "daglilar-cumhuriyeti-kuban-dostluk-antlasmasi-1919"
     ]
   },
   {
@@ -519,10 +569,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Şali",
     "deathPlace": "Çeçenya",
     "center": "Şali",
-    "image": "/images/people/sita-istamulov.webp",
+    "image": "/images/people/sita-istamulov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/sita-istamulov.webp",
+        "src": "/images/people/sita-istamulov.webp?v=4",
         "caption": "Şita İstamulov (1887–1931)"
       }
     ],
@@ -530,6 +580,11 @@ export const PEOPLE: Person[] = [
     "bio": [
       "1887 yılında Şali’de doğan Şita İstamulov, Kuzey Kafkasya Emirliği’nde Uzun Hacı’nın komutanlarından biri olarak görev yapmış ve 1929–1930 yıllarında Sovyet zulmüne karşı en büyük Çeçen kıyamını başlatmıştır.",
       "Şali’yi ele geçirip Kızıl Ordu’nun 28. Dağ Tümeni’ni geri püskürttükten sonra, Moskova yönetimine Çeçen halkının dinî ve millî özerkliğinin tanınmasını şart koşan tarihi ültimatomu göndermiştir. Sovyet yönetiminin barış ve af vaadiyle imzaladığı anlaşmaya rağmen, 1931 sonbaharında GPU tarafından kurulan hain pusuda tek başına çarpışarak şehadet mertebesine ulaşmıştır."
+    ],
+    "docs": [
+      "kuzey-kafkasya-emirligi-100-ruble-vedeno-1919",
+      "serlo-cecence-gazete-1926",
+      "cecen-ingus-assc-idari-haritasi-1937"
     ]
   },
   {
@@ -543,10 +598,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Şatoy",
     "deathPlace": "Çeçenya",
     "center": "Şatoy",
-    "image": "/images/people/mayrbek-seripov.webp",
+    "image": "/images/people/mayrbek-seripov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/mayrbek-seripov.webp",
+        "src": "/images/people/mayrbek-seripov.webp?v=4",
         "caption": "Mayrbek Şeripov (1905–1942)"
       }
     ],
@@ -554,6 +609,10 @@ export const PEOPLE: Person[] = [
     "bio": [
       "1905 yılında Şatoy’da köklü bir Çeçen ailesinde doğan hukukçu Mayrbek Şeripov (efsanevi komutan Aslanbek Şeripov’un kardeşi), Stalin rejiminin Çeçen halkına yönelik NKVD terörüne karşı 1941’de dağlara çıkmıştır.",
       "Hasan İsrailov ile güçlerini birleştirerek Çeçen-İnguş Milli Kurtuluş Hareketi’ni yönetmiş; Şatoy, İtum-Kale ve Himoy bölgelerinde Sovyet iktidarını devirerek dağlık Çeçenistan’ı özgürleştirmiştir. 7 Kasım 1942’de NKVD özel birliklerinin ağır kuşatmasında teslim olmayı reddederek son nefesine kadar çarpışmış ve şehit düşmüştür."
+    ],
+    "docs": [
+      "serlo-cecence-gazete-1926",
+      "mercimek-operasyonu-1944-sevk-haritasi"
     ]
   },
   {
@@ -567,10 +626,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Naşha",
     "deathPlace": "Çeçenya",
     "center": "Galançoj",
-    "image": "/images/people/hasan-israilov.webp",
+    "image": "/images/people/hasan-israilov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/hasan-israilov.webp",
+        "src": "/images/people/hasan-israilov.webp?v=4",
         "caption": "Hasan İsrailov (1910–1944)"
       }
     ],
@@ -578,6 +637,11 @@ export const PEOPLE: Person[] = [
     "bio": [
       "1910 yılında Çeçenistan’ın dağlık Galançoj bölgesindeki Naşha köyünde doğan şair, gazeteci ve hukukçu Hasan İsrailov, Sovyet rejiminin Kafkasya’daki zulmünü belgeledikten sonra Şubat 1940’ta Galançoj dağlarında büyük Çeçen direnişini başlatmıştır.",
       "Beş yıl boyunca Kafkas dağlarında Geçici Halk Devrimci Hükümeti’ni kurarak Sovyet ordularına ve NKVD tümenlerine karşı 5 binden fazla savaşçıyla bağımsızlık mücadelesi yürütmüştür. Şubat 1944 Sürgünü sonrasında da dağları terk etmeyen Hasan İsrailov, 25 Aralık 1944’te kuşatıldığı mağarada asla teslim olmayarak çatışmada şehit düşmüştür."
+    ],
+    "docs": [
+      "cecen-ingus-assc-idari-haritasi-1937",
+      "mercimek-operasyonu-1944-sevk-haritasi",
+      "grozni-oblasti-1949-tasfiye-haritasi"
     ]
   },
   {
@@ -591,10 +655,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Gaten-Kale",
     "deathPlace": "Benoy",
     "center": "Gaten-Kale, Şatoy",
-    "image": "/images/people/hasuha-magomadov.webp",
+    "image": "/images/people/hasuha-magomadov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/hasuha-magomadov.webp",
+        "src": "/images/people/hasuha-magomadov.webp?v=4",
         "caption": "Hasuha Magomadov (1907–1976)"
       }
     ],
@@ -602,6 +666,11 @@ export const PEOPLE: Person[] = [
     "bio": [
       "1907 yılında Şatoy’un Gaten-Kale köyünde doğan Hasuha Magomadov, 1939 yılında dağlara çıkarak tam 37 yıl boyunca Sovyet İmparatorluğu’nun ordularına, NKVD ve KGB birliklerine tek başına meydan okuyan ‘Son Abrek’tir.",
       "1940–1944 yıllarında Hasan İsrailov’un saflarında çarpışmış, 1944 Çeçen sürgünü sırasında ıssız kalan anavatan dağlarını 13 yıl boyunca terk etmeyerek işgalcilerden hesap sormuştur. 28 Mart 1976’da, 69 yaşında ağır hasta haldeyken Benoy dağlarında yüzlerce KGB ve Sovyet askerinin kuşatmasında tabancasıyla çarpışarak şehadet mertebesine ulaşmıştır."
+    ],
+    "docs": [
+      "mercimek-operasyonu-1944-sevk-haritasi",
+      "vedomosti-1957-cecen-ingus-assc-iade-kararnamesi",
+      "gucan-kale-mimari-rolove-cizimi-1960"
     ]
   },
   {
@@ -615,10 +684,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hamzat-hankara.webp",
+    "image": "/images/people/hamzat-hankara.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/hamzat-hankara.webp",
+        "src": "/images/people/hamzat-hankara.webp?v=4",
         "caption": "Hamzat Hankarov (1964–1994)"
       }
     ],
@@ -639,10 +708,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Grozni",
     "center": "Çeçenya",
-    "image": "/images/people/umalat-dasayev.webp",
+    "image": "/images/people/umalat-dasayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/umalat-dasayev.webp",
+        "src": "/images/people/umalat-dasayev.webp?v=4",
         "caption": "Umalat Daşayev (1956–1994)"
       }
     ],
@@ -663,10 +732,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Grozni",
     "center": "Çeçenya",
-    "image": "/images/people/apti-tokayev.webp",
+    "image": "/images/people/apti-tokayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/apti-tokayev.webp",
+        "src": "/images/people/apti-tokayev.webp?v=4",
         "caption": "Apti Tokayev (1960–1995)"
       }
     ],
@@ -687,10 +756,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Yalhoroy",
     "deathPlace": "Gekhi-Çu",
     "center": "Yalhoroy",
-    "image": "/images/people/cevher-dudayev.webp",
+    "image": "/images/people/cevher-dudayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/cevher-dudayev.webp",
+        "src": "/images/people/cevher-dudayev.webp?v=4",
         "caption": "Cevher Dudayev (1944–1996)"
       }
     ],
@@ -698,6 +767,11 @@ export const PEOPLE: Person[] = [
     "bio": [
       "15 Şubat 1944’te, Çeçen sürgününden yalnızca birkaç gün önce Yalhoj köyünde doğan ve çocukluğu Kazakistan bozkırlarında sürgünde geçen Cevher Dudayev, Sovyet Hava Kuvvetleri’nde stratejik bombardıman tümeni komutanlığına yükselmiş ilk Müslüman Çeçen tümgeneraldir.",
       "1990’da Estonya halkının bağımsızlık hareketini bastırma emrini reddederek vatanına dönmüş ve 1991’de Çeçen İçkerya Cumhuriyeti’nin ilk cumhurbaşkanı seçilerek bağımsızlığı ilan etmiştir. 1994–1996 Birinci Çeçen-Rus Savaşı’nda milletine başkomutanlık yapan Cevher Dudayev, 21 Nisan 1996’da Gekhi-Çu köyünde uydu telefonu sinyali üzerinden düzenlenen füze saldırısında şehit düşmüştür."
+    ],
+    "docs": [
+      "vedomosti-1957-cecen-ingus-assc-iade-kararnamesi",
+      "tsotsi-yurt-cecen-latin-sokak-tabelasi-1992",
+      "cecen-cumhuriyeti-ickeriya-pasaportu-1994"
     ]
   },
   {
@@ -711,10 +785,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Gekhi",
     "center": "Çeçenya",
-    "image": "/images/people/dokka-mahayev.webp",
+    "image": "/images/people/dokka-mahayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/dokka-mahayev.webp",
+        "src": "/images/people/dokka-mahayev.webp?v=4",
         "caption": "Dokka Mahayev (1955–1996)"
       }
     ],
@@ -735,10 +809,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/nurdi-bajiyev.webp",
+    "image": "/images/people/nurdi-bajiyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/nurdi-bajiyev.webp",
+        "src": "/images/people/nurdi-bajiyev.webp?v=4",
         "caption": "Nurdi Bajiyev (1964–1997)"
       }
     ],
@@ -759,10 +833,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Grozni",
     "center": "Çeçenya",
-    "image": "/images/people/leca-hultigov.webp",
+    "image": "/images/people/leca-hultigov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/leca-hultigov.webp",
+        "src": "/images/people/leca-hultigov.webp?v=4",
         "caption": "Leça Hultıgov (1972–1998)"
       }
     ],
@@ -783,10 +857,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Bamut",
     "deathPlace": "Çeçenya",
     "center": "Bamut",
-    "image": "/images/people/ruslan-hayhoroyev.webp",
+    "image": "/images/people/ruslan-hayhoroyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ruslan-hayhoroyev.webp",
+        "src": "/images/people/ruslan-hayhoroyev.webp?v=4",
         "caption": "Ruslan Hayhoroyev (1963–1999)"
       }
     ],
@@ -807,10 +881,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Urus-Martan",
     "deathPlace": "Çeçenya",
     "center": "Urus-Martan",
-    "image": "/images/people/huta-ahmadov.webp",
+    "image": "/images/people/huta-ahmadov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/huta-ahmadov.webp",
+        "src": "/images/people/huta-ahmadov.webp?v=4",
         "caption": "Huta Ahmadov (1972–1999)"
       }
     ],
@@ -831,10 +905,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Şalaji",
     "deathPlace": "Çeçenya",
     "center": "Şalaji, Urus-Martan",
-    "image": "/images/people/magomed-yutayev.webp",
+    "image": "/images/people/magomed-yutayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/magomed-yutayev.webp",
+        "src": "/images/people/magomed-yutayev.webp?v=4",
         "caption": "Magomed Yutayev (Malış) (1980–1999)"
       }
     ],
@@ -855,10 +929,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Grozni",
     "center": "Çeçenya",
-    "image": "/images/people/isa-astamirov.webp",
+    "image": "/images/people/isa-astamirov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/isa-astamirov.webp",
+        "src": "/images/people/isa-astamirov.webp?v=4",
         "caption": "İsa Astamirov (1952–2000)"
       }
     ],
@@ -879,10 +953,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Grozni",
     "deathPlace": "Alhan-Kala",
     "center": "Grozni",
-    "image": "/images/people/leca-dudayev.webp",
+    "image": "/images/people/leca-dudayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/leca-dudayev.webp",
+        "src": "/images/people/leca-dudayev.webp?v=4",
         "caption": "Leça Dudayev (1961–2000)"
       }
     ],
@@ -903,10 +977,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Alhan-Kala",
     "center": "Çeçenya",
-    "image": "/images/people/aslambek-ismayilov.webp",
+    "image": "/images/people/aslambek-ismayilov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/aslambek-ismayilov.webp",
+        "src": "/images/people/aslambek-ismayilov.webp?v=4",
         "caption": "Aslambek İsmayilov (1962–2000)"
       }
     ],
@@ -927,10 +1001,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Auh",
     "deathPlace": "Alhan-Kala",
     "center": "Auh",
-    "image": "/images/people/hunkarpasa-israpilov.webp",
+    "image": "/images/people/hunkarpasa-israpilov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/hunkarpasa-israpilov.webp",
+        "src": "/images/people/hunkarpasa-israpilov.webp?v=4",
         "caption": "Hünkarpaşa İsrapilov (1967–2000)"
       }
     ],
@@ -951,10 +1025,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Urus-Martan",
     "deathPlace": "Şatoy",
     "center": "Urus-Martan",
-    "image": "/images/people/apti-ahmadov.webp",
+    "image": "/images/people/apti-ahmadov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/apti-ahmadov.webp",
+        "src": "/images/people/apti-ahmadov.webp?v=4",
         "caption": "Apti Ahmadov (1961–2000)"
       }
     ],
@@ -975,10 +1049,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Saadi-Kotar",
     "center": "Çeçenya",
-    "image": "/images/people/taus-bagurayev.webp",
+    "image": "/images/people/taus-bagurayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/taus-bagurayev.webp",
+        "src": "/images/people/taus-bagurayev.webp?v=4",
         "caption": "Taus Bagurayev (1964–2000)"
       }
     ],
@@ -999,10 +1073,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/abusupyan-movsayev.webp",
+    "image": "/images/people/abusupyan-movsayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/abusupyan-movsayev.webp",
+        "src": "/images/people/abusupyan-movsayev.webp?v=4",
         "caption": "Abusupyan Movsayev (1959–2000)"
       }
     ],
@@ -1023,10 +1097,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Şali",
     "deathPlace": "Moskova",
     "center": "Şali",
-    "image": "/images/people/ruslan-alihaciyev.webp",
+    "image": "/images/people/ruslan-alihaciyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ruslan-alihaciyev.webp",
+        "src": "/images/people/ruslan-alihaciyev.webp?v=4",
         "caption": "Ruslan Alihaciyev (1961–2000)"
       }
     ],
@@ -1047,10 +1121,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Grozni",
     "deathPlace": "Valerik",
     "center": "Grozni",
-    "image": "/images/people/dalhan-hojayev.webp",
+    "image": "/images/people/dalhan-hojayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/dalhan-hojayev.webp",
+        "src": "/images/people/dalhan-hojayev.webp?v=4",
         "caption": "Dalhan Hojayev (1961–2000)"
       }
     ],
@@ -1071,10 +1145,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Kazakistan",
     "deathPlace": "Starye Atagi",
     "center": "Kazakistan",
-    "image": "/images/people/ramzan-ahmadov.webp",
+    "image": "/images/people/ramzan-ahmadov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ramzan-ahmadov.webp",
+        "src": "/images/people/ramzan-ahmadov.webp?v=4",
         "caption": "Ramzan Ahmadov (1970–2001)"
       }
     ],
@@ -1095,10 +1169,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Alhan-Kala",
     "deathPlace": "Alhan-Kala",
     "center": "Alhan-Kala",
-    "image": "/images/people/arbi-barayev.webp",
+    "image": "/images/people/arbi-barayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/arbi-barayev.webp",
+        "src": "/images/people/arbi-barayev.webp?v=4",
         "caption": "Arbi Barayev (1973–2001)"
       }
     ],
@@ -1119,10 +1193,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/magomed-tsagarayev.webp",
+    "image": "/images/people/magomed-tsagarayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/magomed-tsagarayev.webp",
+        "src": "/images/people/magomed-tsagarayev.webp?v=4",
         "caption": "Magomed Tsagarayev (1975–2001)"
       }
     ],
@@ -1143,10 +1217,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/adam-umalatov.webp",
+    "image": "/images/people/adam-umalatov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/adam-umalatov.webp",
+        "src": "/images/people/adam-umalatov.webp?v=4",
         "caption": "Adam Umalatov (Aba) (1975–2001)"
       }
     ],
@@ -1167,10 +1241,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/emir-hattab.webp",
+    "image": "/images/people/emir-hattab.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/emir-hattab.webp",
+        "src": "/images/people/emir-hattab.webp?v=4",
         "caption": "Emir Hattab (1969–2002)"
       }
     ],
@@ -1191,10 +1265,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aydamir-abalayev.webp",
+    "image": "/images/people/aydamir-abalayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/aydamir-abalayev.webp",
+        "src": "/images/people/aydamir-abalayev.webp?v=4",
         "caption": "Aydamir Abalayev (1964–2002)"
       }
     ],
@@ -1215,10 +1289,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Kazakistan",
     "deathPlace": "Mesker-Yurt",
     "center": "Kazakistan",
-    "image": "/images/people/rizvan-ahmadov.webp",
+    "image": "/images/people/rizvan-ahmadov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/rizvan-ahmadov.webp",
+        "src": "/images/people/rizvan-ahmadov.webp?v=4",
         "caption": "Rizvan Ahmadov (1957–2002)"
       }
     ],
@@ -1239,10 +1313,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "İtum-Kale",
     "center": "Çeçenya",
-    "image": "/images/people/huseyin-isabayev.webp",
+    "image": "/images/people/huseyin-isabayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/huseyin-isabayev.webp",
+        "src": "/images/people/huseyin-isabayev.webp?v=4",
         "caption": "Hüseyin İsabayev (1960–2002)"
       }
     ],
@@ -1263,10 +1337,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Alleroy",
     "deathPlace": "Yekaterinburg",
     "center": "Alleroy",
-    "image": "/images/people/turpal-ali-atgeriyev.webp",
+    "image": "/images/people/turpal-ali-atgeriyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/turpal-ali-atgeriyev.webp",
+        "src": "/images/people/turpal-ali-atgeriyev.webp?v=4",
         "caption": "Turpal-Ali Atgeriyev (1969–2002)"
       }
     ],
@@ -1287,10 +1361,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Şali",
     "center": "Çeçenya",
-    "image": "/images/people/aslambek-abdulhaciyev.webp",
+    "image": "/images/people/aslambek-abdulhaciyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/aslambek-abdulhaciyev.webp",
+        "src": "/images/people/aslambek-abdulhaciyev.webp?v=4",
         "caption": "Aslambek Abdulhaciyev (1962–2002)"
       }
     ],
@@ -1311,10 +1385,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Urus-Martan",
     "deathPlace": "Grozni",
     "center": "Urus-Martan",
-    "image": "/images/people/zelimhan-ahmadov.webp",
+    "image": "/images/people/zelimhan-ahmadov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/zelimhan-ahmadov.webp",
+        "src": "/images/people/zelimhan-ahmadov.webp?v=4",
         "caption": "Zelimhan Ahmadov (1975–2002)"
       }
     ],
@@ -1335,10 +1409,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Argun",
     "deathPlace": "Çeçenya",
     "center": "Argun",
-    "image": "/images/people/movsar-barayev.webp",
+    "image": "/images/people/movsar-barayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/movsar-barayev.webp",
+        "src": "/images/people/movsar-barayev.webp?v=4",
         "caption": "Movsar Barayev (1979–2002)"
       }
     ],
@@ -1359,10 +1433,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Gudermes",
     "deathPlace": "Solikamsk",
     "center": "Gudermes",
-    "image": "/images/people/salman-raduyev.webp",
+    "image": "/images/people/salman-raduyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/salman-raduyev.webp",
+        "src": "/images/people/salman-raduyev.webp?v=4",
         "caption": "Salman Raduyev (1967–2002)"
       }
     ],
@@ -1383,10 +1457,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Argun",
     "deathPlace": "Çeçenya",
     "center": "Argun",
-    "image": "/images/people/muhammed-argunski.webp",
+    "image": "/images/people/muhammed-argunski.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/muhammed-argunski.webp",
+        "src": "/images/people/muhammed-argunski.webp?v=4",
         "caption": "Muhammed Argunski (Magomed Şovhalov) (1977–2002)"
       }
     ],
@@ -1407,10 +1481,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/baudi-bakuyev.webp",
+    "image": "/images/people/baudi-bakuyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/baudi-bakuyev.webp",
+        "src": "/images/people/baudi-bakuyev.webp?v=4",
         "caption": "Baudi Bakuyev (1965–2003)"
       }
     ],
@@ -1431,10 +1505,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Doha",
     "center": "Çeçenya",
-    "image": "/images/people/zelimhan-yandarbiyev.webp",
+    "image": "/images/people/zelimhan-yandarbiyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/zelimhan-yandarbiyev.webp",
+        "src": "/images/people/zelimhan-yandarbiyev.webp?v=4",
         "caption": "Zelimhan Yandarbiyev (1952–2004)"
       }
     ],
@@ -1442,6 +1516,11 @@ export const PEOPLE: Person[] = [
     "bio": [
       "12 Eylül 1952’de Kazakistan sürgününde doğan şair, edebiyatçı ve fikir adamı Zelimhan Yandarbiyev, 1989’dan itibaren Çeçen milli uyanış hareketinin öncülüğünü yapmış ve Cevher Dudayev’in Devlet Başkan Yardımcısı olmuştur.",
       "Nisan 1996’da Dudayev’in şehadetinin ardından Çeçen İçkerya Cumhuriyeti Cumhurbaşkanlığı görevini üstlenmiş; Mayıs 1996’da Kremlin’de Yeltsin’in karşısına oturup eşit bir devlet başkanı vakarıyla ateşkesi kabul ettirmiş ve Ağustos 1996 Grozni zaferine başkomutanlık yapmıştır. 13 Şubat 2004’te cuma namazı dönüşünde Katar’ın başkenti Doha’da Rus istihbarat ajanlarının aracına yerleştirdiği bombayla düzenlenen suikast sonucu şehit düşmüştür."
+    ],
+    "docs": [
+      "tsotsi-yurt-cecen-latin-sokak-tabelasi-1992",
+      "cecen-cumhuriyeti-ickeriya-pasaportu-1994",
+      "matsiyev-cecence-rusca-sozluk-1961"
     ]
   },
   {
@@ -1455,10 +1534,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Vedeno",
     "center": "Çeçenya",
-    "image": "/images/people/hamzat-tazabayev.webp",
+    "image": "/images/people/hamzat-tazabayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/hamzat-tazabayev.webp",
+        "src": "/images/people/hamzat-tazabayev.webp?v=4",
         "caption": "Hamzat Tazabayev (1978–2004)"
       }
     ],
@@ -1479,10 +1558,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Saadi-Kotar",
     "deathPlace": "Dağıstan",
     "center": "Saadi-Kotar",
-    "image": "/images/people/ruslan-gelayev.webp",
+    "image": "/images/people/ruslan-gelayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ruslan-gelayev.webp",
+        "src": "/images/people/ruslan-gelayev.webp?v=4",
         "caption": "Ruslan (Hamzat) Gelayev (1964–2004)"
       }
     ],
@@ -1503,10 +1582,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ebu-el-velid.webp",
+    "image": "/images/people/ebu-el-velid.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ebu-el-velid.webp",
+        "src": "/images/people/ebu-el-velid.webp?v=4",
         "caption": "Ebu el-Velid (1967–2004)"
       }
     ],
@@ -1527,10 +1606,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Urus-Martan",
     "deathPlace": "Grozni",
     "center": "Urus-Martan",
-    "image": "/images/people/yunadi-turcayev.webp",
+    "image": "/images/people/yunadi-turcayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/yunadi-turcayev.webp",
+        "src": "/images/people/yunadi-turcayev.webp?v=4",
         "caption": "Yunadi Turçayev (1972–2005)"
       }
     ],
@@ -1551,10 +1630,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Kazakistan",
     "deathPlace": "Tolstoy-Yurt",
     "center": "Kazakistan",
-    "image": "/images/people/aslan-mashadov.webp",
+    "image": "/images/people/aslan-mashadov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/aslan-mashadov.webp",
+        "src": "/images/people/aslan-mashadov.webp?v=4",
         "caption": "Aslan (Halid) Mashadov (1951–2005)"
       }
     ],
@@ -1562,6 +1641,11 @@ export const PEOPLE: Person[] = [
     "bio": [
       "21 Eylül 1951’de Kazakistan sürgününde doğan ve Sovyet Ordusu’nda albay rütbesiyle en seçkin topçu alaylarına komuta eden Aslan Mashadov, 1992’de vatanına dönerek Çeçen Silahlı Kuvvetleri Genelkurmay Başkanı olmuştur.",
       "1994–1996 Birinci Çeçen-Rus Savaşı’nda Grozni savunmasının ve Ağustos 1996 Cihad Operasyonu’nun kurmay mimarı olmuş, Hasavyurt Barış Anlaşması’nı imzalamış ve Ocak 1997’de AGİT gözlemcileri eşliğinde yapılan demokratik seçimle cumhurbaşkanı seçilmiştir. İkinci savaş boyunca dağlardan ve cepheden ayrılmayan Cumhurbaşkanı Aslan Mashadov, 8 Mart 2005’te Tolstoy-Yurt’ta kuşatıldığı sığınakta esir düşmemek için son nefesine kadar direnerek şehit olmuştur."
+    ],
+    "docs": [
+      "cecen-cumhuriyeti-ickeriya-pasaportu-1994",
+      "grozni-kusatmasi-dua-eden-cecen-evstafiev-1995",
+      "kovalyov-grozni-insan-haklari-basin-toplantisi-1995"
     ]
   },
   {
@@ -1575,10 +1659,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Şali",
     "deathPlace": "Şali",
     "center": "Şali",
-    "image": "/images/people/rizvan-citigov.webp",
+    "image": "/images/people/rizvan-citigov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/rizvan-citigov.webp",
+        "src": "/images/people/rizvan-citigov.webp?v=4",
         "caption": "Rizvan Çitigov (1964–2005)"
       }
     ],
@@ -1599,10 +1683,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Kazakistan",
     "deathPlace": "Grozni",
     "center": "Kazakistan",
-    "image": "/images/people/vaha-arsanov.webp",
+    "image": "/images/people/vaha-arsanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/vaha-arsanov.webp",
+        "src": "/images/people/vaha-arsanov.webp?v=4",
         "caption": "Vaha Arsanov (1950–2005)"
       }
     ],
@@ -1623,10 +1707,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Alleroy",
     "deathPlace": "Çeçenya",
     "center": "Alleroy",
-    "image": "/images/people/ahmed-avdorhanov.webp",
+    "image": "/images/people/ahmed-avdorhanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ahmed-avdorhanov.webp",
+        "src": "/images/people/ahmed-avdorhanov.webp?v=4",
         "caption": "Ahmed Avdorhanov (1971–2005)"
       }
     ],
@@ -1647,10 +1731,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Argun",
     "deathPlace": "Argun",
     "center": "Argun",
-    "image": "/images/people/abdul-halim-sadulayev.webp",
+    "image": "/images/people/abdul-halim-sadulayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/abdul-halim-sadulayev.webp",
+        "src": "/images/people/abdul-halim-sadulayev.webp?v=4",
         "caption": "Şeyh Abdul-Halim Sadulayev (1966–2006)"
       }
     ],
@@ -1671,10 +1755,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Dışne-Vedeno",
     "deathPlace": "Ekajevo",
     "center": "Dışne-Vedeno",
-    "image": "/images/people/samil-basayev.webp",
+    "image": "/images/people/samil-basayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/samil-basayev.webp",
+        "src": "/images/people/samil-basayev.webp?v=4",
         "caption": "Şamil Basayev (1965–2006)"
       }
     ],
@@ -1695,10 +1779,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Agişbatoy",
     "deathPlace": "Agişbatoy",
     "center": "Agişbatoy",
-    "image": "/images/people/suleyman-elmurzayev.webp",
+    "image": "/images/people/suleyman-elmurzayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/suleyman-elmurzayev.webp",
+        "src": "/images/people/suleyman-elmurzayev.webp?v=4",
         "caption": "Süleyman Elmurzayev (Emir Hayrullah) (1974–2007)"
       }
     ],
@@ -1719,10 +1803,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Dzhalka",
     "deathPlace": "Grozni",
     "center": "Dzhalka",
-    "image": "/images/people/rustam-basayev.webp",
+    "image": "/images/people/rustam-basayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/rustam-basayev.webp",
+        "src": "/images/people/rustam-basayev.webp?v=4",
         "caption": "Rustam Basayev (Emir Ebu Bekir) (1975–2007)"
       }
     ],
@@ -1743,10 +1827,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/usman-muntsigov.webp",
+    "image": "/images/people/usman-muntsigov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/usman-muntsigov.webp",
+        "src": "/images/people/usman-muntsigov.webp?v=4",
         "caption": "Usman Muntsigov (Emir Usman) (1975–2010)"
       }
     ],
@@ -1767,10 +1851,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "İnguşetya",
     "center": "Çeçenya",
-    "image": "/images/people/supyan-abdullayev.webp",
+    "image": "/images/people/supyan-abdullayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/supyan-abdullayev.webp",
+        "src": "/images/people/supyan-abdullayev.webp?v=4",
         "caption": "Supyan Abdullayev (1956–2011)"
       }
     ],
@@ -1791,10 +1875,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Alleroy",
     "deathPlace": "Galaytı",
     "center": "Alleroy",
-    "image": "/images/people/zaurbek-avdorhanov.webp",
+    "image": "/images/people/zaurbek-avdorhanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/zaurbek-avdorhanov.webp",
+        "src": "/images/people/zaurbek-avdorhanov.webp?v=4",
         "caption": "Zaurbek Avdorhanov (1976–2012)"
       }
     ],
@@ -1815,10 +1899,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Elistanji",
     "deathPlace": "Vedeno",
     "center": "Elistanji, Vedeno",
-    "image": "/images/people/huseyin-gakayev.webp",
+    "image": "/images/people/huseyin-gakayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/huseyin-gakayev.webp",
+        "src": "/images/people/huseyin-gakayev.webp?v=4",
         "caption": "Hüseyin Gakayev (1970–2013)"
       }
     ],
@@ -1839,10 +1923,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Elistanji",
     "deathPlace": "Vedeno",
     "center": "Elistanji",
-    "image": "/images/people/muslim-gakayev.webp",
+    "image": "/images/people/muslim-gakayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/muslim-gakayev.webp",
+        "src": "/images/people/muslim-gakayev.webp?v=4",
         "caption": "Müslim Gakayev (1973–2013)"
       }
     ],
@@ -1863,10 +1947,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Göksun",
     "deathPlace": "Ankara",
     "center": "Göksun",
-    "image": "/images/people/medet-onlu.webp",
+    "image": "/images/people/medet-onlu.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/medet-onlu.webp",
+        "src": "/images/people/medet-onlu.webp?v=4",
         "caption": "Medet Önlü (1965–2013)"
       }
     ],
@@ -1887,10 +1971,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Harsenoy",
     "deathPlace": "Çeçenya",
     "center": "Harsenoy",
-    "image": "/images/people/doku-umarov.webp",
+    "image": "/images/people/doku-umarov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/doku-umarov.webp",
+        "src": "/images/people/doku-umarov.webp?v=4",
         "caption": "Dokka (Doku) Umarov (1964–2013)"
       }
     ],
@@ -1911,10 +1995,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Urus-Martan",
     "deathPlace": "Çeçenya",
     "center": "Urus-Martan",
-    "image": "/images/people/abdul-malik-mejidov.webp",
+    "image": "/images/people/abdul-malik-mejidov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/abdul-malik-mejidov.webp",
+        "src": "/images/people/abdul-malik-mejidov.webp?v=4",
         "caption": "Abdul-Malik Mejidov (1961–2013)"
       }
     ],
@@ -1935,10 +2019,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Yandi",
     "deathPlace": "Debaltseve",
     "center": "Yandi",
-    "image": "/images/people/isa-munayev.webp",
+    "image": "/images/people/isa-munayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/isa-munayev.webp",
+        "src": "/images/people/isa-munayev.webp?v=4",
         "caption": "İsa Munayev (1965–2015)"
       }
     ],
@@ -1959,10 +2043,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Duisi",
     "deathPlace": "Berlin",
     "center": "Duisi, Pankisi Vadisi",
-    "image": "/images/people/zelimhan-hangosvili.webp",
+    "image": "/images/people/zelimhan-hangosvili.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/zelimhan-hangosvili.webp",
+        "src": "/images/people/zelimhan-hangosvili.webp?v=4",
         "caption": "Zelimhan Hangoşvili (1979–2019)"
       }
     ],
@@ -1983,10 +2067,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Katayama (Grozni)",
     "center": "Çeçenya",
-    "image": "/images/people/aslan-butukayev.webp",
+    "image": "/images/people/aslan-butukayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/aslan-butukayev.webp",
+        "src": "/images/people/aslan-butukayev.webp?v=4",
         "caption": "Aslan Bütükayev (Emir Hamzat) (1974–2021)"
       }
     ],
@@ -2007,10 +2091,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ali-mitayev.webp",
+    "image": "/images/people/ali-mitayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ali-mitayev.webp",
+        "src": "/images/people/ali-mitayev.webp?v=4",
         "caption": "Şeyh Ali Mitayev (1881–1925)"
       }
     ],
@@ -2031,10 +2115,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ibrahim-culikov.webp",
+    "image": "/images/people/ibrahim-culikov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ibrahim-culikov.webp",
+        "src": "/images/people/ibrahim-culikov.webp?v=4",
         "caption": "İbrahim Çulikov (1891–1938)"
       }
     ],
@@ -2055,10 +2139,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/cavadhan-murtazaliyev.webp",
+    "image": "/images/people/cavadhan-murtazaliyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/cavadhan-murtazaliyev.webp",
+        "src": "/images/people/cavadhan-murtazaliyev.webp?v=4",
         "caption": "Cavadhan Murtazaliyev (1879–1944)"
       }
     ],
@@ -2079,10 +2163,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/imam-alimsultanov.webp",
+    "image": "/images/people/imam-alimsultanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/imam-alimsultanov.webp",
+        "src": "/images/people/imam-alimsultanov.webp?v=4",
         "caption": "İmam Alimsultanov (1957–1996)"
       }
     ],
@@ -2090,6 +2174,10 @@ export const PEOPLE: Person[] = [
     "bio": [
       "1957 yılında Kırgızistan sürgününde doğan ve Hasavyurt’ta yetişen İmam Alimsultanov, geleneksel Çeçen destanlarını (‘İlli’) modern direniş ruhuyla birleştirerek Çeçen halkının unutulmaz milli ozanı ve direniş sesi olmuştur.",
       "Birinci Çeçen-Rus Savaşı’nda (1994–1996) hem silahıyla hem de ‘Gazavat’, ‘Çeçenistan’ ve ‘Dağlılar’ marşlarıyla cepheden cepheye koşarak ateş hattındaki mücahitlere sarsılmaz bir moral aşılamış; Şehit Cumhurbaşkanı Cevher Dudayev tarafından ‘Koman Siy’ (Milletin Onuru) nişanıyla ödüllendirilmiştir. İstanbul’da yaralı Çeçen gazileri için verdiği konserlerden dönüşünde, 10 Kasım 1996 tarihinde Ukrayna’nın Odessa kentinde Rus istihbaratının düzenlediği suikast sonucu 39 yaşında şehit düşmüştür."
+    ],
+    "docs": [
+      "grozni-kusatmasi-dua-eden-cecen-evstafiev-1995",
+      "matsiyev-cecence-rusca-sozluk-1961"
     ]
   },
   {
@@ -2103,10 +2191,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ali-itayev.webp",
+    "image": "/images/people/ali-itayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ali-itayev.webp",
+        "src": "/images/people/ali-itayev.webp?v=4",
         "caption": "Ali İtayev (1968–1998)"
       }
     ],
@@ -2127,10 +2215,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/leci-islamov.webp",
+    "image": "/images/people/leci-islamov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/leci-islamov.webp",
+        "src": "/images/people/leci-islamov.webp?v=4",
         "caption": "Leci İslamov (‘Sakal’ / Boroda) (1962–2004)"
       }
     ],
@@ -2151,10 +2239,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/daud-ahmadov.webp",
+    "image": "/images/people/daud-ahmadov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/daud-ahmadov.webp",
+        "src": "/images/people/daud-ahmadov.webp?v=4",
         "caption": "Daud Ahmadov (1944–2004)"
       }
     ],
@@ -2175,10 +2263,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Gordali, Nojay-Yurt",
     "deathPlace": "—",
     "center": "Nojay-Yurt, Gudermes",
-    "image": "/images/people/mahran-saidov.webp",
+    "image": "/images/people/mahran-saidov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/mahran-saidov.webp",
+        "src": "/images/people/mahran-saidov.webp?v=4",
         "caption": "Mahran Saidov (Emir Mahran) (1975–Günümüz)"
       }
     ],
@@ -2199,10 +2287,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/tahir-batayev.webp",
+    "image": "/images/people/tahir-batayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/tahir-batayev.webp",
+        "src": "/images/people/tahir-batayev.webp?v=4",
         "caption": "Tahir Batayev (Emir Timur) (1973–2007)"
       }
     ],
@@ -2223,10 +2311,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aslan-izrailov.webp",
+    "image": "/images/people/aslan-izrailov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/aslan-izrailov.webp",
+        "src": "/images/people/aslan-izrailov.webp?v=4",
         "caption": "Aslan İzrailov (Emir Sawab) (1977–2009)"
       }
     ],
@@ -2247,10 +2335,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/islam-uspahaciyev.webp",
+    "image": "/images/people/islam-uspahaciyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/islam-uspahaciyev.webp",
+        "src": "/images/people/islam-uspahaciyev.webp?v=4",
         "caption": "İslam Uspahaciyev (1973–2009)"
       }
     ],
@@ -2271,10 +2359,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/amina-okuyeva.webp",
+    "image": "/images/people/amina-okuyeva.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/amina-okuyeva.webp",
+        "src": "/images/people/amina-okuyeva.webp?v=4",
         "caption": "Amina Okuyeva (1983–2017)"
       }
     ],
@@ -2295,10 +2383,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "İşhoy-Yurt, Gudermes",
     "deathPlace": "—",
     "center": "Gudermes, Doğu Cephesi",
-    "image": "/images/people/aslambek-vadalov.webp",
+    "image": "/images/people/aslambek-vadalov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/aslambek-vadalov.webp",
+        "src": "/images/people/aslambek-vadalov.webp?v=4",
         "caption": "Aslambek Vadalov (Emir Aslambek) (1971–Günümüz)"
       }
     ],
@@ -2319,10 +2407,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Buğaroy, İtum-Kale",
     "deathPlace": "—",
     "center": "İtum-Kale, Güneybatı Cephesi",
-    "image": "/images/people/tarhan-gaziyev.webp",
+    "image": "/images/people/tarhan-gaziyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/tarhan-gaziyev.webp",
+        "src": "/images/people/tarhan-gaziyev.webp?v=4",
         "caption": "Tarhan Gaziyev (Emir Tarhan) (1965–Günümüz)"
       }
     ],
@@ -2343,10 +2431,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/seyh-ahmed-edilov.webp",
+    "image": "/images/people/seyh-ahmed-edilov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/seyh-ahmed-edilov.webp",
+        "src": "/images/people/seyh-ahmed-edilov.webp?v=4",
         "caption": "Şeyh-Ahmed Edilov (1965–2000)"
       }
     ],
@@ -2367,10 +2455,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "—",
     "center": "Grozni, Argun",
-    "image": "/images/people/huseyin-ishanov.webp",
+    "image": "/images/people/huseyin-ishanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/huseyin-ishanov.webp",
+        "src": "/images/people/huseyin-ishanov.webp?v=4",
         "caption": "Hüseyin İshanov (1958–Günümüz)"
       }
     ],
@@ -2391,10 +2479,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/isa-muskiyev.webp",
+    "image": "/images/people/isa-muskiyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/isa-muskiyev.webp",
+        "src": "/images/people/isa-muskiyev.webp?v=4",
         "caption": "İsa Muskiyev (Emir Halid) (1974–2006)"
       }
     ],
@@ -2415,10 +2503,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/komutan-abdulmalik.webp",
+    "image": "/images/people/komutan-abdulmalik.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/komutan-abdulmalik.webp",
+        "src": "/images/people/komutan-abdulmalik.webp?v=4",
         "caption": "Komutan Abdulmalik (1975–2008)"
       }
     ],
@@ -2439,10 +2527,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ali-muskiyev.webp",
+    "image": "/images/people/ali-muskiyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ali-muskiyev.webp",
+        "src": "/images/people/ali-muskiyev.webp?v=4",
         "caption": "Ali Muskiyev (1987–2006)"
       }
     ],
@@ -2463,10 +2551,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ebu-hafs.webp",
+    "image": "/images/people/ebu-hafs.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ebu-hafs.webp",
+        "src": "/images/people/ebu-hafs.webp?v=4",
         "caption": "Emir Ebu Hafs el-Ürdüni (1973–2006)"
       }
     ],
@@ -2487,10 +2575,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/emir-muhenned.webp",
+    "image": "/images/people/emir-muhenned.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/emir-muhenned.webp",
+        "src": "/images/people/emir-muhenned.webp?v=4",
         "caption": "Emir Mühenned (Halid Yusuf) (1969–2011)"
       }
     ],
@@ -2511,10 +2599,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/vaha-canaraliyev.webp",
+    "image": "/images/people/vaha-canaraliyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/vaha-canaraliyev.webp",
+        "src": "/images/people/vaha-canaraliyev.webp?v=4",
         "caption": "Vaha Canaraliyev (Emir Velid) (1981–2008)"
       }
     ],
@@ -2535,10 +2623,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/sultan-hadisov.webp",
+    "image": "/images/people/sultan-hadisov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/sultan-hadisov.webp",
+        "src": "/images/people/sultan-hadisov.webp?v=4",
         "caption": "Sultan Hadisov (Emir Musa) (1968–2006)"
       }
     ],
@@ -2559,10 +2647,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ilman-estamirov.webp",
+    "image": "/images/people/ilman-estamirov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ilman-estamirov.webp",
+        "src": "/images/people/ilman-estamirov.webp?v=4",
         "caption": "İlman Estamirov (1977–2011)"
       }
     ],
@@ -2583,10 +2671,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ahmad-tevzaninski.webp",
+    "image": "/images/people/ahmad-tevzaninski.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ahmad-tevzaninski.webp",
+        "src": "/images/people/ahmad-tevzaninski.webp?v=4",
         "caption": "Ahmad Tevzaninski (Ebu-Cafar) (1983–2008)"
       }
     ],
@@ -2607,10 +2695,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/saydi-tevzaninski.webp",
+    "image": "/images/people/saydi-tevzaninski.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/saydi-tevzaninski.webp",
+        "src": "/images/people/saydi-tevzaninski.webp?v=4",
         "caption": "Saydi Tevzaninski (1985–2011)"
       }
     ],
@@ -2631,10 +2719,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/isa-izerhanov.webp",
+    "image": "/images/people/isa-izerhanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/isa-izerhanov.webp",
+        "src": "/images/people/isa-izerhanov.webp?v=4",
         "caption": "İsa İzerhanov (Kara İsa) (1968–2009)"
       }
     ],
@@ -2655,10 +2743,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/musa-muskiyev.webp",
+    "image": "/images/people/musa-muskiyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/musa-muskiyev.webp",
+        "src": "/images/people/musa-muskiyev.webp?v=4",
         "caption": "Musa Muskiyev (1980–1999)"
       }
     ],
@@ -2679,10 +2767,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/soyip-muskiyev.webp",
+    "image": "/images/people/soyip-muskiyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/soyip-muskiyev.webp",
+        "src": "/images/people/soyip-muskiyev.webp?v=4",
         "caption": "Şoyip Muskiyev (1967–2002)"
       }
     ],
@@ -2703,10 +2791,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/samil-muskiyev.webp",
+    "image": "/images/people/samil-muskiyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/samil-muskiyev.webp",
+        "src": "/images/people/samil-muskiyev.webp?v=4",
         "caption": "Şamil Muskiyev (1976–2005)"
       }
     ],
@@ -2727,10 +2815,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/murad-yusuphaciyev.webp",
+    "image": "/images/people/murad-yusuphaciyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/murad-yusuphaciyev.webp",
+        "src": "/images/people/murad-yusuphaciyev.webp?v=4",
         "caption": "Murad Yusuphaciyev (Emir Ebu Sayaf) (1978–2002)"
       }
     ],
@@ -2751,10 +2839,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/rabbani-halilov.webp",
+    "image": "/images/people/rabbani-halilov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/rabbani-halilov.webp",
+        "src": "/images/people/rabbani-halilov.webp?v=4",
         "caption": "Rabbani Halilov (1969–2007)"
       }
     ],
@@ -2775,10 +2863,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aldili-ali.webp",
+    "image": "/images/people/aldili-ali.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/aldili-ali.webp",
+        "src": "/images/people/aldili-ali.webp?v=4",
         "caption": "Aldılı Ali (1980–1996)"
       }
     ],
@@ -2799,10 +2887,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/abubakar-hamurzayev.webp",
+    "image": "/images/people/abubakar-hamurzayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/abubakar-hamurzayev.webp",
+        "src": "/images/people/abubakar-hamurzayev.webp?v=4",
         "caption": "Abubakar Hamurzayev (1975–2000)"
       }
     ],
@@ -2823,10 +2911,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ilyas-pasayev.webp",
+    "image": "/images/people/ilyas-pasayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ilyas-pasayev.webp",
+        "src": "/images/people/ilyas-pasayev.webp?v=4",
         "caption": "İlyas Paşayev (1973–2000)"
       }
     ],
@@ -2847,10 +2935,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/halid-yandurkayev.webp",
+    "image": "/images/people/halid-yandurkayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/halid-yandurkayev.webp",
+        "src": "/images/people/halid-yandurkayev.webp?v=4",
         "caption": "Halid Yandurkayev (1974–2000)"
       }
     ],
@@ -2871,10 +2959,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/has-muhammed-hatuyev.webp",
+    "image": "/images/people/has-muhammed-hatuyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/has-muhammed-hatuyev.webp",
+        "src": "/images/people/has-muhammed-hatuyev.webp?v=4",
         "caption": "Has-Muhammed Hatuyev (Kaboj) (1968–1995)"
       }
     ],
@@ -2895,10 +2983,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/bay-ali-kasumov.webp",
+    "image": "/images/people/bay-ali-kasumov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/bay-ali-kasumov.webp",
+        "src": "/images/people/bay-ali-kasumov.webp?v=4",
         "caption": "Bay-Ali Kasumov (1977–2016)"
       }
     ],
@@ -2919,10 +3007,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ali-adayev.webp",
+    "image": "/images/people/ali-adayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ali-adayev.webp",
+        "src": "/images/people/ali-adayev.webp?v=4",
         "caption": "Ali Adayev (Lambada) (1966–1995)"
       }
     ],
@@ -2943,10 +3031,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/kuri-batsiyev.webp",
+    "image": "/images/people/kuri-batsiyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/kuri-batsiyev.webp",
+        "src": "/images/people/kuri-batsiyev.webp?v=4",
         "caption": "Küri Batsiyev (Gözüpek Küra) (1972–2005)"
       }
     ],
@@ -2967,10 +3055,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/huseyin-ahmadov.webp",
+    "image": "/images/people/huseyin-ahmadov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/huseyin-ahmadov.webp",
+        "src": "/images/people/huseyin-ahmadov.webp?v=4",
         "caption": "Hüseyin Ahmadov (1962–1995)"
       }
     ],
@@ -2991,10 +3079,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/zulay-ahmadova.webp",
+    "image": "/images/people/zulay-ahmadova.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/zulay-ahmadova.webp",
+        "src": "/images/people/zulay-ahmadova.webp?v=4",
         "caption": "Zulay Ahmadova (1971–1995)"
       }
     ],
@@ -3015,10 +3103,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/musa-hacimuradov.webp",
+    "image": "/images/people/musa-hacimuradov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/musa-hacimuradov.webp",
+        "src": "/images/people/musa-hacimuradov.webp?v=4",
         "caption": "Musa Hacımuradov (1956–1994)"
       }
     ],
@@ -3039,10 +3127,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/emir-iles-musafir.webp",
+    "image": "/images/people/emir-iles-musafir.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/emir-iles-musafir.webp",
+        "src": "/images/people/emir-iles-musafir.webp?v=4",
         "caption": "Emir İles Musafir (1970–1999)"
       }
     ],
@@ -3063,10 +3151,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hoj-ahmed-dusayev.webp",
+    "image": "/images/people/hoj-ahmed-dusayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/hoj-ahmed-dusayev.webp",
+        "src": "/images/people/hoj-ahmed-dusayev.webp?v=4",
         "caption": "Hoj-Ahmed Duşayev (1975–2006)"
       }
     ],
@@ -3087,10 +3175,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/kazbek-ibragimov.webp",
+    "image": "/images/people/kazbek-ibragimov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/kazbek-ibragimov.webp",
+        "src": "/images/people/kazbek-ibragimov.webp?v=4",
         "caption": "Kazbek İbragimov (1982–2008)"
       }
     ],
@@ -3111,10 +3199,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/elbrus-ibragimov.webp",
+    "image": "/images/people/elbrus-ibragimov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/elbrus-ibragimov.webp",
+        "src": "/images/people/elbrus-ibragimov.webp?v=4",
         "caption": "Elbrus İbragimov (1985–2010)"
       }
     ],
@@ -3135,10 +3223,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ahmad-canti-halifat.webp",
+    "image": "/images/people/ahmad-canti-halifat.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ahmad-canti-halifat.webp",
+        "src": "/images/people/ahmad-canti-halifat.webp?v=4",
         "caption": "Ahmad Çanti (1968–2000)"
       }
     ],
@@ -3159,10 +3247,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hasan-dolguyev.webp",
+    "image": "/images/people/hasan-dolguyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/hasan-dolguyev.webp",
+        "src": "/images/people/hasan-dolguyev.webp?v=4",
         "caption": "Hasan Dolguyev (1963–1999)"
       }
     ],
@@ -3183,10 +3271,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/rizvan-osmayev.webp",
+    "image": "/images/people/rizvan-osmayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/rizvan-osmayev.webp",
+        "src": "/images/people/rizvan-osmayev.webp?v=4",
         "caption": "Rizvan Osmayev (1976–2009)"
       }
     ],
@@ -3207,10 +3295,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hasan-ozdamirov.webp",
+    "image": "/images/people/hasan-ozdamirov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/hasan-ozdamirov.webp",
+        "src": "/images/people/hasan-ozdamirov.webp?v=4",
         "caption": "Hasan Ozdamirov (Gerat) (1983–2009)"
       }
     ],
@@ -3231,10 +3319,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/emir-mohmad-avturinski.webp",
+    "image": "/images/people/emir-mohmad-avturinski.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/emir-mohmad-avturinski.webp",
+        "src": "/images/people/emir-mohmad-avturinski.webp?v=4",
         "caption": "Emir Mohmad Avturinski (Kırk Üçüncü) (1971–2003)"
       }
     ],
@@ -3255,10 +3343,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/bislan-turgayev.webp",
+    "image": "/images/people/bislan-turgayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/bislan-turgayev.webp",
+        "src": "/images/people/bislan-turgayev.webp?v=4",
         "caption": "Bislan Turgayev (1972–2002)"
       }
     ],
@@ -3279,10 +3367,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/umar-boltukayev.webp",
+    "image": "/images/people/umar-boltukayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/umar-boltukayev.webp",
+        "src": "/images/people/umar-boltukayev.webp?v=4",
         "caption": "Umar Boltukayev (1966–2000)"
       }
     ],
@@ -3303,10 +3391,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/usman-imayev.webp",
+    "image": "/images/people/usman-imayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/usman-imayev.webp",
+        "src": "/images/people/usman-imayev.webp?v=4",
         "caption": "Usman İmayev (1957–1996)"
       }
     ],
@@ -3327,10 +3415,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/arbi-sigauri.webp",
+    "image": "/images/people/arbi-sigauri.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/arbi-sigauri.webp",
+        "src": "/images/people/arbi-sigauri.webp?v=4",
         "caption": "Arbi Sigauri (1982–2011)"
       }
     ],
@@ -3351,10 +3439,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aslanbek-didiyev.webp",
+    "image": "/images/people/aslanbek-didiyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/aslanbek-didiyev.webp",
+        "src": "/images/people/aslanbek-didiyev.webp?v=4",
         "caption": "Aslanbek Didiyev (1972–2000)"
       }
     ],
@@ -3375,10 +3463,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/amin-ibragimov.webp",
+    "image": "/images/people/amin-ibragimov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/amin-ibragimov.webp",
+        "src": "/images/people/amin-ibragimov.webp?v=4",
         "caption": "Amin İbragimov (Ebu Darr) (1972–2001)"
       }
     ],
@@ -3399,10 +3487,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muhammed-besir-dobriyev.webp",
+    "image": "/images/people/muhammed-besir-dobriyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/muhammed-besir-dobriyev.webp",
+        "src": "/images/people/muhammed-besir-dobriyev.webp?v=4",
         "caption": "Muhammed-Beşir Dobriyev (1964–2008)"
       }
     ],
@@ -3423,10 +3511,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ilyas-talhadov.webp",
+    "image": "/images/people/ilyas-talhadov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ilyas-talhadov.webp",
+        "src": "/images/people/ilyas-talhadov.webp?v=4",
         "caption": "İlyas Talhadov (1967–2000)"
       }
     ],
@@ -3447,10 +3535,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/vahid-bamatgiriyev.webp",
+    "image": "/images/people/vahid-bamatgiriyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/vahid-bamatgiriyev.webp",
+        "src": "/images/people/vahid-bamatgiriyev.webp?v=4",
         "caption": "Vahid Bamatgiriyev (1956–2000)"
       }
     ],
@@ -3471,10 +3559,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aynudin-aygumov.webp",
+    "image": "/images/people/aynudin-aygumov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/aynudin-aygumov.webp",
+        "src": "/images/people/aynudin-aygumov.webp?v=4",
         "caption": "Aynudin Aygumov (Çibuş) (1977–1997)"
       }
     ],
@@ -3495,10 +3583,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/imran-zaytimirov.webp",
+    "image": "/images/people/imran-zaytimirov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/imran-zaytimirov.webp",
+        "src": "/images/people/imran-zaytimirov.webp?v=4",
         "caption": "İmran Zaytimirov (1971–2000)"
       }
     ],
@@ -3519,10 +3607,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/borza-abdurazakov.webp",
+    "image": "/images/people/borza-abdurazakov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/borza-abdurazakov.webp",
+        "src": "/images/people/borza-abdurazakov.webp?v=4",
         "caption": "Borza Abdurazakov (1975–2000)"
       }
     ],
@@ -3543,10 +3631,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ismail-muhmadiyev.webp",
+    "image": "/images/people/ismail-muhmadiyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ismail-muhmadiyev.webp",
+        "src": "/images/people/ismail-muhmadiyev.webp?v=4",
         "caption": "İsmail Muhmadiyev (1971–1994)"
       }
     ],
@@ -3567,10 +3655,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/imam-zaytayev.webp",
+    "image": "/images/people/imam-zaytayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/imam-zaytayev.webp",
+        "src": "/images/people/imam-zaytayev.webp?v=4",
         "caption": "İmam Zaytayev (1989–2008)"
       }
     ],
@@ -3591,10 +3679,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/islam-takanayev.webp",
+    "image": "/images/people/islam-takanayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/islam-takanayev.webp",
+        "src": "/images/people/islam-takanayev.webp?v=4",
         "caption": "İslam Takanayev (1984–2003)"
       }
     ],
@@ -3615,10 +3703,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/umar-labazanov.webp",
+    "image": "/images/people/umar-labazanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/umar-labazanov.webp",
+        "src": "/images/people/umar-labazanov.webp?v=4",
         "caption": "Umar Labazanov (Emir Şadid) (1975–2000)"
       }
     ],
@@ -3639,10 +3727,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ramzan-kudayev.webp",
+    "image": "/images/people/ramzan-kudayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ramzan-kudayev.webp",
+        "src": "/images/people/ramzan-kudayev.webp?v=4",
         "caption": "Ramzan Kudayev (1960–1995)"
       }
     ],
@@ -3663,10 +3751,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/said-muhammed-visayev.webp",
+    "image": "/images/people/said-muhammed-visayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/said-muhammed-visayev.webp",
+        "src": "/images/people/said-muhammed-visayev.webp?v=4",
         "caption": "Said-Muhammed Visayev (1974–2000)"
       }
     ],
@@ -3687,10 +3775,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/emir-abdurrahman.webp",
+    "image": "/images/people/emir-abdurrahman.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/emir-abdurrahman.webp",
+        "src": "/images/people/emir-abdurrahman.webp?v=4",
         "caption": "Abdurrahman Şişani (1971–2002)"
       }
     ],
@@ -3711,10 +3799,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aslan-cabayev.webp",
+    "image": "/images/people/aslan-cabayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/aslan-cabayev.webp",
+        "src": "/images/people/aslan-cabayev.webp?v=4",
         "caption": "Aslan Cabayev (Abdus-Samad) (1985–2004)"
       }
     ],
@@ -3735,10 +3823,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/islam-saraliyev.webp",
+    "image": "/images/people/islam-saraliyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/islam-saraliyev.webp",
+        "src": "/images/people/islam-saraliyev.webp?v=4",
         "caption": "İslam Saraliyev (Emir Sayhan) (1978–2003)"
       }
     ],
@@ -3759,10 +3847,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aslambek-borcasvili.webp",
+    "image": "/images/people/aslambek-borcasvili.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/aslambek-borcasvili.webp",
+        "src": "/images/people/aslambek-borcasvili.webp?v=4",
         "caption": "Aslambek Borçaşvili (1979–2000)"
       }
     ],
@@ -3783,10 +3871,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/lom-ali-gubayev.webp",
+    "image": "/images/people/lom-ali-gubayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/lom-ali-gubayev.webp",
+        "src": "/images/people/lom-ali-gubayev.webp?v=4",
         "caption": "Lom-Ali Gubayev (1974–2000)"
       }
     ],
@@ -3807,10 +3895,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hasan-amriyev.webp",
+    "image": "/images/people/hasan-amriyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/hasan-amriyev.webp",
+        "src": "/images/people/hasan-amriyev.webp?v=4",
         "caption": "Hasan Amriyev (1966–1995)"
       }
     ],
@@ -3831,10 +3919,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/haron-babuyev.webp",
+    "image": "/images/people/haron-babuyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/haron-babuyev.webp",
+        "src": "/images/people/haron-babuyev.webp?v=4",
         "caption": "Haron Babuyev (1969–2000)"
       }
     ],
@@ -3855,10 +3943,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/movldi-kagarmanov.webp",
+    "image": "/images/people/movldi-kagarmanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/movldi-kagarmanov.webp",
+        "src": "/images/people/movldi-kagarmanov.webp?v=4",
         "caption": "Movldi Kagarmanov (1973–2000)"
       }
     ],
@@ -3879,10 +3967,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/musa-uspanov.webp",
+    "image": "/images/people/musa-uspanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/musa-uspanov.webp",
+        "src": "/images/people/musa-uspanov.webp?v=4",
         "caption": "Musa Uspanov (1971–2000)"
       }
     ],
@@ -3903,10 +3991,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/isa-saykilayev.webp",
+    "image": "/images/people/isa-saykilayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/isa-saykilayev.webp",
+        "src": "/images/people/isa-saykilayev.webp?v=4",
         "caption": "İsa Şaykilayev (1980–1999)"
       }
     ],
@@ -3927,10 +4015,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/sayd-huseyin-makaziyev.webp",
+    "image": "/images/people/sayd-huseyin-makaziyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/sayd-huseyin-makaziyev.webp",
+        "src": "/images/people/sayd-huseyin-makaziyev.webp?v=4",
         "caption": "Sayd-Hüseyin Makaziyev (1971–2000)"
       }
     ],
@@ -3951,10 +4039,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/magomed-taverdiyev.webp",
+    "image": "/images/people/magomed-taverdiyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/magomed-taverdiyev.webp",
+        "src": "/images/people/magomed-taverdiyev.webp?v=4",
         "caption": "Magomed Taverdiyev (Kurbaş) (1976–2000)"
       }
     ],
@@ -3975,10 +4063,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/islam-tasuyev.webp",
+    "image": "/images/people/islam-tasuyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/islam-tasuyev.webp",
+        "src": "/images/people/islam-tasuyev.webp?v=4",
         "caption": "İslam Tasuyev (1975–2000)"
       }
     ],
@@ -3999,10 +4087,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/zayndi-gatsayev.webp",
+    "image": "/images/people/zayndi-gatsayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/zayndi-gatsayev.webp",
+        "src": "/images/people/zayndi-gatsayev.webp?v=4",
         "caption": "Zayndi Gatsayev (1974–2000)"
       }
     ],
@@ -4023,10 +4111,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/mohmad-saralapov.webp",
+    "image": "/images/people/mohmad-saralapov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/mohmad-saralapov.webp",
+        "src": "/images/people/mohmad-saralapov.webp?v=4",
         "caption": "Mohmad Saralapov (1981–2000)"
       }
     ],
@@ -4047,10 +4135,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ramzan-darayev.webp",
+    "image": "/images/people/ramzan-darayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ramzan-darayev.webp",
+        "src": "/images/people/ramzan-darayev.webp?v=4",
         "caption": "Ramzan Darayev (1974–2000)"
       }
     ],
@@ -4071,10 +4159,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/magomed-bahtarisev.webp",
+    "image": "/images/people/magomed-bahtarisev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/magomed-bahtarisev.webp",
+        "src": "/images/people/magomed-bahtarisev.webp?v=4",
         "caption": "Magomed Bahtarişev (1975–2000)"
       }
     ],
@@ -4095,10 +4183,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ayndi-kaplanov.webp",
+    "image": "/images/people/ayndi-kaplanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ayndi-kaplanov.webp",
+        "src": "/images/people/ayndi-kaplanov.webp?v=4",
         "caption": "Ayndi Kaplanov (1973–2000)"
       }
     ],
@@ -4119,10 +4207,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/islam-ediyev.webp",
+    "image": "/images/people/islam-ediyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/islam-ediyev.webp",
+        "src": "/images/people/islam-ediyev.webp?v=4",
         "caption": "İslam Ediyev (Sahrabi) (1969–2000)"
       }
     ],
@@ -4143,10 +4231,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/rustam-haciyev.webp",
+    "image": "/images/people/rustam-haciyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/rustam-haciyev.webp",
+        "src": "/images/people/rustam-haciyev.webp?v=4",
         "caption": "Rustam Haciyev (1976–2000)"
       }
     ],
@@ -4167,10 +4255,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/kazbek-amayev.webp",
+    "image": "/images/people/kazbek-amayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/kazbek-amayev.webp",
+        "src": "/images/people/kazbek-amayev.webp?v=4",
         "caption": "Kazbek Amayev (1971–1995)"
       }
     ],
@@ -4191,10 +4279,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/tarhan-terhoyev.webp",
+    "image": "/images/people/tarhan-terhoyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/tarhan-terhoyev.webp",
+        "src": "/images/people/tarhan-terhoyev.webp?v=4",
         "caption": "Tarhan Terhoyev (1974–1995)"
       }
     ],
@@ -4215,10 +4303,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/mohmad-salah-arsamekov.webp",
+    "image": "/images/people/mohmad-salah-arsamekov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/mohmad-salah-arsamekov.webp",
+        "src": "/images/people/mohmad-salah-arsamekov.webp?v=4",
         "caption": "Mohmad-Salah Arsamekov (1977–2000)"
       }
     ],
@@ -4239,10 +4327,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/denis-dudurkayev.webp",
+    "image": "/images/people/denis-dudurkayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/denis-dudurkayev.webp",
+        "src": "/images/people/denis-dudurkayev.webp?v=4",
         "caption": "Denis Dudurkayev (1965–2000)"
       }
     ],
@@ -4263,10 +4351,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/musa-iznaurov.webp",
+    "image": "/images/people/musa-iznaurov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/musa-iznaurov.webp",
+        "src": "/images/people/musa-iznaurov.webp?v=4",
         "caption": "Musa İznaurov (1972–2000)"
       }
     ],
@@ -4287,10 +4375,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/adam-aspiyev.webp",
+    "image": "/images/people/adam-aspiyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/adam-aspiyev.webp",
+        "src": "/images/people/adam-aspiyev.webp?v=4",
         "caption": "Adam Aspiyev (1973–2000)"
       }
     ],
@@ -4311,10 +4399,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/anzor-batalov.webp",
+    "image": "/images/people/anzor-batalov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/anzor-batalov.webp",
+        "src": "/images/people/anzor-batalov.webp?v=4",
         "caption": "Anzor Batalov (1976–2000)"
       }
     ],
@@ -4335,10 +4423,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ramzan-cukayev.webp",
+    "image": "/images/people/ramzan-cukayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ramzan-cukayev.webp",
+        "src": "/images/people/ramzan-cukayev.webp?v=4",
         "caption": "Ramzan Çukayev (1976–2000)"
       }
     ],
@@ -4359,10 +4447,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/mohmad-hamzatov.webp",
+    "image": "/images/people/mohmad-hamzatov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/mohmad-hamzatov.webp",
+        "src": "/images/people/mohmad-hamzatov.webp?v=4",
         "caption": "Mohmad Hamzatov (1975–2000)"
       }
     ],
@@ -4383,10 +4471,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/mayrbek-maltsagov.webp",
+    "image": "/images/people/mayrbek-maltsagov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/mayrbek-maltsagov.webp",
+        "src": "/images/people/mayrbek-maltsagov.webp?v=4",
         "caption": "Mayrbek Maltsagov (1973–2000)"
       }
     ],
@@ -4407,10 +4495,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/visa-idigov.webp",
+    "image": "/images/people/visa-idigov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/visa-idigov.webp",
+        "src": "/images/people/visa-idigov.webp?v=4",
         "caption": "Visa İdigov (1966–1995)"
       }
     ],
@@ -4431,10 +4519,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/mohmad-salah-adamov.webp",
+    "image": "/images/people/mohmad-salah-adamov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/mohmad-salah-adamov.webp",
+        "src": "/images/people/mohmad-salah-adamov.webp?v=4",
         "caption": "Mohmad-Salah Adamov (1960–1995)"
       }
     ],
@@ -4455,10 +4543,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hamzat-sagayev.webp",
+    "image": "/images/people/hamzat-sagayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/hamzat-sagayev.webp",
+        "src": "/images/people/hamzat-sagayev.webp?v=4",
         "caption": "Hamzat Sagayev (1965–1995)"
       }
     ],
@@ -4479,10 +4567,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/semal-tabuyev.webp",
+    "image": "/images/people/semal-tabuyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/semal-tabuyev.webp",
+        "src": "/images/people/semal-tabuyev.webp?v=4",
         "caption": "Şemal Tabuyev (1975–1995)"
       }
     ],
@@ -4503,10 +4591,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ruslan-arsahanov.webp",
+    "image": "/images/people/ruslan-arsahanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ruslan-arsahanov.webp",
+        "src": "/images/people/ruslan-arsahanov.webp?v=4",
         "caption": "Ruslan Arsahanov (1972–1995)"
       }
     ],
@@ -4527,10 +4615,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muhadi-macidov.webp",
+    "image": "/images/people/muhadi-macidov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/muhadi-macidov.webp",
+        "src": "/images/people/muhadi-macidov.webp?v=4",
         "caption": "Muhadi Macidov (1963–1995)"
       }
     ],
@@ -4551,10 +4639,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muhammed-akbulatov.webp",
+    "image": "/images/people/muhammed-akbulatov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/muhammed-akbulatov.webp",
+        "src": "/images/people/muhammed-akbulatov.webp?v=4",
         "caption": "Muhammed Akbulatov (1975–1995)"
       }
     ],
@@ -4575,10 +4663,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/sayd-muhammed-elderhanov.webp",
+    "image": "/images/people/sayd-muhammed-elderhanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/sayd-muhammed-elderhanov.webp",
+        "src": "/images/people/sayd-muhammed-elderhanov.webp?v=4",
         "caption": "Sayd-Muhammed Elderhanov (1968–1995)"
       }
     ],
@@ -4599,10 +4687,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/islam-batalov.webp",
+    "image": "/images/people/islam-batalov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/islam-batalov.webp",
+        "src": "/images/people/islam-batalov.webp?v=4",
         "caption": "İslam Batalov (1972–2000)"
       }
     ],
@@ -4623,10 +4711,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/daud-arsamakov.webp",
+    "image": "/images/people/daud-arsamakov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/daud-arsamakov.webp",
+        "src": "/images/people/daud-arsamakov.webp?v=4",
         "caption": "Daud Arsamakov (1974–2000)"
       }
     ],
@@ -4647,10 +4735,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hamzat-cadayev.webp",
+    "image": "/images/people/hamzat-cadayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/hamzat-cadayev.webp",
+        "src": "/images/people/hamzat-cadayev.webp?v=4",
         "caption": "Hamzat Çadayev (1958–1994)"
       }
     ],
@@ -4671,10 +4759,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/nasho-sugaipov.webp",
+    "image": "/images/people/nasho-sugaipov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/nasho-sugaipov.webp",
+        "src": "/images/people/nasho-sugaipov.webp?v=4",
         "caption": "Naşho Sugaipov (1975–2004)"
       }
     ],
@@ -4695,10 +4783,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/musa-elmurzayev.webp",
+    "image": "/images/people/musa-elmurzayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/musa-elmurzayev.webp",
+        "src": "/images/people/musa-elmurzayev.webp?v=4",
         "caption": "Musa Elmurzayev (1977–1999)"
       }
     ],
@@ -4719,10 +4807,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/mohmad-tahir-uspanov.webp",
+    "image": "/images/people/mohmad-tahir-uspanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/mohmad-tahir-uspanov.webp",
+        "src": "/images/people/mohmad-tahir-uspanov.webp?v=4",
         "caption": "Mohmad-Tahir Uspanov (1965–2000)"
       }
     ],
@@ -4743,10 +4831,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/imran-tangiyev.webp",
+    "image": "/images/people/imran-tangiyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/imran-tangiyev.webp",
+        "src": "/images/people/imran-tangiyev.webp?v=4",
         "caption": "İmran Tangiyev (1970–1996)"
       }
     ],
@@ -4767,10 +4855,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aslan-astamirov.webp",
+    "image": "/images/people/aslan-astamirov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/aslan-astamirov.webp",
+        "src": "/images/people/aslan-astamirov.webp?v=4",
         "caption": "Aslan Astamirov (1975–2000)"
       }
     ],
@@ -4791,10 +4879,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muhammed-emin-magomadov.webp",
+    "image": "/images/people/muhammed-emin-magomadov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/muhammed-emin-magomadov.webp",
+        "src": "/images/people/muhammed-emin-magomadov.webp?v=4",
         "caption": "Muhammed-Emin Magomadov (1975–2000)"
       }
     ],
@@ -4815,10 +4903,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/alishan-amayev.webp",
+    "image": "/images/people/alishan-amayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/alishan-amayev.webp",
+        "src": "/images/people/alishan-amayev.webp?v=4",
         "caption": "Alishan Amayev (1976–2000)"
       }
     ],
@@ -4839,10 +4927,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aslan-baysangurov.webp",
+    "image": "/images/people/aslan-baysangurov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/aslan-baysangurov.webp",
+        "src": "/images/people/aslan-baysangurov.webp?v=4",
         "caption": "Aslan Baysangurov (1973–2000)"
       }
     ],
@@ -4863,10 +4951,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ramzan-hasanov.webp",
+    "image": "/images/people/ramzan-hasanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ramzan-hasanov.webp",
+        "src": "/images/people/ramzan-hasanov.webp?v=4",
         "caption": "Ramzan Hasanov (1970–1999)"
       }
     ],
@@ -4887,10 +4975,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/islam-yakubov.webp",
+    "image": "/images/people/islam-yakubov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/islam-yakubov.webp",
+        "src": "/images/people/islam-yakubov.webp?v=4",
         "caption": "İslam Yakubov (1987–2010)"
       }
     ],
@@ -4911,10 +4999,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/abubakar-basayev.webp",
+    "image": "/images/people/abubakar-basayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/abubakar-basayev.webp",
+        "src": "/images/people/abubakar-basayev.webp?v=4",
         "caption": "Abubakar Basayev (1981–2007)"
       }
     ],
@@ -4935,10 +5023,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/movlat-magomadov.webp",
+    "image": "/images/people/movlat-magomadov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/movlat-magomadov.webp",
+        "src": "/images/people/movlat-magomadov.webp?v=4",
         "caption": "Movlat Magomadov (1980–2000)"
       }
     ],
@@ -4959,10 +5047,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/sayd-huseyin-magomadov.webp",
+    "image": "/images/people/sayd-huseyin-magomadov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/sayd-huseyin-magomadov.webp",
+        "src": "/images/people/sayd-huseyin-magomadov.webp?v=4",
         "caption": "Sayd-Hüseyin Magomadov (1981–2000)"
       }
     ],
@@ -4983,10 +5071,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/balaudi-kagarmanov.webp",
+    "image": "/images/people/balaudi-kagarmanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/balaudi-kagarmanov.webp",
+        "src": "/images/people/balaudi-kagarmanov.webp?v=4",
         "caption": "Balaudi Kagarmanov (1968–2000)"
       }
     ],
@@ -5007,10 +5095,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aslanbek-baysangurov.webp",
+    "image": "/images/people/aslanbek-baysangurov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/aslanbek-baysangurov.webp",
+        "src": "/images/people/aslanbek-baysangurov.webp?v=4",
         "caption": "Aslanbek Baysangurov (1975–2000)"
       }
     ],
@@ -5031,10 +5119,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ruslan-sardalov.webp",
+    "image": "/images/people/ruslan-sardalov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ruslan-sardalov.webp",
+        "src": "/images/people/ruslan-sardalov.webp?v=4",
         "caption": "Ruslan Sardalov (1965–2000)"
       }
     ],
@@ -5055,10 +5143,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muhammed-magomadov.webp",
+    "image": "/images/people/muhammed-magomadov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/muhammed-magomadov.webp",
+        "src": "/images/people/muhammed-magomadov.webp?v=4",
         "caption": "Muhammed Magomadov (1973–2000)"
       }
     ],
@@ -5079,10 +5167,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/arbi-yevmirzayev.webp",
+    "image": "/images/people/arbi-yevmirzayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/arbi-yevmirzayev.webp",
+        "src": "/images/people/arbi-yevmirzayev.webp?v=4",
         "caption": "Arbi Yevmirzayev (1972–2010)"
       }
     ],
@@ -5103,10 +5191,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/umar-magomadov.webp",
+    "image": "/images/people/umar-magomadov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/umar-magomadov.webp",
+        "src": "/images/people/umar-magomadov.webp?v=4",
         "caption": "Umar Magomadov (1977–2000)"
       }
     ],
@@ -5127,10 +5215,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/abu-ahmadov.webp",
+    "image": "/images/people/abu-ahmadov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/abu-ahmadov.webp",
+        "src": "/images/people/abu-ahmadov.webp?v=4",
         "caption": "Abu Ahmadov (1966–2001)"
       }
     ],
@@ -5151,10 +5239,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muslim-tsagarayev.webp",
+    "image": "/images/people/muslim-tsagarayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/muslim-tsagarayev.webp",
+        "src": "/images/people/muslim-tsagarayev.webp?v=4",
         "caption": "Müslim Tsagarayev (1982–2000)"
       }
     ],
@@ -5175,10 +5263,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/abu-tsagarayev.webp",
+    "image": "/images/people/abu-tsagarayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/abu-tsagarayev.webp",
+        "src": "/images/people/abu-tsagarayev.webp?v=4",
         "caption": "Abu Tsagarayev (1984–2000)"
       }
     ],
@@ -5199,10 +5287,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/isa-ahmadov.webp",
+    "image": "/images/people/isa-ahmadov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/isa-ahmadov.webp",
+        "src": "/images/people/isa-ahmadov.webp?v=4",
         "caption": "İsa Ahmadov (1978–2000)"
       }
     ],
@@ -5223,10 +5311,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/adlan-gazuyev.webp",
+    "image": "/images/people/adlan-gazuyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/adlan-gazuyev.webp",
+        "src": "/images/people/adlan-gazuyev.webp?v=4",
         "caption": "Adlan Gazuyev (1977–2000)"
       }
     ],
@@ -5247,10 +5335,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/valid-kagarmanov.webp",
+    "image": "/images/people/valid-kagarmanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/valid-kagarmanov.webp",
+        "src": "/images/people/valid-kagarmanov.webp?v=4",
         "caption": "Valid Kagarmanov (1964–2000)"
       }
     ],
@@ -5271,10 +5359,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/salaudin-kagarmanov.webp",
+    "image": "/images/people/salaudin-kagarmanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/salaudin-kagarmanov.webp",
+        "src": "/images/people/salaudin-kagarmanov.webp?v=4",
         "caption": "Salaudin Kagarmanov (1961–2000)"
       }
     ],
@@ -5295,10 +5383,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ruhmad-hadisov.webp",
+    "image": "/images/people/ruhmad-hadisov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ruhmad-hadisov.webp",
+        "src": "/images/people/ruhmad-hadisov.webp?v=4",
         "caption": "Ruhmad Hadisov (1974–1999)"
       }
     ],
@@ -5319,10 +5407,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ahmed-mediyev.webp",
+    "image": "/images/people/ahmed-mediyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ahmed-mediyev.webp",
+        "src": "/images/people/ahmed-mediyev.webp?v=4",
         "caption": "Ahmed Mediyev (1977–2000)"
       }
     ],
@@ -5343,10 +5431,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/zaurbek-gaysumov.webp",
+    "image": "/images/people/zaurbek-gaysumov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/zaurbek-gaysumov.webp",
+        "src": "/images/people/zaurbek-gaysumov.webp?v=4",
         "caption": "Zaurbek Gaysumov (1986–2008)"
       }
     ],
@@ -5367,10 +5455,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/cambulat-sadayev.webp",
+    "image": "/images/people/cambulat-sadayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/cambulat-sadayev.webp",
+        "src": "/images/people/cambulat-sadayev.webp?v=4",
         "caption": "Cambulat Sadayev (1973–2006)"
       }
     ],
@@ -5391,10 +5479,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/arbi-naduyev.webp",
+    "image": "/images/people/arbi-naduyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/arbi-naduyev.webp",
+        "src": "/images/people/arbi-naduyev.webp?v=4",
         "caption": "Arbi Naduyev (1966–2000)"
       }
     ],
@@ -5415,10 +5503,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/abdul-vahid-gapurayev.webp",
+    "image": "/images/people/abdul-vahid-gapurayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/abdul-vahid-gapurayev.webp",
+        "src": "/images/people/abdul-vahid-gapurayev.webp?v=4",
         "caption": "Abdul-Vahid Gapurayev (1972–1999)"
       }
     ],
@@ -5439,10 +5527,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/mohmad-baysultanov.webp",
+    "image": "/images/people/mohmad-baysultanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/mohmad-baysultanov.webp",
+        "src": "/images/people/mohmad-baysultanov.webp?v=4",
         "caption": "Mohmad Baysultanov (1975–2005)"
       }
     ],
@@ -5463,10 +5551,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aslambek-tuguzov.webp",
+    "image": "/images/people/aslambek-tuguzov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/aslambek-tuguzov.webp",
+        "src": "/images/people/aslambek-tuguzov.webp?v=4",
         "caption": "Aslambek Tuguzov (1972–2000)"
       }
     ],
@@ -5487,10 +5575,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/mikail-kurbanov.webp",
+    "image": "/images/people/mikail-kurbanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/mikail-kurbanov.webp",
+        "src": "/images/people/mikail-kurbanov.webp?v=4",
         "caption": "Mikail Kurbanov (1962–2000)"
       }
     ],
@@ -5511,10 +5599,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/isa-baharciyev.webp",
+    "image": "/images/people/isa-baharciyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/isa-baharciyev.webp",
+        "src": "/images/people/isa-baharciyev.webp?v=4",
         "caption": "İsa Baharçiyev (1974–2000)"
       }
     ],
@@ -5535,10 +5623,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/zelimhan-musayev.webp",
+    "image": "/images/people/zelimhan-musayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/zelimhan-musayev.webp",
+        "src": "/images/people/zelimhan-musayev.webp?v=4",
         "caption": "Zelimhan Musayev (1975–2000)"
       }
     ],
@@ -5559,10 +5647,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/said-sabayev.webp",
+    "image": "/images/people/said-sabayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/said-sabayev.webp",
+        "src": "/images/people/said-sabayev.webp?v=4",
         "caption": "Said Şabayev (1973–2000)"
       }
     ],
@@ -5583,10 +5671,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/badruddi-ganatov.webp",
+    "image": "/images/people/badruddi-ganatov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/badruddi-ganatov.webp",
+        "src": "/images/people/badruddi-ganatov.webp?v=4",
         "caption": "Badruddi Ganatov (1965–2000)"
       }
     ],
@@ -5607,10 +5695,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ilyas-mikayev.webp",
+    "image": "/images/people/ilyas-mikayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ilyas-mikayev.webp",
+        "src": "/images/people/ilyas-mikayev.webp?v=4",
         "caption": "İlyas Mikayev (1970–1996)"
       }
     ],
@@ -5631,10 +5719,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/bekhan-abastov.webp",
+    "image": "/images/people/bekhan-abastov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/bekhan-abastov.webp",
+        "src": "/images/people/bekhan-abastov.webp?v=4",
         "caption": "Bekhan Abastov (1974–2000)"
       }
     ],
@@ -5655,10 +5743,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/rustam-timarov.webp",
+    "image": "/images/people/rustam-timarov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/rustam-timarov.webp",
+        "src": "/images/people/rustam-timarov.webp?v=4",
         "caption": "Rustam Timarov (1975–1999)"
       }
     ],
@@ -5679,10 +5767,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/isa-tusayev.webp",
+    "image": "/images/people/isa-tusayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/isa-tusayev.webp",
+        "src": "/images/people/isa-tusayev.webp?v=4",
         "caption": "İsa Tuşayev (1974–2002)"
       }
     ],
@@ -5703,10 +5791,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hizar-irishanov.webp",
+    "image": "/images/people/hizar-irishanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/hizar-irishanov.webp",
+        "src": "/images/people/hizar-irishanov.webp?v=4",
         "caption": "Hizar İrishanov (1971–2001)"
       }
     ],
@@ -5727,10 +5815,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/emi-yunusov.webp",
+    "image": "/images/people/emi-yunusov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/emi-yunusov.webp",
+        "src": "/images/people/emi-yunusov.webp?v=4",
         "caption": "Emi Yunusov (1976–2001)"
       }
     ],
@@ -5751,10 +5839,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/abdul-vahid-dibirov.webp",
+    "image": "/images/people/abdul-vahid-dibirov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/abdul-vahid-dibirov.webp",
+        "src": "/images/people/abdul-vahid-dibirov.webp?v=4",
         "caption": "Abdul-Vahid Dibirov (1968–2000)"
       }
     ],
@@ -5775,10 +5863,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ismail-gayrbekov.webp",
+    "image": "/images/people/ismail-gayrbekov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ismail-gayrbekov.webp",
+        "src": "/images/people/ismail-gayrbekov.webp?v=4",
         "caption": "İsmail Gayrbekov (1975–2000)"
       }
     ],
@@ -5799,10 +5887,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/bislan-zakriyev.webp",
+    "image": "/images/people/bislan-zakriyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/bislan-zakriyev.webp",
+        "src": "/images/people/bislan-zakriyev.webp?v=4",
         "caption": "Bislan Zakriyev (1974–2002)"
       }
     ],
@@ -5823,10 +5911,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/zayndi-elgiriyev.webp",
+    "image": "/images/people/zayndi-elgiriyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/zayndi-elgiriyev.webp",
+        "src": "/images/people/zayndi-elgiriyev.webp?v=4",
         "caption": "Zayndi Elgiriyev (1977–2001)"
       }
     ],
@@ -5847,10 +5935,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ayub-caharov.webp",
+    "image": "/images/people/ayub-caharov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ayub-caharov.webp",
+        "src": "/images/people/ayub-caharov.webp?v=4",
         "caption": "Ayub Caharov (1964–1994)"
       }
     ],
@@ -5871,10 +5959,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ramazan-saritov.webp",
+    "image": "/images/people/ramazan-saritov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ramazan-saritov.webp",
+        "src": "/images/people/ramazan-saritov.webp?v=4",
         "caption": "Ramazan Saritov (1983–2012)"
       }
     ],
@@ -5895,10 +5983,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/murad-gisayev.webp",
+    "image": "/images/people/murad-gisayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/murad-gisayev.webp",
+        "src": "/images/people/murad-gisayev.webp?v=4",
         "caption": "Murad Gişayev (1978–2004)"
       }
     ],
@@ -5919,10 +6007,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hadid-dadayev.webp",
+    "image": "/images/people/hadid-dadayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/hadid-dadayev.webp",
+        "src": "/images/people/hadid-dadayev.webp?v=4",
         "caption": "Hadid Dadayev (1963–2001)"
       }
     ],
@@ -5943,10 +6031,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/leci-haciyev.webp",
+    "image": "/images/people/leci-haciyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/leci-haciyev.webp",
+        "src": "/images/people/leci-haciyev.webp?v=4",
         "caption": "Leçi Haciyev (1976–2000)"
       }
     ],
@@ -5967,10 +6055,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/sultan-hortsayev.webp",
+    "image": "/images/people/sultan-hortsayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/sultan-hortsayev.webp",
+        "src": "/images/people/sultan-hortsayev.webp?v=4",
         "caption": "Sultan Hortsayev (1973–2000)"
       }
     ],
@@ -5991,10 +6079,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ilyas-husparov.webp",
+    "image": "/images/people/ilyas-husparov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ilyas-husparov.webp",
+        "src": "/images/people/ilyas-husparov.webp?v=4",
         "caption": "İlyas Huşparov (1972–2000)"
       }
     ],
@@ -6015,10 +6103,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/imran-oysayev.webp",
+    "image": "/images/people/imran-oysayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/imran-oysayev.webp",
+        "src": "/images/people/imran-oysayev.webp?v=4",
         "caption": "İmran Oysayev (1966–2000)"
       }
     ],
@@ -6039,10 +6127,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/samhan-avdadayev.webp",
+    "image": "/images/people/samhan-avdadayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/samhan-avdadayev.webp",
+        "src": "/images/people/samhan-avdadayev.webp?v=4",
         "caption": "Şamhan Avdadayev (1984–2009)"
       }
     ],
@@ -6063,10 +6151,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hamzat-guloyev.webp",
+    "image": "/images/people/hamzat-guloyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/hamzat-guloyev.webp",
+        "src": "/images/people/hamzat-guloyev.webp?v=4",
         "caption": "Hamzat Guloyev (1983–2012)"
       }
     ],
@@ -6087,10 +6175,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/cingishan-temerkayev.webp",
+    "image": "/images/people/cingishan-temerkayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/cingishan-temerkayev.webp",
+        "src": "/images/people/cingishan-temerkayev.webp?v=4",
         "caption": "Çingishan Temerkayev (1985–2009)"
       }
     ],
@@ -6111,10 +6199,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muhammed-yaricev.webp",
+    "image": "/images/people/muhammed-yaricev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/muhammed-yaricev.webp",
+        "src": "/images/people/muhammed-yaricev.webp?v=4",
         "caption": "Muhammed Yarıçev (1976–2000)"
       }
     ],
@@ -6135,10 +6223,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aslan-aslahanov.webp",
+    "image": "/images/people/aslan-aslahanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/aslan-aslahanov.webp",
+        "src": "/images/people/aslan-aslahanov.webp?v=4",
         "caption": "Aslan Aslahanov (1977–2000)"
       }
     ],
@@ -6159,10 +6247,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/anzor-tsurayev.webp",
+    "image": "/images/people/anzor-tsurayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/anzor-tsurayev.webp",
+        "src": "/images/people/anzor-tsurayev.webp?v=4",
         "caption": "Anzor Tsurayev (1988–2014)"
       }
     ],
@@ -6183,10 +6271,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aslan-dukuzov.webp",
+    "image": "/images/people/aslan-dukuzov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/aslan-dukuzov.webp",
+        "src": "/images/people/aslan-dukuzov.webp?v=4",
         "caption": "Aslan Dukuzov (1973–2002)"
       }
     ],
@@ -6207,10 +6295,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muhammed-salah-abubakarov.webp",
+    "image": "/images/people/muhammed-salah-abubakarov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/muhammed-salah-abubakarov.webp",
+        "src": "/images/people/muhammed-salah-abubakarov.webp?v=4",
         "caption": "Muhammed-Salah Abubakarov (1975–2002)"
       }
     ],
@@ -6231,10 +6319,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/salman-aspanov.webp",
+    "image": "/images/people/salman-aspanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/salman-aspanov.webp",
+        "src": "/images/people/salman-aspanov.webp?v=4",
         "caption": "Salman Aspanov (1980–2002)"
       }
     ],
@@ -6255,10 +6343,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/yunus-vagapov.webp",
+    "image": "/images/people/yunus-vagapov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/yunus-vagapov.webp",
+        "src": "/images/people/yunus-vagapov.webp?v=4",
         "caption": "Yunus Vagapov (1975–2001)"
       }
     ],
@@ -6279,10 +6367,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/rustam-betalgeriyev.webp",
+    "image": "/images/people/rustam-betalgeriyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/rustam-betalgeriyev.webp",
+        "src": "/images/people/rustam-betalgeriyev.webp?v=4",
         "caption": "Rustam Betalgeriyev (1976–2001)"
       }
     ],
@@ -6303,10 +6391,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ibrahim-canhotov.webp",
+    "image": "/images/people/ibrahim-canhotov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ibrahim-canhotov.webp",
+        "src": "/images/people/ibrahim-canhotov.webp?v=4",
         "caption": "İbrahim Canhotov (1978–2003)"
       }
     ],
@@ -6327,10 +6415,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/gilani-susuyev.webp",
+    "image": "/images/people/gilani-susuyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/gilani-susuyev.webp",
+        "src": "/images/people/gilani-susuyev.webp?v=4",
         "caption": "Gilani Susuyev (1965–1996)"
       }
     ],
@@ -6351,10 +6439,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/dalambek-bahayev.webp",
+    "image": "/images/people/dalambek-bahayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/dalambek-bahayev.webp",
+        "src": "/images/people/dalambek-bahayev.webp?v=4",
         "caption": "Dalambek Bahayev (1968–1996)"
       }
     ],
@@ -6375,10 +6463,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/rizvan-daayev.webp",
+    "image": "/images/people/rizvan-daayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/rizvan-daayev.webp",
+        "src": "/images/people/rizvan-daayev.webp?v=4",
         "caption": "Rizvan Daayev (1964–2000)"
       }
     ],
@@ -6399,10 +6487,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hamzat-gaurgasvili.webp",
+    "image": "/images/people/hamzat-gaurgasvili.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/hamzat-gaurgasvili.webp",
+        "src": "/images/people/hamzat-gaurgasvili.webp?v=4",
         "caption": "Hamzat Gaurgaşvili (1971–1995)"
       }
     ],
@@ -6423,10 +6511,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ruslan-elmurzayev.webp",
+    "image": "/images/people/ruslan-elmurzayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ruslan-elmurzayev.webp",
+        "src": "/images/people/ruslan-elmurzayev.webp?v=4",
         "caption": "Ruslan Elmurzayev (1968–1999)"
       }
     ],
@@ -6447,10 +6535,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muhammed-nauzov.webp",
+    "image": "/images/people/muhammed-nauzov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/muhammed-nauzov.webp",
+        "src": "/images/people/muhammed-nauzov.webp?v=4",
         "caption": "Muhammed Nauzov (1978–2006)"
       }
     ],
@@ -6471,10 +6559,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/adam-husalayev.webp",
+    "image": "/images/people/adam-husalayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/adam-husalayev.webp",
+        "src": "/images/people/adam-husalayev.webp?v=4",
         "caption": "Adam Huşalayev (1982–2013)"
       }
     ],
@@ -6495,10 +6583,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/yunus-ahmadov.webp",
+    "image": "/images/people/yunus-ahmadov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/yunus-ahmadov.webp",
+        "src": "/images/people/yunus-ahmadov.webp?v=4",
         "caption": "Yunus Ahmadov (1978–2007)"
       }
     ],
@@ -6519,10 +6607,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/dires-dadayev.webp",
+    "image": "/images/people/dires-dadayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/dires-dadayev.webp",
+        "src": "/images/people/dires-dadayev.webp?v=4",
         "caption": "Dires Dadayev (1976–2001)"
       }
     ],
@@ -6543,10 +6631,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/uvays-ahmadov.webp",
+    "image": "/images/people/uvays-ahmadov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/uvays-ahmadov.webp",
+        "src": "/images/people/uvays-ahmadov.webp?v=4",
         "caption": "Uvays Ahmadov (1975–2001)"
       }
     ],
@@ -6567,10 +6655,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/movladi-magamadov.webp",
+    "image": "/images/people/movladi-magamadov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/movladi-magamadov.webp",
+        "src": "/images/people/movladi-magamadov.webp?v=4",
         "caption": "Movladi Magamadov (1974–2006)"
       }
     ],
@@ -6591,10 +6679,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/yunus-emri.webp",
+    "image": "/images/people/yunus-emri.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/yunus-emri.webp",
+        "src": "/images/people/yunus-emri.webp?v=4",
         "caption": "Yunus Emri (1978–2003)"
       }
     ],
@@ -6615,10 +6703,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ruslan-bibulatov.webp",
+    "image": "/images/people/ruslan-bibulatov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ruslan-bibulatov.webp",
+        "src": "/images/people/ruslan-bibulatov.webp?v=4",
         "caption": "Ruslan Bibulatov (1977–1999)"
       }
     ],
@@ -6639,10 +6727,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/zayndi-ibayev.webp",
+    "image": "/images/people/zayndi-ibayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/zayndi-ibayev.webp",
+        "src": "/images/people/zayndi-ibayev.webp?v=4",
         "caption": "Zayndi İbayev (1968–2000)"
       }
     ],
@@ -6663,10 +6751,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/adam-movsarov.webp",
+    "image": "/images/people/adam-movsarov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/adam-movsarov.webp",
+        "src": "/images/people/adam-movsarov.webp?v=4",
         "caption": "Adam Movsarov (1976–2000)"
       }
     ],
@@ -6687,10 +6775,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muhammed-batsiyev.webp",
+    "image": "/images/people/muhammed-batsiyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/muhammed-batsiyev.webp",
+        "src": "/images/people/muhammed-batsiyev.webp?v=4",
         "caption": "Muhammed Batsiyev (1974–2000)"
       }
     ],
@@ -6711,10 +6799,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/timur-batalov.webp",
+    "image": "/images/people/timur-batalov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/timur-batalov.webp",
+        "src": "/images/people/timur-batalov.webp?v=4",
         "caption": "Timur Batalov (1979–2000)"
       }
     ],
@@ -6735,10 +6823,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ahmed-haciyev.webp",
+    "image": "/images/people/ahmed-haciyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ahmed-haciyev.webp",
+        "src": "/images/people/ahmed-haciyev.webp?v=4",
         "caption": "Ahmed Haciyev (1977–2000)"
       }
     ],
@@ -6759,10 +6847,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/sayd-hasan-sabayev.webp",
+    "image": "/images/people/sayd-hasan-sabayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/sayd-hasan-sabayev.webp",
+        "src": "/images/people/sayd-hasan-sabayev.webp?v=4",
         "caption": "Sayd-Hasan Şabayev (1975–2000)"
       }
     ],
@@ -6783,10 +6871,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/rizvan-akuyev.webp",
+    "image": "/images/people/rizvan-akuyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/rizvan-akuyev.webp",
+        "src": "/images/people/rizvan-akuyev.webp?v=4",
         "caption": "Rizvan Akuyev (1983–2009)"
       }
     ],
@@ -6807,10 +6895,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hamzat-batayev.webp",
+    "image": "/images/people/hamzat-batayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/hamzat-batayev.webp",
+        "src": "/images/people/hamzat-batayev.webp?v=4",
         "caption": "Hamzat Batayev (1966–2000)"
       }
     ],
@@ -6831,10 +6919,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ahmed-labazanov.webp",
+    "image": "/images/people/ahmed-labazanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ahmed-labazanov.webp",
+        "src": "/images/people/ahmed-labazanov.webp?v=4",
         "caption": "Ahmed Labazanov (1968–1999)"
       }
     ],
@@ -6855,10 +6943,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/yusi-hantiyev.webp",
+    "image": "/images/people/yusi-hantiyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/yusi-hantiyev.webp",
+        "src": "/images/people/yusi-hantiyev.webp?v=4",
         "caption": "Yusi Hantiyev (1954–1995)"
       }
     ],
@@ -6879,10 +6967,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/deni-sultanov.webp",
+    "image": "/images/people/deni-sultanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/deni-sultanov.webp",
+        "src": "/images/people/deni-sultanov.webp?v=4",
         "caption": "Deni Sultanov (1977–2000)"
       }
     ],
@@ -6903,10 +6991,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/islam-zalautdinov.webp",
+    "image": "/images/people/islam-zalautdinov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/islam-zalautdinov.webp",
+        "src": "/images/people/islam-zalautdinov.webp?v=4",
         "caption": "İslam Zalautdinov (1978–2002)"
       }
     ],
@@ -6927,10 +7015,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/turpal-ali-camalhanov.webp",
+    "image": "/images/people/turpal-ali-camalhanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/turpal-ali-camalhanov.webp",
+        "src": "/images/people/turpal-ali-camalhanov.webp?v=4",
         "caption": "Turpal-Ali Camalhanov (1990–2009)"
       }
     ],
@@ -6951,10 +7039,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aslambek-bacayev.webp",
+    "image": "/images/people/aslambek-bacayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/aslambek-bacayev.webp",
+        "src": "/images/people/aslambek-bacayev.webp?v=4",
         "caption": "Aslambek Baçayev (1978–2002)"
       }
     ],
@@ -6975,10 +7063,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hamid-mahamasev.webp",
+    "image": "/images/people/hamid-mahamasev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/hamid-mahamasev.webp",
+        "src": "/images/people/hamid-mahamasev.webp?v=4",
         "caption": "Hamid Mahamaşev (1965–2000)"
       }
     ],
@@ -6999,10 +7087,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/isa-canaraliyev.webp",
+    "image": "/images/people/isa-canaraliyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/isa-canaraliyev.webp",
+        "src": "/images/people/isa-canaraliyev.webp?v=4",
         "caption": "İsa Canaraliyev (1980–2000)"
       }
     ],
@@ -7023,10 +7111,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/musa-magomadov.webp",
+    "image": "/images/people/musa-magomadov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/musa-magomadov.webp",
+        "src": "/images/people/musa-magomadov.webp?v=4",
         "caption": "Musa Magomadov (1980–2000)"
       }
     ],
@@ -7047,10 +7135,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/movldi-islamov.webp",
+    "image": "/images/people/movldi-islamov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/movldi-islamov.webp",
+        "src": "/images/people/movldi-islamov.webp?v=4",
         "caption": "Movldi İslamov (1958–2000)"
       }
     ],
@@ -7071,10 +7159,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/arbi-visayev.webp",
+    "image": "/images/people/arbi-visayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/arbi-visayev.webp",
+        "src": "/images/people/arbi-visayev.webp?v=4",
         "caption": "Arbi Visayev (1973–2000)"
       }
     ],
@@ -7095,10 +7183,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/vahid-visayev.webp",
+    "image": "/images/people/vahid-visayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/vahid-visayev.webp",
+        "src": "/images/people/vahid-visayev.webp?v=4",
         "caption": "Vahid Visayev (1974–2000)"
       }
     ],
@@ -7119,10 +7207,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hamzat-bamatgiriyev.webp",
+    "image": "/images/people/hamzat-bamatgiriyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/hamzat-bamatgiriyev.webp",
+        "src": "/images/people/hamzat-bamatgiriyev.webp?v=4",
         "caption": "Hamzat Bamatgiriyev (1981–2000)"
       }
     ],
@@ -7143,10 +7231,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ebubekir-magomadov.webp",
+    "image": "/images/people/ebubekir-magomadov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ebubekir-magomadov.webp",
+        "src": "/images/people/ebubekir-magomadov.webp?v=4",
         "caption": "Ebubekir Magomadov (1971–2000)"
       }
     ],
@@ -7167,10 +7255,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/apti-cukayev.webp",
+    "image": "/images/people/apti-cukayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/apti-cukayev.webp",
+        "src": "/images/people/apti-cukayev.webp?v=4",
         "caption": "Apti Çukayev (1978–2000)"
       }
     ],
@@ -7191,10 +7279,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ilyas-umhayev.webp",
+    "image": "/images/people/ilyas-umhayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ilyas-umhayev.webp",
+        "src": "/images/people/ilyas-umhayev.webp?v=4",
         "caption": "İlyas Umhayev (1977–2000)"
       }
     ],
@@ -7215,10 +7303,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/idris-amayev.webp",
+    "image": "/images/people/idris-amayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/idris-amayev.webp",
+        "src": "/images/people/idris-amayev.webp?v=4",
         "caption": "İdris Amayev (1975–2000)"
       }
     ],
@@ -7239,10 +7327,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/umar-borcasvili.webp",
+    "image": "/images/people/umar-borcasvili.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/umar-borcasvili.webp",
+        "src": "/images/people/umar-borcasvili.webp?v=4",
         "caption": "Umar Borçaşvili (1967–2000)"
       }
     ],
@@ -7263,10 +7351,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/has-muhammed-edilsultanov.webp",
+    "image": "/images/people/has-muhammed-edilsultanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/has-muhammed-edilsultanov.webp",
+        "src": "/images/people/has-muhammed-edilsultanov.webp?v=4",
         "caption": "Has-Muhammed Edilsultanov (1976–2000)"
       }
     ],
@@ -7287,10 +7375,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/saaman-magomadov.webp",
+    "image": "/images/people/saaman-magomadov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/saaman-magomadov.webp",
+        "src": "/images/people/saaman-magomadov.webp?v=4",
         "caption": "Şaaman Magomadov (1973–1994)"
       }
     ],
@@ -7311,10 +7399,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/zambek-isayev.webp",
+    "image": "/images/people/zambek-isayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/zambek-isayev.webp",
+        "src": "/images/people/zambek-isayev.webp?v=4",
         "caption": "Zambek İsayev (1960–2000)"
       }
     ],
@@ -7335,10 +7423,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/islam-baysangurov.webp",
+    "image": "/images/people/islam-baysangurov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/islam-baysangurov.webp",
+        "src": "/images/people/islam-baysangurov.webp?v=4",
         "caption": "İslam Baysangurov (1978–2000)"
       }
     ],
@@ -7359,10 +7447,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/balavdi-movsarov.webp",
+    "image": "/images/people/balavdi-movsarov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/balavdi-movsarov.webp",
+        "src": "/images/people/balavdi-movsarov.webp?v=4",
         "caption": "Balavdi Movsarov (1974–2000)"
       }
     ],
@@ -7383,10 +7471,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/yusuf-gobi.webp",
+    "image": "/images/people/yusuf-gobi.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/yusuf-gobi.webp",
+        "src": "/images/people/yusuf-gobi.webp?v=4",
         "caption": "Yusuf Gobi (1972–2000)"
       }
     ],
@@ -7407,10 +7495,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ismail-razakov.webp",
+    "image": "/images/people/ismail-razakov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ismail-razakov.webp",
+        "src": "/images/people/ismail-razakov.webp?v=4",
         "caption": "İsmail Razakov (1969–2000)"
       }
     ],
@@ -7431,10 +7519,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/rasid-molayev.webp",
+    "image": "/images/people/rasid-molayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/rasid-molayev.webp",
+        "src": "/images/people/rasid-molayev.webp?v=4",
         "caption": "Raşid Molayev (1960–2021)"
       }
     ],
@@ -7455,10 +7543,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/isa-bazurkayev.webp",
+    "image": "/images/people/isa-bazurkayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/isa-bazurkayev.webp",
+        "src": "/images/people/isa-bazurkayev.webp?v=4",
         "caption": "İsa Bazurkayev (1979–2021)"
       }
     ],
@@ -7479,10 +7567,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/vahit-darsayev.webp",
+    "image": "/images/people/vahit-darsayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/vahit-darsayev.webp",
+        "src": "/images/people/vahit-darsayev.webp?v=4",
         "caption": "Vahit Darşayev (1987–2021)"
       }
     ],
@@ -7503,10 +7591,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/samhan-saraliyev.webp",
+    "image": "/images/people/samhan-saraliyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/samhan-saraliyev.webp",
+        "src": "/images/people/samhan-saraliyev.webp?v=4",
         "caption": "Şamhan Saraliyev (1996–2021)"
       }
     ],
@@ -7527,10 +7615,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/turpal-ali-mejidov.webp",
+    "image": "/images/people/turpal-ali-mejidov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/turpal-ali-mejidov.webp",
+        "src": "/images/people/turpal-ali-mejidov.webp?v=4",
         "caption": "Turpal-Ali Mejidov (1990–2026)"
       }
     ],
@@ -7551,10 +7639,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/leca-cemnigov.webp",
+    "image": "/images/people/leca-cemnigov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/leca-cemnigov.webp",
+        "src": "/images/people/leca-cemnigov.webp?v=4",
         "caption": "Leça Cemnigov (1972–2000)"
       }
     ],
@@ -7575,10 +7663,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/yusuf-temirhanov.webp",
+    "image": "/images/people/yusuf-temirhanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/yusuf-temirhanov.webp",
+        "src": "/images/people/yusuf-temirhanov.webp?v=4",
         "caption": "Yusuf Temirhanov (1972–2018)"
       }
     ],
@@ -7599,10 +7687,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/apti-cabrailov.webp",
+    "image": "/images/people/apti-cabrailov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/apti-cabrailov.webp",
+        "src": "/images/people/apti-cabrailov.webp?v=4",
         "caption": "Apti Cabrailov (1975–2002)"
       }
     ],
@@ -7623,10 +7711,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/rustam-labazanov.webp",
+    "image": "/images/people/rustam-labazanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/rustam-labazanov.webp",
+        "src": "/images/people/rustam-labazanov.webp?v=4",
         "caption": "Rustam Labazanov (1976–2002)"
       }
     ],
@@ -7647,10 +7735,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ilyas-zakriyev.webp",
+    "image": "/images/people/ilyas-zakriyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ilyas-zakriyev.webp",
+        "src": "/images/people/ilyas-zakriyev.webp?v=4",
         "caption": "İlyas Zakriyev (1980–2002)"
       }
     ],
@@ -7671,10 +7759,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/emir-abuzar.webp",
+    "image": "/images/people/emir-abuzar.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/emir-abuzar.webp",
+        "src": "/images/people/emir-abuzar.webp?v=4",
         "caption": "Emir Abuzar (1978–2004)"
       }
     ],
@@ -7695,10 +7783,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/olhazar-bibulatov.webp",
+    "image": "/images/people/olhazar-bibulatov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/olhazar-bibulatov.webp",
+        "src": "/images/people/olhazar-bibulatov.webp?v=4",
         "caption": "Olhazar Bibulatov (1955–1995)"
       }
     ],
@@ -7719,10 +7807,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/arsen-mejidov.webp",
+    "image": "/images/people/arsen-mejidov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/arsen-mejidov.webp",
+        "src": "/images/people/arsen-mejidov.webp?v=4",
         "caption": "Arsen Mejidov (1984–2004)"
       }
     ],
@@ -7743,10 +7831,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/kazbek-gisnurkayev.webp",
+    "image": "/images/people/kazbek-gisnurkayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/kazbek-gisnurkayev.webp",
+        "src": "/images/people/kazbek-gisnurkayev.webp?v=4",
         "caption": "Kazbek Gişnurkayev (1982–2002)"
       }
     ],
@@ -7767,10 +7855,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muhammed-guluyev.webp",
+    "image": "/images/people/muhammed-guluyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/muhammed-guluyev.webp",
+        "src": "/images/people/muhammed-guluyev.webp?v=4",
         "caption": "Muhammed Guluyev (1977–2002)"
       }
     ],
@@ -7791,10 +7879,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ismail-eskiyev.webp",
+    "image": "/images/people/ismail-eskiyev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/ismail-eskiyev.webp",
+        "src": "/images/people/ismail-eskiyev.webp?v=4",
         "caption": "İsmail Eskiyev (1973–2003)"
       }
     ],
@@ -7815,10 +7903,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/apti-takayev.webp",
+    "image": "/images/people/apti-takayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/apti-takayev.webp",
+        "src": "/images/people/apti-takayev.webp?v=4",
         "caption": "Apti Takayev (1968–1995)"
       }
     ],
@@ -7839,10 +7927,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/idris-bakarov.webp",
+    "image": "/images/people/idris-bakarov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/idris-bakarov.webp",
+        "src": "/images/people/idris-bakarov.webp?v=4",
         "caption": "İdris Bakarov (1964–1999)"
       }
     ],
@@ -7863,10 +7951,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/timur-aslambekov.webp",
+    "image": "/images/people/timur-aslambekov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/timur-aslambekov.webp",
+        "src": "/images/people/timur-aslambekov.webp?v=4",
         "caption": "Timur Aslambekov (1981–2005)"
       }
     ],
@@ -7887,10 +7975,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muhammed-tagirov.webp",
+    "image": "/images/people/muhammed-tagirov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/muhammed-tagirov.webp",
+        "src": "/images/people/muhammed-tagirov.webp?v=4",
         "caption": "Muhammed Tagirov (1977–2001)"
       }
     ],
@@ -7911,10 +7999,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/zelim-elmurzayev.webp",
+    "image": "/images/people/zelim-elmurzayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/zelim-elmurzayev.webp",
+        "src": "/images/people/zelim-elmurzayev.webp?v=4",
         "caption": "Zelim Elmurzayev (1979–2004)"
       }
     ],
@@ -7935,10 +8023,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/islam-lecayev.webp",
+    "image": "/images/people/islam-lecayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/islam-lecayev.webp",
+        "src": "/images/people/islam-lecayev.webp?v=4",
         "caption": "İslam Leçayev (1984–2002)"
       }
     ],
@@ -7959,10 +8047,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muhammed-denilhanov.webp",
+    "image": "/images/people/muhammed-denilhanov.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/muhammed-denilhanov.webp",
+        "src": "/images/people/muhammed-denilhanov.webp?v=4",
         "caption": "Muhammed Denilhanov (1974–2000)"
       }
     ],
@@ -7983,10 +8071,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/arsen-tsumayev.webp",
+    "image": "/images/people/arsen-tsumayev.webp?v=4",
     "gallery": [
       {
-        "src": "/images/people/arsen-tsumayev.webp",
+        "src": "/images/people/arsen-tsumayev.webp?v=4",
         "caption": "Arsen Tsumayev (1981–2004)"
       }
     ],
@@ -8001,18 +8089,10 @@ export const PEOPLE: Person[] = [
 export const getPerson = (slug: string) => PEOPLE.find((p) => p.slug === slug);
 
 /* ------------------------------------------------------------------ */
-/* ARŞİV                                                               */
+/* ARŞİV (47 Doğrulanmış Birincil Tarihsel Kaynak)                     */
 /* ------------------------------------------------------------------ */
 
 export type DocType = "el-yazmasi" | "fotograf" | "harita" | "resmi-belge" | "kitap";
-
-export const DOC_TYPES: { id: DocType; label: string; count: string }[] = [
-  { id: "el-yazmasi", label: "El Yazmaları", count: "1.340 belge" },
-  { id: "fotograf", label: "Fotoğraflar", count: "2.850 fotoğraf" },
-  { id: "harita", label: "Haritalar", count: "420 harita" },
-  { id: "resmi-belge", label: "Resmi Belgeler", count: "860 belge" },
-  { id: "kitap", label: "Kitap ve Yayınlar", count: "310 eser" },
-];
 
 export type ArchiveDoc = {
   slug: string;
@@ -8023,7 +8103,9 @@ export type ArchiveDoc = {
   era: Era;
   region: string;
   language: string;
+  author?: string;
   source: string;
+  sourceUrl: string;
   catalogNo: string;
   image: string;
   description: string;
@@ -8033,280 +8115,1072 @@ export type ArchiveDoc = {
 };
 
 export const DOCS: ArchiveDoc[] = [
+  /* ===================== EL YAZMALARI & EPİGRAFİ (7) ===================== */
   {
-    slug: "kule-ici-yazma-kodeks",
-    title: "Vaynah Kule İçi El Yazması Kodeksi ve Mühürlü Ahitname",
+    slug: "zumsoy-epigrafik-tas-yaziti",
+    title: "Zumsoy Vadisi Erken Dönem Vaynah Epigrafik Taş Kitabesi",
     type: "el-yazmasi",
-    year: 1848,
-    dateLabel: "1848 (1264 H.)",
+    year: 1650,
+    dateLabel: "XVI–XVII. Yüzyıl (Zumsoy)",
     era: "imamet",
-    region: "İnguşetya – Çeçenya (Targim – Vedeno)",
-    language: "Arapça (Kafkas Neshi) ve Vaynah Notları",
-    source: "Targim Kule Mahzeni Özel Fonu",
-    catalogNo: "TRG-MS-1848-019",
-    image: "/images/hf-ic-arsiv-yazmalar.jpg",
+    region: "Çeçenya (İtum-Kale – Zumsoy Vadisi)",
+    language: "Erken Nah Epigrafisi (Asomtavruli / Nushuri Harfli)",
+    author: "Zumsoy Taş Ustaları",
+    source: "Çeçenya Arkeoloji ve Epigrafi Saha Koleksiyonu (Wikimedia Commons)",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Zumsoy%27s_letters.jpg",
+    catalogNo: "ZMS-EP-1650-001",
+    image: "/images/archive/zumsoy-epigrafik-tas-yaziti.jpg",
     description:
-      "Taş savaş kulesinin üst mahzen odasında gaz lambası ve meşe raflar arasında asırlarca korunan deri ciltli yazma kodeksler, açık parşömen varaklar ve kırmızı mum mühürlü teyp ahitnamesi.",
-    transcription:
-      "بسم الله الرحمن الرحيم\nهذا كتاب العهد والأمانة المحفوظ في برج تارغيم الأعلى بين قبائل الجبال، شهادةً على حدود المراعي وحقوق الضيف وصيانة الديار...\nسنة ١٢٦٤ هـ",
-    translation:
-      "Rahman ve Rahim olan Allah'ın adıyla.\nBu belge; yayla sınırları, misafir dokunulmazlığı ve ata ocaklarının müşterek muhafazası üzerine dağ teypleri arasında akdedilip Yukarı Targim Kulesi'nde emanete alınan ahitname ve vakfiye kaydıdır...\nHicri 1264 (Miladi 1848).",
+      "Yukarı Argun havzasının sarp kollarından Zumsoy vadisinde kule duvarı taşına kazınmış erken dönem epigrafik yazıt. İslamlaşma öncesi ve erken modern geçiş asırlarında Güney-Kuzey Kafkasya kültür temaslarıyla taş bloklara işlenen nadir Vaynah yazı örneklerindendir.",
     notes:
-      "Kayış tokalı kalın dana derisi ciltler, el yapımı parşömen varaklar ve sağ alt yaprakta kabartma kırmızı mum mühür baskısı; kule mazgal penceresinden süzülen doğal ışık altında belgelenmiştir.",
+      "Yontma kumtaşı/kireçtaşı blok üzerinde keski ile açılmış derin oluklu harf dizisi; dağ iklimi altında doğal patinasını korumuştur.",
   },
   {
-    slug: "samil-donemi-mektup",
-    title: "İmamet Divanı Mektubu (1261 H. / 1845)",
+    slug: "himoy-kule-kemeri-petroglif-yaziti",
+    title: "Himoy Konut Kulesi Giriş Kemeri Güneş ve Çarkıfelek Petroglif Taşı",
     type: "el-yazmasi",
-    year: 1845,
-    dateLabel: "1845 (1261 H.)",
+    year: 1720,
+    dateLabel: "XVIII. Yüzyıl Başı (Himoy, Şaroy)",
+    era: "imamet",
+    region: "Çeçenya (Şaroy – Himoy)",
+    language: "Vaynah Mimari Tamga ve Petroglif Sistemi",
+    author: "Şaroy-Himoy Kule Ustası",
+    source: "Şaroy Tarihsel-Mimari Kompleksi Saha Belgelemesi (Wikimedia Commons)",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:%D0%9B%D0%B5%D0%B2%D1%8B%D0%B9_%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D0%B8%D0%B9_%D1%83%D0%B3%D0%BE%D0%BB_%D0%B0%D1%80%D0%BA%D0%B8,_%D0%B2%D1%85%D0%BE%D0%B4%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BF%D1%80%D0%BE%D0%B5%D0%BC%D0%B0_%D0%BD%D0%B0%D0%B4_%D0%B2%D1%85%D0%BE%D0%B4%D0%BD%D0%BE%D0%B9_%D0%B4%D0%B2%D0%B5%D1%80%D1%8C%D1%8E_%D0%B6%D0%B8%D0%BB%D0%BE%D0%B9_%D0%B1%D0%B0%D1%88%D0%BD%D0%B8_%D0%B2_%D1%81._%D0%A5%D0%B8%D0%BC%D0%BE%D0%B9_%D0%A7%D0%B5%D1%87%D0%BD%D1%8F.jpg",
+    catalogNo: "HMY-PT-1720-002",
+    image: "/images/archive/himoy-kule-kemeri-petroglif-yaziti.jpg",
+    description:
+      "Şaroy bölgesindeki tarihi Himoy köyünde bir konut kulesinin (gala) kemerli kapı açıklığının sol üst köşe taşına simetrik olarak kazınmış döner güneş (çarkıfelek) petroglifleri. Vaynah kule mimarisinde kapı eşiğinin ve aile ocağının dokunulmazlığını simgeleyen kadim taş işaretlerindendir.",
+    notes:
+      "Tek parça kemer söve taşında kabartma çerçeve içine alınmış çift güneş çarkı motifi; V. İ. Markovin'in Kuzey Kafkasya petroglif tipolojisiyle birebir örtüşür.",
+  },
+  {
+    slug: "imamet-askeri-surasi-protokolu-1832",
+    title: "Kuzey Kafkasya İmameti Askeri Şûra Protokolü — Üç Mühürlü Arapça El Yazması",
+    type: "el-yazmasi",
+    year: 1832,
+    dateLabel: "Receb 1248 / 1250 H. (1832–1834)",
     era: "imamet",
     region: "Dağıstan – Çeçenya",
     language: "Arapça (Kafkas Neshi)",
-    source: "Targim El Yazmaları Fonu",
-    catalogNo: "TRG-MS-1845-014",
-    image: "/images/doc-letter.jpg",
+    author: "Kuzey Kafkasya İmameti Askeri İdare Heyeti",
+    source: "Dağıstan Ulusal Müzesi — Kuzey Kafkasya İmameti Yazma Fonu",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB_%D0%B2%D0%BE%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D0%B0_%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BE-%D0%9A%D0%B0%D0%B2%D0%BA%D0%B0%D0%B7%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B8%D0%BC%D0%B0%D0%BC%D0%B0%D1%82%D0%B0.jpg",
+    catalogNo: "DNM-MS-1832-004",
+    image: "/images/archive/imamet-askeri-surasi-protokolu-1832.jpg",
     description:
-      "Dargo ve Vedeno hattındaki naiplere hitaben kaleme alınmış, kırmızı mum mühürlü İmamet dönemi resmi mektubu. Kuzey Kafkasya'da Arapçanın bölgeler üstü resmi yazışma dili olarak kullanımını belgeler.",
+      "İmam Gazi Muhammed dönemi askeri idare üyelerinin ve komutanların bir araya gelerek Şamil'in askeri işlerin yürütülmesinde yardımcı tayin edilmesini, kıtaların tertibini ve erzak taksimini karara bağladıkları üç ıslak mühürlü Arapça şûra protokolü.",
     transcription:
-      "بسم الله الرحمن الرحيم\nمن جبال القوقاز إلى إخواننا النواب والمجاهدين في ولايات شيشان وداغستان، السلام عليكم ورحمة الله وبركاته.\nأما بعد، فأوصيكم بتقوى الله والعدل بين الرعية وحفظ الثغور في الأودية والجبال...\nحرر في سنة ١٢٦١ هـ",
+      "لا حول ولا قوة إلا بالله العلي العظيم\nنحن القواد وأعضاء الإدارة الحربية اجتمعنا بإذن الإمام غازي محمد في أول رجب... للمشاورة بخصوص تعيين المعاون له في الأمور الحربية وإجرائها، ثم اتفقت آراؤنا... وفوضنا إليه ترتيب العساكر وتقسيم الأرزاق بينهم وجمع الميرة والأموال وغيرها من كل ما يحتاج إليه العساكر.\nولتصديقه ختمنا خواتيمنا.",
     translation:
-      "Rahman ve Rahim olan Allah'ın adıyla.\nKafkas dağlarından Çeçenya ve Dağıstan vilayetlerindeki naip kardeşlerimize ve mücahitlere; Allah'ın selâmı, rahmeti ve bereketi üzerinize olsun.\nBundan sonra; sizlere Allah'tan sakınmayı, ahali arasında tam adaletle hükmetmeyi ve vadiler ile dağ geçitlerindeki nöbet noktalarını muhafaza etmeyi vasiyet ederim...\nHicri 1261 (Miladi 1845) senesinde kaleme alındı.",
+      "Yüce ve Azîm olan Allah'tan başka güç ve kudret yoktur.\nBiz komutanlar ve askeri idare üyeleri, İmam Gazi Muhammed'in izniyle Receb ayının başında askeri işlerin yürütülmesinde kendisine yardımcı tayin edilmesi hususunu istişare etmek üzere toplandık. Görüşlerimiz tam bir ittifakla birleşti; askerlerin tertibi, aralarındaki erzak taksimi, zahire ve mali kaynakların toplanması ile ordunun ihtiyaç duyduğu sair işleri kendisine tefviz ettik.\nBunu tasdik etmek üzere mühürlerimizi bastık.",
     notes:
-      "El yapımı pamuklu paçavra kâğıt üzerine kamış kalem ve is mürekkebi. Sağ alt köşede İmamet divanına mahsus kırmızı mum mühür baskısı yer almaktadır.",
+      "El yapımı kalın sarımtırak kâğıt üzerine kahverengi-siyah demir mazı mürekkebi; alt kısımda üç adet kare ve dairevi komutan mührü açıkça seçilmektedir.",
   },
   {
-    slug: "kafkasya-haritasi-1871",
-    title: "Büyük Kafkasya Dağlık Bölge Haritası",
-    type: "harita",
-    year: 1871,
-    dateLabel: "1871",
-    era: "imparatorluk",
-    region: "Kuzey Kafkasya",
-    language: "Rusça (Eski İmla)",
-    source: "Tarihi Kartografya Koleksiyonu",
-    catalogNo: "TRG-MP-1871-003",
-    image: "/images/doc-map.jpg",
-    description:
-      "Karadeniz'den Hazar Denizi'ne uzanan Büyük Kafkas sıradağlarını, Vladikavkaz, Temir-Han-Şura, Derbent ve Tiflis bağlantılarıyla gösteren 1871 tarihli askeri topografya haritası.",
-    transcription:
-      "КАРТА ГОРНОЙ ЧАСТИ ВЕЛИКОГО КАВКАЗА\nСоставлена по съемкамъ военныхъ топографовъ 1871 года.\nМасштабъ въ 40 верстъ въ дюймѣ.",
-    translation:
-      "BÜYÜK KAFKASYA DAĞLIK KISIM HARİTASI\n1871 yılı askeri topograflarının saha ölçümlerine dayanılarak hazırlanmıştır.\nÖlçek: İnç başına 40 verst.",
-    notes:
-      "Sırt taramalı rölyef tekniğiyle basılmış katlanır keten sırtlı harita paftası; sağ üst lejantta kale, istihkâm, kervan yolu ve dağ geçidi işaretleri gösterilmiştir.",
-  },
-  {
-    slug: "surgun-listeleri-1944",
-    title: "23 Şubat 1944 Sürgün Sevk Fotoğrafı ve Kayıtları",
-    type: "resmi-belge",
-    year: 1944,
-    dateLabel: "Şubat 1944",
-    era: "sovyet",
-    region: "Çeçen-İnguş ÖSSC",
-    language: "Rusça / Sözlü Tanıklık",
-    source: "Sürgün Hafıza ve Tanıklık Fonu",
-    catalogNo: "TRG-EX-1944-089",
-    image: "/images/doc-surgun.jpg",
-    description:
-      "23 Şubat 1944 sabahı ağır kış koşullarında yük vagonlarına bindirilerek Orta Asya ve Kazakistan bozkırlarına sevk edilen Çeçen ve İnguş ailelerin yola çıkışını belgeleyen arşiv kaydı.",
-    translation:
-      "Kayıt Özeti — İstasyon Sevk Tutanağı (Şubat 1944):\nDağ köylerinden indirilen hanelerin hane reisleri, yaşlılar ve çocuklarla birlikte kışlık erzak alamadan vagonlara nakli. Tanıklık notu: 'Kar altında yürürken yaşlılarımız yanlarına yalnızca Kur'an-ı Kerim ve bir avuç vatan toprağı alabildi.'",
-    notes:
-      "Aile mahremiyeti ilkeleri gereğince şahıs listelerinin tam dökümü yalnızca birinci derece yakınların ve akredite araştırmacıların erişimine açıktır.",
-  },
-  {
-    slug: "targim-kuleleri-fotografi",
-    title: "Targim Vadi Kuleleri Erken Dönem Cam Negatif Baskısı",
-    type: "fotograf",
-    year: 1890,
-    dateLabel: "1890 civarı",
-    era: "imparatorluk",
-    region: "İnguşetya (Cerah – Assa Havzası)",
-    language: "Görsel Materyal",
-    source: "Kafkasya Fotoğraf Arşivi",
-    catalogNo: "TRG-PH-1890-021",
-    image: "/images/doc-tower.jpg",
-    description:
-      "Assa ve Cerah vadilerinin sarp kayalıklarında yükselen Vaynah gözetleme kuleleri, tonozlu taş yapılar ve kashi (ata mezar anıtları) bütününü belgeleyen 19. yüzyıl sonu albümin baskı fotoğraf.",
-    notes:
-      "Albümin kart baskı, 18×24 cm cam negatiften çoğaltılmıştır. Kule çatı silmelerindeki taş işçiliği 1944 öncesi özgün durumu yansıtır.",
-  },
-  {
-    slug: "rus-raporu-1864",
-    title: "Bab-ı Âli Muhacirîn-i Kafkasya Defteri (1281 / 1865)",
-    type: "resmi-belge",
-    year: 1865,
-    dateLabel: "1865 (1281 H.)",
-    era: "imparatorluk",
-    region: "Kuzey Kafkasya – Osmanlı Toprakları",
-    language: "Osmanlı Türkçesi",
-    source: "Muhacirîn Komisyonu Arşiv Kopyaları",
-    catalogNo: "TRG-OT-1865-042",
-    image: "/images/doc-report.jpg",
-    description:
-      "1864–1865 büyük göç (muhaceret) dalgasında Kuzey Kafkasya'dan Anadolu, Balkanlar ve Bilâd-ı Şam'a hicret eden Çeçen, İnguş ve Çerkes kafilelerinin iskân ve iaşe kayıtlarını içeren defter ve ferman sureti.",
-    transcription:
-      "باب عالی — مهاجرین قفقاسیه دفتری ١٢٨١\nحضرت همایونی\nقفقاسیه اهالیسندن ممالک محروسه شاهانه یه هجرت ایدن قبائل و عائلاتك اسکان و اعاشه لری خصوصنده...",
-    translation:
-      "BÂB-I ÂLİ — KAFKASYA MUHACİRLERİ DEFTERİ (1281 / 1865)\nKafkasya ahalisinden Osmanlı memleketlerine hicret etmek zorunda kalan kabile ve ailelerin uygun kazalara iskânları, tohumluk ve mesken yardımlarının temini hususunda irade sureti.",
-    notes:
-      "Ebru kaplı deri ciltli kayıt defteri ve kırmızı mum mühürlü berat nüshası bir arada görüntülenmiştir.",
-  },
-  {
-    slug: "imamet-dergisi-notlari",
-    title: "İçkeriya Naiplik Divanı ve Zekât Kaydı",
+    slug: "lermontov-valerik-el-yazmasi-1840",
+    title: "11 Temmuz 1840 Valerik Muharebesi Tanıklığı — M. Y. Lermontov'un Orijinal El Yazması",
     type: "el-yazmasi",
-    year: 1850,
-    dateLabel: "1850 civarı",
-    era: "imamet",
-    region: "Çeçenya (Vedeno)",
-    language: "Arapça",
-    source: "Özel Aile Koleksiyonu",
-    catalogNo: "TRG-MS-1850-031",
-    image: "/images/arsiv.jpg",
-    description:
-      "Vedeno merkezli İmamet idaresinde naipliklerin süvari teçhizatı, Beytü'l-mal gelirleri ve şehit ailelerine ayrılan payları kaydettiği deri ciltli divan defteri.",
-    notes:
-      "Ciltli yazma mecmua yaprakları ve bronz mühür kalıbıyla birlikte korunmuştur.",
-  },
-  {
-    slug: "kafkas-atlasi",
-    title: "Kuzey Kafkasya Topografik Rölyef Paftası",
-    type: "harita",
     year: 1840,
-    dateLabel: "1840 civarı",
+    dateLabel: "Temmuz 1840",
     era: "imamet",
-    region: "Kuzey Kafkasya",
-    language: "Fransızca / Rusça",
-    source: "Tarihi Kartografya Koleksiyonu",
-    catalogNo: "TRG-MP-1840-009",
-    image: "/images/atlas.jpg",
+    region: "Çeçenya (Valerik Irmağı – Achhoy-Martan)",
+    language: "Rusça (1840 El Yazısı İmlası)",
+    author: "Mihail Yuryeviç Lermontov (1814–1841)",
+    source: "Rusya Bilimler Akademisi Rus Edebiyatı Enstitüsü (Puşkin Evi / İRLİ RAN)",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:%D0%90%D0%B2%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84_%D1%81%D1%82%D0%B8%D1%85%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D0%B5%D0%BD%D0%B8%D1%8F_%D0%9B%D0%B5%D1%80%D0%BC%D0%BE%D0%BD%D1%82%D0%BE%D0%B2%D0%B0_%C2%AB%D0%92%D0%B0%D0%BB%D0%B5%D1%80%D0%B8%D0%BA%C2%BB.jpg",
+    catalogNo: "IRLI-MS-1840-011",
+    image: "/images/archive/lermontov-valerik-el-yazmasi-1840.jpg",
     description:
-      "Daryal Boğazı, Argun Vadisi, Assa Havzası ve Dağıstan yüksek platolarındaki kule geçitlerini kabartma gölgeleme tekniğiyle betimleyen 19. yüzyıl ortası atlas paftası.",
-  },
-  {
-    slug: "kuleler-albumu",
-    title: "Cerah ve Targim Taş Kuleleri Etnografya Albümü",
-    type: "kitap",
-    year: 1928,
-    dateLabel: "1928",
-    era: "sovyet",
-    region: "İnguşetya – Çeçenya",
-    language: "Rusça / İnguşça",
-    source: "Kafkasya Araştırmaları Kütüphanesi",
-    catalogNo: "TRG-BK-1928-012",
-    image: "/images/targim-towers.jpg",
-    description:
-      "1920'li yıllarda dağ köylerinde yürütülen arkeolojik ve etnografik keşif gezilerinde ölçülen savaş kulelerinin (vov) mimari oranlarını ve petroglyph tamgalarını derleyen monografi.",
-  },
-  {
-    slug: "atli-birlik-fotografi",
-    title: "Kafkas Süvari Alayı Arşiv Kaydı",
-    type: "fotograf",
-    year: 1914,
-    dateLabel: "1914",
-    era: "imparatorluk",
-    region: "Kuzey Kafkasya",
-    language: "Görsel Materyal",
-    source: "Fotoğraf Arşivi",
-    catalogNo: "TRG-PH-1914-055",
-    image: "/images/kisiler.jpg",
-    description:
-      "Geleneksel çerkeska, papaha, başlık ve sancaklarıyla Kafkas atlı birliklerini dağ geçidinde gösteren tarihi fotoğraf kaydı.",
-  },
-  {
-    slug: "el-sanatlari-katalogu",
-    title: "Savatlı Gümüş, Kama ve Kemer İşçiliği Kataloğu",
-    type: "kitap",
-    year: 1965,
-    dateLabel: "1965",
-    era: "yakin",
-    region: "Kuzey Kafkasya",
-    language: "Rusça / Türkçe Özetli",
-    source: "Maddi Kültür Kütüphanesi",
-    catalogNo: "TRG-BK-1965-074",
-    image: "/images/kultur.jpg",
-    description:
-      "Kafkas ustalarının kuşaktan kuşağa aktardığı savatlı (niello) gümüş kama (kinjal), kadın göğüslük ve kemer tokaları ile geometrik yün halı motiflerini belgeleyen müze kataloğu.",
-  },
-  {
-    slug: "oymali-vaynah-kule-kapisi",
-    title: "Oymalı Vaynah Kule Kapısı ve Demir Halkalı Kemer",
-    type: "fotograf",
-    year: 1740,
-    dateLabel: "XVIII. Yüzyıl (1740 civarı)",
-    era: "imamet",
-    region: "İnguşetya (Cerah – Targim Vadisi)",
-    language: "Mimari Tamga ve Petroglif",
-    source: "Vaynah Mimari Miras Envanteri",
-    catalogNo: "TRG-AR-1740-007",
-    image: "/images/hf-oymali-kapi.jpg",
-    description:
-      "Yontma kireçtaşı kemer söveleri arasına oturtulmuş, Kafkas dağ silsilesi ve geometrik güneş tamgalarıyla derin oymalı, kökboyası kırmızı pigment izli ve dövme demir halkalı asırlık meşe kule kapısı.",
-    notes:
-      "Kapı kanadındaki üçgen dağ kabartmaları ile eşmerkezli kare tamgalar kulenin ait olduğu teypin koruyucu ocağını simgeler; dövme demir tokmak halkası özgün halindedir.",
-  },
-  {
-    slug: "muhurlu-arsiv-sicili-1924",
-    title: "Dağlık Özerk Bölge Mühürlü Köy ve Arazi Sicili (1924)",
-    type: "resmi-belge",
-    year: 1924,
-    dateLabel: "1924",
-    era: "sovyet",
-    region: "Çeçen – İnguş Dağ Köyleri",
-    language: "Rusça / Yerel Yer Adları Dökümü",
-    source: "Kuzey Kafkasya İdari Sicil Fonu",
-    catalogNo: "TRG-RG-1924-063",
-    image: "/images/hf-muhurlu-evrak.jpg",
-    description:
-      "Ahşap arşiv masası üzerinde muhafaza edilen, mor dairevi resmi mühürlü ve çapraz kırmızı kontrol şeritli daktilo arazi tutanağı ile el cetvelli köy hane kayıt defteri.",
+      "General Galafeyev müfrezesinde Teğmen olarak Küçük Çeçenya seferine katılan şair Mihail Lermontov'un, 11 Temmuz 1840'ta Gehi ormanları içindeki Valerik Çayı kıyısında Naib Ahverdi Muhammed ve İsa Gendargeno komutasındaki Çeçen savaşçılarla yaşanan kanlı çarpışmayı hemen muharebe sonrasında kaleme aldığı otograf el yazması.",
+    transcription:
+      "Я къ вамъ пишу случайно; право\nНе знаю какъ и для чего...\nА геній смерти не жалѣлъ!\nИ мѣсто битвы покрывалось\nКоврами тѣлъ... Валерикъ — Рѣчка смерти.",
     translation:
-      "Kayıt Özeti — Dağlık Bölge Arazi ve Kule Yerleşimleri Tasnif Tutanağı (1924):\nYukarı Assa, Armhi ve Argun havzalarındaki tarihi taş kule köylerinin mera sınırları, değirmen hakları ve hane sayılarını teyit eden mühürlü sicil yaprağı.",
+      "Size tesadüfen yazıyorum; doğrusu\nNasıl ve niçin olduğunu bilmeden...\nVe ölüm meleği hiç acımadı!\nSavaş meydanı örtüldü bedenlerle...\nYerli dilinde 'Ölüm Irmağı' dedikleri Valerik kıyısında.",
     notes:
-      "Sararmış 1920'ler evrak kâğıdı üzerinde mor mürekkepli resmi daire mührü, sağda el cetvelli defter fasikülü ve arka planda kilitli ahşap evrak sandığı.",
+      "Yazarın kendi düzeltme ve karalamalarını içeren 1840 tarihli mürekkepli çalışma yaprağı; Rus edebiyatında Çeçenya'daki savaşın anlamsızlığını ve Çeçen savaşçıların ölümüne cesaretini kayda geçiren en erken birincil edebi tanıklıktır.",
   },
   {
-    slug: "targim-safak-kulesi-ve-istang",
-    title: "Şafak Vakti Vaynah Savaş Kulesi ve Geometrik İstang",
+    slug: "imam-samil-naib-isa-mektubu-1842",
+    title: "İmam Şamil'den Çeçen Naibi İsa Gendargenoyevski'ye Arapça Mektup (1842)",
+    type: "el-yazmasi",
+    year: 1842,
+    dateLabel: "1842 (1258 H.)",
+    era: "imamet",
+    region: "Çeçenya (Urus-Martan – Büyük ve Küçük Çeçenya)",
+    language: "Arapça (Kafkas Divan Neshi)",
+    author: "İmam Şamil (Şemvil)",
+    source: "Kuzey Kafkasya İmameti Divan Yazışmaları Koleksiyonu (Wikimedia Commons)",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B8%D1%81%D1%8C%D0%BC%D0%BE_%D0%A8%D0%B0%D0%BC%D0%B8%D0%BB%D1%8F_%D0%BD%D0%B0%D0%B8%D0%B1%D1%83_%D0%98%D1%81%D0%B5.jpg",
+    catalogNo: "CAU-MS-1842-017",
+    image: "/images/archive/imam-samil-naib-isa-mektubu-1842.jpg",
+    description:
+      "İmam Şamil'in 1840 genel Çeçenya biatında kilit rol oynayan Urus-Martanlı büyük Çeçen komutanı Naib İsa Gendargenoyevski'ye ('Min Şemvîl ilâ ahîhi Îsâ en-Nâib' başlığıyla) gönderdiği Arapça resmi mektup. Vilayetteki müridlerin ve halkın idaresinde şûradan ayrılmamayı, kimseye ağır yük yüklememeyi ve birlik düzenini korumayı öğütler.",
+    transcription:
+      "من شمويل إلى أخيه عيسى النائب\nالسلام عليكم ورحمة الله\nأما بعد، فقد أتاني جميع المريدين من ولايتك ولم أجبهم إلا ما أجبت نعم خان... فلا يخطر ببالكم شيء ما في حقهم ولا نكلف المريدين كالذرة... ولا نخلي مشاورتكم عنهم...",
+    translation:
+      "Şemvil'den [İmam Şamil'den] kardeşi Naib İsa'ya;\nAllah'ın selâmı ve rahmeti üzerinize olsun.\nBundan sonra: Vilayetinden müridlerin tamamı yanıma geldi; onlara Naim Han'a verdiğim cevaptan başkasını vermedim. Onlar hakkında gönlünüze hiçbir şüphe gelmesin; müridlere zerre miktarı dahi güçlerinin üstünde külfet yüklemeyiz ve sizinle olan istişaremizi onlardan eksik etmeyiz...",
+    notes:
+      "Dar dikey kesimli İmamet divan kâğıdı üzerine işlek Kafkas neshiyle yazılmıştır; Kuzey Kafkasya İmameti'nde Çeçen naiplerle merkezi divan arasındaki Arapça resmi yazışma ağının en berrak örneklerindendir.",
+  },
+  {
+    slug: "imam-samil-nisanlari-arapca-yazitli",
+    title: "İmamet Devleti Gümüş Savatlı Liyakat Nişanları ve Arapça Hakkâklık Kitabeleri",
+    type: "el-yazmasi",
+    year: 1847,
+    dateLabel: "1845–1855 (1261–1271 H.)",
+    era: "imamet",
+    region: "Çeçenya (Vedeno) – Dağıstan",
+    language: "Arapça (Gümüş Üzerine Savatlı Hakkâklık)",
+    author: "Vedeno ve Kubaçi İmamet Darphane Ustaları",
+    source: "Devlet Tarih Müzesi (GİM, Moskova) — İmamet Nişanları Koleksiyonu",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:%D0%9E%D1%80%D0%B4%D0%B5%D0%BD%D0%B0_%D0%98%D0%BC%D0%B0%D0%BC%D0%B0%D1%82%D0%B0_%D0%A8%D0%B0%D0%BC%D0%B8%D0%BB%D1%8F.jpg",
+    catalogNo: "GIM-EP-1847-023",
+    image: "/images/archive/imam-samil-nisanlari-arapca-yazitli.jpg",
+    description:
+      "Başkent Vedeno döneminde İmam Şamil tarafından ihdas edilip Baysangur Benoyski, Şalili Talhig ve Atabay Ataginski gibi seçkin naiplere ve savaşçılara tevcih edilen savatlı (niello) gümüş liyakat nişanları. Her madalyonun merkezinde Arapça yiğitlik ve adalet beyitleri kazılıdır.",
+    transcription:
+      "لا فتى إلا علي لا سيف إلا ذو الفقار\nمن يفكر في العواقب لم يكن شجاعاً\nهذا نيشان الشجاعة والبسالة",
+    translation:
+      "Ali gibi yiğit, Zülfikâr gibi kılıç yoktur.\nAkıbetini (korkusunu) düşünen kimse cesur olamaz.\nBu, yiğitlik ve kahramanlık nişanıdır.",
+    notes:
+      "Gümüş, altın yaldız ve Kafkas savatı (чернение); yıldız, hilal ve dairevi rozet formlarında dövme ve kalem işi.",
+  },
+  {
+    slug: "gucan-kale-mimari-rolove-cizimi-1960",
+    title: "Guçan-Kale Kulesi El Çizimi Mimari Rölöve, Kesit ve Ölçüm Paftası (1960)",
+    type: "el-yazmasi",
+    year: 1960,
+    dateLabel: "1958–1960 (Argun Havzası)",
+    era: "yakin",
+    region: "Çeçenya (Yukarı Argun – İtum-Kale)",
+    language: "Rusça / Mimari Ölçekli El Çizimi",
+    author: "Kuzey Kafkasya Arkeoloji Keşif Heyeti (V. İ. Markovin Ekibi)",
+    source: "Kuzey Kafkasya Dağ Mimarisi Arkeolojik Rölöve Arşivi (Wikimedia Commons)",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:%D0%91%D0%B0%D1%88%D0%BD%D1%8F_%D0%B3%D1%83%D1%87%D0%B0%D0%BD_%D0%BA%D0%B0%D0%BB%D0%B5.jpg",
+    catalogNo: "NKA-MS-1960-046",
+    image: "/images/archive/gucan-kale-mimari-rolove-cizimi-1960.jpg",
+    description:
+      "1957 sürgün dönüşünün hemen ardından Çeçenya'nın dağlık Argun havzasında başlatılan arkeolojik envanter çalışmalarında, Guçan-Kale kulesinin taş dizilimini, mazgal pencerelerini, kemer açıklıklarını ve kat kesitlerini milimetrik olarak belgeleyen çini mürekkepli orijinal saha rölöve paftası.",
+    notes:
+      "Milimetrik ölçek çubuklu çini mürekkep saha çizimi; 1990'lardaki çatışmalarda ağır hasar gören dağ kulelerinin restorasyonu için birincil teknik referans niteliğindedir.",
+  },
+
+  /* ===================== HARİTALAR (9) ===================== */
+  {
+    slug: "sheikh-mansur-1787-winkler-harita-gravuru",
+    title: "J. Chr. Winkler'in Ekim 1787 Kuzey Kafkasya Cephe Haritası Kartuşu ve Şeyh Mansur Tasviri",
+    type: "harita",
+    year: 1787,
+    dateLabel: "Ekim 1787",
+    era: "imamet",
+    region: "Kuzey Kafkasya (Kuban – Sunja – Terek)",
+    language: "Almanca",
+    author: "Johann Christoph Winkler (Bakır Baskı Haritacı)",
+    source: "Avrupa Bakır Baskı Tarih ve Kartografya Koleksiyonu (1787)",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Portr%C3%A4t_des_%E2%80%9EScheich_Mansur%E2%80%9C.png",
+    catalogNo: "WNK-MP-1787-001",
+    image: "/images/archive/sheikh-mansur-1787-winkler-harita-gravuru.png",
+    description:
+      "1–10 Ekim 1787 tarihlerinde Kuzey Kafkasya'da Rus birlikleri ile Şeyh Mansur komutasındaki Kafkas kuvvetleri arasındaki harekât sahasını gösteren Almanca bakır baskı askeri harita paftasının ('Carte der am 1ten bis 10ten Oct. 1787...') özgün portre kartuşu. Aldılı Şeyh Mansur'u sağlığında Avrupa kamuoyuna tanıtan çağdaş birincil baskılardandır.",
+    transcription:
+      "Carte Der am 1ten bis 10ten Oct. 1787 zwischen den Russen und dem Scheich Mansur vorgefallenen Actionen im Nord-Kaukasus. — Porträt des „Scheich Mansur“.",
+    translation:
+      "1–10 Ekim 1787 tarihlerinde Kuzey Kafkasya'da Ruslar ile Şeyh Mansur arasında vuku bulan muharebelerin haritası. — 'Şeyh Mansur'un Tasviri.",
+    notes:
+      "El boyamalı bakır gravür (Kupferstich) harita detayı, 1787 sonbaharı.",
+  },
+  {
+    slug: "dubois-kafkasya-genel-haritasi-1843",
+    title: "Frédéric Dubois de Montpéreux — Kuzey ve Güney Kafkasya Genel Haritası (1843)",
+    type: "harita",
+    year: 1843,
+    dateLabel: "1843 (Neuchâtel / Paris)",
+    era: "imamet",
+    region: "Kuzey ve Güney Kafkasya",
+    language: "Fransızca",
+    author: "Frédéric Dubois de Montpéreux (1798–1850)",
+    source: "Voyage autour du Caucase, Atlas Historique et Géographique (Paris, 1843)",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Carte_generale_de_la_Crimee_et_des_Pays_situes_au_Sud_et_au_Nord_du_Caucase_-_Dubois_de_Montpereux.jpg",
+    catalogNo: "DBM-MP-1843-005",
+    image: "/images/archive/dubois-kafkasya-genel-haritasi-1843.jpg",
+    description:
+      "İsviçreli arkeolog, jeolog ve seyyah Frédéric Dubois de Montpéreux'nün Kafkasya araştırmaları sonucunda yayımladığı 'Voyage autour du Caucase' atlasının genel paftası. Terek, Sunja, Assa ve Argun nehir sistemleri boyunca uzanan Çeçen ('Tchetchentses') ve İnguş ('Ingouches / Kistes') topraklarını Avrupa kartografyasında ayrıntılı biçimde konumlandırır.",
+    transcription:
+      "CARTE GÉNÉRALE DE LA CRIMÉE ET DES PAYS SITUÉS AU SUD ET AU NORD DU CAUCASE. Dressée et dessinée d'après les matériaux les plus récents par Fréd. Dubois de Montpéreux. 1843.",
+    translation:
+      "KIRIM VE KAFKASYA'NIN GÜNEYİ İLE KUZEYİNDE YER ALAN ÜLKELERİN GENEL HARİTASI. En güncel malzemelere dayanılarak Fréd. Dubois de Montpéreux tarafından tertip ve tersim edilmiştir. 1843.",
+    notes:
+      "Taşbaskı ve bakır kazıma büyük boy atlas paftası; nehir havzaları ve dağ silsileleri tarama tekniğiyle işlenmiştir.",
+  },
+  {
+    slug: "kucuk-cecenya-askeri-topografya-haritasi-1848",
+    title: "Vladikavkaz Askeri Dairesi ve Küçük Çeçenya Topografya Haritası (1847–1848)",
+    type: "harita",
+    year: 1848,
+    dateLabel: "1847–1848",
+    era: "imamet",
+    region: "Küçük Çeçenya – İnguşetya (Vladikavkaz – Nazran – Sunja – Argun)",
+    language: "Rusça (Eski İmla)",
+    author: "Müstakil Kafkas Kolordusu Kurmay Topografya Şubesi",
+    source: "Kafkas Bölgesi 1847/48 Askeri Topografya Haritası Koleksiyonu",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B0%D1%80%D1%82%D0%B0_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BA%D0%B0%D0%B2%D0%BA%D0%B0%D0%B7%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%92%D0%BE%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D0%9E%D0%BA%D1%80%D1%83%D0%B3%D0%B0_%D0%B8_%D0%9C%D0%B0%D0%BB%D0%BE%D0%B9_%D0%A7%D0%B5%D1%87%D0%BD%D0%B8.jpg",
+    catalogNo: "VVO-MP-1848-009",
+    image: "/images/archive/kucuk-cecenya-askeri-topografya-haritasi-1848.jpg",
+    description:
+      "Kafkas Savaşı'nın zirve yıllarında hazırlanan bu yüksek ayrıntılı kurmay paftası; Vladikavkaz, Nazran, Assa, Fortanga, Martan, Valerik, Gehi, Urus-Martan, Aldı ve Grozni Kalesi arasındaki tüm tarihi Çeçen ve İnguş köylerini, orman kuşaklarını, dağ geçitlerini ve Rus tahkimat hatlarını köy köy kayıt altına alır.",
+    transcription:
+      "КАРТА ВЛАДИКАВКАЗСКАГО ВОЕННАГО ОКРУГА И МАЛОЙ ЧЕЧНИ.\nТопографическая карта Кавказскаго края 1847/48 г.",
+    translation:
+      "VLADİKAVKAZ ASKERİ DAİRESİ VE KÜÇÜK ÇEÇENYA HARİTASI.\nKafkas Bölgesi Topografya Haritası, 1847/48 yılı.",
+    notes:
+      "5213×4276 piksel orijinal taramadan üretilmiş yüksek çözünürlüklü pafta; 1840'larda yakılan veya yeri değiştirilen eski Çeçen-İnguş aullarının tespiti için eşsiz bir birincil kaynaktır.",
+  },
+  {
+    slug: "meyer-dogu-kafkasya-samil-haritasi-1856",
+    title: "Joseph Meyer Atlası — İmam Şamil'in Doğu Kafkasya Cephesi Haritası (1856)",
+    type: "harita",
+    year: 1856,
+    dateLabel: "1856 (Hildburghausen)",
+    era: "imamet",
+    region: "Doğu Kafkasya (Çeçenya – İnguşetya – Dağıstan)",
+    language: "Almanca",
+    author: "Bibliographisches Institut — Joseph Meyer (1796–1856)",
+    source: "David Rumsey Historical Map Collection / Meyers Hand-Atlas (1856)",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:East_Caucasus_map_to_illustrate_Imam_Shamil_war.jpg",
+    catalogNo: "DRH-MP-1856-014",
+    image: "/images/archive/meyer-dogu-kafkasya-samil-haritasi-1856.jpg",
+    description:
+      "Kırım Savaşı ve İmam Şamil'in Kafkasya mücadelesini takip eden Avrupa araştırmacıları için Joseph Meyer'in ünlü el atlasında yayımlanan renkli sınır çizgili Doğu Kafkasya haritası. Büyük ve Küçük Çeçenya, İçkeriya (Vedeno ve Dargo), Auh ve Dağıstan arasındaki İmamet çekirdek bölgesini net biçimde gösterir.",
+    notes:
+      "David Rumsey Tarihî Harita Koleksiyonu yüksek çözünürlüklü dijital kopyası; çelik gravür üzerine dönem el renklendirmesi.",
+  },
+  {
+    slug: "berje-cecenya-haritasi-1859",
+    title: "Adolf P. Berje'nin Çeçenya ve Çeçen Toplulukları Haritası (1859)",
+    type: "harita",
+    year: 1859,
+    dateLabel: "1859 (Tiflis)",
+    era: "imparatorluk",
+    region: "Çeçenya (Terek'ten Büyük Kafkas Sırtlarına)",
+    language: "Rusça (Eski İmla)",
+    author: "Adolf Petroviç Berje (1828–1886)",
+    source: "A. P. Berje, 'Çeçenya i Çeçentsı' (Tiflis: Kafkas Arkeografi Komisyonu, 1859)",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B0%D1%80%D1%82%D0%B0_%D0%A7%D0%B5%D1%87%D0%BD%D0%B8,_%D0%B0%D0%B2%D1%82%D0%BE%D1%80_%D0%91%D0%B5%D1%80%D0%B6%D0%B5_%D0%90._%D0%9F.jpg",
+    catalogNo: "BRJ-MP-1859-018",
+    image: "/images/archive/berje-cecenya-haritasi-1859.jpg",
+    description:
+      "Kafkas Arkeografi Komisyonu Başkanı şarkiyatçı Adolf Berje'nin 1859 yılında Tiflis'te yayımlanan ünlü 'Çeçenya ve Çeçenler' (Чечня и чеченцы) monografisi için hazırladığı harita. Vedeno ve Gunib'in düşüşü sırasında İçkeriya, Çeberloy, Şatoy, Şaroy, Akki, Galançoj ve Sunja ovalarındaki Çeçen boy/tukhum dağılımını belgeler.",
+    transcription:
+      "КАРТА ЧЕЧНИ.\nСоставлена А. П. Берже къ сочиненію «Чечня и Чеченцы», Тифлисъ, 1859 г.",
+    translation:
+      "ÇEÇENYA HARİTASI.\nA. P. Berje tarafından 'Çeçenya ve Çeçenler' eseri için düzenlenmiştir, Tiflis, 1859.",
+    notes:
+      "19. yüzyıl Çeçen tarihsel coğrafyası üzerine çalışan genç araştırmacılar için en temel birincil kartografik başvuru kaynaklarından biridir.",
+  },
+  {
+    slug: "terskaya-oblast-etnografya-haritasi-1892",
+    title: "Terek Vilayeti (Terskaya Oblast) Köy Nahiyeleri ve İdari Sınırlar Haritası (1892)",
+    type: "harita",
+    year: 1892,
+    dateLabel: "1892 (Vladikavkaz)",
+    era: "imparatorluk",
+    region: "Kuzey Kafkasya (Terek Vilayeti — Çeçenya, İnguşetya, Kabarda, Osetya)",
+    language: "Rusça (Eski İmla)",
+    author: "Terek Vilayeti İstatistik Komitesi",
+    source: "Terskaya Oblast Resmi Kartografya Yayını (Vladikavkaz, 1892)",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B0%D1%80%D1%82%D0%B0_%D0%B2%D0%BE%D0%BB%D0%BE%D1%81%D1%82%D0%B5%D0%B9_%D0%A2%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%B8.jpg",
+    catalogNo: "TRK-MP-1892-026",
+    image: "/images/archive/terskaya-oblast-etnografya-haritasi-1892.jpg",
+    description:
+      "Çarlık İmparatorluğu'nun Kafkas Savaşı sonrasında kurduğu Terek Vilayeti'nde (Terskaya Oblast) Grozni, Vedeno, Hasavyurt, Sunja ve Vladikavkaz dairelerine (okrug/otdel) bağlı her bir Çeçen ve İnguş köy cemaatinin arazi sınırları ile Kazak stanitsa kuşaklarını renkli lejantla gösteren 1892 tarihli resmi harita.",
+    transcription:
+      "КАРТА ВОЛОСТЕЙ ТЕРСКОЙ ОБЛАСТИ. 1892 г.",
+    translation:
+      "TEREK VİLAYETİ NAHİYELER (VOLOST) HARİTASI. 1892 yılı.",
+    notes:
+      "Toprak gaspı, petrol arazileri ve 1900'lerin başındaki Abrek direnişlerinin sosyo-ekonomik arka planını anlamak açısından kritik önem taşır.",
+  },
+  {
+    slug: "cecen-ingus-assc-idari-haritasi-1937",
+    title: "1937 Çeçen-İnguş ÖSSC İdari Taksimat Haritası (Galançoj ve Çeberloy Rayonlarıyla)",
+    type: "harita",
+    year: 1937,
+    dateLabel: "1937",
+    era: "sovyet",
+    region: "Çeçen-İnguş Özerk Sovyet Sosyalist Cumhuriyeti",
+    language: "Rusça",
+    author: "Çeçen-İnguş ÖSSC İdari Harita Rekonstrüksiyonu",
+    source: "1937 Çeçen-İnguş ÖSSC Rayon Sınırları Kartografik Kaydı (Wikimedia Commons)",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B0%D1%80%D1%82%D0%B0_%D0%A7%D0%B5%D1%87%D0%B5%D0%BD%D0%BE-%D0%98%D0%BD%D0%B3%D1%83%D1%88%D1%81%D0%BA%D0%BE%D0%B9_%D0%90%D0%A1%D0%A1%D0%A0_1937_%D0%B3%D0%BE%D0%B4%D0%B0.svg",
+    catalogNo: "CIA-MP-1937-033",
+    image: "/images/archive/cecen-ingus-assc-idari-haritasi-1937.png",
+    description:
+      "5 Aralık 1936'da özerk cumhuriyet statüsüne yükseltilen Çeçen-İnguş ÖSSC'nin 1944 sürgünü öncesindeki 24 idari rayonunu eksiksiz gösteren harita. 1944 sürgününden sonra yerleşime kapatılan tarihi Galançoj, Çeberloy, Şaroy ve İtum-Kale dağ rayonları ile batıdaki Prigorodnı rayonunun özgün sınırlarını belgeler.",
+    notes:
+      "Sürgün öncesi ve 1957 sonrası idari sınır değişikliklerini karşılaştırmak isteyen araştırmacılar için temel referans paftası.",
+  },
+  {
+    slug: "mercimek-operasyonu-1944-sevk-haritasi",
+    title: "23 Şubat 1944 'Mercimek Operasyonu' (Çeçevitsa) Sürgün Hatları Haritası ve NKVD Sevkiyat Raporu",
+    type: "harita",
+    year: 1944,
+    dateLabel: "23 Şubat – Mart 1944",
+    era: "sovyet",
+    region: "Çeçen-İnguş ÖSSC → Kazakistan ve Kırgızistan SSC",
+    language: "İngilizce / Rusça Arşiv Transkripsiyonlu",
+    author: "NKVD Sevkiyat Kayıtlarına Dayalı Tarihsel Kartografya (GARF Ф. Р-9401)",
+    source: "Rusya Federasyonu Devlet Arşivi (GARF Ф. Р-9401. Оп. 2. Д. 64. Л. 165) & Wikimedia Commons",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Operation_Lentil_(Caucasus).svg",
+    catalogNo: "GARF-MP-1944-039",
+    image: "/images/archive/mercimek-operasyonu-1944-sevk-haritasi.png",
+    description:
+      "SSCB Devlet Savunma Komitesi'nin (GKO) 31 Ocak 1944 tarihli 5073ss sayılı gizli kararı uyarınca 23 Şubat 1944 şafağında başlatılan 'Mercimek Operasyonu'nun (Операция «Чечевица») toplanma merkezlerini ve demiryolu sürgün hatlarını gösteren harita; ekinde Lavrenti Beria'nın Stalin'e gönderdiği GARF arşivli 6051 sayılı gizli telgrafın tam metni yer almaktadır.",
+    transcription:
+      "ГАРФ. Ф. Р-9401. Оп. 2. Д. 64. Л. 165 — Телеграмма № 6051 (Совершенно секретно):\n«Государственный Комитет Обороны — товарищу Сталину. Сегодня, 23 февраля, на рассвете начали операцию по выселению чеченцев и ингушей. Выселение проходит нормально... Из намеченных к изъятию в связи с операцией лиц арестовано 842 человека. На 11 часов утра вывезено из населенных пунктов 94 741 человек, т. е. свыше 20 процентов подлежащих выселению; погружено в железнодорожные эшелоны из этого числа 20 023 человека. — Берия. 23 февраля 1944 г.»\n(Итого отправлено 180 эшелонов — 493 269 чеченцев и ингушей).",
+    translation:
+      "GARF, Fon R-9401, Opis 2, Dosya 64, Yaprak 165 — Telgraf No. 6051 (Çok Gizli):\n'Devlet Savunma Komitesi — Yoldaş Stalin'e. Bugün, 23 Şubat şafak vakti Çeçenlerin ve İnguşların sürgün edilmesine yönelik operasyonu başlattık. Sevkiyat normal seyrediyor... Operasyon kapsamında tutuklanması öngörülen kişilerden 842 kişi tutuklandı. Sabah saat 11.00 itibarıyla yerleşim yerlerinden 94.741 kişi —yani sürgüne tabi nüfusun yüzde 20'sinden fazlası— çıkarıldı; bunlardan 20.023'ü demiryolu katarlarına yüklendi. — Beria. 23 Şubat 1944.'\n(Operasyon sonunda toplam 180 tren katarıyla 493.269 Çeçen ve İnguş Orta Asya'ya sürülmüştür.)",
+    notes:
+      "Avrupa Parlamentosu 26 Şubat 2004 tarihli kararıyla 23 Şubat 1944 Çeçen-İnguş sürgününü soykırım eylemi olarak tanımıştır.",
+  },
+  {
+    slug: "grozni-oblasti-1949-tasfiye-haritasi",
+    title: "Sürgün Yıllarında Kurulan 'Grozni Oblastı' Taksimat Haritası (1944–1957)",
+    type: "harita",
+    year: 1957,
+    dateLabel: "1944–1957 (Tasfiye Dönemi Haritası)",
+    era: "yakin",
+    region: "Eski Çeçen-İnguş ÖSSC / Grozni Oblastı",
+    language: "Rusça",
+    author: "SSCB 1949 İdari Atlas Kayıtlarına Dayalı Harita",
+    source: "7 Mart 1944 Tasfiye Kararnamesi Sonrası İdari Sınır Kaydı (Wikimedia Commons)",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Map_of_Groznenskaya_Oblast_(1949).svg",
+    catalogNo: "GRZ-MP-1957-041",
+    image: "/images/archive/grozni-oblasti-1949-tasfiye-haritasi.png",
+    description:
+      "SSCB Yüksek Sovyet Prezidyumu'nun 7 Mart 1944 tarihli kararnamesiyle Çeçen-İnguş ÖSSC haritadan silindikten sonra kurulan 'Grozni Oblastı'nın 1949 sınırlarını gösteren harita. Vedeno, Sayasan, Çeberloy ve Kızılyurt/Auh hattının Dağıstan'a; İtum-Kale ve Galançoj yüksek dağ kuşağının Gürcistan SSC'ye; Nazran ve Cerah-Targim vadisinin Kuzey Osetya'ya nasıl devredildiğini ve bütün Çeçence-İnguşça yer adlarının Rusçalaştırıldığını belgeler.",
+    transcription:
+      "Указ Президиума Верховного Совета СССР от 7 марта 1944 г. «О ликвидации Чечено-Ингушской АССР и об административном устройстве ее территории» (Председатель М. Калинин, Секретарь А. Горкин).",
+    translation:
+      "SSCB Yüksek Sovyet Prezidyumu'nun 7 Mart 1944 tarihli 'Çeçen-İnguş ÖSSC'nin Tasfiyesi ve Topraklarının İdari Düzenlemesi Hakkında' Kararnamesi (Başkan M. Kalinin, Sekreter A. Gorkin).",
+    notes:
+      "9 Ocak 1957 iade kararnamesi sonrasında cumhuriyet yeniden kurulurken Prigorodnı ve Auh rayonlarının iade edilmemesinin tarihsel-kartografik kökenini açıklar.",
+  },
+
+  /* ===================== RESMİ BELGELER (8) ===================== */
+  {
+    slug: "imam-samil-kirmizi-dag-sancagi",
+    title: "Kuzey Kafkasya İmameti Resmi Al Sancağı (Devlet Müzesi Katalog Kaydı)",
+    type: "resmi-belge",
+    year: 1850,
+    dateLabel: "1845–1859",
+    era: "imamet",
+    region: "Çeçenya – Dağıstan",
+    language: "Görsel ve Askeri Devlet Alameti",
+    author: "Kuzey Kafkasya İmameti",
+    source: "Rusya Federasyonu Devlet Müzesi Katalog Kaydı (Goskatalog No: 19128202)",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:%D0%97%D0%BD%D0%B0%D0%BC%D1%8F_%D0%9A%D0%B0%D0%B2%D0%BA%D0%B0%D0%B7%D1%81%D0%BA%D0%BE-%D0%B3%D0%BE%D1%80%D1%81%D0%BA%D0%BE%D0%B5,_%D0%BA%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B5;_%D0%A8%D0%B0%D0%BC%D0%B8%D0%BB%D1%8F.jpg",
+    catalogNo: "GK-DOC-1850-012",
+    image: "/images/archive/imam-samil-kirmizi-dag-sancagi.jpg",
+    description:
+      "Kafkas Savaşı sırasında İmam Şamil'e bağlı naiplik kıtalarının taşıdığı, müze envanterine 'Kafkas-dağlı kırmızı Şamil sancağı' başlığıyla kaydedilmiş orijinal İmamet sancağı. 1911–1917 yılları arasında askeri tarih müzesi envanter fotoğraflarında belgelenmiştir.",
+    notes:
+      "Devlet Müzesi Fonu (Госкаталог РФ № 19128202) arşiv envanter fotoğrafı.",
+  },
+  {
+    slug: "baysangur-idam-emri-kafkas-ordusu-1861",
+    title: "Kafkas Ordusu'nun Benoylu Baysangur Hakkındaki 20 Mart 1861 Tarihli Divan-ı Harp ve İdam Emri",
+    type: "resmi-belge",
+    year: 1861,
+    dateLabel: "20 Mart 1861",
+    era: "imparatorluk",
+    region: "Çeçenya (Benoy – Hasavyurt)",
+    language: "Rusça (1917 Öncesi Eski İmla)",
+    author: "Kafkas Ordusu Başkomutanı Mareşal Prens A. İ. Baryatinski",
+    source: "Kavkazskaya Letopis / Kafkas Ordusu Resmi Emirnameleri (20 Mart 1861)",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B0%D0%B2%D0%BA%D0%B0%D0%B7%D1%81%D0%BA%D0%B0%D1%8F_%D0%BB%D0%B5%D1%82%D0%BE%D0%BF%D0%B8%D1%81%D1%8C_(3).jpg",
+    catalogNo: "KAV-DOC-1861-020",
+    image: "/images/archive/baysangur-idam-emri-kafkas-ordusu-1861.jpg",
+    description:
+      "Ağustos 1859'da Gunib kuşatmasını yararak Çeçenya'ya dönen ve Haziran 1860'ta Benoy'da yeni bir bağımsızlık kıyamı başlatan efsanevi Çeçen Naibi Baysangur Benoyski'nin, yaralı halde esir düştükten sonra Sahra Ceza Kanunları uyarınca idam edilmesini onaylayan Mareşal Prens Baryatinski imzalı 20 Mart 1861 tarihli resmi Kafkas Ordusu emri.",
+    transcription:
+      "КАВКАЗСКАЯ ЛѢТОПИСЬ.\nПриказы по Кавказской Арміи.\nМарта 20-го дня 1861 года. — Беноевскій житель Байсунгуръ, по суду, произведенному на основаніи Полевыхъ Уголовныхъ Законовъ, оказался виновнымъ: въ измѣнѣ Русскому Правительству, произведеніи возмущенія между Ичкеринцами и другими горцами, съ цѣлію отложиться отъ подданства Россіи, и въ упорномъ сопротивленіи съ оружіемъ въ рукахъ при взятіи его нашими войсками; а потому я конфирмовалъ: подсудимаго Байсунгура «казнить смертію — повѣсить», — о чемъ и объявляю по войскамъ Кавказской Арміи.\nПодлинный подписалъ: Главнокомандующій, Генералъ-Фельдмаршалъ Князь Барятинскій.",
+    translation:
+      "KAFKAS KRONİĞİ.\nKafkas Ordusu Emirleri.\n20 Mart 1861 günü. — Benoy sakini Baysungur, Sahra Ceza Kanunları uyarınca yapılan yargılama neticesinde; Rus Hükümeti'ne isyan etmek, Rusya tabiiyetinden ayrılmak maksadıyla İçkeriyalılar ve diğer dağlılar arasında ayaklanma çıkarmak ve birliklerimizce ele geçirildiği sırada elde silahla inatçı bir mukavemet göstermekten suçlu bulunmuştur; bu sebeple sanık Baysungur'un 'idam edilerek asılması' hükmünü onayladım ve keyfiyeti Kafkas Ordusu kıtalarına ilan ederim.\nAslını imzalayan: Başkomutan, Mareşal Prens Baryatinski.",
+    notes:
+      "Dönemin resmi Rus askeri bülteninde yayımlanan bu metin, tek gözü, tek kolu ve tek bacağıyla son nefesine dek elde silahla çarpışan Baysangur'un direnişini bizzat hasmının resmi kalemiyle tescil etmektedir.",
+  },
+  {
+    slug: "daglilar-cumhuriyeti-diplomatik-pasaport-1918",
+    title: "Kuzey Kafkasya Dağlıları Birliği Cumhuriyeti Diplomatik Pasaportu (16 Eylül 1918)",
+    type: "resmi-belge",
+    year: 1918,
+    dateLabel: "16 Eylül 1918 (Vladikavkaz)",
+    era: "sovyet",
+    region: "Kuzey Kafkasya (Vladikavkaz / Buro)",
+    language: "Fransızca",
+    author: "Dışişleri Bakanı Haydar Bammat İmzalı",
+    source: "Kafkasya Dağlı Halkları Birliği Cumhuriyeti Dışişleri Bakanlığı Arşivi (No. 487)",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:%D0%94%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%BF%D0%B0%D1%81%D0%BF%D0%BE%D1%80%D1%82_%D0%93%D0%BE%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D1%80%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B8.jpg",
+    catalogNo: "MRNC-DOC-1918-028",
+    image: "/images/archive/daglilar-cumhuriyeti-diplomatik-pasaport-1918.jpg",
+    description:
+      "11 Mayıs 1918'de bağımsızlığını ilan eden Kuzey Kafkasya Dağlı Halkları Birliği Cumhuriyeti (République de l'Union des peuples Montagnards du Caucase) Hükümeti adına Dışişleri Bakanı Haydar Bammat tarafından Vladikavkaz'da imzalanıp diplomatik kuryeler Aygunov ve Makayev adına düzenlenen 487 numaralı resmi diplomatik pasaport.",
+    transcription:
+      "République de l'Union des peuples Montagnards du Caucase\nPASSEPORT DIPLOMATIQUE.\nLe porteur du présent, Monsieurs Aïgounoff et Makajeff se rend d'ici à l'étranger et retourne ensuite à Vladicaucase en courrier porteur de dépêches. En foi de quoi le présent passeport lui a été délivré par le Gouvernement de la République de l'Union des peuples Montagnards du Caucase...\nMinistre des Affaires Étrangères: H. Bammat\n16 Septembre 1918, № 487, Vladicaucase.",
+    translation:
+      "Kafkasya Dağlı Halkları Birliği Cumhuriyeti\nDİPLOMATİK PASAPORT.\nİşbu belgenin hamili Bay Aygunov ve Bay Makayev, resmi yazışmaları taşıyan diplomatik kurye sıfatıyla yurt dışına gidecek ve ardından Vladikavkaz'a dönecektir. Bunu tevsiken işbu pasaport Kafkasya Dağlı Halkları Birliği Cumhuriyeti Hükümeti tarafından kendilerine verilmiştir...\nDışişleri Bakanı: H. Bammat\n16 Eylül 1918, No. 487, Vladikavkaz.",
+    notes:
+      "1918 yılında Çeçen, İnguş, Dağıstan, Oset, Kabardey-Çerkes ve Karaçay-Balkar halklarının kurduğu ortak demokratik cumhuriyetin uluslararası hukuk öznesi olarak yürüttüğü diplomasinin birincil kanıtıdır.",
+  },
+  {
+    slug: "tapa-cermoyev-resmi-mektubu-1918",
+    title: "Dağlılar Hükümeti Başbakanı Abdülmecid (Tapa) Çermoyev'in 12 Ekim 1918 Tarihli Resmi Yazısı",
+    type: "resmi-belge",
+    year: 1918,
+    dateLabel: "12 Ekim 1918",
+    era: "sovyet",
+    region: "Kuzey Kafkasya",
+    language: "Rusça",
+    author: "Başbakan Abdülmecid (Tapa) Çermoyev (1882–1937)",
+    source: "Kuzey Kafkasya Dağlıları Cumhuriyeti Bakanlar Kurulu Evrakı (1918)",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B8%D1%81%D1%8C%D0%BC%D0%BE_%D0%A7%D0%B5%D1%80%D0%BC%D0%BE%D0%B5%D0%B2%D0%B0_%D0%91%D0%B8%D1%87%D0%B5%D1%80%D0%B0%D1%85%D0%BE%D0%B2%D1%83.png",
+    catalogNo: "MRNC-DOC-1918-029",
+    image: "/images/archive/tapa-cermoyev-resmi-mektubu-1918.png",
+    description:
+      "Çeçen devlet adamı ve Kuzey Kafkasya Dağlıları Cumhuriyeti Başbakanı Abdülmecid (Tapa) Çermoyev'in 12 Ekim 1918 tarihinde Lazar Biçerahov'a gönderdiği, Dağlılar Hükümeti'nin Dağıstan ve Çeçenya üzerindeki meşru egemenlik haklarını bildiren imzalı resmi diplomatik mektup.",
+    notes:
+      "Tapa Çermoyev, 11 Mayıs 1918 Bağımsızlık Bildirgesi'nin ilk imzacısı olup 1919 Paris Barış Konferansı'nda Kuzey Kafkasya'yı temsil etmiştir.",
+  },
+  {
+    slug: "daglilar-cumhuriyeti-kuban-dostluk-antlasmasi-1919",
+    title: "Kafkasya Dağlıları Birliği Cumhuriyeti ile Kuban Hükümeti Dostluk Antlaşması (Paris, Temmuz 1919)",
+    type: "resmi-belge",
+    year: 1919,
+    dateLabel: "Temmuz 1919 (Paris)",
+    era: "sovyet",
+    region: "Kuzey Kafkasya – Paris Barış Konferansı",
+    language: "Rusça (Eski İmla)",
+    author: "A. Tapa Çermoyev, H. Bammat, İ. Gaydarov, H. Hadzaragov & L. Bıç",
+    source: "Paris Barış Konferansı Kafkasya Dağlıları Delegasyonu Resmi Yayını (Temmuz 1919)",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:%D0%94%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%B4%D1%80%D1%83%D0%B6%D0%B1%D1%8B_%D0%9A%D1%83%D0%B1%D0%B0%D0%BD%D0%B8_%D0%B8_%D0%93%D0%BE%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D1%80%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B8.jpg",
+    catalogNo: "MRNC-DOC-1919-031",
+    image: "/images/archive/daglilar-cumhuriyeti-kuban-dostluk-antlasmasi-1919.jpg",
+    description:
+      "Paris Barış Konferansı sırasında Temmuz 1919'da Başbakan Tapa Çermoyev ve Dışişleri Bakanı Haydar Bammat başkanlığındaki Kuzey Kafkasya Dağlı Halkları Birliği heyeti ile Kuban heyeti arasında imzalanan 5 maddelik devletlerarası dostluk ve karşılıklı bağımsızlık tanıma antlaşması.",
+    transcription:
+      "Договоръ дружбы между Правительствами Кубани и Республики Союза Горцевъ Кавказа.\n1. Правительство Кубани и Правительство Республики Горскихъ Народовъ Кавказа настоящимъ торжественнымъ актомъ взаимно признаетъ государственный суверенитетъ и полную политическую независимость Кубани и Союза Горскихъ Народовъ Кавказа...\nДоговоръ сей составленъ въ двухъ экземплярахъ въ городѣ Парижѣ ... іюля 1919 года.\nПодлинный подписали: со стороны Союза Горскихъ Народовъ Кавказа: А. Чермоевъ — предсѣдатель делегаціи, И. Гайдаровъ, Х. Хадзараговъ, Г. Бамматъ — министръ иностранныхъ дѣлъ.",
+    translation:
+      "Kuban Hükümeti ile Kafkasya Dağlıları Birliği Cumhuriyeti Hükümeti Arasında Dostluk Antlaşması.\nMadde 1. Kuban Hükümeti ile Kafkasya Dağlı Halkları Cumhuriyeti Hükümeti işbu resmi senetle Kuban'ın ve Kafkasya Dağlı Halkları Birliği'nin devlet egemenliğini ve tam siyasi bağımsızlığını karşılıklı olarak tanır...\nİşbu antlaşma Paris şehrinde Temmuz 1919'da iki nüsha olarak düzenlenmiştir.\nAslını imzalayanlar — Kafkasya Dağlı Halkları Birliği adına: A. Çermoyev (Delegasyon Başkanı), İ. Gaydarov, H. Hadzaragov, H. Bammat (Dışişleri Bakanı).",
+    notes:
+      "Dönemin gazete/bülten dizgisinden taranmış tam metinli orijinal antlaşma kupürü.",
+  },
+  {
+    slug: "kuzey-kafkasya-emirligi-100-ruble-vedeno-1919",
+    title: "Vedeno Başkentli Kuzey Kafkasya Emirliği 100 Rublelik Resmi Banknotu (1919 / 1338 H.)",
+    type: "resmi-belge",
+    year: 1919,
+    dateLabel: "1919 (1338 H. — Vedeno)",
+    era: "sovyet",
+    region: "Çeçenya (Vedeno — Kuzey Kafkasya Emirliği Başkenti)",
+    language: "Arapça, Rusça ve Fransızca",
+    author: "Kuzey Kafkasya Emirliği Hazinesi (Şeyh Uzun Hacı & Başvezir İnaluk Dışninski)",
+    source: "Kuzey Kafkasya Emirliği (Vedeno Darphanesi) Nümismatik Koleksiyonu",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Banknote_north_caucasian_emirate.jpg",
+    catalogNo: "NCE-DOC-1919-032",
+    image: "/images/archive/kuzey-kafkasya-emirligi-100-ruble-vedeno-1919.jpg",
+    description:
+      "Denikin'in Beyaz Ordusu'na karşı Eylül 1919'da Çeçenya'nın tarihi başkenti Vedeno'da Şeyh Uzun Hacı Saltinski ve Çeçen Başvezir İnaluk Arsanukayev (Dışninski) tarafından ilan edilen Kuzey Kafkasya Emirliği'nin bastırdığı 100 Ruble (100 Manat) değerindeki resmi kağıt para. Ön yüzünde terazi, tüfek, kılıç ve üç yıldızlı hilal arması; arka yüzünde ise dağ zirvesinde dalgalanan Emirlik sancağı ve 'Vedeno'da basılmıştır' (ضرب في ويدان) kaydı yer alır.",
+    transcription:
+      "امير المؤمنين شمالى قفقاس الحاج اذن خير\n١٠٠ منات — КРЕДИТНЫЙ БИЛЕТЪ 100 РУБЛЕЙ — BILLET DE CREDIT 100 ROUBLES — 1919 г. — سنة ١٣٣٨\n[Arka Yüz]: يروج على قيم سائر اوراق النقود — ضرب في ويدان — ПОДДѢЛКА ПРЕСЛѢДУЕТСЯ ЗАКОНОМЪ.",
+    translation:
+      "Kuzey Kafkasya Müminlerinin Emiri el-Hâc Uzun Hayr [Uzun Hacı]\n100 Manat — 100 Rublelik Kredi Senedi — Yıl 1919 / Hicri 1338\n[Arka Yüz]: Diğer tüm nakit evrak kıymetinde tedavül eder — Vedeno'da basılmıştır (Duribe fî Vîdân) — Taklidi kanunen cezalandırılır.",
+    notes:
+      "4476×5970 piksel müze taramasından küçültülmüş yüksek çözünürlüklü ön-arka tıpkıbasım; 'ДД-2' seri damgalı.",
+  },
+  {
+    slug: "vedomosti-1957-cecen-ingus-assc-iade-kararnamesi",
+    title: "SSCB Yüksek Sovyet Resmi Gazetesi (24 Şubat 1957, Sayı 4) — Çeçen-İnguş ÖSSC'nin İadesi Kanunu",
+    type: "resmi-belge",
+    year: 1957,
+    dateLabel: "9 Ocak – 24 Şubat 1957",
+    era: "yakin",
+    region: "Çeçen-İnguş ÖSSC (Moskova – Grozni)",
+    language: "Rusça",
+    author: "SSCB Yüksek Sovyet Prezidyumu (K. Voroşilov & A. Gorkin)",
+    source: "Ведомости Верховного Совета СССР, 24 Şubat 1957, № 4 (871), Madde 78",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:%D0%92%D0%B5%D0%B4%D0%BE%D0%BC%D0%BE%D1%81%D1%82%D0%B8_%D0%92%D0%B5%D1%80%D1%85%D0%BE%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE_%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D0%B0_%D0%A1%D0%A1%D0%A1%D0%A0._1957._%E2%84%96_4.pdf",
+    catalogNo: "VVS-DOC-1957-044",
+    image: "/images/archive/vedomosti-1957-cecen-ingus-assc-iade-kararnamesi.jpg",
+    description:
+      "13 yıllık Orta Asya sürgününün ardından Çeçen ve İnguş halklarının ulusal özerkliğini yeniden tesis eden 9 Ocak 1957 tarihli Prezidyum Kararnamesi'ni ve bunu SSCB Anayasası'na işleyen 11 Şubat 1957 tarihli Yüksek Sovyet Kanunu'nu (Madde 78) yayımlayan SSCB Yüksek Sovyet Resmi Gazetesi'nin (Vedomosti) 24 Şubat 1957 tarihli ve 4 (871) sayılı orijinal nüshası.",
+    transcription:
+      "ВЕДОМОСТИ ВЕРХОВНОГО СОВЕТА СОЮЗА СОВЕТСКИХ СОЦИАЛИСТИЧЕСКИХ РЕСПУБЛИК — 24 февраля 1957 г. № 4 (871).\nУказ Президиума Верховного Совета СССР от 9 января 1957 г. «О восстановлении Чечено-Ингушской АССР в составе РСФСР»:\n1. Восстановить Чечено-Ингушскую Автономную Советскую Социалистическую Республику в составе РСФСР.\n3. Отменить Указ Президиума Верховного Совета СССР от 7 марта 1944 года «О ликвидации Чечено-Ингушской АССР...» и статью 2 Указа от 16 июля 1956 года в части запрещения чеченцам и ингушам возвращаться на прежнее местожительство.\nПредседатель Президиума ВС СССР К. Ворошилов. Секретарь А. Горкин.",
+    translation:
+      "SSCB YÜKSEK SOVYET RESMİ GAZETESİ — 24 Şubat 1957, Sayı 4 (871).\nSSCB Yüksek Sovyet Prezidyumu'nun 9 Ocak 1957 tarihli 'RSFSC Bünyesinde Çeçen-İnguş ÖSSC'nin Yeniden Kurulması Hakkında' Kararnamesi:\n1. RSFSC bünyesinde Çeçen-İnguş Özerk Sovyet Sosyalist Cumhuriyeti yeniden kurulsun.\n3. 7 Mart 1944 tarihli 'Çeçen-İnguş ÖSSC'nin Tasfiyesi Hakkında' Kararname ile 16 Temmuz 1956 tarihli Kararname'nin Çeçen ve İnguşların eski yaşadıkları topraklara dönmelerini yasaklayan 2. maddesi yürürlükten kaldırılsın.\nSSCB Yüksek Sovyet Prezidyumu Başkanı K. Voroşilov. Sekreter A. Gorkin.",
+    notes:
+      "Orijinal resmi gazete kapak sayfası tıpkıbasımı; PDF tam metin bağlantısı kaynak URL'de erişime açıktır.",
+  },
+  {
+    slug: "cecen-cumhuriyeti-ickeriya-pasaportu-1994",
+    title: "Çeçen Cumhuriyeti İçkeriya Resmi Pasaport ve Kimlik Belgesi (1990'lar)",
+    type: "resmi-belge",
+    year: 1994,
+    dateLabel: "1994 (Cevherkale / Grozni)",
+    era: "yakin",
+    region: "Çeçenya (Çeçen Cumhuriyeti İçkeriya)",
+    language: "Çeçence (Latin) ve İngilizce",
+    author: "Çeçen Cumhuriyeti İçkeriya İdaresi",
+    source: "Çeçen Cumhuriyeti İçkeriya Resmi Evrak Koleksiyonu (Wikimedia Commons)",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Chechen_Republic_of_Ichkeria_passport.jpg",
+    catalogNo: "CRI-DOC-1994-051",
+    image: "/images/archive/cecen-cumhuriyeti-ickeriya-pasaportu-1994.jpg",
+    description:
+      "Sovyetler Birliği'nin dağılma sürecinde 1991 sonbaharında Cevher Dudayev liderliğinde bağımsızlığını ilan eden Çeçen Cumhuriyeti İçkeriya tarafından bastırılan, üzerinde ulusal kurt (borz) ve dokuz yıldızlı arma ile Çeçen Latin alfabesi ibareleri bulunan resmi pasaport belgesi.",
+    notes:
+      "1991–1999 dönemi Çeçen devlet sembolizmi ve Latin harfli resmi yazışma dilini belgeleyen yakın tarih materyali.",
+  },
+
+  /* ===================== FOTOĞRAF VE GÖRSEL TANIKLIKLAR (16) ===================== */
+  {
+    slug: "spencer-seyh-mansur-evi-gravuru-1838",
+    title: "Edmund Spencer'ın Kafkasya Seyahatnamesinde Aldı'daki 'Şeyh Mansur'un Evi' Gravürü (1838)",
+    type: "fotograf",
+    year: 1838,
+    dateLabel: "1838 (Londra Baskısı)",
+    era: "imamet",
+    region: "Çeçenya (Aldı / Sunja Vadisi)",
+    language: "İngilizce / Rusça Arşiv Lejantlı",
+    author: "Kaptan Edmund Spencer",
+    source: "Edmund Spencer, 'Travels in Circassia, Krim-Tartary &c.' (Londra: Henry Colburn, 1838)",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:%D0%94%D0%BE%D0%BC_%D0%A8%D0%B5%D0%B9%D1%85%D0%B0_%D0%9C%D0%B0%D0%BD%D1%81%D1%83%D1%80%D0%B0._%D0%93%D1%80%D0%B0%D0%B2%D1%8E%D1%80%D0%B0_%D0%AD._%D0%A1%D0%BF%D0%B5%D0%BD%D1%81%D0%BE%D1%80%D0%B0._1838_%D0%B3.jpg",
+    catalogNo: "SPN-PH-1838-003",
+    image: "/images/archive/spencer-seyh-mansur-evi-gravuru-1838.jpg",
+    description:
+      "İngiliz seyyah Kaptan Edmund Spencer'ın 1830'larda Kafkasya yolculuğu sırasında belgelediği ve 1838'de Londra'da yayımladığı 'Şeyh Mansur'un Evi' başlıklı tarihi gravür. 1785 hareketinin doğduğu Çeçen yerleşim mimarisini fotoğraf öncesi dönemde kayda geçiren nadir görsel kaynaklardandır.",
+    notes:
+      "1838 Londra baskısından alınan çelik/ahşap gravür levhası.",
+  },
+  {
+    slug: "lermontov-valerik-muharebesi-suluboya-1840",
+    title: "11 Temmuz 1840 Valerik Çayı Muharebesi — M. Y. Lermontov ve G. G. Gagarin'in Saha Suluboyası",
+    type: "fotograf",
+    year: 1840,
+    dateLabel: "Temmuz 1840 (Küçük Çeçenya)",
+    era: "imamet",
+    region: "Çeçenya (Valerik Irmağı – Gehi Ormanı)",
+    language: "Görsel Birincil Saha Çizimi",
+    author: "Mihail Yuryeviç Lermontov & Prens Grigori Grigoryeviç Gagarin",
+    source: "Devlet Lermontov Müzesi / Rus Edebiyatı Enstitüsü Görsel Arşivi (1840)",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Paintings_by_Mikhail_Lermontov,_1840,_Valerik.jpg",
+    catalogNo: "LRM-PH-1840-006",
+    image: "/images/archive/lermontov-valerik-muharebesi-suluboya-1840.jpg",
+    description:
+      "11 Temmuz 1840'ta Küçük Çeçenya'daki Valerik Irmağı geçişinde Ahverdi Muhammed ve İsa Gendargeno komutasındaki Çeçen siperlerine (zaval) yapılan hücumu, bizzat çarpışmaya katılan M. Y. Lermontov'un çizip G. G. Gagarin'in renklendirdiği belgesel saha suluboyası.",
+    notes:
+      "Kütük siperlerle tahkim edilmiş Gehi-Valerik orman hattını ve Çeçen savunma taktiklerini görsel olarak belgeleyen çağdaş saha eseri.",
+  },
+  {
+    slug: "gagarin-sali-ovasi-orman-kesimi-1847",
+    title: "Prens G. G. Gagarin — 'Çeçenya: Ormanların Kesimi ve Şali Ovasına Açılış' (1847)",
+    type: "fotograf",
+    year: 1847,
+    dateLabel: "1847 (Paris Taşbaskı Albümü)",
+    era: "imamet",
+    region: "Çeçenya (Şali Ovası – Büyük Çeçenya)",
+    language: "Fransızca",
+    author: "Prens Grigori Grigoryeviç Gagarin (1810–1893)",
+    source: "G. Gagarin, 'Le Caucase pittoresque' (Paris: Plon Frères, 1847–1857)",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Gagarin._Tchetchnia._Destruction_des_bois_et_ouverture_de_la_plaine_de_Chaly.jpg",
+    catalogNo: "GAG-PH-1847-010",
+    image: "/images/archive/gagarin-sali-ovasi-orman-kesimi-1847.jpg",
+    description:
+      "General Yermolov ve ardından Vorontsov'un Çeçen direnişinin doğal kalkanı olan asırlık kayın ve meşe ormanlarını geniş şeritler (proseka) halinde kestirerek Şali ovasına topçu yolu açma stratejisini belgeleyen, Prens Gagarin'in Paris'te basılmış taşbaskı levhası.",
+    transcription:
+      "TCHETCHNIA. — Destruction des bois et ouverture de la plaine de Chaly. Dessiné d'après nature par le Prince G. Gagarine.",
+    translation:
+      "ÇEÇENYA. — Ormanların tahribi ve Şali ovasının açılması. Doğadan bizzat Prens G. Gagarin tarafından çizilmiştir.",
+    notes:
+      "Kafkas Savaşı'ndaki ekolojik yıkım ve orman kesim harekâtlarını (рубка просек) doğrudan belgeleyen birincil görsel kaynak.",
+  },
+  {
+    slug: "samil-ve-cecen-dagistan-naibleri-portreleri",
+    title: "İmam Şamil ve Çeçenya–Dağıstan Naipleri Tarihi Portre Levhası (T. Horschelt / 1860'lar)",
+    type: "fotograf",
+    year: 1865,
+    dateLabel: "1859–1868 (Münih / St. Petersburg)",
+    era: "imparatorluk",
+    region: "Çeçenya – Dağıstan",
+    language: "Rusça / Almanca",
+    author: "Theodor Horschelt & Dönem Fotoğraf-Gravür Atölyesi",
+    source: "Kafkas Savaşı Naipler Albümü (Wikimedia Commons)",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B0%D0%B8%D0%B1%D1%8B_%D0%A8%D0%B0%D0%BC%D0%B8%D0%BB%D1%8F.jpg",
+    catalogNo: "HRS-PH-1865-021",
+    image: "/images/archive/samil-ve-cecen-dagistan-naibleri-portreleri.jpg",
+    description:
+      "Merkezde İmam Şamil olmak üzere Kuzey Kafkasya İmameti'nin önde gelen Çeçen ve Dağıstanlı naiplerini geleneksel sarıklı papahaları, gazırlı çerkeskaları ve liyakat nişanlarıyla bir arada gösteren 19. yüzyıl ortası kompozit portre levhası.",
+    notes:
+      "İmamet komuta kademesinin fizyonomik ve etnografik kıyafet detaylarını koruyan erken dönem arşiv baskısı.",
+  },
+  {
+    slug: "musa-kunduhov-1865-muhaceret-arsiv-portresi",
+    title: "1865 Çeçen-İnguş Osmanlı Muhaceretini Sevk Eden Musa Paşa Kunduhov'un Arşiv Fotoğrafı",
+    type: "fotograf",
+    year: 1865,
+    dateLabel: "1865 (Tiflis / İstanbul Muhaceret Dosyası)",
+    era: "imparatorluk",
+    region: "Çeçenya – İnguşetya → Anadolu ve Ortadoğu (Sivas, Muş, Ürdün, Suriye)",
+    language: "Görsel Materyal / RGVIA & BOA Muhaceret Kaydı",
+    author: "Dönem Stüdyo Albümin Baskısı",
+    source: "1865 Kuzey Kafkasya Muhacereti Fotoğraf Koleksiyonu (RGVIA Ф. 38, Оп. 7, Д. 493)",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Musa_Kundukhov_Pasha.jpg",
+    catalogNo: "MKP-PH-1865-022",
+    image: "/images/archive/musa-kunduhov-1865-muhaceret-arsiv-portresi.jpg",
+    description:
+      "Kafkas Savaşı'nın hemen ardından 1865 bahar ve yazında Çarlık idaresinin Çeçenya'nın ovalık nüfusunu seyreltme politikası çerçevesinde, Orstkhoy (Karabulak), Çeçen, İnguş ve Osetlerden oluşan yaklaşık 5.000 ailenin (23.000'den fazla nüfus) 28 kafile halinde Daryal ve Kars üzerinden Osmanlı topraklarına göçünü organize eden Tümgeneral Musa Kunduhov'un (sonradan Osmanlı'da Musa Paşa) 1860'lar albümin portresi.",
+    notes:
+      "Türkiye (Sivas-Şarkışla, Kahramanmaraş-Göksun, Muş-Varto, Mardin-Kızıltepe), Ürdün (Amman, Zerka, Suveylih), Suriye (Kuneytra, Re'sü'l-Ayn) ve Irak'taki bugünkü Çeçen-İnguş diasporasının temelini oluşturan 1865 muhaceretinin birincil tarihsel bağlam kaydıdır.",
+  },
+  {
+    slug: "george-kennan-cecenler-fotografi-1870",
+    title: "ABD Kongre Kütüphanesi (Library of Congress) George Kennan Koleksiyonu — Çeçen Süvariler (1870'ler)",
+    type: "fotograf",
+    year: 1875,
+    dateLabel: "1870–1886 (Library of Congress)",
+    era: "imparatorluk",
+    region: "Çeçenya – Dağıstan Sınır Kuşağı",
+    language: "İngilizce Arşiv Notlu Albümin Fotoğraf",
+    author: "George Kennan (1845–1924) Koleksiyonu",
+    source: "Library of Congress Prints and Photographs Division — George Kennan Collection",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Chechense._Match._a_wedding_match._George_Kennan._1870-1886.jpg",
+    catalogNo: "LOC-PH-1875-024",
+    image: "/images/archive/george-kennan-cecenler-fotografi-1870.jpg",
+    description:
+      "Amerikalı araştırmacı ve seyyah George Kennan'ın 1870'lerdeki Kafkasya gezisi sırasında topladığı ve bugün ABD Kongre Kütüphanesi'nde (Library of Congress) korunan albümin fotoğraf: Geleneksel düğün at yarışına ve şenliğine katılan papahalı, çerkeskalı Çeçenler.",
+    transcription:
+      "Chechense. Match — a wedding match. [George Kennan Collection, Library of Congress, 1870–1886].",
+    translation:
+      "Çeçenler. Düğün şenliği / at yarışı karşılaşması. [George Kennan Koleksiyonu, ABD Kongre Kütüphanesi, 1870–1886].",
+    notes:
+      "19. yüzyılın ikinci yarısında Çeçenlerin gündelik ve törensel yaşamını Batılı bir seyyah koleksiyonunda belgeleyen en erken orijinal fotoğraflardandır.",
+  },
+  {
+    slug: "saroy-kule-yerlesimi-19-yuzyil-fotografi",
+    title: "Şaroy (Şaro-Argun) Tarihi Taş Kule Kompleksi — XIX. Yüzyıl Sonu Cam Negatif Fotoğrafı",
     type: "fotograf",
     year: 1885,
-    dateLabel: "1885 / Modern Yüksek Çözünürlüklü Belgeleme",
+    dateLabel: "1880'ler (Şaroy, Çeçenya)",
     era: "imparatorluk",
-    region: "İnguşetya – Çeçenya Yüksek Sırtları",
-    language: "Görsel ve Etnografik Materyal",
-    source: "Kafkasya Mimari ve Tekstil Koleksiyonu",
-    catalogNo: "TRG-PH-1885-034",
-    image: "/images/hf-kule-gunbatimi.jpg",
+    region: "Çeçenya (Şaroy – Şaro-Argun Havzası)",
+    language: "Görsel Mimari Belge",
+    author: "Kafkas Coğrafya Cemiyeti Saha Fotoğrafçısı",
+    source: "Şaroy Tarihi Kule Kompleksi 19. Yüzyıl Fotoğraf Arşivi (Wikimedia Commons)",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Sharoi1800.jpg",
+    catalogNo: "SHR-PH-1885-025",
+    image: "/images/archive/saroy-kule-yerlesimi-19-yuzyil-fotografi.jpg",
     description:
-      "Basamaklı piramidal arduvaz çatılı ve üst mazgal konsollu klasik Vaynah savaş kulesi (vov); ön plandaki kuru taş duvarda geleneksel kırmızı Kafkas geometrik şeritli koyu yün keçe/pelerin (istang) yer alır.",
+      "Güneydoğu Çeçenya'daki Şaro-Argun vadisinde yükselen tarihi Şaroy kule yerleşiminin 1944 sürgünü ve 20. yüzyıl yıkımları öncesindeki tam ve sağlam siluetini belgeleyen 19. yüzyıl cam negatif baskısı. Savaş kuleleri ile teraslı konut kulelerinin bir arada oluşturduğu klasik Vaynah dağ kalesi dokusunu gözler önüne serer.",
     notes:
-      "Kule mimarisi ile geleneksel Vaynah yün/keçe dokuma sanatının (kırmızı koçboynuzu ve basamaklı dağ bordürü) aynı tarihsel peyzaj içerisindeki bütünlüğünü gösterir.",
+      "Şaroy kulelerinin çatı ve mazgal restorasyonlarında kullanılan en önemli 19. yüzyıl görsel referansıdır.",
   },
   {
-    slug: "kule-arsivi-sinematik-storyboard",
-    title: "Vaynah Taş Kulesi ve İç Arşiv — 6 Sahnelik Belgeleme Paftası",
-    type: "kitap",
-    year: 2024,
-    dateLabel: "2024 Dijital Rekonstrüksiyon",
-    era: "yakin",
-    region: "Kuzey Kafkasya (Targim – Argun)",
-    language: "Görsel Anlatı / Mimari Kesit",
-    source: "Targim Görsel-İşitsel Bellek Stüdyosu",
-    catalogNo: "TRG-AV-2024-101",
-    image: "/images/hf-kule-storyboard.jpg",
+    slug: "abrek-zelimhan-haracoylu-arsiv-fotografi-1913",
+    title: "Haraçoylu Abrek Zelimhan Guşmazukayev (1872–1913) ve Ailesine Ait Dönem Arşiv Levhası",
+    type: "fotograf",
+    year: 1913,
+    dateLabel: "Eylül 1913 (Şali – Haraçoy)",
+    era: "imparatorluk",
+    region: "Çeçenya (Haraçoy – Şali)",
+    language: "Rusça Dönem Basın/Jandarma Kaydı",
+    author: "Terek Vilayeti Resmi Soruşturma ve Basın Fotoğraf Kaydı",
+    source: "1913 Terek Vilayeti Arşiv ve Basın Koleksiyonu (Wikimedia Commons)",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Killed_abrek_Zelimkhan_and_his_family.jpg",
+    catalogNo: "ZLM-PH-1913-027",
+    image: "/images/archive/abrek-zelimhan-haracoylu-arsiv-fotografi-1913.jpg",
     description:
-      "15 saniyelik sinematik kule yürüyüşünün 6 temel sahnesini bir araya getiren belgeleme paftası: (1) Sırttaki kule, (2) Taş kemerli kapı, (3) Kandilli yazma rafı, (4) Kafkas dokuması, (5) Taş koridor, (6) Mazgaldan karlı zirveler.",
+      "Çarlık sömürge idaresinin adaletsizliğine, toprak müsaderelerine ve ağır vergilere karşı on iki yıl boyunca dağlarda direnerek Kafkas halklarının efsanesine dönüşen Haraçoylu Abrek Zelimhan Guşmazukayev'in 26 Eylül 1913'te Şali yakınlarında Dağıstan Atlı Alayı müfrezesiyle girdiği son çarpışma sonrasında ailesiyle birlikte yayımlanan tarihi arşiv fotoğraf levhası.",
     notes:
-      "2688×1520 piksel çözünürlüklü 6'lı sinematik sekans paftası; 'Tanıtım Filmi İzle' bölümündeki 15 saniyelik MP4 belgeselin sahne anahtarıdır.",
+      "Çarlık yönetiminin tüm Çeçen köylerine ibret amacıyla dağıttığı bu fotoğraf, halk hafızasında tam tersine Zelimhan'ın adalet ve yiğitlik destanını (illi) ölümsüzleştirmiştir.",
+  },
+  {
+    slug: "kafkas-yerli-suvari-tugayi-subaylari-1914",
+    title: "Kafkas Yerli Atlı Tümeni ('Vahşi Tümen') Çeçen ve İnguş Alay Subayları (1914–1915)",
+    type: "fotograf",
+    year: 1914,
+    dateLabel: "1914–1915 (Galiçya Cephesi)",
+    era: "imparatorluk",
+    region: "Kuzey Kafkasya (Çeçen ve İnguş Süvari Alayları)",
+    language: "Görsel Askeri Arşiv",
+    author: "Rus İmparatorluk Ordusu Cephe Fotoğraf Servisi",
+    source: "Kafkas Yerli Atlı Tümeni (Kavkazskaya Tuzemnaya Konnaya Diviziya) Arşivi",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Grand_duke_Michael_Alexandrovich_and_the_Savage_division_officers.jpeg",
+    catalogNo: "KTD-PH-1914-030",
+    image: "/images/archive/kafkas-yerli-suvari-tugayi-subaylari-1914.jpg",
+    description:
+      "I. Dünya Savaşı'nda gönüllü Kafkasyalılardan teşkil edilen Kafkas Yerli Atlı Tümeni'nin (2. Tugay bünyesinde Çeçen ve Tatar, 3. Tugay bünyesinde İnguş ve Çerkes Süvari Alayları yer almaktaydı) komuta heyeti ve Kuzey Kafkasyalı subaylarını geleneksel çerkeska, gümüş gazır ve kamalarıyla gösteren arşiv fotoğrafı.",
+    notes:
+      "Tapa Çermoyev ve pek çok Çeçen-İnguş subay bu tümende görev yapmış, 1917 sonrasında ise Kuzey Kafkasya Dağlıları Cumhuriyeti'nin savunma kadrosunu oluşturmuştur.",
+  },
+  {
+    slug: "targim-savas-kulesi-1917-arsiv-fotografi",
+    title: "Targim Vadisi Klasik Savaş ve Konut Kuleleri — 1917 Orijinal Arşiv Fotoğrafı",
+    type: "fotograf",
+    year: 1917,
+    dateLabel: "1917 (Targim, Assa Havzası)",
+    era: "imparatorluk",
+    region: "İnguşetya (Cerah – Targim Havzası)",
+    language: "Görsel Arkeolojik Belge",
+    author: "Kafkasya Arkeoloji ve Etnografya Heyeti (1917)",
+    source: "1917 Targim Havzası Cam Negatif Arşiv Kaydı (Wikimedia Commons)",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Targim,_1917.jpg",
+    catalogNo: "TRG-PH-1917-034",
+    image: "/images/archive/targim-savas-kulesi-1917-arsiv-fotografi.jpg",
+    description:
+      "Arşivimize adını veren Assa Nehri kıyısındaki tarihi Targim yerleşiminin 1917 yılında çekilmiş yüksek çözünürlüklü gerçek arşiv fotoğrafı. Piramidal basamaklı taş çatılı görkemli Vaynah savaş kulesini (vov), çevresindeki taş konut kalıntılarını ve sarp dağ yamacını hiçbir modern müdahale olmaksızın belgeler.",
+    notes:
+      "2150×1572 piksel cam negatif taraması; dijital arşivimizin amblem mekanı olan Targim'in bir asır önceki otantik görünümüdür.",
+  },
+  {
+    slug: "trabzon-konferansi-kuzey-kafkasya-heyeti-1918",
+    title: "1918 Trabzon Barış Konferansı'nda Kuzey Kafkasya ve Osmanlı Temsilcileri",
+    type: "fotograf",
+    year: 1918,
+    dateLabel: "Mart–Nisan 1918 (Trabzon)",
+    era: "sovyet",
+    region: "Kuzey Kafkasya – Trabzon (Osmanlı İmparatorluğu)",
+    language: "Görsel Diplomatik Arşiv",
+    author: "Trabzon Konferansı Resmi Heyet Fotoğrafçısı",
+    source: "Kuzey Kafkasya Cumhuriyeti Diplomatik Fotoğraf Arşivi (Mart–Nisan 1918)",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:North_Caucasian_and_Ottoman_representatives_at_Trebizond_Conference,_1918.jpg",
+    catalogNo: "TRB-PH-1918-035",
+    image: "/images/archive/trabzon-konferansi-kuzey-kafkasya-heyeti-1918.jpg",
+    description:
+      "11 Mayıs 1918'deki resmi bağımsızlık ilanının hemen öncesinde, Haydar Bammat ve Tapa Çermoyev'in öncülüğündeki Kuzey Kafkasya Dağlı Halkları Birliği murahhas heyetinin Mart–Nisan 1918 Trabzon Konferansı sırasında Rauf Orbay başkanlığındaki Osmanlı heyetiyle bir araya gelişini belgeleyen tarihi fotoğraf. Kuzey Kafkasya delegeleri milli çerkeska ve papahalarıyla ön sırada yer almaktadır.",
+    notes:
+      "8 Haziran 1918 Batum Dostluk Antlaşması'na ve Osmanlı Devleti'nin Kuzey Kafkasya Cumhuriyeti'ni tanımasına giden diplomatik sürecin temel görsel kaydıdır.",
+  },
+  {
+    slug: "dan-kale-konut-kulesi-1930-kesif-fotografi",
+    title: "Çeçenya Dan-Kale Tarihi Konut Kulesi — Erken Sovyet Arkeoloji Keşif Fotoğrafı",
+    type: "fotograf",
+    year: 1930,
+    dateLabel: "1928–1935 (Çeçenya Dağ Kuşağı)",
+    era: "sovyet",
+    region: "Çeçenya (Şatoy / İtum-Kale – Dan-Kale)",
+    language: "Görsel Saha Envanteri",
+    author: "Kuzey Kafkasya Arkeoloji ve Etnografya Ekspedisyonu",
+    source: "Çeçenya Taş Mimari Envanteri Saha Fotoğrafı (Wikimedia Commons)",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:%D0%96%D0%B8%D0%BB%D0%B0%D1%8F_%D0%B1%D0%B0%D1%88%D0%BD%D1%8F_%D0%B2_%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B8_%D0%94%D0%B0%D0%BD_%D0%BA%D0%B0%D0%BB%D0%B5,_%D0%A7%D0%B5%D1%87%D0%BD%D1%8F.jpg",
+    catalogNo: "DNK-PH-1930-037",
+    image: "/images/archive/dan-kale-konut-kulesi-1930-kesif-fotografi.jpg",
+    description:
+      "Çeçenya'nın dağlık kuşağındaki tarihi Dan-Kale yerleşiminde iri kesme taş bloklarla örülmüş klasik Vaynah konut kulesini (gala), kemerli pencere-kapı açıklıklarını ve önünde yerel kıyafetli bir dağlı sakini ölçek referansı olarak belgeleyen 1944 sürgünü öncesi saha fotoğrafı.",
+    notes:
+      "1944 sürgünü sonrasında bakımsızlık ve askeri yıkımlarla tahrip olan konut kulelerinin özgün duvar örgüsünü gösterir.",
+  },
+  {
+    slug: "yurt-auh-cecenleri-frunze-istasyonu-donus-1957",
+    title: "1957 Sürgünden Dönüş: Frunze (Bişkek) Tren İstasyonunda Yurt-Auhlu Çeçenler",
+    type: "fotograf",
+    year: 1957,
+    dateLabel: "1957 (Frunze / Bişkek Garı → Kafkasya)",
+    era: "yakin",
+    region: "Kırgızistan SSC (Frunze) → Yurt-Auh (Auh / Hasavyurt)",
+    language: "Görsel Sözlü Tarih ve Aile Arşivi",
+    author: "Auh Çeçenleri Dönüş Kafilesi Aile Arşivi",
+    source: "Yurt-Auh Sürgün ve Dönüş Fotoğraf Arşivi (1957, Wikimedia Commons)",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B0_%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB%D0%B5._1957_%D0%B3%D0%BE%D0%B4_%D0%A4%D1%80%D1%83%D0%BD%D0%B7%D0%B5._%D0%96%D0%B8%D1%82%D0%B5%D0%BB%D0%B8_%D1%81._%D0%AE%D1%80%D1%82-%D0%90%D1%83%D1%85.jpg",
+    catalogNo: "AUH-PH-1957-045",
+    image: "/images/archive/yurt-auh-cecenleri-frunze-istasyonu-donus-1957.jpg",
+    description:
+      "9 Ocak 1957 iade kararnamesinin ardından 13 yıllık Orta Asya sürgününü tamamlayarak ata topraklarına dönmek üzere Kırgızistan'ın başkenti Frunze (bugünkü Bişkek) tren istasyonunda bir araya gelen Yurt-Auh (Kalinin-Aul) köylü Akki-Çeçenlerinin tarihi grup fotoğrafı.",
+    notes:
+      "Auh Çeçenleri 1957'de döndüklerinde tarihi Auh rayonu Çeçen-İnguş ÖSSC'ye dahil edilmeyip Dağıstan sınırlarında bırakılmış, köylüler kendi evlerini yeniden satın almak veya sıfırdan inşa etmek zorunda kalmıştır.",
+  },
+  {
+    slug: "tsotsi-yurt-cecen-latin-sokak-tabelasi-1992",
+    title: "Tsotsi-Yurt Köyünde 1992 Çeçen Latin Alfabesiyle Yazılmış Sokak Tabelası ('Malx-ana Uram')",
+    type: "fotograf",
+    year: 1992,
+    dateLabel: "1992 (Tsotsi-Yurt, Kurçaloy)",
+    era: "yakin",
+    region: "Çeçenya (Tsotsi-Yurt)",
+    language: "Çeçence (1992 Latin Alfabesi)",
+    author: "Yerel Saha Belgelemesi",
+    source: "1992 Çeçen Latin İmlası Kamusal Belgeleme Arşivi (Wikimedia Commons)",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Street_name_on_the_Chechen_latin_alphabet,_92_year_(Tsotsi-Yurt).jpg",
+    catalogNo: "TSY-PH-1992-050",
+    image: "/images/archive/tsotsi-yurt-cecen-latin-sokak-tabelasi-1992.jpg",
+    description:
+      "Kasım 1991'de Çeçen parlamentosunun 1925 Latin alfabesi geleneğini modernize ederek yeni Çeçen Latin alfabesini kabul etmesinin ardından Tsotsi-Yurt yerleşiminde asılan ve günümüze ulaşan 'Malx-ana Uram' (Güneşli Sokak) yazılı özgün sokak tabelası.",
+    transcription:
+      "Malx-ana uram (Нохчийн латиница, 1992 шо — Цоци-Юрт).",
+    translation:
+      "Güneşli Sokak / Güney Yamaç Sokağı (Çeçen Latin Alfabesi, 1992 — Tsotsi-Yurt).",
+    notes:
+      "Çeçen yazı tarihinde Arap (Acem) → Latin (1925) → Kiril (1938) → Latin (1992) geçişlerinin maddi kültürdeki somut izidir.",
+  },
+  {
+    slug: "grozni-kusatmasi-dua-eden-cecen-evstafiev-1995",
+    title: "Ocak 1995 Grozni Kuşatması — Yanan Başkentte Dua Eden Çeçen (Mihail Yevstafyev)",
+    type: "fotograf",
+    year: 1995,
+    dateLabel: "Ocak 1995 (Grozni / Cevherkale)",
+    era: "yakin",
+    region: "Çeçenya (Grozni Merkez)",
+    language: "Uluslararası Foto-Muhabirlik Tanıklığı",
+    author: "Mihail Aleksandroviç Yevstafyev (AFP Savaş Foto-Muhabiri)",
+    source: "Mihail Yevstafyev Koleksiyonu (Ocak 1995, Grozni — CC BY-SA 2.5)",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Evstafiev-chechnya-prayer2.jpg",
+    catalogNo: "EVS-PH-1995-052",
+    image: "/images/archive/grozni-kusatmasi-dua-eden-cecen-evstafiev-1995.jpg",
+    description:
+      "Birinci Çeçen Savaşı'nın en yıkıcı evresi olan Ocak 1995 Grozni Kuşatması sırasında foto-muhabir Mihail Yevstafyev tarafından çekilen ikonik belge fotoğraf: Ağır bombardıman altında alevler içindeki şehir merkezinde ellerini semaya kaldırarak dua eden yaşlı bir Çeçen.",
+    notes:
+      "II. Dünya Savaşı sonrasında Avrupa kıtasında bir kente uygulanan en yoğun topçu ve hava bombardımanlarından biri olarak AGİT ve insan hakları raporlarına geçen Grozni yıkımının insani boyutunu simgeler.",
+  },
+  {
+    slug: "kovalyov-grozni-insan-haklari-basin-toplantisi-1995",
+    title: "İnsan Hakları Savunucusu Sergey Kovalyov'un Ocak 1995 Grozni Sivil Kayıplar Raporu ve Basın Toplantısı",
+    type: "fotograf",
+    year: 1995,
+    dateLabel: "Ocak 1995 (Grozni Dönüşü, Moskova)",
+    era: "yakin",
+    region: "Çeçenya (Grozni) – Moskova",
+    language: "Görsel İnsan Hakları Belgesi",
+    author: "Memorial / Ocak 1995 Basın Arşivi",
+    source: "Sergey Kovalyov İnsan Hakları Heyeti Arşivi (Ocak 1995, Wikimedia Commons)",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Kovalev%27s_press-conference_(January_1995).jpg",
+    catalogNo: "KVL-PH-1995-053",
+    image: "/images/archive/kovalyov-grozni-insan-haklari-basin-toplantisi-1995.jpg",
+    description:
+      "Aralık 1994 – Ocak 1995 boyunca kuşatma altındaki Grozni sığınaklarından ayrılmayarak bombardıman altındaki sivillerin durumunu dünyaya duyuran insan hakları savunucusu ve milletvekili Sergey Kovalyov'un (1930–2021), Ocak 1995'te sivil kayıpları ve savaş suçlarını belgelendirdiği tarihi basın toplantısı.",
+    notes:
+      "Yakın dönem Çeçen savaşları araştırmalarında Memorial İnsan Hakları Merkezi raporlarıyla birlikte en önemli bağımsız tanıklık arşivlerindendir.",
+  },
+
+  /* ===================== KİTAP, SÖZLÜK VE SÜRELİ YAYINLAR (7) ===================== */
+  {
+    slug: "dosov-ilk-cecen-elifbasi-1862",
+    title: "Kedi Dosov & P. K. Uslar — İlk Basılı Çeçen Elifbası 'Noxçiyn Abat' (Tiflis, 1862)",
+    type: "kitap",
+    year: 1862,
+    dateLabel: "1862 (Tiflis)",
+    era: "imparatorluk",
+    region: "Çeçenya – Tiflis",
+    language: "Çeçence (Uslar-Dosov Alfabesi)",
+    author: "Kedi Dosov (Къеди Досов) & Baron Pyotr Karloviç Uslar",
+    source: "Tiflis Kafkas Ordusu Kurmay Matbaası, 1862 İlk Baskı",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%BE%D1%85%D1%87%D0%B8%D0%B9%D0%BD_%D0%B0%D0%B1%D0%B0%D1%82_1862_%D1%88%D0%BE._%D0%90%D0%B2%D1%82%D0%BE%D1%80_%D0%9A%D1%8A%D0%B5%D0%B4%D0%B8_%D0%94%D0%BE%D1%81%D0%BE%D0%B2.png",
+    catalogNo: "DSV-BK-1862-023",
+    image: "/images/archive/dosov-ilk-cecen-elifbasi-1862.png",
+    description:
+      "Çeçen aydın ve öğretmen Kedi Dosov'un dilbilimci Baron P. K. Uslar ile birlikte Tiflis'te hazırlayıp 1862 yılında bastırdığı tarihî ilk Çeçence okuma kitabı ve elifbası. Fonetik işaretlerle uyarlanmış 37 harflik alfabenin yanı sıra özgün Çeçen atasözlerini ve halk hikâyelerini içerir; aynı yıl Grozni Kalesi'nde açılan ilk Çeçence anaokuma sınıfında ders kitabı olarak okutulmuştur.",
+    notes:
+      "Çeçen dilinin matbu kitap tarihini başlatan 1862 Tiflis baskısı kapak ve örnek harf tablosu.",
+  },
+  {
+    slug: "umalat-laudayev-cecen-kavmi-1872",
+    title: "Umalat Laudayev — 'Çeçen Kavmi' (Чеченское племя, Tiflis 1872) İlk Çeçen Etnografyası",
+    type: "kitap",
+    year: 1872,
+    dateLabel: "1872 (Tiflis — Sbornik Svedeniy o Kavkazskih Gortsah, Cilt VI)",
+    era: "imparatorluk",
+    region: "Çeçenya (Nohçmahkahoy – İçkeriya – Argun)",
+    language: "Rusça (Eski İmla)",
+    author: "Umalat Laudayev (1827–1890'lar, İlk Çeçen Etnograf)",
+    source: "Сборник сведений о кавказских горцах, Вып. VI (Tiflis, 1872, s. 1–62)",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:%D0%A3%D0%BC%D0%B0%D0%BB%D0%B0%D1%82_%D0%9B%D0%B0%D1%83%D0%B4%D0%B0%D0%B5%D0%B2.jpg",
+    catalogNo: "LUD-BK-1872-025",
+    image: "/images/archive/umalat-laudayev-cecen-kavmi-1872.jpg",
+    description:
+      "Ana dili Çeçence olan bir müellif tarafından kaleme alınmış ilk basılı tarih ve etnografya araştırması. Umalat Laudayev 1872'de Tiflis'te yayımlanan 62 sayfalık bu eserinde; Naşha ocak köken anlatısını, Nohçmahkahoy ve dağ teyplerinin yayılışını, Mehk-Khel (Ülke Meclisi) töre hukukunu, konukseverlik kurumunu ve kan davası uzlaştırma geleneklerini içeriden bir gözle kayıt altına almıştır.",
+    notes:
+      "Çarlık askeri eğitimi almış bir subay bakışının izlerini taşısa da 19. yüzyıl sözlü teyp şecerelerini yazılı hale getiren vazgeçilmez birincil kaynaktır.",
+  },
+  {
+    slug: "uslar-cecenskiy-yazik-grameri-1888",
+    title: "Baron Pyotr Karloviç Uslar — 'Kafkasya Etnografyası: Dilbilim II — Çeçen Dili' (Tiflis, 1888)",
+    type: "kitap",
+    year: 1888,
+    dateLabel: "1888 (Tiflis Baskısı, 1862 Araştırması)",
+    era: "imparatorluk",
+    region: "Çeçenya – Tiflis",
+    language: "Rusça ve Çeçence Metinli",
+    author: "Pyotr Karloviç Uslar (1816–1875) & Kedi Dosov (Kaynak Kişi)",
+    source: "Этнография Кавказа. Языкознание. II. Чеченский язык (Tiflis, 1888)",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Uslar-Chechen_grammar_cover.jpg",
+    catalogNo: "USL-BK-1888-026",
+    image: "/images/archive/uslar-cecenskiy-yazik-grameri-1888.jpg",
+    description:
+      "Kafkas dilbiliminin kurucu eserlerinden biri olan ve Kedi Dosov'un katkılarıyla derlenen kapsamlı Çeçence dilbilgisi, sesbilim, sözlük ve özgün Çeçence metinler derlemesi. Nah dillerinin altı cins/sınıf (grammatical gender/noun class) sistemini ve ergatif cümle yapısını bilimsel olarak çözümleyen ilk monografidir.",
+    transcription:
+      "ЭТНОГРАФІЯ КАВКАЗА. — ЯЗЫКОЗНАНІЕ. II. ЧЕЧЕНСКІЙ ЯЗЫКЪ. Барона П. К. Услара. Тифлисъ, Типографія Канцеляріи Главноначальствующаго гражданскою частію на Кавказѣ, 1888.",
+    translation:
+      "KAFKASYA ETNOGRAFYASI. — DİLBİLİM. II. ÇEÇEN DİLİ. Baron P. K. Uslar. Tiflis: Kafkasya Mülki İdare Başmüdürlüğü Kalemi Matbaası, 1888.",
+    notes:
+      "1888 Tiflis orijinal baskı iç kapak sayfası tıpkıbasımı.",
+  },
+  {
+    slug: "baddeley-russian-conquest-of-the-caucasus-1908",
+    title: "John F. Baddeley — 'The Russian Conquest of the Caucasus' (Londra: Longmans, Green & Co., 1908)",
+    type: "kitap",
+    year: 1908,
+    dateLabel: "1908 (Londra İlk Baskı — Cornell University Nüshası)",
+    era: "imparatorluk",
+    region: "Kuzey Kafkasya (Çeçenya – İnguşetya – Dağıstan)",
+    language: "İngilizce",
+    author: "John Frederick Baddeley (1854–1940)",
+    source: "Internet Archive / Cornell University Library (cu31924028754616)",
+    sourceUrl: "https://archive.org/details/cu31924028754616",
+    catalogNo: "BDD-BK-1908-028",
+    image: "/images/archive/baddeley-russian-conquest-of-the-caucasus-1908.jpg",
+    description:
+      "İngiliz tarihçi ve Kafkasya araştırmacısı John F. Baddeley'nin Çeçenya ve Dağıstan'daki muharebe alanlarını bizzat at sırtında gezerek, yerel yaşlıların sözlü tanıklıklarını ve Tiflis'teki Kafkas Arkeografi Komisyonu tutanaklarını karşılaştırarak kaleme aldığı 1908 Londra ilk baskısı klasik eser. Şeyh Mansur, Beybulat Taymiyev, Valerik, İmam Şamil ve 1845 Dargo seferine dair Batı literatüründeki en kapsamlı birincil sentezdir.",
+    transcription:
+      "THE RUSSIAN CONQUEST OF THE CAUCASUS — BY JOHN F. BADDELEY. WITH MAPS, PLANS, AND ILLUSTRATIONS. LONGMANS, GREEN AND CO., 39 PATERNOSTER ROW, LONDON; NEW YORK, BOMBAY, AND CALCUTTA. 1908.",
+    translation:
+      "KAFKASYA'NIN RUSLAR TARAFINDAN İŞGALİ — YAZAN: JOHN F. BADDELEY. HARİTALAR, PLANLAR VE İLLÜSTRASYONLARLA. LONGMANS, GREEN AND CO., LONDRA, 1908.",
+    notes:
+      "Internet Archive üzerinden 518 sayfalık tam metni ve katlanır cephe haritaları açık erişimlidir.",
+  },
+  {
+    slug: "cecen-latin-alfabesi-abata-1925",
+    title: "Halid Oşayev — Resmi Çeçen Latin Alfabesi Tablosu ve İmla Kılavuzu (1925)",
+    type: "kitap",
+    year: 1925,
+    dateLabel: "1925 (Grozni)",
+    era: "sovyet",
+    region: "Çeçen Özerk Oblastı (Grozni)",
+    language: "Çeçence (1925 Latin Alfabesi)",
+    author: "Halid Dudayeviç Oşayev (1898–1977)",
+    source: "Çeçen Özerk Oblastı Maarif Şubesi Resmi Yayını (Grozni, 1925)",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Chechen_alphabet-1925.png",
+    catalogNo: "OSH-BK-1925-036",
+    image: "/images/archive/cecen-latin-alfabesi-abata-1925.png",
+    description:
+      "Çeçen yazar, sözlükbilimci ve maarifçi Halid Oşayev tarafından hazırlanan ve 1925 yılında Çeçen Özerk Oblastı'nda resmen kabul edilerek 1938'e kadar okullarda, kitaplarda ve basında kullanılan Latin temelli Çeçen alfabesi ('Noxçin Latin Alfavit') harf ve el yazısı eşleştirme tablosu.",
+    notes:
+      "Gırtlak ünsüzlerini (gh, kh, q, x, ç, ş, ö, ü) yüksek fonetik tutarlılıkla karşılayan 1925 Latin imlası, erken Sovyet dönemi Çeçen edebiyat rönesansının (S. Baduyev, M. Mamakayev, Ş. Aysahanov) yazı aracı olmuştur.",
+  },
+  {
+    slug: "serlo-cecence-gazete-1926",
+    title: "Çeçence Ulusal Gazete 'Serlo' (Işık) — 1 Mayıs 1926 Tarihli 20 (63) Sayılı Orijinal Nüsha",
+    type: "kitap",
+    year: 1926,
+    dateLabel: "1 Mayıs 1926 (Yıl 4, Sayı 20 / 63 — Grozni)",
+    era: "sovyet",
+    region: "Çeçen Özerk Oblastı (Grozni / Sölja-Gala)",
+    language: "Çeçence (1925 Latin Alfabesi)",
+    author: "Halid Oşayev, Mavsar Muzayev, Halid Yanrov & Aslanbek Şeripov Metni",
+    source: "Serlo Gazetesi Arşivi (Grozni, Tip. 'Serlo', 1 Mayıs 1926)",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Serlo_1926_%C5%A1o.jpg",
+    catalogNo: "SRL-BK-1926-038",
+    image: "/images/archive/serlo-cecence-gazete-1926.jpg",
+    description:
+      "23 Nisan 1923'te yayın hayatına başlayan ilk uzun soluklu Çeçence ulusal gazete 'Serlo'nun (Серло / Işık) 1 Mayıs 1926 tarihli 20 (63) sayılı tam birinci sayfası. Latin harfli Çeçence dizilmiş nüshada Halid Oşayev ('Xalid Ošajev'), Mavsar Muzayev ve Halid Yanrov'un imzalı yazıları ile Aslanbek Şeripov'un 1918'de Buru'da (Vladikavkaz) yaptığı tarihi konuşmanın Çeçence metni yer almaktadır.",
+    transcription:
+      "SERLO — 4-gha šo. № 20 (63). Subot 1-ra maj 1926 šo.\n1-ra Maj! Derrig duьnenan qieghash bolçu naxan deza die!\n«Proletarij ceghashna t'e h'ovzuo dieza vajn gerz!» (Aslanbek Šaripovs 1918-çu šaran maj battach Buru-ghalaḩ dina q'amel).\nAvtorš: Xalid Ošajev, Mavsar Muzajev, Xalid Janrov.",
+    translation:
+      "SERLO (IŞIK) — 4. Yıl, Sayı 20 (63). Cumartesi, 1 Mayıs 1926.\n1 Mayıs! Tüm dünya emekçilerinin bayram günü!\nAlt sütun: Aslanbek Şeripov'un Mayıs 1918'de Buru şehrinde (Vladikavkaz) yaptığı konuşmanın Çeçence tam metni ve Halid Oşayev, Mavsar Muzayev ile Halid Yanrov'un makaleleri.",
+    notes:
+      "2657×3856 piksel çözünürlüklü tam sayfa orijinal gazete taraması; 1920'ler Çeçen dili, basın tarihi ve imlası üzerine çalışan araştırmacılar için paha biçilmez bir birincil kaynaktır.",
+  },
+  {
+    slug: "matsiyev-cecence-rusca-sozluk-1961",
+    title: "Ahmet G. Matsiyev — 'Çeçence-Rusça Sözlük / Noxçiyn-Örsiyn Slovar' (Moskova, 1961)",
+    type: "kitap",
+    year: 1961,
+    dateLabel: "1961 (Moskova: Devlet Yabancı ve Ulusal Sözlükler Yayınevi)",
+    era: "yakin",
+    region: "Çeçen-İnguş ÖSSC – Moskova",
+    language: "Çeçence ve Rusça",
+    author: "Ahmet Gehayeviç Matsiyev (1902–1968)",
+    source: "Гос. изд-во иностранных и национальных словарей (Moskova, 1961 — ~20.000 Madde)",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Dczdkfcnmcjdznfvrfhfcmhepdtkmn19771408.jpg",
+    catalogNo: "MTS-BK-1961-047",
+    image: "/images/archive/matsiyev-cecence-rusca-sozluk-1961.jpg",
+    description:
+      "Çeçen dilbilimci Ahmet Matsiyev'in sürgün yıllarının ağır koşullarına rağmen yıllarca fişleyerek derlediği ve 1957 dönüşünün ardından 1961'de Moskova'da yayımladığı yaklaşık 20.000 kelimelik anıtsal 'Noxçiyn-Örsiyn Slovar' (Нохчийн-Оьрсийн Словарь). Modern Çeçen sözlükbiliminin ve edebi standart dilinin temel taşı kabul edilir.",
+    transcription:
+      "А. Г. МАЦИЕВ — НОХЧИЙН-ОЬРСИЙН СЛОВАРЬ / ЧЕЧЕНСКО-РУССКИЙ СЛОВАРЬ. Около 20 000 слов. С приложением краткого грамматического очерка чеченского языка. Москва — 1961.",
+    translation:
+      "A. G. MATSİYEV — ÇEÇENCE-RUSÇA SÖZLÜK. Yaklaşık 20.000 kelime. Çeçen dilinin muhtasar gramer özeti ekiyle. Moskova — 1961.",
+    notes:
+      "1944 sürgününde yakılan kütüphanelerin ardından Çeçen dil hazinesini bilimsel koruma altına alan kurucu eserdir.",
+  },
+];
+
+export const DOC_TYPES: { id: DocType; label: string; count: string }[] = [
+  {
+    id: "el-yazmasi",
+    label: "El Yazmaları",
+    count: `${DOCS.filter((d) => d.type === "el-yazmasi").length} belge`,
+  },
+  {
+    id: "fotograf",
+    label: "Fotoğraflar",
+    count: `${DOCS.filter((d) => d.type === "fotograf").length} fotoğraf`,
+  },
+  {
+    id: "harita",
+    label: "Haritalar",
+    count: `${DOCS.filter((d) => d.type === "harita").length} harita`,
+  },
+  {
+    id: "resmi-belge",
+    label: "Resmi Belgeler",
+    count: `${DOCS.filter((d) => d.type === "resmi-belge").length} belge`,
+  },
+  {
+    id: "kitap",
+    label: "Kitap ve Yayınlar",
+    count: `${DOCS.filter((d) => d.type === "kitap").length} eser`,
   },
 ];
 
 export const getDoc = (slug: string) => DOCS.find((d) => d.slug === slug);
 export const docTypeLabel = (t: DocType) => DOC_TYPES.find((x) => x.id === t)?.label ?? t;
 
+export function formatDocCitation(doc: ArchiveDoc): string {
+  const authorPart = doc.author ? `${doc.author}. ` : "";
+  return `${authorPart}"${doc.title}" (${doc.dateLabel}). ${doc.source}, Katalog No: ${doc.catalogNo}. Erişim: ${doc.sourceUrl}`;
+}
+
 /* ------------------------------------------------------------------ */
-/* ZAMAN ÇİZELGESİ                                                     */
+/* ZAMAN ÇİZELGESİ (29 Kronolojik Tarihsel Dönüm Noktası)              */
 /* ------------------------------------------------------------------ */
 
 export type TimelineEvent = {
@@ -8323,143 +9197,349 @@ export type TimelineEvent = {
 
 export const TIMELINE: TimelineEvent[] = [
   {
-    year: 1700,
-    title: "Kuleler, Teypler ve Dağ Meclisleri",
-    short: "Kafkasya'da direniş",
+    year: 1650,
+    title: "Kule Vadilerinde Erken Vaynah Epigrafisi ve Mehk-Khel Düzeni",
+    short: "Kuleler ve Mehk-Khel",
     era: "imamet",
-    image: "/images/targim-towers.jpg",
+    image: "/images/archive/zumsoy-epigrafik-tas-yaziti.jpg",
     featuredOnHome: true,
     description:
-      "Targim, Erzi, Vovnuşki ve Argun vadilerindeki taş kule yerleşimleri etrafında şekillenen özgür Vaynah toplulukları; Mehk-Khel (Ülke Meclisi) aracılığıyla kendi hukukunu ve bağımsızlığını korudu.",
-    people: ["seyh-mansur", "baysangur-benoyski"],
-    docs: ["targim-kuleleri-fotografi", "kuleler-albumu"],
+      "Zumsoy, İtum-Kale, Şaroy ve Targim vadilerindeki taş kule yerleşimleri etrafında şekillenen özgür Vaynah toplulukları; taş bloklara kazınan epigrafik kitabeler ve Mehk-Khel (Ülke Meclisi) töre hukuku aracılığıyla feodal bey tanımayan eşitlikçi düzenini korudu.",
+    people: ["seyh-mansur"],
+    docs: ["zumsoy-epigrafik-tas-yaziti", "targim-savas-kulesi-1917-arsiv-fotografi"],
+  },
+  {
+    year: 1720,
+    title: "Şaroy, Himoy ve Cerah Kule Komplekslerinde Taş Tamga Geleneği",
+    short: "Taş kule mimarisi",
+    era: "imamet",
+    image: "/images/archive/himoy-kule-kemeri-petroglif-yaziti.jpg",
+    description:
+      "Yüksek dağ vadilerinde beş-altı katlı savunma kuleleri (vov) ile aile konut kulelerinin (gala) kemer taşlarına kazınan güneş çarkı ve tamga petroglifleri, teypler arası dayanışma ve savunma ağının zirvesini simgeledi.",
+    docs: ["himoy-kule-kemeri-petroglif-yaziti", "saroy-kule-yerlesimi-19-yuzyil-fotografi"],
   },
   {
     year: 1785,
-    title: "Şeyh Mansur ve İlk Birlik Hareketi",
-    short: "İmamet hareketi",
+    title: "Aldılı Şeyh Mansur Kıyamı ve Temmuz 1785 Sunja Zaferi",
+    short: "Şeyh Mansur hareketi",
     era: "imamet",
-    image: "/images/kisiler.jpg",
+    image: "/images/archive/sheikh-mansur-1787-winkler-harita-gravuru.png",
     featuredOnHome: true,
     description:
-      "Aldılı Şeyh Mansur'un (Uşurma) çağrısıyla başlayan hareket, Temmuz 1785'te Sunja Nehri kıyısında kazanılan zaferle Kuzey Kafkasya halklarını ilk kez ortak bir direniş cephesinde birleştirdi.",
+      "Aldı köyünde doğan Şeyh Mansur'un (Uşurma) adalet, eşitlik ve birlik çağrısıyla başlayan hareket, Temmuz 1785'te Sunja ormanlarında Albay Pieri müfrezesine karşı kazanılan zaferle Kuzey Kafkasya halklarını ilk kez tek bir direniş cephesinde birleştirdi.",
     people: ["seyh-mansur", "beybulat-taymiyev"],
-    docs: ["kafkas-atlasi"],
+    docs: ["sheikh-mansur-1787-winkler-harita-gravuru", "spencer-seyh-mansur-evi-gravuru-1838"],
   },
   {
-    year: 1817,
-    title: "Kale Hattı ve Uzun Kafkas Savaşı",
-    short: "Kale hattı ve savaş",
+    year: 1818,
+    title: "Sunja Tahkimat Hattı ve Groznaya Kalesi'nin Kuruluşu",
+    short: "Sunja kale hattı",
     era: "imamet",
-    image: "/images/sergiler.jpg",
+    image: "/images/archive/kucuk-cecenya-askeri-topografya-haritasi-1848.jpg",
     description:
-      "Sunja ve Terek boyunca askeri tahkimatların güneye kaydırılmasıyla yarım asır sürecek çetin Kafkas Savaşı başladı; Beybulat Taymiyev ve Taşav Hacı Çeçenya savunmasına öncülük etti.",
+      "General Yermolov'un Terek'ten Sunja Nehri'ne inerek Haziran 1818'de tarihi Çeçen köylerinin kavşağında Groznaya Kalesi'ni inşa ettirmesiyle yarım asır sürecek topyekûn Kafkas Savaşı'nın Çeçenya cephesi açıldı.",
     people: ["beybulat-taymiyev", "tasav-haci"],
+    docs: ["kucuk-cecenya-askeri-topografya-haritasi-1848"],
+  },
+  {
+    year: 1819,
+    title: "15 Eylül 1819 Dadi-Yurt Savunması ve Beybulat Taymiyev'in Liderliği",
+    short: "Dadi-Yurt direnişi",
+    era: "imamet",
+    image: "/images/archive/dubois-kafkasya-genel-haritasi-1843.jpg",
+    description:
+      "Terek kıyısındaki Dadi-Yurt köyünün Eylül 1819'da kadın ve çocuklarıyla birlikte son evine kadar çarpışarak yok edilişi Çeçen hafızasında derin bir yara bıraktı; Beybulat Taymiyev 1820'ler boyunca Çeçen meclislerini siyasi ve askeri direnişte birleştirdi.",
+    people: ["beybulat-taymiyev", "tasav-haci"],
+    docs: ["dubois-kafkasya-genel-haritasi-1843"],
+  },
+  {
+    year: 1832,
+    title: "Kuzey Kafkasya İmameti Askeri Şûrası ve Gimri Direnişi",
+    short: "İmamet şûrası",
+    era: "imamet",
+    image: "/images/archive/imamet-askeri-surasi-protokolu-1832.jpg",
+    description:
+      "İmam Gazi Muhammed döneminde toplanan askeri şûra, ordunun ikmal ve idaresini yazılı protokole bağladı; Ekim 1832 Gimri kuşatması ve Çeçenya'da Taşav Hacı Enderiyevski'nin mücadelesi İmamet kurumlarının temelini attı.",
+    people: ["tasav-haci", "ahmad-avturinski"],
+    docs: ["imamet-askeri-surasi-protokolu-1832"],
   },
   {
     year: 1834,
-    title: "Şeyh Şamil ve İmamet Devleti",
-    short: "Şeyh Şamil dönemi",
+    title: "İmam Şamil'in Seçilmesi ve Çeçenya–Dağıstan Hukuk Birliği",
+    short: "İmam Şamil dönemi",
     era: "imamet",
-    image: "/images/imamet.jpg",
+    image: "/images/archive/imam-samil-kirmizi-dag-sancagi.jpg",
     featuredOnHome: true,
     description:
-      "Gazi Muhammed ve Hamzat Bek'in ardından 1834'te Şeyh Şamil'in imam seçilmesiyle Çeçenya ve Dağıstan; naiplikler, divan ve yazılı hukuk düzeniyle tek bir yönetim altında birleşti.",
+      "1834'te Şeyh Şamil'in üçüncü imam seçilmesi ve Taşav Hacı ile kurulan ittifak sayesinde Çeçenya ile Dağıstan; naiplikler, Arapça divan yazışmaları, kadı mahkemeleri ve düzenli süvari birlikleriyle tek bir devlet çatısı altında kenetlendi.",
     people: ["tasav-haci", "suayip-molla", "isa-gendargeno", "ahmad-avturinski"],
-    docs: ["samil-donemi-mektup", "imamet-dergisi-notlari"],
+    docs: ["imam-samil-kirmizi-dag-sancagi", "meyer-dogu-kafkasya-samil-haritasi-1856"],
+  },
+  {
+    year: 1840,
+    title: "Mart 1840 Genel Çeçenya Biatı ve 11 Temmuz Valerik Muharebesi",
+    short: "Valerik muharebesi",
+    era: "imamet",
+    image: "/images/archive/lermontov-valerik-muharebesi-suluboya-1840.jpg",
+    description:
+      "Silahsızlandırma dayatmasına karşı Urus-Martan'da Şuayip Molla, İsa Gendargeno ve Ahverdi Muhammed öncülüğünde bütün Çeçenya ayağa kalktı; 11 Temmuz 1840'ta Valerik Irmağı kıyısındaki çarpışmayı şair Teğmen M. Y. Lermontov el yazması ve suluboyasıyla tarihe geçirdi.",
+    people: ["isa-gendargeno", "suayip-molla", "baysangur-benoyski"],
+    docs: ["lermontov-valerik-el-yazmasi-1840", "lermontov-valerik-muharebesi-suluboya-1840"],
+  },
+  {
+    year: 1842,
+    title: "İçkeriya Orman Zaferi ve İmamet Divanının Çeçen Naiplerle Yazışmaları",
+    short: "İçkeriya zaferi",
+    era: "imamet",
+    image: "/images/archive/imam-samil-naib-isa-mektubu-1842.jpg",
+    description:
+      "Mayıs–Haziran 1842'de General Grabbe'nin İçkeriya seferinin Şuayip Molla ve Baysangur tarafından ağır yenilgiye uğratılmasının ardından Çeçenya naiplikleri güçlendi; İmam Şamil'in Naib İsa Gendargeno'ya gönderdiği 1842 mektubu istişare ve adalet esaslarını teyit etti.",
+    people: ["isa-gendargeno", "suayip-molla", "baysangur-benoyski"],
+    docs: ["imam-samil-naib-isa-mektubu-1842"],
+  },
+  {
+    year: 1845,
+    title: "Temmuz 1845 Dargo Zaferi ve Başkentin Vedeno'ya Taşınması",
+    short: "Dargo ve Vedeno",
+    era: "imamet",
+    image: "/images/archive/imam-samil-nisanlari-arapca-yazitli.jpg",
+    description:
+      "Prens Vorontsov'un 18.000 kişilik ordusu Temmuz 1845'te Dargo ormanlarında Çeçen naipler tarafından kuşatılarak ağır kayıpla çekilmeye zorlandı; bu zafer sonrası Vedeno (Dargo-Vedeno) İmamet Devleti'nin resmi başkenti oldu ve liyakat nişanları ihdas edildi.",
+    people: ["baysangur-benoyski", "isa-gendargeno", "talhig-salinski", "goytemir-auhovski"],
+    docs: ["imam-samil-nisanlari-arapca-yazitli", "baddeley-russian-conquest-of-the-caucasus-1908"],
+  },
+  {
+    year: 1847,
+    title: "Şali Ovası Orman Kesim Harekâtları ve Talhig'in Topçu Savunması",
+    short: "Şali orman cephesi",
+    era: "imamet",
+    image: "/images/archive/gagarin-sali-ovasi-orman-kesimi-1847.jpg",
+    description:
+      "Çarlık ordusunun Çeçen savunmasını kırmak için Şali, Gehi ve Goita ormanlarını sistematik olarak kestirdiği yıllarda Şali Naibi Talhig topçu dökümhaneleri ve seyyar istihkâmlarla Büyük ve Küçük Çeçenya hattını savundu.",
+    people: ["talhig-salinski", "goytemir-auhovski", "dada-tsentoroyevski"],
+    docs: ["gagarin-sali-ovasi-orman-kesimi-1847", "kucuk-cecenya-askeri-topografya-haritasi-1848"],
   },
   {
     year: 1859,
-    title: "Gunib Savunması ve Baysangur'un Yarma Harekâtı",
+    title: "Vedeno ve Gunib Savunması — Berje'nin Çeçenya Haritası",
     short: "Gunib savunması",
     era: "imamet",
-    image: "/images/yerlesimler.jpg",
+    image: "/images/archive/berje-cecenya-haritasi-1859.jpg",
     description:
-      "Ağustos 1859'da Gunib kuşatmasıyla merkezi İmamet idaresi sona erdi; ancak Benoy Naibi Baysangur kuşatmayı yararak Çeçenya dağlarında 1861'e dek mücadeleyi sürdürdü.",
+      "Nisan 1859'da Vedeno'nun, Ağustos 1859'da Gunib'in kuşatılmasıyla merkezi İmamet idaresi sona erdi; Benoy Naibi Baysangur Gunib çemberini yararak Çeçenya'ya döndü, aynı yıl Adolf Berje Tiflis'te Çeçen boylarının kapsamlı haritasını yayımladı.",
     people: ["baysangur-benoyski", "talhig-salinski", "uma-duyev"],
+    docs: ["berje-cecenya-haritasi-1859", "samil-ve-cecen-dagistan-naibleri-portreleri"],
   },
   {
-    year: 1864,
-    title: "Büyük Göç, Sürgün ve Yıkım",
-    short: "Sürgün ve yıkım",
+    year: 1860,
+    title: "Benoy ve Argun'da Yeniden Kıyam: Baysangur ve Uma Duyev",
+    short: "1860 Benoy kıyamı",
     era: "imparatorluk",
-    image: "/images/doc-report.jpg",
+    image: "/images/archive/samil-ve-cecen-dagistan-naibleri-portreleri.jpg",
+    description:
+      "Mayıs–Haziran 1860'ta İçkeriya köylerinin zorla sürülmesine karşı Baysangur Benoyski, Soltamurad ve Zumsoylu Uma Duyev önderliğinde Benoy, Şatoy ve Argun vadilerinde yeni bir bağımsızlık kıyamı başladı.",
+    people: ["baysangur-benoyski", "uma-duyev", "soltamurad-benoyevski", "batuko-satoyski"],
+    docs: ["samil-ve-cecen-dagistan-naibleri-portreleri"],
+  },
+  {
+    year: 1861,
+    title: "Benoylu Baysangur'un 20 Mart 1861 Divan-ı Harp Kararı ve Şehadeti",
+    short: "Baysangur'un şehadeti",
+    era: "imparatorluk",
+    image: "/images/archive/baysangur-idam-emri-kafkas-ordusu-1861.jpg",
+    description:
+      "Benoy dağlarındaki son çarpışmada atı vurularak yaralı esir düşen tek gözlü, tek kollu ve tek bacaklı Çeçen Naibi Baysangur Benoyski, Mareşal Baryatinski'nin onayladığı 20 Mart 1861 tarihli Kafkas Ordusu emriyle Hasavyurt meydanında idam edildi.",
+    people: ["baysangur-benoyski", "soltamurad-benoyevski"],
+    docs: ["baysangur-idam-emri-kafkas-ordusu-1861"],
+  },
+  {
+    year: 1862,
+    title: "Kedi Dosov ve P. K. Uslar'ın İlk Basılı Çeçen Elifbası ('Noxçiyn Abat')",
+    short: "İlk Çeçen elifbası",
+    era: "imparatorluk",
+    image: "/images/archive/dosov-ilk-cecen-elifbasi-1862.png",
+    description:
+      "Çeçen eğitimci Kedi Dosov ile dilbilimci Baron P. K. Uslar tarafından Tiflis'te hazırlanan ilk basılı Çeçence elifba ve atasözleri kitabı yayımlandı; Grozni'de Çeçen çocukları için ilk anadili sınıfı açıldı.",
+    docs: ["dosov-ilk-cecen-elifbasi-1862", "uslar-cecenskiy-yazik-grameri-1888"],
+  },
+  {
+    year: 1865,
+    title: "1865 Osmanlı Topraklarına Büyük Çeçen–İnguş Muhacereti",
+    short: "1865 Muhacereti",
+    era: "imparatorluk",
+    image: "/images/archive/musa-kunduhov-1865-muhaceret-arsiv-portresi.jpg",
     featuredOnHome: true,
     description:
-      "1864–1865 yıllarında Kafkas Savaşı'nın bitimiyle yüz binlerce Kafkasyalı Anadolu, Balkanlar ve Orta Doğu'ya zorunlu göçe (muhaceret) tabi tutuldu; Şeyh Kunta Hacı sürgüne gönderildi.",
+      "Şeyh Kunta Hacı'nın sürgünü ve Ocak 1864 Şali Hançerler Muharebesi'nin ardından, 1865 baharında 28 kafile halinde yaklaşık 5.000 Çeçen, Orstkhoy ve İnguş ailesi Osmanlı topraklarına (Anadolu, Suriye, Ürdün ve Irak'a) hicret etmek zorunda bırakıldı.",
     people: ["uma-duyev", "alibek-haci"],
-    docs: ["rus-raporu-1864", "kafkasya-haritasi-1871"],
+    docs: ["musa-kunduhov-1865-muhaceret-arsiv-portresi"],
+  },
+  {
+    year: 1872,
+    title: "Umalat Laudayev'in 'Çeçen Kavmi' Etnografyası ve George Kennan Kayıtları",
+    short: "İlk yazılı etnografya",
+    era: "imparatorluk",
+    image: "/images/archive/umalat-laudayev-cecen-kavmi-1872.jpg",
+    description:
+      "Umalat Laudayev Tiflis'te yayımlanan 'Çeçen Kavmi' monografisiyle Çeçen teyp şecerelerini ve Mehk-Khel törelerini ilk kez içeriden kayda geçirdi; aynı yıllarda Amerikalı seyyah George Kennan Çeçenya'dan erken dönem fotoğrafları Kongre Kütüphanesi'ne kazandırdı.",
+    docs: ["umalat-laudayev-cecen-kavmi-1872", "george-kennan-cecenler-fotografi-1870"],
   },
   {
     year: 1877,
-    title: "Alibek Hacı Kıyamı",
-    short: "Yeniden başkaldırı",
+    title: "İmam Alibek Hacı Aldamov ve 1877–1878 Bağımsızlık Kıyamı",
+    short: "Alibek Hacı kıyamı",
     era: "imparatorluk",
-    image: "/images/warrior.jpg",
+    image: "/images/archive/terskaya-oblast-etnografya-haritasi-1892.jpg",
     description:
-      "1877–1878 Osmanlı-Rus Harbi sırasında genç imam Alibek Hacı Aldamov önderliğinde Vedeno ve Dağıstan yaylalarında büyük bir bağımsızlık ayaklanması patlak verdi.",
-    people: ["alibek-haci", "soltamurad-benoyevski"],
+      "1877 Osmanlı-Rus Harbi sırasında Zandaklı 27 yaşındaki Alibek Hacı Aldamov, Soltamurad Benoyevski ve Uma Duyev önderliğinde İçkeriya, Şatoy ve Argun'da 47 Çeçen köyünün katıldığı büyük bağımsızlık ayaklanması patlak verdi.",
+    people: ["alibek-haci", "soltamurad-benoyevski", "uma-duyev"],
+    docs: ["terskaya-oblast-etnografya-haritasi-1892"],
   },
   {
-    year: 1917,
-    title: "Kuzey Kafkasya Cumhuriyeti ve Yeni Arayışlar",
-    short: "Yeni arayışlar",
+    year: 1913,
+    title: "Haraçoylu Abrek Zelimhan'ın Şali Yakınlarındaki Son Direnişi",
+    short: "Abrek Zelimhan",
+    era: "imparatorluk",
+    image: "/images/archive/abrek-zelimhan-haracoylu-arsiv-fotografi-1913.jpg",
+    description:
+      "Terek Vilayeti'ndeki sömürge baskısına ve cezalandırma müfrezelerine karşı 1901'den 1913'e kadar yoksul köylülerin koruyucusu olarak çarpışan Abrek Zelimhan Guşmazukayev, 26 Eylül 1913 şafağında Şali yakınlarında tek başına kuşatılarak şehit düştü.",
+    people: ["zelimhan-haracoyn"],
+    docs: ["abrek-zelimhan-haracoylu-arsiv-fotografi-1913", "terskaya-oblast-etnografya-haritasi-1892"],
+  },
+  {
+    year: 1914,
+    title: "Kafkas Yerli Atlı Tümeni ve 1917 Targim Mimari Envanteri",
+    short: "Kafkas Atlı Tümeni",
+    era: "imparatorluk",
+    image: "/images/archive/kafkas-yerli-suvari-tugayi-subaylari-1914.jpg",
+    description:
+      "I. Dünya Savaşı yıllarında gönüllü Çeçen ve İnguş Süvari Alayları savaş meydanlarında cesaretleriyle ün kazandı; 1917'de ise Assa-Targim vadisindeki klasik savaş kuleleri cam negatif fotoğraflarla kayıt altına alındı.",
+    people: ["deni-arsanov"],
+    docs: ["kafkas-yerli-suvari-tugayi-subaylari-1914", "targim-savas-kulesi-1917-arsiv-fotografi"],
+  },
+  {
+    year: 1918,
+    title: "11 Mayıs 1918 Kuzey Kafkasya Dağlıları Cumhuriyeti Bağımsızlık İlanı",
+    short: "1918 Dağlılar Cumhuriyeti",
     era: "sovyet",
-    image: "/images/ex-ozgurluk.jpg",
+    image: "/images/archive/daglilar-cumhuriyeti-diplomatik-pasaport-1918.jpg",
     featuredOnHome: true,
     description:
-      "Çarlığın çöküşüyle Mayıs 1918'de Kuzey Kafkasya Dağlıları Cumhuriyeti, 1919'da ise Vedeno merkezli Kuzey Kafkasya Emirliği kurularak bağımsız devlet arayışları canlandı.",
-    people: ["deni-arsanov", "hamid-molla", "sita-istamulov"],
-    docs: ["atli-birlik-fotografi"],
+      "Trabzon ve Batum görüşmelerinin ardından Başbakan Tapa Çermoyev ve Dışişleri Bakanı Haydar Bammat öncülüğünde Kuzey Kafkasya Dağlı Halkları Birliği Cumhuriyeti 11 Mayıs 1918'de bağımsızlığını ilan ederek kendi diplomatik pasaportlarını ve dış temsilciliklerini ihdas etti.",
+    people: ["deni-arsanov", "hamid-molla"],
+    docs: [
+      "trabzon-konferansi-kuzey-kafkasya-heyeti-1918",
+      "daglilar-cumhuriyeti-diplomatik-pasaport-1918",
+      "tapa-cermoyev-resmi-mektubu-1918",
+    ],
+  },
+  {
+    year: 1919,
+    title: "Paris Antlaşmaları ve Vedeno Başkentli Kuzey Kafkasya Emirliği",
+    short: "Kuzey Kafkasya Emirliği",
+    era: "sovyet",
+    image: "/images/archive/kuzey-kafkasya-emirligi-100-ruble-vedeno-1919.jpg",
+    description:
+      "Temmuz 1919'da Paris'te Dağlılar Cumhuriyeti egemenlik antlaşmaları imzalarken, Denikin işgaline karşı Eylül 1919'da Vedeno'da Şeyh Uzun Hacı ve Başvezir İnaluk Dışninski tarafından Kuzey Kafkasya Emirliği kurularak kendi resmi banknotları basıldı.",
+    people: ["hamid-molla", "sita-istamulov"],
+    docs: [
+      "daglilar-cumhuriyeti-kuban-dostluk-antlasmasi-1919",
+      "kuzey-kafkasya-emirligi-100-ruble-vedeno-1919",
+    ],
+  },
+  {
+    year: 1925,
+    title: "1925 Çeçen Latin Alfabesi ve 'Serlo' Ulusal Gazetesi",
+    short: "Latin alfabesi ve Serlo",
+    era: "sovyet",
+    image: "/images/archive/serlo-cecence-gazete-1926.jpg",
+    description:
+      "Halid Oşayev'in hazırladığı Latin temelli Çeçen alfabesi 1925'te yürürlüğe girdi; Grozni'de yayımlanan Çeçence 'Serlo' (Işık) gazetesi ulusal edebiyat, tarih tartışmaları ve halk eğitiminin merkezi haline geldi.",
+    docs: ["cecen-latin-alfabesi-abata-1925", "serlo-cecence-gazete-1926"],
+  },
+  {
+    year: 1930,
+    title: "Zorla Kolektifleştirmeye Karşı Şita İstamulov Kıyamı ve Dağ Envanterleri",
+    short: "Şali-Goytı direnişi",
+    era: "sovyet",
+    image: "/images/archive/dan-kale-konut-kulesi-1930-kesif-fotografi.jpg",
+    description:
+      "1929–1930 kışında zorla kolektifleştirme ve dini-geleneksel kurumlara müdahaleye karşı Şali ve Goytı'da Şita İstamulov önderliğinde büyük halk direnişi yükseldi; 1936'da Çeçen-İnguş ÖSSC teşkil edildi.",
+    people: ["sita-istamulov", "hasan-israilov"],
+    docs: ["dan-kale-konut-kulesi-1930-kesif-fotografi", "cecen-ingus-assc-idari-haritasi-1937"],
   },
   {
     year: 1944,
-    title: "23 Şubat 1944 Topyekûn Sürgün",
-    short: "Sürgün",
+    title: "23 Şubat 1944 'Mercimek Operasyonu' Topyekûn Sürgünü ve Haybah Faciası",
+    short: "23 Şubat 1944 Sürgünü",
     era: "sovyet",
-    image: "/images/doc-surgun.jpg",
+    image: "/images/archive/mercimek-operasyonu-1944-sevk-haritasi.png",
     featuredOnHome: true,
     description:
-      "23 Şubat 1944 sabahı ('Mercimek Operasyonu') Çeçen ve İnguş halkının tamamı bir gecede vatanlarından koparılarak Kazakistan ve Kırgızistan'a sürgün edildi; nüfusun üçte birinden fazlası hayatını kaybetti.",
-    people: ["hasan-israilov", "mayrbek-seripov", "cevher-dudayev"],
-    docs: ["surgun-listeleri-1944"],
+      "23 Şubat 1944 şafağında 180 yük treni katarıyla 493.269 Çeçen ve İnguş dondurucu kışta Kazakistan ve Kırgızistan'a sürüldü; 27 Şubat'ta Galançoj'un Haybah köyünde taşınamayan yüzlerce sivil ateşe verilen ahırda katledildi ve 7 Mart'ta cumhuriyet haritadan silindi.",
+    people: ["hasan-israilov", "mayrbek-seripov", "hasuha-magomadov", "cevher-dudayev"],
+    docs: ["mercimek-operasyonu-1944-sevk-haritasi", "grozni-oblasti-1949-tasfiye-haritasi"],
   },
   {
     year: 1957,
-    title: "13 Yıllık Sürgünden Anavatana Dönüş",
+    title: "9 Ocak 1957 İade Kararnamesi ve 13 Yıllık Sürgünden Anavatana Dönüş",
     short: "Anavatana dönüş",
     era: "yakin",
-    image: "/images/c-gelenek.jpg",
+    image: "/images/archive/vedomosti-1957-cecen-ingus-assc-iade-kararnamesi.jpg",
+    featuredOnHome: true,
     description:
-      "1957 kararnamesiyle sürgündeki aileler ata topraklarına dönmeye başladı; dağ köyleri, edebi hafıza ve kültürel kurumlar büyük bir azimle yeniden ayağa kaldırıldı.",
+      "SSCB Yüksek Sovyet Prezidyumu'nun 9 Ocak 1957 kararnamesi (Vedomosti No. 4) ile Çeçen-İnguş ÖSSC yeniden kuruldu; Frunze ve Alma-Ata istasyonlarından yola çıkan aileler Prigorodnı, Auh ve Galançoj kısıtlamalarına rağmen ata ocaklarını yeniden ihya etti.",
     people: ["hasuha-magomadov", "cevher-dudayev"],
+    docs: [
+      "vedomosti-1957-cecen-ingus-assc-iade-kararnamesi",
+      "yurt-auh-cecenleri-frunze-istasyonu-donus-1957",
+      "grozni-oblasti-1949-tasfiye-haritasi",
+    ],
+  },
+  {
+    year: 1961,
+    title: "Matsiyev'in 20.000 Kelimelik Çeçence Sözlüğü ve Kule Rölöve Seferleri",
+    short: "Dil ve mimari ihyası",
+    era: "yakin",
+    image: "/images/archive/matsiyev-cecence-rusca-sozluk-1961.jpg",
+    description:
+      "Sürgün sonrası kültürel yeniden doğuş döneminde arkeoloji heyetleri Guçan-Kale ve Argun kulelerinin rölövelerini çıkarırken, Ahmet Matsiyev 1961'de Moskova'da modern Çeçen dilbiliminin temel eseri olan 'Noxçiyn-Örsiyn Slovar'ı yayımladı.",
+    people: ["hasuha-magomadov"],
+    docs: ["matsiyev-cecence-rusca-sozluk-1961", "gucan-kale-mimari-rolove-cizimi-1960"],
   },
   {
     year: 1991,
-    title: "Sovyetlerin Dağılışı ve Bağımsızlık Mücadelesi",
-    short: "Bağımsızlık mücadelesi",
+    title: "SSCB'nin Dağılışı, Çeçen Latin İmlası ve Bağımsızlık İlanı",
+    short: "1991 Yeni dönem",
     era: "yakin",
-    image: "/images/ex-kuleler.jpg",
+    image: "/images/archive/tsotsi-yurt-cecen-latin-sokak-tabelasi-1992.jpg",
     featuredOnHome: true,
     description:
-      "1991 sonrasında Kuzey Kafkasya'da ağır sınavlarla dolu yeni bir dönem başladı; 1992'de İnguşetya Cumhuriyeti kuruldu, Çeçenya ise yıkıcı savaşların ortasında kimlik mücadelesi verdi.",
+      "1991 sonbaharında Cevher Dudayev liderliğinde Çeçen Cumhuriyeti bağımsızlığını ilan etti ve 1992'de Latin temelli Çeçen alfabesi yeniden yürürlüğe kondu; Haziran 1992'de İnguşetya Cumhuriyeti ayrı bir cumhuriyet olarak yapılandı.",
     people: ["cevher-dudayev", "zelimhan-yandarbiyev", "aslan-mashadov"],
+    docs: [
+      "tsotsi-yurt-cecen-latin-sokak-tabelasi-1992",
+      "cecen-cumhuriyeti-ickeriya-pasaportu-1994",
+    ],
   },
   {
-    year: 2000,
-    title: "Dijital Çağda Hafızanın Korunması",
-    short: "Günümüz",
+    year: 1995,
+    title: "Grozni Kuşatması ve Uluslararası İnsan Hakları Tanıklıkları",
+    short: "Grozni tanıklıkları",
     era: "yakin",
-    image: "/images/hero.jpg",
-    featuredOnHome: true,
+    image: "/images/archive/grozni-kusatmasi-dua-eden-cecen-evstafiev-1995.jpg",
     description:
-      "Tarihi kuleler belgeleniyor, dünya diasporalarına dağılmış aile evrakları, el yazmaları ve sözlü tarih kayıtları Targim Archive çatısı altında gelecek kuşaklar için bir araya getiriliyor.",
-    docs: ["el-sanatlari-katalogu"],
+      "Aralık 1994'te başlayan Birinci Çeçen Savaşı ve Ocak 1995 Grozni Kuşatması ağır sivil kayıplara ve kentsel yıkıma yol açtı; savaş foto-muhabirleri ile Sergey Kovalyov ve Memorial heyetlerinin raporları yaşanan insani trajediyi dünya arşivlerine kaydetti.",
+    people: ["cevher-dudayev", "aslan-mashadov", "imam-alimsultanov"],
+    docs: [
+      "grozni-kusatmasi-dua-eden-cecen-evstafiev-1995",
+      "kovalyov-grozni-insan-haklari-basin-toplantisi-1995",
+    ],
   },
 ];
 
 /* ------------------------------------------------------------------ */
-/* HARİTA                                                              */
+/* HARİTA (26 Doğrulanmış Tarihsel Mekan — Atlas Projeksiyonunda)       */
 /* ------------------------------------------------------------------ */
 
 export type PlaceKind = "yerlesim" | "kule" | "koy" | "savas";
@@ -8493,12 +9573,12 @@ export const PLACES: Place[] = [
     lat: 42.83,
     lon: 44.88,
     year: 1400,
-    period: "XIII–XVII. yüzyıllar",
-    image: "/images/hf-kule-gunbatimi.jpg",
+    period: "XIII–XIX. yüzyıllar",
+    image: "/images/archive/targim-savas-kulesi-1917-arsiv-fotografi.jpg",
     description:
-      "İnguşetya'nın Cerah–Assa havzasında yükselen dört büyük klasik savaş kulesi ve konut yapılarından oluşan tarihi kompleks. Arşivimize adını veren hafıza vadisi.",
+      "İnguşetya'nın Cerah–Assa havzasında yükselen dört büyük klasik savaş kulesi ve konut yapılarından oluşan tarihi kompleks. 1917 cam negatif fotoğraflarıyla belgelenen ve arşivimize adını veren hafıza vadisi.",
     people: ["seyh-mansur", "hasan-israilov"],
-    docs: ["kule-ici-yazma-kodeks", "oymali-vaynah-kule-kapisi", "targim-safak-kulesi-ve-istang", "targim-kuleleri-fotografi"],
+    docs: ["targim-savas-kulesi-1917-arsiv-fotografi", "kucuk-cecenya-askeri-topografya-haritasi-1848"],
   },
   {
     id: "vovnuski",
@@ -8507,12 +9587,12 @@ export const PLACES: Place[] = [
     lat: 42.79,
     lon: 45.06,
     year: 1500,
-    period: "XV–XVII. yüzyıllar",
+    period: "XV–XVIII. yüzyıllar",
     image: "/images/hf-kule-sisli-sirt.jpg",
     description:
-      "Sarp kayalık zirvelerin bıçak sırtına harçla kenetlenmiş, Vaynah savunma mimarisinin en çarpıcı kule topluluğu.",
+      "Guloy-Hi vadisinde sarp kayalık zirvelerin bıçak sırtına kenetlenmiş, taş mazgalları ve piramidal çatılarıyla Vaynah savunma mimarisinin en çarpıcı kule topluluğu.",
     people: ["seyh-mansur", "hasan-israilov"],
-    docs: ["kuleler-albumu", "kule-arsivi-sinematik-storyboard"],
+    docs: ["targim-savas-kulesi-1917-arsiv-fotografi", "dubois-kafkasya-genel-haritasi-1843"],
   },
   {
     id: "erzi",
@@ -8521,138 +9601,94 @@ export const PLACES: Place[] = [
     lat: 42.76,
     lon: 44.95,
     year: 1500,
-    period: "XIV–XVII. yüzyıllar",
+    period: "XIV–XVIII. yüzyıllar",
     image: "/images/hf-kule-sabah.jpg",
     description:
-      "İnguşçada 'Kartal' anlamına gelen, Armhi vadisine hâkim sekiz savaş kulesi ve çok sayıda konut kulesinden oluşan anıtsal yerleşim.",
+      "Vaynah dilinde 'Kartal' (Ärzi) anlamına gelen, Armhi vadisine hâkim sekiz savaş kulesi ve çok sayıda konut kulesinden oluşan anıtsal dağ yerleşimi.",
     people: ["seyh-mansur", "batuko-satoyski"],
-    docs: ["kuleler-albumu", "targim-kuleleri-fotografi"],
+    docs: ["targim-savas-kulesi-1917-arsiv-fotografi", "kucuk-cecenya-askeri-topografya-haritasi-1848"],
+  },
+  {
+    id: "nikaroy",
+    name: "Nikaroy (Terloy)",
+    kind: "kule",
+    lat: 42.73,
+    lon: 45.36,
+    year: 1450,
+    period: "XIV–XVIII. yüzyıllar",
+    image: "/images/archive/gucan-kale-mimari-rolove-cizimi-1960.jpg",
+    description:
+      "Çeçenya'nın Terloy-Ahk vadisinde basamaklı piramidal çatılı beş katlı savaş kulesi, taş camisi ve yamaç konutlarıyla korunan en önemli Vaynah mimari komplekslerinden biri.",
+    people: ["hasan-israilov", "hasuha-magomadov"],
+    docs: ["gucan-kale-mimari-rolove-cizimi-1960", "cecen-ingus-assc-idari-haritasi-1937"],
+  },
+  {
+    id: "saroy",
+    name: "Şaroy ve Himoy Kuleleri",
+    kind: "kule",
+    lat: 42.63,
+    lon: 45.82,
+    year: 1550,
+    period: "XIV–XIX. yüzyıllar",
+    image: "/images/archive/saroy-kule-yerlesimi-19-yuzyil-fotografi.jpg",
+    description:
+      "Şaro-Argun vadisinde yükselen yedi savaş kulesi, konut kuleleri ve Himoy kemer taşlarındaki güneş çarkı petroglifleriyle ünlü tarihi Çeçen dağ merkezi.",
+    people: ["uma-duyev", "batuko-satoyski"],
+    docs: [
+      "saroy-kule-yerlesimi-19-yuzyil-fotografi",
+      "himoy-kule-kemeri-petroglif-yaziti",
+      "berje-cecenya-haritasi-1859",
+    ],
+  },
+  {
+    id: "hoy",
+    name: "Hoy (Çeberloy)",
+    kind: "kule",
+    lat: 42.76,
+    lon: 46.13,
+    year: 1500,
+    period: "XIII–XIX. yüzyıllar",
+    image: "/images/archive/dan-kale-konut-kulesi-1930-kesif-fotografi.jpg",
+    description:
+      "Kezenoy-Am gölünün güneyindeki Çeberloy bölgesinde, adını 'Muhafızlar Yerleşimi' (Hoy) kelimesinden alan, sarp kanyon kenarına dizilmiş gözetleme ve konut kuleleri bütünü.",
+    people: ["alibek-haci", "zelimhan-haracoyn"],
+    docs: ["dan-kale-konut-kulesi-1930-kesif-fotografi", "berje-cecenya-haritasi-1859"],
   },
   {
     id: "itum-kale",
-    name: "İtum-Kale",
+    name: "İtum-Kale ve Zumsoy",
     kind: "koy",
     lat: 42.73,
     lon: 45.58,
     year: 1600,
     period: "Orta Çağ – günümüz",
-    image: "/images/doc-tower.jpg",
+    image: "/images/archive/zumsoy-epigrafik-tas-yaziti.jpg",
     description:
-      "Argun Boğazı'nın yukarı kesimlerinde Phakoç kale kompleksi, gözetleme kuleleri ve taş mezar anıtlarıyla ünlü tarihi Çeçen yerleşimi.",
-    people: ["batuko-satoyski", "tarhan-gaziyev"],
-    docs: ["kuleler-albumu"],
+      "Yukarı Argun Boğazı'nda Phakoç kalesi, Guçan-Kale, Dan-Kale ve Zumsoy epigrafik taş kitabelerini barındıran, Zumsoylu Naib Uma Duyev'in vatanı olan sarp dağ havzası.",
+    people: ["uma-duyev", "batuko-satoyski", "hasuha-magomadov", "tarhan-gaziyev"],
+    docs: [
+      "zumsoy-epigrafik-tas-yaziti",
+      "gucan-kale-mimari-rolove-cizimi-1960",
+      "dan-kale-konut-kulesi-1930-kesif-fotografi",
+    ],
   },
   {
-    id: "aldi",
-    name: "Aldı",
-    kind: "koy",
-    lat: 43.28,
-    lon: 45.65,
-    year: 1760,
-    period: "XVIII. yüzyıl",
-    image: "/images/mountains.jpg",
-    description:
-      "Şeyh Mansur'un (Uşurma) doğduğu ve 1785 birleşme hareketinin ilk kıvılcımının çaktığı tarihi Sunja köyü.",
-    people: ["seyh-mansur", "beybulat-taymiyev"],
-    docs: ["kafkas-atlasi"],
-  },
-  {
-    id: "vedeno",
-    name: "Vedeno",
+    id: "vladikavkaz",
+    name: "Vladikavkaz (Buro)",
     kind: "yerlesim",
-    lat: 42.97,
-    lon: 46.1,
-    year: 1845,
-    period: "İmamet Başkenti (1845–1859)",
-    image: "/images/imamet.jpg",
+    lat: 43.03,
+    lon: 44.68,
+    year: 1784,
+    period: "1784 – günümüz",
+    image: "/images/archive/daglilar-cumhuriyeti-diplomatik-pasaport-1918.jpg",
     description:
-      "1845'ten 1859'a kadar Şeyh Şamil'in başkenti, 1919'da ise Uzun Hacı'nın Kuzey Kafkasya Emirliği'nin merkezi olan tarihi İçkeriya yerleşimi.",
-    people: ["baysangur-benoyski", "alibek-haci", "zelimhan-haracoyn", "samil-basayev"],
-    docs: ["samil-donemi-mektup", "imamet-dergisi-notlari"],
-  },
-  {
-    id: "dargo",
-    name: "Dargo Muharebesi",
-    kind: "savas",
-    lat: 42.94,
-    lon: 46.18,
-    year: 1845,
-    period: "Temmuz 1845",
-    image: "/images/sergiler.jpg",
-    description:
-      "1845 yazında Prens Vorontsov komutasındaki büyük ordunun İçkeriya ormanlarında ağır yenilgiyle geri çekilmek zorunda kaldığı tarihi direniş zaferi.",
-    people: ["tasav-haci", "suayip-molla", "isa-gendargeno", "baysangur-benoyski"],
-    docs: ["samil-donemi-mektup"],
-  },
-  {
-    id: "gimri",
-    name: "Gimri",
-    kind: "koy",
-    lat: 42.75,
-    lon: 46.84,
-    year: 1832,
-    period: "Ekim 1832",
-    image: "/images/imamet.jpg",
-    description:
-      "Birinci İmam Gazi Muhammed ve Üçüncü İmam Şeyh Şamil'in doğduğu, 1832 kuşatmasında Gazi Muhammed'in şehit düştüğü sarp Avar köyü.",
-    people: ["tasav-haci", "ahmad-avturinski"],
-    docs: ["imamet-dergisi-notlari"],
-  },
-  {
-    id: "gunib",
-    name: "Gunib Platosu",
-    kind: "savas",
-    lat: 42.39,
-    lon: 46.96,
-    year: 1859,
-    period: "Ağustos 1859",
-    image: "/images/ex-ozgurluk.jpg",
-    description:
-      "Şeyh Şamil'in son savunmasını yaptığı ve Baysangur Benoyski'nin kuşatmayı yararak Çeçenya'ya çıktığı doğal kale görünümlü yüksek plato.",
-    people: ["baysangur-benoyski", "talhig-salinski", "uma-duyev"],
-    docs: ["samil-donemi-mektup", "rus-raporu-1864"],
-  },
-  {
-    id: "sunja",
-    name: "Sunja Zaferi",
-    kind: "savas",
-    lat: 43.25,
-    lon: 45.45,
-    year: 1785,
-    period: "Temmuz 1785",
-    image: "/images/kisiler.jpg",
-    description:
-      "Şeyh Mansur önderliğindeki Kafkas gönüllülerinin Sunja ormanlarında Albay Pieri müfrezesini mağlup ettiği dönüm noktası.",
-    people: ["seyh-mansur", "beybulat-taymiyev"],
-    docs: ["kafkas-atlasi"],
-  },
-  {
-    id: "harachoy",
-    name: "Harachoy",
-    kind: "koy",
-    lat: 42.91,
-    lon: 46.14,
-    year: 1872,
-    period: "XIX–XX. yüzyıllar",
-    image: "/images/arsiv.jpg",
-    description:
-      "Vedeno geçidinin kapısında yer alan, kaynak suları ve Abrek Zelimhan Guşmazukayev'in memleketi olmasıyla tanınan dağ köyü.",
-    people: ["zelimhan-haracoyn", "alibek-haci"],
-    docs: ["atli-birlik-fotografi"],
-  },
-  {
-    id: "grozni",
-    name: "Grozni (Sölja-Gala)",
-    kind: "yerlesim",
-    lat: 43.32,
-    lon: 45.69,
-    year: 1818,
-    period: "1818 – günümüz",
-    image: "/images/doc-map.jpg",
-    description:
-      "Sunja Nehri kıyısında tarihi Çeçen köylerinin kavşağında kurulan, bugün Çeçenya'nın siyasi ve kültürel merkezi olan başkent.",
-    people: ["deni-arsanov", "cevher-dudayev", "zelimhan-yandarbiyev", "aslan-mashadov"],
-    docs: ["kafkasya-haritasi-1871", "surgun-listeleri-1944"],
+      "Daryal Boğazı'nın girişinde tarihi İnguş köyü Zaur-Yurt yakınında kurulan idari merkez; 1917–1918'de Kuzey Kafkasya Dağlı Halkları Birliği Cumhuriyeti'nin kurucu meclisine ve hükümetine ev sahipliği yapmıştır.",
+    people: ["seyh-mansur", "deni-arsanov"],
+    docs: [
+      "kucuk-cecenya-askeri-topografya-haritasi-1848",
+      "daglilar-cumhuriyeti-diplomatik-pasaport-1918",
+      "terskaya-oblast-etnografya-haritasi-1892",
+    ],
   },
   {
     id: "nazran",
@@ -8662,30 +9698,294 @@ export const PLACES: Place[] = [
     lon: 44.77,
     year: 1781,
     period: "XVIII. yüzyıl – günümüz",
-    image: "/images/targim-towers.jpg",
+    image: "/images/archive/musa-kunduhov-1865-muhaceret-arsiv-portresi.jpg",
     description:
-      "İnguş ovalık yerleşimlerinin tarihsel kalbi ve kültürel-edebi yaşamın en önemli merkezlerinden biri.",
+      "Sunja ve Nazranka nehirlerinin kavşağında İnguş ovalık yerleşimlerinin tarihsel kalbi; Mayıs 1858 Nazran Kıyamı'nın, 1865 muhaceret kafilelerinin ve 1992 İnguşetya kuruluş sürecinin kilit merkezidir.",
     people: ["seyh-mansur", "hasan-israilov"],
-    docs: ["targim-kuleleri-fotografi", "surgun-listeleri-1944"],
+    docs: [
+      "kucuk-cecenya-askeri-topografya-haritasi-1848",
+      "musa-kunduhov-1865-muhaceret-arsiv-portresi",
+      "mercimek-operasyonu-1944-sevk-haritasi",
+    ],
+  },
+  {
+    id: "haybah",
+    name: "Haybah (Galançoj)",
+    kind: "koy",
+    lat: 42.89,
+    lon: 45.28,
+    year: 1944,
+    period: "Orta Çağ – 27 Şubat 1944",
+    image: "/images/archive/cecen-ingus-assc-idari-haritasi-1937.png",
+    description:
+      "Çeçenlerin kadim ata ocağı Naşha–Galançoj bölgesindeki dağ köyü. 27 Şubat 1944 sürgünü sırasında kar yüzünden tren istasyonlarına indirilemeyen yaşlı, kadın ve çocuk yüzlerce sivilin Lavrenti Beria'nın komiseri Gvişiani emriyle kolektif çiftlik ahırında yakılarak katledildiği hafıza mekanı.",
+    people: ["hasan-israilov", "mayrbek-seripov", "cevher-dudayev"],
+    docs: [
+      "cecen-ingus-assc-idari-haritasi-1937",
+      "mercimek-operasyonu-1944-sevk-haritasi",
+      "grozni-oblasti-1949-tasfiye-haritasi",
+    ],
+  },
+  {
+    id: "valerik",
+    name: "Valerik Irmağı",
+    kind: "savas",
+    lat: 43.17,
+    lon: 45.41,
+    year: 1840,
+    period: "11 Temmuz 1840",
+    image: "/images/archive/lermontov-valerik-muharebesi-suluboya-1840.jpg",
+    description:
+      "Küçük Çeçenya'nın Gehi orman kuşağında, Naib Ahverdi Muhammed ve İsa Gendargeno komutasındaki Çeçen savaşçıların 11 Temmuz 1840'ta General Galafeyev kolordusuyla göğüs göğüse çarpıştığı ve M. Y. Lermontov'un dizeleriyle tarihe geçen muharebe alanı.",
+    people: ["isa-gendargeno", "suayip-molla"],
+    docs: [
+      "lermontov-valerik-el-yazmasi-1840",
+      "lermontov-valerik-muharebesi-suluboya-1840",
+      "kucuk-cecenya-askeri-topografya-haritasi-1848",
+    ],
+  },
+  {
+    id: "sunja",
+    name: "Sunja Ormanları Zaferi",
+    kind: "savas",
+    lat: 43.25,
+    lon: 45.45,
+    year: 1785,
+    period: "Temmuz 1785",
+    image: "/images/archive/sheikh-mansur-1787-winkler-harita-gravuru.png",
+    description:
+      "Şeyh Mansur önderliğindeki Çeçen ve Kafkas gönüllülerinin Temmuz 1785'te Aldı üzerine yürüyen Albay Pieri müfrezesini Sunja Nehri geçişinde ağır yenilgiye uğrattığı tarihi dönüm noktası.",
+    people: ["seyh-mansur", "beybulat-taymiyev"],
+    docs: ["sheikh-mansur-1787-winkler-harita-gravuru", "spencer-seyh-mansur-evi-gravuru-1838"],
+  },
+  {
+    id: "urus-martan",
+    name: "Urus-Martan (Halha-Marta)",
+    kind: "yerlesim",
+    lat: 43.13,
+    lon: 45.54,
+    year: 1840,
+    period: "XVIII. yüzyıl – günümüz",
+    image: "/images/archive/imam-samil-naib-isa-mektubu-1842.jpg",
+    description:
+      "Küçük Çeçenya'nın siyasi ve dini merkezi; Mart 1840'ta Çeçen temsilcilerinin Naib İsa Gendargeno ev sahipliğinde İmam Şamil ile buluşup genel Çeçenya biatını ilan ettiği tarihi yerleşim.",
+    people: ["isa-gendargeno", "suayip-molla", "beybulat-taymiyev", "vaha-arsanov"],
+    docs: [
+      "imam-samil-naib-isa-mektubu-1842",
+      "kucuk-cecenya-askeri-topografya-haritasi-1848",
+      "berje-cecenya-haritasi-1859",
+    ],
+  },
+  {
+    id: "aldi",
+    name: "Aldı (Bulhan-Yurt)",
+    kind: "koy",
+    lat: 43.28,
+    lon: 45.65,
+    year: 1760,
+    period: "XVIII–XX. yüzyıllar",
+    image: "/images/archive/spencer-seyh-mansur-evi-gravuru-1838.jpg",
+    description:
+      "Kuzey Kafkasya'nın ilk imamı Şeyh Mansur'un (Uşurma, 1760–1794) doğduğu ve 1785 birleşme hareketinin ilk kıvılcımının çaktığı tarihi Sunja köyü.",
+    people: ["seyh-mansur", "beybulat-taymiyev"],
+    docs: ["spencer-seyh-mansur-evi-gravuru-1838", "sheikh-mansur-1787-winkler-harita-gravuru"],
+  },
+  {
+    id: "grozni",
+    name: "Grozni (Sölja-Gala / Cevherkale)",
+    kind: "yerlesim",
+    lat: 43.32,
+    lon: 45.69,
+    year: 1818,
+    period: "1818 – günümüz",
+    image: "/images/archive/serlo-cecence-gazete-1926.jpg",
+    description:
+      "Sunja Nehri kıyısında tarihi Çeçen köylerinin kavşağında kurulan başkent. 1862'de ilk Çeçence okulun açıldığı, 1920'lerde 'Serlo' gazetesinin basıldığı ve 1994–1995 kışında modern Avrupa tarihinin en ağır kuşatmalarından birini yaşayan siyasi-kültürel merkez.",
+    people: ["deni-arsanov", "cevher-dudayev", "zelimhan-yandarbiyev", "aslan-mashadov", "imam-alimsultanov"],
+    docs: [
+      "dosov-ilk-cecen-elifbasi-1862",
+      "serlo-cecence-gazete-1926",
+      "vedomosti-1957-cecen-ingus-assc-iade-kararnamesi",
+      "cecen-cumhuriyeti-ickeriya-pasaportu-1994",
+      "grozni-kusatmasi-dua-eden-cecen-evstafiev-1995",
+      "kovalyov-grozni-insan-haklari-basin-toplantisi-1995",
+    ],
+  },
+  {
+    id: "satoy",
+    name: "Şatoy (Şuota)",
+    kind: "yerlesim",
+    lat: 42.87,
+    lon: 45.69,
+    year: 1858,
+    period: "Orta Çağ – günümüz",
+    image: "/images/archive/berje-cecenya-haritasi-1859.jpg",
+    description:
+      "Argun Boğazı'nın kalbinde Naib Batuko Şatoyski'nin idare merkezi olan, tarihi Hakkoy savunma kulesiyle korunan ve 1858, 1860, 1877 ile 1940–1944 dağ direnişlerinde kilit rol oynayan yayla yerleşimi.",
+    people: ["batuko-satoyski", "uma-duyev", "hasan-israilov", "mayrbek-seripov"],
+    docs: ["berje-cecenya-haritasi-1859", "cecen-ingus-assc-idari-haritasi-1937"],
+  },
+  {
+    id: "sali",
+    name: "Şali",
+    kind: "yerlesim",
+    lat: 43.15,
+    lon: 45.90,
+    year: 1847,
+    period: "XIX–XX. yüzyıllar",
+    image: "/images/archive/gagarin-sali-ovasi-orman-kesimi-1847.jpg",
+    description:
+      "Büyük Çeçenya ovasının kalbi; İmamet'in topçu komutanı Naib Talhig'in karargâhı, Ocak 1864 Kunta Hacı müridlerinin 'Hançerler Muharebesi' sahası, Eylül 1913'te Abrek Zelimhan'ın şehit düştüğü yer ve 1930 Şita İstamulov direnişinin merkezidir.",
+    people: ["talhig-salinski", "zelimhan-haracoyn", "sita-istamulov", "aslan-mashadov"],
+    docs: [
+      "gagarin-sali-ovasi-orman-kesimi-1847",
+      "abrek-zelimhan-haracoylu-arsiv-fotografi-1913",
+      "berje-cecenya-haritasi-1859",
+    ],
+  },
+  {
+    id: "tsotsi-yurt",
+    name: "Tsotsi-Yurt",
+    kind: "koy",
+    lat: 43.23,
+    lon: 46.01,
+    year: 1830,
+    period: "XIX–XX. yüzyıllar",
+    image: "/images/archive/tsotsi-yurt-cecen-latin-sokak-tabelasi-1992.jpg",
+    description:
+      "Hulhulau Irmağı kıyısında yer alan tarihi Nohçmahkahoy ovalık köyü; 1840'lardaki Kafkas Savaşı tahkimatlarından 1992 Çeçen Latin alfabesi uygulamalarına dek kesintisiz yerleşim hafızasını korumuştur.",
+    people: ["ahmad-avturinski", "dada-tsentoroyevski"],
+    docs: ["tsotsi-yurt-cecen-latin-sokak-tabelasi-1992", "berje-cecenya-haritasi-1859"],
+  },
+  {
+    id: "vedeno",
+    name: "Vedeno",
+    kind: "yerlesim",
+    lat: 42.97,
+    lon: 46.10,
+    year: 1845,
+    period: "İmamet (1845–1859) ve Emirlik (1919–1920) Başkenti",
+    image: "/images/archive/kuzey-kafkasya-emirligi-100-ruble-vedeno-1919.jpg",
+    description:
+      "1845'ten Nisan 1859'a kadar İmam Şamil'in İmamet Devleti'ne, 1919–1920'de ise Şeyh Uzun Hacı'nın kendi banknotlarını bastırdığı Kuzey Kafkasya Emirliği'ne başkentlik yapan tarihi İçkeriya merkezi.",
+    people: ["baysangur-benoyski", "alibek-haci", "zelimhan-haracoyn", "samil-basayev"],
+    docs: [
+      "imam-samil-nisanlari-arapca-yazitli",
+      "imam-samil-kirmizi-dag-sancagi",
+      "meyer-dogu-kafkasya-samil-haritasi-1856",
+      "kuzey-kafkasya-emirligi-100-ruble-vedeno-1919",
+    ],
+  },
+  {
+    id: "harachoy",
+    name: "Haraçoy",
+    kind: "koy",
+    lat: 42.91,
+    lon: 46.14,
+    year: 1872,
+    period: "XIX–XX. yüzyıllar",
+    image: "/images/archive/abrek-zelimhan-haracoylu-arsiv-fotografi-1913.jpg",
+    description:
+      "Vedeno'dan Andi sıradağlarına çıkan Hulhulau geçidinin kapısında yer alan, 'Kızlar Pınarı' ve efsanevi Abrek Zelimhan Guşmazukayev'in (1872–1913) memleketi olmasıyla tanınan dağ köyü.",
+    people: ["zelimhan-haracoyn", "alibek-haci"],
+    docs: ["abrek-zelimhan-haracoylu-arsiv-fotografi-1913", "george-kennan-cecenler-fotografi-1870"],
+  },
+  {
+    id: "dargo",
+    name: "Dargo Muharebesi",
+    kind: "savas",
+    lat: 42.94,
+    lon: 46.18,
+    year: 1845,
+    period: "Temmuz 1845",
+    image: "/images/archive/baddeley-russian-conquest-of-the-caucasus-1908.jpg",
+    description:
+      "Temmuz 1845'te Kafkasya Genel Valisi Prens Vorontsov komutasındaki kolordunun İçkeriya kayın ormanlarında Baysangur, Şuayip Molla'nın halefleri ve İsa Gendargeno tarafından kuşatılarak üç general ve binlerce asker kaybıyla geri çekildiği tarihi zafer.",
+    people: ["tasav-haci", "suayip-molla", "isa-gendargeno", "baysangur-benoyski"],
+    docs: [
+      "baddeley-russian-conquest-of-the-caucasus-1908",
+      "meyer-dogu-kafkasya-samil-haritasi-1856",
+      "imam-samil-nisanlari-arapca-yazitli",
+    ],
+  },
+  {
+    id: "dadi-yurt",
+    name: "Dadi-Yurt Direnişi",
+    kind: "savas",
+    lat: 43.46,
+    lon: 46.23,
+    year: 1819,
+    period: "15 Eylül 1819",
+    image: "/images/archive/dubois-kafkasya-genel-haritasi-1843.jpg",
+    description:
+      "Terek Nehri'nin sağ kıyısındaki büyük Çeçen yerleşimi Dadi-Yurt'un 15 Eylül 1819'da Yermolov'un emriyle General Sısoyev birliklerince kuşatılıp topa tutularak tamamen yok edildiği, kadınların esir düşmemek için Terek sularına atladığı trajik direniş noktası.",
+    people: ["beybulat-taymiyev", "tasav-haci"],
+    docs: ["dubois-kafkasya-genel-haritasi-1843", "baddeley-russian-conquest-of-the-caucasus-1908"],
+  },
+  {
+    id: "benoy",
+    name: "Benoy",
+    kind: "koy",
+    lat: 42.99,
+    lon: 46.32,
+    year: 1860,
+    period: "XVIII–XX. yüzyıllar",
+    image: "/images/archive/baysangur-idam-emri-kafkas-ordusu-1861.jpg",
+    description:
+      "Doğu İçkeriya'nın yüksek ormanlık yaylalarında yer alan en büyük Çeçen teyp merkezlerinden biri; Naib Baysangur Benoyski ve Soltamurad Benoyevski'nin 1860–1861 ve 1877 bağımsızlık kıyamlarının kalesi.",
+    people: ["baysangur-benoyski", "soltamurad-benoyevski", "alibek-haci", "aydamir-abalayev"],
+    docs: ["baysangur-idam-emri-kafkas-ordusu-1861", "samil-ve-cecen-dagistan-naibleri-portreleri"],
   },
   {
     id: "hasavyurt",
-    name: "Hasavyurt",
+    name: "Hasavyurt ve Yurt-Auh",
     kind: "yerlesim",
     lat: 43.25,
     lon: 46.59,
     year: 1846,
-    period: "1846 – günümüz",
-    image: "/images/archive-hero.jpg",
+    period: "XIX–XX. yüzyıllar",
+    image: "/images/archive/yurt-auh-cecenleri-frunze-istasyonu-donus-1957.jpg",
     description:
-      "Çeçenya ile Kumuk Ovası arasındaki geçiş noktasında yer alan yerleşim; Benoy Naibi Baysangur Mart 1861'de burada idam edilmiştir.",
-    people: ["tasav-haci", "baysangur-benoyski", "aslan-mashadov"],
-    docs: ["rus-raporu-1864"],
+      "Tarihi Auh (Akki-Çeçen) bölgesi ile Kumuk Ovası'nın birleştiği merkez. Taşav Hacı Enderiyevski ve Goytemir Auhovski'nin mücadele sahası, Mart 1861'de Baysangur Benoyski'nin idam edildiği meydan ve Ağustos 1996 Hasavyurt Ateşkes Antlaşması'nın imzalandığı kent.",
+    people: ["tasav-haci", "goytemir-auhovski", "baysangur-benoyski", "aslan-mashadov"],
+    docs: [
+      "baysangur-idam-emri-kafkas-ordusu-1861",
+      "yurt-auh-cecenleri-frunze-istasyonu-donus-1957",
+      "grozni-oblasti-1949-tasfiye-haritasi",
+    ],
+  },
+  {
+    id: "gimri",
+    name: "Gimri",
+    kind: "koy",
+    lat: 42.75,
+    lon: 46.84,
+    year: 1832,
+    period: "Ekim 1832",
+    image: "/images/archive/imamet-askeri-surasi-protokolu-1832.jpg",
+    description:
+      "Andi ve Avar Koysu nehirlerinin kavşağında Birinci İmam Gazi Muhammed ve Üçüncü İmam Şeyh Şamil'in doğduğu, Ekim 1832 kuşatmasında Gazi Muhammed'in şehit düştüğü sarp dağ köyü.",
+    people: ["tasav-haci", "ahmad-avturinski"],
+    docs: ["imamet-askeri-surasi-protokolu-1832", "meyer-dogu-kafkasya-samil-haritasi-1856"],
+  },
+  {
+    id: "gunib",
+    name: "Gunib Platosu",
+    kind: "savas",
+    lat: 42.39,
+    lon: 46.96,
+    year: 1859,
+    period: "Ağustos 1859",
+    image: "/images/archive/samil-ve-cecen-dagistan-naibleri-portreleri.jpg",
+    description:
+      "İmam Şamil'in Ağustos 1859'da son savunmasını yaptığı ve Benoy Naibi Baysangur'un teslimiyeti reddederek kuşatma çemberini silahla yarıp Çeçenya'ya çıktığı sarp doğal kale platosu.",
+    people: ["baysangur-benoyski", "talhig-salinski", "uma-duyev"],
+    docs: ["samil-ve-cecen-dagistan-naibleri-portreleri", "baysangur-idam-emri-kafkas-ordusu-1861"],
   },
 ];
 
 /* ------------------------------------------------------------------ */
-/* SERGİLER                                                            */
+/* SERGİLER (6 Küratöryel Dijital Sergi — Gerçek Belge Sayılarıyla)     */
 /* ------------------------------------------------------------------ */
 
 export type Exhibition = {
@@ -8706,110 +10006,198 @@ export type Exhibition = {
 export const EXHIBITION_THEMES = [
   "Kafkasya Direnişi",
   "Kuleler ve Yerleşimler",
+  "1918 Devlet Arayışları",
+  "Dil, Yazı ve Basın",
   "Sürgün 1944",
   "Kültür ve Günlük Yaşam",
 ];
 
-export const EXHIBITIONS: Exhibition[] = [
+const RAW_EXHIBITIONS: Omit<Exhibition, "count">[] = [
   {
     slug: "kafkasyanin-ozgurluk-mucadelesi",
     title: "Kafkasya'nın Özgürlük Mücadelesi",
-    subtitle: "Şeyh Mansur'dan Gunib'e Bir Asırlık İrade",
+    subtitle: "Şeyh Mansur'dan İmamet Divanına ve Baysangur'a Bir Asırlık Birincil Evrak",
     theme: "Kafkasya Direnişi",
     curator: "Targim Tarih Araştırmaları Kurulu",
     period: "1785 – 1861",
-    count: 32,
-    image: "/images/imamet.jpg",
+    image: "/images/archive/imam-samil-naib-isa-mektubu-1842.jpg",
     summary:
-      "1785 Sunja direnişinden Şeyh Şamil'in İmamet Devleti'ne ve Baysangur'un son savunmasına uzanan dönemin el yazmaları, mühürleri ve haritaları.",
+      "1787 Şeyh Mansur cephe haritasından 1832 üç mühürlü İmamet şûra protokolüne, İmam Şamil'in Naib İsa Gendargeno'ya yazdığı Arapça mektuptan Baysangur'un 1861 idam emrine uzanan doğrulanmış arşiv seçkisi.",
     body: [
-      "Bu dijital sergi, 1785'ten 1861'e uzanan dönemde Kuzey Kafkasya halklarının bağımsızlık ve hukuk birliği mücadelesini orijinal Arapça divan mektupları, askeri topografya haritaları ve sözlü tarih kayıtları üzerinden gözler önüne seriyor.",
-      "İmamet dönemi yalnızca askeri bir cephe değil; kadı mahkemeleri, naiplik meclisleri, Beytü'l-mal kayıtları ve bölgeler üstü dayanışma bilinciyle Kafkasya'nın siyasal hafızasında derin izler bırakan bir devlet tecrübesiydi.",
-      "Sergide Şeyh Mansur, Beybulat Taymiyev, Gazi Muhammed, Taşav Hacı, Şeyh Şamil ve Baysangur Benoyski'nin izlerini taşıyan nadir arşiv belgelerini inceleyebilirsiniz.",
+      "Bu küratöryel sergi, 1785'ten 1861'e uzanan dönemde Çeçen ve Kuzey Kafkasya halklarının bağımsızlık ve hukuk birliği mücadelesini Dağıstan Ulusal Müzesi, Puşkin Evi (İRLİ RAN), Devlet Tarih Müzesi (GİM) ve Kafkas Arkeografi Komisyonu yayınlarından derlenen gerçek birincil kaynaklarla sunar.",
+      "İmamet dönemi yalnızca askeri bir cephe değil; mühürlü Arapça şûra protokolleri, Çeçen naiplere gönderilen divan mektupları, savatlı gümüş liyakat nişanları ve bölgeler üstü dayanışma bilinciyle Kafkasya'nın siyasal hafızasında derin izler bırakan bir devlet tecrübesiydi.",
+      "Araştırmacılar bu sergide Lermontov'un Temmuz 1840 Valerik Muharebesi el yazmasını, Şamil'in 1842 tarihli Naib İsa mektubunu ve Mareşal Baryatinski imzalı 20 Mart 1861 Baysangur kararını orijinal transkripsiyon ve Türkçe çevirileriyle karşılaştırmalı olarak inceleyebilir.",
     ],
-    docs: ["samil-donemi-mektup", "imamet-dergisi-notlari", "kafkas-atlasi"],
-    people: ["seyh-mansur", "beybulat-taymiyev", "tasav-haci", "baysangur-benoyski"],
+    docs: [
+      "sheikh-mansur-1787-winkler-harita-gravuru",
+      "imamet-askeri-surasi-protokolu-1832",
+      "lermontov-valerik-el-yazmasi-1840",
+      "lermontov-valerik-muharebesi-suluboya-1840",
+      "imam-samil-naib-isa-mektubu-1842",
+      "imam-samil-nisanlari-arapca-yazitli",
+      "gagarin-sali-ovasi-orman-kesimi-1847",
+      "kucuk-cecenya-askeri-topografya-haritasi-1848",
+      "meyer-dogu-kafkasya-samil-haritasi-1856",
+      "baysangur-idam-emri-kafkas-ordusu-1861",
+      "baddeley-russian-conquest-of-the-caucasus-1908",
+    ],
+    people: [
+      "seyh-mansur",
+      "beybulat-taymiyev",
+      "tasav-haci",
+      "isa-gendargeno",
+      "suayip-molla",
+      "talhig-salinski",
+      "baysangur-benoyski",
+    ],
   },
   {
     slug: "kuleler-ve-yerlesimler",
-    title: "Taştan Yükselen Hafıza: Kuleler",
-    subtitle: "Cerah, Targim ve Argun Vadilerinin Mimari ve Yazılı Mirası",
+    title: "Taştan Yükselen Hafıza: Kuleler ve Epigrafi",
+    subtitle: "Zumsoy, Himoy, Şaroy, Dan-Kale ve Targim Vadilerinin Arkeolojik Mirası",
     theme: "Kuleler ve Yerleşimler",
-    curator: "Mimari ve Etnografya Bölümü",
-    period: "XIII – XIX. Yüzyıllar",
-    count: 29,
-    image: "/images/hf-kule-gunbatimi.jpg",
+    curator: "Mimari, Arkeoloji ve Epigrafi Bölümü",
+    period: "XIII – XX. Yüzyıllar",
+    image: "/images/archive/targim-savas-kulesi-1917-arsiv-fotografi.jpg",
     summary:
-      "Vaynah savaş ve konut kulelerinin taş işçiliği, oymalı meşe kapıları, kule içi el yazması mahzenleri ve sarp vadilerdeki savunma ağları.",
+      "1917 Targim ve 1885 Şaroy cam negatif fotoğrafları, Zumsoy taş yazıtları, Himoy güneş petroglifleri, 1930 Dan-Kale saha fotoğrafları ve 1960 Guçan-Kale mimari rölöve çizimleri.",
     body: [
       "Piramidal basamaklı taş çatılarıyla göğe uzanan savaş kuleleri (vov) ve aile ocağının kalbi olan konut kuleleri (gala); Çeçen ve İnguş toplumunda soyun, misafirperverliğin ve özgürlüğün taşlaşmış anıtlarıdır.",
-      "Her kulenin kapı kemerinde yer alan dağ oymaları, sarmal güneş petroglyphleri ve iç mahzenlerde korunan deri ciltli el yazmaları, o vadide kök salan teypin sessiz imzasını taşır.",
-      "Sergi; Targim, Vovnuşki, Erzi ve İtum-Kale komplekslerini yüksek çözünürlüklü kule içi arşiv belgeleri, oymalı kapı detayları ve sinematik yürüyüş sekansıyla bir araya getiriyor.",
+      "Her kulenin kapı kemerinde yer alan sarmal güneş (çarkıfelek) petroglifleri ve Zumsoy vadisinde olduğu gibi taş bloklara kazınmış erken dönem epigrafik harfler, o vadide kök salan teypin asırlık tapusunu oluşturur.",
+      "Sergi; 1944 sürgünü ve 1990'lardaki çatışmalardan önce çekilmiş 19. yüzyıl Şaroy, 1917 Targim ve 1930 Dan-Kale saha fotoğraflarını 1960 tarihli Guçan-Kale arkeolojik rölöve paftasıyla bir araya getirerek genç mimarlık ve tarih araştırmacılarına sağlam bir referans seti sunar.",
     ],
     docs: [
-      "kule-ici-yazma-kodeks",
-      "oymali-vaynah-kule-kapisi",
-      "targim-safak-kulesi-ve-istang",
-      "targim-kuleleri-fotografi",
-      "kuleler-albumu",
+      "zumsoy-epigrafik-tas-yaziti",
+      "himoy-kule-kemeri-petroglif-yaziti",
+      "spencer-seyh-mansur-evi-gravuru-1838",
+      "saroy-kule-yerlesimi-19-yuzyil-fotografi",
+      "targim-savas-kulesi-1917-arsiv-fotografi",
+      "dan-kale-konut-kulesi-1930-kesif-fotografi",
+      "gucan-kale-mimari-rolove-cizimi-1960",
     ],
-    people: ["seyh-mansur", "baysangur-benoyski"],
+    people: ["seyh-mansur", "uma-duyev", "batuko-satoyski", "hasuha-magomadov"],
+  },
+  {
+    slug: "bagimsizlik-ve-devlet-arayislari-1918",
+    title: "1918–1920 Bağımsızlık ve Devlet Arayışları",
+    subtitle: "Dağlılar Cumhuriyeti Diplomasisinden Vedeno Emirliği Banknotlarına",
+    theme: "1918 Devlet Arayışları",
+    curator: "Modern Siyasi Tarih ve Diplomasi Fonu",
+    period: "1914 – 1920",
+    image: "/images/archive/kuzey-kafkasya-emirligi-100-ruble-vedeno-1919.jpg",
+    summary:
+      "Trabzon ve Paris konferanslarındaki Kuzey Kafkasya heyetleri, Haydar Bammat imzalı Fransızca diplomatik pasaport, Tapa Çermoyev'in resmi mektubu ve Vedeno'da basılan 100 Rublelik Kuzey Kafkasya Emirliği parası.",
+    body: [
+      "Çarlık İmparatorluğu'nun 1917'de çökmesiyle Kuzey Kafkasya halkları, bir asırlık askeri işgalin ardından modern uluslararası hukuk zemini üzerinde bağımsız devletlerini kurmak üzere harekete geçti.",
+      "11 Mayıs 1918'de ilan edilen Kuzey Kafkasya Dağlı Halkları Birliği Cumhuriyeti; Trabzon, Batum ve 1919 Paris Barış Konferansı'nda diplomatik pasaportları, ikili dostluk antlaşmaları ve çok dilli dış temsilcilikleriyle Kafkasya'nın ortak demokratik cumhuriyet iradesini temsil etti.",
+      "Aynı dönemde Denikin ordularının Çeçenya'yı işgal girişimine karşı Eylül 1919'da Vedeno'da ilan edilen Kuzey Kafkasya Emirliği'nin Arapça, Rusça ve Fransızca bastırdığı 100 Rublelik banknotlar, dağlarda devlet egemenliği fikrinin ne denli güçlü kurumsallaştığını gösterir.",
+    ],
+    docs: [
+      "kafkas-yerli-suvari-tugayi-subaylari-1914",
+      "trabzon-konferansi-kuzey-kafkasya-heyeti-1918",
+      "daglilar-cumhuriyeti-diplomatik-pasaport-1918",
+      "tapa-cermoyev-resmi-mektubu-1918",
+      "daglilar-cumhuriyeti-kuban-dostluk-antlasmasi-1919",
+      "kuzey-kafkasya-emirligi-100-ruble-vedeno-1919",
+    ],
+    people: ["deni-arsanov", "hamid-molla", "sita-istamulov"],
+  },
+  {
+    slug: "cecen-dil-yazi-ve-basini",
+    title: "Nohçiyn Mott: Çeçen Dil, Yazı ve Basın Tarihi",
+    subtitle: "1862 Kedi Dosov Elifbasından 1926 'Serlo' Gazetesine ve Matsiyev Sözlüğüne",
+    theme: "Dil, Yazı ve Basın",
+    curator: "Kafkas Dilbilimi ve Matbuat Tarihi Birimi",
+    period: "1862 – 1992",
+    image: "/images/archive/serlo-cecence-gazete-1926.jpg",
+    summary:
+      "Çeçen dilinin 130 yıllık yazılı serüveni: 1862 Tiflis 'Noxçiyn Abat' baskısı, 1872 Laudayev etnografyası, 1888 Uslar grameri, 1925 Latin alfabesi, 1926 'Serlo' gazetesi, 1961 Matsiyev sözlüğü ve 1992 Latin sokak tabelaları.",
+    body: [
+      "Nah dil ailesinin en büyük kolu olan Çeçence (Nohçiyn mott), zengin ses envanteri, altı isim sınıfı ve kök-bükün yapısıyla Kafkasya'nın en kadim yerli dillerindendir.",
+      "İmamet devrindeki Arap harfli (Acem) yazışmaların ardından 1862'de Kedi Dosov ve P. K. Uslar'ın Tiflis'te bastırdığı ilk Çeçence elifba, 1925'te Halid Oşayev'in Latin alfabesi ve 'Serlo' gazetesiyle büyük bir basın-edebiyat hamlesine dönüştü.",
+      "1938 Kiril geçişi ve 1944 sürgünündeki kitap yıkımlarına rağmen Ahmet Matsiyev'in 1961'de yayımladığı 20.000 kelimelik sözlük dilin bilimsel omurgasını kurtardı; 1992'de Tsotsi-Yurt sokaklarına asılan Latin harfli tabelalar ise bu yazı hafızasının sürekliliğini belgeledi.",
+    ],
+    docs: [
+      "dosov-ilk-cecen-elifbasi-1862",
+      "umalat-laudayev-cecen-kavmi-1872",
+      "uslar-cecenskiy-yazik-grameri-1888",
+      "cecen-latin-alfabesi-abata-1925",
+      "serlo-cecence-gazete-1926",
+      "matsiyev-cecence-rusca-sozluk-1961",
+      "tsotsi-yurt-cecen-latin-sokak-tabelasi-1992",
+    ],
+    people: ["zelimhan-yandarbiyev", "imam-alimsultanov"],
   },
   {
     slug: "surgun-1944",
-    title: "23 Şubat 1944: Kışta Koparılan Vatan",
-    subtitle: "Sürgün, Dayanışma ve 1957 Dönüş Yolculuğu",
+    title: "1865 Muhaceretinden 23 Şubat 1944'e: Sürgün ve Dönüş",
+    subtitle: "GARF Sevkiyat Telgrafları, Tasfiye Haritaları, 1957 Vedomosti Kararnamesi ve Yakın Tarih",
     theme: "Sürgün 1944",
-    curator: "Sözlü Tarih ve Tanıklık Birimi",
-    period: "1944 – 1957",
-    count: 18,
-    image: "/images/doc-surgun.jpg",
+    curator: "Sürgün Araştırmaları ve İnsan Hakları Belgeleme Birimi",
+    period: "1865 – 1995",
+    image: "/images/archive/mercimek-operasyonu-1944-sevk-haritasi.png",
     summary:
-      "Bir halkın tek bir Şubat sabahında yük vagonlarıyla Orta Asya bozkırlarına sürülüşü, hayatta kalma iradesi ve on üç yıl sonraki dönüş destanı.",
+      "1865 Osmanlı muhaceretinden 23 Şubat 1944 'Mercimek Operasyonu'na, 1949 Grozni Oblastı tasfiye haritasından 1957 Yüksek Sovyet iade kararnamesine, Frunze dönüş fotoğraflarından 1995 Grozni insan hakları kayıtlarına.",
     body: [
-      "23 Şubat 1944 şafağında başlayan topyekûn sürgün, bebeklerden asırlık aksakallılara kadar bütün Çeçen ve İnguş nüfusunu dondurucu kış ortasında binlerce kilometre ötedeki Kazakistan ve Kırgızistan bozkırlarına savurdu.",
-      "Haritalardan isimleri silinen, kuleleri ve mezar taşları tahrip edilen bir halk; sürgünde dilini, Nohçalla ve Ezdel ahlakını, zikir halkalarını ve dayanışmasını koruyarak kimliğini yaşattı.",
-      "Bu sergi; istatistiklerin ardındaki insan yüzlerini, tren istasyonu kayıtlarını ve 1957'de ata ocaklarına dönüşün sarsıcı tanıklıklarını belgeliyor.",
+      "Çeçen ve İnguş yakın tarihi, üç büyük kitlesel kırılma ve her defasında küllerinden doğan bir vatan bağlılığıyla şekillenmiştir: 1865 Osmanlı Muhacereti, 23 Şubat 1944 Orta Asya Sürgünü ve 1994–2000 savaşları.",
+      "GARF Fon R-9401'de kayıtlı gizli sevkiyat telgrafları ve 7 Mart 1944 tasfiye kararnamesi haritaları, 493.269 Çeçen ve İnguş'un 180 tren katarıyla sürülmesinin ardından bütün bir ülkenin haritadan nasıl silinmek istendiğini devlet evrakı üzerinden kanıtlar.",
+      "Buna karşılık 24 Şubat 1957 tarihli Yüksek Sovyet Resmi Gazetesi (Vedomosti No. 4) ve Frunze tren garında vatan trenini bekleyen Yurt-Auhlu ailelerin vakur bakışları, hiçbir sürgünün toplumsal hafızayı silemediğinin tarihsel tescilidir.",
     ],
-    docs: ["surgun-listeleri-1944", "rus-raporu-1864"],
-    people: ["hasan-israilov", "hasuha-magomadov", "cevher-dudayev"],
+    docs: [
+      "musa-kunduhov-1865-muhaceret-arsiv-portresi",
+      "cecen-ingus-assc-idari-haritasi-1937",
+      "mercimek-operasyonu-1944-sevk-haritasi",
+      "grozni-oblasti-1949-tasfiye-haritasi",
+      "vedomosti-1957-cecen-ingus-assc-iade-kararnamesi",
+      "yurt-auh-cecenleri-frunze-istasyonu-donus-1957",
+      "cecen-cumhuriyeti-ickeriya-pasaportu-1994",
+      "grozni-kusatmasi-dua-eden-cecen-evstafiev-1995",
+      "kovalyov-grozni-insan-haklari-basin-toplantisi-1995",
+    ],
+    people: ["hasan-israilov", "mayrbek-seripov", "hasuha-magomadov", "cevher-dudayev", "aslan-mashadov"],
   },
   {
     slug: "kultur-ve-gunluk-yasam",
-    title: "Dağların Ruhu: Kültür ve Zanaat",
-    subtitle: "Nohçalla, Ezdel, Savatlı Gümüş ve İlli Geleneği",
+    title: "Dağların Ruhu: Etnografya, Töre ve Toplumsal Yaşam",
+    subtitle: "Berje ve Laudayev Kayıtlarından George Kennan Fotoğraflarına ve Abrek Destanlarına",
     theme: "Kültür ve Günlük Yaşam",
-    curator: "Maddi ve Somut Olmayan Miras Fonu",
-    period: "XVIII – XX. Yüzyıllar",
-    count: 27,
-    image: "/images/kultur.jpg",
+    curator: "Etnografya ve Toplumsal Bellek Fonu",
+    period: "1843 – 1914",
+    image: "/images/archive/george-kennan-cecenler-fotografi-1870.jpg",
     summary:
-      "Savatlı gümüş kama işçiliğinden keçe halılara, üç telli dechig-pondar ezgilerinden dağ misafirperverliğine yaşayan Kafkas mirası.",
+      "ABD Kongre Kütüphanesi George Kennan koleksiyonundaki 1870'ler Çeçen düğün fotoğrafları, Berje ve Terek etnografya haritaları, savatlı gümüş nişanlar, çerkeskalı süvariler ve Abrek Zelimhan hafızası.",
     body: [
-      "Kafkas dağ topluluklarında maddi kültür ile ahlaki düzen birbirinden ayrılmaz: bir çerkeskanın ölçülü kesimi, beldeki savatlı gümüş kemer ve baş üzerindeki papaha; kişinin sözüne bağlılığını ve topluma karşı sorumluluğunu simgeler.",
-      "Ocak ateşinin başında yaşlıların anlattığı atasözleri ve dechig-pondar eşliğinde söylenen epik 'illi' destanları, yazılı arşivlerin yakıldığı dönemlerde dahi tarihi canlı tutan birer hafıza hazinesi işlevi görmüştür.",
+      "Kafkas dağ topluluklarında maddi kültür ile ahlaki düzen birbirinden ayrılmaz: bir çerkeskanın ölçülü kesimi, göğüsteki gümüş gazırlar, savatlı kama ve baş üzerindeki papaha; kişinin Nohçalla ve Ezdel ilkelerine bağlılığını simgeler.",
+      "1859'da Adolf Berje'nin, 1872'de Umalat Laudayev'in ve 1870'lerde Amerikalı seyyah George Kennan'ın kayıt altına aldığı etnografik belgeler; Çeçen teyp coğrafyasını, düğün at yarışlarını, misafir hukukunu ve töre meclislerini birinci elden gözler önüne serer.",
+      "1900'lerin başında Haraçoylu Abrek Zelimhan etrafında doğan halk destanları (illi) ve 1914 Çeçen-İnguş süvari alaylarının fotoğrafları ise geleneksel şeref kodunun modern çağın eşiğindeki yansımalarını belgeler.",
     ],
-    docs: ["el-sanatlari-katalogu", "atli-birlik-fotografi"],
-    people: ["seyh-mansur", "zelimhan-haracoyn", "deni-arsanov"],
+    docs: [
+      "dubois-kafkasya-genel-haritasi-1843",
+      "imam-samil-kirmizi-dag-sancagi",
+      "berje-cecenya-haritasi-1859",
+      "samil-ve-cecen-dagistan-naibleri-portreleri",
+      "umalat-laudayev-cecen-kavmi-1872",
+      "george-kennan-cecenler-fotografi-1870",
+      "terskaya-oblast-etnografya-haritasi-1892",
+      "abrek-zelimhan-haracoylu-arsiv-fotografi-1913",
+      "kafkas-yerli-suvari-tugayi-subaylari-1914",
+    ],
+    people: ["seyh-mansur", "baysangur-benoyski", "alibek-haci", "zelimhan-haracoyn", "deni-arsanov"],
   },
 ];
+
+export const EXHIBITIONS: Exhibition[] = RAW_EXHIBITIONS.map((ex) => ({
+  ...ex,
+  count: ex.docs.length,
+}));
 
 export const getExhibition = (slug: string) => EXHIBITIONS.find((e) => e.slug === slug);
 
 /* ------------------------------------------------------------------ */
-/* KÜLTÜR                                                              */
+/* KÜLTÜR (24 Araştırmacı Düzeyi Etnografik & Dilbilimsel Madde)       */
 /* ------------------------------------------------------------------ */
 
 export type CultureCat = "gelenek" | "mimari" | "muzik" | "giyim" | "yemek" | "sozlu";
-
-export const CULTURE_CATS: { id: CultureCat; label: string; sub: string; image: string; count: number }[] = [
-  { id: "gelenek", label: "Gelenek ve Adetler", sub: "Nohçalla, Ezdel ve meclis hukuku", image: "/images/c-gelenek.jpg", count: 12 },
-  { id: "mimari", label: "Mimari ve Kuleler", sub: "Savaş kuleleri, oymalı kapılar ve tamgalar", image: "/images/hf-oymali-kapi.jpg", count: 18 },
-  { id: "muzik", label: "Müzik ve İlli", sub: "Dechig-pondar, destanlar ve lovzar", image: "/images/c-muzik.jpg", count: 14 },
-  { id: "giyim", label: "Geleneksel Giyim", sub: "Çerkeska, gümüş gazırlar ve papaha", image: "/images/c-giyim.jpg", count: 11 },
-  { id: "yemek", label: "Yemek Kültürü", sub: "Jijig-galnaş, çepalgaş ve misafir sofrası", image: "/images/c-yemek.jpg", count: 9 },
-  { id: "sozlu", label: "Sözlü Tarih", sub: "Sürgün tanıklıkları ve dağ atasözleri", image: "/images/warrior.jpg", count: 21 },
-];
 
 export type CultureItem = {
   id: string;
@@ -8820,112 +10208,236 @@ export type CultureItem = {
 };
 
 export const CULTURE_ITEMS: CultureItem[] = [
+  /* GELENEK VE TÖRE HUKUKU (4) */
   {
     id: "nohcalla",
     cat: "gelenek",
-    title: "Nohçalla",
+    title: "Nohçalla — Çeçen Ahlak ve Davranış Yasası",
     nativeTerm: "Нохчалла",
-    text: "Çeçen kimliğinin ahlaki ve vicdani pusulası: özdenetim, misafire koşulsuz ikram ve koruma, kadına ve aksakallıya hürmet, verilen söze can pahasına sadakat. Yazılı bir kanun metni değil, her bireyin kendi onuruyla koruduğu yaşayan bir toplumsal düzendir.",
+    text: "Çeçen kimliğinin yazılı olmayan vicdani ve toplumsal anayasası: özdenetim (sobur), misafire koşulsuz ikram ve can güvenliği (hyeş-da), kadına ve aksakallıya mutlak hürmet, eşitlik ve verilen söze can pahasına sadakat. Kişinin soyundan önce kendi onurlu duruşuyla (yah') tartılmasını esas alır.",
   },
   {
     id: "ezdel",
     cat: "gelenek",
-    title: "Ezdel",
-    nativeTerm: "Эздел",
-    text: "İnguş toplumunun asalet, ölçülülük ve davranış etiğini tanımlayan temel kavram. Öfkeye kapılmamak, büyüğün yanında ses yükseltmemek, zor zamanlarda komşusunun yükünü sessizce omuzlamak Ezdel'in özünü oluşturur.",
+    title: "Ezdel — Ölçülülük ve Asalet Etiği",
+    nativeTerm: "Эздел / Гӏиллакх-Оьздангалла",
+    text: "Vaynah toplumunda (İnguşçada Ezdel, Çeçencede Gillakh-Özdangalla) içsel asalet, tevazu ve davranış zarafetini tanımlayan temel kavram. Öfke anında dahi ses yükseltmemek, acıyı vakur bir sükûnetle karşılamak ve zayıfın yükünü sessizce omuzlamak bu etiğin özüdür.",
   },
   {
     id: "teip",
     cat: "gelenek",
-    title: "Teyp, Tukhum ve Mehk-Khel",
-    nativeTerm: "Тайп · Мехк-Кхел",
-    text: "Ortak ata ocağına ve kule vadisine bağlı soy birlikleri (teyp), bölgesel dayanışma federasyonları (tukhum) ve bilge temsilcilerin toplandığı Ülke Meclisi (Mehk-Khel), feodal bey veya hükümdar tanımayan eşitlikçi dağ demokrasisinin temel taşlarıdır.",
+    title: "Teyp, Tukhum ve Mehk-Khel (Ülke Meclisi)",
+    nativeTerm: "Тайп · Тукхум · Мехк-Кхел",
+    text: "Ortak ata ocağına bağlı soy birlikleri (teyp), dokuz bölgesel dayanışma federasyonu (tukhum: Nohçmahkahoy, Akki, Orstkhoy, Malkhi, Çeberloy, Şaroy, Şatoy, Terloy, Çantiy) ve bilge temsilcilerin toplandığı yüksek yasama-yargı meclisi Mehk-Khel; tarih boyunca prens veya feodal bey tanımayan eşitlikçi dağ demokrasisinin kurumlarıdır.",
   },
+  {
+    id: "abrek-gelengi",
+    cat: "gelenek",
+    title: "Abreklik ve Sömürge Karşıtı Adalet Hafızası",
+    nativeTerm: "Обрг (Obrg)",
+    text: "19. yüzyıl sonu ve 20. yüzyıl başında Çarlık askeri idaresinin keyfi sürgün, toprak gaspı ve kolektif cezalandırmalarına karşı dağa çekilerek mücadele eden yalnız direnişçi geleneği. Haraçoylu Zelimhan (1872–1913) örneğinde olduğu gibi yoksul köylüye dokunmama ve mazlumu koruma ilkeleriyle halk destanlarına yerleşmiştir.",
+  },
+
+  /* MİMARİ VE KULELER (4) */
   {
     id: "savas-kulesi",
     cat: "mimari",
-    title: "Savaş Kuleleri (Vov)",
+    title: "Savaş Kuleleri (Bov / Vov)",
     nativeTerm: "Бӏов / Вӏов",
-    text: "Yüksekliği 25–30 metreye ulaşan, yukarı doğru zarifçe daralan beş veya altı katlı taş savunma kuleleri. Basamaklı piramidal arduvaz çatısı ve beyaz tepe taşıyla (tsurla) vadiler arası duman ve ateş haberleşme zincirinin halkalarını oluşturur.",
+    text: "Yüksekliği 25–30 metreye ulaşan, kare tabandan yukarı doğru içe eğimli daralan beş veya altı katlı taş savunma kuleleri. İkinci katta yer alan kemerli giriş kapısı, üst katlardaki taş konsollu tepe mazgalları (maşikuli) ve basamaklı piramidal arduvaz çatının tepesindeki beyaz kilit taşıyla (tsurla) vadiler arası ateş-duman haberleşme ağını kurar.",
   },
   {
     id: "konut-kulesi",
     cat: "mimari",
-    title: "Konut Kuleleri ve Ocak Zinciri",
-    nativeTerm: "Гӏала",
-    text: "İki veya üç katlı geniş taş aile konutları. Ortasında binayı taşıyan merkezi taş sütun (erd-boagӏa) ve üzerinde kutsal sayılan demir ocak zinciri yer alır; ocak zincirine dokunan bir yabancı dahi o ailenin dokunulmaz misafiri kabul edilir.",
+    title: "Konut Kuleleri (Gala) ve Kutsal Ocak Zinciri",
+    nativeTerm: "Гӏала · Пхьегӏа",
+    text: "İki veya üç katlı geniş taş aile konutları. Yapının ağırlığını taşıyan merkezi taş sütun (erd-boagӏa) ve üzerindeki dövme demir ocak zinciri (tsov) ailenin sürekliliğini temsil eder; töre hukukuna göre kan davalısı dahi ocak zincirine dokunduğu anda ev sahibinin dokunulmaz koruması altına girer.",
   },
   {
     id: "kasir",
     cat: "mimari",
-    title: "Kashi ve Güneş Tamgaları",
-    nativeTerm: "Каш · Тамга",
-    text: "Dağ yamaçlarında kurulan taş çatılı ata mezar yapıları (kashi) ve kule kemerlerine kazınan sarmal güneş, el ve boynuz petroglyphleri; ailenin o topraklardaki binlerce yıllık sürekliliğini belgeler.",
+    title: "Mağl-Kaş (Taş Mezar Yapıları) ve Güneş Petroglifleri",
+    nativeTerm: "Малх-каш · Тӏулган йоза",
+    text: "Güneşli dağ yamaçlarına inşa edilen basamaklı taş çatılı yer üstü ata mezar anıtları (malh-kaş) ile Himoy, Şaroy, Zumsoy ve Targim kule kemerlerine kazınan döner güneş çarkı, açık el (usta imzası), dağ keçisi boynuzu ve erken epigrafik taş işaretleri.",
   },
+  {
+    id: "kule-ustaligi",
+    cat: "mimari",
+    title: "Taş Ustası Ritüeli ve Kireç Harcı Mühendisliği",
+    nativeTerm: "Тӏулган пхьар",
+    text: "Sarp kayalık zemine temel çukuru açmaksızın ana kayayı yontarak oturtulan kule mimarisi; sönmüş kireç, peynir altı suyu ve yumurta akı katkılı harçla yüzyıllarca depreme dayanmıştır. Usta (p'har), kulenin son tepe taşını (tsurla) dış iskelesiz içeriden sarkarak yerleştirdiğinde aile tarafından ödüllendirilirdi.",
+  },
+
+  /* MÜZİK, ZİKİR VE İLLİ (4) */
   {
     id: "illi",
     cat: "muzik",
-    title: "İlli — Epik Kahramanlık Destanları",
-    nativeTerm: "Илли",
-    text: "Yüzyıllar boyunca halk ozanları (illançi) tarafından üç telli pondar eşliğinde seslendirilen tarihsel destanlar. Yalnızca zaferleri değil, adaleti, fedakârlığı ve mazlumu koruma ahlakını gelecek kuşaklara taşır.",
+    title: "İlli — Epik-Tarihsel Kahramanlık Destanları",
+    nativeTerm: "Илли · Иллиалархо",
+    text: "Halk ozanları (illialarho) tarafından dechig-pondar eşliğinde resitatif makamla seslendirilen tarihsel destanlar. Şeyh Mansur, Taymiyev Beybulat, Benoylu Baysangur ve Abrek Zelimhan üzerine yakılan illiler, resmi Rus askeri raporlarının tek taraflı anlatısına karşı yerli tarihsel hafızayı korumuştur.",
   },
   {
     id: "dechig-pondar",
     cat: "muzik",
-    title: "Dechig-Pondar",
-    nativeTerm: "Дечиг-пондар",
-    text: "Tek parça ceviz veya dut ağacından oyularak yapılan, üç telli geleneksel Vaynah telli çalgısı. Tok ve vakur tınısı, dağ rüzgârını ve at nalının ritmini andıran akorlarla epik anlatılara eşlik eder.",
+    title: "Dechig-Pondar ve Adıuh-Pondar",
+    nativeTerm: "Дечиг-пондар · ӏадхьокху-пондар",
+    text: "Tek parça ceviz veya dut ağacından oyularak yapılan üç telli mızraplı/parmaklı dechig-pondar ile yaylı adıuh-pondar, Vaynah müzik kültürünün en eski çalgılarıdır. Dörtlü ve beşli aralıklarla tınlayan tok akorları dağ rüzgârını ve at nalının ritmini taşır.",
   },
   {
     id: "lovzar",
     cat: "muzik",
-    title: "Lovzar ve Kafkas Dansı",
-    nativeTerm: "Ловзар",
-    text: "Müzik, söz ve dansın sıkı görgü kurallarıyla buluştuğu topluluk meydanı. Erkeğin kartal bakışlı dik duruşu ile kadının su üzerinde süzülür gibi vakur adımları arasındaki mesafe, karşılıklı saygının estetik ifadesidir.",
+    title: "Lovzar ve Halka Zikri (Nazma)",
+    nativeTerm: "Ловзар · Хьехам · Назма",
+    text: "Topluluk kutlaması ve dans meydanı olan Lovzar'da eşler birbirine asla temas etmeden vakur bir mesafe ve saygıyla süzülür. Dini-tasavvufi hayatta ise Kadiri (Şeyh Kunta Hacı kolu) halka zikri ve Nakşibendi ilahileri (nazma), 1944 sürgün bozkırlarında bile halkın manevi direncini ayakta tutmuştur.",
   },
+  {
+    id: "uzam-sarki",
+    cat: "muzik",
+    title: "Yiş ve Ağıt Geleneği (Kaldam-Yiş)",
+    nativeTerm: "Йиш",
+    text: "Kadınların söylediği lirik gurbet ezgileri, ninniler ve savaş/sürgün kayıplarının ardından yakılan vakur ağıtlar. 1990'larda ozan İmam Alimsultanov ve Timur Mutsurayev kuşağıyla geleneksel illi formu modern balad geleneğine taşınmıştır.",
+  },
+
+  /* GELENEKSEL GİYİM VE ZANAAT (4) */
   {
     id: "cherkeska",
     cat: "giyim",
-    title: "Çerkeska, Gazırlar ve Kinjal",
-    nativeTerm: "Чоа · Газыр",
-    text: "Koyu yün çuhadan dikilen, göğsünün iki yanında savatlı gümüş barut tüpleri (gazır) dizili geleneksel kaftan. Beldeki ince işçilikli gümüş kemer ve savatlı kama (kinjal), dağlı erkeğin vakur siluetini tamamlar.",
+    title: "Çoa (Çerkeska), Gümüş Gazırlar ve Beşmet",
+    nativeTerm: "Чоа · Бустам · Бешмет",
+    text: "Ev dokuması koyu yün çuhadan bele oturan kesimiyle dikilen kaftan (çoa), içine giyilen dik yakalı beşmet ve göğsün iki yanında barut ölçüsü tüplerini taşıyan savatlı gümüş başlıklı gazırlar (bustam). Kişinin duruşunu dik tutan ve sade zarafeti öne çıkaran klasik Kafkas kıyafetidir.",
   },
   {
     id: "papaha",
     cat: "giyim",
-    title: "Papaha (Holhaz-Kuy)",
-    nativeTerm: "Холхаз-куй",
-    text: "Karakul kuzu postundan hazırlanan geleneksel başlık. Kafkasya'da papaha yalnızca soğuktan korunmak için değil, onurun tacı olarak taşınır; başın eğilmemesi için dik durmayı hatırlatır.",
+    title: "Papaha (Holhaz-Kuy) ve Başlık (Başlık)",
+    nativeTerm: "Холхаз-куй · Башлакх",
+    text: "Karakul veya uzun tüylü dağ koyunu postundan dikilen papaha, Vaynah erkeğinin şeref tacı sayılır; birinden rica için dahi başından çıkarılmaz. Yağmur ve fırtınada omuzları da örten sivri uçlu yün başlık (başlakh) süvari donanımını tamamlar.",
   },
+  {
+    id: "istang-kece",
+    cat: "giyim",
+    title: "İstang (Keçe Halı) ve Yapıncak (Burka / Verta)",
+    nativeTerm: "Истанг · Верта",
+    text: "Kadın ustaların koyun yününü doğal kökboyalarıyla renklendirip koçboynuzu, güneş ve dağ geometrisiyle işlediği geleneksel keçe duvar ve yer yaygısı (istang) ile yağmur-kar geçirmeyen dik omuzlu siyah keçe süvari pelerini (verta / burka).",
+  },
+  {
+    id: "kinjal-gumus",
+    cat: "giyim",
+    title: "Savatlı Gümüş Kinjal (Şälta) ve Kemer İşçiliği",
+    nativeTerm: "Шалта · Дато доьхка",
+    text: "Çeçenya'nın Atagi ve Dargo demir ustaları ile Dağıstan savat (niello) kakmacılarının ürettiği çift oluklu çelik kama (şälta) ve ince gümüş plakalı bel kemeri. İmamet döneminde üstün cesaret gösteren savaşçılara gümüş üzerine Arapça beyitler kazınmış nişan ve silahlar tevcih edilirdi.",
+  },
+
+  /* YEMEK KÜLTÜRÜ VE SOFRA ADABI (4) */
   {
     id: "jijig-galnash",
     cat: "yemek",
-    title: "Jijig-Galnaş",
-    nativeTerm: "Жижиг-галнаш",
-    text: "Kemikli koyun veya dana etinin, elde tek tek yuvarlanıp şekillendirilen buğday veya mısır hamuru lokmaları (galnaş), sıcak et suyu ve taze ezilmiş sarımsaklı sosla (beram) sunulduğu baş misafir yemeği.",
+    title: "Jijig-Galnaş ve Beram Sosu",
+    nativeTerm: "Жижиг-галнаш · Берам",
+    text: "Kemikli koyun veya dana etinin, buğday yahut mısır unundan elde tek tek parmakla yuvarlanıp şekillendirilen hamur lokmaları (galnaş), kâsede sunulan sıcak et suyu (çorpa) ve ezilmiş sarımsaklı sosla (beram) ikram edildiği baş misafir yemeği.",
   },
   {
     id: "chepalgash",
     cat: "yemek",
     title: "Çepalgaş ve Hingalaş",
     nativeTerm: "Чӏепалгаш · Хингалаш",
-    text: "Taze köy lor peyniriyle hazırlanan incecik Çepalgaş ile tatlı bal kabağı harcıyla yarım ay şeklinde kapatılıp eritilmiş tereyağına batırılan Hingalaş; Vaynah mutfağının bereket ve misafirperverlik simgesidir.",
+    text: "Taze köy lor peyniri ve yeşil soğanla incecik açılıp sacda pişirildikten sonra sıcak suya daldırılıp bol eritilmiş köy tereyağıyla yağlanan Çepalgaş ile tatlı bal kabağı harçlı yarım ay şeklindeki Hingalaş; Vaynah sofrasının bereket simgeleridir.",
+  },
+  {
+    id: "honk-siskal",
+    cat: "yemek",
+    title: "Hönk (Yabani Dağ Sarımsağı) ve Siskal",
+    nativeTerm: "Хьонк · Сискал",
+    text: "Şubat–Mart aylarında Kafkas kayın ormanlarında kar altından ilk filizlenen yabani ayı sarımsağı sürgünlerinin (hönk / çeremşa) süt veya lor peyniriyle kavrulup mısır ekmeğiyle (siskal) yenmesi; kıştan çıkışın ve dağ doğasıyla bağın asırlık simgesidir.",
+  },
+  {
+    id: "misafir-sofrasi",
+    cat: "yemek",
+    title: "Misafir Odası (Hyeşiy-Ts'a) ve Sofra Adabı",
+    nativeTerm: "Хьешийн цӏа · Шун",
+    text: "Her geleneksel Çeçen-İnguş evinde her an temiz ve hazır tutulan ayrı bir misafir odası bulunur. Misafire üç gün boyunca kim olduğu veya niçin geldiği sorulmadan sofranın en seçkin payı sunulur; ev sahibi misafir doyana dek ayakta hizmet etmeyi şeref sayar.",
+  },
+
+  /* SÖZLÜ TARİH, DİL VE YAZMA GELENEĞİ (4) */
+  {
+    id: "nohciyn-mott",
+    cat: "sozlu",
+    title: "Nohçiyn Mott ve Alfabe Dönüşümleri",
+    nativeTerm: "Нохчийн мотт",
+    text: "Kuzeydoğu Kafkas (Nah-Dağıstan) dil ailesinin Nah koluna mensup olan Çeçence; yaklaşık 40'tan fazla ünlü/diftong ve ejektif-faringal ünsüz zenginliğine sahiptir. Tarihsel süreçte Arap harfli Acem imlası, 1862 Uslar-Dosov alfabesi, 1925 Oşayev Latin alfabesi, 1938 Kiril alfabesi ve 1992 Latin alfabesiyle yazıya geçirilmiştir.",
+  },
+  {
+    id: "teptar-secereler",
+    cat: "sozlu",
+    title: "Teptar — Aile Kronikleri ve Yedi Ata Şeceresi",
+    nativeTerm: "Тептар · Ворхӏ да",
+    text: "Her Vaynah ailesinde kuşaktan kuşağa aktarılan yedi ata ismini (vorh da) ezbere bilme yükümlülüğü ve teyp alimlerinin Arap harfleriyle tuttuğu 'teptar' adı verilen el yazması aile-köy kronikleri; göçleri, kuraklıkları ve antlaşmaları kayıt altına alan yerel tarih kaynaklarıdır.",
   },
   {
     id: "tanikliklar",
     cat: "sozlu",
-    title: "1944 Sürgün Tanıklıkları",
-    nativeTerm: "Дагалецамаш",
-    text: "Sürgün vagonlarından sağ çıkan büyüklerimizin ses kayıtları ve el yazısı hatıraları; kayıp köylerin yer adlarını, su pınarlarını ve aile şecerelerini yok olmaktan kurtaran canlı arşiv belgeleridir.",
+    title: "23 Şubat 1944 Sürgün ve Haybah Sözlü Tanıklıkları",
+    nativeTerm: "Дагалецамаш · Махках дахар",
+    text: "1944–1957 Kazakistan ve Kırgızistan sürgününden sağ dönen büyüklerin ses kayıtları ve hatıraları; resmî Sovyet sansürünün on yıllarca yasakladığı vagon ölümlerini, Haybah katliamını ve haritadan silinen dağ köylerinin özgün Çeçence-İnguşça toponimlerini yok olmaktan kurtarmıştır.",
   },
   {
     id: "atasozleri",
     cat: "sozlu",
-    title: "Dağ Atasözleri ve Öğütler",
+    title: "Kitsanaş — Dağ Atasözleri ve Hukuk Vecizeleri",
     nativeTerm: "Кицанаш",
-    text: "“Toprak unutmaz, insan bazen unutur.” · “Kule taşla, insan sözüyle ayakta durur.” Asırların süzgecinden geçmiş bu özlü sözler, toplumun tarihsel belleğini birkaç kelimede özetler.",
+    text: "1862'de Kedi Dosov'un ilk elifbada derlemeye başladığı özlü sözler: «Kule taşla, insan sözüyle ayakta durur.» · «Misafirin girmediği eve bereket girmez.» · «Kılıç yarası iyileşir, dil yarası iyileşmez.» Toplumun hukuk ve ahlak hafızasını tek cümlede mühürler.",
   },
 ];
+
+const RAW_CULTURE_CATS: { id: CultureCat; label: string; sub: string; image: string }[] = [
+  {
+    id: "gelenek",
+    label: "Gelenek ve Töre Hukuku",
+    sub: "Nohçalla, Ezdel, Mehk-Khel ve Abreklik",
+    image: "/images/c-gelenek.jpg",
+  },
+  {
+    id: "mimari",
+    label: "Mimari ve Kuleler",
+    sub: "Savaş kuleleri, konut kuleleri ve taş epigrafisi",
+    image: "/images/archive/targim-savas-kulesi-1917-arsiv-fotografi.jpg",
+  },
+  {
+    id: "muzik",
+    label: "Müzik, Zikir ve İlli",
+    sub: "Destanlar, dechig-pondar, lovzar ve nazma",
+    image: "/images/c-muzik.jpg",
+  },
+  {
+    id: "giyim",
+    label: "Giyim ve Zanaat",
+    sub: "Çoa, gümüş gazırlar, papaha, istang ve şälta",
+    image: "/images/c-giyim.jpg",
+  },
+  {
+    id: "yemek",
+    label: "Mutfak ve Sofra Adabı",
+    sub: "Jijig-galnaş, çepalgaş, hönk ve misafir odası",
+    image: "/images/c-yemek.jpg",
+  },
+  {
+    id: "sozlu",
+    label: "Dil, Teptar ve Sözlü Tarih",
+    sub: "Nohçiyn mott, alfabe tarihi ve 1944 tanıklıkları",
+    image: "/images/archive/dosov-ilk-cecen-elifbasi-1862.png",
+  },
+];
+
+export const CULTURE_CATS: {
+  id: CultureCat;
+  label: string;
+  sub: string;
+  image: string;
+  count: number;
+}[] = RAW_CULTURE_CATS.map((c) => ({
+  ...c,
+  count: CULTURE_ITEMS.filter((i) => i.cat === c.id).length,
+}));
 
 /* ------------------------------------------------------------------ */
 /* ÇAPRAZ SAYFA BAĞLANTILARI VE ÖNE ÇIKANLAR                           */
@@ -9008,17 +10520,29 @@ export function getRelatedPeople(person: Person, limit = 5): Person[] {
 
 const PLACE_KEYWORDS: { id: string; terms: string[] }[] = [
   { id: "aldi", terms: ["aldı", "aldi"] },
-  { id: "vedeno", terms: ["vedeno", "benoy", "içkeriya", "dargo"] },
+  { id: "benoy", terms: ["benoy", "benoyev"] },
+  { id: "vedeno", terms: ["vedeno", "içkeriya"] },
   { id: "harachoy", terms: ["harachoy", "haraçoy"] },
   { id: "grozni", terms: ["grozni", "cahar", "cevherkale", "sölja"] },
-  { id: "itum-kale", terms: ["itum-kale", "itum-kali", "argun boğazı", "şatoy"] },
+  { id: "urus-martan", terms: ["urus-martan", "gendargen", "martan", "gehi"] },
+  { id: "valerik", terms: ["valerik"] },
+  { id: "sali", terms: ["şali", "sali", "goytı", "avturi"] },
+  { id: "tsotsi-yurt", terms: ["tsotsi-yurt", "kurçaloy", "tsentoroy"] },
+  { id: "satoy", terms: ["şatoy", "satoyski"] },
+  { id: "saroy", terms: ["şaroy", "himoy"] },
+  { id: "hoy", terms: ["hoy", "çeberloy", "kezenoy"] },
+  { id: "nikaroy", terms: ["nikaroy", "terloy"] },
+  { id: "haybah", terms: ["haybah", "galançoj", "naşha"] },
+  { id: "itum-kale", terms: ["itum-kale", "itum-kali", "argun boğazı", "zumsoy", "dan-kale", "guçan"] },
   { id: "sunja", terms: ["sunja", "sunca"] },
+  { id: "dadi-yurt", terms: ["dadi-yurt"] },
   { id: "gunib", terms: ["gunib"] },
   { id: "gimri", terms: ["gimri"] },
   { id: "dargo", terms: ["dargo"] },
-  { id: "hasavyurt", terms: ["hasavyurt", "endirey", "kumuk", "auhov"] },
+  { id: "hasavyurt", terms: ["hasavyurt", "endirey", "kumuk", "auhov", "yurt-auh", "auh"] },
+  { id: "vladikavkaz", terms: ["vladikavkaz", "buro", "buru", "prigorodn"] },
   { id: "nazran", terms: ["nazran", "inguş", "ekajevo", "malgobek"] },
-  { id: "targim", terms: ["targim", "cerah", "assa"] },
+  { id: "targim", terms: ["targim", "cerah", "assa", "vovnuşki", "erzi"] },
 ];
 
 export function getPlacesForPerson(person: Person, limit = 3): Place[] {
@@ -9123,10 +10647,10 @@ export function getExhibitionsForPerson(person: Person): Exhibition[] {
     person.era === "imamet"
       ? "kafkasyanin-ozgurluk-mucadelesi"
       : person.era === "sovyet"
-        ? "surgun-1944"
+        ? "bagimsizlik-ve-devlet-arayislari-1918"
         : person.era === "imparatorluk"
           ? "kultur-ve-gunluk-yasam"
-          : "kafkasyanin-ozgurluk-mucadelesi";
+          : "surgun-1944";
 
   const ex = getExhibition(fallbackSlug);
   return ex ? [ex] : [];
@@ -9254,40 +10778,69 @@ const CULTURE_CATEGORY_LINKS: Record<
   { docs: string[]; exhibitions: string[]; places: string[]; people: string[] }
 > = {
   gelenek: {
-    docs: ["kule-ici-yazma-kodeks", "imamet-dergisi-notlari"],
+    docs: [
+      "umalat-laudayev-cecen-kavmi-1872",
+      "imam-samil-naib-isa-mektubu-1842",
+      "berje-cecenya-haritasi-1859",
+      "abrek-zelimhan-haracoylu-arsiv-fotografi-1913",
+    ],
     exhibitions: ["kultur-ve-gunluk-yasam", "kafkasyanin-ozgurluk-mucadelesi"],
-    places: ["targim", "vedeno", "nazran"],
-    people: ["seyh-mansur", "beybulat-taymiyev", "tasav-haci"],
+    places: ["targim", "vedeno", "harachoy", "nazran"],
+    people: ["seyh-mansur", "beybulat-taymiyev", "baysangur-benoyski", "zelimhan-haracoyn"],
   },
   mimari: {
-    docs: ["oymali-vaynah-kule-kapisi", "targim-safak-kulesi-ve-istang", "kuleler-albumu"],
+    docs: [
+      "targim-savas-kulesi-1917-arsiv-fotografi",
+      "saroy-kule-yerlesimi-19-yuzyil-fotografi",
+      "himoy-kule-kemeri-petroglif-yaziti",
+      "gucan-kale-mimari-rolove-cizimi-1960",
+    ],
     exhibitions: ["kuleler-ve-yerlesimler"],
-    places: ["targim", "vovnuski", "erzi", "itum-kale"],
-    people: ["seyh-mansur", "baysangur-benoyski"],
+    places: ["targim", "vovnuski", "erzi", "saroy", "itum-kale", "nikaroy"],
+    people: ["seyh-mansur", "uma-duyev", "batuko-satoyski"],
   },
   muzik: {
-    docs: ["el-sanatlari-katalogu", "atli-birlik-fotografi"],
-    exhibitions: ["kultur-ve-gunluk-yasam"],
-    places: ["harachoy", "grozni", "vedeno"],
-    people: ["imam-alimsultanov", "zelimhan-haracoyn"],
+    docs: [
+      "george-kennan-cecenler-fotografi-1870",
+      "abrek-zelimhan-haracoylu-arsiv-fotografi-1913",
+      "baysangur-idam-emri-kafkas-ordusu-1861",
+    ],
+    exhibitions: ["kultur-ve-gunluk-yasam", "kafkasyanin-ozgurluk-mucadelesi"],
+    places: ["harachoy", "benoy", "grozni", "vedeno"],
+    people: ["imam-alimsultanov", "zelimhan-haracoyn", "baysangur-benoyski"],
   },
   giyim: {
-    docs: ["el-sanatlari-katalogu", "targim-safak-kulesi-ve-istang"],
-    exhibitions: ["kultur-ve-gunluk-yasam"],
-    places: ["vedeno", "harachoy", "grozni"],
+    docs: [
+      "imam-samil-nisanlari-arapca-yazitli",
+      "samil-ve-cecen-dagistan-naibleri-portreleri",
+      "kafkas-yerli-suvari-tugayi-subaylari-1914",
+      "trabzon-konferansi-kuzey-kafkasya-heyeti-1918",
+    ],
+    exhibitions: ["kultur-ve-gunluk-yasam", "bagimsizlik-ve-devlet-arayislari-1918"],
+    places: ["vedeno", "harachoy", "sali", "grozni"],
     people: ["baysangur-benoyski", "soltamurad-benoyevski", "zelimhan-haracoyn"],
   },
   yemek: {
-    docs: ["el-sanatlari-katalogu", "kule-ici-yazma-kodeks"],
+    docs: [
+      "umalat-laudayev-cecen-kavmi-1872",
+      "george-kennan-cecenler-fotografi-1870",
+      "dan-kale-konut-kulesi-1930-kesif-fotografi",
+    ],
     exhibitions: ["kultur-ve-gunluk-yasam"],
-    places: ["targim", "grozni", "nazran"],
+    places: ["targim", "itum-kale", "grozni", "nazran"],
     people: ["deni-arsanov", "seyh-mansur"],
   },
   sozlu: {
-    docs: ["surgun-listeleri-1944", "rus-raporu-1864"],
-    exhibitions: ["surgun-1944", "kultur-ve-gunluk-yasam"],
-    places: ["grozni", "nazran", "itum-kale"],
-    people: ["hasan-israilov", "hasuha-magomadov", "cevher-dudayev"],
+    docs: [
+      "dosov-ilk-cecen-elifbasi-1862",
+      "uslar-cecenskiy-yazik-grameri-1888",
+      "serlo-cecence-gazete-1926",
+      "matsiyev-cecence-rusca-sozluk-1961",
+      "mercimek-operasyonu-1944-sevk-haritasi",
+    ],
+    exhibitions: ["cecen-dil-yazi-ve-basini", "surgun-1944"],
+    places: ["grozni", "haybah", "tsotsi-yurt", "hasavyurt"],
+    people: ["hasan-israilov", "hasuha-magomadov", "cevher-dudayev", "zelimhan-yandarbiyev"],
   },
 };
 
@@ -9311,9 +10864,11 @@ export function getCultureForExhibition(ex: Exhibition, limit = 3): CultureItem[
       ? ["mimari", "gelenek"]
       : ex.slug === "surgun-1944"
         ? ["sozlu", "gelenek"]
-        : ex.slug === "kultur-ve-gunluk-yasam"
-          ? ["gelenek", "giyim", "muzik"]
-          : ["gelenek", "muzik"];
+        : ex.slug === "cecen-dil-yazi-ve-basini"
+          ? ["sozlu", "gelenek"]
+          : ex.slug === "kultur-ve-gunluk-yasam"
+            ? ["gelenek", "giyim", "muzik", "yemek"]
+            : ["gelenek", "muzik"];
   const out: CultureItem[] = [];
   for (const cat of cats) {
     for (const item of CULTURE_ITEMS) {
@@ -9325,5 +10880,3 @@ export function getCultureForExhibition(ex: Exhibition, limit = 3): CultureItem[
   }
   return out;
 }
-
-

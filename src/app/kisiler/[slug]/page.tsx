@@ -4,7 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { ArrowLeft, ArrowRight, Layers, MapPin, ScrollText } from "lucide-react";
-import { Breadcrumbs } from "@/components/PageHeader";
+import { Breadcrumbs, PageBackdrop } from "@/components/PageHeader";
 import PersonGallery from "@/components/PersonGallery";
 import {
   PEOPLE,
@@ -70,11 +70,8 @@ async function PersonPageContent({ params }: PageProps<"/kisiler/[slug]">) {
   return (
     <article className="pb-20 pt-[78px]">
       {/* Üst Biyografi Sahnesi */}
-      <section className="grain relative overflow-hidden border-b border-white/[0.08]">
-        <div className="absolute inset-0">
-          <Image src="/images/hero.jpg" alt="" fill sizes="100vw" className="object-cover opacity-20 blur-[2px]" />
-          <div className="absolute inset-0 bg-gradient-to-b from-ink/75 via-ink/90 to-ink" />
-        </div>
+      <section className="grain relative overflow-hidden border-b border-white/[0.08] bg-ink">
+        <PageBackdrop />
 
         <div className="relative mx-auto max-w-[1440px] px-5 pb-16 pt-10 md:px-10">
           <Breadcrumbs items={[{ href: "/kisiler", label: "Kişiler" }, { label: p.name }]} />

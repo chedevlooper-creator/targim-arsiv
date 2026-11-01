@@ -26,11 +26,27 @@ export function Breadcrumbs({ items }: { items: Crumb[] }) {
   );
 }
 
+export function PageBackdrop() {
+  return (
+    <div className="pointer-events-none absolute inset-0 select-none">
+      <Image
+        src="/images/hf-kule-gunbatimi.jpg"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-[50%_30%] opacity-28"
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/88 to-ink/52" />
+      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/42 to-ink/72" />
+    </div>
+  );
+}
+
 export default function PageHeader({
   title,
   eyebrow,
   subtitle,
-  image = "/images/hero.jpg",
   crumbs,
   count,
   children,
@@ -38,25 +54,13 @@ export default function PageHeader({
   title: React.ReactNode;
   eyebrow?: string;
   subtitle?: string;
-  image?: string;
   crumbs?: Crumb[];
   count?: number;
   children?: React.ReactNode;
 }) {
   return (
-    <section className="relative overflow-hidden border-b border-white/[0.07] pt-[78px]">
-      <div className="absolute inset-0">
-        <Image
-          src={image}
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-[55%_32%] opacity-45"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-ink/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-ink/60" />
-      </div>
+    <section className="grain relative overflow-hidden border-b border-white/[0.08] bg-ink pt-[78px]">
+      <PageBackdrop />
 
       <div className="relative mx-auto max-w-[1440px] px-5 pb-10 pt-10 md:px-10 md:pb-12 md:pt-14">
         {crumbs && <Breadcrumbs items={crumbs} />}

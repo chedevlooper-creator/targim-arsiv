@@ -6,17 +6,17 @@ import { DOCS } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Arşiv",
-  description: "Kuzey Kafkasya tarihine ait kule içi el yazmaları, mühürlü siciller, haritalar, muhacir defterleri ve erken dönem fotoğraflar.",
+  description:
+    "Çeçen, İnguş ve Kuzey Kafkasya tarihine ait uluslararası arşivlerden doğrulanmış birincil el yazmaları, haritalar, resmi belgeler, erken fotoğraflar ve basılı eserler.",
 };
 
 export default function ArsivPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Birincil Kaynaklar · Kule Mahzenleri ve Tıpkıbasımlar"
+        eyebrow="Doğrulanmış Birincil Kaynaklar · Tıpkıbasım ve Tam Künye"
         title="Dijital Belge ve Kule Arşivi"
-        subtitle="Vaynah kule içi el yazması kodeksleri, İmamet divanı mektupları, mühürlü arazi sicilleri, askeri topografya haritaları ve 1944 sürgün tanıklıkları."
-        image="/images/hf-kule-gunbatimi.jpg"
+        subtitle="Dağıstan Ulusal Müzesi, Puşkin Evi, GİM, GARF, ABD Kongre Kütüphanesi ve Internet Archive koleksiyonlarından derlenen İmamet divan yazışmaları, askeri topografya haritaları, 1918–1919 devlet evrakı, Çeçen dil mirası ve 1944 sürgün belgeleri."
         crumbs={[{ label: "Arşiv" }]}
         count={DOCS.length}
       />

@@ -15,7 +15,6 @@ export default function SergilerPage() {
         eyebrow="Küratöryel Dijital Galeriler"
         title="Dijital Sergiler"
         subtitle="Arşivimizdeki el yazmaları, haritalar ve fotoğrafların tematik bir anlatı etrafında bir araya getirildiği özel koleksiyonlar."
-        image="/images/imamet.jpg"
         crumbs={[{ label: "Sergiler" }]}
         count={EXHIBITIONS.length}
       />

@@ -143,33 +143,34 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-x-5 gap-y-8 sm:grid-cols-3 lg:grid-cols-4">
             {FEATURED_PEOPLE.map((p) => (
               <Link
                 key={p.slug}
                 href={`/kisiler/${p.slug}`}
-                className="museum-card group flex flex-col overflow-hidden"
+                className="group flex flex-col"
               >
-                <div className="relative aspect-[4/5] overflow-hidden bg-night">
+                <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-white/[0.08] bg-night shadow-[0_16px_38px_-16px_rgba(0,0,0,0.88)] transition-all duration-300 group-hover:-translate-y-0.5 group-hover:border-gold-light/40">
                   <Image
                     src={p.image}
                     alt={p.name}
                     fill
                     sizes="(max-width:640px) 50vw, (max-width:1024px) 33vw, 25vw"
-                    className="portrait-tone object-cover object-top group-hover:scale-105"
+                    className="portrait-tone object-cover object-top transition duration-700 group-hover:scale-[1.03]"
                   />
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/95 via-ink/15 to-transparent" />
-                  <span className="badge-glass absolute left-3 top-3">{eraLabel(p.era)}</span>
-                  <div className="absolute inset-x-0 bottom-0 p-4">
-                    <p className="text-[11px] font-medium tracking-wider text-gold-light/90">
-                      {p.born} – {p.died}
-                    </p>
-                    <h3 className="mt-0.5 text-base font-semibold leading-snug text-white transition group-hover:text-gold-light">
-                      {p.name}
-                    </h3>
-                    <p className="mt-1 line-clamp-1 text-xs text-white/60">{p.title}</p>
-                  </div>
+                  <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-ink/55 via-ink/15 to-transparent" />
                 </div>
+
+                <h3 className="mt-3.5 text-[0.95rem] font-semibold text-white transition group-hover:text-gold-light">
+                  {p.name}
+                </h3>
+                <p className="mt-0.5 line-clamp-1 text-sm text-white/55">{p.title}</p>
+                <p className="mt-1.5 text-xs text-white/40">
+                  <span className="font-mono text-gold-light/75">
+                    {p.born}–{p.died}
+                  </span>{" "}
+                  · {eraLabel(p.era)}
+                </p>
               </Link>
             ))}
           </div>
@@ -179,7 +180,7 @@ export default function Home() {
       {/* ================================================================ */}
       {/* KULE BELLEĞİ VE İTHAF FİLMİ                                       */}
       {/* ================================================================ */}
-      <div className="defer-offscreen-section pb-16">
+      <div className="pb-16">
         <DedicationFilmSection />
       </div>
     </>

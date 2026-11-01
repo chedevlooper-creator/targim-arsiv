@@ -91,7 +91,7 @@ export default function TimelineExplorer() {
       </div>
 
       {/* Resimli Yatay Zaman Şeridi */}
-      <div className="museum-card topo-bg mt-8 px-4 pt-6 pb-4 md:px-8">
+      <div className="museum-card mt-8 px-4 pt-6 pb-4 md:px-8">
         <div className="no-scrollbar overflow-x-auto pb-2">
           <div className="relative flex min-w-max items-start gap-2">
             <div className="pointer-events-none absolute left-4 right-4 top-[62px] h-px bg-gradient-to-r from-white/10 via-gold-light/55 to-white/10" />
@@ -275,7 +275,9 @@ export default function TimelineExplorer() {
 
       {/* Tam Kronoloji Dökümü */}
       <div className="mt-20">
-        <h2 className="eyebrow">Tam Tarihsel Döküm (1700 – 2000)</h2>
+        <h2 className="eyebrow">
+          Tam Tarihsel Döküm ({TIMELINE[0]?.year} – {TIMELINE[TIMELINE.length - 1]?.year})
+        </h2>
         <ol className="relative mt-8 space-y-5 border-l border-white/12 pl-7 md:pl-10">
           {events.map((e) => {
             const active = e.year === current?.year;

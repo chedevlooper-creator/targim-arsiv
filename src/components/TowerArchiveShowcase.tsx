@@ -23,32 +23,32 @@ const ITHAF_BEATS = [
 
 const SHOWCASE_CARDS = [
   {
-    href: "/arsiv/kule-ici-yazma-kodeks",
-    code: "TRG-MS-1848-019",
-    title: "Kule İçi El Yazması Kodeksi",
-    sub: "Deri ciltler, kırmızı mum mühür ve kandil ışığı",
-    image: "/images/hf-ic-arsiv-yazmalar.jpg",
+    href: "/arsiv/imam-samil-naib-isa-mektubu-1842",
+    code: "CAU-MS-1842-017",
+    title: "İmam Şamil'den Naib İsa'ya Mektup",
+    sub: "1842 tarihli Arapça İmamet divan yazışması ve tam çeviri",
+    image: "/images/archive/imam-samil-naib-isa-mektubu-1842.jpg",
   },
   {
-    href: "/arsiv/oymali-vaynah-kule-kapisi",
-    code: "TRG-AR-1740-007",
-    title: "Oymalı Vaynah Kule Kapısı",
-    sub: "Dağ tamgaları, kökboyası izi ve demir halka",
-    image: "/images/hf-oymali-kapi.jpg",
+    href: "/arsiv/targim-savas-kulesi-1917-arsiv-fotografi",
+    code: "TRG-PH-1917-034",
+    title: "Targim Savaş Kulesi (1917)",
+    sub: "Assa vadisindeki klasik kule kompleksinin 1917 cam negatif kaydı",
+    image: "/images/archive/targim-savas-kulesi-1917-arsiv-fotografi.jpg",
   },
   {
-    href: "/arsiv/muhurlu-arsiv-sicili-1924",
-    code: "TRG-RG-1924-063",
-    title: "Mühürlü Köy ve Arazi Sicili",
-    sub: "Mor dairevi mühürlü tutanak ve kayıt defteri",
-    image: "/images/hf-muhurlu-evrak.jpg",
+    href: "/arsiv/kuzey-kafkasya-emirligi-100-ruble-vedeno-1919",
+    code: "NCE-DOC-1919-032",
+    title: "Vedeno 100 Ruble Banknotu (1919)",
+    sub: "Kuzey Kafkasya Emirliği'nin Arapça-Rusça-Fransızca resmi parası",
+    image: "/images/archive/kuzey-kafkasya-emirligi-100-ruble-vedeno-1919.jpg",
   },
   {
-    href: "/arsiv/targim-safak-kulesi-ve-istang",
-    code: "TRG-PH-1885-034",
-    title: "Savaş Kulesi ve İstang Bordürü",
-    sub: "Piramidal taş çatı ve kırmızı Kafkas motifi",
-    image: "/images/hf-kule-sabah.jpg",
+    href: "/arsiv/serlo-cecence-gazete-1926",
+    code: "SRL-BK-1926-038",
+    title: "Çeçence 'Serlo' Gazetesi (1926)",
+    sub: "1925 Çeçen Latin alfabesiyle basılmış 1 Mayıs 1926 orijinal nüsha",
+    image: "/images/archive/serlo-cecence-gazete-1926.jpg",
   },
 ];
 
@@ -105,18 +105,6 @@ export default function TowerArchiveShowcase() {
 
   return (
     <div className="museum-card relative mb-10 overflow-hidden">
-      {/* Yontma taş duvar dokusu arka plan katmanı */}
-      <div className="pointer-events-none absolute inset-0 opacity-28">
-        <Image
-          src="/images/hf-tas-duvar-dokusu.jpg"
-          alt=""
-          fill
-          sizes="100vw"
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink/95 via-ink/82 to-ink/92" />
-      </div>
-
       <div className="relative grid gap-6 p-5 md:p-8 lg:grid-cols-[1.18fr_1fr]">
         {/* Sol: 15 sn Sinematik Kule Yürüyüşü / İthaf Filmi Oynatıcısı / 6 Kare Storyboard */}
         <div className="flex flex-col justify-between">
@@ -206,7 +194,7 @@ export default function TowerArchiveShowcase() {
                 </div>
               </>
             ) : (
-              <Link href="/arsiv/kule-arsivi-sinematik-storyboard" className="group block h-full w-full">
+              <Link href="/sergiler/kuleler-ve-yerlesimler" className="group block h-full w-full">
                 <Image
                   src="/images/hf-kule-storyboard.jpg"
                   alt="Vaynah Taş Kulesi ve İç Arşiv 6 sahnelik storyboard paftası"
@@ -215,7 +203,7 @@ export default function TowerArchiveShowcase() {
                   className="object-cover transition duration-500 group-hover:scale-103"
                 />
                 <span className="badge-glass absolute bottom-3 right-3">
-                  TRG-AV-2024-101 · Tıpkıbasımı Aç →
+                  Kuleler ve Epigrafi Sergisini Aç →
                 </span>
               </Link>
             )}

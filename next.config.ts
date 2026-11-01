@@ -23,6 +23,13 @@ const nextConfig: NextConfig = {
     : {}),
   cacheComponents: true,
   partialPrefetching: true,
+  images: {
+    localPatterns: [
+      {
+        pathname: "/images/**",
+      },
+    ],
+  },
   turbopack: {
     rules: {
       "*.css": {

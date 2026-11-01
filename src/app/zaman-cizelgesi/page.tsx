@@ -16,7 +16,6 @@ export default function ZamanCizelgesiPage() {
         eyebrow="300 Yıllık Tarihsel Akış"
         title="Zaman Çizelgesi"
         subtitle="Dağ meclisleri ve kule yerleşimlerinden İmamet Çağı'na, 1864 ve 1944 sürgünlerinden günümüz dijital hafıza çalışmalarına uzanan kronoloji."
-        image="/images/imamet.jpg"
         crumbs={[{ label: "Zaman Çizelgesi" }]}
         count={TIMELINE.length}
       />

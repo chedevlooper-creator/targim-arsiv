@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { ArrowLeft, ArrowRight, Clock, ExternalLink, MapPin, Sparkles } from "lucide-react";
 import { FiligreeLink } from "@/components/Brand";
-import { Breadcrumbs } from "@/components/PageHeader";
+import { Breadcrumbs, PageBackdrop } from "@/components/PageHeader";
 import {
   CULTURE_CATS,
   EXHIBITIONS,
@@ -57,14 +57,10 @@ async function ExhibitionDetailContent({ params }: PageProps<"/sergiler/[slug]">
   return (
     <article className="pb-16 pt-[78px]">
       {/* Sergi Kapak Sahnesi */}
-      <section className="grain relative min-h-[480px] overflow-hidden border-b border-white/[0.08]">
-        <div className="absolute inset-0">
-          <Image src={ex.image} alt={ex.title} fill priority sizes="100vw" className="object-cover opacity-48" />
-          <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/75 to-ink/35" />
-          <div className="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/50 to-transparent" />
-        </div>
+      <section className="grain relative overflow-hidden border-b border-white/[0.08] bg-ink">
+        <PageBackdrop />
 
-        <div className="relative mx-auto flex min-h-[480px] max-w-[1440px] flex-col justify-end px-5 pb-16 pt-12 md:px-10">
+        <div className="relative mx-auto flex max-w-[1440px] flex-col justify-end px-5 pb-14 pt-10 md:px-10 md:pb-16 md:pt-14">
           <Breadcrumbs items={[{ href: "/sergiler", label: "Sergiler" }, { label: ex.title }]} />
           <span className="badge-glass mt-6 w-fit">
             {ex.theme} · {ex.period} · {ex.count} ESER

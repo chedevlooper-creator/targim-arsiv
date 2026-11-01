@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import Fuse from "fuse.js";
-import { ArrowRight, ChevronDown, Menu, Search, X } from "lucide-react";
+import { ArrowRight, Menu, Search, X } from "lucide-react";
 import { CULTURE_CATS, CULTURE_ITEMS, DOCS, EXHIBITIONS, PEOPLE, PLACES, TIMELINE } from "@/lib/data";
 import { NAV, Logo } from "./Brand";
 
@@ -30,7 +30,7 @@ const SEARCH_CATALOG: SearchCatalogItem[] = [
     title: d.title,
     meta: `Arşiv · ${d.dateLabel} · ${d.catalogNo}`,
     image: d.image,
-    keywords: `${d.description} ${d.region} ${d.catalogNo}`,
+    keywords: `${d.description} ${d.region} ${d.catalogNo} ${d.author ?? ""} ${d.source} ${d.transcription ?? ""} ${d.translation ?? ""}`,
   })),
   ...TIMELINE.map((t) => ({
     href: `/zaman-cizelgesi?yil=${t.year}`,
@@ -75,7 +75,7 @@ const FUSE_INDEX = new Fuse(SEARCH_CATALOG, {
   ignoreLocation: true,
 });
 
-const QUICK_TERMS = ["Şeyh Mansur", "Baysangur", "Cevher Dudayev", "Targim", "Nohçalla", "1944"];
+const QUICK_TERMS = ["Şeyh Mansur", "Baysangur", "Serlo", "Vedeno", "Targim", "Nohçalla", "1944"];
 
 export default function Header() {
   const pathname = usePathname();
@@ -86,7 +86,6 @@ export default function Header() {
 
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [langOpen, setLangOpen] = useState(false);
   const [q, setQ] = useState("");
 
   // Modern Web Guidance (shrinking-header-on-scroll): JS fallback only when CSS scroll-driven animations are unsupported
@@ -160,7 +159,6 @@ export default function Header() {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         setMenuOpen(false);
-        setLangOpen(false);
       }
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
         e.preventDefault();
@@ -231,39 +229,6 @@ export default function Header() {
               </kbd>
             </button>
 
-            <div className="relative">
-              <button
-                onClick={() => setLangOpen((v) => !v)}
-                className="flex h-9 items-center gap-1.5 rounded-full border border-white/12 bg-white/[0.05] px-3 text-xs font-medium text-white/80 backdrop-blur-md transition hover:border-white/25 hover:text-white"
-                aria-haspopup="listbox"
-                aria-expanded={langOpen}
-              >
-                TR <ChevronDown size={12} className="text-white/60" />
-              </button>
-              {langOpen && (
-                <div className="panel absolute right-0 mt-2 w-44 p-1.5 text-sm">
-                  {[
-                    { c: "TR", l: "Türkçe", on: true },
-                    { c: "EN", l: "English", on: false },
-                    { c: "CE", l: "Нохчийн мотт", on: false },
-                    { c: "INH", l: "ГӀалгӀай мотт", on: false },
-                  ].map((x) => (
-                    <button
-                      key={x.c}
-                      disabled={!x.on}
-                      onClick={() => setLangOpen(false)}
-                      className={`flex w-full items-center justify-between rounded-lg px-3 py-2 text-left text-xs ${
-                        x.on ? "text-white hover:bg-white/10" : "cursor-not-allowed text-white/35"
-                      }`}
-                    >
-                      <span>{x.l}</span>
-                      <span className="text-[0.6rem] tracking-wider uppercase">{x.on ? x.c : "Yakında"}</span>
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
-
             <button
               onClick={() => setMenuOpen(true)}
               className="flex h-9 w-9 items-center justify-center rounded-full border border-white/12 bg-white/[0.05] text-white/80 transition hover:border-white/25 hover:bg-white/10 hover:text-white xl:hidden"
@@ -333,7 +298,7 @@ export default function Header() {
             <div className="mt-3 flex items-center justify-between text-xs text-white/50">
               <span>{PEOPLE.length} Şahsiyet</span>
               <span>·</span>
-              <span>5.780+ Belge</span>
+              <span>{DOCS.length} Birincil Belge</span>
               <span>·</span>
               <span>{PLACES.length} Yerleşim</span>
             </div>
