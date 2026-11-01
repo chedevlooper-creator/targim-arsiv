@@ -35,7 +35,7 @@ export default function PageHeader({
   count,
   children,
 }: {
-  title: string;
+  title: React.ReactNode;
   eyebrow?: string;
   subtitle?: string;
   image?: string;

@@ -31,7 +31,7 @@ export function Logo({ small = false }: { small?: boolean }) {
           TARGİM
         </span>
         <span className="mt-0.5 text-[0.55rem] font-medium tracking-[0.38em] text-white/50 uppercase">
-          Digital Archive
+          Dijital Arşiv
         </span>
       </span>
     </Link>

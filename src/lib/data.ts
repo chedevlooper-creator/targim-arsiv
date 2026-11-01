@@ -12,7 +12,7 @@ export const ERAS: { id: Era; label: string; range: string }[] = [
 export const eraLabel = (e: Era) => ERAS.find((x) => x.id === e)?.label ?? e;
 
 /* ------------------------------------------------------------------ */
-/* KİŞİLER (340 Özgün Portre — Gerçek Arşiv ve Tarihî Referanslar)     */
+/* KİŞİLER (330 Özgün Portre — Gerçek Arşiv ve Tarihî Referanslar)     */
 /* ------------------------------------------------------------------ */
 
 export type Person = {
@@ -50,77 +50,22 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/seyh-mansur.webp",
-        "caption": "Şeyh Mansur (Uşurma) dönem gravürü"
-      },
-      {
-        "src": "/images/p-mansur.jpg",
-        "caption": "Şeyh Mansur temsili arşiv portresi"
-      },
-      {
-        "src": "/images/kisiler.jpg",
-        "caption": "1785 Sunja vadisi Kafkas atlı birlikleri"
-      },
-      {
-        "src": "/images/doc-map.jpg",
-        "caption": "Terek ve Sunja hattını gösteren tarihi Kafkasya haritası"
+        "caption": "Şeyh Mansur (1760–1794)"
       }
     ],
     "docs": [
       "kafkas-atlasi",
       "kafkasya-haritasi-1871"
     ],
-    "summary": "Asıl adı Uşurma. 1785'te başlattığı birlik ve direniş hareketiyle Kuzey Kafkasya halklarını ilk kez ortak bir siyasi ve manevi sancak etrafında topladı.",
+    "summary": "Asıl adı Uşurma. 1785’te başlattığı birlik ve direniş hareketiyle Kuzey Kafkasya halklarını ilk kez ortak bir siyasi ve manevi sancak etrafında topladı.",
     "bio": [
-      "Çeçenya'nın Sunja kıyısındaki Aldı köyünde doğan Uşurma, adalet, toplumsal dayanışma ve ahlaki yenilenme çağrısıyla kısa sürede Çeçen, İnguş, Kumuk, Kabardey ve Dağıstan toplulukları arasında büyük saygı kazandı ve 'Şeyh Mansur' adıyla anıldı.",
-      "Temmuz 1785'te Aldı ve Sunja Nehri yakınlarında Albay Pieri komutasındaki birliğe karşı kazanılan tarihi zafer, hareketin Doğu Kafkasya'dan Batı Çerkesya'ya kadar yayılmasını sağladı.",
-      "1791 yazında Anapa Kalesi kuşatması sırasında ağır yaralı olarak esir düştü; Petersburg yakınlarındaki Şlisselburg Kalesi'nde 1794 yılında vefat etti. Kafkasya hafızasında birliğin ilk büyük meşalesi olarak anılır."
+      "Çeçenya’nın Sunja kıyısındaki Aldı köyünde doğan Uşurma, adalet, toplumsal dayanışma ve ahlaki yenilenme çağrısıyla kısa sürede Çeçen, İnguş, Kumuk, Kabardey ve Dağıstan toplulukları arasında büyük saygı kazandı ve ‘Şeyh Mansur’ adıyla anıldı.",
+      "Temmuz 1785’te Aldı ve Sunja Nehri yakınlarında Albay Pieri komutasındaki birliğe karşı kazanılan tarihi zafer, hareketin Doğu Kafkasya’dan Batı Çerkesya’ya kadar yayılmasını sağladı.",
+      "1791 yazında Anapa Kalesi kuşatması sırasında ağır yaralı olarak esir düştü; Petersburg yakınlarındaki Şlisselburg Kalesi’nde 1794 yılında vefat etti. Kafkasya hafızasında birliğin ilk büyük meşalesi olarak anılır."
     ],
     "related": [
       "tasav-haci",
-      "beybulat-taymiyev",
-      "seyh-samil"
-    ]
-  },
-  {
-    "slug": "tasav-haci",
-    "name": "Taşav Hacı Endireyevski",
-    "born": "1770",
-    "died": "1843",
-    "title": "Çeçen ve Kumuk alimi, baş naip ve komutan",
-    "era": "imamet",
-    "region": "Çeçenya – Kumuk Ovası",
-    "birthPlace": "Endirey",
-    "deathPlace": "Çeçenya",
-    "center": "Sayasan, İçkeriya",
-    "image": "/images/people/tasav-haci.webp",
-    "gallery": [
-      {
-        "src": "/images/people/tasav-haci.webp",
-        "caption": "Taşav Hacı Endireyevski dönem gravürü"
-      },
-      {
-        "src": "/images/imamet.jpg",
-        "caption": "İçkeriya dağ geçitlerinde İmamet süvarileri"
-      },
-      {
-        "src": "/images/doc-letter.jpg",
-        "caption": "Naipler arası Arapça yazışma örneği"
-      }
-    ],
-    "docs": [
-      "samil-donemi-mektup",
-      "imamet-dergisi-notlari"
-    ],
-    "summary": "İmamet hareketinin Çeçenya'da kök salmasını sağlayan büyük alim ve stratejist; Şeyh Şamil'in erken dönemdeki en güçlü müttefiki ve baş naibi.",
-    "bio": [
-      "Endirey'de yetişen derin fıkıh bilgisi ve askeri dehasıyla tanınan Taşav Hacı, 1830'lu yılların başında Doğu Çeçenya ve İçkeriya ormanlarında sağlam bir savunma ve idare ağı kurdu.",
-      "1834 sonrasında Şeyh Şamil ile ittifak kurarak Çeçenya ile Dağıstan arasındaki birliğin harcını attı; Sayasan ve Benoy çevresindeki harekâtları bizzat yönetti.",
-      "1843 yılında vefat edene dek Çeçen meclislerinde sözü kanun sayılan bir bilge ve komutan olarak yaşadı."
-    ],
-    "related": [
-      "seyh-samil",
-      "gazi-muhammed",
-      "baysangur-benoyski"
+      "beybulat-taymiyev"
     ]
   },
   {
@@ -138,11 +83,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/beybulat-taymiyev.webp",
-        "caption": "Beybulat Taymiyev portresi"
-      },
-      {
-        "src": "/images/kisiler.jpg",
-        "caption": "19. yüzyıl başı Çeçen atlı birliği"
+        "caption": "Beybulat Taymiyev (1779–1831)"
       }
     ],
     "docs": [
@@ -150,492 +91,44 @@ export const PEOPLE: Person[] = [
     ],
     "summary": "19. yüzyılın ilk çeyreğinde Çeçen toplumunu ortak bir meclis çatısı altında birleştirmeye çalışan mahir komutan ve diplomat.",
     "bio": [
-      "Beybulat Taymiyev, Kafkas Savaşı'nın erken evresinde yaklaşık otuz yıl boyunca Çeçen teypleri arasında iç barışı ve ortak hareket iradesini tesis etmeye çalıştı.",
+      "Beybulat Taymiyev, Kafkas Savaşı’nın erken evresinde yaklaşık otuz yıl boyunca Çeçen teypleri arasında iç barışı ve ortak hareket iradesini tesis etmeye çalıştı.",
       "1825–1826 yıllarında Terek ve Sunja kale hattına karşı yürütülen büyük harekâta öncülük etti; aynı zamanda Tiflis ve Erzurum hattında diplomatik görüşmeler yürüterek halkını yıkımdan korumaya gayret etti.",
-      "Aleksandr Puşkin'in 'Erzurum Yolculuğu' hatıratında dahi cesaretiyle andığı Taymiyev, 1831'de bir suikast sonucu hayatını kaybetti."
+      "Aleksandr Puşkin’in ‘Erzurum Yolculuğu’ hatıratında dahi cesaretiyle andığı Taymiyev, 1831’de bir suikast sonucu hayatını kaybetti."
     ],
     "related": [
-      "seyh-mansur",
-      "gazi-muhammed"
+      "seyh-mansur"
     ]
   },
   {
-    "slug": "hamzat-bek",
-    "name": "Hamzat Bek",
-    "born": "1789",
-    "died": "1834",
-    "title": "Kafkasya'nın İkinci İmamı",
+    "slug": "tasav-haci",
+    "name": "Taşav Hacı Endireyevski",
+    "born": "1770",
+    "died": "1843",
+    "title": "Çeçen ve Kumuk alimi, baş naip ve komutan",
     "era": "imamet",
-    "region": "Dağıstan",
-    "birthPlace": "Gotsatl",
-    "deathPlace": "Hunzah",
-    "center": "Gotsatl, Hunzah",
-    "image": "/images/p-hamzat.jpg",
+    "region": "Çeçenya – Kumuk Ovası",
+    "birthPlace": "Endirey",
+    "deathPlace": "Çeçenya",
+    "center": "Sayasan, İçkeriya",
+    "image": "/images/people/tasav-haci.webp",
     "gallery": [
       {
-        "src": "/images/p-hamzat.jpg",
-        "caption": "İkinci İmam Hamzat Bek portresi"
-      },
-      {
-        "src": "/images/imamet.jpg",
-        "caption": "Dağıstan yüksek yaylalarında İmamet atlıları"
-      }
-    ],
-    "docs": [
-      "samil-donemi-mektup"
-    ],
-    "summary": "Gazi Muhammed'in Gimri'de şehit düşmesinin ardından 1832–1834 yılları arasında İmamet sancağını taşıyan ikinci imam.",
-    "bio": [
-      "Avar soylu bir aileden gelen ve iyi bir medrese eğitimi alan Hamzat Bek, Gazi Muhammed'in en yakın komutanlarından biri olarak Çar İskan hattına karşı mücadele etti.",
-      "1832 sonbaharında ikinci imam seçilerek Avar platosundaki dağınık hanlıkları İmamet idaresi altında toplamaya yöneldi.",
-      "Eylül 1834'te Hunzah'ta düzenlenen bir suikast sonucu hayatını kaybetti; ardından meclis kararıyla imamlık Şeyh Şamil'e tevdi edildi."
-    ],
-    "related": [
-      "gazi-muhammed",
-      "seyh-samil"
-    ]
-  },
-  {
-    "slug": "baysangur-benoyski",
-    "name": "Benoylu Baysungur",
-    "born": "1794",
-    "died": "1861",
-    "title": "Benoy naibi, efsanevi Çeçen komutan",
-    "era": "imamet",
-    "region": "Çeçenya",
-    "birthPlace": "Benoy",
-    "deathPlace": "Hasavyurt",
-    "center": "Benoy, Gunib",
-    "image": "/images/people/baysangur-benoyski.webp",
-    "gallery": [
-      {
-        "src": "/images/people/baysangur-benoyski.webp",
-        "caption": "Benoy Naibi Baysungur dönem tasviri"
-      },
-      {
-        "src": "/images/imamet.jpg",
-        "caption": "Gunib ve İçkeriya savunma hatları"
+        "src": "/images/people/tasav-haci.webp",
+        "caption": "Taşav Hacı Endireyevski (1770–1843)"
       }
     ],
     "docs": [
       "samil-donemi-mektup",
       "imamet-dergisi-notlari"
     ],
-    "summary": "Çatışmalarda bir kolunu, bir bacağını ve bir gözünü kaybetmesine rağmen atına bağlanarak cepheye atılan, boyun eğmezliğin Çeçen hafızasındaki simgesi.",
+    "summary": "İmamet hareketinin Çeçenya’da kök salmasını sağlayan büyük alim ve stratejist; Şeyh Şamil’in erken dönemdeki en güçlü müttefiki ve baş naibi.",
     "bio": [
-      "Benoy teypinden gelen Baysangur, 1830'lardan itibaren Şeyh Şamil'in en güvenilir naiplerinden biri olarak Dargo (1845) ve Ahulgo çarpışmalarında en ön safta yer aldı.",
-      "Ağustos 1859'da Gunib kuşatmasının son gününde teslimiyet kararını reddederek beraberindeki savaşçılarla kuşatmayı yarıp Çeçenya dağlarına döndü ve Benoy merkezli yeni bir direniş başlattı.",
-      "1861 başlarında ağır kış şartlarında yaralı olarak esir düştü ve Mart 1861'de Hasavyurt'ta idam edildi. Halk destanlarında (illi) adı ölümsüzleşti."
+      "Endirey’de yetişen derin fıkıh bilgisi ve askeri dehasıyla tanınan Taşav Hacı, 1830’lu yılların başında Doğu Çeçenya ve İçkeriya ormanlarında sağlam bir savunma ve idare ağı kurdu.",
+      "1834 sonrasında Şeyh Şamil ile ittifak kurarak Çeçenya ile Dağıstan arasındaki birliğin harcını attı; Sayasan ve Benoy çevresindeki harekâtları bizzat yönetti.",
+      "1843 yılında vefat edene dek Çeçen meclislerinde sözü kanun sayılan bir bilge ve komutan olarak yaşadı."
     ],
     "related": [
-      "seyh-samil",
-      "tasav-haci"
-    ]
-  },
-  {
-    "slug": "gazi-muhammed",
-    "name": "Gazi Muhammed",
-    "born": "1795",
-    "died": "1832",
-    "title": "Kafkasya'nın Birinci İmamı",
-    "era": "imamet",
-    "region": "Dağıstan",
-    "birthPlace": "Gimri",
-    "deathPlace": "Gimri",
-    "center": "Gimri",
-    "image": "/images/p-gazi.jpg",
-    "gallery": [
-      {
-        "src": "/images/p-gazi.jpg",
-        "caption": "Birinci İmam Gazi Muhammed portresi"
-      },
-      {
-        "src": "/images/doc-letter.jpg",
-        "caption": "İmamet dönemi Arapça risale ve mektup geleneği"
-      }
-    ],
-    "docs": [
-      "samil-donemi-mektup"
-    ],
-    "summary": "Dağıstan ve Çeçenya İmameti'nin kurucusu; çocukluk arkadaşı Şeyh Şamil'in yol göstericisi ve Kafkasya'da hukuki-siyasi birliğin mimarı.",
-    "bio": [
-      "Gimri köyünde doğan Gazi Muhammed, derin İslami ilimler tahsilinin ardından halkları örfi kan davalarını bırakıp ortak hukuk ve özgürlük etrafında birleşmeye çağırdı.",
-      "1828–1829'da alimler ve cemaat önderlerinin ittifakıyla Birinci İmam ilan edildi; Tarki, Kızlar ve Derbent çevresine uzanan başarılı seferler düzenledi.",
-      "Ekim 1832'de doğduğu köy Gimri'nin taş kulelerinde son nefesine kadar savunma yaparken şehit düştü; kuşatmadan ağır yaralı kurtulan iki kişiden biri Şamil'di."
-    ],
-    "related": [
-      "seyh-samil",
-      "hamzat-bek",
-      "tasav-haci"
-    ]
-  },
-  {
-    "slug": "haci-murad",
-    "name": "Hacı Murad",
-    "born": "1798",
-    "died": "1852",
-    "title": "Avar naibi ve süvari komutanı",
-    "era": "imamet",
-    "region": "Dağıstan",
-    "birthPlace": "Hunzah",
-    "deathPlace": "Nuha yakınları",
-    "center": "Hunzah, Tselmes",
-    "image": "/images/p-murad.jpg",
-    "gallery": [
-      {
-        "src": "/images/p-murad.jpg",
-        "caption": "Avar Naibi Hacı Murad portresi"
-      },
-      {
-        "src": "/images/imamet.jpg",
-        "caption": "Yüksek Kafkas geçitlerinde atlı akıncılar"
-      }
-    ],
-    "docs": [
-      "imamet-dergisi-notlari"
-    ],
-    "summary": "Yıldırım hızındaki süvari baskınlarıyla efsaneleşen Avar naibi; trajik sonu Lev Tolstoy'un ünlü 'Hacı Murat' eserine ilham verdi.",
-    "bio": [
-      "Hunzah'ta büyüyen Hacı Murad, 1840'lı yıllar boyunca Şeyh Şamil'in en cüretkâr süvari komutanlarından biri olarak Dağıstan'ın sarp vadilerinde ün kazandı.",
-      "1851 yılında İmamet içindeki siyasi anlaşmazlıklar ve ailesinin rehin tutulması sebebiyle zorlu bir yol ayrımına girdi.",
-      "Nisan 1852'de esir tutulan ailesini kurtarmak amacıyla dağlara doğru yola çıktığında Nuha yakınlarında kuşatılarak son mermisine kadar çarpıştı."
-    ],
-    "related": [
-      "seyh-samil",
-      "hamzat-bek"
-    ]
-  },
-  {
-    "slug": "seyh-samil",
-    "name": "Şeyh Şamil",
-    "born": "1797",
-    "died": "1871",
-    "title": "Kafkasya'nın Üçüncü İmamı",
-    "era": "imamet",
-    "region": "Dağıstan – Çeçenya",
-    "birthPlace": "Gimri",
-    "deathPlace": "Medine",
-    "center": "Ahulgo, Dargo, Vedeno",
-    "image": "/images/people/seyh-samil.webp",
-    "gallery": [
-      {
-        "src": "/images/people/seyh-samil.webp",
-        "caption": "İmam Şeyh Şamil (1797–1871) arşiv portresi"
-      },
-      {
-        "src": "/images/p-samil.jpg",
-        "caption": "Şeyh Şamil portresi"
-      },
-      {
-        "src": "/images/doc-letter.jpg",
-        "caption": "1845 (1261 H.) tarihli İmamet divanı Arapça mektubu"
-      }
-    ],
-    "docs": [
-      "samil-donemi-mektup",
-      "imamet-dergisi-notlari",
-      "kafkas-atlasi"
-    ],
-    "summary": "1834'ten 1859'a kadar çeyrek asır boyunca Çeçenya ve Dağıstan'ı düzenli bir devlet, divan, ordu ve naiplik sistemi altında birleştiren efsanevi devlet adamı ve komutan.",
-    "bio": [
-      "1797'de Dağıstan'ın Gimri köyünde dünyaya gelen Şamil, Gazi Muhammed ve Hamzat Bek'in ardından 1834 yılında Kafkasya'nın üçüncü imamı seçildi.",
-      "Yalnızca askeri bir direniş değil; 'Nizam' adı verilen hukuk kuralları, naiplik idaresi, top dökümhaneleri, posta teşkilatı ve yazılı arşiv düzeniyle tam teşekküllü bir devlet kurdu. Ahulgo (1839), Dargo (1845) ve başkent Vedeno bu dönemin simgesi oldu.",
-      "25 Ağustos 1859'da Gunib'de kuşatmanın ardından sivil kayıpları önlemek için silah bıraktı. Kaluga'daki on yıllık zorunlu ikametin ardından 1870'te Hicaz'a gitmesine izin verildi; Şubat 1871'de Medine'de vefat ederek Cennetü'l-Baki kabristanına defnedildi."
-    ],
-    "related": [
-      "gazi-muhammed",
-      "tasav-haci",
-      "baysangur-benoyski",
-      "haci-murad"
-    ]
-  },
-  {
-    "slug": "kunta-haci",
-    "name": "Kunta Hacı Kişiyev",
-    "born": "1812",
-    "died": "1867",
-    "title": "Mutasavvıf, manevi önder",
-    "era": "imparatorluk",
-    "region": "Çeçenya – İnguşetya",
-    "birthPlace": "Melçuhi (İlsahan-Yurt)",
-    "deathPlace": "Ustyujna",
-    "center": "İlsahan-Yurt",
-    "image": "/images/p-scholar.jpg",
-    "gallery": [
-      {
-        "src": "/images/p-scholar.jpg",
-        "caption": "Şeyh Kunta Hacı Kişiyev portresi"
-      },
-      {
-        "src": "/images/doc-report.jpg",
-        "caption": "1864–1865 dönemi arşiv kayıtları"
-      }
-    ],
-    "docs": [
-      "rus-raporu-1864"
-    ],
-    "summary": "On yıllar süren savaşların yaralarını merhamet, sabır, yardımlaşma ve cehri zikir halkalarıyla saran, Çeçen ve İnguş halklarının büyük manevi rehberi.",
-    "bio": [
-      "Uzun yıllar süren Kafkas Savaşı'nın demografik yıkımı karşısında Kunta Hacı, halkın tamamen yok olmasını önlemek için manevi direnişi, yetimlerin gözetilmesini ve toplumsal dayanışmayı öğütledi.",
-      "Öğretisi özellikle Çeçenya ve İnguşetya'da on binlerce insanı bir araya getirdi; İnguş halkının gönüllü olarak İslam'ı derinlemesine benimsemesinde belirleyici rol oynadı.",
-      "Ocak 1864'te Çarlık makamlarınca tutuklandı, Şali'de kendisine destek için toplanan silahsız halka ateş açıldı ('Hançerler Savaşı'). Novgorod yakınlarındaki Ustyujna sürgününde Mayıs 1867'de vefat etti."
-    ],
-    "related": [
-      "alibek-haci",
-      "uzun-haci"
-    ]
-  },
-  {
-    "slug": "uzun-haci",
-    "name": "Uzun Hacı Saltinski",
-    "born": "1848",
-    "died": "1920",
-    "title": "Kuzey Kafkasya Emirliği'nin kurucusu",
-    "era": "sovyet",
-    "region": "Dağıstan – Çeçenya",
-    "birthPlace": "Salta",
-    "deathPlace": "Vedeno",
-    "center": "Salta, Vedeno",
-    "image": "/images/p-uzun.jpg",
-    "gallery": [
-      {
-        "src": "/images/p-uzun.jpg",
-        "caption": "Şeyh Uzun Hacı Saltinski portresi"
-      },
-      {
-        "src": "/images/imamet.jpg",
-        "caption": "Vedeno dağ merkezi"
-      }
-    ],
-    "docs": [
-      "imamet-dergisi-notlari"
-    ],
-    "summary": "1877 ayaklanmasından Sibirya sürgününe, oradan 1919'da Vedeno merkezli Kuzey Kafkasya Emirliği'nin kuruluşuna uzanan ömrüyle bağımsızlık fikrinin simgesi.",
-    "bio": [
-      "Gençliğinde 1877 Dağıstan-Çeçenya ayaklanmasına katıldığı için yıllarca Sibirya'da sürgünde kalan Uzun Hacı, kaçarak Hicaz ve İstanbul üzerinden Kafkasya'ya geri döndü.",
-      "1917 İhtilali sonrası Kuzey Kafkasya'yı işgal eden Denikin ordularına karşı Çeçen ve Dağıstan kuvvetlerini birleştirdi ve Eylül 1919'da Vedeno'da kendi parası, meclisi ve ordusu olan Kuzey Kafkasya Emirliği'ni ilan etti.",
-      "Mart 1920'de 72 yaşında Vedeno'da hayatını kaybetti."
-    ],
-    "related": [
-      "alibek-haci",
-      "aslanbek-seripov"
-    ]
-  },
-  {
-    "slug": "alibek-haci",
-    "name": "Alibek Hacı Aldamov",
-    "born": "1850",
-    "died": "1878",
-    "title": "1877 Kafkas ayaklanmasının genç imamı",
-    "era": "imparatorluk",
-    "region": "Çeçenya",
-    "birthPlace": "Simsir",
-    "deathPlace": "Grozni",
-    "center": "Simsir, Vedeno",
-    "image": "/images/people/alibek-haci.webp",
-    "gallery": [
-      {
-        "src": "/images/people/alibek-haci.webp",
-        "caption": "Alibek Hacı Aldamov dönem gravürü"
-      },
-      {
-        "src": "/images/doc-map.jpg",
-        "caption": "1871 Kuzey Kafkasya askeri haritası"
-      }
-    ],
-    "docs": [
-      "kafkasya-haritasi-1871"
-    ],
-    "summary": "Henüz 27 yaşındayken 1877–1878 Osmanlı-Rus Harbi sırasında İçkeriya ormanlarında imam seçilerek Çeçenya ve Dağıstan'daki büyük kıyamı yöneten önder.",
-    "bio": [
-      "Simsir köyünde doğan Alibek Hacı, Nisan 1877'de Sayasan ve Vedeno ormanlarında toplanan halk temsilcileri tarafından imam ilan edildi.",
-      "Kısa sürede 47 Çeçen köyü ve Dağıstan yaylalarına yayılan hareket, ağır topçu birliklerine karşı aylar boyunca direndi.",
-      "Sivil köylerin yakılmasını ve halkın sürgün edilmesini durdurmak amacıyla komutanlarıyla birlikte teslim oldu; Mart 1878'de Grozni'de on bir silah arkadaşıyla birlikte idam edildi."
-    ],
-    "related": [
-      "kunta-haci",
-      "uzun-haci"
-    ]
-  },
-  {
-    "slug": "zelimhan",
-    "name": "Zelimhan Guşmazukayev (Harachoyski)",
-    "born": "1872",
-    "died": "1913",
-    "title": "Harachoylu efsanevi abrek",
-    "era": "imparatorluk",
-    "region": "Çeçenya",
-    "birthPlace": "Harachoy",
-    "deathPlace": "Şali yakınları",
-    "center": "Harachoy, Assa ve Argun Vadileri",
-    "image": "/images/people/zelimhan.webp",
-    "gallery": [
-      {
-        "src": "/images/people/zelimhan.webp",
-        "caption": "Harachoylu Zelimhan (1872–1913) arşiv fotoğrafı"
-      },
-      {
-        "src": "/images/doc-tower.jpg",
-        "caption": "19. yüzyıl sonu dağ sığınakları ve taş kuleler"
-      }
-    ],
-    "docs": [
-      "targim-kuleleri-fotografi",
-      "atli-birlik-fotografi"
-    ],
-    "summary": "Çarlık idaresinin keyfi cezalarına karşı on iki yıl boyunca sarp dağlardan meydan okuyan, yoksullara dağıttığı adaletle Kafkas folkloruna geçen abrek.",
-    "bio": [
-      "Vedeno yakınlarındaki Harachoy köyünde doğan Zelimhan, işlemediği bir suçtan ötürü ailesiyle birlikte haksızlığa uğrayınca Grozni hapishanesinden firar ederek dağlara çekildi.",
-      "1901'den 1913'e kadar Çeçenya ve İnguşetya dağlarında binlerce kişilik cezalandırma müfrezelerini boşa çıkardı; Kızlar Bankası baskınından elde edilen paraları yoksul köylülere ve ağır vergi altındaki ailelere dağıttı.",
-      "İnguş ve Çeçen köyleri onu ele vermektense ağır para cezalarına katlandı. Eylül 1913'te Şali yakınlarında tek başına kuşatıldığı çiftlikte sabaha kadar süren çatışmada hayatını kaybetti."
-    ],
-    "related": [
-      "aslanbek-seripov"
-    ]
-  },
-  {
-    "slug": "aslanbek-seripov",
-    "name": "Aslanbek Şeripov",
-    "born": "1897",
-    "died": "1919",
-    "title": "Siyasi hatip, yazar ve komutan",
-    "era": "sovyet",
-    "region": "Çeçenya",
-    "birthPlace": "Şatoy",
-    "deathPlace": "Vozdvijenskaya",
-    "center": "Şatoy, Grozni",
-    "image": "/images/p-seripov.jpg",
-    "gallery": [
-      {
-        "src": "/images/p-seripov.jpg",
-        "caption": "Aslanbek Şeripov (1897–1919) arşiv portresi"
-      },
-      {
-        "src": "/images/kisiler.jpg",
-        "caption": "20. yüzyıl başı Kuzey Kafkasya atlıları"
-      }
-    ],
-    "docs": [
-      "atli-birlik-fotografi"
-    ],
-    "summary": "22 yıllık kısa ömrüne Çeçen halk şarkıları derlemeleri, siyasi makaleler ve iç savaş komutanlığı sığdıran parlak entelektüel.",
-    "bio": [
-      "Şatoylu bir subay ailesinin çocuğu olan Aslanbek Şeripov, genç yaşta Çeçen sözlü edebiyatı ve abrek destanlarını Rusçaya çevirerek yayımladı.",
-      "1917 sonrası Kuzey Kafkasya halk kongrelerinde dağlıların toprak haklarını ve kültürel özerkliğini savunan ateşli konuşmalarıyla öne çıktı.",
-      "Eylül 1919'da Denikin'in Beyaz Ordu birliklerine karşı Vozdvijenskaya cephesinde savaşırken henüz 22 yaşında hayatını kaybetti."
-    ],
-    "related": [
-      "uzun-haci",
-      "abdurrahman-avtorhanov"
-    ]
-  },
-  {
-    "slug": "abdurrahman-avtorhanov",
-    "name": "Abdurrahman Avtorhanov",
-    "born": "1908",
-    "died": "1997",
-    "title": "Tarihçi, siyaset bilimci ve yazar",
-    "era": "sovyet",
-    "region": "Çeçenya",
-    "birthPlace": "Lakha-Nevre (Nadtereçnoye)",
-    "deathPlace": "Münih",
-    "center": "Grozni, Münih",
-    "image": "/images/p-avtorhanov.jpg",
-    "gallery": [
-      {
-        "src": "/images/p-avtorhanov.jpg",
-        "caption": "Prof. Abdurrahman Avtorhanov arşiv portresi"
-      },
-      {
-        "src": "/images/doc-surgun.jpg",
-        "caption": "23 Şubat 1944 sürgünü arşiv belgesi"
-      }
-    ],
-    "docs": [
-      "surgun-listeleri-1944"
-    ],
-    "summary": "1944 Çeçen-İnguş sürgününü ve Sovyet iktidar mekanizmasını dünya akademisine belgeleyen en önemli Kafkasyalı tarihçi ve siyaset bilimci.",
-    "bio": [
-      "1908'de Çeçenya'da doğan Avtorhanov, Moskova'da Kızıl Profesörler Enstitüsü'nden mezun oldu ve genç yaşta Çeçen tarihi üzerine ilk akademik monografilerden birini kaleme aldı.",
-      "1937 tasfiyelerinde yıllarca hapis yattıktan sonra İkinci Dünya Savaşı yıllarında Batı'ya geçerek Münih'e yerleşti; 1944 sürgününün boyutlarını Birleşmiş Milletler ve dünya basınına duyuran çalışmaları yayımladı.",
-      "'İktidar Teknolojisi' ve 'Çeçen-İnguş Halkının Katli' başta olmak üzere yirmiden fazla dilde basılan eserler bıraktı ve 1997'de Münih'te vefat etti."
-    ],
-    "related": [
-      "idris-bazorkin",
-      "mahmud-esambayev"
-    ]
-  },
-  {
-    "slug": "idris-bazorkin",
-    "name": "İdris Bazorkin",
-    "born": "1910",
-    "died": "1993",
-    "title": "İnguş edebiyatının kurucu romancısı",
-    "era": "yakin",
-    "region": "İnguşetya",
-    "birthPlace": "Bazorkino (Çermen)",
-    "deathPlace": "Nazran",
-    "center": "Cerah Vadisi, Nazran",
-    "image": "/images/p-bazorkin.jpg",
-    "gallery": [
-      {
-        "src": "/images/p-bazorkin.jpg",
-        "caption": "İnguş yazar İdris Bazorkin portresi"
-      },
-      {
-        "src": "/images/targim-towers.jpg",
-        "caption": "Romanlarına ilham veren Cerah ve Targim kuleleri"
-      }
-    ],
-    "docs": [
-      "targim-kuleleri-fotografi",
-      "kuleler-albumu"
-    ],
-    "summary": "Başyapıtı 'Asırların Karanlığından' (Из тьмы веков) ile İnguş kule kültürünü, Ezdel ahlakını ve dağ yaşamını dünya edebiyatına taşıyan usta kalem.",
-    "bio": [
-      "Tarihi İnguş kule yerleşimlerinin izlerini taşıyan köklü bir ailenin ferdi olan İdris Bazorkin, öğretmenlik, tiyatro yazarlığı ve etnografya araştırmaları yürüttü.",
-      "1944 Orta Asya sürgünü yıllarında Kırgızistan'da halkının yaşadığı acılara tanıklık etti; 1957'deki dönüş sürecinde İnguş kültür kurumlarının yeniden inşasına öncülük etti.",
-      "1968'de yayımlanan destansı romanı 'Asırların Karanlığından', her İnguş evinde başucu eseri sayılan kültürel bir hafıza anıtına dönüştü."
-    ],
-    "related": [
-      "abdurrahman-avtorhanov",
-      "mahmud-esambayev"
-    ]
-  },
-  {
-    "slug": "mahmud-esambayev",
-    "name": "Mahmud Esambayev",
-    "born": "1924",
-    "died": "2000",
-    "title": "Dünya sahnelerinin Kafkasyalı koreografı",
-    "era": "yakin",
-    "region": "Çeçenya",
-    "birthPlace": "Staryye Atagi",
-    "deathPlace": "Moskova",
-    "center": "Staryye Atagi, Bişkek, Grozni",
-    "image": "/images/p-esambayev.jpg",
-    "gallery": [
-      {
-        "src": "/images/p-esambayev.jpg",
-        "caption": "Mahmud Esambayev sahne kostümü ve papahasıyla"
-      },
-      {
-        "src": "/images/c-muzik.jpg",
-        "caption": "Geleneksel dechig-pondar ve Kafkas ritmi"
-      }
-    ],
-    "docs": [
-      "el-sanatlari-katalogu"
-    ],
-    "summary": "Başından hiç çıkarmadığı papahası ve eşsiz sahne diliyle sürgün yıllarının karanlığından dünya bale ve dans sahnelerinin zirvesine yükselen sanat elçisi.",
-    "bio": [
-      "1924'te Argun kıyısındaki Staryye Atagi köyünde doğan Esambayev, çocuk yaşta köy düğünlerinde (lovzar) dans ederek yeteneğini gösterdi; cephede yaralandıktan kısa süre sonra 1944'te ailesiyle birlikte Orta Asya'ya sürgün edildi.",
-      "Sürgün yıllarında Kırgız Devlet Opera ve Balesi'nin baş dansçısı oldu; 1957 sonrasında dünya halklarının ritüel danslarını Kafkas zarafetiyle birleştirerek Paris'ten Buenos Aires'e kadar ayakta alkışlandı.",
-      "Resmi törenlerde dahi başından çıkarmadığı papahasını 'halkımın tacı' olarak tanımlayan Esambayev, Ocak 2000'de vefat etti."
-    ],
-    "related": [
-      "idris-bazorkin",
-      "abdurrahman-avtorhanov"
+      "baysangur-benoyski"
     ]
   },
   {
@@ -653,7 +146,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/suayip-molla.webp",
-        "caption": "Şuayip Molla Tsentoroyevski (1805–1844) — Temsilî portre. Yapay zekâ ile canlandırılmıştır; özgün fotoğraf değildir."
+        "caption": "Şuayip Molla Tsentoroyevski (1805–1844)"
       }
     ],
     "summary": "1805 yılında Tsentoroy köyünde doğan Şuayip Molla, genç yaşta İslami ilimlerde derinleşmiş ve İmam Şamil’in Çeçenistan’daki en güvendiği askeri dehalardan biri olarak Miçik ve İçkerya Naibliği görevini üstlenmiştir.",
@@ -677,7 +170,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/isa-gendargeno.webp",
-        "caption": "İsa Gendargeno (1795–1845) — Temsilî portre. Yapay zekâ ile canlandırılmıştır; özgün fotoğraf değildir."
+        "caption": "İsa Gendargeno (1795–1845)"
       }
     ],
     "summary": "1795 yılında Gendargen teypinde dünyaya gelen İsa Gendargeno, 1840 yılında Çeçen halkının İmam Şamil’e biat ederek Kafkasya İmamlığı bayrağı altında birleşmesinde başrol oynayan büyük Çeçen komutanıdır.",
@@ -701,7 +194,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ahmad-avturinski.webp",
-        "caption": "Ahmad Avturinski (1824–1852) — Dönem gravürü / tarihî tasvir."
+        "caption": "Ahmad Avturinski (1824–1852)"
       }
     ],
     "summary": "1824 yılında Çeçenistan’ın Avtury köyünde doğan Ahmad Avturinski, genç yaşta gösterdiği olağanüstü yiğitlik sayesinde İmam Şamil’in seçkin süvari komutanları ve uç beyleri arasına katılmıştır.",
@@ -725,7 +218,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/dada-tsentoroyevski.webp",
-        "caption": "Dada Tsentoroyevski (1800–1852) — Temsilî portre. Yapay zekâ ile canlandırılmıştır; özgün fotoğraf değildir."
+        "caption": "Dada Tsentoroyevski (1800–1852)"
       }
     ],
     "summary": "1800 yılında Çeçenistan’ın Tsentoroy köyünde dünyaya gelen Dada Tsentoroyevski, Kafkasya İmamlığı döneminde Doğu Çeçenistan ve İçkerya savunma hatlarının en sarsılmaz komutanlarından biri olmuştur.",
@@ -749,7 +242,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/goytemir-auhovski.webp",
-        "caption": "Goytemir Auhovski (1810–1853) — Temsilî portre. Yapay zekâ ile canlandırılmıştır; özgün fotoğraf değildir."
+        "caption": "Goytemir Auhovski (1810–1853)"
       }
     ],
     "summary": "1810 yılında doğan ve Tsentoroy teypinden olan Goytemir Auhovski, İmam Şamil’in Auh Naibi ve Kafkasya İmamlığı Süvari Kuvvetleri Başkomutanı olarak görev yapmış efsanevi bir askeri liderdir.",
@@ -773,12 +266,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/bokka-deyski.webp",
-        "caption": "Bokka Deyski (1810–1858) — Temsilî portre. Yapay zekâ ile canlandırılmıştır; özgün fotoğraf değildir."
+        "caption": "Bokka Deyski (1810–1858)"
       }
     ],
-    "summary": "1810 yılında Çeçenistan’ın dağlık Dey köyünde dünyaya gelen Bokka Deyski, Kafkasya İmamlığı’nın en stratejik geçitlerinden biri olan Çanti-Argun ve Şatoy bölgesinin Naibi olarak görev yapmıştır.",
+    "summary": "1810 yılında Çeçenistan’ın dağlık Dey köyünde dünyaya gelen Bokka Deyski, Kafkasya İmamlığı’nın en stratejik geçitlerinden biri olan Çanti-Argun ve Şatoy bölgesinin naibi olarak görev yapmıştır.",
     "bio": [
-      "1810 yılında Çeçenistan’ın dağlık Dey köyünde dünyaya gelen Bokka Deyski, Kafkasya İmamlığı’nın en stratejik geçitlerinden biri olan Çanti-Argun ve Şatoy bölgesinin Naibi olarak görev yapmıştır.",
+      "1810 yılında Çeçenistan’ın dağlık Dey köyünde dünyaya gelen Bokka Deyski, Kafkasya İmamlığı’nın en stratejik geçitlerinden biri olan Çanti-Argun ve Şatoy bölgesinin naibi olarak görev yapmıştır.",
       "Yıllarca Argun Kanyonu’nun sarp kayalıklarını Çarlık Rusyası’nın kolordularına karşı demir bir kalkan gibi savunmuş; Rus ordusunun dağlık Çeçenistan’ın kalbine ilerleyişini durdurmuştur. 1858 yılında Argun vadisindeki son büyük savunma muharebelerinde son nefesine kadar çarpışarak şehit düşmüştür."
     ]
   },
@@ -797,13 +290,45 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/batuko-satoyski.webp",
-        "caption": "Batuko Şatoyski (1802–1859) — Temsilî portre. Yapay zekâ ile canlandırılmıştır; özgün fotoğraf değildir."
+        "caption": "Batuko Şatoyski (1802–1859)"
       }
     ],
-    "summary": "1802 yılında doğan Batuko Şatoyski, dağlık Çeçenistan’ın merkezi olan Şatoy bölgesinin Naibi, bilge devlet adamı ve Kafkasya İmamlığı’nın en tecrübeli komutanlarından biridir.",
+    "summary": "1802 yılında doğan Batuko Şatoyski, dağlık Çeçenistan’ın merkezi olan Şatoy bölgesinin naibi, bilge devlet adamı ve Kafkasya İmamlığı’nın en tecrübeli komutanlarından biridir.",
     "bio": [
-      "1802 yılında doğan Batuko Şatoyski, dağlık Çeçenistan’ın merkezi olan Şatoy bölgesinin Naibi, bilge devlet adamı ve Kafkasya İmamlığı’nın en tecrübeli komutanlarından biridir.",
+      "1802 yılında doğan Batuko Şatoyski, dağlık Çeçenistan’ın merkezi olan Şatoy bölgesinin naibi, bilge devlet adamı ve Kafkasya İmamlığı’nın en tecrübeli komutanlarından biridir.",
       "İmam Şamil’in devlet divanında Çeçen halkını temsil etmiş; yirmi yılı aşkın süre boyunca Güney Çeçenistan dağlarındaki savunma hatlarını ve kale tahkimatlarını bizzat yönetmiştir. Kafkas Savaşları’nın en çetin evresi olan 1859 yılında vatan topraklarını savunurken şehadet mertebesine ulaşmıştır."
+    ]
+  },
+  {
+    "slug": "baysangur-benoyski",
+    "name": "Benoylu Baysungur",
+    "born": "1794",
+    "died": "1861",
+    "title": "Benoy naibi, efsanevi Çeçen komutan",
+    "era": "imamet",
+    "region": "Çeçenya",
+    "birthPlace": "Benoy",
+    "deathPlace": "Hasavyurt",
+    "center": "Benoy, Gunib",
+    "image": "/images/people/baysangur-benoyski.webp",
+    "gallery": [
+      {
+        "src": "/images/people/baysangur-benoyski.webp",
+        "caption": "Benoylu Baysungur (1794–1861)"
+      }
+    ],
+    "docs": [
+      "samil-donemi-mektup",
+      "imamet-dergisi-notlari"
+    ],
+    "summary": "Çatışmalarda bir kolunu, bir bacağını ve bir gözünü kaybetmesine rağmen atına bağlanarak cepheye atılan, boyun eğmezliğin Çeçen hafızasındaki simgesi.",
+    "bio": [
+      "Benoy teypinden gelen Baysangur, 1830’lardan itibaren Şeyh Şamil’in en güvenilir naiplerinden biri olarak Dargo (1845) ve Ahulgo çarpışmalarında en ön safta yer aldı.",
+      "Ağustos 1859’da Gunib kuşatmasının son gününde teslimiyet kararını reddederek beraberindeki savaşçılarla kuşatmayı yarıp Çeçenya dağlarına döndü ve Benoy merkezli yeni bir direniş başlattı.",
+      "1861 başlarında ağır kış şartlarında yaralı olarak esir düştü ve Mart 1861’de Hasavyurt’ta idam edildi. Halk destanlarında (illi) adı ölümsüzleşti."
+    ],
+    "related": [
+      "tasav-haci"
     ]
   },
   {
@@ -821,7 +346,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/talhig-salinski.webp",
-        "caption": "Talhig Şalinski (1800–1861) — Dönem gravürü / tarihî tasvir."
+        "caption": "Talhig Şalinski (1800–1861)"
       }
     ],
     "summary": "1800 yılında doğan Talhig Şalinski, İmam Şamil’in Büyük Çeçenistan ve Şali Naibi olarak yirmi yılı aşkın süre Kafkasya İmamlığı’nın en geniş cephesini savunmuş büyük komutandır.",
@@ -845,7 +370,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/soltamurad-benoyevski.webp",
-        "caption": "Soltamurad Benoyevski (1807–1878) — Temsilî portre. Yapay zekâ ile canlandırılmıştır; özgün fotoğraf değildir."
+        "caption": "Soltamurad Benoyevski (1807–1878)"
       }
     ],
     "summary": "1807 yılında Benoy’da doğan Soltamurad Benoyevski, 1859 sonrasında Baysangur Benoyski ile birlikte Çeçenistan dağlarında direniş sancağını yeniden yükselten en önemli askeri önderlerden biridir.",
@@ -869,13 +394,70 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/uma-duyev.webp",
-        "caption": "Uma Duyev (1809–1878) — Dönem gravürü / tarihî tasvir."
+        "caption": "Uma Duyev (1809–1878)"
       }
     ],
     "summary": "1809 yılında Argun vadisinin sarp Zumsoy bölgesinde doğan Uma Duyev, İmam Şamil’in Zumsoy Naibi olarak görev yapmış ve Şamil sonrasında da Baysangur ile birlikte direnişi sürdürmüştür.",
     "bio": [
       "1809 yılında Argun vadisinin sarp Zumsoy bölgesinde doğan Uma Duyev, İmam Şamil’in Zumsoy Naibi olarak görev yapmış ve Şamil sonrasında da Baysangur ile birlikte direnişi sürdürmüştür.",
       "Sürgünden döndükten sonra, 70 yaşına yaklaşmışken 1877 Büyük Çeçen Kıyamı’na katılarak Argun ve Şatoy dağlarındaki halk güçlerine yeniden komuta etmiştir. 9 Mart 1878 tarihinde Grozni’de oğlu Dadaş ve silah arkadaşlarıyla birlikte Çarlık mahkemesinin idam sehpasında boyun eğmeden şehadet mertebesine ulaşmıştır."
+    ]
+  },
+  {
+    "slug": "alibek-haci",
+    "name": "Alibek Hacı Aldamov",
+    "born": "1850",
+    "died": "1878",
+    "title": "1877 Kafkas ayaklanmasının genç imamı",
+    "era": "imparatorluk",
+    "region": "Çeçenya",
+    "birthPlace": "Simsir",
+    "deathPlace": "Grozni",
+    "center": "Simsir, Vedeno",
+    "image": "/images/people/alibek-haci.webp",
+    "gallery": [
+      {
+        "src": "/images/people/alibek-haci.webp",
+        "caption": "Alibek Hacı Aldamov (1850–1878)"
+      }
+    ],
+    "docs": [
+      "kafkasya-haritasi-1871"
+    ],
+    "summary": "Henüz 27 yaşındayken 1877–1878 Osmanlı-Rus Harbi sırasında İçkeriya ormanlarında imam seçilerek Çeçenya ve Dağıstan’daki büyük kıyamı yöneten önder.",
+    "bio": [
+      "Simsir köyünde doğan Alibek Hacı, Nisan 1877’de Sayasan ve Vedeno ormanlarında toplanan halk temsilcileri tarafından imam ilan edildi.",
+      "Kısa sürede 47 Çeçen köyü ve Dağıstan yaylalarına yayılan hareket, ağır topçu birliklerine karşı aylar boyunca direndi.",
+      "Sivil köylerin yakılmasını ve halkın sürgün edilmesini durdurmak amacıyla komutanlarıyla birlikte teslim oldu; Mart 1878’de Grozni’de on bir silah arkadaşıyla birlikte idam edildi."
+    ]
+  },
+  {
+    "slug": "zelimhan-haracoyn",
+    "name": "Zelimhan Guşmazukayev (Harachoyski)",
+    "born": "1872",
+    "died": "1913",
+    "title": "Harachoylu efsanevi abrek",
+    "era": "imparatorluk",
+    "region": "Çeçenya",
+    "birthPlace": "Harachoy",
+    "deathPlace": "Şali yakınları",
+    "center": "Harachoy, Assa ve Argun Vadileri",
+    "image": "/images/people/zelimhan-haracoyn.webp",
+    "gallery": [
+      {
+        "src": "/images/people/zelimhan-haracoyn.webp",
+        "caption": "Zelimhan Guşmazukayev (Harachoyski) (1872–1913)"
+      }
+    ],
+    "docs": [
+      "targim-kuleleri-fotografi",
+      "atli-birlik-fotografi"
+    ],
+    "summary": "Çarlık idaresinin keyfi cezalarına karşı on iki yıl boyunca sarp dağlardan meydan okuyan, yoksullara dağıttığı adaletle Kafkas folkloruna geçen abrek.",
+    "bio": [
+      "Vedeno yakınlarındaki Harachoy köyünde doğan Zelimhan, işlemediği bir suçtan ötürü ailesiyle birlikte haksızlığa uğrayınca Grozni hapishanesinden firar ederek dağlara çekildi.",
+      "1901’den 1913’e kadar Çeçenya ve İnguşetya dağlarında binlerce kişilik cezalandırma müfrezelerini boşa çıkardı; Kızlar Bankası baskınından elde edilen paraları yoksul köylülere ve ağır vergi altındaki ailelere dağıttı.",
+      "İnguş ve Çeçen köyleri onu ele vermektense ağır para cezalarına katlandı. Eylül 1913’te Şali yakınlarında tek başına kuşatıldığı çiftlikte sabaha kadar süren çatışmada hayatını kaybetti."
     ]
   },
   {
@@ -893,7 +475,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/deni-arsanov.webp",
-        "caption": "Şeyh Deni Arsanov (1851–1917) — Arşiv fotoğrafı."
+        "caption": "Şeyh Deni Arsanov (1851–1917)"
       }
     ],
     "summary": "1851 yılında Çeçenistan’ın Nadtereçni bölgesindeki Zandak-Ara köyünde, köklü Nohçi Enganoy taypına mensup bir ailede doğan Şeyh Deni Arsanov, Kuzey Kafkasya’nın en büyük Nakşibendi şeyhi ve manevi önderlerindendir.",
@@ -917,7 +499,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/hamid-molla.webp",
-        "caption": "Hamid-Molla Mustapayev (1897–1929) — Arşiv fotoğrafı."
+        "caption": "Hamid-Molla Mustapayev (1897–1929)"
       }
     ],
     "summary": "1897 yılında Çeçenistan’ın dağlık bölgesinde doğan İslam âlimi Hamid-Molla Mustapayev, Bolşevik rejiminin camileri kapatma, âlimleri tutuklama ve zorla kolektifleştirme politikalarına karşı halk direnişinin başına geçmiştir.",
@@ -941,7 +523,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/sita-istamulov.webp",
-        "caption": "Şita İstamulov (1887–1931) — Arşiv fotoğrafı."
+        "caption": "Şita İstamulov (1887–1931)"
       }
     ],
     "summary": "1887 yılında Şali’de doğan Şita İstamulov, Kuzey Kafkasya Emirliği’nde Uzun Hacı’nın komutanlarından biri olarak görev yapmış ve 1929–1930 yıllarında Sovyet zulmüne karşı en büyük Çeçen kıyamını başlatmıştır.",
@@ -965,13 +547,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/mayrbek-seripov.webp",
-        "caption": "Mayrbek Şeripov (1905–1942) — Arşiv fotoğrafı."
+        "caption": "Mayrbek Şeripov (1905–1942)"
       }
     ],
     "summary": "1905 yılında Şatoy’da köklü bir Çeçen ailesinde doğan hukukçu Mayrbek Şeripov (efsanevi komutan Aslanbek Şeripov’un kardeşi), Stalin rejiminin Çeçen halkına yönelik NKVD terörüne karşı 1941’de dağlara çıkmıştır.",
     "bio": [
       "1905 yılında Şatoy’da köklü bir Çeçen ailesinde doğan hukukçu Mayrbek Şeripov (efsanevi komutan Aslanbek Şeripov’un kardeşi), Stalin rejiminin Çeçen halkına yönelik NKVD terörüne karşı 1941’de dağlara çıkmıştır.",
-      "Hasan İsrailov ile güçlerini birleştirerek Çeçen-İnguş Milli Kurtuluş Hareketi’ni yönetmiş; Şatoy, İtum-Kale ve Хimoy bölgelerinde Sovyet iktidarını devirerek dağlık Çeçenistan’ı özgürleştirmiştir. 7 Kasım 1942’de NKVD özel birliklerinin ağır kuşatmasında teslim olmayı reddederek son nefesine kadar çarpışmış ve şehit düşmüştür."
+      "Hasan İsrailov ile güçlerini birleştirerek Çeçen-İnguş Milli Kurtuluş Hareketi’ni yönetmiş; Şatoy, İtum-Kale ve Himoy bölgelerinde Sovyet iktidarını devirerek dağlık Çeçenistan’ı özgürleştirmiştir. 7 Kasım 1942’de NKVD özel birliklerinin ağır kuşatmasında teslim olmayı reddederek son nefesine kadar çarpışmış ve şehit düşmüştür."
     ]
   },
   {
@@ -989,7 +571,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/hasan-israilov.webp",
-        "caption": "Hasan İsrailov (1910–1944) — Arşiv fotoğrafı."
+        "caption": "Hasan İsrailov (1910–1944)"
       }
     ],
     "summary": "1910 yılında Çeçenistan’ın dağlık Galançoj bölgesindeki Naşha köyünde doğan şair, gazeteci ve hukukçu Hasan İsrailov, Sovyet rejiminin Kafkasya’daki zulmünü belgeledikten sonra Şubat 1940’ta Galançoj dağlarında büyük Çeçen direnişini başlatmıştır.",
@@ -1013,7 +595,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/hasuha-magomadov.webp",
-        "caption": "Hasuha Magomadov (1907–1976) — Arşiv fotoğrafı."
+        "caption": "Hasuha Magomadov (1907–1976)"
       }
     ],
     "summary": "1907 yılında Şatoy’un Gaten-Kale köyünde doğan Hasuha Magomadov, 1939 yılında dağlara çıkarak tam 37 yıl boyunca Sovyet İmparatorluğu’nun ordularına, NKVD ve KGB birliklerine tek başına meydan okuyan ‘Son Abrek’tir.",
@@ -1037,7 +619,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/hamzat-hankara.webp",
-        "caption": "Hamzat Hankarov (1964–1994) — Arşiv fotoğrafı."
+        "caption": "Hamzat Hankarov (1964–1994)"
       }
     ],
     "summary": "1964 yılında doğan Hamzat Hankarov, 1991 Çeçen Milli Devrimi’nin ilk günlerinden itibaren Cumhurbaşkanı Cevher Dudayev’in yanında yer alarak bağımsız İçkerya’nın güvenlik ve savunma teşkilatının kurulmasında öncülük etmiştir.",
@@ -1061,7 +643,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/umalat-dasayev.webp",
-        "caption": "Umalat Daşayev (1956–1994) — Arşiv fotoğrafı."
+        "caption": "Umalat Daşayev (1956–1994)"
       }
     ],
     "summary": "1956 yılında doğan Umalat Daşayev, Birinci Çeçen-Rus Savaşı’nın başladığı Aralık 1994’te Çeçen İçkerya Cumhuriyeti’nin en seçkin özel muhafız ve taarruz birliklerine komuta etmiştir.",
@@ -1085,12 +667,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/apti-tokayev.webp",
-        "caption": "Apti Tokayev (1960–1995) — Arşiv fotoğrafı."
+        "caption": "Apti Tokayev (1960–1995)"
       }
     ],
-    "summary": "1960 yılında Çeçenistan’da doğan Apti Tokayev, Aralık 1994’te başlayan Rus işgaline karşı Başkent Grozni savunmasının en kritik noktalarından birini üstlenen kahraman müfreze komutanıdır.",
+    "summary": "1960 yılında Çeçenistan’da doğan Apti Tokayev, Aralık 1994’te başlayan Rus işgaline karşı başkent Grozni savunmasının en kritik noktalarından birini üstlenen kahraman müfreze komutanıdır.",
     "bio": [
-      "1960 yılında Çeçenistan’da doğan Apti Tokayev, Aralık 1994’te başlayan Rus işgaline karşı Başkent Grozni savunmasının en kritik noktalarından birini üstlenen kahraman müfreze komutanıdır.",
+      "1960 yılında Çeçenistan’da doğan Apti Tokayev, Aralık 1994’te başlayan Rus işgaline karşı başkent Grozni savunmasının en kritik noktalarından birini üstlenen kahraman müfreze komutanıdır.",
       "31 Aralık 1994 – 1 Ocak 1995 gecesi Rus ordusunun ‘iki saatte Grozni’yi alma’ planını yerle bir eden tarihi şehir muharebesinde, zırhlı tugaylara karşı göğüs göğüse çarpışmıştır. 1 Ocak 1995 tarihinde Grozni sokaklarında Rus tanklarını imha ederken şehadet mertebesine ulaşarak Grozni zaferinin ölümsüz neferleri arasına katılmıştır."
     ]
   },
@@ -1109,13 +691,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/cevher-dudayev.webp",
-        "caption": "Cevher Dudayev (1944–1996) — Arşiv fotoğrafı."
+        "caption": "Cevher Dudayev (1944–1996)"
       }
     ],
     "summary": "15 Şubat 1944’te, Çeçen sürgününden yalnızca birkaç gün önce Yalhoj köyünde doğan ve çocukluğu Kazakistan bozkırlarında sürgünde geçen Cevher Dudayev, Sovyet Hava Kuvvetleri’nde stratejik bombardıman tümeni komutanlığına yükselmiş ilk Müslüman Çeçen tümgeneraldir.",
     "bio": [
       "15 Şubat 1944’te, Çeçen sürgününden yalnızca birkaç gün önce Yalhoj köyünde doğan ve çocukluğu Kazakistan bozkırlarında sürgünde geçen Cevher Dudayev, Sovyet Hava Kuvvetleri’nde stratejik bombardıman tümeni komutanlığına yükselmiş ilk Müslüman Çeçen tümgeneraldir.",
-      "1990’da Estonya halkının bağımsızlık hareketini bastırma emrini reddederek vatanına dönmüş ve 1991’de Çeçen İçkerya Cumhuriyeti’nin ilk Cumhurbaşkanı seçilerek bağımsızlığı ilan etmiştir. 1994–1996 Birinci Çeçen-Rus Savaşı’nda milletine başkomutanlık yapan Cevher Dudayev, 21 Nisan 1996’da Gekhi-Çu köyünde uydu telefonu sinyali üzerinden düzenlenen füze saldırısında şehit düşmüştür."
+      "1990’da Estonya halkının bağımsızlık hareketini bastırma emrini reddederek vatanına dönmüş ve 1991’de Çeçen İçkerya Cumhuriyeti’nin ilk cumhurbaşkanı seçilerek bağımsızlığı ilan etmiştir. 1994–1996 Birinci Çeçen-Rus Savaşı’nda milletine başkomutanlık yapan Cevher Dudayev, 21 Nisan 1996’da Gekhi-Çu köyünde uydu telefonu sinyali üzerinden düzenlenen füze saldırısında şehit düşmüştür."
     ]
   },
   {
@@ -1133,7 +715,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/dokka-mahayev.webp",
-        "caption": "Dokka Mahayev (1955–1996) — Arşiv fotoğrafı."
+        "caption": "Dokka Mahayev (1955–1996)"
       }
     ],
     "summary": "1955 yılında doğan Dokka Mahayev, Birinci Çeçen Savaşı boyunca Güneybatı Cephesi’nde Bamut, Orehovo ve Gekhi hattında Rus ordusuna karşı en çetin savunma muharebelerini yöneten alay komutanıdır.",
@@ -1157,13 +739,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/nurdi-bajiyev.webp",
-        "caption": "Nurdi Bajiyev (1964–1997) — Arşiv fotoğrafı."
+        "caption": "Nurdi Bajiyev (1964–1997)"
       }
     ],
     "summary": "1964 yılında Çeçenistan’da doğan Nurdi Bajiyev, Nohçi bağımsızlık mücadelesinin ilk yıllarından itibaren ön saflarda yer almış ve Birinci Çeçen Savaşı’nda Grozni savunması ile güney cephesi operasyonlarında alay komutanı olarak çarpışmıştır.",
     "bio": [
       "1964 yılında Çeçenistan’da doğan Nurdi Bajiyev, Nohçi bağımsızlık mücadelesinin ilk yıllarından itibaren ön saflarda yer almış ve Birinci Çeçen Savaşı’nda Grozni savunması ile güney cephesi operasyonlarında alay komutanı olarak çarpışmıştır.",
-      "Aslan Mashadov ve Şamil Basayev ile birlikte 1995–1996 yıllarındaki stratejik cephe harekâtlarının planlanmasında görev almış; üstün komutanlık vasfıyla Çeçen İçkerya Cumhuriyeti Tuğgenerali rütbesine terfi ettirilmiştir. 1997 yılında vatan savunmasında aldığı ağır yaralar ve savaşın bıraktığı etkiler sonucu henüz 33 yaşında şehadet mertebesine ulaşmıştır."
+      "Aslan Mashadov ve Şamil Basayev ile birlikte 1995–1996 yıllarındaki stratejik cephe harekâtlarının planlanmasında görev almış; üstün komutanlık vasfıyla Çeçen İçkerya Cumhuriyeti tuğgenerali rütbesine terfi ettirilmiştir. 1997 yılında vatan savunmasında aldığı ağır yaralar ve savaşın bıraktığı etkiler sonucu henüz 33 yaşında şehadet mertebesine ulaşmıştır."
     ]
   },
   {
@@ -1181,13 +763,37 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/leca-hultigov.webp",
-        "caption": "Leça Hultıgov (1972–1998) — Arşiv fotoğrafı."
+        "caption": "Leça Hultıgov (1972–1998)"
       }
     ],
-    "summary": "1972 yılında doğan Leça Hultıgov, Birinci Çeçen Savaşı’nda (1994–1996) gösterdiği üstün cesaret ve askeri başarılarla genç yaşta Çeçen İçkerya Cumhuriyeti Tuğgenerali rütbesine yükselmiştir.",
+    "summary": "1972 yılında doğan Leça Hultıgov, Birinci Çeçen Savaşı’nda (1994–1996) gösterdiği üstün cesaret ve askeri başarılarla genç yaşta Çeçen İçkerya Cumhuriyeti tuğgenerali rütbesine yükselmiştir.",
     "bio": [
-      "1972 yılında doğan Leça Hultıgov, Birinci Çeçen Savaşı’nda (1994–1996) gösterdiği üstün cesaret ve askeri başarılarla genç yaşta Çeçen İçkerya Cumhuriyeti Tuğgenerali rütbesine yükselmiştir.",
-      "Savaş sonrasında Cumhurbaşkanı Aslan Mashadov tarafından İçkerya Ulusal Güvenlik Servisi (NSB) Başkanlığına atanarak genç Çeçen devletinin iç güvenliğini, kamu düzenini ve bağımsızlığını korumak için mücadele etmiştir. 21 Haziran 1998 tarihinde Başkent Grozni’de devlet düzenini koruma görevi sırasında yaşanan çatışmada henüz 26 yaşında şehit düşmüştür."
+      "1972 yılında doğan Leça Hultıgov, Birinci Çeçen Savaşı’nda (1994–1996) gösterdiği üstün cesaret ve askeri başarılarla genç yaşta Çeçen İçkerya Cumhuriyeti tuğgenerali rütbesine yükselmiştir.",
+      "Savaş sonrasında Cumhurbaşkanı Aslan Mashadov tarafından İçkerya Ulusal Güvenlik Servisi (NSB) Başkanlığına atanarak genç Çeçen devletinin iç güvenliğini, kamu düzenini ve bağımsızlığını korumak için mücadele etmiştir. 21 Haziran 1998 tarihinde başkent Grozni’de devlet düzenini koruma görevi sırasında yaşanan çatışmada henüz 26 yaşında şehit düşmüştür."
+    ]
+  },
+  {
+    "slug": "ruslan-hayhoroyev",
+    "name": "Ruslan Hayhoroyev",
+    "born": "1963",
+    "died": "1999",
+    "title": "Çeçen direniş komutanı",
+    "era": "yakin",
+    "region": "Çeçenya",
+    "birthPlace": "Bamut",
+    "deathPlace": "Çeçenya",
+    "center": "Bamut",
+    "image": "/images/people/ruslan-hayhoroyev.webp",
+    "gallery": [
+      {
+        "src": "/images/people/ruslan-hayhoroyev.webp",
+        "caption": "Ruslan Hayhoroyev (1963–1999)"
+      }
+    ],
+    "summary": "1963 yılında Çeçenistan’ın Açhoy-Martan bölgesindeki tarihi Bamut köyünde dünyaya gelen Tuğgeneral Ruslan Hayhoroyev, 1995–1996 yıllarında dünya askeri tarihine geçen ‘Bamut Savunması’nın başkomutanıdır.",
+    "bio": [
+      "1963 yılında Çeçenistan’ın Açhoy-Martan bölgesindeki tarihi Bamut köyünde dünyaya gelen Tuğgeneral Ruslan Hayhoroyev, 1995–1996 yıllarında dünya askeri tarihine geçen ‘Bamut Savunması’nın başkomutanıdır.",
+      "Bir yılı aşkın süre boyunca Rus ordusunun ağır topçu, uçak bombardımanı ve zırhlı taarruzlarına karşı Bamut’u düşürmeden savunmuş; yirmiyi aşkın büyük Rus taarruzunu geri püskürtmüştür. İkinci Çeçen Savaşı’nın başlangıcında aldığı ağır yaralar sonucu 8 Eylül 1999 tarihinde şehit düşen Ruslan Hayhoroyev’in adı, eğilmeyen Bamut kalesiyle özdeşleşmiştir."
     ]
   },
   {
@@ -1205,7 +811,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/huta-ahmadov.webp",
-        "caption": "Huta Ahmadov (1972–1999) — Arşiv fotoğrafı."
+        "caption": "Huta Ahmadov (1972–1999)"
       }
     ],
     "summary": "1972 yılında doğan Huta Ahmadov, Çeçen direnişine yedi şehit veren ünlü Nohçi Gendargenoy taypına mensup kahraman Ahmadov kardeşlerden biridir.",
@@ -1229,229 +835,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/magomed-yutayev.webp",
-        "caption": "Magomed Yutayev (Malış) (1980–1999) — Arşiv fotoğrafı."
+        "caption": "Magomed Yutayev (Malış) (1980–1999)"
       }
     ],
     "summary": "1980 yılında Çeçenistan’ın Urus-Martan bölgesindeki Şalaji köyünde doğan Magomed Yutayev, henüz 14 yaşındayken Rus işgaline karşı Çeçen direniş saflarına katılmış ve cephede ‘Malış’ (Küçük Savaşçı) lakabıyla tanınmıştır.",
     "bio": [
       "1980 yılında Çeçenistan’ın Urus-Martan bölgesindeki Şalaji köyünde doğan Magomed Yutayev, henüz 14 yaşındayken Rus işgaline karşı Çeçen direniş saflarına katılmış ve cephede ‘Malış’ (Küçük Savaşçı) lakabıyla tanınmıştır.",
       "Birinci Çeçen Savaşı’nda (1994–1996) Budyonnovsk harekâtında ve 1996 Grozni kurtuluş muharebelerinde en ön saflarda çarpışmış; genç yaşına rağmen olgun bakışları ve cesaretiyle direnişin sembol simalarından biri olmuştur. 1999 yılında İkinci Çeçen Savaşı’nın başlamasıyla yeniden cepheye koşan Magomed Yutayev, Rus güçleriyle girilen çatışmada henüz 19 yaşında şehit düşmüştür."
-    ]
-  },
-  {
-    "slug": "ruslan-hayhoroyev",
-    "name": "Ruslan Hayhoroyev",
-    "born": "1963",
-    "died": "1999",
-    "title": "Çeçen direniş komutanı",
-    "era": "yakin",
-    "region": "Çeçenya",
-    "birthPlace": "Bamut",
-    "deathPlace": "Çeçenya",
-    "center": "Bamut",
-    "image": "/images/people/ruslan-hayhoroyev.webp",
-    "gallery": [
-      {
-        "src": "/images/people/ruslan-hayhoroyev.webp",
-        "caption": "Ruslan Hayhoroyev (1963–1999) — Arşiv fotoğrafı."
-      }
-    ],
-    "summary": "1963 yılında Çeçenistan’ın Açhoy-Martan bölgesindeki tarihi Bamut köyünde dünyaya gelen Tuğgeneral Ruslan Hayhoroyev, 1995–1996 yıllarında dünya askeri tarihine geçen ‘Bamut Savunması’nın başkomutanıdır.",
-    "bio": [
-      "1963 yılında Çeçenistan’ın Açhoy-Martan bölgesindeki tarihi Bamut köyünde dünyaya gelen Tuğgeneral Ruslan Hayhoroyev, 1995–1996 yıllarında dünya askeri tarihine geçen ‘Bamut Savunması’nın başkomutanıdır.",
-      "Bir yılı aşkın süre boyunca Rus ordusunun ağır topçu, uçak bombardımanı ve zırhlı taarruzlarına karşı Bamut’u düşürmeden savunmuş; yirmiyi aşkın büyük Rus taarruzunu geri püskürtmüştür. İkinci Çeçen Savaşı’nın başlangıcında aldığı ağır yaralar sonucu 8 Eylül 1999 tarihinde şehit düşen Ruslan Hayhoroyev’in adı, eğilmeyen Bamut kalesiyle özdeşleşmiştir."
-    ]
-  },
-  {
-    "slug": "abusupyan-movsayev",
-    "name": "Abusupyan Movsayev",
-    "born": "1959",
-    "died": "2000",
-    "title": "Devlet İstihbarat Başkanı",
-    "era": "yakin",
-    "region": "Çeçenya",
-    "birthPlace": "Çeçenya",
-    "deathPlace": "Çeçenya",
-    "center": "Çeçenya",
-    "image": "/images/people/abusupyan-movsayev.webp",
-    "gallery": [
-      {
-        "src": "/images/people/abusupyan-movsayev.webp",
-        "caption": "Abusupyan Movsayev (1959–2000) — Arşiv fotoğrafı."
-      }
-    ],
-    "summary": "1959 yılında doğan Tuğgeneral Abusupyan Movsayev, Cevher Dudayev ve Aslan Mashadov dönemlerinde Çeçen İçkerya Cumhuriyeti Devlet Güvenlik Dairesi Başkanlığı ve Emniyet Genel Müdürlüğü görevlerini yürütmüştür.",
-    "bio": [
-      "1959 yılında doğan Tuğgeneral Abusupyan Movsayev, Cevher Dudayev ve Aslan Mashadov dönemlerinde Çeçen İçkerya Cumhuriyeti Devlet Güvenlik Dairesi Başkanlığı ve Emniyet Genel Müdürlüğü görevlerini yürütmüştür.",
-      "Şamil Basayev’in en yakın dava arkadaşlarından biri olarak Abhazya Savaşı’nda ve Birinci Çeçen Savaşı’nın tüm stratejik cephelerinde kritik istihbarat ve saha operasyonlarını yönetmiştir. 23 Mayıs 2000 tarihinde Çeçenistan’ın dağlık bölgesinde Rus özel kuvvetlerinin pususunda son mermisine kadar çarpışarak şehit düşmüştür."
-    ]
-  },
-  {
-    "slug": "apti-ahmadov",
-    "name": "Apti Ahmadov",
-    "born": "1961",
-    "died": "2000",
-    "title": "Çeçen direniş komutanı",
-    "era": "yakin",
-    "region": "Çeçenya",
-    "birthPlace": "Urus-Martan",
-    "deathPlace": "Şatoy",
-    "center": "Urus-Martan",
-    "image": "/images/people/apti-ahmadov.webp",
-    "gallery": [
-      {
-        "src": "/images/people/apti-ahmadov.webp",
-        "caption": "Apti Ahmadov (1961–2000) — Arşiv fotoğrafı."
-      }
-    ],
-    "summary": "1961 yılında Urus-Martan’da doğan Apti Ahmadov, Çeçen direnişinin sembol ailesi Gendargenoy Ahmadov kardeşlerin büyüklerinden ve en tecrübeli alay komutanlarından biridir.",
-    "bio": [
-      "1961 yılında Urus-Martan’da doğan Apti Ahmadov, Çeçen direnişinin sembol ailesi Gendargenoy Ahmadov kardeşlerin büyüklerinden ve en tecrübeli alay komutanlarından biridir.",
-      "Birinci Çeçen Savaşı’nda Bamut, Urus-Martan ve Grozni muharebelerinde Rus zırhlı birliklerine karşı üstün başarılar kazanmış; İkinci Çeçen Savaşı’nda Grozni’den çekilen birliklerin dağlık Şatoy hattında yeniden tertiplenmesini sağlamıştır. Şubat 2000 sonunda Şatoy ve Argun vadisi savunmasında Rus hava ve kara kuşatmasına karşı son mermisine kadar çarpışarak şehit düşmüştür."
-    ]
-  },
-  {
-    "slug": "aslambek-ismayilov",
-    "name": "Aslambek İsmayilov",
-    "born": "1962",
-    "died": "2000",
-    "title": "Grozni Savunması Başkomutanı",
-    "era": "yakin",
-    "region": "Çeçenya",
-    "birthPlace": "Çeçenya",
-    "deathPlace": "Alhan-Kala",
-    "center": "Çeçenya",
-    "image": "/images/people/aslambek-ismayilov.webp",
-    "gallery": [
-      {
-        "src": "/images/people/aslambek-ismayilov.webp",
-        "caption": "Aslambek İsmayilov (1962–2000) — Arşiv fotoğrafı."
-      }
-    ],
-    "summary": "1962 yılında doğan Tuğgeneral Aslambek İsmayilov (‘Küçük Aslambek’), Ağustos 1996’da Grozni’nin Rus işgalinden kurtarıldığı efsanevi ‘Cihad Operasyonu’nun askeri planlayıcılarından ve saha komutanlarından biridir.",
-    "bio": [
-      "1962 yılında doğan Tuğgeneral Aslambek İsmayilov (‘Küçük Aslambek’), Ağustos 1996’da Grozni’nin Rus işgalinden kurtarıldığı efsanevi ‘Cihad Operasyonu’nun askeri planlayıcılarından ve saha komutanlarından biridir.",
-      "Eylül 1999’da başlayan İkinci Çeçen Savaşı’nda Cumhurbaşkanı Aslan Mashadov tarafından Başkent Grozni Savunma Karargâhı Komutanlığına atanarak aylarca Rus ordusunu şehir kapılarında durdurmuştur. 1 Şubat 2000’de Grozni’den çıkış harekâtı sırasında Alhan-Kala geçişinde askerlerinin hayatını kurtarmak için mayınlı araziye en önde girerek şehadet mertebesine ulaşmıştır."
-    ]
-  },
-  {
-    "slug": "dalhan-hojayev",
-    "name": "Dalhan Hojayev",
-    "born": "1961",
-    "died": "2000",
-    "title": "Kafkasya İmameti naibi ve komutan",
-    "era": "yakin",
-    "region": "Çeçenya",
-    "birthPlace": "Grozni",
-    "deathPlace": "Valerik",
-    "center": "Grozni",
-    "image": "/images/people/dalhan-hojayev.webp",
-    "gallery": [
-      {
-        "src": "/images/people/dalhan-hojayev.webp",
-        "caption": "Dalhan Hojayev (1961–2000) — Arşiv fotoğrafı."
-      }
-    ],
-    "summary": "18 Nisan 1961’de Grozni’de doğan Dalhan Hojayev, Çeçen Devlet Üniversitesi Tarih Bölümü mezunu bir tarihçi ve müze araştırmacısı olarak 19. yüzyıl Kafkas Savaşları ve Çeçen Naibleri üzerine en kapsamlı arşiv eserlerini kaleme almıştır.",
-    "bio": [
-      "18 Nisan 1961’de Grozni’de doğan Dalhan Hojayev, Çeçen Devlet Üniversitesi Tarih Bölümü mezunu bir tarihçi ve müze araştırmacısı olarak 19. yüzyıl Kafkas Savaşları ve Çeçen Naibleri üzerine en kapsamlı arşiv eserlerini kaleme almıştır.",
-      "Rus işgali başladığında kaleminin yanına silahını da alarak Ruslan Gelayev’in ‘Borz’ (Kurt) Özel Kuvvetler Alayı’nda kurmay komutan olmuş, Devlet Savunma Konseyi Sekreterliği ve Tuğgenerallik görevlerini üstlenmiştir. 26 Temmuz 2000 tarihinde Valerik köyünde Rus özel kuvvetlerinin saldırısında şehit düşen Dalhan Hojayev, Çeçen direnişinin hem hafızası hem de kahraman komutanı olarak tarihe geçmiştir."
-    ]
-  },
-  {
-    "slug": "hunkarpasa-israpilov",
-    "name": "Hünkarpaşa İsrapilov",
-    "born": "1967",
-    "died": "2000",
-    "title": "Güneydoğu Cephesi Komutanı",
-    "era": "yakin",
-    "region": "Çeçenya",
-    "birthPlace": "Auh",
-    "deathPlace": "Alhan-Kala",
-    "center": "Auh",
-    "image": "/images/people/hunkarpasa-israpilov.webp",
-    "gallery": [
-      {
-        "src": "/images/people/hunkarpasa-israpilov.webp",
-        "caption": "Hünkarpaşa İsrapilov (1967–2000) — Arşiv fotoğrafı."
-      }
-    ],
-    "summary": "26 Kasım 1967’de tarihi Auh bölgesinde dünyaya gelen Tuğgeneral Hünkarpaşa İsrapilov, Birinci Çeçen-Rus Savaşı’nda Güneydoğu Cephesi Komutanı ve Kizlyar-Pervomayskoye harekâtının sarsılmaz lideri olarak destan yazmıştır.",
-    "bio": [
-      "26 Kasım 1967’de tarihi Auh bölgesinde dünyaya gelen Tuğgeneral Hünkarpaşa İsrapilov, Birinci Çeçen-Rus Savaşı’nda Güneydoğu Cephesi Komutanı ve Kizlyar-Pervomayskoye harekâtının sarsılmaz lideri olarak destan yazmıştır.",
-      "Üstün cesareti sebebiyle İçkerya’nın en yüksek devlet nişanı olan ‘Koman Siy’ ile ödüllendirilmiş; 1999–2000 kışında Grozni savunmasının en çetin doğu hatlarına komuta etmiştir. 1 Şubat 2000’de Alhan-Kala’da birliklerine geçiş yolu açarken Leça Dudayev ve Aslambek İsmayilov ile birlikte en önde savaşarak şehit düşmüştür."
-    ]
-  },
-  {
-    "slug": "leca-dudayev",
-    "name": "Leça Dudayev",
-    "born": "1961",
-    "died": "2000",
-    "title": "Grozni Belediye Başkanı",
-    "era": "yakin",
-    "region": "Çeçenya",
-    "birthPlace": "Grozni",
-    "deathPlace": "Alhan-Kala",
-    "center": "Grozni",
-    "image": "/images/people/leca-dudayev.webp",
-    "gallery": [
-      {
-        "src": "/images/people/leca-dudayev.webp",
-        "caption": "Leça Dudayev (1961–2000) — Arşiv fotoğrafı."
-      }
-    ],
-    "summary": "1961 yılında Grozni’de doğan ve Şehit Cumhurbaşkanı Cevher Dudayev’in yeğeni olan Albay Leça Dudayev, Birinci Çeçen Savaşı’nda gösterdiği kahramanlıkların ardından Başkent Grozni Belediye Başkanlığı görevini üstlenmiştir.",
-    "bio": [
-      "1961 yılında Grozni’de doğan ve Şehit Cumhurbaşkanı Cevher Dudayev’in yeğeni olan Albay Leça Dudayev, Birinci Çeçen Savaşı’nda gösterdiği kahramanlıkların ardından Başkent Grozni Belediye Başkanlığı görevini üstlenmiştir.",
-      "1999–2000 kışında ağır Rus bombardımanı altındaki Grozni’den bir gün bile ayrılmayarak hem şehrin savunmasını hem de sivillerin korunmasını yönetmiştir. 1 Şubat 2000 gecesi Grozni kuşatmasını yarma harekâtı sırasında Alhan-Kala mayın tarlalarında silah arkadaşlarına güvenli geçiş yolu açarken en önde yürüyerek şehit düşmüştür."
-    ]
-  },
-  {
-    "slug": "ruslan-alihaciyev",
-    "name": "Ruslan Alihaciyev",
-    "born": "1961",
-    "died": "2000",
-    "title": "İçkeriya Parlamentosu 4. Başkanı",
-    "era": "yakin",
-    "region": "Çeçenya",
-    "birthPlace": "Şali",
-    "deathPlace": "Moskova",
-    "center": "Şali",
-    "image": "/images/people/ruslan-alihaciyev.webp",
-    "gallery": [
-      {
-        "src": "/images/people/ruslan-alihaciyev.webp",
-        "caption": "Ruslan Alihaciyev (1961–2000) — Arşiv fotoğrafı."
-      }
-    ],
-    "summary": "1961 yılında Şali şehrinde doğan Tuğgeneral Ruslan Alihaciyev, Birinci Çeçen Savaşı’nda (1994–1996) Şali Alayı ve Güney Cephesi Komutanı olarak kazandığı zaferlerle ‘Koman Siy’ nişanıyla taltif edilmiştir.",
-    "bio": [
-      "1961 yılında Şali şehrinde doğan Tuğgeneral Ruslan Alihaciyev, Birinci Çeçen Savaşı’nda (1994–1996) Şali Alayı ve Güney Cephesi Komutanı olarak kazandığı zaferlerle ‘Koman Siy’ nişanıyla taltif edilmiştir.",
-      "1997–2000 yılları arasında Çeçen İçkerya Cumhuriyeti Parlamentosu’nun 4. Başkanı olarak görev yapmış; hem cephede hem de diplomaside Çeçen milletinin meşru iradesini temsil etmiştir. Mayıs 2000’de Şali’deki evinden Rus güçlerince kaçırılan Ruslan Alihaciyev, Moskova’daki Lefortovo zindanında ağır işkenceler altında tek bir taviz dahi vermeden şehit düşmüştür."
-    ]
-  },
-  {
-    "slug": "taus-bagurayev",
-    "name": "Taus Bagurayev",
-    "born": "1964",
-    "died": "2000",
-    "title": "Çeçen direniş komutanı",
-    "era": "yakin",
-    "region": "Çeçenya",
-    "birthPlace": "Çeçenya",
-    "deathPlace": "Saadi-Kotar",
-    "center": "Çeçenya",
-    "image": "/images/people/taus-bagurayev.webp",
-    "gallery": [
-      {
-        "src": "/images/people/taus-bagurayev.webp",
-        "caption": "Taus Bagurayev (1964–2000) — Arşiv fotoğrafı."
-      }
-    ],
-    "summary": "1964 yılında doğan Tuğgeneral Taus Bagurayev, Birinci Çeçen Savaşı’nda Güneybatı Cephesi’nde gösterdiği üstün yararlılıklarla Çeçen Silahlı Kuvvetleri’nin önde gelen komutanları arasında yer almıştır.",
-    "bio": [
-      "1964 yılında doğan Tuğgeneral Taus Bagurayev, Birinci Çeçen Savaşı’nda Güneybatı Cephesi’nde gösterdiği üstün yararlılıklarla Çeçen Silahlı Kuvvetleri’nin önde gelen komutanları arasında yer almıştır.",
-      "İkinci Çeçen Savaşı’nın en kanlı muharebelerinden biri olan Mart 2000 Komsomolskoye (Saadi-Kotar) savunmasında Rus ordusunun ağır kuşatmasına karşı haftalarca direnmiştir. Mart 2000’de Komsomolskoye’de silah arkadaşlarını kuşatmadan çıkarmak için artçı birlik olarak çarpışırken şehadet mertebesine ulaşmıştır."
     ]
   },
   {
@@ -1469,37 +859,229 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/isa-astamirov.webp",
-        "caption": "İsa Astamirov (1952–2000) — Arşiv fotoğrafı."
+        "caption": "İsa Astamirov (1952–2000)"
       }
     ],
-    "summary": "1952 yılında doğan Tuğgeneral İsa Astamirov, hem Birinci hem de İkinci Çeçen Savaşı’nda Başkent Grozni’nin en zorlu savunma sektörlerine komuta eden tecrübeli bir kurmay ve saha komutanıdır.",
+    "summary": "1952 yılında doğan Tuğgeneral İsa Astamirov, hem Birinci hem de İkinci Çeçen Savaşı’nda başkent Grozni’nin en zorlu savunma sektörlerine komuta eden tecrübeli bir kurmay ve saha komutanıdır.",
     "bio": [
-      "1952 yılında doğan Tuğgeneral İsa Astamirov, hem Birinci hem de İkinci Çeçen Savaşı’nda Başkent Grozni’nin en zorlu savunma sektörlerine komuta eden tecrübeli bir kurmay ve saha komutanıdır.",
+      "1952 yılında doğan Tuğgeneral İsa Astamirov, hem Birinci hem de İkinci Çeçen Savaşı’nda başkent Grozni’nin en zorlu savunma sektörlerine komuta eden tecrübeli bir kurmay ve saha komutanıdır.",
       "1999–2000 kışında yüz bin kişilik Rus ordusunun Grozni’yi kuşattığı günlerde, Staropromıslovski ve Minutka hatlarında haftalarca süren göğüs göğüse şehir muharebelerini yönetmiştir. 24 Ocak 2000 tarihinde kuşatma altındaki Grozni’de mevzilerini terk etmeyerek son nefesine kadar çarpışmış ve şehit düşmüştür."
     ]
   },
   {
-    "slug": "adam-umalatov",
-    "name": "Adam Umalatov (Aba)",
-    "born": "1975",
-    "died": "2001",
-    "title": "Aba",
+    "slug": "leca-dudayev",
+    "name": "Leça Dudayev",
+    "born": "1961",
+    "died": "2000",
+    "title": "Grozni Belediye Başkanı",
+    "era": "yakin",
+    "region": "Çeçenya",
+    "birthPlace": "Grozni",
+    "deathPlace": "Alhan-Kala",
+    "center": "Grozni",
+    "image": "/images/people/leca-dudayev.webp",
+    "gallery": [
+      {
+        "src": "/images/people/leca-dudayev.webp",
+        "caption": "Leça Dudayev (1961–2000)"
+      }
+    ],
+    "summary": "1961 yılında Grozni’de doğan ve Şehit Cumhurbaşkanı Cevher Dudayev’in yeğeni olan Albay Leça Dudayev, Birinci Çeçen Savaşı’nda gösterdiği kahramanlıkların ardından başkent Grozni Belediye Başkanlığı görevini üstlenmiştir.",
+    "bio": [
+      "1961 yılında Grozni’de doğan ve Şehit Cumhurbaşkanı Cevher Dudayev’in yeğeni olan Albay Leça Dudayev, Birinci Çeçen Savaşı’nda gösterdiği kahramanlıkların ardından başkent Grozni Belediye Başkanlığı görevini üstlenmiştir.",
+      "1999–2000 kışında ağır Rus bombardımanı altındaki Grozni’den bir gün bile ayrılmayarak hem şehrin savunmasını hem de sivillerin korunmasını yönetmiştir. 1 Şubat 2000 gecesi Grozni kuşatmasını yarma harekâtı sırasında Alhan-Kala mayın tarlalarında silah arkadaşlarına güvenli geçiş yolu açarken en önde yürüyerek şehit düşmüştür."
+    ]
+  },
+  {
+    "slug": "aslambek-ismayilov",
+    "name": "Aslambek İsmayilov",
+    "born": "1962",
+    "died": "2000",
+    "title": "Grozni Savunması Başkomutanı",
+    "era": "yakin",
+    "region": "Çeçenya",
+    "birthPlace": "Çeçenya",
+    "deathPlace": "Alhan-Kala",
+    "center": "Çeçenya",
+    "image": "/images/people/aslambek-ismayilov.webp",
+    "gallery": [
+      {
+        "src": "/images/people/aslambek-ismayilov.webp",
+        "caption": "Aslambek İsmayilov (1962–2000)"
+      }
+    ],
+    "summary": "1962 yılında doğan Tuğgeneral Aslambek İsmayilov (‘Küçük Aslambek’), Ağustos 1996’da Grozni’nin Rus işgalinden kurtarıldığı efsanevi ‘Cihad Operasyonu’nun askeri planlayıcılarından ve saha komutanlarından biridir.",
+    "bio": [
+      "1962 yılında doğan Tuğgeneral Aslambek İsmayilov (‘Küçük Aslambek’), Ağustos 1996’da Grozni’nin Rus işgalinden kurtarıldığı efsanevi ‘Cihad Operasyonu’nun askeri planlayıcılarından ve saha komutanlarından biridir.",
+      "Eylül 1999’da başlayan İkinci Çeçen Savaşı’nda Cumhurbaşkanı Aslan Mashadov tarafından başkent Grozni Savunma Karargâhı Komutanlığı’na atanarak aylarca Rus ordusunu şehir kapılarında durdurmuştur. 1 Şubat 2000’de Grozni’den çıkış harekâtı sırasında Alhan-Kala geçişinde askerlerinin hayatını kurtarmak için mayınlı araziye en önde girerek şehadet mertebesine ulaşmıştır."
+    ]
+  },
+  {
+    "slug": "hunkarpasa-israpilov",
+    "name": "Hünkarpaşa İsrapilov",
+    "born": "1967",
+    "died": "2000",
+    "title": "Güneydoğu Cephesi Komutanı",
+    "era": "yakin",
+    "region": "Çeçenya",
+    "birthPlace": "Auh",
+    "deathPlace": "Alhan-Kala",
+    "center": "Auh",
+    "image": "/images/people/hunkarpasa-israpilov.webp",
+    "gallery": [
+      {
+        "src": "/images/people/hunkarpasa-israpilov.webp",
+        "caption": "Hünkarpaşa İsrapilov (1967–2000)"
+      }
+    ],
+    "summary": "26 Kasım 1967’de tarihi Auh bölgesinde dünyaya gelen Tuğgeneral Hünkarpaşa İsrapilov, Birinci Çeçen-Rus Savaşı’nda Güneydoğu Cephesi Komutanı ve Kizlyar-Pervomayskoye harekâtının sarsılmaz lideri olarak destan yazmıştır.",
+    "bio": [
+      "26 Kasım 1967’de tarihi Auh bölgesinde dünyaya gelen Tuğgeneral Hünkarpaşa İsrapilov, Birinci Çeçen-Rus Savaşı’nda Güneydoğu Cephesi Komutanı ve Kizlyar-Pervomayskoye harekâtının sarsılmaz lideri olarak destan yazmıştır.",
+      "Üstün cesareti sebebiyle İçkerya’nın en yüksek devlet nişanı olan ‘Koman Siy’ ile ödüllendirilmiş; 1999–2000 kışında Grozni savunmasının en çetin doğu hatlarına komuta etmiştir. 1 Şubat 2000’de Alhan-Kala’da birliklerine geçiş yolu açarken Leça Dudayev ve Aslambek İsmayilov ile birlikte en önde savaşarak şehit düşmüştür."
+    ]
+  },
+  {
+    "slug": "apti-ahmadov",
+    "name": "Apti Ahmadov",
+    "born": "1961",
+    "died": "2000",
+    "title": "Çeçen direniş komutanı",
+    "era": "yakin",
+    "region": "Çeçenya",
+    "birthPlace": "Urus-Martan",
+    "deathPlace": "Şatoy",
+    "center": "Urus-Martan",
+    "image": "/images/people/apti-ahmadov.webp",
+    "gallery": [
+      {
+        "src": "/images/people/apti-ahmadov.webp",
+        "caption": "Apti Ahmadov (1961–2000)"
+      }
+    ],
+    "summary": "1961 yılında Urus-Martan’da doğan Apti Ahmadov, Çeçen direnişinin sembol ailesi Gendargenoy Ahmadov kardeşlerin büyüklerinden ve en tecrübeli alay komutanlarından biridir.",
+    "bio": [
+      "1961 yılında Urus-Martan’da doğan Apti Ahmadov, Çeçen direnişinin sembol ailesi Gendargenoy Ahmadov kardeşlerin büyüklerinden ve en tecrübeli alay komutanlarından biridir.",
+      "Birinci Çeçen Savaşı’nda Bamut, Urus-Martan ve Grozni muharebelerinde Rus zırhlı birliklerine karşı üstün başarılar kazanmış; İkinci Çeçen Savaşı’nda Grozni’den çekilen birliklerin dağlık Şatoy hattında yeniden tertiplenmesini sağlamıştır. Şubat 2000 sonunda Şatoy ve Argun vadisi savunmasında Rus hava ve kara kuşatmasına karşı son mermisine kadar çarpışarak şehit düşmüştür."
+    ]
+  },
+  {
+    "slug": "taus-bagurayev",
+    "name": "Taus Bagurayev",
+    "born": "1964",
+    "died": "2000",
+    "title": "Çeçen direniş komutanı",
+    "era": "yakin",
+    "region": "Çeçenya",
+    "birthPlace": "Çeçenya",
+    "deathPlace": "Saadi-Kotar",
+    "center": "Çeçenya",
+    "image": "/images/people/taus-bagurayev.webp",
+    "gallery": [
+      {
+        "src": "/images/people/taus-bagurayev.webp",
+        "caption": "Taus Bagurayev (1964–2000)"
+      }
+    ],
+    "summary": "1964 yılında doğan Tuğgeneral Taus Bagurayev, Birinci Çeçen Savaşı’nda Güneybatı Cephesi’nde gösterdiği üstün yararlılıklarla Çeçen Silahlı Kuvvetleri’nin önde gelen komutanları arasında yer almıştır.",
+    "bio": [
+      "1964 yılında doğan Tuğgeneral Taus Bagurayev, Birinci Çeçen Savaşı’nda Güneybatı Cephesi’nde gösterdiği üstün yararlılıklarla Çeçen Silahlı Kuvvetleri’nin önde gelen komutanları arasında yer almıştır.",
+      "İkinci Çeçen Savaşı’nın en kanlı muharebelerinden biri olan Mart 2000 Komsomolskoye (Saadi-Kotar) savunmasında Rus ordusunun ağır kuşatmasına karşı haftalarca direnmiştir. Mart 2000’de Komsomolskoye’de silah arkadaşlarını kuşatmadan çıkarmak için artçı birlik olarak çarpışırken şehadet mertebesine ulaşmıştır."
+    ]
+  },
+  {
+    "slug": "abusupyan-movsayev",
+    "name": "Abusupyan Movsayev",
+    "born": "1959",
+    "died": "2000",
+    "title": "Devlet İstihbarat Başkanı",
     "era": "yakin",
     "region": "Çeçenya",
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/adam-umalatov.webp",
+    "image": "/images/people/abusupyan-movsayev.webp",
     "gallery": [
       {
-        "src": "/images/people/adam-umalatov.webp",
-        "caption": "Adam Umalatov (Aba) (1975–2001) — Arşiv fotoğrafı."
+        "src": "/images/people/abusupyan-movsayev.webp",
+        "caption": "Abusupyan Movsayev (1959–2000)"
       }
     ],
-    "summary": "1975 yılında doğan ve cephede ‘Aba’ lakabıyla tanınan Adam Umalatov, 1994 yılında başlayan Birinci Çeçen Savaşı’ndan itibaren vatan savunmasının en ön saflarında yer almıştır.",
+    "summary": "1959 yılında doğan Tuğgeneral Abusupyan Movsayev, Cevher Dudayev ve Aslan Mashadov dönemlerinde Çeçen İçkerya Cumhuriyeti Devlet Güvenlik Dairesi Başkanlığı ve Emniyet Genel Müdürlüğü görevlerini yürütmüştür.",
     "bio": [
-      "1975 yılında doğan ve cephede ‘Aba’ lakabıyla tanınan Adam Umalatov, 1994 yılında başlayan Birinci Çeçen Savaşı’ndan itibaren vatan savunmasının en ön saflarında yer almıştır.",
-      "1996 Grozni kurtuluş harekâtında ve İkinci Çeçen Savaşı’nın Argun, Şali ve Germençuk muharebelerinde özel taarruz gruplarına komuta ederek Rus zırhlı birliklerine ağır darbeler vurmuştur. Kasım 2001’de Rus işgal güçlerinin kuşatmasında son mermisine kadar çarpışarak 26 yaşında şehit düşmüştür."
+      "1959 yılında doğan Tuğgeneral Abusupyan Movsayev, Cevher Dudayev ve Aslan Mashadov dönemlerinde Çeçen İçkerya Cumhuriyeti Devlet Güvenlik Dairesi Başkanlığı ve Emniyet Genel Müdürlüğü görevlerini yürütmüştür.",
+      "Şamil Basayev’in en yakın dava arkadaşlarından biri olarak Abhazya Savaşı’nda ve Birinci Çeçen Savaşı’nın tüm stratejik cephelerinde kritik istihbarat ve saha operasyonlarını yönetmiştir. 23 Mayıs 2000 tarihinde Çeçenistan’ın dağlık bölgesinde Rus özel kuvvetlerinin pususunda son mermisine kadar çarpışarak şehit düşmüştür."
+    ]
+  },
+  {
+    "slug": "ruslan-alihaciyev",
+    "name": "Ruslan Alihaciyev",
+    "born": "1961",
+    "died": "2000",
+    "title": "İçkeriya Parlamentosu 4. Başkanı",
+    "era": "yakin",
+    "region": "Çeçenya",
+    "birthPlace": "Şali",
+    "deathPlace": "Moskova",
+    "center": "Şali",
+    "image": "/images/people/ruslan-alihaciyev.webp",
+    "gallery": [
+      {
+        "src": "/images/people/ruslan-alihaciyev.webp",
+        "caption": "Ruslan Alihaciyev (1961–2000)"
+      }
+    ],
+    "summary": "1961 yılında Şali şehrinde doğan Tuğgeneral Ruslan Alihaciyev, Birinci Çeçen Savaşı’nda (1994–1996) Şali Alayı ve Güney Cephesi Komutanı olarak kazandığı zaferlerle ‘Koman Siy’ nişanıyla taltif edilmiştir.",
+    "bio": [
+      "1961 yılında Şali şehrinde doğan Tuğgeneral Ruslan Alihaciyev, Birinci Çeçen Savaşı’nda (1994–1996) Şali Alayı ve Güney Cephesi Komutanı olarak kazandığı zaferlerle ‘Koman Siy’ nişanıyla taltif edilmiştir.",
+      "1997–2000 yılları arasında Çeçen İçkerya Cumhuriyeti Parlamentosu’nun 4. Başkanı olarak görev yapmış; hem cephede hem de diplomaside Çeçen milletinin meşru iradesini temsil etmiştir. Mayıs 2000’de Şali’deki evinden Rus güçlerince kaçırılan Ruslan Alihaciyev, Moskova’daki Lefortovo zindanında ağır işkenceler altında tek bir taviz dahi vermeden şehit düşmüştür."
+    ]
+  },
+  {
+    "slug": "dalhan-hojayev",
+    "name": "Dalhan Hojayev",
+    "born": "1961",
+    "died": "2000",
+    "title": "Çeçen tarihçi ve direniş komutanı",
+    "era": "yakin",
+    "region": "Çeçenya",
+    "birthPlace": "Grozni",
+    "deathPlace": "Valerik",
+    "center": "Grozni",
+    "image": "/images/people/dalhan-hojayev.webp",
+    "gallery": [
+      {
+        "src": "/images/people/dalhan-hojayev.webp",
+        "caption": "Dalhan Hojayev (1961–2000)"
+      }
+    ],
+    "summary": "18 Nisan 1961’de Grozni’de doğan Dalhan Hojayev, Çeçen Devlet Üniversitesi Tarih Bölümü mezunu bir tarihçi ve müze araştırmacısı olarak 19. yüzyıl Kafkas Savaşları ve Çeçen naibleri üzerine en kapsamlı arşiv eserlerini kaleme almıştır.",
+    "bio": [
+      "18 Nisan 1961’de Grozni’de doğan Dalhan Hojayev, Çeçen Devlet Üniversitesi Tarih Bölümü mezunu bir tarihçi ve müze araştırmacısı olarak 19. yüzyıl Kafkas Savaşları ve Çeçen naibleri üzerine en kapsamlı arşiv eserlerini kaleme almıştır.",
+      "Rus işgali başladığında kaleminin yanına silahını da alarak Ruslan Gelayev’in ‘Borz’ (Kurt) Özel Kuvvetler Alayı’nda kurmay komutan olmuş, Devlet Savunma Konseyi Sekreterliği ve tuğgenerallik görevlerini üstlenmiştir. 26 Temmuz 2000 tarihinde Valerik köyünde Rus özel kuvvetlerinin saldırısında şehit düşen Dalhan Hojayev, Çeçen direnişinin hem hafızası hem de kahraman komutanı olarak tarihe geçmiştir."
+    ]
+  },
+  {
+    "slug": "ramzan-ahmadov",
+    "name": "Ramzan Ahmadov",
+    "born": "1970",
+    "died": "2001",
+    "title": "Urus-Martan ve Grozni Cephesi Komutanı",
+    "era": "yakin",
+    "region": "Çeçenya",
+    "birthPlace": "Kazakistan",
+    "deathPlace": "Starye Atagi",
+    "center": "Kazakistan",
+    "image": "/images/people/ramzan-ahmadov.webp",
+    "gallery": [
+      {
+        "src": "/images/people/ramzan-ahmadov.webp",
+        "caption": "Ramzan Ahmadov (1970–2001)"
+      }
+    ],
+    "summary": "4 Şubat 1970’te doğan Tuğgeneral Ramzan Ahmadov, Abhazya ve Birinci Çeçen Savaşı’ndan itibaren gösterdiği üstün cesaretle İçkerya Silahlı Kuvvetleri’nin en genç ve en atılgan generallerinden biri olmuştur.",
+    "bio": [
+      "4 Şubat 1970’te doğan Tuğgeneral Ramzan Ahmadov, Abhazya ve Birinci Çeçen Savaşı’ndan itibaren gösterdiği üstün cesaretle İçkerya Silahlı Kuvvetleri’nin en genç ve en atılgan generallerinden biri olmuştur.",
+      "İkinci Çeçen Savaşı’nda Urus-Martan, Argun ve Batı Grozni cephelerine komuta etmiş; Rus zırhlı konvoylarına karşı düzenlediği yıldırım baskınlarla işgal güçlerine ağır kayıplar verdirmiştir. Şubat 2001’de Grozni yakınlarındaki Starye Atagi geçişinde Rus özel kuvvetlerinin pususunda silah arkadaşlarını koruyarak son mermisine kadar çarpışmış ve şehit düşmüştür."
     ]
   },
   {
@@ -1517,12 +1099,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/arbi-barayev.webp",
-        "caption": "Arbi Barayev (1973–2001) — Arşiv fotoğrafı."
+        "caption": "Arbi Barayev (1973–2001)"
       }
     ],
-    "summary": "27 Mayıs 1973’te Alhan-Kala’da doğan Arbi Barayev, Birinci Çeçen Savaşı sırasında Sultan Gelishanov ve Hünkarpaşa İsrapilov’un saflarında çarpışmış, ardından Özel Amaçlı İslam Alayı’nı (İPON) kurarak Tuğgeneral rütbesine yükselmiştir.",
+    "summary": "27 Mayıs 1973’te Alhan-Kala’da doğan Arbi Barayev, Birinci Çeçen Savaşı sırasında Sultan Gelishanov ve Hünkarpaşa İsrapilov’un saflarında çarpışmış, ardından Özel Amaçlı İslam Alayı’nı (İPON) kurarak tuğgeneral rütbesine yükselmiştir.",
     "bio": [
-      "27 Mayıs 1973’te Alhan-Kala’da doğan Arbi Barayev, Birinci Çeçen Savaşı sırasında Sultan Gelishanov ve Hünkarpaşa İsrapilov’un saflarında çarpışmış, ardından Özel Amaçlı İslam Alayı’nı (İPON) kurarak Tuğgeneral rütbesine yükselmiştir.",
+      "27 Mayıs 1973’te Alhan-Kala’da doğan Arbi Barayev, Birinci Çeçen Savaşı sırasında Sultan Gelishanov ve Hünkarpaşa İsrapilov’un saflarında çarpışmış, ardından Özel Amaçlı İslam Alayı’nı (İPON) kurarak tuğgeneral rütbesine yükselmiştir.",
       "İkinci Çeçen Savaşı’nda Grozni-Urus-Martan otoyolu ve Alhan-Kala hattında Rus askeri konvoylarına ve karargâhlarına yönelik çok sayıda saha operasyonunu yönetmiştir. 23 Haziran 2001 tarihinde doğduğu köy olan Alhan-Kala’da günler süren ağır Rus kuşatmasında teslim olmayı reddederek çatışmada şehit düşmüştür."
     ]
   },
@@ -1541,7 +1123,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/magomed-tsagarayev.webp",
-        "caption": "Magomed Tsagarayev (1975–2001) — Arşiv fotoğrafı."
+        "caption": "Magomed Tsagarayev (1975–2001)"
       }
     ],
     "summary": "1975 yılında Çeçenistan’da doğan Magomed Tsagarayev, genç yaşta Birinci Çeçen Savaşı’na katılarak cesareti ve askeri disipliniyle kısa sürede müfreze komutanlığına yükselmiştir.",
@@ -1551,75 +1133,27 @@ export const PEOPLE: Person[] = [
     ]
   },
   {
-    "slug": "ramzan-ahmadov",
-    "name": "Ramzan Ahmadov",
-    "born": "1970",
+    "slug": "adam-umalatov",
+    "name": "Adam Umalatov (Aba)",
+    "born": "1975",
     "died": "2001",
-    "title": "Urus-Martan ve Grozni Cephesi Komutanı",
-    "era": "yakin",
-    "region": "Çeçenya",
-    "birthPlace": "Kazakistan",
-    "deathPlace": "Starye Atagi",
-    "center": "Kazakistan",
-    "image": "/images/people/ramzan-ahmadov.webp",
-    "gallery": [
-      {
-        "src": "/images/people/ramzan-ahmadov.webp",
-        "caption": "Ramzan Ahmadov (1970–2001) — Arşiv fotoğrafı."
-      }
-    ],
-    "summary": "4 Şubat 1970’te doğan Tuğgeneral Ramzan Ahmadov, Abhazya ve Birinci Çeçen Savaşı’ndan itibaren gösterdiği üstün cesaretle İçkerya Silahlı Kuvvetleri’nin en genç ve en atılgan generallerinden biri olmuştur.",
-    "bio": [
-      "4 Şubat 1970’te doğan Tuğgeneral Ramzan Ahmadov, Abhazya ve Birinci Çeçen Savaşı’ndan itibaren gösterdiği üstün cesaretle İçkerya Silahlı Kuvvetleri’nin en genç ve en atılgan generallerinden biri olmuştur.",
-      "İkinci Çeçen Savaşı’nda Urus-Martan, Argun ve Batı Grozni cephelerine komuta etmiş; Rus zırhlı konvoylarına karşı düzenlediği yıldırım baskınlarla işgal güçlerine ağır kayıplar verdirmiştir. Şubat 2001’de Grozni yakınlarındaki Starye Atagi geçişinde Rus özel kuvvetlerinin pususunda silah arkadaşlarını koruyarak son mermisine kadar çarpışmış ve şehit düşmüştür."
-    ]
-  },
-  {
-    "slug": "aslambek-abdulhaciyev",
-    "name": "Aslambek Abdulhaciyev",
-    "born": "1962",
-    "died": "2002",
-    "title": "Çeçen direniş komutanı",
-    "era": "yakin",
-    "region": "Çeçenya",
-    "birthPlace": "Çeçenya",
-    "deathPlace": "Şali",
-    "center": "Çeçenya",
-    "image": "/images/people/aslambek-abdulhaciyev.webp",
-    "gallery": [
-      {
-        "src": "/images/people/aslambek-abdulhaciyev.webp",
-        "caption": "Aslambek Abdulhaciyev (1962–2002) — Arşiv fotoğrafı."
-      }
-    ],
-    "summary": "12 Nisan 1962’de doğan ve devasa fiziği ile korkusuzluğu sebebiyle ‘Büyük Aslambek’ olarak tanınan Tuğgeneral Aslambek Abdulhaciyev, Abhazya Savaşı ve Birinci Çeçen Savaşı’nda Şamil Basayev’in en yakın saha komutanı olmuştur.",
-    "bio": [
-      "12 Nisan 1962’de doğan ve devasa fiziği ile korkusuzluğu sebebiyle ‘Büyük Aslambek’ olarak tanınan Tuğgeneral Aslambek Abdulhaciyev, Abhazya Savaşı ve Birinci Çeçen Savaşı’nda Şamil Basayev’in en yakın saha komutanı olmuştur.",
-      "Grozni savunmasında, Budyonnovsk harekâtında ve 1996 Grozni kurtuluşunda en ön saflarda çarpışarak İçkerya’nın en yüksek madalyası olan ‘Koman Siy’ nişanıyla ödüllendirilmiş, savaş sonrasında Şali Kaymakamlığı ve Milletvekilliği yapmıştır. 26 Ağustos 2002 tarihinde Şali’de kuşatıldığı evde Rus güçlerine teslim olmayı reddederek son nefesine kadar çarpışmış ve şehit düşmüştür."
-    ]
-  },
-  {
-    "slug": "aydamir-abalayev",
-    "name": "Aydamir Abalayev",
-    "born": "1964",
-    "died": "2002",
-    "title": "Çeçen direniş komutanı",
+    "title": "Aba",
     "era": "yakin",
     "region": "Çeçenya",
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aydamir-abalayev.webp",
+    "image": "/images/people/adam-umalatov.webp",
     "gallery": [
       {
-        "src": "/images/people/aydamir-abalayev.webp",
-        "caption": "Aydamir Abalayev (1964–2002) — Arşiv fotoğrafı."
+        "src": "/images/people/adam-umalatov.webp",
+        "caption": "Adam Umalatov (Aba) (1975–2001)"
       }
     ],
-    "summary": "1964 yılında doğan Tuğgeneral Aydamir Abalayev, Birinci ve İkinci Çeçen Savaşları boyunca Doğu Cephesi’nde Nojay-Yurt ve Gudermes dağlık sektörlerinin en dirayetli komutanlarından biri olmuştur.",
+    "summary": "1975 yılında doğan ve cephede ‘Aba’ lakabıyla tanınan Adam Umalatov, 1994 yılında başlayan Birinci Çeçen Savaşı’ndan itibaren vatan savunmasının en ön saflarında yer almıştır.",
     "bio": [
-      "1964 yılında doğan Tuğgeneral Aydamir Abalayev, Birinci ve İkinci Çeçen Savaşları boyunca Doğu Cephesi’nde Nojay-Yurt ve Gudermes dağlık sektörlerinin en dirayetli komutanlarından biri olmuştur.",
-      "Cumhurbaşkanı Aslan Mashadov’a bağlı düzenli İçkerya Silahlı Kuvvetleri bünyesinde doğu sınır hattındaki savunma ve gerilla harekâtlarını yıllarca başarıyla yönetmiştir. 1 Mayıs 2002 tarihinde Çeçenistan’ın doğu bölgesinde Rus kuvvetleriyle girilen şiddetli çatışmada şehit düşmüştür."
+      "1975 yılında doğan ve cephede ‘Aba’ lakabıyla tanınan Adam Umalatov, 1994 yılında başlayan Birinci Çeçen Savaşı’ndan itibaren vatan savunmasının en ön saflarında yer almıştır.",
+      "1996 Grozni kurtuluş harekâtında ve İkinci Çeçen Savaşı’nın Argun, Şali ve Germençuk muharebelerinde özel taarruz gruplarına komuta ederek Rus zırhlı birliklerine ağır darbeler vurmuştur. Kasım 2001’de Rus işgal güçlerinin kuşatmasında son mermisine kadar çarpışarak 26 yaşında şehit düşmüştür."
     ]
   },
   {
@@ -1637,7 +1171,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/emir-hattab.webp",
-        "caption": "Emir Hattab (1969–2002) — Arşiv fotoğrafı."
+        "caption": "Emir Hattab (1969–2002)"
       }
     ],
     "summary": "1969 yılında doğan ve genç yaşta İslam coğrafyasındaki direniş saflarına katılan Emir Hattab, 1995 kışında Çeçenistan’a gelerek hayatının sonuna kadar Kafkasya’nın hürriyet mücadelesine omuz vermiştir.",
@@ -1647,75 +1181,27 @@ export const PEOPLE: Person[] = [
     ]
   },
   {
-    "slug": "huseyin-isabayev",
-    "name": "Hüseyin İsabayev",
-    "born": "1960",
-    "died": "2002",
-    "title": "Emir Abdullah",
-    "era": "yakin",
-    "region": "Çeçenya – Pankisi",
-    "birthPlace": "Çeçenya",
-    "deathPlace": "İtum-Kale",
-    "center": "Çeçenya",
-    "image": "/images/people/huseyin-isabayev.webp",
-    "gallery": [
-      {
-        "src": "/images/people/huseyin-isabayev.webp",
-        "caption": "Hüseyin İsabayev (1960–2002) — Arşiv fotoğrafı."
-      }
-    ],
-    "summary": "1960 yılında doğan Hüseyin İsabayev, 1992 Abhazya Savaşı’ndan itibaren Şamil Basayev’in en yakın silah arkadaşlarından biri olarak Çeçen bağımsızlık mücadelesinin çekirdek kadrosunda yer almıştır.",
-    "bio": [
-      "1960 yılında doğan Hüseyin İsabayev, 1992 Abhazya Savaşı’ndan itibaren Şamil Basayev’in en yakın silah arkadaşlarından biri olarak Çeçen bağımsızlık mücadelesinin çekirdek kadrosunda yer almıştır.",
-      "Birinci Çeçen Savaşı’nda Vedeno taburunda ve Budyonnovsk harekâtında çarpışmış; İkinci Çeçen Savaşı’nda ise Güney Çeçenistan dağlarında ikmal ve savunma hatlarını yönetmiştir. Temmuz 2002’de İtum-Kale ve Gürcistan sınır hattındaki dağlık geçitlerde Rus hava indirme birlikleriyle girilen çatışmada şehit düşmüştür."
-    ]
-  },
-  {
-    "slug": "movsar-barayev",
-    "name": "Movsar Barayev",
-    "born": "1979",
+    "slug": "aydamir-abalayev",
+    "name": "Aydamir Abalayev",
+    "born": "1964",
     "died": "2002",
     "title": "Çeçen direniş komutanı",
     "era": "yakin",
     "region": "Çeçenya",
-    "birthPlace": "Argun",
+    "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
-    "center": "Argun",
-    "image": "/images/people/movsar-barayev.webp",
+    "center": "Çeçenya",
+    "image": "/images/people/aydamir-abalayev.webp",
     "gallery": [
       {
-        "src": "/images/people/movsar-barayev.webp",
-        "caption": "Movsar Barayev (1979–2002) — Arşiv fotoğrafı."
+        "src": "/images/people/aydamir-abalayev.webp",
+        "caption": "Aydamir Abalayev (1964–2002)"
       }
     ],
-    "summary": "26 Ekim 1979 tarihinde Argun şehrinde Nohçi direnişçi bir ailenin evladı olarak dünyaya gelen Movsar Barayev, genç yaşta Çeçen bağımsızlık mücadelesine katılarak amcası Arbi Barayev’in komutasında çarpışmıştır.",
+    "summary": "1964 yılında doğan Tuğgeneral Aydamir Abalayev, Birinci ve İkinci Çeçen Savaşları boyunca Doğu Cephesi’nde Nojay-Yurt ve Gudermes dağlık sektörlerinin en dirayetli komutanlarından biri olmuştur.",
     "bio": [
-      "26 Ekim 1979 tarihinde Argun şehrinde Nohçi direnişçi bir ailenin evladı olarak dünyaya gelen Movsar Barayev, genç yaşta Çeçen bağımsızlık mücadelesine katılarak amcası Arbi Barayev’in komutasında çarpışmıştır.",
-      "Haziran 2001’de amcasının şehadetinin ardından ‘Emir Süleyman’ adıyla Özel Amaçlı İslam Alayı (İPON) Komutanlığına geçmiş; Argun, Gudermes ve Grozni sektörlerinde çok sayıda cephe operasyonunu yönetmiştir. 26 Ekim 2002 tarihinde, 23. doğum gününde Rus özel kuvvetleriyle girilen silahlı çatışmada arkadaşlarıyla birlikte şehit düşmüştür."
-    ]
-  },
-  {
-    "slug": "muhammed-argunski",
-    "name": "Muhammed Argunski (Magomed Şovhalov)",
-    "born": "1977",
-    "died": "2002",
-    "title": "İslam Âlimi ve Hatip",
-    "era": "yakin",
-    "region": "Çeçenya",
-    "birthPlace": "Argun",
-    "deathPlace": "Çeçenya",
-    "center": "Argun",
-    "image": "/images/people/muhammed-argunski.webp",
-    "gallery": [
-      {
-        "src": "/images/people/muhammed-argunski.webp",
-        "caption": "Muhammed Argunski (Magomed Şovhalov) (1977–2002) — Arşiv fotoğrafı."
-      }
-    ],
-    "summary": "1977 yılında Çeçenistan’ın Argun şehrinde doğan ve gerçek adı Magomed Şovhalov olan Muhammed Argunski, genç yaşta İslami ilimlerde derinleşmiş Nohçi İslam âlimi ve mücahittir.",
-    "bio": [
-      "1977 yılında Çeçenistan’ın Argun şehrinde doğan ve gerçek adı Magomed Şovhalov olan Muhammed Argunski, genç yaşta İslami ilimlerde derinleşmiş Nohçi İslam âlimi ve mücahittir.",
-      "Birinci ve İkinci Çeçen Savaşları yıllarında etkileyici hitabeti ve samimiyetiyle Çeçen gençliğinin manevi rehberlerinden biri olmuş; cephedeki direnişçilere cihad ahlakını, sabrı ve istikameti anlatmıştır. Hem ilmiyle hem de silahıyla Argun ve dağlık bölgelerdeki direniş saflarında bizzat çarpışan Muhammed Argunski, 2002 yılında Rus işgal güçleriyle girilen çatışmada 25 yaşında şehit düşmüştür."
+      "1964 yılında doğan Tuğgeneral Aydamir Abalayev, Birinci ve İkinci Çeçen Savaşları boyunca Doğu Cephesi’nde Nojay-Yurt ve Gudermes dağlık sektörlerinin en dirayetli komutanlarından biri olmuştur.",
+      "Cumhurbaşkanı Aslan Mashadov’a bağlı düzenli İçkerya Silahlı Kuvvetleri bünyesinde doğu sınır hattındaki savunma ve gerilla harekâtlarını yıllarca başarıyla yönetmiştir. 1 Mayıs 2002 tarihinde Çeçenistan’ın doğu bölgesinde Rus kuvvetleriyle girilen şiddetli çatışmada şehit düşmüştür."
     ]
   },
   {
@@ -1733,7 +1219,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/rizvan-ahmadov.webp",
-        "caption": "Rizvan Ahmadov (1957–2002) — Arşiv fotoğrafı."
+        "caption": "Rizvan Ahmadov (1957–2002)"
       }
     ],
     "summary": "6 Eylül 1957’de Kazakistan sürgününde doğan Rizvan Ahmadov, vatanı için yedi oğlunu şehit veren Gendargenoy Ahmadov ailesinin ağabeyi ve en tecrübeli saha komutanlarından biridir.",
@@ -1743,27 +1229,27 @@ export const PEOPLE: Person[] = [
     ]
   },
   {
-    "slug": "salman-raduyev",
-    "name": "Salman Raduyev",
-    "born": "1967",
+    "slug": "huseyin-isabayev",
+    "name": "Hüseyin İsabayev",
+    "born": "1960",
     "died": "2002",
-    "title": "Çeçen direniş komutanı",
+    "title": "Emir Abdullah",
     "era": "yakin",
-    "region": "Çeçenya",
-    "birthPlace": "Gudermes",
-    "deathPlace": "Solikamsk",
-    "center": "Gudermes",
-    "image": "/images/people/salman-raduyev.webp",
+    "region": "Çeçenya – Pankisi",
+    "birthPlace": "Çeçenya",
+    "deathPlace": "İtum-Kale",
+    "center": "Çeçenya",
+    "image": "/images/people/huseyin-isabayev.webp",
     "gallery": [
       {
-        "src": "/images/people/salman-raduyev.webp",
-        "caption": "Salman Raduyev (1967–2002) — Arşiv fotoğrafı."
+        "src": "/images/people/huseyin-isabayev.webp",
+        "caption": "Hüseyin İsabayev (1960–2002)"
       }
     ],
-    "summary": "13 Şubat 1967’de Gudermes şehrinde Gordali taypına mensup bir ailede doğan Tuğgeneral Salman Raduyev, 1992’de Gudermes Valisi olmuş ve Şehit Cumhurbaşkanı Cevher Dudayev’e bağlı ‘Başkanlık Berelileri’ muhafız alayını kurmuştur.",
+    "summary": "1960 yılında doğan Hüseyin İsabayev, 1992 Abhazya Savaşı’ndan itibaren Şamil Basayev’in en yakın silah arkadaşlarından biri olarak Çeçen bağımsızlık mücadelesinin çekirdek kadrosunda yer almıştır.",
     "bio": [
-      "13 Şubat 1967’de Gudermes şehrinde Gordali taypına mensup bir ailede doğan Tuğgeneral Salman Raduyev, 1992’de Gudermes Valisi olmuş ve Şehit Cumhurbaşkanı Cevher Dudayev’e bağlı ‘Başkanlık Berelileri’ muhafız alayını kurmuştur.",
-      "Birinci Çeçen Savaşı’nda Kuzeydoğu Cephesi ve ‘General Dudayev Ordusu’ komutanı olarak savaşmış; Mart 1996’da uğradığı ağır suikasttan sağ kurtularak yüzündeki ağır yaralara rağmen mücadelesini sürdürmüştür. Mart 2000’de esir düşen Salman Raduyev, Rus mahkemelerinde asla af dilememiş ve 14 Aralık 2002’de Solikamsk ‘Beyaz Kuğu’ cezaevinde işkence altında boyun eğmeden şehit olmuştur."
+      "1960 yılında doğan Hüseyin İsabayev, 1992 Abhazya Savaşı’ndan itibaren Şamil Basayev’in en yakın silah arkadaşlarından biri olarak Çeçen bağımsızlık mücadelesinin çekirdek kadrosunda yer almıştır.",
+      "Birinci Çeçen Savaşı’nda Vedeno taburunda ve Budyonnovsk harekâtında çarpışmış; İkinci Çeçen Savaşı’nda ise Güney Çeçenistan dağlarında ikmal ve savunma hatlarını yönetmiştir. Temmuz 2002’de İtum-Kale ve Gürcistan sınır hattındaki dağlık geçitlerde Rus hava indirme birlikleriyle girilen çatışmada şehit düşmüştür."
     ]
   },
   {
@@ -1781,13 +1267,37 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/turpal-ali-atgeriyev.webp",
-        "caption": "Turpal-Ali Atgeriyev (1969–2002) — Arşiv fotoğrafı."
+        "caption": "Turpal-Ali Atgeriyev (1969–2002)"
       }
     ],
     "summary": "8 Mayıs 1969’da Alleroy köyünde dünyaya gelen ve hukuk-tarih eğitimi alan Turpal-Ali Atgeriyev, Birinci Çeçen-Rus Savaşı’nda Novogroznenski Alayı ve Cephe Komutanı olarak büyük zaferler kazanmıştır.",
     "bio": [
       "8 Mayıs 1969’da Alleroy köyünde dünyaya gelen ve hukuk-tarih eğitimi alan Turpal-Ali Atgeriyev, Birinci Çeçen-Rus Savaşı’nda Novogroznenski Alayı ve Cephe Komutanı olarak büyük zaferler kazanmıştır.",
       "Savaş sonrasında Cumhurbaşkanı Aslan Mashadov hükümetinde Çeçen İçkerya Cumhuriyeti Başbakan Yardımcılığı ve Milli Güvenlik Bakanlığı görevlerini başarıyla yürütmüştür. İkinci savaşta esir düşmesine rağmen Rus mahkemelerinde davasından asla taviz vermeyen Turpal-Ali Atgeriyev, 2002 yılında Yekaterinburg cezaevinde ağır işkenceler altında boyun eğmeden şehit düşmüştür."
+    ]
+  },
+  {
+    "slug": "aslambek-abdulhaciyev",
+    "name": "Aslambek Abdulhaciyev",
+    "born": "1962",
+    "died": "2002",
+    "title": "Çeçen direniş komutanı",
+    "era": "yakin",
+    "region": "Çeçenya",
+    "birthPlace": "Çeçenya",
+    "deathPlace": "Şali",
+    "center": "Çeçenya",
+    "image": "/images/people/aslambek-abdulhaciyev.webp",
+    "gallery": [
+      {
+        "src": "/images/people/aslambek-abdulhaciyev.webp",
+        "caption": "Aslambek Abdulhaciyev (1962–2002)"
+      }
+    ],
+    "summary": "12 Nisan 1962’de doğan ve devasa fiziği ile korkusuzluğu sebebiyle ‘Büyük Aslambek’ olarak tanınan Tuğgeneral Aslambek Abdulhaciyev, Abhazya Savaşı ve Birinci Çeçen Savaşı’nda Şamil Basayev’in en yakın saha komutanı olmuştur.",
+    "bio": [
+      "12 Nisan 1962’de doğan ve devasa fiziği ile korkusuzluğu sebebiyle ‘Büyük Aslambek’ olarak tanınan Tuğgeneral Aslambek Abdulhaciyev, Abhazya Savaşı ve Birinci Çeçen Savaşı’nda Şamil Basayev’in en yakın saha komutanı olmuştur.",
+      "Grozni savunmasında, Budyonnovsk harekâtında ve 1996 Grozni kurtuluşunda en ön saflarda çarpışarak İçkerya’nın en yüksek madalyası olan ‘Koman Siy’ nişanıyla ödüllendirilmiş, savaş sonrasında Şali kaymakamlığı ve milletvekilliği yapmıştır. 26 Ağustos 2002 tarihinde Şali’de kuşatıldığı evde Rus güçlerine teslim olmayı reddederek son nefesine kadar çarpışmış ve şehit düşmüştür."
     ]
   },
   {
@@ -1805,13 +1315,85 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/zelimhan-ahmadov.webp",
-        "caption": "Zelimhan Ahmadov (1975–2002) — Arşiv fotoğrafı."
+        "caption": "Zelimhan Ahmadov (1975–2002)"
       }
     ],
     "summary": "1975 yılında Urus-Martan’da doğan Zelimhan Ahmadov, altı ağabeyiyle birlikte Çeçen bağımsızlık savaşına katılan Gendargenoy Ahmadov kardeşlerin genç ve gözü pek komutanıdır.",
     "bio": [
       "1975 yılında Urus-Martan’da doğan Zelimhan Ahmadov, altı ağabeyiyle birlikte Çeçen bağımsızlık savaşına katılan Gendargenoy Ahmadov kardeşlerin genç ve gözü pek komutanıdır.",
-      "Haziran 2002’de ağabeyi Rizvan Ahmadov’un şehadetinin ardından Grozni ve Urus-Martan sektörlerindeki direniş birliklerinin komutasını devralarak mücadeleyi kesintisiz sürdürmüştür. 14 Eylül 2002 tarihinde Başkent Grozni yakınlarında Rus işgal kuvvetleriyle girilen çatışmada 27 yaşında şehadet mertebesine ulaşmıştır."
+      "Haziran 2002’de ağabeyi Rizvan Ahmadov’un şehadetinin ardından Grozni ve Urus-Martan sektörlerindeki direniş birliklerinin komutasını devralarak mücadeleyi kesintisiz sürdürmüştür. 14 Eylül 2002 tarihinde başkent Grozni yakınlarında Rus işgal kuvvetleriyle girilen çatışmada 27 yaşında şehadet mertebesine ulaşmıştır."
+    ]
+  },
+  {
+    "slug": "movsar-barayev",
+    "name": "Movsar Barayev",
+    "born": "1979",
+    "died": "2002",
+    "title": "Çeçen direniş komutanı",
+    "era": "yakin",
+    "region": "Çeçenya",
+    "birthPlace": "Argun",
+    "deathPlace": "Çeçenya",
+    "center": "Argun",
+    "image": "/images/people/movsar-barayev.webp",
+    "gallery": [
+      {
+        "src": "/images/people/movsar-barayev.webp",
+        "caption": "Movsar Barayev (1979–2002)"
+      }
+    ],
+    "summary": "26 Ekim 1979 tarihinde Argun şehrinde Nohçi direnişçi bir ailenin evladı olarak dünyaya gelen Movsar Barayev, genç yaşta Çeçen bağımsızlık mücadelesine katılarak amcası Arbi Barayev’in komutasında çarpışmıştır.",
+    "bio": [
+      "26 Ekim 1979 tarihinde Argun şehrinde Nohçi direnişçi bir ailenin evladı olarak dünyaya gelen Movsar Barayev, genç yaşta Çeçen bağımsızlık mücadelesine katılarak amcası Arbi Barayev’in komutasında çarpışmıştır.",
+      "Haziran 2001’de amcasının şehadetinin ardından ‘Emir Süleyman’ adıyla Özel Amaçlı İslam Alayı (İPON) Komutanlığına geçmiş; Argun, Gudermes ve Grozni sektörlerinde çok sayıda cephe operasyonunu yönetmiştir. 26 Ekim 2002 tarihinde, 23. doğum gününde Rus özel kuvvetleriyle girilen silahlı çatışmada arkadaşlarıyla birlikte şehit düşmüştür."
+    ]
+  },
+  {
+    "slug": "salman-raduyev",
+    "name": "Salman Raduyev",
+    "born": "1967",
+    "died": "2002",
+    "title": "Çeçen direniş komutanı",
+    "era": "yakin",
+    "region": "Çeçenya",
+    "birthPlace": "Gudermes",
+    "deathPlace": "Solikamsk",
+    "center": "Gudermes",
+    "image": "/images/people/salman-raduyev.webp",
+    "gallery": [
+      {
+        "src": "/images/people/salman-raduyev.webp",
+        "caption": "Salman Raduyev (1967–2002)"
+      }
+    ],
+    "summary": "13 Şubat 1967’de Gudermes şehrinde Gordali taypına mensup bir ailede doğan Tuğgeneral Salman Raduyev, 1992’de Gudermes Valisi olmuş ve Şehit Cumhurbaşkanı Cevher Dudayev’e bağlı ‘Başkanlık Berelileri’ muhafız alayını kurmuştur.",
+    "bio": [
+      "13 Şubat 1967’de Gudermes şehrinde Gordali taypına mensup bir ailede doğan Tuğgeneral Salman Raduyev, 1992’de Gudermes Valisi olmuş ve Şehit Cumhurbaşkanı Cevher Dudayev’e bağlı ‘Başkanlık Berelileri’ muhafız alayını kurmuştur.",
+      "Birinci Çeçen Savaşı’nda Kuzeydoğu Cephesi ve ‘General Dudayev Ordusu’ komutanı olarak savaşmış; Mart 1996’da uğradığı ağır suikasttan sağ kurtularak yüzündeki ağır yaralara rağmen mücadelesini sürdürmüştür. Mart 2000’de esir düşen Salman Raduyev, Rus mahkemelerinde asla af dilememiş ve 14 Aralık 2002’de Solikamsk ‘Beyaz Kuğu’ cezaevinde işkence altında boyun eğmeden şehit olmuştur."
+    ]
+  },
+  {
+    "slug": "muhammed-argunski",
+    "name": "Muhammed Argunski (Magomed Şovhalov)",
+    "born": "1977",
+    "died": "2002",
+    "title": "İslam Âlimi ve Hatip",
+    "era": "yakin",
+    "region": "Çeçenya",
+    "birthPlace": "Argun",
+    "deathPlace": "Çeçenya",
+    "center": "Argun",
+    "image": "/images/people/muhammed-argunski.webp",
+    "gallery": [
+      {
+        "src": "/images/people/muhammed-argunski.webp",
+        "caption": "Muhammed Argunski (Magomed Şovhalov) (1977–2002)"
+      }
+    ],
+    "summary": "1977 yılında Çeçenistan’ın Argun şehrinde doğan ve gerçek adı Magomed Şovhalov olan Muhammed Argunski, genç yaşta İslami ilimlerde derinleşmiş Nohçi İslam âlimi ve mücahittir.",
+    "bio": [
+      "1977 yılında Çeçenistan’ın Argun şehrinde doğan ve gerçek adı Magomed Şovhalov olan Muhammed Argunski, genç yaşta İslami ilimlerde derinleşmiş Nohçi İslam âlimi ve mücahittir.",
+      "Birinci ve İkinci Çeçen Savaşları yıllarında etkileyici hitabeti ve samimiyetiyle Çeçen gençliğinin manevi rehberlerinden biri olmuş; cephedeki direnişçilere cihad ahlakını, sabrı ve istikameti anlatmıştır. Hem ilmiyle hem de silahıyla Argun ve dağlık bölgelerdeki direniş saflarında bizzat çarpışan Muhammed Argunski, 2002 yılında Rus işgal güçleriyle girilen çatışmada 25 yaşında şehit düşmüştür."
     ]
   },
   {
@@ -1829,7 +1411,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/baudi-bakuyev.webp",
-        "caption": "Baudi Bakuyev (1965–2003) — Arşiv fotoğrafı."
+        "caption": "Baudi Bakuyev (1965–2003)"
       }
     ],
     "summary": "1965 yılında doğan Tuğgeneral Baudi Bakuyev, Birinci Çeçen Savaşı’nda (1994–1996) Grozni savunmasında ve batı cephesi muharebelerinde gösterdiği üstün cesaretle İçkerya’nın en saygın komutanlarından biri olmuştur.",
@@ -1839,27 +1421,27 @@ export const PEOPLE: Person[] = [
     ]
   },
   {
-    "slug": "ebu-el-velid",
-    "name": "Ebu el-Velid",
-    "born": "1967",
+    "slug": "zelimhan-yandarbiyev",
+    "name": "Zelimhan Yandarbiyev",
+    "born": "1952",
     "died": "2004",
-    "title": "Doğu Cephesi Komutanı",
+    "title": "İçkeriya’nın 2. Cumhurbaşkanı",
     "era": "yakin",
     "region": "Çeçenya",
     "birthPlace": "Çeçenya",
-    "deathPlace": "Çeçenya",
+    "deathPlace": "Doha",
     "center": "Çeçenya",
-    "image": "/images/people/ebu-el-velid.webp",
+    "image": "/images/people/zelimhan-yandarbiyev.webp",
     "gallery": [
       {
-        "src": "/images/people/ebu-el-velid.webp",
-        "caption": "Ebu el-Velid (1967–2004) — Arşiv fotoğrafı."
+        "src": "/images/people/zelimhan-yandarbiyev.webp",
+        "caption": "Zelimhan Yandarbiyev (1952–2004)"
       }
     ],
-    "summary": "1967 yılında doğan ve gençliğinde Kafkasya’ya gelerek Çeçen direnişine katılan Ebu el-Velid, Emir Hattab’ın en yakın silah arkadaşı ve yardımcısı olarak Doğu Cephesi’nde omuz omuza savaşmıştır.",
+    "summary": "12 Eylül 1952’de Kazakistan sürgününde doğan şair, edebiyatçı ve fikir adamı Zelimhan Yandarbiyev, 1989’dan itibaren Çeçen milli uyanış hareketinin öncülüğünü yapmış ve Cevher Dudayev’in Devlet Başkan Yardımcısı olmuştur.",
     "bio": [
-      "1967 yılında doğan ve gençliğinde Kafkasya’ya gelerek Çeçen direnişine katılan Ebu el-Velid, Emir Hattab’ın en yakın silah arkadaşı ve yardımcısı olarak Doğu Cephesi’nde omuz omuza savaşmıştır.",
-      "Nisan 1996 Yaryşmardy pususunda ve 1999–2004 yılları arasında Vedeno, Serjen-Yurt ve Nojay-Yurt dağlarındaki cephe harekâtlarında kritik zaferlere imza atmış; 2002’de Hattab’ın şehadetinin ardından komutanlığı devralmıştır. 16 Nisan 2004 tarihinde Çeçenistan’ın dağlık bölgesinde Rus kuvvetleriyle girdiği çatışmada şehit düşmüştür."
+      "12 Eylül 1952’de Kazakistan sürgününde doğan şair, edebiyatçı ve fikir adamı Zelimhan Yandarbiyev, 1989’dan itibaren Çeçen milli uyanış hareketinin öncülüğünü yapmış ve Cevher Dudayev’in Devlet Başkan Yardımcısı olmuştur.",
+      "Nisan 1996’da Dudayev’in şehadetinin ardından Çeçen İçkerya Cumhuriyeti Cumhurbaşkanlığı görevini üstlenmiş; Mayıs 1996’da Kremlin’de Yeltsin’in karşısına oturup eşit bir devlet başkanı vakarıyla ateşkesi kabul ettirmiş ve Ağustos 1996 Grozni zaferine başkomutanlık yapmıştır. 13 Şubat 2004’te cuma namazı dönüşünde Katar’ın başkenti Doha’da Rus istihbarat ajanlarının aracına yerleştirdiği bombayla düzenlenen suikast sonucu şehit düşmüştür."
     ]
   },
   {
@@ -1877,7 +1459,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/hamzat-tazabayev.webp",
-        "caption": "Hamzat Tazabayev (1978–2004) — Arşiv fotoğrafı."
+        "caption": "Hamzat Tazabayev (1978–2004)"
       }
     ],
     "summary": "1978 yılında doğan ve cephede ‘Emir Usame’ adıyla tanınan Hamzat Tazabayev, genç yaşta katıldığı Çeçen direnişinde olağanüstü cesaretiyle Şamil Basayev’in en güvendiği saha komutanlarından biri olmuştur.",
@@ -1901,7 +1483,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ruslan-gelayev.webp",
-        "caption": "Ruslan (Hamzat) Gelayev (1964–2004) — Arşiv fotoğrafı."
+        "caption": "Ruslan (Hamzat) Gelayev (1964–2004)"
       }
     ],
     "summary": "16 Nisan 1964’te Komsomolskoye (Saadi-Kotar) köyünde doğan Tümg. Ruslan (Hamzat) Gelayev, Abhazya Savaşı ve iki Çeçen-Rus Savaşı boyunca efsanevi ‘Borz’ (Kurt) Özel Kuvvetler Alayı’na komuta etmiş, İçkerya Savunma Bakanlığı ve Başbakan Yardımcılığı yapmıştır.",
@@ -1911,51 +1493,51 @@ export const PEOPLE: Person[] = [
     ]
   },
   {
-    "slug": "zelimhan-yandarbiyev",
-    "name": "Zelimhan Yandarbiyev",
-    "born": "1952",
+    "slug": "ebu-el-velid",
+    "name": "Ebu el-Velid",
+    "born": "1967",
     "died": "2004",
-    "title": "İçkeriya’nın 2. Cumhurbaşkanı",
+    "title": "Doğu Cephesi Komutanı",
     "era": "yakin",
     "region": "Çeçenya",
     "birthPlace": "Çeçenya",
-    "deathPlace": "Doha",
+    "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/zelimhan-yandarbiyev.webp",
+    "image": "/images/people/ebu-el-velid.webp",
     "gallery": [
       {
-        "src": "/images/people/zelimhan-yandarbiyev.webp",
-        "caption": "Zelimhan Yandarbiyev (1952–2004) — Arşiv fotoğrafı."
+        "src": "/images/people/ebu-el-velid.webp",
+        "caption": "Ebu el-Velid (1967–2004)"
       }
     ],
-    "summary": "12 Eylül 1952’de Kazakistan sürgününde doğan şair, edebiyatçı ve fikir adamı Zelimhan Yandarbiyev, 1989’dan itibaren Çeçen milli uyanış hareketinin öncülüğünü yapmış ve Cevher Dudayev’in Devlet Başkan Yardımcısı olmuştur.",
+    "summary": "1967 yılında doğan ve gençliğinde Kafkasya’ya gelerek Çeçen direnişine katılan Ebu el-Velid, Emir Hattab’ın en yakın silah arkadaşı ve yardımcısı olarak Doğu Cephesi’nde omuz omuza savaşmıştır.",
     "bio": [
-      "12 Eylül 1952’de Kazakistan sürgününde doğan şair, edebiyatçı ve fikir adamı Zelimhan Yandarbiyev, 1989’dan itibaren Çeçen milli uyanış hareketinin öncülüğünü yapmış ve Cevher Dudayev’in Devlet Başkan Yardımcısı olmuştur.",
-      "Nisan 1996’da Dudayev’in şehadetinin ardından Çeçen İçkerya Cumhuriyeti Cumhurbaşkanlığı görevini üstlenmiş; Mayıs 1996’da Kremlin’de Yeltsin’in karşısına oturup eşit bir devlet başkanı vakarıyla ateşkesi kabul ettirmiş ve Ağustos 1996 Grozni zaferine başkomutanlık yapmıştır. 13 Şubat 2004’te Cuma namazı dönüşünde Katar’ın başkenti Doha’da Rus istihbarat ajanlarının aracına yerleştirdiği bombayla düzenlenen suikast sonucu şehit düşmüştür."
+      "1967 yılında doğan ve gençliğinde Kafkasya’ya gelerek Çeçen direnişine katılan Ebu el-Velid, Emir Hattab’ın en yakın silah arkadaşı ve yardımcısı olarak Doğu Cephesi’nde omuz omuza savaşmıştır.",
+      "Nisan 1996 Yaryşmardy pususunda ve 1999–2004 yılları arasında Vedeno, Serjen-Yurt ve Nojay-Yurt dağlarındaki cephe harekâtlarında kritik zaferlere imza atmış; 2002’de Hattab’ın şehadetinin ardından komutanlığı devralmıştır. 16 Nisan 2004 tarihinde Çeçenistan’ın dağlık bölgesinde Rus kuvvetleriyle girdiği çatışmada şehit düşmüştür."
     ]
   },
   {
-    "slug": "ahmed-avdorhanov",
-    "name": "Ahmed Avdorhanov",
-    "born": "1971",
+    "slug": "yunadi-turcayev",
+    "name": "Yunadi Turçayev",
+    "born": "1972",
     "died": "2005",
-    "title": "Cumhurbaşkanlığı Muhafız Alayı Komutanı",
+    "title": "Grozni Sektörü ve Merkez Cephesi Komutanı",
     "era": "yakin",
     "region": "Çeçenya",
-    "birthPlace": "Alleroy",
-    "deathPlace": "Çeçenya",
-    "center": "Alleroy",
-    "image": "/images/people/ahmed-avdorhanov.webp",
+    "birthPlace": "Urus-Martan",
+    "deathPlace": "Grozni",
+    "center": "Urus-Martan",
+    "image": "/images/people/yunadi-turcayev.webp",
     "gallery": [
       {
-        "src": "/images/people/ahmed-avdorhanov.webp",
-        "caption": "Ahmed Avdorhanov (1971–2005) — Arşiv fotoğrafı."
+        "src": "/images/people/yunadi-turcayev.webp",
+        "caption": "Yunadi Turçayev (1972–2005)"
       }
     ],
-    "summary": "1971 yılında Alleroy köyünde doğan Ahmed Avdorhanov, iki Çeçen savaşı boyunca vatan savunmasında yer alan kahraman Avdorhanov kardeşlerin büyüğü ve Cumhurbaşkanı Aslan Mashadov’un Cumhurbaşkanlığı Muhafız Alayı Komutanıdır.",
+    "summary": "1972 yılında Çeçenistan’ın Urus-Martan şehrinde doğan Yunadi Turçayev, Birinci Çeçen Savaşı’nda (1994–1996) Urus-Martan ve Grozni muharebelerinde yetişmiş en dirayetli Nohçi saha komutanlarındandır.",
     "bio": [
-      "1971 yılında Alleroy köyünde doğan Ahmed Avdorhanov, iki Çeçen savaşı boyunca vatan savunmasında yer alan kahraman Avdorhanov kardeşlerin büyüğü ve Cumhurbaşkanı Aslan Mashadov’un Cumhurbaşkanlığı Muhafız Alayı Komutanıdır.",
-      "Yıllarca dağlarda Cumhurbaşkanı Mashadov’un yakın güvenliğini sağlamış, Doğu Cephesi’nde Gudermes ve Kurchaloy sektörlerinde çok sayıda başarılı askeri harekâtı yönetmiştir. 12 Eylül 2005 tarihinde Çeçenistan’ın doğu dağlarında Rus işgal birlikleriyle girilen çatışmada şehadet mertebesine ulaşmıştır."
+      "1972 yılında Çeçenistan’ın Urus-Martan şehrinde doğan Yunadi Turçayev, Birinci Çeçen Savaşı’nda (1994–1996) Urus-Martan ve Grozni muharebelerinde yetişmiş en dirayetli Nohçi saha komutanlarındandır.",
+      "İkinci Çeçen Savaşı’nda Dokka Umarov ve Abdul-Halim Sadulayev ile birlikte Grozni Sektörü ve Merkez Cephesi Komutanlığı’nı yürütmüş; başkent Grozni içinde Rus askeri konvoylarına yönelik en kapsamlı şehir gerillası operasyonlarını organize etmiştir. 18 Şubat 2005 tarihinde Grozni’de Rus özel kuvvetlerinin kuşatmasına karşı son mermisine kadar çatışarak 33 yaşında şehit düşmüştür."
     ]
   },
   {
@@ -1973,13 +1555,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/aslan-mashadov.webp",
-        "caption": "Aslan (Halid) Mashadov (1951–2005) — Arşiv fotoğrafı."
+        "caption": "Aslan (Halid) Mashadov (1951–2005)"
       }
     ],
     "summary": "21 Eylül 1951’de Kazakistan sürgününde doğan ve Sovyet Ordusu’nda albay rütbesiyle en seçkin topçu alaylarına komuta eden Aslan Mashadov, 1992’de vatanına dönerek Çeçen Silahlı Kuvvetleri Genelkurmay Başkanı olmuştur.",
     "bio": [
       "21 Eylül 1951’de Kazakistan sürgününde doğan ve Sovyet Ordusu’nda albay rütbesiyle en seçkin topçu alaylarına komuta eden Aslan Mashadov, 1992’de vatanına dönerek Çeçen Silahlı Kuvvetleri Genelkurmay Başkanı olmuştur.",
-      "1994–1996 Birinci Çeçen-Rus Savaşı’nda Grozni savunmasının ve Ağustos 1996 Cihad Operasyonu’nun kurmay mimarı olmuş, Hasavyurt Barış Anlaşması’nı imzalamış ve Ocak 1997’de AGİT gözlemcileri eşliğinde yapılan demokratik seçimle Cumhurbaşkanı seçilmiştir. İkinci savaş boyunca dağlardan ve cepheden ayrılmayan Cumhurbaşkanı Aslan Mashadov, 8 Mart 2005’te Tolstoy-Yurt’ta kuşatıldığı sığınakta esir düşmemek için son nefesine kadar direnerek şehit olmuştur."
+      "1994–1996 Birinci Çeçen-Rus Savaşı’nda Grozni savunmasının ve Ağustos 1996 Cihad Operasyonu’nun kurmay mimarı olmuş, Hasavyurt Barış Anlaşması’nı imzalamış ve Ocak 1997’de AGİT gözlemcileri eşliğinde yapılan demokratik seçimle cumhurbaşkanı seçilmiştir. İkinci savaş boyunca dağlardan ve cepheden ayrılmayan Cumhurbaşkanı Aslan Mashadov, 8 Mart 2005’te Tolstoy-Yurt’ta kuşatıldığı sığınakta esir düşmemek için son nefesine kadar direnerek şehit olmuştur."
     ]
   },
   {
@@ -1997,7 +1579,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/rizvan-citigov.webp",
-        "caption": "Rizvan Çitigov (1964–2005) — Arşiv fotoğrafı."
+        "caption": "Rizvan Çitigov (1964–2005)"
       }
     ],
     "summary": "22 Nisan 1964’te Şali şehrinde doğan Rizvan Çitigov, 1990’ların başında bağımsızlık mücadelesi için vatanına dönerek Çeçen İçkerya Silahlı Kuvvetleri’nin zırhlı ve özel operasyon birliklerini kurmuştur.",
@@ -2021,7 +1603,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/vaha-arsanov.webp",
-        "caption": "Vaha Arsanov (1950–2005) — Arşiv fotoğrafı."
+        "caption": "Vaha Arsanov (1950–2005)"
       }
     ],
     "summary": "1950 yılında Kazakistan sürgününde, büyük Nakşibendi şeyhi Deni Arsanov’un soyundan gelen köklü bir ailede doğan Vaha Arsanov, Birinci Çeçen Savaşı’nda Kuzeybatı Cephesi ve Grozni muharebelerinde kolordu komutanı olarak çarpışmıştır.",
@@ -2031,51 +1613,27 @@ export const PEOPLE: Person[] = [
     ]
   },
   {
-    "slug": "yunadi-turcayev",
-    "name": "Yunadi Turçayev",
-    "born": "1972",
+    "slug": "ahmed-avdorhanov",
+    "name": "Ahmed Avdorhanov",
+    "born": "1971",
     "died": "2005",
-    "title": "Grozni Sektörü ve Merkez Cephesi Komutanı",
+    "title": "Cumhurbaşkanlığı Muhafız Alayı Komutanı",
     "era": "yakin",
     "region": "Çeçenya",
-    "birthPlace": "Urus-Martan",
-    "deathPlace": "Grozni",
-    "center": "Urus-Martan",
-    "image": "/images/people/yunadi-turcayev.webp",
+    "birthPlace": "Alleroy",
+    "deathPlace": "Çeçenya",
+    "center": "Alleroy",
+    "image": "/images/people/ahmed-avdorhanov.webp",
     "gallery": [
       {
-        "src": "/images/people/yunadi-turcayev.webp",
-        "caption": "Yunadi Turçayev (1972–2005) — Arşiv fotoğrafı."
+        "src": "/images/people/ahmed-avdorhanov.webp",
+        "caption": "Ahmed Avdorhanov (1971–2005)"
       }
     ],
-    "summary": "1972 yılında Çeçenistan’ın Urus-Martan şehrinde doğan Yunadi Turçayev, Birinci Çeçen Savaşı’nda (1994–1996) Urus-Martan ve Grozni muharebelerinde yetişmiş en dirayetli Nohçi saha komutanlarındandır.",
+    "summary": "1971 yılında Alleroy köyünde doğan Ahmed Avdorhanov, iki Çeçen savaşı boyunca vatan savunmasında yer alan kahraman Avdorhanov kardeşlerin büyüğü ve Cumhurbaşkanı Aslan Mashadov’un Cumhurbaşkanlığı Muhafız Alayı Komutanıdır.",
     "bio": [
-      "1972 yılında Çeçenistan’ın Urus-Martan şehrinde doğan Yunadi Turçayev, Birinci Çeçen Savaşı’nda (1994–1996) Urus-Martan ve Grozni muharebelerinde yetişmiş en dirayetli Nohçi saha komutanlarındandır.",
-      "İkinci Çeçen Savaşı’nda Dokka Umarov ve Abdul-Halim Sadulayev ile birlikte Grozni Sektörü ve Merkez Cephesi Komutanlığını yürütmüş; Başkent Grozni içinde Rus askeri konvoylarına yönelik en kapsamlı şehir gerillası operasyonlarını organize etmiştir. 18 Şubat 2005 tarihinde Grozni’de Rus özel kuvvetlerinin kuşatmasına karşı son mermisine kadar çatışarak 33 yaşında şehit düşmüştür."
-    ]
-  },
-  {
-    "slug": "samil-basayev",
-    "name": "Şamil Basayev",
-    "born": "1965",
-    "died": "2006",
-    "title": "Çeçen bağımsızlık mücadelesi neferi",
-    "era": "yakin",
-    "region": "Çeçenya",
-    "birthPlace": "Dışne-Vedeno",
-    "deathPlace": "Ekajevo",
-    "center": "Dışne-Vedeno",
-    "image": "/images/people/samil-basayev.webp",
-    "gallery": [
-      {
-        "src": "/images/people/samil-basayev.webp",
-        "caption": "Şamil Basayev (1965–2006) — Arşiv fotoğrafı."
-      }
-    ],
-    "summary": "14 Ocak 1965’te Vedeno’nun Dışne-Vedeno köyünde doğan Şamil Basayev, 1991 Çeçen Devrimi, 1992 Abhazya Savaşı ve 1994–1996 Birinci Çeçen Savaşı’nda Grozni savunmasından Budyonnovsk harekâtına ve Ağustos 1996 Grozni kurtuluşuna kadar en kritik zaferlere komuta etmiştir.",
-    "bio": [
-      "14 Ocak 1965’te Vedeno’nun Dışne-Vedeno köyünde doğan Şamil Basayev, 1991 Çeçen Devrimi, 1992 Abhazya Savaşı ve 1994–1996 Birinci Çeçen Savaşı’nda Grozni savunmasından Budyonnovsk harekâtına ve Ağustos 1996 Grozni kurtuluşuna kadar en kritik zaferlere komuta etmiştir.",
-      "Ocak 2000’de Grozni kuşatmasını yararken askerlerinin önünde mayın tarlasına girerek bir bacağını kaybetmiş; buna rağmen protez bacağıyla dağlara dönerek yıllarca direnişin askeri liderliğini sürdürmüştür. 10 Temmuz 2006 tarihinde İnguşetya’nın Ekajevo köyü yakınlarında mühimmat konvoyunda meydana gelen patlama sonucu 41 yaşında şehadet mertebesine ulaşmıştır."
+      "1971 yılında Alleroy köyünde doğan Ahmed Avdorhanov, iki Çeçen savaşı boyunca vatan savunmasında yer alan kahraman Avdorhanov kardeşlerin büyüğü ve Cumhurbaşkanı Aslan Mashadov’un Cumhurbaşkanlığı Muhafız Alayı Komutanıdır.",
+      "Yıllarca dağlarda Cumhurbaşkanı Mashadov’un yakın güvenliğini sağlamış, Doğu Cephesi’nde Gudermes ve Kurchaloy sektörlerinde çok sayıda başarılı askeri harekâtı yönetmiştir. 12 Eylül 2005 tarihinde Çeçenistan’ın doğu dağlarında Rus işgal birlikleriyle girilen çatışmada şehadet mertebesine ulaşmıştır."
     ]
   },
   {
@@ -2093,37 +1651,37 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/abdul-halim-sadulayev.webp",
-        "caption": "Şeyh Abdul-Halim Sadulayev (1966–2006) — Arşiv fotoğrafı."
+        "caption": "Şeyh Abdul-Halim Sadulayev (1966–2006)"
       }
     ],
-    "summary": "2 Haziran 1966’da Argun şehrinde doğan İslam âlimi ve fakih Şeyh Abdul-Halim Sadulayev, Birinci ve İkinci Çeçen Savaşlarında Argun direniş birliklerine komuta etmiş ve İçkerya Şeriat Mahkemesi ile Devlet Şurası’nda görev yapmıştır.",
+    "summary": "2 Haziran 1966’da Argun şehrinde doğan İslam âlimi ve fakih Şeyh Abdul-Halim Sadulayev, Birinci ve İkinci Çeçen Savaşları’nda Argun direniş birliklerine komuta etmiş ve İçkerya Şeriat Mahkemesi ile Devlet Şurası’nda görev yapmıştır.",
     "bio": [
-      "2 Haziran 1966’da Argun şehrinde doğan İslam âlimi ve fakih Şeyh Abdul-Halim Sadulayev, Birinci ve İkinci Çeçen Savaşlarında Argun direniş birliklerine komuta etmiş ve İçkerya Şeriat Mahkemesi ile Devlet Şurası’nda görev yapmıştır.",
+      "2 Haziran 1966’da Argun şehrinde doğan İslam âlimi ve fakih Şeyh Abdul-Halim Sadulayev, Birinci ve İkinci Çeçen Savaşları’nda Argun direniş birliklerine komuta etmiş ve İçkerya Şeriat Mahkemesi ile Devlet Şurası’nda görev yapmıştır.",
       "Mart 2005’te Aslan Mashadov’un şehadetinin ardından Çeçen İçkerya Cumhuriyeti’nin 4. Cumhurbaşkanı ve Silahlı Kuvvetler Başkomutanı olmuş; direnişin sivillere zarar vermeyen meşru askeri hedeflere odaklanması emrini yayınlamıştır. Hiçbir zaman Çeçenistan topraklarını terk etmeyen Cumhurbaşkanı Abdul-Halim Sadulayev, 17 Haziran 2006’da doğduğu şehir olan Argun’da kuşatmaya karşı elinde silahıyla çarpışarak şehit düşmüştür."
     ]
   },
   {
-    "slug": "rustam-basayev",
-    "name": "Rustam Basayev (Emir Ebu Bekir)",
-    "born": "1975",
-    "died": "2007",
-    "title": "Merkez Cephesi Komutanı",
+    "slug": "samil-basayev",
+    "name": "Şamil Basayev",
+    "born": "1965",
+    "died": "2006",
+    "title": "Çeçen bağımsızlık mücadelesi neferi",
     "era": "yakin",
     "region": "Çeçenya",
-    "birthPlace": "Dzhalka",
-    "deathPlace": "Grozni",
-    "center": "Dzhalka",
-    "image": "/images/people/rustam-basayev.webp",
+    "birthPlace": "Dışne-Vedeno",
+    "deathPlace": "Ekajevo",
+    "center": "Dışne-Vedeno",
+    "image": "/images/people/samil-basayev.webp",
     "gallery": [
       {
-        "src": "/images/people/rustam-basayev.webp",
-        "caption": "Rustam Basayev (Emir Ebu Bekir) (1975–2007) — Arşiv fotoğrafı."
+        "src": "/images/people/samil-basayev.webp",
+        "caption": "Şamil Basayev (1965–2006)"
       }
     ],
-    "summary": "20 Mart 1975’te Dzhalka köyünde doğan Rustam Basayev (‘Emir Ebu Bekir’), henüz 19 yaşındayken Birinci Çeçen Savaşı’na katılmış, savaşlarda üç kez ağır yaralanmasına rağmen cepheden bir gün bile ayrılmamıştır.",
+    "summary": "14 Ocak 1965’te Vedeno’nun Dışne-Vedeno köyünde doğan Şamil Basayev, 1991 Çeçen Devrimi, 1992 Abhazya Savaşı ve 1994–1996 Birinci Çeçen Savaşı’nda Grozni savunmasından Budyonnovsk harekâtına ve Ağustos 1996 Grozni kurtuluşuna kadar en kritik zaferlere komuta etmiştir.",
     "bio": [
-      "20 Mart 1975’te Dzhalka köyünde doğan Rustam Basayev (‘Emir Ebu Bekir’), henüz 19 yaşındayken Birinci Çeçen Savaşı’na katılmış, savaşlarda üç kez ağır yaralanmasına rağmen cepheden bir gün bile ayrılmamıştır.",
-      "Ağustos 2006’da Cumhurbaşkanı Dokka Umarov tarafından Tuğgeneral rütbesiyle Çeçen İçkerya Silahlı Kuvvetleri Merkez Cephesi Komutanlığına atanarak Grozni ve Argun hattındaki operasyonları yönetmiştir. 24 Ağustos 2007 tarihinde Başkent Grozni’de kuşatıldığı evde yüzlerce işgal askerine karşı saatlerce tek başına çarpışarak 32 yaşında şehit düşmüştür."
+      "14 Ocak 1965’te Vedeno’nun Dışne-Vedeno köyünde doğan Şamil Basayev, 1991 Çeçen Devrimi, 1992 Abhazya Savaşı ve 1994–1996 Birinci Çeçen Savaşı’nda Grozni savunmasından Budyonnovsk harekâtına ve Ağustos 1996 Grozni kurtuluşuna kadar en kritik zaferlere komuta etmiştir.",
+      "Ocak 2000’de Grozni kuşatmasını yararken askerlerinin önünde mayın tarlasına girerek bir bacağını kaybetmiş; buna rağmen protez bacağıyla dağlara dönerek yıllarca direnişin askeri liderliğini sürdürmüştür. 10 Temmuz 2006 tarihinde İnguşetya’nın Ekajevo köyü yakınlarında mühimmat konvoyunda meydana gelen patlama sonucu 41 yaşında şehadet mertebesine ulaşmıştır."
     ]
   },
   {
@@ -2141,13 +1699,37 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/suleyman-elmurzayev.webp",
-        "caption": "Süleyman Elmurzayev (Emir Hayrullah) (1974–2007) — Arşiv fotoğrafı."
+        "caption": "Süleyman Elmurzayev (Emir Hayrullah) (1974–2007)"
       }
     ],
     "summary": "22 Haziran 1974’te Vedeno’nun Agişbatoy köyünde doğan Süleyman Elmurzayev (‘Emir Hayrullah’), iki savaş boyunca Vedeno dağlarındaki direnişin en sarsılmaz saha komutanlarından biri olmuştur.",
     "bio": [
       "22 Haziran 1974’te Vedeno’nun Agişbatoy köyünde doğan Süleyman Elmurzayev (‘Emir Hayrullah’), iki savaş boyunca Vedeno dağlarındaki direnişin en sarsılmaz saha komutanlarından biri olmuştur.",
       "Temmuz 2006’da Şamil Basayev’in şehadetinin ardından Vedeno cephesinin komutasını ve Çeçen İçkerya Cumhuriyeti Cumhurbaşkanı Yardımcılığı (Naibliği) görevini üstlenmiştir. 4 Nisan 2007 tarihinde doğduğu Agişbatoy köyü yakınlarında kurulan pusuda son mermisine kadar çarpışarak 32 yaşında şehit düşmüştür."
+    ]
+  },
+  {
+    "slug": "rustam-basayev",
+    "name": "Rustam Basayev (Emir Ebu Bekir)",
+    "born": "1975",
+    "died": "2007",
+    "title": "Merkez Cephesi Komutanı",
+    "era": "yakin",
+    "region": "Çeçenya",
+    "birthPlace": "Dzhalka",
+    "deathPlace": "Grozni",
+    "center": "Dzhalka",
+    "image": "/images/people/rustam-basayev.webp",
+    "gallery": [
+      {
+        "src": "/images/people/rustam-basayev.webp",
+        "caption": "Rustam Basayev (Emir Ebu Bekir) (1975–2007)"
+      }
+    ],
+    "summary": "20 Mart 1975’te Dzhalka köyünde doğan Rustam Basayev (‘Emir Ebu Bekir’), henüz 19 yaşındayken Birinci Çeçen Savaşı’na katılmış, savaşlarda üç kez ağır yaralanmasına rağmen cepheden bir gün bile ayrılmamıştır.",
+    "bio": [
+      "20 Mart 1975’te Dzhalka köyünde doğan Rustam Basayev (‘Emir Ebu Bekir’), henüz 19 yaşındayken Birinci Çeçen Savaşı’na katılmış, savaşlarda üç kez ağır yaralanmasına rağmen cepheden bir gün bile ayrılmamıştır.",
+      "Ağustos 2006’da Cumhurbaşkanı Dokka Umarov tarafından tuğgeneral rütbesiyle Çeçen İçkerya Silahlı Kuvvetleri Merkez Cephesi Komutanlığına atanarak Grozni ve Argun hattındaki operasyonları yönetmiştir. 24 Ağustos 2007 tarihinde başkent Grozni’de kuşatıldığı evde yüzlerce işgal askerine karşı saatlerce tek başına çarpışarak 32 yaşında şehit düşmüştür."
     ]
   },
   {
@@ -2165,12 +1747,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/usman-muntsigov.webp",
-        "caption": "Usman Muntsigov (Emir Usman) (1975–2010) — Arşiv fotoğrafı."
+        "caption": "Usman Muntsigov (Emir Usman) (1975–2010)"
       }
     ],
-    "summary": "1975 yılında Çeçenistan’da doğan ve Nohçi direnişinde ‘Emir Usman’ ile ‘Şatral’ lakaplarıyla tanınan Usman Muntsigov, Birinci ve İkinci Çeçen Savaşlarında kesintisiz 15 yıl boyunca dağlarda ve cephede çarpışmıştır.",
+    "summary": "1975 yılında Çeçenistan’da doğan ve Nohçi direnişinde ‘Emir Usman’ ile ‘Şatral’ lakaplarıyla tanınan Usman Muntsigov, Birinci ve İkinci Çeçen Savaşları’nda kesintisiz 15 yıl boyunca dağlarda ve cephede çarpışmıştır.",
     "bio": [
-      "1975 yılında Çeçenistan’da doğan ve Nohçi direnişinde ‘Emir Usman’ ile ‘Şatral’ lakaplarıyla tanınan Usman Muntsigov, Birinci ve İkinci Çeçen Savaşlarında kesintisiz 15 yıl boyunca dağlarda ve cephede çarpışmıştır.",
+      "1975 yılında Çeçenistan’da doğan ve Nohçi direnişinde ‘Emir Usman’ ile ‘Şatral’ lakaplarıyla tanınan Usman Muntsigov, Birinci ve İkinci Çeçen Savaşları’nda kesintisiz 15 yıl boyunca dağlarda ve cephede çarpışmıştır.",
       "Dokka Umarov’un en yakın silah arkadaşlarından biri olarak Güneybatı Cephesi’nde Naurski, Bamut ve Açhoy-Martan sektörlerine komuta etmiş; ağır kış şartlarına ve kuşatmalara rağmen dağlık orman hattındaki direniş üslerini yıllarca ayakta tutmuştur. Ocak 2010’da girdiği silahlı çatışmada aldığı ağır yaralar sonucu Çeçenistan dağlarında 35 yaşında şehadet mertebesine ulaşmıştır."
     ]
   },
@@ -2189,13 +1771,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/supyan-abdullayev.webp",
-        "caption": "Supyan Abdullayev (1956–2011) — Arşiv fotoğrafı."
+        "caption": "Supyan Abdullayev (1956–2011)"
       }
     ],
     "summary": "8 Kasım 1956’da Kazakistan sürgününde, Hatuni köyünden Tsadahar (Tsa-Vedeno) kökenli bir ailede doğan İslam âlimi ve eğitimci Supyan Abdullayev, 1991’den itibaren bağımsızlık saflarında yer alarak ‘İslam Taburu’ (Risale) komutanı olarak savaşmıştır.",
     "bio": [
       "8 Kasım 1956’da Kazakistan sürgününde, Hatuni köyünden Tsadahar (Tsa-Vedeno) kökenli bir ailede doğan İslam âlimi ve eğitimci Supyan Abdullayev, 1991’den itibaren bağımsızlık saflarında yer alarak ‘İslam Taburu’ (Risale) komutanı olarak savaşmıştır.",
-      "Çeçen İçkerya Cumhuriyeti’nde Tuğgeneral rütbesine yükselmiş, Maliye Bakanlığı ve Başbakan Yardımcılığı görevlerini yürütmüş; Dokka Umarov’un birinci naibi olarak yıllarca Kafkas dağlarında direnişe rehberlik etmiştir. 28 Mart 2011 tarihinde İnguşetya dağlarındaki kamplarına düzenlenen ağır hava bombardımanı ve kara çatışmasında 54 yaşında şehit düşmüştür."
+      "Çeçen İçkerya Cumhuriyeti’nde tuğgeneral rütbesine yükselmiş, Maliye Bakanlığı ve Başbakan Yardımcılığı görevlerini yürütmüş; Dokka Umarov’un birinci naibi olarak yıllarca Kafkas dağlarında direnişe rehberlik etmiştir. 28 Mart 2011 tarihinde İnguşetya dağlarındaki kamplarına düzenlenen ağır hava bombardımanı ve kara çatışmasında 54 yaşında şehit düşmüştür."
     ]
   },
   {
@@ -2213,61 +1795,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/zaurbek-avdorhanov.webp",
-        "caption": "Zaurbek Avdorhanov (1976–2012) — Arşiv fotoğrafı."
+        "caption": "Zaurbek Avdorhanov (1976–2012)"
       }
     ],
     "summary": "8 Ekim 1976’da Alleroy köyünde doğan Zaurbek Avdorhanov, Cumhurbaşkanı Aslan Mashadov’un Muhafız Komutanı Şehit Ahmed Avdorhanov’un kardeşi olarak genç yaşta direniş saflarına katılmıştır.",
     "bio": [
       "8 Ekim 1976’da Alleroy köyünde doğan Zaurbek Avdorhanov, Cumhurbaşkanı Aslan Mashadov’un Muhafız Komutanı Şehit Ahmed Avdorhanov’un kardeşi olarak genç yaşta direniş saflarına katılmıştır.",
       "2005 yılında ağabeyi Ahmed Avdorhanov’un şehadetinin ardından Doğu Cephesi’nde Gudermes ve Kurchaloy sektörlerinin komutasını devralarak yedi yıl daha dağlarda savaşı sürdürmüştür. 28 Temmuz 2012 tarihinde kardeşi İbrahimbek ve silah arkadaşı Ayub Haladov ile birlikte Galaytı köyünde kuşatmaya karşı son mermisine kadar çarpışarak şehit düşmüştür."
-    ]
-  },
-  {
-    "slug": "abdul-malik-mejidov",
-    "name": "Abdul-Malik Mejidov",
-    "born": "1961",
-    "died": "2013",
-    "title": "Çeçen direniş komutanı",
-    "era": "yakin",
-    "region": "Çeçenya",
-    "birthPlace": "Urus-Martan",
-    "deathPlace": "Çeçenya",
-    "center": "Urus-Martan",
-    "image": "/images/people/abdul-malik-mejidov.webp",
-    "gallery": [
-      {
-        "src": "/images/people/abdul-malik-mejidov.webp",
-        "caption": "Abdul-Malik Mejidov (1961–2013) — Arşiv fotoğrafı."
-      }
-    ],
-    "summary": "19 Haziran 1961 tarihinde Çeçenistan’ın Urus-Martan şehrinde doğan Abdul-Malik Mejidov, Nohçi bağımsızlık hareketinin ilk yıllarından itibaren ön saflarda yer alan kıdemli komutanlarındandır.",
-    "bio": [
-      "19 Haziran 1961 tarihinde Çeçenistan’ın Urus-Martan şehrinde doğan Abdul-Malik Mejidov, Nohçi bağımsızlık hareketinin ilk yıllarından itibaren ön saflarda yer alan kıdemli komutanlarındandır.",
-      "Birinci Çeçen Savaşı’nda (1994–1996) Urus-Martan ve Grozni cephelerinde Rus ordusuna karşı savaşarak Tuğgeneral rütbesine yükselmiş; iki savaş arası dönemde Çeçen İçkerya Cumhuriyeti Şeriat Muhafızları Komutanı olarak görev yapmıştır. İkinci Çeçen Savaşı’nda da direniş saflarını terk etmeyen Abdul-Malik Mejidov, 2013 yılında 52 yaşında hak ve hürriyet mücadelesi yolunda şehadet mertebesine ulaşmıştır."
-    ]
-  },
-  {
-    "slug": "doku-umarov",
-    "name": "Dokka (Doku) Umarov",
-    "born": "1964",
-    "died": "2013",
-    "title": "İçkeriya’nın 5. Cumhurbaşkanı",
-    "era": "yakin",
-    "region": "Çeçenya",
-    "birthPlace": "Harsenoy",
-    "deathPlace": "Çeçenya",
-    "center": "Harsenoy",
-    "image": "/images/people/doku-umarov.webp",
-    "gallery": [
-      {
-        "src": "/images/people/doku-umarov.webp",
-        "caption": "Dokka (Doku) Umarov (1964–2013) — Arşiv fotoğrafı."
-      }
-    ],
-    "summary": "13 Nisan 1964’te Şatoy’un Harsenoy köyünde doğan Dokka Umarov, 1994’ten itibaren Ruslan Gelayev ile birlikte ‘Borz’ (Kurt) Özel Kuvvetler Alayı’nda savaşmış, Tuğgeneral rütbesiyle İçkerya Güvenlik Konseyi Sekreterliği ve Güneybatı Cephesi Komutanlığı yapmıştır.",
-    "bio": [
-      "13 Nisan 1964’te Şatoy’un Harsenoy köyünde doğan Dokka Umarov, 1994’ten itibaren Ruslan Gelayev ile birlikte ‘Borz’ (Kurt) Özel Kuvvetler Alayı’nda savaşmış, Tuğgeneral rütbesiyle İçkerya Güvenlik Konseyi Sekreterliği ve Güneybatı Cephesi Komutanlığı yapmıştır.",
-      "2000 Grozni yarma harekâtında çenesinden ağır yaralanmasına ve ailesinin birçok ferdi Rus güçlerince rehin alınıp şehit edilmesine rağmen, tam 20 yıl boyunca bir gün bile Kafkas dağlarını terk etmemiştir. Haziran 2006’da Abdul-Halim Sadulayev’in şehadetinin ardından Cumhurbaşkanlığı ve direniş liderliğini üstlenen Dokka Umarov, 7 Eylül 2013’te dağlarda zehirlenerek düzenlenen suikast sonucu şehit düşmüştür."
     ]
   },
   {
@@ -2285,37 +1819,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/huseyin-gakayev.webp",
-        "caption": "Hüseyin Gakayev (1970–2013) — Arşiv fotoğrafı."
+        "caption": "Hüseyin Gakayev (1970–2013)"
       }
     ],
     "summary": "8 Temmuz 1970’te Vedeno bölgesindeki Elistanji köyünde doğan Hüseyin Gakayev, Birinci ve İkinci Çeçen savaşlarında neredeyse yirmi yıl boyunca doğu dağlarından bir gün bile inmeyen sarsılmaz bir komutandır.",
     "bio": [
       "8 Temmuz 1970’te Vedeno bölgesindeki Elistanji köyünde doğan Hüseyin Gakayev, Birinci ve İkinci Çeçen savaşlarında neredeyse yirmi yıl boyunca doğu dağlarından bir gün bile inmeyen sarsılmaz bir komutandır.",
       "2006 yılında Çeçen İçkerya Cumhuriyeti Doğu Cephesi Komutanlığına, 2007’de ise İçişleri Bakanlığı ve Başbakan Yardımcılığı görevlerine atanarak Vedeno ve Şali dağlarındaki tüm birlikleri yönetmiştir. 24 Ocak 2013 tarihinde Vedeno’nun Elistanji ve Haraçoy dağlarında kardeşi Müslim Gakayev ile birlikte binlerce kişilik kuşatmaya karşı son mermisine kadar çarpışarak şehit düşmüştür."
-    ]
-  },
-  {
-    "slug": "medet-onlu",
-    "name": "Medet Önlü",
-    "born": "1965",
-    "died": "2013",
-    "title": "İçkeriya Türkiye Fahri Konsolosu",
-    "era": "yakin",
-    "region": "Çeçenya",
-    "birthPlace": "Göksun",
-    "deathPlace": "Ankara",
-    "center": "Göksun",
-    "image": "/images/people/medet-onlu.webp",
-    "gallery": [
-      {
-        "src": "/images/people/medet-onlu.webp",
-        "caption": "Medet Önlü (1965–2013) — Arşiv fotoğrafı."
-      }
-    ],
-    "summary": "1965 yılında Kahramanmaraş’ın Göksun ilçesine bağlı Çardak beldesinde, Türkiye’deki köklü bir Nohçi ailesinde dünyaya gelen Medet Önlü, hayatı boyunca anavatanı Çeçenistan’ın hürriyet davasına hizmet etmiştir.",
-    "bio": [
-      "1965 yılında Kahramanmaraş’ın Göksun ilçesine bağlı Çardak beldesinde, Türkiye’deki köklü bir Nohçi ailesinde dünyaya gelen Medet Önlü, hayatı boyunca anavatanı Çeçenistan’ın hürriyet davasına hizmet etmiştir.",
-      "Birinci ve İkinci Çeçen Savaşları boyunca binlerce Çeçen yaralı, gazî, yetim ve muhacirin tedavi edilmesi ve barınması için kurulan Kafkas-Çeçen dayanışma ağlarına öncülük etmiş; Cumhurbaşkanı Aslan Mashadov ve Dokka Umarov dönemlerinde Çeçen İçkerya Cumhuriyeti Türkiye Fahri Konsolosu olarak görev yapmıştır. 22 Mayıs 2013 tarihinde Ankara Balgat’taki makam ofisinde Rus istihbarat bağlantılı tetikçilerin düzenlediği hain suikast sonucu şehit düşmüştür."
     ]
   },
   {
@@ -2333,13 +1843,85 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/muslim-gakayev.webp",
-        "caption": "Müslim Gakayev (1973–2013) — Arşiv fotoğrafı."
+        "caption": "Müslim Gakayev (1973–2013)"
       }
     ],
     "summary": "1973 yılında Vedeno’nun Elistanji köyünde, vatan savunmasında dört kardeşini (Cemalela, Said-Usman, Hasan ve Hüseyin) şehit veren kahraman Gakayev ailesinin en küçüğü olarak dünyaya gelmiştir.",
     "bio": [
       "1973 yılında Vedeno’nun Elistanji köyünde, vatan savunmasında dört kardeşini (Cemalela, Said-Usman, Hasan ve Hüseyin) şehit veren kahraman Gakayev ailesinin en küçüğü olarak dünyaya gelmiştir.",
       "Şamil Basayev’in Cundullah birliğinde yetişmiş, ‘Emir Mansur’ adıyla Şali Sektörü Komutanlığını üstlenerek cesareti ve askeri stratejisiyle dağlardaki genç mücahit birliklerini eğitmiştir. 24 Ocak 2013 tarihinde Vedeno dağlarında ağabeyi Hüseyin Gakayev ile omuz omuza son nefesine kadar savaşarak şehadet mertebesine ulaşmıştır."
+    ]
+  },
+  {
+    "slug": "medet-onlu",
+    "name": "Medet Önlü",
+    "born": "1965",
+    "died": "2013",
+    "title": "İçkeriya Türkiye Fahri Konsolosu",
+    "era": "yakin",
+    "region": "Çeçenya",
+    "birthPlace": "Göksun",
+    "deathPlace": "Ankara",
+    "center": "Göksun",
+    "image": "/images/people/medet-onlu.webp",
+    "gallery": [
+      {
+        "src": "/images/people/medet-onlu.webp",
+        "caption": "Medet Önlü (1965–2013)"
+      }
+    ],
+    "summary": "1965 yılında Kahramanmaraş’ın Göksun ilçesine bağlı Çardak beldesinde, Türkiye’deki köklü bir Nohçi ailesinde dünyaya gelen Medet Önlü, hayatı boyunca anavatanı Çeçenistan’ın hürriyet davasına hizmet etmiştir.",
+    "bio": [
+      "1965 yılında Kahramanmaraş’ın Göksun ilçesine bağlı Çardak beldesinde, Türkiye’deki köklü bir Nohçi ailesinde dünyaya gelen Medet Önlü, hayatı boyunca anavatanı Çeçenistan’ın hürriyet davasına hizmet etmiştir.",
+      "Birinci ve İkinci Çeçen Savaşları boyunca binlerce Çeçen yaralı, gazî, yetim ve muhacirin tedavi edilmesi ve barınması için kurulan Kafkas-Çeçen dayanışma ağlarına öncülük etmiş; Cumhurbaşkanı Aslan Mashadov ve Dokka Umarov dönemlerinde Çeçen İçkerya Cumhuriyeti Türkiye Fahri Konsolosu olarak görev yapmıştır. 22 Mayıs 2013 tarihinde Ankara Balgat’taki makam ofisinde Rus istihbarat bağlantılı tetikçilerin düzenlediği hain suikast sonucu şehit düşmüştür."
+    ]
+  },
+  {
+    "slug": "doku-umarov",
+    "name": "Dokka (Doku) Umarov",
+    "born": "1964",
+    "died": "2013",
+    "title": "İçkeriya’nın 5. Cumhurbaşkanı",
+    "era": "yakin",
+    "region": "Çeçenya",
+    "birthPlace": "Harsenoy",
+    "deathPlace": "Çeçenya",
+    "center": "Harsenoy",
+    "image": "/images/people/doku-umarov.webp",
+    "gallery": [
+      {
+        "src": "/images/people/doku-umarov.webp",
+        "caption": "Dokka (Doku) Umarov (1964–2013)"
+      }
+    ],
+    "summary": "13 Nisan 1964’te Şatoy’un Harsenoy köyünde doğan Dokka Umarov, 1994’ten itibaren Ruslan Gelayev ile birlikte ‘Borz’ (Kurt) Özel Kuvvetler Alayı’nda savaşmış, tuğgeneral rütbesiyle İçkerya Güvenlik Konseyi Sekreterliği ve Güneybatı Cephesi Komutanlığı yapmıştır.",
+    "bio": [
+      "13 Nisan 1964’te Şatoy’un Harsenoy köyünde doğan Dokka Umarov, 1994’ten itibaren Ruslan Gelayev ile birlikte ‘Borz’ (Kurt) Özel Kuvvetler Alayı’nda savaşmış, tuğgeneral rütbesiyle İçkerya Güvenlik Konseyi Sekreterliği ve Güneybatı Cephesi Komutanlığı yapmıştır.",
+      "2000 Grozni yarma harekâtında çenesinden ağır yaralanmasına ve ailesinin birçok ferdi Rus güçlerince rehin alınıp şehit edilmesine rağmen, tam 20 yıl boyunca bir gün bile Kafkas dağlarını terk etmemiştir. Haziran 2006’da Abdul-Halim Sadulayev’in şehadetinin ardından Cumhurbaşkanlığı ve direniş liderliğini üstlenen Dokka Umarov, 7 Eylül 2013’te dağlarda zehirlenerek düzenlenen suikast sonucu şehit düşmüştür."
+    ]
+  },
+  {
+    "slug": "abdul-malik-mejidov",
+    "name": "Abdul-Malik Mejidov",
+    "born": "1961",
+    "died": "2013",
+    "title": "Çeçen direniş komutanı",
+    "era": "yakin",
+    "region": "Çeçenya",
+    "birthPlace": "Urus-Martan",
+    "deathPlace": "Çeçenya",
+    "center": "Urus-Martan",
+    "image": "/images/people/abdul-malik-mejidov.webp",
+    "gallery": [
+      {
+        "src": "/images/people/abdul-malik-mejidov.webp",
+        "caption": "Abdul-Malik Mejidov (1961–2013)"
+      }
+    ],
+    "summary": "19 Haziran 1961 tarihinde Çeçenistan’ın Urus-Martan şehrinde doğan Abdul-Malik Mejidov, Nohçi bağımsızlık hareketinin ilk yıllarından itibaren ön saflarda yer alan kıdemli komutanlarındandır.",
+    "bio": [
+      "19 Haziran 1961 tarihinde Çeçenistan’ın Urus-Martan şehrinde doğan Abdul-Malik Mejidov, Nohçi bağımsızlık hareketinin ilk yıllarından itibaren ön saflarda yer alan kıdemli komutanlarındandır.",
+      "Birinci Çeçen Savaşı’nda (1994–1996) Urus-Martan ve Grozni cephelerinde Rus ordusuna karşı savaşarak tuğgeneral rütbesine yükselmiş; iki savaş arası dönemde Çeçen İçkerya Cumhuriyeti Şeriat Muhafızları Komutanı olarak görev yapmıştır. İkinci Çeçen Savaşı’nda da direniş saflarını terk etmeyen Abdul-Malik Mejidov, 2013 yılında 52 yaşında hak ve hürriyet mücadelesi yolunda şehadet mertebesine ulaşmıştır."
     ]
   },
   {
@@ -2357,7 +1939,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/isa-munayev.webp",
-        "caption": "İsa Munayev (1965–2015) — Arşiv fotoğrafı."
+        "caption": "İsa Munayev (1965–2015)"
       }
     ],
     "summary": "20 Mayıs 1965’te Açhoy-Martan’ın Yandi köyünde Galay taypına mensup bir ailede doğan Tuğgeneral İsa Munayev, Birinci Çeçen Savaşı’nda Orehovo Taburu Komutanı olarak Bamut ve batı cephesinde destan yazmıştır.",
@@ -2381,13 +1963,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/zelimhan-hangosvili.webp",
-        "caption": "Zelimhan Hangoşvili (1979–2019) — Arşiv fotoğrafı."
+        "caption": "Zelimhan Hangoşvili (1979–2019)"
       }
     ],
     "summary": "15 Ağustos 1979 tarihinde Pankisi Vadisi’ndeki Duisi köyünde, Nohçi Dişniy taypına mensup bir ailede dünyaya gelen Zelimhan Hangoşvili, İkinci Çeçen Savaşı’nda anavatanı Çeçenistan’a geçerek Cumhurbaşkanı Aslan Mashadov ve Şamil Basayev’in komutasında çarpışmıştır.",
     "bio": [
       "15 Ağustos 1979 tarihinde Pankisi Vadisi’ndeki Duisi köyünde, Nohçi Dişniy taypına mensup bir ailede dünyaya gelen Zelimhan Hangoşvili, İkinci Çeçen Savaşı’nda anavatanı Çeçenistan’a geçerek Cumhurbaşkanı Aslan Mashadov ve Şamil Basayev’in komutasında çarpışmıştır.",
-      "Grozni, Vedeno ve İnguşetya cephelerinde müfreze komutanı olarak Rus işgal ordusuna karşı en kritik harekâtlarda görev almış; savaştan sonra da Kafkasya halklarının bağımsızlık davasına hizmet etmeyi sürdürmüştür. Daha önce Tiflis’te uğradığı suikast girişiminden yaralı kurtulan Zelimhan Hangoşvili, 23 Ağustos 2019 tarihinde Almanya’nın başkenti Berlin’de Cuma namazına giderken Rus istihbarat (FSB) tetikçisinin düzenlediği suikast sonucu 40 yaşında şehit düşmüştür."
+      "Grozni, Vedeno ve İnguşetya cephelerinde müfreze komutanı olarak Rus işgal ordusuna karşı en kritik harekâtlarda görev almış; savaştan sonra da Kafkasya halklarının bağımsızlık davasına hizmet etmeyi sürdürmüştür. Daha önce Tiflis’te uğradığı suikast girişiminden yaralı kurtulan Zelimhan Hangoşvili, 23 Ağustos 2019 tarihinde Almanya’nın başkenti Berlin’de cuma namazına giderken Rus istihbarat (FSB) tetikçisinin düzenlediği suikast sonucu 40 yaşında şehit düşmüştür."
     ]
   },
   {
@@ -2405,13 +1987,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/aslan-butukayev.webp",
-        "caption": "Aslan Bütükayev (Emir Hamzat) (1974–2021) — Arşiv fotoğrafı."
+        "caption": "Aslan Bütükayev (Emir Hamzat) (1974–2021)"
       }
     ],
     "summary": "22 Ekim 1974’te doğan ve Açhoy-Martan bölgesinde yetişen Aslan Bütükayev (‘Emir Hamzat’), 1994’ten itibaren Birinci ve İkinci Çeçen Savaşları’nda Güneybatı Cephesi’nde çarpışmıştır.",
     "bio": [
       "22 Ekim 1974’te doğan ve Açhoy-Martan bölgesinde yetişen Aslan Bütükayev (‘Emir Hamzat’), 1994’ten itibaren Birinci ve İkinci Çeçen Savaşları’nda Güneybatı Cephesi’nde çarpışmıştır.",
-      "Dokka Umarov döneminde Riyad-us Salihin Şehitler Tugayı Komutanı, Doğu-Batı cephelerinin birleştirici emiri ve Çeçenistan Vilayeti (Nohçiyço) Emir Yardımcısı olarak görev yapmış; yirmi beş yılı aşkın bir süre boyunca Çeçenistan dağlarını terk etmemiştir. 20 Ocak 2021 tarihinde Başkent Grozni’nin Katayama bölgesinde beş silah arkadaşıyla birlikte kuşatmayı reddedip son mermisine kadar savaşarak şehit düşmüş; Çeçenistan dağlarındaki çeyrek asırlık direnişin son kalesi olarak tarihe geçmiştir."
+      "Dokka Umarov döneminde Riyad-us Salihin Şehitler Tugayı Komutanı, doğu-batı cephelerinin birleştirici emiri ve Çeçenistan Vilayeti (Nohçiyço) Emir Yardımcısı olarak görev yapmış; yirmi beş yılı aşkın bir süre boyunca Çeçenistan dağlarını terk etmemiştir. 20 Ocak 2021 tarihinde başkent Grozni’nin Katayama bölgesinde beş silah arkadaşıyla birlikte kuşatmayı reddedip son mermisine kadar savaşarak şehit düşmüş; Çeçenistan dağlarındaki çeyrek asırlık direnişin son kalesi olarak tarihe geçmiştir."
     ]
   },
   {
@@ -2429,7 +2011,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ali-mitayev.webp",
-        "caption": "Şeyh Ali Mitayev (1881–1925) — Arşiv fotoğrafı."
+        "caption": "Şeyh Ali Mitayev (1881–1925)"
       }
     ],
     "summary": "1881 yılında Çeçenistan’ın Avtury köyünde, büyük Nakşibendi-Kâdirî sufi şeyhi Bamat-Girey-Hacı Mitayev’in oğlu olarak dünyaya gelen Şeyh Ali Mitayev, 20. yüzyıl başında Çeçen halkının en güçlü dini ve siyasi önderlerinden biri olmuştur.",
@@ -2453,7 +2035,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ibrahim-culikov.webp",
-        "caption": "İbrahim Çulikov (1891–1938) — Arşiv fotoğrafı."
+        "caption": "İbrahim Çulikov (1891–1938)"
       }
     ],
     "summary": "1891 yılında köklü Çeçen Çulik (Çulikov) ailesinde dünyaya gelen hukukçu, siyasetçi ve devlet adamı İbrahim Çulikov, 1917–1918 yıllarında Çeçen Milli Konseyi Başkanlığı görevini üstlenerek Çeçen halkının siyasi birliğini sağlamıştır.",
@@ -2477,7 +2059,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/cavadhan-murtazaliyev.webp",
-        "caption": "Cavadhan Murtazaliyev (1879–1944) — Arşiv fotoğrafı."
+        "caption": "Cavadhan Murtazaliyev (1879–1944)"
       }
     ],
     "summary": "1879 yılında Çeçenistan’ın sarp dağlık bölgesinde dünyaya gelen Cavadhan Murtazaliyev, 1940–1944 yıllarında Hasan İsrailov ve Mayrbek Şeripov önderliğinde yürütülen Sovyet karşıtı dağ direnişinin en yaşlı ve bilge komutanlarından biri olmuştur.",
@@ -2501,7 +2083,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/imam-alimsultanov.webp",
-        "caption": "İmam Alimsultanov (1957–1996) — Arşiv fotoğrafı."
+        "caption": "İmam Alimsultanov (1957–1996)"
       }
     ],
     "summary": "1957 yılında Kırgızistan sürgününde doğan ve Hasavyurt’ta yetişen İmam Alimsultanov, geleneksel Çeçen destanlarını (‘İlli’) modern direniş ruhuyla birleştirerek Çeçen halkının unutulmaz milli ozanı ve direniş sesi olmuştur.",
@@ -2525,13 +2107,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ali-itayev.webp",
-        "caption": "Ali İtayev (1968–1998) — Arşiv fotoğrafı."
+        "caption": "Ali İtayev (1968–1998)"
       }
     ],
     "summary": "1968 yılında Çeçenistan’ın Urus-Martan bölgesinde dünyaya gelen Ali İtayev, Çeçen bağımsızlık hareketinin ilk yıllarından itibaren vatan savunmasında yer alan gözü pek saha komutanlarındandır.",
     "bio": [
       "1968 yılında Çeçenistan’ın Urus-Martan bölgesinde dünyaya gelen Ali İtayev, Çeçen bağımsızlık hareketinin ilk yıllarından itibaren vatan savunmasında yer alan gözü pek saha komutanlarındandır.",
-      "Birinci Çeçen-Rus Savaşı’nda (1994–1996) Urus-Martan ve Başkent Grozni cephelerinde Rus işgal ordusuna karşı en ön saflarda çarpışmış; cesareti ve saha komutanlığındaki atılganlığıyla tanınmıştır. İçkerya’nın bağımsızlığı ve onuru uğrunda ömrünü adayan Ali İtayev, 1998 yılında Çeçenistan’da bağımsızlık davası yolunda şehadet mertebesine ulaşmıştır."
+      "Birinci Çeçen-Rus Savaşı’nda (1994–1996) Urus-Martan ve başkent Grozni cephelerinde Rus işgal ordusuna karşı en ön saflarda çarpışmış; cesareti ve saha komutanlığındaki atılganlığıyla tanınmıştır. İçkerya’nın bağımsızlığı ve onuru uğrunda ömrünü adayan Ali İtayev, 1998 yılında Çeçenistan’da bağımsızlık davası yolunda şehadet mertebesine ulaşmıştır."
     ]
   },
   {
@@ -2549,7 +2131,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/leci-islamov.webp",
-        "caption": "Leci İslamov (‘Sakal’ / Boroda) (1962–2004) — Arşiv fotoğrafı."
+        "caption": "Leci İslamov (‘Sakal’ / Boroda) (1962–2004)"
       }
     ],
     "summary": "1962 yılında Gudermes’te doğan ve cephede ‘Sakal’ (Boroda) lakabıyla tanınan Tuğgeneral Leci İslamov, 1994–1996 Birinci Çeçen Savaşı’nda Grozni ve Gudermes cephelerinde gösterdiği efsanevi kahramanlıkla İçkerya devletinin en yüksek madalyası olan ‘Koman Siy’ (Milletin Onuru) nişanıyla ödüllendirilmiştir.",
@@ -2573,37 +2155,37 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/daud-ahmadov.webp",
-        "caption": "Daud Ahmadov (1944–2004) — Arşiv fotoğrafı."
+        "caption": "Daud Ahmadov (1944–2004)"
       }
     ],
-    "summary": "1944 Çeçen sürgünü yılında dünyaya gelen Tuğgeneral Daud Ahmadov, Şehit Cumhurbaşkanı Cevher Dudayev’in en yakın dava ve silah arkadaşlarından biri olarak Çeçen Cumhuriyeti İçkerya hükümetinde Sanayi Bakanı ve devlet yöneticisi olarak görev yapmıştır.",
+    "summary": "1944 Çeçen sürgünü yılında dünyaya gelen Tuğgeneral Daud Ahmadov, Şehit Cumhurbaşkanı Cevher Dudayev’in en yakın dava ve silah arkadaşlarından biri olarak Çeçen İçkerya Cumhuriyeti hükümetinde Sanayi Bakanı ve devlet yöneticisi olarak görev yapmıştır.",
     "bio": [
-      "1944 Çeçen sürgünü yılında dünyaya gelen Tuğgeneral Daud Ahmadov, Şehit Cumhurbaşkanı Cevher Dudayev’in en yakın dava ve silah arkadaşlarından biri olarak Çeçen Cumhuriyeti İçkerya hükümetinde Sanayi Bakanı ve devlet yöneticisi olarak görev yapmıştır.",
-      "1994 yılında Rus işgalinin başlamasıyla birlikte makamını bırakıp cepheye koşarak Tuğgeneral rütbesiyle Şali Sektörü Komutanlığını üstlenmiş; hem Birinci hem de İkinci Çeçen Savaşı’nda dağlardan ve cepheden bir gün bile ayrılmamıştır. Koman Siy’ (Milletin Onuru) nişanı sahibi olan Daud Ahmadov, 2004 yılında Çeçenistan’ın bağımsızlığı uğrunda şehadet mertebesine ulaşmıştır."
+      "1944 Çeçen sürgünü yılında dünyaya gelen Tuğgeneral Daud Ahmadov, Şehit Cumhurbaşkanı Cevher Dudayev’in en yakın dava ve silah arkadaşlarından biri olarak Çeçen İçkerya Cumhuriyeti hükümetinde Sanayi Bakanı ve devlet yöneticisi olarak görev yapmıştır.",
+      "1994 yılında Rus işgalinin başlamasıyla birlikte makamını bırakıp cepheye koşarak tuğgeneral rütbesiyle Şali Sektörü Komutanlığını üstlenmiş; hem Birinci hem de İkinci Çeçen Savaşı’nda dağlardan ve cepheden bir gün bile ayrılmamıştır. ‘Koman Siy’ (Milletin Onuru) nişanı sahibi olan Daud Ahmadov, 2004 yılında Çeçenistan’ın bağımsızlığı uğrunda şehadet mertebesine ulaşmıştır."
     ]
   },
   {
     "slug": "mahran-saidov",
     "name": "Mahran Saidov (Emir Mahran)",
-    "born": "?",
-    "died": "1975",
+    "born": "1975",
+    "died": "Günümüz",
     "title": "Çeçen direniş komutanı",
-    "era": "sovyet",
+    "era": "yakin",
     "region": "Çeçenya",
-    "birthPlace": "Çeçenya",
-    "deathPlace": "Çeçenya",
-    "center": "Çeçenya",
+    "birthPlace": "Gordali, Nojay-Yurt",
+    "deathPlace": "—",
+    "center": "Nojay-Yurt, Gudermes",
     "image": "/images/people/mahran-saidov.webp",
     "gallery": [
       {
         "src": "/images/people/mahran-saidov.webp",
-        "caption": "Mahran Saidov (Emir Mahran) (?–1975) — Arşiv fotoğrafı."
+        "caption": "Mahran Saidov (Emir Mahran) (1975–Günümüz)"
       }
     ],
     "summary": "22 Ocak 1975 tarihinde Çeçenistan’ın Nojay-Yurt bölgesindeki Gordali köyünde dünyaya gelen Mahran Saidov, genç yaşta katıldığı Çeçen bağımsızlık mücadelesinde Doğu Cephesi’nin en sarp dağlarında yıllarca gerilla savaşı yürütmüştür.",
     "bio": [
       "22 Ocak 1975 tarihinde Çeçenistan’ın Nojay-Yurt bölgesindeki Gordali köyünde dünyaya gelen Mahran Saidov, genç yaşta katıldığı Çeçen bağımsızlık mücadelesinde Doğu Cephesi’nin en sarp dağlarında yıllarca gerilla savaşı yürütmüştür.",
-      "Emir Mahran’ ve ‘Kızıl Sakal’ lakaplarıyla Gudermes ve Nojay-Yurt sektörlerini yönetmiş; 2010 Tsentoroy harekâtı dahil en kritik cephe operasyonlarında ön saflarda çarpışmıştır. Rus medyasının defalarca ortaya attığı ölüm iddialarına rağmen cepheden sağ çıkan ve vatan mücadelesinin yaşayan şahitlerinden olan gazi komutandır."
+      "‘Emir Mahran’ ve ‘Kızıl Sakal’ lakaplarıyla Gudermes ve Nojay-Yurt sektörlerini yönetmiş; 2010 Tsentoroy harekâtı dahil en kritik cephe operasyonlarında ön saflarda çarpışmıştır. Rus medyasının defalarca ortaya attığı ölüm iddialarına rağmen cepheden sağ çıkan ve vatan mücadelesinin yaşayan şahitlerinden olan gazi komutandır."
     ]
   },
   {
@@ -2621,12 +2203,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/tahir-batayev.webp",
-        "caption": "Tahir Batayev (Emir Timur) (1973–2007) — Arşiv fotoğrafı."
+        "caption": "Tahir Batayev (Emir Timur) (1973–2007)"
       }
     ],
-    "summary": "30 Haziran 1973’te Çeçenistan’ın Şelkovskaya bölgesindeki Sarı-Su köyünde doğan Tuğgeneral Tahir Batayev, Birinci ve İkinci Çeçen Savaşları’nda gösterdiği üstün yararlılıkla Çeçen Cumhuriyeti İçkerya Silahlı Kuvvetleri Kuzeydoğu Cephesi Komutanlığına yükselmiştir.",
+    "summary": "30 Haziran 1973’te Çeçenistan’ın Şelkovskaya bölgesindeki Sarı-Su köyünde doğan Tuğgeneral Tahir Batayev, Birinci ve İkinci Çeçen Savaşları’nda gösterdiği üstün yararlılıkla Çeçen İçkerya Cumhuriyeti Silahlı Kuvvetleri Kuzeydoğu Cephesi Komutanlığı’na yükselmiştir.",
     "bio": [
-      "30 Haziran 1973’te Çeçenistan’ın Şelkovskaya bölgesindeki Sarı-Su köyünde doğan Tuğgeneral Tahir Batayev, Birinci ve İkinci Çeçen Savaşları’nda gösterdiği üstün yararlılıkla Çeçen Cumhuriyeti İçkerya Silahlı Kuvvetleri Kuzeydoğu Cephesi Komutanlığına yükselmiştir.",
+      "30 Haziran 1973’te Çeçenistan’ın Şelkovskaya bölgesindeki Sarı-Su köyünde doğan Tuğgeneral Tahir Batayev, Birinci ve İkinci Çeçen Savaşları’nda gösterdiği üstün yararlılıkla Çeçen İçkerya Cumhuriyeti Silahlı Kuvvetleri Kuzeydoğu Cephesi Komutanlığı’na yükselmiştir.",
       "Kuzey ovalarından Gudermes ve Nojay-Yurt dağlarına uzanan geniş cephe hattında yıllarca direniş birliklerini koordine etmiş ve ‘Koman Siy’ (Milletin Onuru) nişanıyla taltif edilmiştir. 21 Mart 2007 tarihinde Gudermes’te Rus özel kuvvetleriyle girilen çetin çatışmada son mermisine kadar çarpışarak 33 yaşında şehit düşmüştür."
     ]
   },
@@ -2645,7 +2227,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/aslan-izrailov.webp",
-        "caption": "Aslan İzrailov (Emir Sawab) (1977–2009) — Arşiv fotoğrafı."
+        "caption": "Aslan İzrailov (Emir Sawab) (1977–2009)"
       }
     ],
     "summary": "29 Aralık 1977’de Şali bölgesinin Novye Atagi köyünde doğan ve cephede ‘Emir Sawab’ lakabıyla tanınan Aslan İzrailov, 1999’da İkinci Çeçen Savaşı’nın başlamasıyla birlikte dağ direniş saflarına katılmıştır.",
@@ -2669,7 +2251,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/islam-uspahaciyev.webp",
-        "caption": "İslam Uspahaciyev (1973–2009) — Arşiv fotoğrafı."
+        "caption": "İslam Uspahaciyev (1973–2009)"
       }
     ],
     "summary": "1973 yılında dünyaya gelen İslam Uspahaciyev, Şali ve Vedeno dağ hattının en sarsılmaz Çeçen direniş komutanlarından biri olarak Birinci ve İkinci Çeçen Savaşları boyunca vatan topraklarını terk etmeden çarpışmıştır.",
@@ -2693,31 +2275,31 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/amina-okuyeva.webp",
-        "caption": "Amina Okuyeva (1983–2017) — Arşiv fotoğrafı."
+        "caption": "Amina Okuyeva (1983–2017)"
       }
     ],
-    "summary": "5 Haziran 1983’te doğan cerrah ve askeri doktor Amina Okuyeva, Çeçen özgürlük mücadelesinin sembol kadın savaşçısı olarak İkinci Çeçen Savaşı’nda Başkent Grozni’de yaralı direnişçileri ateş altında tedavi etmiş ve cephede bizzat yer almıştır.",
+    "summary": "5 Haziran 1983’te doğan cerrah ve askeri doktor Amina Okuyeva, Çeçen özgürlük mücadelesinin sembol kadın savaşçısı olarak İkinci Çeçen Savaşı’nda başkent Grozni’de yaralı direnişçileri ateş altında tedavi etmiş ve cephede bizzat yer almıştır.",
     "bio": [
-      "5 Haziran 1983’te doğan cerrah ve askeri doktor Amina Okuyeva, Çeçen özgürlük mücadelesinin sembol kadın savaşçısı olarak İkinci Çeçen Savaşı’nda Başkent Grozni’de yaralı direnişçileri ateş altında tedavi etmiş ve cephede bizzat yer almıştır.",
+      "5 Haziran 1983’te doğan cerrah ve askeri doktor Amina Okuyeva, Çeçen özgürlük mücadelesinin sembol kadın savaşçısı olarak İkinci Çeçen Savaşı’nda başkent Grozni’de yaralı direnişçileri ateş altında tedavi etmiş ve cephede bizzat yer almıştır.",
       "2014 sonrasında eşi Adem Osmayev ve Tuğgeneral İsa Munayev ile birlikte Uluslararası Cevher Dudayev Barış Gücü Taburu’nda Rus emperyalizmine karşı cephede görev yapmıştır. Haziran 2017’de Kiev’de Rus istihbarat suikastçısının saldırısını kendi tabancasıyla karşılık vererek püskürten Amina Okuyeva, 30 Ekim 2017 tarihinde Kiev yakınlarında kurulan silahlı pusuda şehit düşmüştür."
     ]
   },
   {
     "slug": "aslambek-vadalov",
     "name": "Aslambek Vadalov (Emir Aslambek)",
-    "born": "?",
-    "died": "1971",
+    "born": "1971",
+    "died": "Günümüz",
     "title": "Çeçen direniş komutanı",
-    "era": "sovyet",
+    "era": "yakin",
     "region": "Çeçenya",
-    "birthPlace": "Çeçenya",
-    "deathPlace": "Çeçenya",
-    "center": "Çeçenya",
+    "birthPlace": "İşhoy-Yurt, Gudermes",
+    "deathPlace": "—",
+    "center": "Gudermes, Doğu Cephesi",
     "image": "/images/people/aslambek-vadalov.webp",
     "gallery": [
       {
         "src": "/images/people/aslambek-vadalov.webp",
-        "caption": "Aslambek Vadalov (Emir Aslambek) (?–1971) — Arşiv fotoğrafı."
+        "caption": "Aslambek Vadalov (Emir Aslambek) (1971–Günümüz)"
       }
     ],
     "summary": "4 Nisan 1971 tarihinde Gudermes bölgesinin İşhoy-Yurt köyünde dünyaya gelen Aslambek Vadalov, 1994 yılında başlayan Birinci Çeçen Savaşı’nda Şeyh Mansur taburunda direniş saflarına katılmış ve her iki savaş boyunca en ön cephede yer almıştır.",
@@ -2729,19 +2311,19 @@ export const PEOPLE: Person[] = [
   {
     "slug": "tarhan-gaziyev",
     "name": "Tarhan Gaziyev (Emir Tarhan)",
-    "born": "?",
-    "died": "1965",
+    "born": "1965",
+    "died": "Günümüz",
     "title": "Çeçen direniş komutanı",
-    "era": "sovyet",
+    "era": "yakin",
     "region": "Çeçenya",
-    "birthPlace": "Çeçenya",
-    "deathPlace": "Çeçenya",
-    "center": "Çeçenya",
+    "birthPlace": "Buğaroy, İtum-Kale",
+    "deathPlace": "—",
+    "center": "İtum-Kale, Güneybatı Cephesi",
     "image": "/images/people/tarhan-gaziyev.webp",
     "gallery": [
       {
         "src": "/images/people/tarhan-gaziyev.webp",
-        "caption": "Tarhan Gaziyev (Emir Tarhan) (?–1965) — Arşiv fotoğrafı."
+        "caption": "Tarhan Gaziyev (Emir Tarhan) (1965–Günümüz)"
       }
     ],
     "summary": "11 Kasım 1965 tarihinde Çeçenistan’ın İtum-Kale bölgesindeki Buğaroy köyünde dünyaya gelen Tarhan Gaziyev, Birinci ve İkinci Çeçen Savaşları boyunca güneybatı dağ cephelerinde aralıksız savaşmıştır.",
@@ -2765,7 +2347,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/seyh-ahmed-edilov.webp",
-        "caption": "Şeyh-Ahmed Edilov (1965–2000) — Arşiv fotoğrafı."
+        "caption": "Şeyh-Ahmed Edilov (1965–2000)"
       }
     ],
     "summary": "1965 yılında Çeçenistan’ın Nojay-Yurt bölgesine bağlı Zandak köyünde dünyaya gelen Şeyh-Ahmed Edilov, Çeçen bağımsızlık mücadelesinin seçkin alay komutanlarından ve kurmay başkanlarındandır.",
@@ -2777,25 +2359,25 @@ export const PEOPLE: Person[] = [
   {
     "slug": "huseyin-ishanov",
     "name": "Hüseyin İshanov",
-    "born": "?",
-    "died": "1958",
+    "born": "1958",
+    "died": "Günümüz",
     "title": "Çeçen direniş komutanı",
-    "era": "sovyet",
+    "era": "yakin",
     "region": "Çeçenya",
     "birthPlace": "Çeçenya",
-    "deathPlace": "Çeçenya",
-    "center": "Çeçenya",
+    "deathPlace": "—",
+    "center": "Grozni, Argun",
     "image": "/images/people/huseyin-ishanov.webp",
     "gallery": [
       {
         "src": "/images/people/huseyin-ishanov.webp",
-        "caption": "Hüseyin İshanov (?–1958) — Arşiv fotoğrafı."
+        "caption": "Hüseyin İshanov (1958–Günümüz)"
       }
     ],
     "summary": "22 Temmuz 1958 tarihinde dünyaya gelen Tuğgeneral Hüseyin İshanov, Çeçen milli bağımsızlık hareketinin ilk yıllarından itibaren devlet inşasında ve vatan savunmasında yer almıştır.",
     "bio": [
       "22 Temmuz 1958 tarihinde dünyaya gelen Tuğgeneral Hüseyin İshanov, Çeçen milli bağımsızlık hareketinin ilk yıllarından itibaren devlet inşasında ve vatan savunmasında yer almıştır.",
-      "1994–1996 Birinci Çeçen-Rus Savaşı’nda Başkent Grozni ve Argun cephelerinde komutanlık yaparak Tuğgeneral rütbesine yükselmiş; 1997’de Çeçen İçkerya Cumhuriyeti Parlamentosu milletvekili seçilerek Cumhurbaşkanı Aslan Mashadov’un yanında görev yapmıştır. Sürgünde de Çeçen halkının bağımsızlık mücadelesini kararlılıkla sürdüren gazi generaldir."
+      "1994–1996 Birinci Çeçen-Rus Savaşı’nda başkent Grozni ve Argun cephelerinde komutanlık yaparak tuğgeneral rütbesine yükselmiş; 1997’de Çeçen İçkerya Cumhuriyeti Parlamentosu milletvekili seçilerek Cumhurbaşkanı Aslan Mashadov’un yanında görev yapmıştır. Sürgünde de Çeçen halkının bağımsızlık mücadelesini kararlılıkla sürdüren gazi generaldir."
     ]
   },
   {
@@ -2813,13 +2395,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/isa-muskiyev.webp",
-        "caption": "İsa Muskiyev (Emir Halid) (1974–2006) — Arşiv fotoğrafı."
+        "caption": "İsa Muskiyev (Emir Halid) (1974–2006)"
       }
     ],
     "summary": "1974 yılında Tsotsin-Yurt’ta doğan ve beş oğlunu bağımsızlık savaşına uğurlayan kahraman Muskiyev ailesinin komutan evladı olan İsa Muskiyev (‘Emir Halid’), Cumhurbaşkanı Aslan Mashadov’un koruma ekibinde ve Şehit Cumhurbaşkanı Abdul-Halim Sadulayev’in yakın karargâhında görev yapmıştır.",
     "bio": [
       "1974 yılında Tsotsin-Yurt’ta doğan ve beş oğlunu bağımsızlık savaşına uğurlayan kahraman Muskiyev ailesinin komutan evladı olan İsa Muskiyev (‘Emir Halid’), Cumhurbaşkanı Aslan Mashadov’un koruma ekibinde ve Şehit Cumhurbaşkanı Abdul-Halim Sadulayev’in yakın karargâhında görev yapmıştır.",
-      "Kورتçaloy ve Şali sektörleri komutanı olarak 2004–2005 yıllarında Şali, Tsotsin-Yurt, Argun ve Tambov GRU özel kuvvetlerine karşı düzenlenen en ağır cephe operasyonlarını bizzat yönetmiş; çatışmalarda daima askerlerinin en önünde ilerlemesiyle tanınmıştır. 18 Eylül 2006 tarihinde en küçük kardeşi Ali Muskiyev ile aynı gün Rus kuşatmasında son mermisine kadar çarpışarak 32 yaşında şehit düşmüştür."
+      "Kurtçaloy ve Şali sektörleri komutanı olarak 2004–2005 yıllarında Şali, Tsotsin-Yurt, Argun ve Tambov GRU özel kuvvetlerine karşı düzenlenen en ağır cephe operasyonlarını bizzat yönetmiş; çatışmalarda daima askerlerinin en önünde ilerlemesiyle tanınmıştır. 18 Eylül 2006 tarihinde en küçük kardeşi Ali Muskiyev ile aynı gün Rus kuşatmasında son mermisine kadar çarpışarak 32 yaşında şehit düşmüştür."
     ]
   },
   {
@@ -2837,7 +2419,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/komutan-abdulmalik.webp",
-        "caption": "Komutan Abdulmalik (1975–2008) — Arşiv fotoğrafı."
+        "caption": "Komutan Abdulmalik (1975–2008)"
       }
     ],
     "summary": "1975 yılında dünyaya gelen Komutan Abdulmalik, Güney Cephesi ve Şali Sektörü direniş emirlerinden biri olarak Emir Mühenned ve Aslambek Vadalov ile dağ cephelerinde omuz omuza savaşmıştır.",
@@ -2861,7 +2443,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ali-muskiyev.webp",
-        "caption": "Ali Muskiyev (1987–2006) — Arşiv fotoğrafı."
+        "caption": "Ali Muskiyev (1987–2006)"
       }
     ],
     "summary": "1987 yılında Tsotsin-Yurt’ta doğan Ali Muskiyev, beş oğlunu Çeçenistan’ın bağımsızlık savaşına uğurlayan efsanevi Muskiyev kardeşlerin en küçüğüdür.",
@@ -2885,7 +2467,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ebu-hafs.webp",
-        "caption": "Emir Ebu Hafs el-Ürdüni (1973–2006) — Arşiv fotoğrafı."
+        "caption": "Emir Ebu Hafs el-Ürdüni (1973–2006)"
       }
     ],
     "summary": "1973 yılında doğan ve genç yaşta Kafkasya’ya gelerek Çeçen bağımsızlık direnişine katılan Emir Ebu Hafs, Şamil Basayev, Emir Hattab, Ebu el-Velid ve İsa Muskiyev ile dağ kamplarında ve cephelerde omuz omuza savaşmıştır.",
@@ -2909,7 +2491,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/emir-muhenned.webp",
-        "caption": "Emir Mühenned (Halid Yusuf) (1969–2011) — Arşiv fotoğrafı."
+        "caption": "Emir Mühenned (Halid Yusuf) (1969–2011)"
       }
     ],
     "summary": "1969 yılında dünyaya gelen ve eski bir savaş pilotu teğmen olan Emir Mühenned, önce Bosna cephesinde savaşmış, 1999 yılında ise Gürcistan’ın Pankisi Vadisi üzerinden yürüyerek kuşatma altındaki Çeçenistan’a geçmiştir.",
@@ -2933,7 +2515,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/vaha-canaraliyev.webp",
-        "caption": "Vaha Canaraliyev (Emir Velid) (1981–2008) — Arşiv fotoğrafı."
+        "caption": "Vaha Canaraliyev (Emir Velid) (1981–2008)"
       }
     ],
     "summary": "1981 doğumlu Vaha Canaraliyev, İkinci Çeçen Savaşı başladığında henüz on sekiz yaşındayken direniş saflarına katılmış; cephede “Emir Velid” ve “Rijiy Vaha” lakaplarıyla tanınmıştır.",
@@ -2957,7 +2539,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/sultan-hadisov.webp",
-        "caption": "Sultan Hadisov (Emir Musa) (1968–2006) — Arşiv fotoğrafı."
+        "caption": "Sultan Hadisov (Emir Musa) (1968–2006)"
       }
     ],
     "summary": "1968 yılında Kurchaloy bölgesinin Bachi-Yurt köyünde dünyaya gelen Sultan Hadisov, Birinci ve İkinci Çeçen Savaşları’nın en tecrübeli saha komutanlarından biri olarak “Emir Musa” lakabıyla tanınmıştır.",
@@ -2981,7 +2563,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ilman-estamirov.webp",
-        "caption": "İlman Estamirov (1977–2011) — Arşiv fotoğrafı."
+        "caption": "İlman Estamirov (1977–2011)"
       }
     ],
     "summary": "1977 yılında Grozni bölgesinin Çeçen-Aul köyünde dünyaya gelen İlman Estamirov, Grozni ve Argun cephesinin en sarsılmaz direniş komutanlarından biri olarak uzun yıllar Çeçenistan dağlarında mücadele etmiştir.",
@@ -3005,7 +2587,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ahmad-tevzaninski.webp",
-        "caption": "Ahmad Tevzaninski (Ebu-Cafar) (1983–2008) — Arşiv fotoğrafı."
+        "caption": "Ahmad Tevzaninski (Ebu-Cafar) (1983–2008)"
       }
     ],
     "summary": "1983 yılında Vedeno bölgesinin Tevzana köyünde dünyaya gelen Ahmad, genç yaşta Çeçen bağımsızlık direnişine katılmış ve cephede “Ebu-Cafar” lakabıyla tanınmıştır.",
@@ -3029,7 +2611,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/saydi-tevzaninski.webp",
-        "caption": "Saydi Tevzaninski (1985–2011) — Arşiv fotoğrafı."
+        "caption": "Saydi Tevzaninski (1985–2011)"
       }
     ],
     "summary": "1985 yılında Vedeno bölgesinin Tevzana köyünde dünyaya gelen Saydi, İkinci Çeçen Savaşı yıllarında çok genç yaşta Vedeno dağ birliklerine katılarak vatan savunmasında yer almıştır.",
@@ -3053,7 +2635,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/isa-izerhanov.webp",
-        "caption": "İsa İzerhanov (Kara İsa) (1968–2009) — Arşiv fotoğrafı."
+        "caption": "İsa İzerhanov (Kara İsa) (1968–2009)"
       }
     ],
     "summary": "1968 doğumlu İsa İzerhanov, Nojay-Yurt ve Gudermes dağ sektörünün en tecrübeli mücahit komutanlarından biri olarak cephede “Kara İsa” (Çyornıy İsa) lakabıyla tanınmıştır.",
@@ -3077,7 +2659,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/musa-muskiyev.webp",
-        "caption": "Musa Muskiyev (1980–1999) — Arşiv fotoğrafı."
+        "caption": "Musa Muskiyev (1980–1999)"
       }
     ],
     "summary": "1980 yılında Şali bölgesinin Tsotsi-Yurt köyünde dünyaya gelen Musa Muskiyev, Çeçen direniş tarihine adlarını altın harflerle yazdıran beş şehit kardeşten oluşan kahraman Muskiyev ailesinin en genç fertlerindendir.",
@@ -3101,7 +2683,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/soyip-muskiyev.webp",
-        "caption": "Şoyip Muskiyev (1967–2002) — Arşiv fotoğrafı."
+        "caption": "Şoyip Muskiyev (1967–2002)"
       }
     ],
     "summary": "1967 yılında Şali bölgesinin Tsotsi-Yurt köyünde dünyaya gelen Şoyip Muskiyev, beş kardeşin tamamı vatan uğruna şehit düşen efsanevi Muskiyev ailesinin en büyük ağabeyidir.",
@@ -3125,7 +2707,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/samil-muskiyev.webp",
-        "caption": "Şamil Muskiyev (1976–2005) — Arşiv fotoğrafı."
+        "caption": "Şamil Muskiyev (1976–2005)"
       }
     ],
     "summary": "1976 yılında Şali bölgesinin Tsotsi-Yurt köyünde dünyaya gelen Şamil Muskiyev, ağabeyi Emir İsa Muskiyev’in en yakın silah arkadaşı, yardımcısı ve Muskiyev ailesinin şehit düşen beş kahraman evladından biridir.",
@@ -3149,12 +2731,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/murad-yusuphaciyev.webp",
-        "caption": "Murad Yusuphaciyev (Emir Ebu Sayaf) (1978–2002) — Arşiv fotoğrafı."
+        "caption": "Murad Yusuphaciyev (Emir Ebu Sayaf) (1978–2002)"
       }
     ],
-    "summary": "1978 doğumlu Murad Yusuphaciyev, Grozni direnişinde “Emir Ebu Sayaf” künyesiyle tanınan gözüpek bir cemaat emiridir.",
+    "summary": "1978 doğumlu Murad Yusuphaciyev, Grozni direnişinde “Emir Ebu Sayaf” künyesiyle tanınan gözü pek bir cemaat emiridir.",
     "bio": [
-      "1978 doğumlu Murad Yusuphaciyev, Grozni direnişinde “Emir Ebu Sayaf” künyesiyle tanınan gözüpek bir cemaat emiridir.",
+      "1978 doğumlu Murad Yusuphaciyev, Grozni direnişinde “Emir Ebu Sayaf” künyesiyle tanınan gözü pek bir cemaat emiridir.",
       "En ağır kuşatma günlerinde dahi Grozni sokaklarında tek başına özel operasyonlar düzenlemiş; Steçkin tabancası ve Hattabka bombalarıyla Rus işgalci istihbaratçılarını etkisiz hale getirmiştir. Grozni’nin Zavodskoy bölgesinde Çeçen halkına işkence eden işgalci operasyon şefini bizzat cezalandırmış; 2002 yılında vatan toprağını savunurken girdiği çatışmada son nefesine kadar vuruşarak şehit düşmüştür."
     ]
   },
@@ -3173,12 +2755,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/rabbani-halilov.webp",
-        "caption": "Rabbani Halilov (1969–2007) — Arşiv fotoğrafı."
+        "caption": "Rabbani Halilov (1969–2007)"
       }
     ],
-    "summary": "1969 doğumlu Rabbani Halilov, Dağıstan cephesi emiri ve İçkerya Çeçen Cumhuriyeti Silahlı Kuvvetleri Tuğgeneralidir.",
+    "summary": "1969 doğumlu Rabbani Halilov, Dağıstan cephesi emiri ve Çeçen İçkerya Cumhuriyeti Silahlı Kuvvetleri tuğgeneralidir.",
     "bio": [
-      "1969 doğumlu Rabbani Halilov, Dağıstan cephesi emiri ve İçkerya Çeçen Cumhuriyeti Silahlı Kuvvetleri Tuğgeneralidir.",
+      "1969 doğumlu Rabbani Halilov, Dağıstan cephesi emiri ve Çeçen İçkerya Cumhuriyeti Silahlı Kuvvetleri tuğgeneralidir.",
       "1999 yılından itibaren Kafkasya direnişinin en ön saflarında komuta görevi üstlenmiş; Şamil Basayev ve Cumhurbaşkanı Abdulhalim Sadulayev’in en yakın silah arkadaşlarından ve cephe komutanlarından biri olmuştur. Üstün cesaret ve liderliği nedeniyle Çeçen devletinin en yüksek nişanlarından “Ulusun Onuru” (Koman Siy) ile onurlandırılan Tuğgeneral Rabbani Halilov, 17 Eylül 2007 tarihinde yardımcısı Nabi Nabiyev ile birlikte kuşatıldığı evde son kurşununa kadar çarpışarak şehit düşmüştür."
     ]
   },
@@ -3197,13 +2779,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/aldili-ali.webp",
-        "caption": "Aldılı Ali (1980–1996) — Arşiv fotoğrafı."
+        "caption": "Aldılı Ali (1980–1996)"
       }
     ],
     "summary": "1980 yılında Grozni’nin Aldı kasabasında dünyaya gelen Ali, henüz 15 yaşındayken Birinci Rus-Çeçen Savaşı’nda vatan savunmasına katılan genç bir Çeçen kahramanıdır.",
     "bio": [
       "1980 yılında Grozni’nin Aldı kasabasında dünyaya gelen Ali, henüz 15 yaşındayken Birinci Rus-Çeçen Savaşı’nda vatan savunmasına katılan genç bir Çeçen kahramanıdır.",
-      "Ocak 1996’da Komutan Hüseyin İsabayev’in Özel Amaçlı Taburunda makineli tüfekçi olarak görev almış; Mart 1996 Grozni taarruzunda ve Goyskoye köyü savunmasında en ön siperde çarpışmıştır. Bin mermilik makineli tüfek şeridini son fişeğine kadar boşaltmadan mevzisini terk etmemeye ant içen Aldılı Ali, 16 Nisan 1996 tarihinde henüz 16 yaşındayken Goyskoye’de Rus Hava İndirme birliklerine karşı çarpışarak şehit düşmüştür."
+      "Ocak 1996’da Komutan Hüseyin İsabayev’in Özel Amaçlı Taburu’nda makineli tüfekçi olarak görev almış; Mart 1996 Grozni taarruzunda ve Goyskoye köyü savunmasında en ön siperde çarpışmıştır. Bin mermilik makineli tüfek şeridini son fişeğine kadar boşaltmadan mevzisini terk etmemeye ant içen Aldılı Ali, 16 Nisan 1996 tarihinde henüz 16 yaşındayken Goyskoye’de Rus Hava İndirme birliklerine karşı çarpışarak şehit düşmüştür."
     ]
   },
   {
@@ -3221,7 +2803,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/abubakar-hamurzayev.webp",
-        "caption": "Abubakar Hamurzayev (1975–2000) — Arşiv fotoğrafı."
+        "caption": "Abubakar Hamurzayev (1975–2000)"
       }
     ],
     "summary": "1975 yılında Gudermes’te dünyaya gelen Abubakar Hamurzayev, korkusuzluğu ve en şiddetli çatışmaların ortasındaki tebessümüyle tanınan Çeçen mücahitlerindendir.",
@@ -3245,13 +2827,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ilyas-pasayev.webp",
-        "caption": "İlyas Paşayev (1973–2000) — Arşiv fotoğrafı."
+        "caption": "İlyas Paşayev (1973–2000)"
       }
     ],
     "summary": "1973 yılında Alhan-Yurt’ta dünyaya gelen ve Dişni taypına mensup olan İlyas Paşayev, “Cihad” Taburu Emiri ve Çeçen direnişinin seçkin komutanlarındandır.",
     "bio": [
       "1973 yılında Alhan-Yurt’ta dünyaya gelen ve Dişni taypına mensup olan İlyas Paşayev, “Cihad” Taburu Emiri ve Çeçen direnişinin seçkin komutanlarındandır.",
-      "1994’teki Birinci Rus-Çeçen Savaşı’ndan itibaren Tuğgeneral Ramzan Tsakayev ile omuz omuza çarpışmış; Tsakayev’in şehadetinin ardından “Cihad” Taburunun komutasını devralarak İçkerya devlet nişanlarına layık görülmüştür. 1 Mart 2000 tarihinde Ulus-Kert 776 rakımlı tepede Rus Pskov Hava İndirme Tümenine karşı yürütülen tarihi muharebede şehit düşmüştür."
+      "1994’teki Birinci Rus-Çeçen Savaşı’ndan itibaren Tuğgeneral Ramzan Tsakayev ile omuz omuza çarpışmış; Tsakayev’in şehadetinin ardından “Cihad” Taburu’nun komutasını devralarak İçkerya devlet nişanlarına layık görülmüştür. 1 Mart 2000 tarihinde Ulus-Kert 776 rakımlı tepede Rus Pskov Hava İndirme Tümeni’ne karşı yürütülen tarihi muharebede şehit düşmüştür."
     ]
   },
   {
@@ -3269,7 +2851,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/halid-yandurkayev.webp",
-        "caption": "Halid Yandurkayev (1974–2000) — Arşiv fotoğrafı."
+        "caption": "Halid Yandurkayev (1974–2000)"
       }
     ],
     "summary": "1974 yılında Açhoy-Martan’da dünyaya gelen ve Aytkhaloy taypına mensup olan Halid Yandurkayev, Emir Abdul-Hadi (Arbi Ditayev) komutasındaki Özel Taarruz Birliği’nde ve Abdurrahman Cemaati’nde Hücum Grubu Emiri olarak görev yapmıştır.",
@@ -3293,12 +2875,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/has-muhammed-hatuyev.webp",
-        "caption": "Has-Muhammed Hatuyev (Kaboj) (1968–1995) — Arşiv fotoğrafı."
+        "caption": "Has-Muhammed Hatuyev (Kaboj) (1968–1995)"
       }
     ],
-    "summary": "1968 yılında Goyti köyünde dünyaya gelen ve “Kaboj” künyesiyle efsaneleşen Has-Muhammed Hatuyev, savaştan önce Dünya ve Olimpiyat Şampiyonasına hazırlanan milli güreşçi ve antrenördü.",
+    "summary": "1968 yılında Goyti köyünde dünyaya gelen ve “Kaboj” künyesiyle efsaneleşen Has-Muhammed Hatuyev, savaştan önce Dünya ve Olimpiyat Şampiyonası’na hazırlanan milli güreşçi ve antrenördü.",
     "bio": [
-      "1968 yılında Goyti köyünde dünyaya gelen ve “Kaboj” künyesiyle efsaneleşen Has-Muhammed Hatuyev, savaştan önce Dünya ve Olimpiyat Şampiyonasına hazırlanan milli güreşçi ve antrenördü.",
+      "1968 yılında Goyti köyünde dünyaya gelen ve “Kaboj” künyesiyle efsaneleşen Has-Muhammed Hatuyev, savaştan önce Dünya ve Olimpiyat Şampiyonası’na hazırlanan milli güreşçi ve antrenördü.",
       "Aralık 1994’te başlayan Grozni savunmasında tek başına 47 Rus tankı ve zırhlı aracını imha ederek Çeçen direniş tarihinin en büyük zırhlı araç avcılarından biri olmuş; Cumhurbaşkanı Cevher Dudayev tarafından “Ulusun Kahramanı” (Koman Turpal) ve “Ulusun Onuru” (Koman Siy) nişanlarıyla ödüllendirilmiştir. 28 Ocak 1995 tarihinde Grozni Trampark çarpışmasında üç Rus tankını daha vurduktan sonra aldığı ağır yaralar sonucu şehit düşmüştür."
     ]
   },
@@ -3317,7 +2899,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/bay-ali-kasumov.webp",
-        "caption": "Bay-Ali Kasumov (1977–2016) — Arşiv fotoğrafı."
+        "caption": "Bay-Ali Kasumov (1977–2016)"
       }
     ],
     "summary": "1977 doğumlu Bay-Ali Kasumov, Kafkasya Emiri Dokku Umarov’un en yakın muhafızı ve uzun yıllar boyunca dağ cephelerinde en ağır kuşatmalarda çarpışan sarsılmaz iradeli bir Çeçen mücahididir.",
@@ -3341,7 +2923,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ali-adayev.webp",
-        "caption": "Ali Adayev (Lambada) (1966–1995) — Arşiv fotoğrafı."
+        "caption": "Ali Adayev (Lambada) (1966–1995)"
       }
     ],
     "summary": "1966 doğumlu Ali Adayev, “Lambada” künyesiyle tanınan, Şamil Basayev’in kurmay başkanı ve 1990’lı yılların başından itibaren Çeçen devletinin bağımsızlık sürecinde en ön safta yer alan öncü komutanlardandır.",
@@ -3365,7 +2947,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/kuri-batsiyev.webp",
-        "caption": "Küri Batsiyev (Gözüpek Küra) (1972–2005) — Arşiv fotoğrafı."
+        "caption": "Küri Batsiyev (Gözüpek Küra) (1972–2005)"
       }
     ],
     "summary": "1972 doğumlu Küri Batsiyev, cephede “Çeçen Halid bin Velid” ve “Gözüpek Küra” lakaplarıyla tanınan Hacaroy taypı emiridir.",
@@ -3389,13 +2971,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/huseyin-ahmadov.webp",
-        "caption": "Hüseyin Ahmadov (1962–1995) — Arşiv fotoğrafı."
+        "caption": "Hüseyin Ahmadov (1962–1995)"
       }
     ],
-    "summary": "Goyti köyü doğumlu, soylu Benoy taypına mensup öncü direniş savaşçısıdır. Bağımsızlığın ilk günlerinden itibaren İçkerya devletini savunan saflarda yer Aldı.",
+    "summary": "Goyti köyü doğumlu, soylu Benoy taypına mensup öncü direniş savaşçısıdır. Bağımsızlığın ilk günlerinden itibaren İçkerya devletini savunan saflarda yer aldı.",
     "bio": [
-      "Goyti köyü doğumlu, soylu Benoy taypına mensup öncü direniş savaşçısıdır. Bağımsızlığın ilk günlerinden itibaren İçkerya devletini savunan saflarda yer Aldı.",
-      "14 Ocak 1995’te Grozni’de şehit düşen zulay ahmadova’nın ağabeyi ve silah arkadaşıdır. Ocak 1995 Grozni kuşatmasında düşman zırhlılarına karşı en ön cephe de çarpıştı. 18 Ocak 1995’te rpg ile zirhlı hedefi vurmak için doğrulduğu anda şehit düştü."
+      "Goyti köyü doğumlu, soylu Benoy taypına mensup öncü direniş savaşçısıdır. Bağımsızlığın ilk günlerinden itibaren İçkerya devletini savunan saflarda yer aldı.",
+      "14 Ocak 1995’te Grozni’de şehit düşen Zulay Ahmadova’nın ağabeyi ve silah arkadaşıdır. Ocak 1995 Grozni kuşatmasında düşman zırhlılarına karşı en ön cephede çarpıştı. 18 Ocak 1995’te RPG ile zırhlı hedefi vurmak için doğrulduğu anda şehit düştü."
     ]
   },
   {
@@ -3413,13 +2995,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/zulay-ahmadova.webp",
-        "caption": "Zulay Ahmadova (1971–1995) — Arşiv fotoğrafı."
+        "caption": "Zulay Ahmadova (1971–1995)"
       }
     ],
-    "summary": "Ulusun çiçeği’ olarak anılan, Goyti köyü ve Benoy taypı mensubu kadın mücahidedir. Aralık 1994 işgalinde yirmi dört yaşında gönüllü olarak vatan savunmasına katıldı.",
+    "summary": "‘Ulusun Çiçeği’ olarak anılan, Goyti köyü ve Benoy taypı mensubu kadın mücahidedir. Aralık 1994 işgalinde yirmi dört yaşında gönüllü olarak vatan savunmasına katıldı.",
     "bio": [
-      "Ulusun çiçeği’ olarak anılan, Goyti köyü ve Benoy taypı mensubu kadın mücahidedir. Aralık 1994 işgalinde yirmi dört yaşında gönüllü olarak vatan savunmasına katıldı.",
-      "Grozni direnişinde ağabeyi hüseyin ahmadov ile omuz omuza cephe de görev yaptı. Üstün fedakarlığı nedeniyle İçkerya’nın en yüksek devlet nişanıyla onurlandırıldı. 14 Ocak 1995’te Grozni çarpışmalarında yirmi dört yaşında şehit düştü."
+      "‘Ulusun Çiçeği’ olarak anılan, Goyti köyü ve Benoy taypı mensubu kadın mücahidedir. Aralık 1994 işgalinde yirmi dört yaşında gönüllü olarak vatan savunmasına katıldı.",
+      "Grozni direnişinde ağabeyi Hüseyin Ahmadov ile omuz omuza cephede görev yaptı. Üstün fedakarlığı nedeniyle İçkerya’nın en yüksek devlet nişanıyla onurlandırıldı. 14 Ocak 1995’te Grozni çarpışmalarında yirmi dört yaşında şehit düştü."
     ]
   },
   {
@@ -3437,12 +3019,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/musa-hacimuradov.webp",
-        "caption": "Musa Hacımuradov (1956–1994) — Arşiv fotoğrafı."
+        "caption": "Musa Hacımuradov (1956–1994)"
       }
     ],
-    "summary": "Birinci rus-çeçen savaşı’nda başkent Grozni savunmasının öncü mücahitlerindendir. Aralık 1994’te vatan toprağına yönelen işgal ordusuna karşı gönüllü silah kuşandı.",
+    "summary": "Birinci Rus-Çeçen Savaşı’nda başkent Grozni savunmasının öncü mücahitlerindendir. Aralık 1994’te vatan toprağına yönelen işgal ordusuna karşı gönüllü silah kuşandı.",
     "bio": [
-      "Birinci rus-çeçen savaşı’nda başkent Grozni savunmasının öncü mücahitlerindendir. Aralık 1994’te vatan toprağına yönelen işgal ordusuna karşı gönüllü silah kuşandı.",
+      "Birinci Rus-Çeçen Savaşı’nda başkent Grozni savunmasının öncü mücahitlerindendir. Aralık 1994’te vatan toprağına yönelen işgal ordusuna karşı gönüllü silah kuşandı.",
       "31 Aralık 1994 yılbaşı günü Grozni’ye giren zırhlı tugaylara karşı ön safa durdu. Başkent sokaklarında kuşatılan işgalci birliklere ağır kayıplar verdiren hatta çarpıştı. 31 Aralık 1994’te Grozni müdafaasında vatan görevini ifa ederken şehit düştü."
     ]
   },
@@ -3461,13 +3043,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/emir-iles-musafir.webp",
-        "caption": "Emir İles Musafir (1970–1999) — Arşiv fotoğrafı."
+        "caption": "Emir İles Musafir (1970–1999)"
       }
     ],
-    "summary": "Musafir’ künyesiyle tanınan, şelkovskoy Cemaati kurucusu ve Kuzey cephesi Komutanıdır. 1994–1996 Birinci Çeçen savaşı’nda Emir hattab ile omuz omuza pek çok operasyona katıldı.",
+    "summary": "‘Musafir’ künyesiyle tanınan, Şelkovskoy Cemaati kurucusu ve Kuzey Cephesi Komutanıdır. 1994–1996 Birinci Çeçen Savaşı’nda Emir Hattab ile omuz omuza pek çok operasyona katıldı.",
     "bio": [
-      "Musafir’ künyesiyle tanınan, şelkovskoy Cemaati kurucusu ve Kuzey cephesi Komutanıdır. 1994–1996 Birinci Çeçen savaşı’nda Emir hattab ile omuz omuza pek çok operasyona katıldı.",
-      "Şelkovskoy Cemaati Emir yardımcılığı ve Kuzey cephesi komuta kademesinde görev yaptı. İkinci savaşın başında Kuzey cephesi savunma hatlarını bizzat organize etti. 4 Ekim 1999’da Kuzey cephesi’ndeki şiddetli muharebelerde ön safta şehit düştü."
+      "‘Musafir’ künyesiyle tanınan, Şelkovskoy Cemaati kurucusu ve Kuzey Cephesi Komutanıdır. 1994–1996 Birinci Çeçen Savaşı’nda Emir Hattab ile omuz omuza pek çok operasyona katıldı.",
+      "Şelkovskoy Cemaati emir yardımcılığı ve Kuzey Cephesi komuta kademesinde görev yaptı. İkinci savaşın başında Kuzey Cephesi savunma hatlarını bizzat organize etti. 4 Ekim 1999’da Kuzey Cephesi’ndeki şiddetli muharebelerde ön safta şehit düştü."
     ]
   },
   {
@@ -3485,7 +3067,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/hoj-ahmed-dusayev.webp",
-        "caption": "Hoj-Ahmed Duşayev (1975–2006) — Arşiv fotoğrafı."
+        "caption": "Hoj-Ahmed Duşayev (1975–2006)"
       }
     ],
     "summary": "Çeçen İçkerya Cumhuriyeti Silahlı Kuvvetleri’nin seçkin cemaat ve cephe emirlerindendir. Asaleti, cesareti, sarsılmaz imanı ve vatan sevgisiyle gerçek bir ‘Qonah’ olarak tanındı.",
@@ -3509,13 +3091,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/kazbek-ibragimov.webp",
-        "caption": "Kazbek İbragimov (1982–2008) — Arşiv fotoğrafı."
+        "caption": "Kazbek İbragimov (1982–2008)"
       }
     ],
-    "summary": "Seyfullah’ künyesiyle tanınan, Gehi köyü mensubu Emir İslam Cemaati mücahididir. Kış şartlarında kendi elleriyle sığınaklar kazarak dağlarda yıllarca cihad etti.",
+    "summary": "‘Seyfullah’ künyesiyle tanınan, Gehi köyü mensubu Emir İslam Cemaati mücahididir. Kış şartlarında kendi elleriyle sığınaklar kazarak dağlarda yıllarca cihad etti.",
     "bio": [
-      "Seyfullah’ künyesiyle tanınan, Gehi köyü mensubu Emir İslam Cemaati mücahididir. Kış şartlarında kendi elleriyle sığınaklar kazarak dağlarda yıllarca cihad etti.",
-      "Şehadetinden bir hafta önce küçük kardeşi elbrus’u yanına alarak direnişe kazandırdı. 25 Temmuz 2008’de Zavodskoy karargahında tek başına dört saat boyunca çarpıştı. Teslimiyet çağrılarını reddedip kur’an-ı kerim okuyarak son nefesine kadar şehit düştü."
+      "‘Seyfullah’ künyesiyle tanınan, Gehi köyü mensubu Emir İslam Cemaati mücahididir. Kış şartlarında kendi elleriyle sığınaklar kazarak dağlarda yıllarca cihad etti.",
+      "Şehadetinden bir hafta önce küçük kardeşi Elbrus’u yanına alarak direnişe kazandırdı. 25 Temmuz 2008’de Zavodskoy karargâhında tek başına dört saat boyunca çarpıştı. Teslimiyet çağrılarını reddedip Kur’an-ı Kerim okuyarak son nefesine kadar şehit düştü."
     ]
   },
   {
@@ -3533,12 +3115,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/elbrus-ibragimov.webp",
-        "caption": "Elbrus İbragimov (1985–2010) — Arşiv fotoğrafı."
+        "caption": "Elbrus İbragimov (1985–2010)"
       }
     ],
-    "summary": "Genç seyfullah’ künyesiyle bilinen, şehit kazbek İbragimov’un küçük kardeşidir. Ağabeyinin şehadetinden sonra onun silahını, günlüğünü ve ‘Seyfullah’ künyesini devraldı.",
+    "summary": "‘Genç Seyfullah’ künyesiyle bilinen, şehit Kazbek İbragimov’un küçük kardeşidir. Ağabeyinin şehadetinden sonra onun silahını, günlüğünü ve ‘Seyfullah’ künyesini devraldı.",
     "bio": [
-      "Genç seyfullah’ künyesiyle bilinen, şehit kazbek İbragimov’un küçük kardeşidir. Ağabeyinin şehadetinden sonra onun silahını, günlüğünü ve ‘Seyfullah’ künyesini devraldı.",
+      "‘Genç Seyfullah’ künyesiyle bilinen, şehit Kazbek İbragimov’un küçük kardeşidir. Ağabeyinin şehadetinden sonra onun silahını, günlüğünü ve ‘Seyfullah’ künyesini devraldı.",
       "Emir İslam’ın en güvendiği genç savaşçılardan biri olarak tüm seferlere katıldı. İlk pusu çatışmasında yaralanmasına rağmen cepheden ayrılmayıp çok sayıda operasyon yaptı. 8 Ağustos 2010’da Grozni’de saatler süren kuşatma çarpışmasında şehit düştü."
     ]
   },
@@ -3557,13 +3139,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ahmad-canti-halifat.webp",
-        "caption": "Ahmad Çanti (1968–2000) — Arşiv fotoğrafı."
+        "caption": "Ahmad Çanti (1968–2000)"
       }
     ],
-    "summary": "Halifat’ künyesiyle efsaneleşen ve marşlara konu olan Şatoylu cephe Komutanıdır. 31 Ocak 2000 Grozni çıkışında geride kalan mücahitleri beklerken şarapnelle yaralandı.",
+    "summary": "‘Halifat’ künyesiyle efsaneleşen ve marşlara konu olan Şatoylu cephe komutanıdır. 31 Ocak 2000 Grozni çıkışında geride kalan mücahitleri beklerken şarapnelle yaralandı.",
     "bio": [
-      "Halifat’ künyesiyle efsaneleşen ve marşlara konu olan Şatoylu cephe Komutanıdır. 31 Ocak 2000 Grozni çıkışında geride kalan mücahitleri beklerken şarapnelle yaralandı.",
-      "Tüm sargı bezlerini yarağı askerlerine dağıttığı için kendi yarasını sardırmadı. Alhan-Kala sahra hastanesinde ‘Başkalarının daha çok ihtiyacı var’ diyerek tedaviyi reddetti. 1 Şubat 2000’de zakan-yurt camii’nde şehadet parmağını kaldırarak ruhunu teslim etti."
+      "‘Halifat’ künyesiyle efsaneleşen ve marşlara konu olan Şatoylu cephe komutanıdır. 31 Ocak 2000 Grozni çıkışında geride kalan mücahitleri beklerken şarapnelle yaralandı.",
+      "Tüm sargı bezlerini yaralı askerlerine dağıttığı için kendi yarasını sardırmadı. Alhan-Kala sahra hastanesinde ‘Başkalarının daha çok ihtiyacı var’ diyerek tedaviyi reddetti. 1 Şubat 2000’de Zakan-Yurt Camii’nde şehadet parmağını kaldırarak ruhunu teslim etti."
     ]
   },
   {
@@ -3581,13 +3163,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/hasan-dolguyev.webp",
-        "caption": "Hasan Dolguyev (1963–1999) — Arşiv fotoğrafı."
+        "caption": "Hasan Dolguyev (1963–1999)"
       }
     ],
-    "summary": "Şelkovskaya doğumlu, Birinci ve İkinci rus-çeçen savaşlarının tecrübeli gazisidir. Ocak 1996’da Kizlyar seferi ve Pervomayskoye kuşatma yarması muharebelerinde çarpıştı.",
+    "summary": "Şelkovskaya doğumlu, Birinci ve İkinci Rus-Çeçen Savaşları’nın tecrübeli gazisidir. Ocak 1996’da Kizlyar seferi ve Pervomayskoye kuşatma yarması muharebelerinde çarpıştı.",
     "bio": [
-      "Şelkovskaya doğumlu, Birinci ve İkinci rus-çeçen savaşlarının tecrübeli gazisidir. Ocak 1996’da Kizlyar seferi ve Pervomayskoye kuşatma yarması muharebelerinde çarpıştı.",
-      "Birinci savaşta iki kardeşini, İkinci savaşta ise üçüncü kardeşini vatan uğruna şehit verdi. Koman siy onuruyla tanınan ailesinin son ferdi olarak cepheden bir an olsun ayrılmadı. Kasım 1999’da İkinci Çeçen savaşı muharebelerinde ön safta çarpışarak şehit düştü."
+      "Şelkovskaya doğumlu, Birinci ve İkinci Rus-Çeçen Savaşları’nın tecrübeli gazisidir. Ocak 1996’da Kizlyar seferi ve Pervomayskoye kuşatma yarması muharebelerinde çarpıştı.",
+      "Birinci savaşta iki kardeşini, ikinci savaşta ise üçüncü kardeşini vatan uğruna şehit verdi. ‘Koman Siy’ onuruyla tanınan ailesinin son ferdi olarak cepheden bir an olsun ayrılmadı. Kasım 1999’da İkinci Çeçen Savaşı muharebelerinde ön safta çarpışarak şehit düştü."
     ]
   },
   {
@@ -3605,12 +3187,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/rizvan-osmayev.webp",
-        "caption": "Rizvan Osmayev (1976–2009) — Arşiv fotoğrafı."
+        "caption": "Rizvan Osmayev (1976–2009)"
       }
     ],
-    "summary": "Emir İmam’ künyesiyle tanınan, mesker-yurtlu ve şirdiy taypı mensubu cemaat emirlidir. Ova cephesinin en zorlu şartlarında operasyonlar yürüten sarsılmaz bir Komutandı.",
+    "summary": "‘Emir İmam’ künyesiyle tanınan, Mesker-Yurtlu ve Şirdiy taypı mensubu cemaat emirlidir. Ova cephesinin en zorlu şartlarında operasyonlar yürüten sarsılmaz bir komutandı.",
     "bio": [
-      "Emir İmam’ künyesiyle tanınan, mesker-yurtlu ve şirdiy taypı mensubu cemaat emirlidir. Ova cephesinin en zorlu şartlarında operasyonlar yürüten sarsılmaz bir Komutandı.",
+      "‘Emir İmam’ künyesiyle tanınan, Mesker-Yurtlu ve Şirdiy taypı mensubu cemaat emirlidir. Ova cephesinin en zorlu şartlarında operasyonlar yürüten sarsılmaz bir komutandı.",
       "Düşman güçlerinin çok sayıdaki kuşatmasını üstün taktik ve cesaretle yarmayı başardı. İlkelerine ve Allah’a verdiği ahdine son nefesine kadar tavizsiz sadakat gösterdi. 7 Kasım 2009’da çatışma meydanında silahı elinde ön safta şehit düştü."
     ]
   },
@@ -3629,7 +3211,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/hasan-ozdamirov.webp",
-        "caption": "Hasan Ozdamirov (Gerat) (1983–2009) — Arşiv fotoğrafı."
+        "caption": "Hasan Ozdamirov (Gerat) (1983–2009)"
       }
     ],
     "summary": "Argun doğumlu olan ve ‘Gerat’ künyesiyle tanınan Hasan Ozdamirov, genç yaşında Çeçen direniş saflarına katılarak Argun ve başkent Cevherkale (Grozni) cephelerinde işgalci güçlere karşı en ön safta çarpışmıştır.",
@@ -3653,7 +3235,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/emir-mohmad-avturinski.webp",
-        "caption": "Emir Mohmad Avturinski (Kırk Üçüncü) (1971–2003) — Arşiv fotoğrafı."
+        "caption": "Emir Mohmad Avturinski (Kırk Üçüncü) (1971–2003)"
       }
     ],
     "summary": "Avturı köyü mensubu olan ve telsiz kodu ‘Kırk Üçüncü’ künyesiyle tanınan Emir Mohmad, Çeçen İçkerya Cumhuriyeti Silahlı Kuvvetleri’nin en tecrübeli keskin nişancı emirlerinden ve dağ-orman savaşı uzmanlarındandır.",
@@ -3677,13 +3259,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/bislan-turgayev.webp",
-        "caption": "Bislan Turgayev (1972–2002) — Arşiv fotoğrafı."
+        "caption": "Bislan Turgayev (1972–2002)"
       }
     ],
     "summary": "Açhoy-Martan doğumlu olan Emir Bislan Turgayev, Çeçen İçkerya Cumhuriyeti Batı Cephesi ve Açhoy-Martan Cemaati’nin önde gelen direniş komutanlarındandır.",
     "bio": [
       "Açhoy-Martan doğumlu olan Emir Bislan Turgayev, Çeçen İçkerya Cumhuriyeti Batı Cephesi ve Açhoy-Martan Cemaati’nin önde gelen direniş komutanlarındandır.",
-      "Her iki Rus-Çeçen savaşında işgalci güçlere karşı yıllarca ön saflarda çarpışan Bislan Turgayev, sarsılmaz imanı, fedakârlığı ve en ağır kuşatma şartlarında bile sancağı yere düşürmeyen cesaretiyle mücahidlere örnek olmuştur. Özgür İçkerya ve İslam davası uğrunda son nefesine kadar çarpışan Emir Bislan Turgayev, şehadet mertebesine ulaşarak adını Kafkasya direniş tarihine yazdırmıştır."
+      "Her iki Rus-Çeçen Savaşı’nda işgalci güçlere karşı yıllarca ön saflarda çarpışan Bislan Turgayev, sarsılmaz imanı, fedakârlığı ve en ağır kuşatma şartlarında bile sancağı yere düşürmeyen cesaretiyle mücahidlere örnek olmuştur. Özgür İçkerya ve İslam davası uğrunda son nefesine kadar çarpışan Emir Bislan Turgayev, şehadet mertebesine ulaşarak adını Kafkasya direniş tarihine yazdırmıştır."
     ]
   },
   {
@@ -3701,7 +3283,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/umar-boltukayev.webp",
-        "caption": "Umar Boltukayev (1966–2000) — Arşiv fotoğrafı."
+        "caption": "Umar Boltukayev (1966–2000)"
       }
     ],
     "summary": "Nojay-Yurt bölgesinin Alleroy köyünde dünyaya gelen Umar Boltukayev, bağımsızlığın ilk günlerinden itibaren Cevher Dudayev’in ilk Cumhurbaşkanlığı Muhafız Alayı’nda görev almış, ardından Genelkurmay Başkanı Aslan Mashadov’un yakın koruma birliğinde Ahmad Avdorhanov ile birlikte çarpışmıştır.",
@@ -3725,7 +3307,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/usman-imayev.webp",
-        "caption": "Usman İmayev (1957–1996) — Arşiv fotoğrafı."
+        "caption": "Usman İmayev (1957–1996)"
       }
     ],
     "summary": "14 Ekim 1957’de Kuları köyünde doğan Usman İmayev, Çeçen İçkerya Cumhuriyeti’nin kuruluş yıllarında Hukuk Reformu Komitesi Başkanlığı, Merkez Bankası Başkanlığı, Adalet Bakanlığı ve Başsavcılık görevlerini üstlenmiş seçkin bir devlet adamı ve mücahiddir.",
@@ -3749,13 +3331,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/arbi-sigauri.webp",
-        "caption": "Arbi Sigauri (1982–2011) — Arşiv fotoğrafı."
+        "caption": "Arbi Sigauri (1982–2011)"
       }
     ],
-    "summary": "Huzeyfe’ künyesiyle tanınan, sunja sektörü ve cevherkale mücahidi. Genç yaşında direniş saflarına katılarak işgalcilere karşı korkusuzca çarpıştı.",
+    "summary": "‘Huzeyfe’ künyesiyle tanınan, Sunja sektörü ve Cevherkale mücahidi. Genç yaşında direniş saflarına katılarak işgalcilere karşı korkusuzca çarpıştı.",
     "bio": [
-      "Huzeyfe’ künyesiyle tanınan, sunja sektörü ve cevherkale mücahidi. Genç yaşında direniş saflarına katılarak işgalcilere karşı korkusuzca çarpıştı.",
-      "Şehir içi Özel operasyonlarda ve dağ kampanyalarında üstün cesaret gösterdi. Teslimiyet çağrılarını reddederek son kurşununa kadar direnişi sürdürdü. 2 Mart 2011’de cevherkale’de esitsiz çatışmada şehitlik mertebesine ulaştı."
+      "‘Huzeyfe’ künyesiyle tanınan, Sunja sektörü ve Cevherkale mücahidi. Genç yaşında direniş saflarına katılarak işgalcilere karşı korkusuzca çarpıştı.",
+      "Şehir içi özel operasyonlarda ve dağ kampanyalarında üstün cesaret gösterdi. Teslimiyet çağrılarını reddederek son kurşununa kadar direnişi sürdürdü. 2 Mart 2011’de Cevherkale’de eşitsiz çatışmada şehitlik mertebesine ulaştı."
     ]
   },
   {
@@ -3773,13 +3355,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/aslanbek-didiyev.webp",
-        "caption": "Aslanbek Didiyev (1972–2000) — Arşiv fotoğrafı."
+        "caption": "Aslanbek Didiyev (1972–2000)"
       }
     ],
-    "summary": "Çeçen İçkerya Cumhuriyeti merkez cephesi operasyon grubu emiri. Urus-Martan sektöründe işgalcilere ve işbirlikçilere karşı amansızca çarpıştı.",
+    "summary": "Çeçen İçkerya Cumhuriyeti Merkez Cephesi operasyon grubu emiri. Urus-Martan sektöründe işgalcilere ve işbirlikçilere karşı amansızca çarpıştı.",
     "bio": [
-      "Çeçen İçkerya Cumhuriyeti merkez cephesi operasyon grubu emiri. Urus-Martan sektöründe işgalcilere ve işbirlikçilere karşı amansızca çarpıştı.",
-      "Ahmadov Cemaati bünyesinde en zorlu cephe operasyonlarına komuta etti. Sarsılmaz imanı, atılganlığı ve vatan sevgisiyle mücahitlere öncülük etti. 25 Aralık 2000’de Urus-Martan’da esitsiz çatışmada şehitlik mertebesine ulaştı."
+      "Çeçen İçkerya Cumhuriyeti Merkez Cephesi operasyon grubu emiri. Urus-Martan sektöründe işgalcilere ve işbirlikçilere karşı amansızca çarpıştı.",
+      "Ahmadov Cemaati bünyesinde en zorlu cephe operasyonlarına komuta etti. Sarsılmaz imanı, atılganlığı ve vatan sevgisiyle mücahitlere öncülük etti. 25 Aralık 2000’de Urus-Martan’da eşitsiz çatışmada şehitlik mertebesine ulaştı."
     ]
   },
   {
@@ -3797,13 +3379,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/amin-ibragimov.webp",
-        "caption": "Amin İbragimov (Ebu Darr) (1972–2001) — Arşiv fotoğrafı."
+        "caption": "Amin İbragimov (Ebu Darr) (1972–2001)"
       }
     ],
     "summary": "21 Mayıs 1972’de Goytı köyünde Kurşloy taypına mensup bir ailede doğan ve Cevherkale’de (Grozni) yetişen Amin İbragimov (‘Emir Ebu Darr’), 1994’te başlayan Birinci Rus-Çeçen Savaşı’nın ilk günlerinden itibaren Emir Hattab’ın yanında yer almış ve ‘Gerat’ Grubu Emiri olarak görev yapmıştır.",
     "bio": [
       "21 Mayıs 1972’de Goytı köyünde Kurşloy taypına mensup bir ailede doğan ve Cevherkale’de (Grozni) yetişen Amin İbragimov (‘Emir Ebu Darr’), 1994’te başlayan Birinci Rus-Çeçen Savaşı’nın ilk günlerinden itibaren Emir Hattab’ın yanında yer almış ve ‘Gerat’ Grubu Emiri olarak görev yapmıştır.",
-      "1999 yılında İkinci Rus-Çeçen Savaşı’nın başında Cumhurbaşkanı Aslan Mashadov tarafından Tuğgeneral rütbesine terfi ettirilen Amin İbragimov, 2000 yılındaki Cevherkale kuşatmasını yarma harekâtında ve birçok cephede defalarca ağır yaralanmasına rağmen her seferinde savaş safına geri dönmüştür. Düşman hatlarının tam kalbinde gerçekleştirdiği soğukkanlı operasyonlarla tanınan Tuğgeneral Amin İbragimov, 17 Mayıs 2001 tarihinde Tsotsin-Yurt köyünde kurulan pusuda 29 yaşında şehadet mertebesine ulaşmıştır."
+      "1999 yılında İkinci Rus-Çeçen Savaşı’nın başında Cumhurbaşkanı Aslan Mashadov tarafından tuğgeneral rütbesine terfi ettirilen Amin İbragimov, 2000 yılındaki Cevherkale kuşatmasını yarma harekâtında ve birçok cephede defalarca ağır yaralanmasına rağmen her seferinde savaş safına geri dönmüştür. Düşman hatlarının tam kalbinde gerçekleştirdiği soğukkanlı operasyonlarla tanınan Tuğgeneral Amin İbragimov, 17 Mayıs 2001 tarihinde Tsotsin-Yurt köyünde kurulan pusuda 29 yaşında şehadet mertebesine ulaşmıştır."
     ]
   },
   {
@@ -3821,13 +3403,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/muhammed-besir-dobriyev.webp",
-        "caption": "Muhammed-Beşir Dobriyev (1964–2008) — Arşiv fotoğrafı."
+        "caption": "Muhammed-Beşir Dobriyev (1964–2008)"
       }
     ],
-    "summary": "Bereket’ künyesiyle tanınan, İnguşetya neskorkort köyü mensubu mücahittir. Efsanevi Bamut savunmasının ilk gününden son gününe kadar en ön safta çarpıştı.",
+    "summary": "‘Bereket’ künyesiyle tanınan, İnguşetya Neskorkort köyü mensubu mücahittir. Efsanevi Bamut savunmasının ilk gününden son gününe kadar en ön safta çarpıştı.",
     "bio": [
-      "Bereket’ künyesiyle tanınan, İnguşetya neskorkort köyü mensubu mücahittir. Efsanevi Bamut savunmasının ilk gününden son gününe kadar en ön safta çarpıştı.",
-      "Her iki rus-çeçen savaşında Kafkasya halklarının kardeşliğini cephe de temsil etti. Ondört yıl boyunca dağlarda ve ovalarda silahını bırakmadan direnişi sürdürdü. 15 Eylül 2008’de seyfül-islam aziyev ile birlikte çarpışarak şehit düştü."
+      "‘Bereket’ künyesiyle tanınan, İnguşetya Neskorkort köyü mensubu mücahittir. Efsanevi Bamut savunmasının ilk gününden son gününe kadar en ön safta çarpıştı.",
+      "Her iki Rus-Çeçen Savaşı’nda Kafkasya halklarının kardeşliğini cephe de temsil etti. On dört yıl boyunca dağlarda ve ovalarda silahını bırakmadan direnişi sürdürdü. 15 Eylül 2008’de Seyfül-İslam Aziyev ile birlikte çarpışarak şehit düştü."
     ]
   },
   {
@@ -3845,12 +3427,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ilyas-talhadov.webp",
-        "caption": "İlyas Talhadov (1967–2000) — Arşiv fotoğrafı."
+        "caption": "İlyas Talhadov (1967–2000)"
       }
     ],
-    "summary": "Kurçaloy bölgesinin Alleroy-Yurt köyünde dünyaya gelen Tuğgeneral İlyas Talhadov, 1992–1995 yıllarında İlk Cumhurbaşkanı Cevher Dudayev’in Cumhurbaşkanlığı Muhafız Alayı’nda görev yapmış ve Çeçen İçkerya Cumhuriyeti’nin en yüksek devlet nişanı olan ‘Qoman Siy’ (Ulusun Onuru) ile taltif edilmiştir.",
+    "summary": "Kurçaloy bölgesinin Alleroy-Yurt köyünde dünyaya gelen Tuğgeneral İlyas Talhadov, 1992–1995 yıllarında ilk Cumhurbaşkanı Cevher Dudayev’in Cumhurbaşkanlığı Muhafız Alayı’nda görev yapmış ve Çeçen İçkerya Cumhuriyeti’nin en yüksek devlet nişanı olan ‘Qoman Siy’ (Ulusun Onuru) ile taltif edilmiştir.",
     "bio": [
-      "Kurçaloy bölgesinin Alleroy-Yurt köyünde dünyaya gelen Tuğgeneral İlyas Talhadov, 1992–1995 yıllarında İlk Cumhurbaşkanı Cevher Dudayev’in Cumhurbaşkanlığı Muhafız Alayı’nda görev yapmış ve Çeçen İçkerya Cumhuriyeti’nin en yüksek devlet nişanı olan ‘Qoman Siy’ (Ulusun Onuru) ile taltif edilmiştir.",
+      "Kurçaloy bölgesinin Alleroy-Yurt köyünde dünyaya gelen Tuğgeneral İlyas Talhadov, 1992–1995 yıllarında ilk Cumhurbaşkanı Cevher Dudayev’in Cumhurbaşkanlığı Muhafız Alayı’nda görev yapmış ve Çeçen İçkerya Cumhuriyeti’nin en yüksek devlet nişanı olan ‘Qoman Siy’ (Ulusun Onuru) ile taltif edilmiştir.",
       "Birinci Rus-Çeçen Savaşı’nda başkent Cevherkale (Grozni) savunmasında komuta ettiği birliği en az kayıpla kuşatmadan çıkarmayı başaran İlyas Talhadov, 1997 yılında Cumhurbaşkanı Aslan Mashadov tarafından Cumhurbaşkanlığı Muhafız Alayı Komutanlığına atanmıştır. İkinci Rus-Çeçen Savaşı’nda da başkentin ve dağ geçitlerinin savunmasında en ön safta çarpışan Tuğgeneral İlyas Talhadov, 10 Şubat 2000 tarihinde Şali bölgesinin Duba-Yurt köyü yakınlarında Rus işgal güçleriyle girdiği eşitsiz çatışmada şehadet mertebesine ulaşmıştır."
     ]
   },
@@ -3869,13 +3451,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/vahid-bamatgiriyev.webp",
-        "caption": "Vahid Bamatgiriyev (1956–2000) — Arşiv fotoğrafı."
+        "caption": "Vahid Bamatgiriyev (1956–2000)"
       }
     ],
-    "summary": "İtum-Kale bölgesinin Dişni-Mohk yöresine ve Dişni boyuna mensup olan Vahid Bamatgiriyev, Çeçen İçkerya Cumhuriyeti Silahlı Kuvvetleri Tuğgenerali ve İçkerya Parlamentosu Milletvekilidir.",
+    "summary": "İtum-Kale bölgesinin Dişni-Mohk yöresine ve Dişni boyuna mensup olan Vahid Bamatgiriyev, Çeçen İçkerya Cumhuriyeti Silahlı Kuvvetleri tuğgenerali ve İçkerya Parlamentosu milletvekilidir.",
     "bio": [
-      "İtum-Kale bölgesinin Dişni-Mohk yöresine ve Dişni boyuna mensup olan Vahid Bamatgiriyev, Çeçen İçkerya Cumhuriyeti Silahlı Kuvvetleri Tuğgenerali ve İçkerya Parlamentosu Milletvekilidir.",
-      "1997 yılından şehadetine kadar Çeçen İçkerya Cumhuriyeti Parlamentosu’nda milletini temsil eden ve Parlamento Şeriat ve Devlet Hukuku Komitesi Başkanlığı görevini yürüten Vahid Bamatgiriyev, her iki Rus-Çeçen savaşında da cephenin en ön safında yer almıştır. 2000 yılı kışında kuşatma altındaki başkentten dağlara uzanan zorlu yürüyüşte birliğinin başında çarpışan Tuğgeneral Vahid Bamatgiriyev, Mart 2000’de Saadi-Kotar (Komsomolskoye) direnişinde oğlu Hamzat Bamatgiriyev ile omuz omuza çarpışarak şehadet mertebesine ulaşmıştır."
+      "İtum-Kale bölgesinin Dişni-Mohk yöresine ve Dişni boyuna mensup olan Vahid Bamatgiriyev, Çeçen İçkerya Cumhuriyeti Silahlı Kuvvetleri tuğgenerali ve İçkerya Parlamentosu milletvekilidir.",
+      "1997 yılından şehadetine kadar Çeçen İçkerya Cumhuriyeti Parlamentosu’nda milletini temsil eden ve Parlamento Şeriat ve Devlet Hukuku Komitesi Başkanlığı görevini yürüten Vahid Bamatgiriyev, her iki Rus-Çeçen Savaşı’nda da cephenin en ön safında yer almıştır. 2000 yılı kışında kuşatma altındaki başkentten dağlara uzanan zorlu yürüyüşte birliğinin başında çarpışan Tuğgeneral Vahid Bamatgiriyev, Mart 2000’de Saadi-Kotar (Komsomolskoye) direnişinde oğlu Hamzat Bamatgiriyev ile omuz omuza çarpışarak şehadet mertebesine ulaşmıştır."
     ]
   },
   {
@@ -3893,7 +3475,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/aynudin-aygumov.webp",
-        "caption": "Aynudin Aygumov (Çibuş) (1977–1997) — Arşiv fotoğrafı."
+        "caption": "Aynudin Aygumov (Çibuş) (1977–1997)"
       }
     ],
     "summary": "Başkent Caharkale’de (Grozni) dünyaya gelen, Çebarloy boyuna mensup ve silah arkadaşları arasında ‘Çibuş’ lâkabıyla tanınan Aynudin Aygumov, 1994–1996 Birinci Rus-Çeçen Savaşı’nda henüz 17 yaşında vatan savunmasına koşmuştur.",
@@ -3917,7 +3499,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/imran-zaytimirov.webp",
-        "caption": "İmran Zaytimirov (1971–2000) — Arşiv fotoğrafı."
+        "caption": "İmran Zaytimirov (1971–2000)"
       }
     ],
     "summary": "9 Ocak 1971 tarihinde Nojay-Yurt bölgesinin Zandak köyünde dünyaya gelen İmran Zaytimirov, Çeçen bağımsızlık mücadelesinin en erken neferlerindendir.",
@@ -3941,7 +3523,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/borza-abdurazakov.webp",
-        "caption": "Borza Abdurazakov (1975–2000) — Arşiv fotoğrafı."
+        "caption": "Borza Abdurazakov (1975–2000)"
       }
     ],
     "summary": "28 Ocak 1975 tarihinde Nojay-Yurt bölgesinin Zandak köyünde dünyaya gelen Borza Abdurazakov, 1994 yılında Rus işgal ordularının saldırısı başladığında henüz 19 yaşında vatan savunmasına katılmıştır.",
@@ -3965,7 +3547,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ismail-muhmadiyev.webp",
-        "caption": "İsmail Muhmadiyev (1971–1994) — Arşiv fotoğrafı."
+        "caption": "İsmail Muhmadiyev (1971–1994)"
       }
     ],
     "summary": "1971 doğumlu ve Belgatoy boyuna mensup olan İsmail Muhmadiyev, savaş öncesinde Belgatoy köyünde çocuklara Kur’an-ı Kerim ve İslam’ın esaslarını öğreten genç bir muallimdi.",
@@ -3989,13 +3571,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/imam-zaytayev.webp",
-        "caption": "İmam Zaytayev (1989–2008) — Arşiv fotoğrafı."
+        "caption": "İmam Zaytayev (1989–2008)"
       }
     ],
     "summary": "3 Kasım 1989 tarihinde başkent Caharkale’de (Grozni) dünyaya gelen ve Haçaroy boyuna mensup olan İmam Zaytayev, 13 yaşındayken ailesiyle birlikte Fransa’ya göç etmiş ve eğitimini Avrupa’da sürdürmüştür.",
     "bio": [
       "3 Kasım 1989 tarihinde başkent Caharkale’de (Grozni) dünyaya gelen ve Haçaroy boyuna mensup olan İmam Zaytayev, 13 yaşındayken ailesiyle birlikte Fransa’ya göç etmiş ve eğitimini Avrupa’da sürdürmüştür.",
-      "Avrupa’daki güvenli ve rahat hayatına rağmen işgal altındaki vatanının acısını yüreğinde taşıyan genç İmam, 2008 yılı sonbaharında her şeyi geride bırakarak Kafkasya’ya dönmüş ve Çeçen Silahlı Direniş saflarına katılmıştır. 27 Ekim 2008 tarihinde mücahid kardeşleriyle birlikte işgalci güçlerin çemberine düşen İmam Zaytayev, son nefesine kadar çarpışarak henüz 18 yaşında şehadet mertebesine ulaşmıştır."
+      "Avrupa’daki güvenli ve rahat hayatına rağmen işgal altındaki vatanının acısını yüreğinde taşıyan genç İmam, 2008 yılı sonbaharında her şeyi geride bırakarak Kafkasya’ya dönmüş ve Çeçen silahlı direniş saflarına katılmıştır. 27 Ekim 2008 tarihinde mücahid kardeşleriyle birlikte işgalci güçlerin çemberine düşen İmam Zaytayev, son nefesine kadar çarpışarak henüz 18 yaşında şehadet mertebesine ulaşmıştır."
     ]
   },
   {
@@ -4013,7 +3595,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/islam-takanayev.webp",
-        "caption": "İslam Takanayev (1984–2003) — Arşiv fotoğrafı."
+        "caption": "İslam Takanayev (1984–2003)"
       }
     ],
     "summary": "Şali ilçesinin Novye Atagi (Jım-Atagi) köyü mensubu olan 19 yaşındaki genç mücahid İslam (Ruslanbek) Takanayev, 2003 yılı Ramazan ayında sabah namazı vaktinde uğradığı evde işgalci birliklerin kuşatmasına alınmıştır.",
@@ -4037,13 +3619,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/umar-labazanov.webp",
-        "caption": "Umar Labazanov (Emir Şadid) (1975–2000) — Arşiv fotoğrafı."
+        "caption": "Umar Labazanov (Emir Şadid) (1975–2000)"
       }
     ],
     "summary": "Zakan-Yurt kökenli, Haçaroy boyuna mensup olan ve başkent Caharkale’nin (Grozni) Zavodskoy bölgesinde yetişen Umar Labazanov, direniş saflarında ‘Emir Şadid’ künyesiyle tanınan seçkin bir cemaat emiridir.",
     "bio": [
       "Zakan-Yurt kökenli, Haçaroy boyuna mensup olan ve başkent Caharkale’nin (Grozni) Zavodskoy bölgesinde yetişen Umar Labazanov, direniş saflarında ‘Emir Şadid’ künyesiyle tanınan seçkin bir cemaat emiridir.",
-      "Her iki Rus-Çeçen savaşında da genç mücahidlere komuta eden Emir Şadid, 1999–2000 kışında başkent Caharkale savunmasında ve kuşatma yarma harekâtında birliğinin başında çarpışmıştır. Mart 2000’de Saadi-Kotar (Komsomolskoye) direnişinde son mermisine kadar çarpışan Emir Şadid (Umar Labazanov), silah arkadaşlarıyla birlikte şehadet mertebesine ulaşmıştır."
+      "Her iki Rus-Çeçen Savaşı’nda da genç mücahidlere komuta eden Emir Şadid, 1999–2000 kışında başkent Caharkale savunmasında ve kuşatma yarma harekâtında birliğinin başında çarpışmıştır. Mart 2000’de Saadi-Kotar (Komsomolskoye) direnişinde son mermisine kadar çarpışan Emir Şadid (Umar Labazanov), silah arkadaşlarıyla birlikte şehadet mertebesine ulaşmıştır."
     ]
   },
   {
@@ -4061,7 +3643,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ramzan-kudayev.webp",
-        "caption": "Ramzan Kudayev (1960–1995) — Arşiv fotoğrafı."
+        "caption": "Ramzan Kudayev (1960–1995)"
       }
     ],
     "summary": "13 Ocak 1960 tarihinde Vedeno bölgesinin tarihi Tsa-Vedeno köyünde dünyaya gelen Ramzan Kudayev, Birinci Rus-Çeçen Savaşı’nın fedakâr mücidlerindendir.",
@@ -4085,7 +3667,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/said-muhammed-visayev.webp",
-        "caption": "Said-Muhammed Visayev (1974–2000) — Arşiv fotoğrafı."
+        "caption": "Said-Muhammed Visayev (1974–2000)"
       }
     ],
     "summary": "Urus-Martan bölgesinin Gehi köyünde dünyaya gelen ve Varandoy boyuna mensup olan Said-Muhammed Visayev, vatan toprağını Rus işgalinden korumak için genç yaşta direniş saflarına katılmıştır.",
@@ -4109,13 +3691,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/emir-abdurrahman.webp",
-        "caption": "Abdurrahman Şişani (1971–2002) — Arşiv fotoğrafı."
+        "caption": "Abdurrahman Şişani (1971–2002)"
       }
     ],
-    "summary": "Gilyanı köyü kökenli, bitro boyuna mensup seçkin direniş Komutanıdır. Ürdün’deki ailesinin yanından ata toprağı Çeçenistan’a geri döndü.",
+    "summary": "Gilyanı köyü kökenli, Bitro boyuna mensup seçkin direniş komutanıdır. Ürdün’deki ailesinin yanından ata toprağı Çeçenistan’a geri döndü.",
     "bio": [
-      "Gilyanı köyü kökenli, bitro boyuna mensup seçkin direniş Komutanıdır. Ürdün’deki ailesinin yanından ata toprağı Çeçenistan’a geri döndü.",
-      "Her iki rus-çeçen savaşında Caharkale, Serjen-Yurt ve Duba-Yurt’ta çarpıştı. Şeyh ebu ömer’den ilim tahsil eden, cesareti ve nasihatleriyle tanınan bir mücahitti. Haziran 2002’de cephe hattında coşkun dağ nehrini geçerken şehit düştü."
+      "Gilyanı köyü kökenli, Bitro boyuna mensup seçkin direniş komutanıdır. Ürdün’deki ailesinin yanından ata toprağı Çeçenistan’a geri döndü.",
+      "Her iki Rus-Çeçen Savaşı’nda Caharkale, Serjen-Yurt ve Duba-Yurt’ta çarpıştı. Şeyh Ebu Ömer’den ilim tahsil eden, cesareti ve nasihatleriyle tanınan bir mücahitti. Haziran 2002’de cephe hattında coşkun dağ nehrini geçerken şehit düştü."
     ]
   },
   {
@@ -4133,13 +3715,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/aslan-cabayev.webp",
-        "caption": "Aslan Cabayev (Abdus-Samad) (1985–2004) — Arşiv fotoğrafı."
+        "caption": "Aslan Cabayev (Abdus-Samad) (1985–2004)"
       }
     ],
-    "summary": "Abdus-Samad’ künyesiyle tanınan, Açhoy-Martan doğumlu genç mücahiddir. İkinci rus-çeçen savaşı yıllarında henüz genç yaşta direniş saflarına katıldı.",
+    "summary": "‘Abdus-Samad’ künyesiyle tanınan, Açhoy-Martan doğumlu genç mücahiddir. İkinci Rus-Çeçen Savaşı yıllarında henüz genç yaşta direniş saflarına katıldı.",
     "bio": [
-      "Abdus-Samad’ künyesiyle tanınan, Açhoy-Martan doğumlu genç mücahiddir. İkinci rus-çeçen savaşı yıllarında henüz genç yaşta direniş saflarına katıldı.",
-      "Batı cephesi ve Açhoy-Martan direniş hatlarında işgalcilere karşı görev yaptı. Güler yüzü, cesareti ve imanıyla silah arkadaşlarının sevgisini kazandı. 5 Mayıs 2004’te henüz ondokuz yaşındayken vatan savunmasında şehit düştü."
+      "‘Abdus-Samad’ künyesiyle tanınan, Açhoy-Martan doğumlu genç mücahiddir. İkinci Rus-Çeçen Savaşı yıllarında henüz genç yaşta direniş saflarına katıldı.",
+      "Batı Cephesi ve Açhoy-Martan direniş hatlarında işgalcilere karşı görev yaptı. Güler yüzü, cesareti ve imanıyla silah arkadaşlarının sevgisini kazandı. 5 Mayıs 2004’te henüz on dokuz yaşındayken vatan savunmasında şehit düştü."
     ]
   },
   {
@@ -4157,13 +3739,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/islam-saraliyev.webp",
-        "caption": "İslam Saraliyev (Emir Sayhan) (1978–2003) — Arşiv fotoğrafı."
+        "caption": "İslam Saraliyev (Emir Sayhan) (1978–2003)"
       }
     ],
-    "summary": "Emir Sayhan’ künyesiyle tanınan, nihaloy boyu mensubu direniş Komutanıdır. Her iki rus-çeçen savaşında vatan toprağının bağımsızlığı için çarpıştı.",
+    "summary": "‘Emir Sayhan’ künyesiyle tanınan, Nihaloy boyu mensubu direniş komutanıdır. Her iki Rus-Çeçen Savaşı’nda vatan toprağının bağımsızlığı için çarpıştı.",
     "bio": [
-      "Emir Sayhan’ künyesiyle tanınan, nihaloy boyu mensubu direniş Komutanıdır. Her iki rus-çeçen savaşında vatan toprağının bağımsızlığı için çarpıştı.",
-      "2000 kışı Saadi-Kotar yarma harekatı ve dağ cephelerinde ön safta yer Aldı. Kardeşi salavat ile birlikte ömrünü İslam ve özgürlük davasına adadı. 2003 yılında İnguşetya cephesindeki çarpışmada şehitlik mertebesine ulaştı."
+      "‘Emir Sayhan’ künyesiyle tanınan, Nihaloy boyu mensubu direniş komutanıdır. Her iki Rus-Çeçen Savaşı’nda vatan toprağının bağımsızlığı için çarpıştı.",
+      "2000 kışı Saadi-Kotar yarma harekâtı ve dağ cephelerinde ön safta yer aldı. Kardeşi Salavat ile birlikte ömrünü İslam ve özgürlük davasına adadı. 2003 yılında İnguşetya cephesindeki çarpışmada şehitlik mertebesine ulaştı."
     ]
   },
   {
@@ -4181,7 +3763,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/aslambek-borcasvili.webp",
-        "caption": "Aslambek Borçaşvili (1979–2000) — Arşiv fotoğrafı."
+        "caption": "Aslambek Borçaşvili (1979–2000)"
       }
     ],
     "summary": "Çeçen direniş saflarında genç yaşta sancak taşıyan cesur mücahiddir. 1999’da Rus işgal ordusunun yeniden saldırmasıyla cepheye koştu.",
@@ -4205,13 +3787,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/lom-ali-gubayev.webp",
-        "caption": "Lom-Ali Gubayev (1974–2000) — Arşiv fotoğrafı."
+        "caption": "Lom-Ali Gubayev (1974–2000)"
       }
     ],
-    "summary": "Naurskaya doğumlu, hakmado boyuna mensup yiğit Çeçen direniş mücahididir. Vatan toprağını Rus işgalinden korumak için direniş birliklerine katıldı.",
+    "summary": "Naurskaya doğumlu, Hakmado boyuna mensup yiğit Çeçen direniş mücahididir. Vatan toprağını Rus işgalinden korumak için direniş birliklerine katıldı.",
     "bio": [
-      "Naurskaya doğumlu, hakmado boyuna mensup yiğit Çeçen direniş mücahididir. Vatan toprağını Rus işgalinden korumak için direniş birliklerine katıldı.",
-      "Caharkale savunması ve Güney dağ cephesindeki çarpışmalarda görev yaptı. Mart 2000’de Saadi-Kotar’da kuşatmayı yaran artçı birlikler arasında yer Aldı. Saadi-Kotar’daki surat dağı çarpışmalarında kahramanca direnerek şehit düştü."
+      "Naurskaya doğumlu, Hakmado boyuna mensup yiğit Çeçen direniş mücahididir. Vatan toprağını Rus işgalinden korumak için direniş birliklerine katıldı.",
+      "Caharkale savunması ve güney dağ cephesindeki çarpışmalarda görev yaptı. Mart 2000’de Saadi-Kotar’da kuşatmayı yaran artçı birlikler arasında yer aldı. Saadi-Kotar’daki Surat Dağı çarpışmalarında kahramanca direnerek şehit düştü."
     ]
   },
   {
@@ -4229,13 +3811,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/hasan-amriyev.webp",
-        "caption": "Hasan Amriyev (1966–1995) — Arşiv fotoğrafı."
+        "caption": "Hasan Amriyev (1966–1995)"
       }
     ],
-    "summary": "Melhi boyuna mensup, Birinci rus-çeçen savaşı’nın öncü mücahitlerindendir. Aralık 1994’te Rus ordusunun işgal saldırısı başladığında cepheye koştu.",
+    "summary": "Melhi boyuna mensup, Birinci Rus-Çeçen Savaşı’nın öncü mücahitlerindendir. Aralık 1994’te Rus ordusunun işgal saldırısı başladığında cepheye koştu.",
     "bio": [
-      "Melhi boyuna mensup, Birinci rus-çeçen savaşı’nın öncü mücahitlerindendir. Aralık 1994’te Rus ordusunun işgal saldırısı başladığında cepheye koştu.",
-      "Güneybatı cephesinde stratejik Bamut kalesinin savunmasında görev Aldı. Ağır topçu ve hava bombardımanı altında siperlerini terk etmeden direndi. 1995 yılında Bamut cephesindeki destansı çarpışmalarda şehit düştü."
+      "Melhi boyuna mensup, Birinci Rus-Çeçen Savaşı’nın öncü mücahitlerindendir. Aralık 1994’te Rus ordusunun işgal saldırısı başladığında cepheye koştu.",
+      "Güneybatı Cephesi’nde stratejik Bamut kalesinin savunmasında görev aldı. Ağır topçu ve hava bombardımanı altında siperlerini terk etmeden direndi. 1995 yılında Bamut cephesindeki destansı çarpışmalarda şehit düştü."
     ]
   },
   {
@@ -4253,12 +3835,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/haron-babuyev.webp",
-        "caption": "Haron Babuyev (1969–2000) — Arşiv fotoğrafı."
+        "caption": "Haron Babuyev (1969–2000)"
       }
     ],
-    "summary": "Haçaroy boyuna mensup, vatanına ve inancına bağlı direniş mücahididir. Rus işgal Kuvvetlerine karşı bağımsızlık mücadelesinde ön safta yer Aldı.",
+    "summary": "Haçaroy boyuna mensup, vatanına ve inancına bağlı direniş mücahididir. Rus işgal kuvvetlerine karşı bağımsızlık mücadelesinde ön safta yer aldı.",
     "bio": [
-      "Haçaroy boyuna mensup, vatanına ve inancına bağlı direniş mücahididir. Rus işgal Kuvvetlerine karşı bağımsızlık mücadelesinde ön safta yer Aldı.",
+      "Haçaroy boyuna mensup, vatanına ve inancına bağlı direniş mücahididir. Rus işgal kuvvetlerine karşı bağımsızlık mücadelesinde ön safta yer aldı.",
       "2000 kışı Caharkale savunması ve dağ geçişlerinde fedakarca görev yaptı. Ağır kuşatma şartlarında silah arkadaşlarıyla birlikte direnişi sürdürdü. Mart 2000’de Saadi-Kotar’da işgalcilere karşı çarpışarak şehit düştü."
     ]
   },
@@ -4277,13 +3859,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/movldi-kagarmanov.webp",
-        "caption": "Movldi Kagarmanov (1973–2000) — Arşiv fotoğrafı."
+        "caption": "Movldi Kagarmanov (1973–2000)"
       }
     ],
-    "summary": "Naurskaya doğumlu, hakmado boyuna mensup yiğit direniş mücahididir. Ağabeyleri salaudin ve balaudi ile birlikte naurski Taburu’nda görev Aldı.",
+    "summary": "Naurskaya doğumlu, Hakmado boyuna mensup yiğit direniş mücahididir. Ağabeyleri Salaudin ve Balaudi ile birlikte Naurski Taburu’nda görev aldı.",
     "bio": [
-      "Naurskaya doğumlu, hakmado boyuna mensup yiğit direniş mücahididir. Ağabeyleri salaudin ve balaudi ile birlikte naurski Taburu’nda görev Aldı.",
-      "Birinci ve İkinci rus-çeçen savaşlarında vatan savunmasında omuz omuza çarpıştı. Üç kardeş olarak bağımsızlık sancağını son nefeslerine dek taşıdılar. Mart 2000’de Saadi-Kotar direnişinde ağabeyleriyle birlikte şehit düştü."
+      "Naurskaya doğumlu, Hakmado boyuna mensup yiğit direniş mücahididir. Ağabeyleri Salaudin ve Balaudi ile birlikte Naurski Taburu’nda görev aldı.",
+      "Birinci ve İkinci Rus-Çeçen Savaşları’nda vatan savunmasında omuz omuza çarpıştı. Üç kardeş olarak bağımsızlık sancağını son nefeslerine dek taşıdılar. Mart 2000’de Saadi-Kotar direnişinde ağabeyleriyle birlikte şehit düştü."
     ]
   },
   {
@@ -4301,13 +3883,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/musa-uspanov.webp",
-        "caption": "Musa Uspanov (1971–2000) — Arşiv fotoğrafı."
+        "caption": "Musa Uspanov (1971–2000)"
       }
     ],
-    "summary": "Haçaroy boyuna mensup, cesur ve fedakar Çeçen direniş mücahididir. Ağabeyi mohmad-tahir Uspanov ile birlikte vatan savunmasına katıldı.",
+    "summary": "Haçaroy boyuna mensup, cesur ve fedakar Çeçen direniş mücahididir. Ağabeyi Mohmad-Tahir Uspanov ile birlikte vatan savunmasına katıldı.",
     "bio": [
-      "Haçaroy boyuna mensup, cesur ve fedakar Çeçen direniş mücahididir. Ağabeyi mohmad-tahir Uspanov ile birlikte vatan savunmasına katıldı.",
-      "Caharkale savunması ve 2000 kışı kuşatma yarma harekatında görev yaptı. Ağır kış şartlarında dağ yürüyüşü boyunca silah arkadaşlarını yalnız bırakmadı. Mart 2000’de Saadi-Kotar destanında ağabeyiyle birlikte şehit düştü."
+      "Haçaroy boyuna mensup, cesur ve fedakar Çeçen direniş mücahididir. Ağabeyi Mohmad-Tahir Uspanov ile birlikte vatan savunmasına katıldı.",
+      "Caharkale savunması ve 2000 kışı kuşatma yarma harekâtında görev yaptı. Ağır kış şartlarında dağ yürüyüşü boyunca silah arkadaşlarını yalnız bırakmadı. Mart 2000’de Saadi-Kotar destanında ağabeyiyle birlikte şehit düştü."
     ]
   },
   {
@@ -4325,13 +3907,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/isa-saykilayev.webp",
-        "caption": "İsa Şaykilayev (1980–1999) — Arşiv fotoğrafı."
+        "caption": "İsa Şaykilayev (1980–1999)"
       }
     ],
-    "summary": "Haçaroy boyuna mensup, ondokuz yaşındaki genç Çeçen direniş yiğididir. 1999 sonbaharında Rus ordusu yeniden saldırdığında ilk saflarda cepheye koştu.",
+    "summary": "Haçaroy boyuna mensup, on dokuz yaşındaki genç Çeçen direniş yiğididir. 1999 sonbaharında Rus ordusu yeniden saldırdığında ilk saflarda cepheye koştu.",
     "bio": [
-      "Haçaroy boyuna mensup, ondokuz yaşındaki genç Çeçen direniş yiğididir. 1999 sonbaharında Rus ordusu yeniden saldırdığında ilk saflarda cepheye koştu.",
-      "Kuzey cephesinde terek sırtları ve kalaus hattının savunmasında görev Aldı. Üstün zırhlı kuvvetlere karşı siperini terk etmeden cesaretle direndi. 4 Ekim 1999’da terek sırtları savunmasında çarpışarak şehit düştü."
+      "Haçaroy boyuna mensup, on dokuz yaşındaki genç Çeçen direniş yiğididir. 1999 sonbaharında Rus ordusu yeniden saldırdığında ilk saflarda cepheye koştu.",
+      "Kuzey Cephesi’nde Terek sırtları ve Kalaus hattının savunmasında görev aldı. Üstün zırhlı kuvvetlere karşı siperini terk etmeden cesaretle direndi. 4 Ekim 1999’da Terek sırtları savunmasında çarpışarak şehit düştü."
     ]
   },
   {
@@ -4349,12 +3931,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/sayd-huseyin-makaziyev.webp",
-        "caption": "Sayd-Hüseyin Makaziyev (1971–2000) — Arşiv fotoğrafı."
+        "caption": "Sayd-Hüseyin Makaziyev (1971–2000)"
       }
     ],
-    "summary": "1971 doğumlu, Çeçen direnişinin cesur ve fedakar mücahitlerindendir. Rus işgal ordusuna karşı vatan toprağının savunmasında ön saflarda yer Aldı.",
+    "summary": "1971 doğumlu, Çeçen direnişinin cesur ve fedakar mücahitlerindendir. Rus işgal ordusuna karşı vatan toprağının savunmasında ön saflarda yer aldı.",
     "bio": [
-      "1971 doğumlu, Çeçen direnişinin cesur ve fedakar mücahitlerindendir. Rus işgal ordusuna karşı vatan toprağının savunmasında ön saflarda yer Aldı.",
+      "1971 doğumlu, Çeçen direnişinin cesur ve fedakar mücahitlerindendir. Rus işgal ordusuna karşı vatan toprağının savunmasında ön saflarda yer aldı.",
       "मार्च 2000’de Şatoy bölgesindeki kuşatma ve yarma çarpışmalarında görev yaptı. Sarsılmaz imanı, ağırbaşlılığı ve kardeşlik ruhuyla silah arkadaşlarına örnek oldu. Mart 2000’de Şatoy istikametindeki çarpışmalarda şehitlik mertebesine ulaştı."
     ]
   },
@@ -4373,12 +3955,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/magomed-taverdiyev.webp",
-        "caption": "Magomed Taverdiyev (Kurbaş) (1976–2000) — Arşiv fotoğrafı."
+        "caption": "Magomed Taverdiyev (Kurbaş) (1976–2000)"
       }
     ],
-    "summary": "Kurbaş’ künyesiyle tanınan, Çeçen direnişinin yiğit savaşçılarındandır. İkinci rus-çeçen savaşı’nda vatanın bağımsızlığı için cepheye koştu.",
+    "summary": "‘Kurbaş’ künyesiyle tanınan, Çeçen direnişinin yiğit savaşçılarındandır. İkinci Rus-Çeçen Savaşı’nda vatanın bağımsızlığı için cepheye koştu.",
     "bio": [
-      "Kurbaş’ künyesiyle tanınan, Çeçen direnişinin yiğit savaşçılarındandır. İkinci rus-çeçen savaşı’nda vatanın bağımsızlığı için cepheye koştu.",
+      "‘Kurbaş’ künyesiyle tanınan, Çeçen direnişinin yiğit savaşçılarındandır. İkinci Rus-Çeçen Savaşı’nda vatanın bağımsızlığı için cepheye koştu.",
       "Mart 2000’de Saadi-Kotar (Komsomolskoye) direnişinde omuz omuza çarpıştı. Kuşatma altındaki en ağır günlerde cesareti ve sabrıyla ön hatlarda durdu. Mart 2000’de Saadi-Kotar çarpışmalarında yirmi dört yaşında şehit düştü."
     ]
   },
@@ -4397,12 +3979,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/islam-tasuyev.webp",
-        "caption": "İslam Tasuyev (1975–2000) — Arşiv fotoğrafı."
+        "caption": "İslam Tasuyev (1975–2000)"
       }
     ],
-    "summary": "1975 doğumlu, Çeçen direniş saflarının imanlı ve vakıf mücahididir. Rus işgaline karşı başkentten dağ cephelerine uzanan direnişte yer Aldı.",
+    "summary": "1975 doğumlu, Çeçen direniş saflarının imanlı ve vakıf mücahididir. Rus işgaline karşı başkentten dağ cephelerine uzanan direnişte yer aldı.",
     "bio": [
-      "1975 doğumlu, Çeçen direniş saflarının imanlı ve vakıf mücahididir. Rus işgaline karşı başkentten dağ cephelerine uzanan direnişte yer Aldı.",
+      "1975 doğumlu, Çeçen direniş saflarının imanlı ve vakıf mücahididir. Rus işgaline karşı başkentten dağ cephelerine uzanan direnişte yer aldı.",
       "Mart 2000’de Saadi-Kotar köyündeki tarihi direniş hattında görev yaptı. Silah arkadaşları arasında fedakarlığı, ihlası ve metanetiyle tanındı. Mart 2000’de Saadi-Kotar savunmasında yirmi beş yaşında şehit düştü."
     ]
   },
@@ -4421,13 +4003,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/zayndi-gatsayev.webp",
-        "caption": "Zayndi Gatsayev (1974–2000) — Arşiv fotoğrafı."
+        "caption": "Zayndi Gatsayev (1974–2000)"
       }
     ],
-    "summary": "1974 doğumlu, Çeçen Milli direnişinin sarsılmaz savaşçılarındandır. Vatan topraklarının işgalcilere karşı müdafaasında ön saflarda çarpıştı.",
+    "summary": "1974 doğumlu, Çeçen milli direnişinin sarsılmaz savaşçılarındandır. Vatan topraklarının işgalcilere karşı müdafaasında ön saflarda çarpıştı.",
     "bio": [
-      "1974 doğumlu, Çeçen Milli direnişinin sarsılmaz savaşçılarındandır. Vatan topraklarının işgalcilere karşı müdafaasında ön saflarda çarpıştı.",
-      "2000 kışında Güney cephesi ve Saadi-Kotar hattındaki muharebelere katıldı. Zorlu kuşatma şartlarında silah arkadaşlarıyla omuz omuza direndi. Mart 2000’de Saadi-Kotar çarpışmalarında yirmi altı yaşında şehit düştü."
+      "1974 doğumlu, Çeçen milli direnişinin sarsılmaz savaşçılarındandır. Vatan topraklarının işgalcilere karşı müdafaasında ön saflarda çarpıştı.",
+      "2000 kışında Güney Cephesi ve Saadi-Kotar hattındaki muharebelere katıldı. Zorlu kuşatma şartlarında silah arkadaşlarıyla omuz omuza direndi. Mart 2000’de Saadi-Kotar çarpışmalarında yirmi altı yaşında şehit düştü."
     ]
   },
   {
@@ -4445,13 +4027,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/mohmad-saralapov.webp",
-        "caption": "Mohmad Saralapov (1981–2000) — Arşiv fotoğrafı."
+        "caption": "Mohmad Saralapov (1981–2000)"
       }
     ],
-    "summary": "1981 doğumlu, genç yaşta direniş sancağını omuzlayan yiğit mücahiddir. İkinci rus-çeçen savaşı başladığında tereddüt etmeden cepheye katıldı.",
+    "summary": "1981 doğumlu, genç yaşta direniş sancağını omuzlayan yiğit mücahiddir. İkinci Rus-Çeçen Savaşı başladığında tereddüt etmeden cepheye katıldı.",
     "bio": [
-      "1981 doğumlu, genç yaşta direniş sancağını omuzlayan yiğit mücahiddir. İkinci rus-çeçen savaşı başladığında tereddüt etmeden cepheye katıldı.",
-      "Kış yürüyüşü ve Saadi-Kotar’daki ağır kuşatma çarpışmalarında görev yaptı. Genç yaşına rağmen cesareti, sadakati ve metanetiyle örnek oldu. Mart 2000’de Saadi-Kotar direnişinde henüz ondokuz yaşında şehit düştü."
+      "1981 doğumlu, genç yaşta direniş sancağını omuzlayan yiğit mücahiddir. İkinci Rus-Çeçen Savaşı başladığında tereddüt etmeden cepheye katıldı.",
+      "Kış yürüyüşü ve Saadi-Kotar’daki ağır kuşatma çarpışmalarında görev yaptı. Genç yaşına rağmen cesareti, sadakati ve metanetiyle örnek oldu. Mart 2000’de Saadi-Kotar direnişinde henüz on dokuz yaşında şehit düştü."
     ]
   },
   {
@@ -4469,13 +4051,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ramzan-darayev.webp",
-        "caption": "Ramzan Darayev (1974–2000) — Arşiv fotoğrafı."
+        "caption": "Ramzan Darayev (1974–2000)"
       }
     ],
-    "summary": "1974 doğumlu, Çeçen direnişinin kararlı ve fedakar mücahitlerindendir. Rus işgal Kuvvetlerine karşı vatan savunmasında aktif görev üstlendi.",
+    "summary": "1974 doğumlu, Çeçen direnişinin kararlı ve fedakar mücahitlerindendir. Rus işgal kuvvetlerine karşı vatan savunmasında aktif görev üstlendi.",
     "bio": [
-      "1974 doğumlu, Çeçen direnişinin kararlı ve fedakar mücahitlerindendir. Rus işgal Kuvvetlerine karşı vatan savunmasında aktif görev üstlendi.",
-      "Mart 2000’de Saadi-Kotar’da kuşatmaya karşı verilen destansı direnişte yer Aldı. İmanı, ağırbaşlılığı ve cephedeki sarsılmaz duruşuyla iz bıraktı. Mart 2000’de Saadi-Kotar çarpışmalarında yirmi altı yaşında şehit düştü."
+      "1974 doğumlu, Çeçen direnişinin kararlı ve fedakar mücahitlerindendir. Rus işgal kuvvetlerine karşı vatan savunmasında aktif görev üstlendi.",
+      "Mart 2000’de Saadi-Kotar’da kuşatmaya karşı verilen destansı direnişte yer aldı. İmanı, ağırbaşlılığı ve cephedeki sarsılmaz duruşuyla iz bıraktı. Mart 2000’de Saadi-Kotar çarpışmalarında yirmi altı yaşında şehit düştü."
     ]
   },
   {
@@ -4493,13 +4075,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/magomed-bahtarisev.webp",
-        "caption": "Magomed Bahtarişev (1975–2000) — Arşiv fotoğrafı."
+        "caption": "Magomed Bahtarişev (1975–2000)"
       }
     ],
     "summary": "1975 doğumlu, Çeçen direniş saflarının cesur ve ihlaslı mücahididir. Vatanın özgürlüğü ve İslam sancağının yücelmesi için cepheye koştu.",
     "bio": [
       "1975 doğumlu, Çeçen direniş saflarının cesur ve ihlaslı mücahididir. Vatanın özgürlüğü ve İslam sancağının yücelmesi için cepheye koştu.",
-      "2000 kışı boyunca kuşatma ve yarma harekatlarında ön hatlarda çarpıştı. En çetin şartlarda bile silah arkadaşlarına moral ve güç kaynağı oldu. Mart 2000’de Saadi-Kotar direnişinde yirmi beş yaşında şehitlik mertebesine ulaştı."
+      "2000 kışı boyunca kuşatma ve yarma harekâtlarında ön hatlarda çarpıştı. En çetin şartlarda bile silah arkadaşlarına moral ve güç kaynağı oldu. Mart 2000’de Saadi-Kotar direnişinde yirmi beş yaşında şehitlik mertebesine ulaştı."
     ]
   },
   {
@@ -4517,12 +4099,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ayndi-kaplanov.webp",
-        "caption": "Ayndi Kaplanov (1973–2000) — Arşiv fotoğrafı."
+        "caption": "Ayndi Kaplanov (1973–2000)"
       }
     ],
-    "summary": "1973 doğumlu, Çeçen direnişinin tecrübeli ve yiğit savaşçılarındandır. Rus işgaline karşı yürütülen bağımsızlık mücadelesinde ön safta yer Aldı.",
+    "summary": "1973 doğumlu, Çeçen direnişinin tecrübeli ve yiğit savaşçılarındandır. Rus işgaline karşı yürütülen bağımsızlık mücadelesinde ön safta yer aldı.",
     "bio": [
-      "1973 doğumlu, Çeçen direnişinin tecrübeli ve yiğit savaşçılarındandır. Rus işgaline karşı yürütülen bağımsızlık mücadelesinde ön safta yer Aldı.",
+      "1973 doğumlu, Çeçen direnişinin tecrübeli ve yiğit savaşçılarındandır. Rus işgaline karşı yürütülen bağımsızlık mücadelesinde ön safta yer aldı.",
       "Mart 2000’de Saadi-Kotar’daki eşitsiz kuşatma muharebelerinde direndi. Fedakarlığı, metaneti ve sarsılmaz kardeşlik bağıyla tanındı. Mart 2000’de Saadi-Kotar savunmasında yirmi yedi yaşında şehit düştü."
     ]
   },
@@ -4541,12 +4123,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/islam-ediyev.webp",
-        "caption": "İslam Ediyev (Sahrabi) (1969–2000) — Arşiv fotoğrafı."
+        "caption": "İslam Ediyev (Sahrabi) (1969–2000)"
       }
     ],
-    "summary": "Sahrabi’ künyesiyle tanınan, Çeçen direnişinin kıdemli mücahitlerindendir. Her iki rus-çeçen savaşında vatan toprağının müdafaasına katıldı.",
+    "summary": "‘Sahrabi’ künyesiyle tanınan, Çeçen direnişinin kıdemli mücahitlerindendir. Her iki Rus-Çeçen Savaşı’nda vatan toprağının müdafaasına katıldı.",
     "bio": [
-      "Sahrabi’ künyesiyle tanınan, Çeçen direnişinin kıdemli mücahitlerindendir. Her iki rus-çeçen savaşında vatan toprağının müdafaasına katıldı.",
+      "‘Sahrabi’ künyesiyle tanınan, Çeçen direnişinin kıdemli mücahitlerindendir. Her iki Rus-Çeçen Savaşı’nda vatan toprağının müdafaasına katıldı.",
       "Mart 2000’de Saadi-Kotar kuşatmasında silah arkadaşlarıyla omuz omuza çarpıştı. Cesareti, olgunluğu ve davasına olan sadakatiyle cephede örnek oldu. Mart 2000’de Saadi-Kotar çarpışmalarında otuz bir yaşında şehit düştü."
     ]
   },
@@ -4565,13 +4147,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/rustam-haciyev.webp",
-        "caption": "Rustam Haciyev (1976–2000) — Arşiv fotoğrafı."
+        "caption": "Rustam Haciyev (1976–2000)"
       }
     ],
     "summary": "1976 doğumlu, Çeçen direniş saflarının fedakar ve cesur savaşçısıdır. Rus işgal ordusuna karşı vatanın bağımsızlığı uğrunda silah kuşandı.",
     "bio": [
       "1976 doğumlu, Çeçen direniş saflarının fedakar ve cesur savaşçısıdır. Rus işgal ordusuna karşı vatanın bağımsızlığı uğrunda silah kuşandı.",
-      "2000 kışında başkentten Güney dağlarına uzanan direniş hattında görev yaptı. Saadi-Kotar kuşatmasında son nefesine kadar iman ve azimle direndi. Mart 2000’de Saadi-Kotar muharebesinde yirmi dört yaşında şehit düştü."
+      "2000 kışında başkentten güney dağlarına uzanan direniş hattında görev yaptı. Saadi-Kotar kuşatmasında son nefesine kadar iman ve azimle direndi. Mart 2000’de Saadi-Kotar muharebesinde yirmi dört yaşında şehit düştü."
     ]
   },
   {
@@ -4589,13 +4171,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/kazbek-amayev.webp",
-        "caption": "Kazbek Amayev (1971–1995) — Arşiv fotoğrafı."
+        "caption": "Kazbek Amayev (1971–1995)"
       }
     ],
     "summary": "1971 yılında Urus-Martan’ın Goytı köyünde doğmuş yiğit Çeçen direniş mücahididir. Aralık 1994’te Rus işgaline karşı vatanını ve imanını savunmak için cepheye çıktı.",
     "bio": [
       "1971 yılında Urus-Martan’ın Goytı köyünde doğmuş yiğit Çeçen direniş mücahididir. Aralık 1994’te Rus işgaline karşı vatanını ve imanını savunmak için cepheye çıktı.",
-      "Ocak 1995’te Cahar’daki Başkanlık Sarayı savunmasında en ön saflarda yer Aldı. Ağır topçu ateşi altında yeminine ve milletine son nefesine kadar sadık kaldı. 18 Ocak 1995’te Başkanlık Sarayı direnişinde yirmi dört yaşında şehitlik mertebesine ulaştı."
+      "Ocak 1995’te Cahar’daki Başkanlık Sarayı savunmasında en ön saflarda yer aldı. Ağır topçu ateşi altında yeminine ve milletine son nefesine kadar sadık kaldı. 18 Ocak 1995’te Başkanlık Sarayı direnişinde yirmi dört yaşında şehitlik mertebesine ulaştı."
     ]
   },
   {
@@ -4613,13 +4195,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/tarhan-terhoyev.webp",
-        "caption": "Tarhan Terhoyev (1974–1995) — Arşiv fotoğrafı."
+        "caption": "Tarhan Terhoyev (1974–1995)"
       }
     ],
-    "summary": "20 Eylül 1974 doğumlu, dadi lakabıyla tanınan cesur Çeçen Komutanıdır. Birinci rus-çeçen savaşı’nda Güney-Batı cephesi’nde müfreze Komutanlığı üstlendi.",
+    "summary": "20 Eylül 1974 doğumlu, ‘Dadi’ lakabıyla tanınan cesur Çeçen komutanıdır. Birinci Rus-Çeçen Savaşı’nda Güneybatı Cephesi’nde müfreze komutanlığı üstlendi.",
     "bio": [
-      "20 Eylül 1974 doğumlu, dadi lakabıyla tanınan cesur Çeçen Komutanıdır. Birinci rus-çeçen savaşı’nda Güney-Batı cephesi’nde müfreze Komutanlığı üstlendi.",
-      "Üstün cesaretiyle İçkerya’nın en yüksek nişanı qoman turpal ile taltif edildi. Bamut direnişinde Rus zırhlı birliklerine karşı destansı bir mücadele verdi. 7 Haziran 1995’te Bamut savunmasında yirmi yaşında kahramanca şehit düştü."
+      "20 Eylül 1974 doğumlu, ‘Dadi’ lakabıyla tanınan cesur Çeçen komutanıdır. Birinci Rus-Çeçen Savaşı’nda Güneybatı Cephesi’nde müfreze komutanlığı üstlendi.",
+      "Üstün cesaretiyle İçkerya’nın en yüksek nişanı ‘Koman Turpal’ ile taltif edildi. Bamut direnişinde Rus zırhlı birliklerine karşı destansı bir mücadele verdi. 7 Haziran 1995’te Bamut savunmasında yirmi yaşında kahramanca şehit düştü."
     ]
   },
   {
@@ -4637,13 +4219,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/mohmad-salah-arsamekov.webp",
-        "caption": "Mohmad-Salah Arsamekov (1977–2000) — Arşiv fotoğrafı."
+        "caption": "Mohmad-Salah Arsamekov (1977–2000)"
       }
     ],
-    "summary": "1977 doğumlu, sultan lakabıyla bilinen Haçaro boyuna mensup Çeçen savaşçısıdır. İkinci rus-çeçen savaşı’nda İçkerya Silahlı Kuvvetleri saflarında cepheye koştu.",
+    "summary": "1977 doğumlu, ‘Sultan’ lakabıyla bilinen Haçaro boyuna mensup Çeçen savaşçısıdır. İkinci Rus-Çeçen Savaşı’nda İçkerya Silahlı Kuvvetleri saflarında cepheye koştu.",
     "bio": [
-      "1977 doğumlu, sultan lakabıyla bilinen Haçaro boyuna mensup Çeçen savaşçısıdır. İkinci rus-çeçen savaşı’nda İçkerya Silahlı Kuvvetleri saflarında cepheye koştu.",
-      "2000 kışı kuşatma ve yarma harekatlarında sarsılmaz iradesiyle çarpıştı. Saadi-Kotar direnişinde silah arkadaşlarıyla omuz omuza sonuna dek direndi. Mart 2000’de Saadi-Kotar muharebesinde yirmi üç yaşında şehit düştü."
+      "1977 doğumlu, ‘Sultan’ lakabıyla bilinen Haçaro boyuna mensup Çeçen savaşçısıdır. İkinci Rus-Çeçen Savaşı’nda İçkerya Silahlı Kuvvetleri saflarında cepheye koştu.",
+      "2000 kışı kuşatma ve yarma harekâtlarında sarsılmaz iradesiyle çarpıştı. Saadi-Kotar direnişinde silah arkadaşlarıyla omuz omuza sonuna dek direndi. Mart 2000’de Saadi-Kotar muharebesinde yirmi üç yaşında şehit düştü."
     ]
   },
   {
@@ -4661,12 +4243,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/denis-dudurkayev.webp",
-        "caption": "Denis Dudurkayev (1965–2000) — Arşiv fotoğrafı."
+        "caption": "Denis Dudurkayev (1965–2000)"
       }
     ],
-    "summary": "1965 yılında Cahar’ın Aldı kasabasında doğan mulko boyuna mensup mücahittir. Vatan toprağını Rus işgal ordusuna karşı savunmak için silah kuşandı.",
+    "summary": "1965 yılında Cahar’ın Aldı kasabasında doğan Mulko boyuna mensup mücahittir. Vatan toprağını Rus işgal ordusuna karşı savunmak için silah kuşandı.",
     "bio": [
-      "1965 yılında Cahar’ın Aldı kasabasında doğan mulko boyuna mensup mücahittir. Vatan toprağını Rus işgal ordusuna karşı savunmak için silah kuşandı.",
+      "1965 yılında Cahar’ın Aldı kasabasında doğan Mulko boyuna mensup mücahittir. Vatan toprağını Rus işgal ordusuna karşı savunmak için silah kuşandı.",
       "1999-2000 kışında başkent savunması ve dağ yürüyüşü hattında mücadele etti. Olgunluğu, cesur duruşu ve fedakarlığıyla cephede örnek oldu. Mart 2000’de Saadi-Kotar kuşatmasında çarpışarak şehitlik mertebesine ulaştı."
     ]
   },
@@ -4685,13 +4267,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/musa-iznaurov.webp",
-        "caption": "Musa İznaurov (1972–2000) — Arşiv fotoğrafı."
+        "caption": "Musa İznaurov (1972–2000)"
       }
     ],
-    "summary": "1972 yılında Cahar’ın Aldı kasabasında doğmuş mulko boyuna mensup savaşçıdır. İkinci rus-çeçen savaşı’nda vatanın bağımsızlığı uğrunda direniş saflarına katıldı.",
+    "summary": "1972 yılında Cahar’ın Aldı kasabasında doğmuş Mulko boyuna mensup savaşçıdır. İkinci Rus-Çeçen Savaşı’nda vatanın bağımsızlığı uğrunda direniş saflarına katıldı.",
     "bio": [
-      "1972 yılında Cahar’ın Aldı kasabasında doğmuş mulko boyuna mensup savaşçıdır. İkinci rus-çeçen savaşı’nda vatanın bağımsızlığı uğrunda direniş saflarına katıldı.",
-      "Başkent kuşatması ve Güney cephesine geçiş harekatında ağır şartlara göğüs gerdi. Saadi-Kotar’da kendilerinden katbekat üstün işgal güçlerine karşı direndi. Mart 2000’de Saadi-Kotar direnişinde yirmi sekiz yaşında şehit düştü."
+      "1972 yılında Cahar’ın Aldı kasabasında doğmuş Mulko boyuna mensup savaşçıdır. İkinci Rus-Çeçen Savaşı’nda vatanın bağımsızlığı uğrunda direniş saflarına katıldı.",
+      "Başkent kuşatması ve Güney Cephesi’ne geçiş harekâtında ağır şartlara göğüs gerdi. Saadi-Kotar’da kendilerinden katbekat üstün işgal güçlerine karşı direndi. Mart 2000’de Saadi-Kotar direnişinde yirmi sekiz yaşında şehit düştü."
     ]
   },
   {
@@ -4709,7 +4291,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/adam-aspiyev.webp",
-        "caption": "Adam Aspiyev (1973–2000) — Arşiv fotoğrafı."
+        "caption": "Adam Aspiyev (1973–2000)"
       }
     ],
     "summary": "1973 yılında Cahar’ın karpinka semtinde doğmuş inguş asıllı mücahittir. Kafkasya halklarının kardeşlik ve direniş ruhuyla cephede saf tuttu.",
@@ -4733,13 +4315,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/anzor-batalov.webp",
-        "caption": "Anzor Batalov (1976–2000) — Arşiv fotoğrafı."
+        "caption": "Anzor Batalov (1976–2000)"
       }
     ],
-    "summary": "1976 yılında Sernovodskoye’de doğan, sayfullah lakaplı mulko boyu mücahididir. Ağabeyi İslam Batalov ile birlikte vatan savunması için cepheye çıktı.",
+    "summary": "1976 yılında Sernovodskoye’de doğan, Sayfullah lakaplı Mulko boyu mücahididir. Ağabeyi İslam Batalov ile birlikte vatan savunması için cepheye çıktı.",
     "bio": [
-      "1976 yılında Sernovodskoye’de doğan, sayfullah lakaplı mulko boyu mücahididir. Ağabeyi İslam Batalov ile birlikte vatan savunması için cepheye çıktı.",
-      "2000 kışında kuşatma yarma harekatı ve Güney cephesi çarpışmalarında yer Aldı. Saadi-Kotar’da ağabeyiyle omuz omuza son nefesine kadar direndi. Mart 2000’de Saadi-Kotar direnişinde ağabeyiyle birlikte şehitlik mertebesine ulaştı."
+      "1976 yılında Sernovodskoye’de doğan, Sayfullah lakaplı Mulko boyu mücahididir. Ağabeyi İslam Batalov ile birlikte vatan savunması için cepheye çıktı.",
+      "2000 kışında kuşatma yarma harekâtı ve Güney Cephesi çarpışmalarında yer aldı. Saadi-Kotar’da ağabeyiyle omuz omuza son nefesine kadar direndi. Mart 2000’de Saadi-Kotar direnişinde ağabeyiyle birlikte şehitlik mertebesine ulaştı."
     ]
   },
   {
@@ -4757,12 +4339,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ramzan-cukayev.webp",
-        "caption": "Ramzan Çukayev (1976–2000) — Arşiv fotoğrafı."
+        "caption": "Ramzan Çukayev (1976–2000)"
       }
     ],
-    "summary": "1976 yılında Cahar’ın Aldı kasabasında doğan mulko boyuna mensup savaşçıdır. Komutan bati’nin müfrezesinde Rus işgal Kuvvetlerine karşı cephede görev yaptı.",
+    "summary": "1976 yılında Cahar’ın Aldı kasabasında doğan Mulko boyuna mensup savaşçıdır. Komutan Bati’nin müfrezesinde Rus işgal kuvvetlerine karşı cephede görev yaptı.",
     "bio": [
-      "1976 yılında Cahar’ın Aldı kasabasında doğan mulko boyuna mensup savaşçıdır. Komutan bati’nin müfrezesinde Rus işgal Kuvvetlerine karşı cephede görev yaptı.",
+      "1976 yılında Cahar’ın Aldı kasabasında doğan Mulko boyuna mensup savaşçıdır. Komutan Bati’nin müfrezesinde Rus işgal kuvvetlerine karşı cephede görev yaptı.",
       "2000 kışında başkentten dağlara uzanan zorlu kuşatma hattında çarpıştı. Cesareti, sadakati ve sarsılmaz imanıyla silah arkadaşlarının güvenini kazandı. Mart 2000’de Saadi-Kotar kuşatmasında yirmi dört yaşında şehit düştü."
     ]
   },
@@ -4781,12 +4363,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/mohmad-hamzatov.webp",
-        "caption": "Mohmad Hamzatov (1975–2000) — Arşiv fotoğrafı."
+        "caption": "Mohmad Hamzatov (1975–2000)"
       }
     ],
-    "summary": "1975 yılında Aldı kasabasında doğan, mamişk lakaplı guho boyu mücahididir. Dayısı Komutan bati’nin müfrezesinde vatan savunması için silah kuşandı.",
+    "summary": "1975 yılında Aldı kasabasında doğan, Mamişk lakaplı Guho boyu mücahididir. Dayısı Komutan Bati’nin müfrezesinde vatan savunması için silah kuşandı.",
     "bio": [
-      "1975 yılında Aldı kasabasında doğan, mamişk lakaplı guho boyu mücahididir. Dayısı Komutan bati’nin müfrezesinde vatan savunması için silah kuşandı.",
+      "1975 yılında Aldı kasabasında doğan, Mamişk lakaplı Guho boyu mücahididir. Dayısı Komutan Bati’nin müfrezesinde vatan savunması için silah kuşandı.",
       "1999-2000 kışı boyunca en çetin cephe hatlarında fedakarca çarpıştı. Saadi-Kotar’da kuşatmaya rağmen teslimiyeti reddedip sonuna dek direndi. Mart 2000’de Saadi-Kotar direnişinde yirmi beş yaşında şehitlik mertebesine ulaştı."
     ]
   },
@@ -4805,7 +4387,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/mayrbek-maltsagov.webp",
-        "caption": "Mayrbek Maltsagov (1973–2000) — Arşiv fotoğrafı."
+        "caption": "Mayrbek Maltsagov (1973–2000)"
       }
     ],
     "summary": "1973 yılında Prigorodnoye köyünde doğan Haçaro boyuna mensup Çeçen savaşçısıdır. İçkerya Silahlı Kuvvetleri saflarında Rus işgaline karşı kıyam etti.",
@@ -4829,13 +4411,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/visa-idigov.webp",
-        "caption": "Visa İdigov (1966–1995) — Arşiv fotoğrafı."
+        "caption": "Visa İdigov (1966–1995)"
       }
     ],
-    "summary": "1966 yılında Şatoy’da (Şüytara) doğan, adam oğlu yiğit Çeçen direniş mücahididir. Birinci rus-çeçen savaşı başladığında vatan toprağını savunmak için cepheye koştu.",
+    "summary": "1966 yılında Şatoy’da (Şüytara) doğan, Adam oğlu yiğit Çeçen direniş mücahididir. Birinci Rus-Çeçen Savaşı başladığında vatan toprağını savunmak için cepheye koştu.",
     "bio": [
-      "1966 yılında Şatoy’da (Şüytara) doğan, adam oğlu yiğit Çeçen direniş mücahididir. Birinci rus-çeçen savaşı başladığında vatan toprağını savunmak için cepheye koştu.",
-      "1995 kışı boyunca başkent Cahar savunmasında ön hatlarda çarpıştı. Cesareti, fedakarlığı ve sarsılmaz imanıyla silah arkadaşlarına örnek oldu. 6 Şubat 1995’te şinasüyra-yuke mevkiindeki çarpışmalarda kahramanca şehit düştü."
+      "1966 yılında Şatoy’da (Şüytara) doğan, Adam oğlu yiğit Çeçen direniş mücahididir. Birinci Rus-Çeçen Savaşı başladığında vatan toprağını savunmak için cepheye koştu.",
+      "1995 kışı boyunca başkent Cahar savunmasında ön hatlarda çarpıştı. Cesareti, fedakarlığı ve sarsılmaz imanıyla silah arkadaşlarına örnek oldu. 6 Şubat 1995’te Şinasüyra-Yuke mevkiindeki çarpışmalarda kahramanca şehit düştü."
     ]
   },
   {
@@ -4853,13 +4435,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/mohmad-salah-adamov.webp",
-        "caption": "Mohmad-Salah Adamov (1960–1995) — Arşiv fotoğrafı."
+        "caption": "Mohmad-Salah Adamov (1960–1995)"
       }
     ],
-    "summary": "1960 yılında Şali’de (Şelara) doğan, hasmohmad oğlu Çeçen direniş mücahididir. Aralık 1994’te Rus işgal ordusunun saldırısına karşı vatan savunmasına katıldı.",
+    "summary": "1960 yılında Şali’de (Şelara) doğan, Hasmohmad oğlu Çeçen direniş mücahididir. Aralık 1994’te Rus işgal ordusunun saldırısına karşı vatan savunmasına katıldı.",
     "bio": [
-      "1960 yılında Şali’de (Şelara) doğan, hasmohmad oğlu Çeçen direniş mücahididir. Aralık 1994’te Rus işgal ordusunun saldırısına karşı vatan savunmasına katıldı.",
-      "Başkent Cahar kuşatmasında en çetin sokak çarpışmalarında görev Aldı. Olgunluğu, metaneti ve imanıyla genç mücahitlere moral kaynağı oldu. 6 Şubat 1995’te Cahar savunmasında otuz beş yaşında şehitlik mertebesine ulaştı."
+      "1960 yılında Şali’de (Şelara) doğan, Hasmohmad oğlu Çeçen direniş mücahididir. Aralık 1994’te Rus işgal ordusunun saldırısına karşı vatan savunmasına katıldı.",
+      "Başkent Cahar kuşatmasında en çetin sokak çarpışmalarında görev aldı. Olgunluğu, metaneti ve imanıyla genç mücahitlere moral kaynağı oldu. 6 Şubat 1995’te Cahar savunmasında otuz beş yaşında şehitlik mertebesine ulaştı."
     ]
   },
   {
@@ -4877,12 +4459,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/hamzat-sagayev.webp",
-        "caption": "Hamzat Sagayev (1965–1995) — Arşiv fotoğrafı."
+        "caption": "Hamzat Sagayev (1965–1995)"
       }
     ],
-    "summary": "1965 yılında Urus-Martan’da doğan, umar oğlu cesur Çeçen savaşçısıdır. Birinci rus-çeçen savaşı’nda İçkerya’nın bağımsızlığı için silah kuşandı.",
+    "summary": "1965 yılında Urus-Martan’da doğan, Umar oğlu cesur Çeçen savaşçısıdır. Birinci Rus-Çeçen Savaşı’nda İçkerya’nın bağımsızlığı için silah kuşandı.",
     "bio": [
-      "1965 yılında Urus-Martan’da doğan, umar oğlu cesur Çeçen savaşçısıdır. Birinci rus-çeçen savaşı’nda İçkerya’nın bağımsızlığı için silah kuşandı.",
+      "1965 yılında Urus-Martan’da doğan, Umar oğlu cesur Çeçen savaşçısıdır. Birinci Rus-Çeçen Savaşı’nda İçkerya’nın bağımsızlığı için silah kuşandı.",
       "1995 yılında başkent Cahar ve çevresindeki direniş hatlarında çarpıştı. Ağır bombardıman ve kuşatma altında mevzisini terk etmeden direndi. Nisan 1995’te Cahar’daki çarpışmalarda otuz yaşında kahramanca şehit düştü."
     ]
   },
@@ -4901,12 +4483,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/semal-tabuyev.webp",
-        "caption": "Şemal Tabuyev (1975–1995) — Arşiv fotoğrafı."
+        "caption": "Şemal Tabuyev (1975–1995)"
       }
     ],
-    "summary": "1975 yılında belgatoy köyünde doğmuş genç ve yiğit Çeçen direniş mücahididir. Henüz ondokuz yaşındayken Rus işgaline karşı vatan savunmasına koştu.",
+    "summary": "1975 yılında Belgatoy köyünde doğmuş genç ve yiğit Çeçen direniş mücahididir. Henüz on dokuz yaşındayken Rus işgaline karşı vatan savunmasına koştu.",
     "bio": [
-      "1975 yılında belgatoy köyünde doğmuş genç ve yiğit Çeçen direniş mücahididir. Henüz ondokuz yaşındayken Rus işgaline karşı vatan savunmasına koştu.",
+      "1975 yılında Belgatoy köyünde doğmuş genç ve yiğit Çeçen direniş mücahididir. Henüz on dokuz yaşındayken Rus işgaline karşı vatan savunmasına koştu.",
       "1995 kışı Cahar savunmasında korkusuzca ön saflarda mücadele verdi. Genç ömrünü milletinin özgürlüğü ve İslam sancağı uğruna feda etti. 3 Şubat 1995’te Cahar direnişinde yirmi yaşında şehitlik mertebesine ulaştı."
     ]
   },
@@ -4925,12 +4507,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ruslan-arsahanov.webp",
-        "caption": "Ruslan Arsahanov (1972–1995) — Arşiv fotoğrafı."
+        "caption": "Ruslan Arsahanov (1972–1995)"
       }
     ],
-    "summary": "1972 yılında şami-yurt’ta doğan, ahmad oğlu fedakar Çeçen mücahididir. Birinci rus-çeçen savaşı’nda vatan toprağını korumak için direniş saflarına katıldı.",
+    "summary": "1972 yılında Şami-Yurt’ta doğan, Ahmad oğlu fedakar Çeçen mücahididir. Birinci Rus-Çeçen Savaşı’nda vatan toprağını korumak için direniş saflarına katıldı.",
     "bio": [
-      "1972 yılında şami-yurt’ta doğan, ahmad oğlu fedakar Çeçen mücahididir. Birinci rus-çeçen savaşı’nda vatan toprağını korumak için direniş saflarına katıldı.",
+      "1972 yılında Şami-Yurt’ta doğan, Ahmad oğlu fedakar Çeçen mücahididir. Birinci Rus-Çeçen Savaşı’nda vatan toprağını korumak için direniş saflarına katıldı.",
       "1995 kışında başkent Cahar’da Rus zırhlı birliklerine karşı göğüs göğüse çarpıştı. Cesareti, sadakati ve vatan sevgisiyle silah arkadaşlarının takdirini kazandı. 13 Mart 1995’te Cahar savunmasında yirmi üç yaşında kahramanca şehit düştü."
     ]
   },
@@ -4949,13 +4531,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/muhadi-macidov.webp",
-        "caption": "Muhadi Macidov (1963–1995) — Arşiv fotoğrafı."
+        "caption": "Muhadi Macidov (1963–1995)"
       }
     ],
-    "summary": "1963 yılında Vedeno’nun mahkety köyünde doğmuş yiğit Çeçen direniş mücahididir. Aralık 1994’te Rus ordusunun İçkerya’yı işgal girişimine karşı cepheye çıktı.",
+    "summary": "1963 yılında Vedeno’nun Mahkety köyünde doğmuş yiğit Çeçen direniş mücahididir. Aralık 1994’te Rus ordusunun İçkerya’yı işgal girişimine karşı cepheye çıktı.",
     "bio": [
-      "1963 yılında Vedeno’nun mahkety köyünde doğmuş yiğit Çeçen direniş mücahididir. Aralık 1994’te Rus ordusunun İçkerya’yı işgal girişimine karşı cepheye çıktı.",
-      "Başkent Cahar’a yönelik yılbaşı taarruzunda stratejik hatlarda direndi. Rus zırhlı kollarının püskürtüldüğü en çetin çarpışmalarda ön safta yer Aldı. 3 Ocak 1995’te Cahar savunmasında otuz bir yaşında şehitlik mertebesine ulaştı."
+      "1963 yılında Vedeno’nun Mahkety köyünde doğmuş yiğit Çeçen direniş mücahididir. Aralık 1994’te Rus ordusunun İçkerya’yı işgal girişimine karşı cepheye çıktı.",
+      "Başkent Cahar’a yönelik yılbaşı taarruzunda stratejik hatlarda direndi. Rus zırhlı kollarının püskürtüldüğü en çetin çarpışmalarda ön safta yer aldı. 3 Ocak 1995’te Cahar savunmasında otuz bir yaşında şehitlik mertebesine ulaştı."
     ]
   },
   {
@@ -4973,13 +4555,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/muhammed-akbulatov.webp",
-        "caption": "Muhammed Akbulatov (1975–1995) — Arşiv fotoğrafı."
+        "caption": "Muhammed Akbulatov (1975–1995)"
       }
     ],
-    "summary": "1975 yılında yandi-kotar köyünde doğmuş genç Çeçen direniş savaşçısıdır. Birinci rus-çeçen savaşı başladığında ondokuz yaşında gönüllü olarak cepheye koştu.",
+    "summary": "1975 yılında Yandi-Kotar köyünde doğmuş genç Çeçen direniş savaşçısıdır. Birinci Rus-Çeçen Savaşı başladığında on dokuz yaşında gönüllü olarak cepheye koştu.",
     "bio": [
-      "1975 yılında yandi-kotar köyünde doğmuş genç Çeçen direniş savaşçısıdır. Birinci rus-çeçen savaşı başladığında ondokuz yaşında gönüllü olarak cepheye koştu.",
-      "31 Aralık 1994 yılbaşı gecesi başkent Cahar’ı savunan birliklerde yer Aldı. İşgal ordusunun ağır saldırısına karşı son nefesine kadar cesaretle çarpıştı. 2 Ocak 1995’te Cahar direnişinde genç yaşta kahramanca şehit düştü."
+      "1975 yılında Yandi-Kotar köyünde doğmuş genç Çeçen direniş savaşçısıdır. Birinci Rus-Çeçen Savaşı başladığında on dokuz yaşında gönüllü olarak cepheye koştu.",
+      "31 Aralık 1994 yılbaşı gecesi başkent Cahar’ı savunan birliklerde yer aldı. İşgal ordusunun ağır saldırısına karşı son nefesine kadar cesaretle çarpıştı. 2 Ocak 1995’te Cahar direnişinde genç yaşta kahramanca şehit düştü."
     ]
   },
   {
@@ -4997,12 +4579,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/sayd-muhammed-elderhanov.webp",
-        "caption": "Sayd-Muhammed Elderhanov (1968–1995) — Arşiv fotoğrafı."
+        "caption": "Sayd-Muhammed Elderhanov (1968–1995)"
       }
     ],
-    "summary": "1968 yılında Şali’nin avturı köyünde doğmuş vakur Çeçen direniş mücahididir. Vatanın bağımsızlığı ve milletinin onuru için direniş saflarında silah kuşandı.",
+    "summary": "1968 yılında Şali’nin Avturı köyünde doğmuş vakur Çeçen direniş mücahididir. Vatanın bağımsızlığı ve milletinin onuru için direniş saflarında silah kuşandı.",
     "bio": [
-      "1968 yılında Şali’nin avturı köyünde doğmuş vakur Çeçen direniş mücahididir. Vatanın bağımsızlığı ve milletinin onuru için direniş saflarında silah kuşandı.",
+      "1968 yılında Şali’nin Avturı köyünde doğmuş vakur Çeçen direniş mücahididir. Vatanın bağımsızlığı ve milletinin onuru için direniş saflarında silah kuşandı.",
       "1994-1995 kışı Cahar savunmasında yılbaşı taarruzuna karşı göğüs gerdi. Sarsılmaz iradesi ve cesur duruşuyla cephe hattında örnek bir mücadele verdi. 2 Ocak 1995’te başkent Cahar savunmasında yirmi altı yaşında şehit düştü."
     ]
   },
@@ -5021,13 +4603,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/islam-batalov.webp",
-        "caption": "İslam Batalov (1972–2000) — Arşiv fotoğrafı."
+        "caption": "İslam Batalov (1972–2000)"
       }
     ],
-    "summary": "1972 yılında Sernovodskoye’de doğan, rihard adıyla da bilinen mulko boyu mücahididir. Kardeşi anzor Batalov ile birlikte Rus işgaline karşı vatan savunmasına katıldı.",
+    "summary": "1972 yılında Sernovodskoye’de doğan, Rihard adıyla da bilinen Mulko boyu mücahididir. Kardeşi Anzor Batalov ile birlikte Rus işgaline karşı vatan savunmasına katıldı.",
     "bio": [
-      "1972 yılında Sernovodskoye’de doğan, rihard adıyla da bilinen mulko boyu mücahididir. Kardeşi anzor Batalov ile birlikte Rus işgaline karşı vatan savunmasına katıldı.",
-      "2000 kışında başkent kuşatmasını yararak Güney dağ cephesine ulaştı. Saadi-Kotar’da kardeşiyle omuz omuza vererek son mermisine kadar direndi. Mart 2000’de Saadi-Kotar direnişinde kardeşiyle birlikte şehitlik mertebesine ulaştı."
+      "1972 yılında Sernovodskoye’de doğan, Rihard adıyla da bilinen Mulko boyu mücahididir. Kardeşi Anzor Batalov ile birlikte Rus işgaline karşı vatan savunmasına katıldı.",
+      "2000 kışında başkent kuşatmasını yararak güney dağ cephesine ulaştı. Saadi-Kotar’da kardeşiyle omuz omuza vererek son mermisine kadar direndi. Mart 2000’de Saadi-Kotar direnişinde kardeşiyle birlikte şehitlik mertebesine ulaştı."
     ]
   },
   {
@@ -5045,13 +4627,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/daud-arsamakov.webp",
-        "caption": "Daud Arsamakov (1974–2000) — Arşiv fotoğrafı."
+        "caption": "Daud Arsamakov (1974–2000)"
       }
     ],
-    "summary": "1974 doğumlu, Çeçen direniş saflarının cesur ve ihlaslı mücahitlerindendir. İkinci rus-çeçen savaşı’nda İçkerya Silahlı Kuvvetleri saflarında cepheye çıktı.",
+    "summary": "1974 doğumlu, Çeçen direniş saflarının cesur ve ihlaslı mücahitlerindendir. İkinci Rus-Çeçen Savaşı’nda İçkerya Silahlı Kuvvetleri saflarında cepheye çıktı.",
     "bio": [
-      "1974 doğumlu, Çeçen direniş saflarının cesur ve ihlaslı mücahitlerindendir. İkinci rus-çeçen savaşı’nda İçkerya Silahlı Kuvvetleri saflarında cepheye çıktı.",
-      "1999-2000 kışı başkent savunması ve dağ yürüyüşü harekatında çarpıştı. Saadi-Kotar’da kendilerinden katbekat üstün işgal güçlerine karşı direndi. Mart 2000’de Saadi-Kotar muharebesinde yirmi altı yaşında şehit düştü."
+      "1974 doğumlu, Çeçen direniş saflarının cesur ve ihlaslı mücahitlerindendir. İkinci Rus-Çeçen Savaşı’nda İçkerya Silahlı Kuvvetleri saflarında cepheye çıktı.",
+      "1999-2000 kışı başkent savunması ve dağ yürüyüşü harekâtında çarpıştı. Saadi-Kotar’da kendilerinden katbekat üstün işgal güçlerine karşı direndi. Mart 2000’de Saadi-Kotar muharebesinde yirmi altı yaşında şehit düştü."
     ]
   },
   {
@@ -5069,12 +4651,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/hamzat-cadayev.webp",
-        "caption": "Hamzat Çadayev (1958–1994) — Arşiv fotoğrafı."
+        "caption": "Hamzat Çadayev (1958–1994)"
       }
     ],
-    "summary": "1958 yılında Şalaji köyünde doğan, abbaz oğlu yiğit Çeçen direniş mücahididir. Birinci rus-çeçen savaşı başladığında vatan toprağını savunmak için cepheye koştu.",
+    "summary": "1958 yılında Şalaji köyünde doğan, Abbaz oğlu yiğit Çeçen direniş mücahididir. Birinci Rus-Çeçen Savaşı başladığında vatan toprağını savunmak için cepheye koştu.",
     "bio": [
-      "1958 yılında Şalaji köyünde doğan, abbaz oğlu yiğit Çeçen direniş mücahididir. Birinci rus-çeçen savaşı başladığında vatan toprağını savunmak için cepheye koştu.",
+      "1958 yılında Şalaji köyünde doğan, Abbaz oğlu yiğit Çeçen direniş mücahididir. Birinci Rus-Çeçen Savaşı başladığında vatan toprağını savunmak için cepheye koştu.",
       "Aralık 1994’te işgal ordusunun başkent Cahar’a yönelik ağır saldırısına karşı direndi. Yılbaşı gecesi Rus zırhlı birliklerine karşı ön saflarda göğüs göğüse çarpıştı. 31 Aralık 1994’te Cahar savunmasında otuz altı yaşında kahramanca şehit düştü."
     ]
   },
@@ -5093,13 +4675,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/nasho-sugaipov.webp",
-        "caption": "Naşho Sugaipov (1975–2004) — Arşiv fotoğrafı."
+        "caption": "Naşho Sugaipov (1975–2004)"
       }
     ],
-    "summary": "1975 doğumlu, hamzat oğlu; Açhoy-Martan sektörü emiri ve cephe Komutanlarındandır. 1994 yılından itibaren on yıl boyunca İçkerya’nın bağımsızlığı için kesintisiz savaştı.",
+    "summary": "1975 doğumlu, Hamzat oğlu; Açhoy-Martan sektörü emiri ve cephe komutanlarındandır. 1994 yılından itibaren on yıl boyunca İçkerya’nın bağımsızlığı için kesintisiz savaştı.",
     "bio": [
-      "1975 doğumlu, hamzat oğlu; Açhoy-Martan sektörü emiri ve cephe Komutanlarındandır. 1994 yılından itibaren on yıl boyunca İçkerya’nın bağımsızlığı için kesintisiz savaştı.",
-      "Güneybatı cephesi Komutanı doku umarov’un yardımcılığını üstlenerek operasyonlar yönetti. Sarsılmaz cesareti ve liderliğiyle direniş saflarında örnek bir Emir olarak tanındı. 2004 yılında yirmi dokuz yaşındayken çarpışmada şehitlik mertebesine ulaştı."
+      "1975 doğumlu, Hamzat oğlu; Açhoy-Martan sektörü emiri ve cephe komutanlarındandır. 1994 yılından itibaren on yıl boyunca İçkerya’nın bağımsızlığı için kesintisiz savaştı.",
+      "Güneybatı Cephesi Komutanı Doku Umarov’un yardımcılığını üstlenerek operasyonlar yönetti. Sarsılmaz cesareti ve liderliğiyle direniş saflarında örnek bir emir olarak tanındı. 2004 yılında yirmi dokuz yaşındayken çarpışmada şehitlik mertebesine ulaştı."
     ]
   },
   {
@@ -5117,13 +4699,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/musa-elmurzayev.webp",
-        "caption": "Musa Elmurzayev (1977–1999) — Arşiv fotoğrafı."
+        "caption": "Musa Elmurzayev (1977–1999)"
       }
     ],
-    "summary": "1977 doğumlu, haraçoy kökenli ve Argunlu genç Çeçen direniş mücahididir. İkinci rus-çeçen savaşı başladığında vatan savunması için direniş saflarına katıldı.",
+    "summary": "1977 doğumlu, Haraçoy kökenli ve Argunlu genç Çeçen direniş mücahididir. İkinci Rus-Çeçen Savaşı başladığında vatan savunması için direniş saflarına katıldı.",
     "bio": [
-      "1977 doğumlu, haraçoy kökenli ve Argunlu genç Çeçen direniş mücahididir. İkinci rus-çeçen savaşı başladığında vatan savunması için direniş saflarına katıldı.",
-      "1999 sonbaharı ve kışında başkent Cahar’ın Güney savunma hatlarında çarpıştı. Kuşatma altındaki mevzilerde silah arkadaşlarıyla omuz omuza direndi. 17 Aralık 1999’da Aldı bölgesindeki çarpışmalarda yirmi iki yaşında şehit düştü."
+      "1977 doğumlu, Haraçoy kökenli ve Argunlu genç Çeçen direniş mücahididir. İkinci Rus-Çeçen Savaşı başladığında vatan savunması için direniş saflarına katıldı.",
+      "1999 sonbaharı ve kışında başkent Cahar’ın güney savunma hatlarında çarpıştı. Kuşatma altındaki mevzilerde silah arkadaşlarıyla omuz omuza direndi. 17 Aralık 1999’da Aldı bölgesindeki çarpışmalarda yirmi iki yaşında şehit düştü."
     ]
   },
   {
@@ -5141,13 +4723,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/mohmad-tahir-uspanov.webp",
-        "caption": "Mohmad-Tahir Uspanov (1965–2000) — Arşiv fotoğrafı."
+        "caption": "Mohmad-Tahir Uspanov (1965–2000)"
       }
     ],
-    "summary": "1965 doğumlu, Haçaroy boyuna mensup sapiyula oğlu yiğit Çeçen mücahididir. Şehit kardeşi musa Uspanov ile birlikte Rus işgaline karşı cepheye çıktı.",
+    "summary": "1965 doğumlu, Haçaroy boyuna mensup Sapiyula oğlu yiğit Çeçen mücahididir. Şehit kardeşi Musa Uspanov ile birlikte Rus işgaline karşı cepheye çıktı.",
     "bio": [
-      "1965 doğumlu, Haçaroy boyuna mensup sapiyula oğlu yiğit Çeçen mücahididir. Şehit kardeşi musa Uspanov ile birlikte Rus işgaline karşı cepheye çıktı.",
-      "1999-2000 kışı başkent Cahar savunmasında ve yarma harekatında çarpıştı. Saadi-Kotar’da kuşatma altında son mermisine kadar korkusuzca direndi. Mart 2000’de Saadi-Kotar direnişinde otuz beş yaşında şehitlik mertebesine ulaştı."
+      "1965 doğumlu, Haçaroy boyuna mensup Sapiyula oğlu yiğit Çeçen mücahididir. Şehit kardeşi Musa Uspanov ile birlikte Rus işgaline karşı cepheye çıktı.",
+      "1999-2000 kışı başkent Cahar savunmasında ve yarma harekâtında çarpıştı. Saadi-Kotar’da kuşatma altında son mermisine kadar korkusuzca direndi. Mart 2000’de Saadi-Kotar direnişinde otuz beş yaşında şehitlik mertebesine ulaştı."
     ]
   },
   {
@@ -5165,12 +4747,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/imran-tangiyev.webp",
-        "caption": "İmran Tangiyev (1970–1996) — Arşiv fotoğrafı."
+        "caption": "İmran Tangiyev (1970–1996)"
       }
     ],
-    "summary": "1970 doğumlu, melhi boyuna mensup keskin nişancı Çeçen direniş savaşçısıdır. Birinci rus-çeçen savaşı’nda vatan toprağını korumak için direniş saflarına katıldı.",
+    "summary": "1970 doğumlu, Melhi boyuna mensup keskin nişancı Çeçen direniş savaşçısıdır. Birinci Rus-Çeçen Savaşı’nda vatan toprağını korumak için direniş saflarına katıldı.",
     "bio": [
-      "1970 doğumlu, melhi boyuna mensup keskin nişancı Çeçen direniş savaşçısıdır. Birinci rus-çeçen savaşı’nda vatan toprağını korumak için direniş saflarına katıldı.",
+      "1970 doğumlu, Melhi boyuna mensup keskin nişancı Çeçen direniş savaşçısıdır. Birinci Rus-Çeçen Savaşı’nda vatan toprağını korumak için direniş saflarına katıldı.",
       "Stratejik Bamut kalesi savunmasında keskin nişancı olarak görev yaptı. İşgal ordusunun Bamut’a yönelik defalarca tekrarlanan taarruzlarını püskürttü. 23 Şubat 1996’da Bamut savunmasında yirmi altı yaşında kahramanca şehit düştü."
     ]
   },
@@ -5189,13 +4771,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/aslan-astamirov.webp",
-        "caption": "Aslan Astamirov (1975–2000) — Arşiv fotoğrafı."
+        "caption": "Aslan Astamirov (1975–2000)"
       }
     ],
-    "summary": "1975 yılında başkent Cahar’da doğan, abdul-hamid (Homa) lakaplı Çeçen mücahididir. İkinci rus-çeçen savaşı’nda başkenti savunan direniş birliklerinde yer Aldı.",
+    "summary": "1975 yılında başkent Cahar’da doğan, Abdul-Hamid (Homa) lakaplı Çeçen mücahididir. İkinci Rus-Çeçen Savaşı’nda başkenti savunan direniş birliklerinde yer aldı.",
     "bio": [
-      "1975 yılında başkent Cahar’da doğan, abdul-hamid (Homa) lakaplı Çeçen mücahididir. İkinci rus-çeçen savaşı’nda başkenti savunan direniş birliklerinde yer Aldı.",
-      "2000 kışında kuşatmayı yararak Güney dağlarına yürüyen kolda çarpıştı. Saadi-Kotar’da Rus ordusunun ağır kuşatmasına karşı mevzisini terk etmedi. Mart 2000’de Saadi-Kotar muharebesinde yirmi beş yaşında şehit düştü."
+      "1975 yılında başkent Cahar’da doğan, Abdul-Hamid (Homa) lakaplı Çeçen mücahididir. İkinci Rus-Çeçen Savaşı’nda başkenti savunan direniş birliklerinde yer aldı.",
+      "2000 kışında kuşatmayı yararak güney dağlarına yürüyen kolda çarpıştı. Saadi-Kotar’da Rus ordusunun ağır kuşatmasına karşı mevzisini terk etmedi. Mart 2000’de Saadi-Kotar muharebesinde yirmi beş yaşında şehit düştü."
     ]
   },
   {
@@ -5213,13 +4795,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/muhammed-emin-magomadov.webp",
-        "caption": "Muhammed-Emin Magomadov (1975–2000) — Arşiv fotoğrafı."
+        "caption": "Muhammed-Emin Magomadov (1975–2000)"
       }
     ],
-    "summary": "1975 doğumlu, himo boyuna mensup dört şehit kardeşin İkincisi olan mücahittir. Üç kardeşiyle birlikte vatanın özgürlüğü için Çeçen direniş saflarına katıldı.",
+    "summary": "1975 doğumlu, Himo boyuna mensup dört şehit kardeşin ikincisi olan mücahittir. Üç kardeşiyle birlikte vatanın özgürlüğü için Çeçen direniş saflarına katıldı.",
     "bio": [
-      "1975 doğumlu, himo boyuna mensup dört şehit kardeşin İkincisi olan mücahittir. Üç kardeşiyle birlikte vatanın özgürlüğü için Çeçen direniş saflarına katıldı.",
-      "2000 yılı kışında Cahar kuşatmasını yararak Güney cephesine ulaştı. Saadi-Kotar’da kardeşleriyle omuz omuza vererek işgal güçlerine karşı çarpıştı. Mart 2000’de Saadi-Kotar’da dört kardeş birlikte şehitlik mertebesine ulaştı."
+      "1975 doğumlu, Himo boyuna mensup dört şehit kardeşin ikincisi olan mücahittir. Üç kardeşiyle birlikte vatanın özgürlüğü için Çeçen direniş saflarına katıldı.",
+      "2000 yılı kışında Cahar kuşatmasını yararak Güney Cephesi’ne ulaştı. Saadi-Kotar’da kardeşleriyle omuz omuza vererek işgal güçlerine karşı çarpıştı. Mart 2000’de Saadi-Kotar’da dört kardeş birlikte şehitlik mertebesine ulaştı."
     ]
   },
   {
@@ -5237,12 +4819,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/alishan-amayev.webp",
-        "caption": "Alishan Amayev (1976–2000) — Arşiv fotoğrafı."
+        "caption": "Alishan Amayev (1976–2000)"
       }
     ],
-    "summary": "1976 doğumlu, mulko boyuna mensup lom-ali oğlu genç Çeçen mücahididir. Komutan doku umarov’un Özel Taburunda görev yapan seçkin savaşçılardandır.",
+    "summary": "1976 doğumlu, Mulko boyuna mensup Lom-Ali oğlu genç Çeçen mücahididir. Komutan Doku Umarov’un özel taburunda görev yapan seçkin savaşçılardandır.",
     "bio": [
-      "1976 doğumlu, mulko boyuna mensup lom-ali oğlu genç Çeçen mücahididir. Komutan doku umarov’un Özel Taburunda görev yapan seçkin savaşçılardandır.",
+      "1976 doğumlu, Mulko boyuna mensup Lom-Ali oğlu genç Çeçen mücahididir. Komutan Doku Umarov’un özel taburunda görev yapan seçkin savaşçılardandır.",
       "1999-2000 kışı başkent Cahar savunmasında ön hatlarda çarpıştı. Ağır kış şartlarında Saadi-Kotar’a ulaşarak kuşatma altında direndi. Mart 2000’de Saadi-Kotar direnişinde yirmi dört yaşında kahramanca şehit düştü."
     ]
   },
@@ -5261,13 +4843,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/aslan-baysangurov.webp",
-        "caption": "Aslan Baysangurov (1973–2000) — Arşiv fotoğrafı."
+        "caption": "Aslan Baysangurov (1973–2000)"
       }
     ],
-    "summary": "1973 yılında Sernovodskoye’de doğan, terlo boyuna mensup Çeçen direniş mücahididir. Kardeşleri aslanbek ve İslam ile birlikte vatan savunması için silah kuşandı.",
+    "summary": "1973 yılında Sernovodskoye’de doğan, Terlo boyuna mensup Çeçen direniş mücahididir. Kardeşleri Aslanbek ve İslam ile birlikte vatan savunması için silah kuşandı.",
     "bio": [
-      "1973 yılında Sernovodskoye’de doğan, terlo boyuna mensup Çeçen direniş mücahididir. Kardeşleri aslanbek ve İslam ile birlikte vatan savunması için silah kuşandı.",
-      "2000 kışında başkentten Güney dağlarına uzanan yarma harekatına katıldı. Saadi-Kotar’da iki kardeşiyle omuz omuza vererek son nefesine kadar çarpıştı. 6 Mart 2000’de Saadi-Kotar’da kardeşleriyle birlikte şehitlik mertebesine ulaştı."
+      "1973 yılında Sernovodskoye’de doğan, Terlo boyuna mensup Çeçen direniş mücahididir. Kardeşleri Aslanbek ve İslam ile birlikte vatan savunması için silah kuşandı.",
+      "2000 kışında başkentten güney dağlarına uzanan yarma harekâtına katıldı. Saadi-Kotar’da iki kardeşiyle omuz omuza vererek son nefesine kadar çarpıştı. 6 Mart 2000’de Saadi-Kotar’da kardeşleriyle birlikte şehitlik mertebesine ulaştı."
     ]
   },
   {
@@ -5285,13 +4867,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ramzan-hasanov.webp",
-        "caption": "Ramzan Hasanov (1970–1999) — Arşiv fotoğrafı."
+        "caption": "Ramzan Hasanov (1970–1999)"
       }
     ],
-    "summary": "1970 yılında başkent Cahar’da doğmuş, ihlaslı ve cesur Çeçen direniş mücahididir. Ünlü Komutan ahmadov kardeşlerin Cemaati saflarında vatan savunmasına katıldı.",
+    "summary": "1970 yılında başkent Cahar’da doğmuş, ihlaslı ve cesur Çeçen direniş mücahididir. Ünlü Komutan Ahmadov kardeşlerin cemaati saflarında vatan savunmasına katıldı.",
     "bio": [
-      "1970 yılında başkent Cahar’da doğmuş, ihlaslı ve cesur Çeçen direniş mücahididir. Ünlü Komutan ahmadov kardeşlerin Cemaati saflarında vatan savunmasına katıldı.",
-      "İkinci rus-çeçen savaşı’nda Argun boğazı girişindeki stratejik hatları korudu. Aralık 1999’da Duba-Yurt çevresindeki çetin kış muharebelerinde çarpıştı. 31 Aralık 1999’da Duba-Yurt savunmasında yirmi dokuz yaşında şehit düştü."
+      "1970 yılında başkent Cahar’da doğmuş, ihlaslı ve cesur Çeçen direniş mücahididir. Ünlü Komutan Ahmadov kardeşlerin cemaati saflarında vatan savunmasına katıldı.",
+      "İkinci Rus-Çeçen Savaşı’nda Argun boğazı girişindeki stratejik hatları korudu. Aralık 1999’da Duba-Yurt çevresindeki çetin kış muharebelerinde çarpıştı. 31 Aralık 1999’da Duba-Yurt savunmasında yirmi dokuz yaşında şehit düştü."
     ]
   },
   {
@@ -5309,13 +4891,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/islam-yakubov.webp",
-        "caption": "İslam Yakubov (1987–2010) — Arşiv fotoğrafı."
+        "caption": "İslam Yakubov (1987–2010)"
       }
     ],
-    "summary": "1987 yılında Hasavyurt’ta doğan, abdul-malik lakaplı genç Çeçen direniş mücahididir. 2008 yılında vatan savunması için dağlara çıkarak direniş saflarına katıldı.",
+    "summary": "1987 yılında Hasavyurt’ta doğan, Abdul-Malik lakaplı genç Çeçen direniş mücahididir. 2008 yılında vatan savunması için dağlara çıkarak direniş saflarına katıldı.",
     "bio": [
-      "1987 yılında Hasavyurt’ta doğan, abdul-malik lakaplı genç Çeçen direniş mücahididir. 2008 yılında vatan savunması için dağlara çıkarak direniş saflarına katıldı.",
-      "Komutan hüseyin gakayev’in emrindeki birliklerde aktif operasyonlarda görev Aldı. İhlası, tevazusu ve çetin dağ şartlarındaki sabrıyla silah arkadaşlarına örnek oldu. 8 Mayıs 2010’da petropavlovskoye yakınlarındaki çarpışmada yirmi üç yaşında şehit düştü."
+      "1987 yılında Hasavyurt’ta doğan, Abdul-Malik lakaplı genç Çeçen direniş mücahididir. 2008 yılında vatan savunması için dağlara çıkarak direniş saflarına katıldı.",
+      "Komutan Hüseyin Gakayev’in emrindeki birliklerde aktif operasyonlarda görev aldı. İhlası, tevazusu ve çetin dağ şartlarındaki sabrıyla silah arkadaşlarına örnek oldu. 8 Mayıs 2010’da Petropavlovskoye yakınlarındaki çarpışmada yirmi üç yaşında şehit düştü."
     ]
   },
   {
@@ -5333,13 +4915,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/abubakar-basayev.webp",
-        "caption": "Abubakar Basayev (1981–2007) — Arşiv fotoğrafı."
+        "caption": "Abubakar Basayev (1981–2007)"
       }
     ],
-    "summary": "1981 yılında Prigorodnoye’de doğan, Haçaroy boyuna mensup Tuğgeneral ve cephe emiridir. Serbest güreşte spor ustası adayı olup genç yaşta Çeçen direniş saflarına katıldı.",
+    "summary": "1981 yılında Prigorodnoye’de doğan, Haçaroy boyuna mensup tuğgeneral ve cephe emiridir. Serbest güreşte spor ustası adayı olup genç yaşta Çeçen direniş saflarına katıldı.",
     "bio": [
-      "1981 yılında Prigorodnoye’de doğan, Haçaroy boyuna mensup Tuğgeneral ve cephe emiridir. Serbest güreşte spor ustası adayı olup genç yaşta Çeçen direniş saflarına katıldı.",
-      "İçkerya Silahlı Kuvvetleri merkez cephesi Komutanlığı görevini üstlenerek savaşı yönetti. İşgal güçlerine karşı düzenlenen birçok stratejik operasyona bizzat komuta etti. 23 Ağustos 2007 gecesi çarpışmada yirmi altı yaşında şehitlik mertebesine ulaştı."
+      "1981 yılında Prigorodnoye’de doğan, Haçaroy boyuna mensup tuğgeneral ve cephe emiridir. Serbest güreşte spor ustası adayı olup genç yaşta Çeçen direniş saflarına katıldı.",
+      "İçkerya Silahlı Kuvvetleri Merkez Cephesi Komutanlığı görevini üstlenerek savaşı yönetti. İşgal güçlerine karşı düzenlenen birçok stratejik operasyona bizzat komuta etti. 23 Ağustos 2007 gecesi çarpışmada yirmi altı yaşında şehitlik mertebesine ulaştı."
     ]
   },
   {
@@ -5357,12 +4939,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/movlat-magomadov.webp",
-        "caption": "Movlat Magomadov (1980–2000) — Arşiv fotoğrafı."
+        "caption": "Movlat Magomadov (1980–2000)"
       }
     ],
-    "summary": "1980 doğumlu, Haçaroy boyuna mensup genç ve yiğit Çeçen direniş mücahididir. İkinci rus-çeçen savaşı başladığında vatan toprağını savunmak için cepheye koştu.",
+    "summary": "1980 doğumlu, Haçaroy boyuna mensup genç ve yiğit Çeçen direniş mücahididir. İkinci Rus-Çeçen Savaşı başladığında vatan toprağını savunmak için cepheye koştu.",
     "bio": [
-      "1980 doğumlu, Haçaroy boyuna mensup genç ve yiğit Çeçen direniş mücahididir. İkinci rus-çeçen savaşı başladığında vatan toprağını savunmak için cepheye koştu.",
+      "1980 doğumlu, Haçaroy boyuna mensup genç ve yiğit Çeçen direniş mücahididir. İkinci Rus-Çeçen Savaşı başladığında vatan toprağını savunmak için cepheye koştu.",
       "1999-2000 kışı başkent Cahar kuşatmasında ön mevzilerde çarpıştı. Mayın tarlalarını aşarak Saadi-Kotar köyündeki direniş hatlarına ulaştı. Mart 2000’de Saadi-Kotar muharebesinde yirmi yaşında kahramanca şehit düştü."
     ]
   },
@@ -5381,13 +4963,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/sayd-huseyin-magomadov.webp",
-        "caption": "Sayd-Hüseyin Magomadov (1981–2000) — Arşiv fotoğrafı."
+        "caption": "Sayd-Hüseyin Magomadov (1981–2000)"
       }
     ],
-    "summary": "1981 yılında naur bölgesi alpatovo’da doğan, çeyroy boyu mensubu Çeçen mücahididir. Henüz on sekiz yaşındayken Rus işgaline karşı direniş saflarında yer Aldı.",
+    "summary": "1981 yılında Naur bölgesi Alpatovo’da doğan, Çeyroy boyu mensubu Çeçen mücahididir. Henüz on sekiz yaşındayken Rus işgaline karşı direniş saflarında yer aldı.",
     "bio": [
-      "1981 yılında naur bölgesi alpatovo’da doğan, çeyroy boyu mensubu Çeçen mücahididir. Henüz on sekiz yaşındayken Rus işgaline karşı direniş saflarında yer Aldı.",
-      "2000 kışında başkent Cahar’ı savunan birliklerle omuz omuza mücadele etti. Kuşatmayı yararak Güney dağlarına yürüyen savaşçı koluyla Saadi-Kotar’a ulaştı. Mart 2000’de Saadi-Kotar direnişinde on dokuz yaşında şehitlik mertebesine ulaştı."
+      "1981 yılında Naur bölgesi Alpatovo’da doğan, Çeyroy boyu mensubu Çeçen mücahididir. Henüz on sekiz yaşındayken Rus işgaline karşı direniş saflarında yer aldı.",
+      "2000 kışında başkent Cahar’ı savunan birliklerle omuz omuza mücadele etti. Kuşatmayı yararak güney dağlarına yürüyen savaşçı koluyla Saadi-Kotar’a ulaştı. Mart 2000’de Saadi-Kotar direnişinde on dokuz yaşında şehitlik mertebesine ulaştı."
     ]
   },
   {
@@ -5405,12 +4987,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/balaudi-kagarmanov.webp",
-        "caption": "Balaudi Kagarmanov (1968–2000) — Arşiv fotoğrafı."
+        "caption": "Balaudi Kagarmanov (1968–2000)"
       }
     ],
-    "summary": "1968 yılında naurskaya’da doğan, hakmadoy boyuna mensup Çeçen direniş savaşçısıdır. Her iki rus-çeçen savaşı’nda vatanın bağımsızlığı için cephelerde görev yaptı.",
+    "summary": "1968 yılında Naurskaya’da doğan, Hakmadoy boyuna mensup Çeçen direniş savaşçısıdır. Her iki Rus-Çeçen Savaşı’nda vatanın bağımsızlığı için cephelerde görev yaptı.",
     "bio": [
-      "1968 yılında naurskaya’da doğan, hakmadoy boyuna mensup Çeçen direniş savaşçısıdır. Her iki rus-çeçen savaşı’nda vatanın bağımsızlığı için cephelerde görev yaptı.",
+      "1968 yılında Naurskaya’da doğan, Hakmadoy boyuna mensup Çeçen direniş savaşçısıdır. Her iki Rus-Çeçen Savaşı’nda vatanın bağımsızlığı için cephelerde görev yaptı.",
       "1999-2000 kışında başkent Cahar savunmasında ağır bombardıman altında direndi. Saadi-Kotar’da kuşatma altında silah arkadaşlarını korumak için sonuna kadar çarpıştı. Mart 2000’de Saadi-Kotar muharebesinde otuz iki yaşında kahramanca şehit düştü."
     ]
   },
@@ -5429,13 +5011,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/aslanbek-baysangurov.webp",
-        "caption": "Aslanbek Baysangurov (1975–2000) — Arşiv fotoğrafı."
+        "caption": "Aslanbek Baysangurov (1975–2000)"
       }
     ],
-    "summary": "1975 yılında Sernovodskoye’de doğan, terlo boyuna mensup Çeçen direniş mücahididir. Şehit Baysangurov kardeşlerin ortancası olup ağabeyi aslan ve kardeşi İslam ile cepheye çıktı.",
+    "summary": "1975 yılında Sernovodskoye’de doğan, Terlo boyuna mensup Çeçen direniş mücahididir. Şehit Baysangurov kardeşlerin ortancası olup ağabeyi Aslan ve kardeşi İslam ile cepheye çıktı.",
     "bio": [
-      "1975 yılında Sernovodskoye’de doğan, terlo boyuna mensup Çeçen direniş mücahididir. Şehit Baysangurov kardeşlerin ortancası olup ağabeyi aslan ve kardeşi İslam ile cepheye çıktı.",
-      "2000 kışında başkentten Güney dağlarına uzanan yarma harekatına katıldı. Saadi-Kotar’da iki kardeşiyle aynı siperde omuz omuza işgalcilere karşı direndi. Mart 2000’de Saadi-Kotar’da üç kardeş birlikte şehitlik mertebesine ulaştı."
+      "1975 yılında Sernovodskoye’de doğan, Terlo boyuna mensup Çeçen direniş mücahididir. Şehit Baysangurov kardeşlerin ortancası olup ağabeyi Aslan ve kardeşi İslam ile cepheye çıktı.",
+      "2000 kışında başkentten güney dağlarına uzanan yarma harekâtına katıldı. Saadi-Kotar’da iki kardeşiyle aynı siperde omuz omuza işgalcilere karşı direndi. Mart 2000’de Saadi-Kotar’da üç kardeş birlikte şehitlik mertebesine ulaştı."
     ]
   },
   {
@@ -5453,13 +5035,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ruslan-sardalov.webp",
-        "caption": "Ruslan Sardalov (1965–2000) — Arşiv fotoğrafı."
+        "caption": "Ruslan Sardalov (1965–2000)"
       }
     ],
-    "summary": "10 Mart 1965’te zakan-yurt’ta doğan, Haçaroy boyuna mensup ibrahim lakaplı gazidir. Birinci savaşta gelayev Özel birliklerinde ve Ağustos 1996 cihad operasyonunda çarpıştı.",
+    "summary": "10 Mart 1965’te Zakan-Yurt’ta doğan, Haçaroy boyuna mensup İbrahim lakaplı gazidir. Birinci savaşta Gelayev özel birliklerinde ve Ağustos 1996 Cihad Operasyonu’nda çarpıştı.",
     "bio": [
-      "10 Mart 1965’te zakan-yurt’ta doğan, Haçaroy boyuna mensup ibrahim lakaplı gazidir. Birinci savaşta gelayev Özel birliklerinde ve Ağustos 1996 cihad operasyonunda çarpıştı.",
-      "İkinci savaşta Cahar yarma harekatında mayın tarlalarını aşarak Güneye ulaştı. Saadi-Kotar’da kuşatma altındaki mevzilerde son mermisine kadar korkusuzca savaştı. 8 Mart 2000’de Saadi-Kotar direnişinde otuz beş yaşında kahramanca şehit düştü."
+      "10 Mart 1965’te Zakan-Yurt’ta doğan, Haçaroy boyuna mensup İbrahim lakaplı gazidir. Birinci savaşta Gelayev özel birliklerinde ve Ağustos 1996 Cihad Operasyonu’nda çarpıştı.",
+      "İkinci savaşta Cahar yarma harekâtında mayın tarlalarını aşarak güneye ulaştı. Saadi-Kotar’da kuşatma altındaki mevzilerde son mermisine kadar korkusuzca savaştı. 8 Mart 2000’de Saadi-Kotar direnişinde otuz beş yaşında kahramanca şehit düştü."
     ]
   },
   {
@@ -5477,13 +5059,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/muhammed-magomadov.webp",
-        "caption": "Muhammed Magomadov (1973–2000) — Arşiv fotoğrafı."
+        "caption": "Muhammed Magomadov (1973–2000)"
       }
     ],
-    "summary": "1973 doğumlu, himo boyuna mensup muhlig lakaplı yiğit Çeçen direniş savaşçısıdır. Saadi-Kotar’da şehit düşen dört Magomadov kardeşin en büyüğü ve öncüsüdür.",
+    "summary": "1973 doğumlu, Himo boyuna mensup Muhlig lakaplı yiğit Çeçen direniş savaşçısıdır. Saadi-Kotar’da şehit düşen dört Magomadov kardeşin en büyüğü ve öncüsüdür.",
     "bio": [
-      "1973 doğumlu, himo boyuna mensup muhlig lakaplı yiğit Çeçen direniş savaşçısıdır. Saadi-Kotar’da şehit düşen dört Magomadov kardeşin en büyüğü ve öncüsüdür.",
-      "Üç kardeşiyle birlikte Cahar savunmasında ve kuşatmayı yarma harekatında çarpıştı. Saadi-Kotar köyünde kardeşleriyle omuz omuza vererek işgal ordusuna karşı direndi. Mart 2000’de Saadi-Kotar’da yirmi yedi yaşında kardeşleriyle birlikte şehit düştü."
+      "1973 doğumlu, Himo boyuna mensup Muhlig lakaplı yiğit Çeçen direniş savaşçısıdır. Saadi-Kotar’da şehit düşen dört Magomadov kardeşin en büyüğü ve öncüsüdür.",
+      "Üç kardeşiyle birlikte Cahar savunmasında ve kuşatmayı yarma harekâtında çarpıştı. Saadi-Kotar köyünde kardeşleriyle omuz omuza vererek işgal ordusuna karşı direndi. Mart 2000’de Saadi-Kotar’da yirmi yedi yaşında kardeşleriyle birlikte şehit düştü."
     ]
   },
   {
@@ -5501,13 +5083,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/arbi-yevmirzayev.webp",
-        "caption": "Arbi Yevmirzayev (1972–2010) — Arşiv fotoğrafı."
+        "caption": "Arbi Yevmirzayev (1972–2010)"
       }
     ],
-    "summary": "1972 yılında Samaşki’de doğan, Emir mansur lakaplı alim ve Çeçen direniş Komutanıdır. Medine’de İslami ilimler tahsil edip Ağustos 1996 Cahar operasyonunda çarpıştı.",
+    "summary": "1972 yılında Samaşki’de doğan, Emir Mansur lakaplı alim ve Çeçen direniş komutanıdır. Medine’de İslami ilimler tahsil edip Ağustos 1996 Cahar operasyonunda çarpıştı.",
     "bio": [
-      "1972 yılında Samaşki’de doğan, Emir mansur lakaplı alim ve Çeçen direniş Komutanıdır. Medine’de İslami ilimler tahsil edip Ağustos 1996 Cahar operasyonunda çarpıştı.",
-      "İçkerya yüksek Şeriat mahkemesi başkanlığı ve askeri emirlik görevlerini üstlendi. Yıllarca dağlarda hem ilim öğretti hem de ön saflarda mücahidlere komuta etti. 4 Şubat 2010’da İçkerya dağlarındaki çarpışmada otuz sekiz yaşında şehit düştü."
+      "1972 yılında Samaşki’de doğan, Emir Mansur lakaplı alim ve Çeçen direniş komutanıdır. Medine’de İslami ilimler tahsil edip Ağustos 1996 Cahar operasyonunda çarpıştı.",
+      "İçkerya Yüksek Şeriat Mahkemesi başkanlığı ve askeri emirlik görevlerini üstlendi. Yıllarca dağlarda hem ilim öğretti hem de ön saflarda mücahidlere komuta etti. 4 Şubat 2010’da İçkerya dağlarındaki çarpışmada otuz sekiz yaşında şehit düştü."
     ]
   },
   {
@@ -5525,13 +5107,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/umar-magomadov.webp",
-        "caption": "Umar Magomadov (1977–2000) — Arşiv fotoğrafı."
+        "caption": "Umar Magomadov (1977–2000)"
       }
     ],
-    "summary": "1977 doğumlu, şikaroy boyuna mensup ihlas telsiz çağrı kodlu Emir ve Komutandır. 1994-1996 savaşı’nda gelayev Özel birliklerinde çarpışıp koman turpal nişanına aday oldu.",
+    "summary": "1977 doğumlu, Şikaroy boyuna mensup ‘İhlas’ telsiz çağrı kodlu emir ve komutandır. 1994-1996 Savaşı’nda Gelayev özel birliklerinde çarpışıp ‘Koman Turpal’ nişanına aday oldu.",
     "bio": [
-      "1977 doğumlu, şikaroy boyuna mensup ihlas telsiz çağrı kodlu Emir ve Komutandır. 1994-1996 savaşı’nda gelayev Özel birliklerinde çarpışıp koman turpal nişanına aday oldu.",
-      "İkinci savaşta genç mücahidlere emirlik yaparak dağ cephesinde ön saflarda savaştı. Ulus-Kert yakınlarındaki 776 rakımlı tepe muharebesinde kardeşi ali ile göğüs göğüse vuruştu. 1 Mart 2000 sabahı Ulus-Kert’te kardeşi ali ile birlikte yirmi üç yaşında şehit düştü."
+      "1977 doğumlu, Şikaroy boyuna mensup ‘İhlas’ telsiz çağrı kodlu emir ve komutandır. 1994-1996 Savaşı’nda Gelayev özel birliklerinde çarpışıp ‘Koman Turpal’ nişanına aday oldu.",
+      "İkinci savaşta genç mücahidlere emirlik yaparak dağ cephesinde ön saflarda savaştı. Ulus-Kert yakınlarındaki 776 rakımlı tepe muharebesinde kardeşi Ali ile göğüs göğüse vuruştu. 1 Mart 2000 sabahı Ulus-Kert’te kardeşi Ali ile birlikte yirmi üç yaşında şehit düştü."
     ]
   },
   {
@@ -5549,13 +5131,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/abu-ahmadov.webp",
-        "caption": "Abu Ahmadov (1966–2001) — Arşiv fotoğrafı."
+        "caption": "Abu Ahmadov (1966–2001)"
       }
     ],
     "summary": "1966 yılında Urus-Martan’da doğan, Gendargenoy boyuna mensup direniş savaşçısıdır. Efsanevi Ahmadov kardeşlerin büyüğü olarak 1994 yılında vatan savunmasına katıldı.",
     "bio": [
       "1966 yılında Urus-Martan’da doğan, Gendargenoy boyuna mensup direniş savaşçısıdır. Efsanevi Ahmadov kardeşlerin büyüğü olarak 1994 yılında vatan savunmasına katıldı.",
-      "Her iki rus-çeçen savaşı’nda kardeşleriyle omuz omuza ön cephelerde çarpıştı. Tsotsin-Yurt köyünde kuşatma altında tek başına son mermisine kadar direndi. 28 Ağustos 2001’de tsotsin-yurt çarpışmasında otuz beş yaşında kahramanca şehit düştü."
+      "Her iki Rus-Çeçen Savaşı’nda kardeşleriyle omuz omuza ön cephelerde çarpıştı. Tsotsin-Yurt köyünde kuşatma altında tek başına son mermisine kadar direndi. 28 Ağustos 2001’de Tsotsin-Yurt çarpışmasında otuz beş yaşında kahramanca şehit düştü."
     ]
   },
   {
@@ -5573,12 +5155,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/muslim-tsagarayev.webp",
-        "caption": "Müslim Tsagarayev (1982–2000) — Arşiv fotoğrafı."
+        "caption": "Müslim Tsagarayev (1982–2000)"
       }
     ],
-    "summary": "1982 yılında Urus-Martan’da doğan, nihlo boyuna mensup genç Çeçen mücahididir. Komutan muhammed Tsagarayev’in kardeşi olup altı şehit veren ailenin yiğit evladıdır.",
+    "summary": "1982 yılında Urus-Martan’da doğan, Nihlo boyuna mensup genç Çeçen mücahididir. Komutan Muhammed Tsagarayev’in kardeşi olup altı şehit veren ailenin yiğit evladıdır.",
     "bio": [
-      "1982 yılında Urus-Martan’da doğan, nihlo boyuna mensup genç Çeçen mücahididir. Komutan muhammed Tsagarayev’in kardeşi olup altı şehit veren ailenin yiğit evladıdır.",
+      "1982 yılında Urus-Martan’da doğan, Nihlo boyuna mensup genç Çeçen mücahididir. Komutan Muhammed Tsagarayev’in kardeşi olup altı şehit veren ailenin yiğit evladıdır.",
       "On sekiz yaşında İslam Tugayı cephanelik ve silah ikmal sorumluluğunu üstlendi. Dağ savaşı şartlarında cephedeki yüzlerce mücahidin mühimmat ikmalini sağladı. 26 Şubat 2000’de Şatoy direnişinde on sekiz yaşında şehitlik mertebesine ulaştı."
     ]
   },
@@ -5597,13 +5179,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/abu-tsagarayev.webp",
-        "caption": "Abu Tsagarayev (1984–2000) — Arşiv fotoğrafı."
+        "caption": "Abu Tsagarayev (1984–2000)"
       }
     ],
-    "summary": "1984 yılında Urus-Martan’da doğan, nihlo boyuna mensup en genç Çeçen mücahididir. On bir yaşındayken çatışma alanından ele geçirdiği silahı yaralı ağabeyine getirdi.",
+    "summary": "1984 yılında Urus-Martan’da doğan, Nihlo boyuna mensup en genç Çeçen mücahididir. On bir yaşındayken çatışma alanından ele geçirdiği silahı yaralı ağabeyine getirdi.",
     "bio": [
-      "1984 yılında Urus-Martan’da doğan, nihlo boyuna mensup en genç Çeçen mücahididir. On bir yaşındayken çatışma alanından ele geçirdiği silahı yaralı ağabeyine getirdi.",
-      "1997 yılında Komutan huta ahmadov’un himayesinde direniş birliğine katıldı. Cesareti ve sarsılmaz iradesiyle kıdemli savaşçıların takdirini ve sevgisini kazandı. 12 Şubat 2000’de Şatoy’da henüz on altı yaşındayken kahramanca şehit düştü."
+      "1984 yılında Urus-Martan’da doğan, Nihlo boyuna mensup en genç Çeçen mücahididir. On bir yaşındayken çatışma alanından ele geçirdiği silahı yaralı ağabeyine getirdi.",
+      "1997 yılında Komutan Huta Ahmadov’un himayesinde direniş birliğine katıldı. Cesareti ve sarsılmaz iradesiyle kıdemli savaşçıların takdirini ve sevgisini kazandı. 12 Şubat 2000’de Şatoy’da henüz on altı yaşındayken kahramanca şehit düştü."
     ]
   },
   {
@@ -5621,13 +5203,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/isa-ahmadov.webp",
-        "caption": "İsa Ahmadov (1978–2000) — Arşiv fotoğrafı."
+        "caption": "İsa Ahmadov (1978–2000)"
       }
     ],
-    "summary": "1978 yılında Urus-Martan’da doğan, muhadis lakaplı genç Emir ve direniş savaşçısıdır. Urus-Martan İslam Cemaati saflarında vatan savunmasında aktif görev üstlendi.",
+    "summary": "1978 yılında Urus-Martan’da doğan, Muhadis lakaplı genç emir ve direniş savaşçısıdır. Urus-Martan İslam Cemaati saflarında vatan savunmasında aktif görev üstlendi.",
     "bio": [
-      "1978 yılında Urus-Martan’da doğan, muhadis lakaplı genç Emir ve direniş savaşçısıdır. Urus-Martan İslam Cemaati saflarında vatan savunmasında aktif görev üstlendi.",
-      "1999-2000 kışında başkent Cahar savunması ve dağ cephesi çarpışmalarına katıldı. Ulus-Kert yakınlarında pskov hava indirme birliklerine karşı en ön safta vuruştu. Mart 2000’de Ulus-Kert muharebesinde yirmi iki yaşında şehitlik mertebesine ulaştı."
+      "1978 yılında Urus-Martan’da doğan, Muhadis lakaplı genç emir ve direniş savaşçısıdır. Urus-Martan İslam Cemaati saflarında vatan savunmasında aktif görev üstlendi.",
+      "1999-2000 kışında başkent Cahar savunması ve dağ cephesi çarpışmalarına katıldı. Ulus-Kert yakınlarında Pskov hava indirme birliklerine karşı en ön safta vuruştu. Mart 2000’de Ulus-Kert muharebesinde yirmi iki yaşında şehitlik mertebesine ulaştı."
     ]
   },
   {
@@ -5645,13 +5227,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/adlan-gazuyev.webp",
-        "caption": "Adlan Gazuyev (1977–2000) — Arşiv fotoğrafı."
+        "caption": "Adlan Gazuyev (1977–2000)"
       }
     ],
-    "summary": "1977 yılında Urus-Martan’da doğan, panşer lakaplı yiğit Çeçen direniş mücahididir. Urus-Martan direniş birlikleri içinde cesur baskın ve operasyonlarda yer Aldı.",
+    "summary": "1977 yılında Urus-Martan’da doğan, Panşer lakaplı yiğit Çeçen direniş mücahididir. Urus-Martan direniş birlikleri içinde cesur baskın ve operasyonlarda yer aldı.",
     "bio": [
-      "1977 yılında Urus-Martan’da doğan, panşer lakaplı yiğit Çeçen direniş mücahididir. Urus-Martan direniş birlikleri içinde cesur baskın ve operasyonlarda yer Aldı.",
-      "İkinci rus-çeçen savaşı’nda Komutan isa ahmadov ile omuz omuza çarpıştı. Ulus-Kert tepelerinde işgal ordusunun kuşatma hatlarına karşı göğüs göğüse savaştı. Mart 2000’de Ulus-Kert direnişinde yirmi üç yaşında kahramanca şehit düştü."
+      "1977 yılında Urus-Martan’da doğan, Panşer lakaplı yiğit Çeçen direniş mücahididir. Urus-Martan direniş birlikleri içinde cesur baskın ve operasyonlarda yer aldı.",
+      "İkinci Rus-Çeçen Savaşı’nda Komutan İsa Ahmadov ile omuz omuza çarpıştı. Ulus-Kert tepelerinde işgal ordusunun kuşatma hatlarına karşı göğüs göğüse savaştı. Mart 2000’de Ulus-Kert direnişinde yirmi üç yaşında kahramanca şehit düştü."
     ]
   },
   {
@@ -5669,13 +5251,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/valid-kagarmanov.webp",
-        "caption": "Valid Kagarmanov (1964–2000) — Arşiv fotoğrafı."
+        "caption": "Valid Kagarmanov (1964–2000)"
       }
     ],
-    "summary": "1964 yılında naurskaya’da doğan, hakmado boyuna mensup ağa lakaplı direnişçidir. Her iki rus-çeçen savaşı’nda Kafkasya’nın bağımsızlığı için cephede silah kuşandı.",
+    "summary": "1964 yılında Naurskaya’da doğan, Hakmado boyuna mensup Ağa lakaplı direnişçidir. Her iki Rus-Çeçen Savaşı’nda Kafkasya’nın bağımsızlığı için cephede silah kuşandı.",
     "bio": [
-      "1964 yılında naurskaya’da doğan, hakmado boyuna mensup ağa lakaplı direnişçidir. Her iki rus-çeçen savaşı’nda Kafkasya’nın bağımsızlığı için cephede silah kuşandı.",
-      "2000 kışında başkent Cahar kuşatmasını yararak Güney dağlarına yürüyüşe katıldı. Saadi-Kotar köyünde ağır kuşatma altında silah arkadaşlarıyla omuz omuza direndi. Mart 2000’de Saadi-Kotar muharebesinde otuz altı yaşında şehitlik mertebesine ulaştı."
+      "1964 yılında Naurskaya’da doğan, Hakmado boyuna mensup Ağa lakaplı direnişçidir. Her iki Rus-Çeçen Savaşı’nda Kafkasya’nın bağımsızlığı için cephede silah kuşandı.",
+      "2000 kışında başkent Cahar kuşatmasını yararak güney dağlarına yürüyüşe katıldı. Saadi-Kotar köyünde ağır kuşatma altında silah arkadaşlarıyla omuz omuza direndi. Mart 2000’de Saadi-Kotar muharebesinde otuz altı yaşında şehitlik mertebesine ulaştı."
     ]
   },
   {
@@ -5693,13 +5275,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/salaudin-kagarmanov.webp",
-        "caption": "Salaudin Kagarmanov (1961–2000) — Arşiv fotoğrafı."
+        "caption": "Salaudin Kagarmanov (1961–2000)"
       }
     ],
-    "summary": "1961 yılında naurskaya’da doğan, hakmado boyuna mensup tecrübeli Çeçen savaşçısıdır. Doksanlı yıllardan itibaren İçkerya’nın Milli bağımsızlık mücadelesinde yer Aldı.",
+    "summary": "1961 yılında Naurskaya’da doğan, Hakmado boyuna mensup tecrübeli Çeçen savaşçısıdır. Doksanlı yıllardan itibaren İçkerya’nın milli bağımsızlık mücadelesinde yer aldı.",
     "bio": [
-      "1961 yılında naurskaya’da doğan, hakmado boyuna mensup tecrübeli Çeçen savaşçısıdır. Doksanlı yıllardan itibaren İçkerya’nın Milli bağımsızlık mücadelesinde yer Aldı.",
-      "İkinci savaşta başkent Cahar savunmasında ve stratejik yarma harekatında çarpıştı. Saadi-Kotar direnişinde Kagarmanov ailesinin yiğitleri ile aynı siperde vuruştu. Mart 2000’de Saadi-Kotar muharebesinde otuz dokuz yaşında kahramanca şehit düştü."
+      "1961 yılında Naurskaya’da doğan, Hakmado boyuna mensup tecrübeli Çeçen savaşçısıdır. Doksanlı yıllardan itibaren İçkerya’nın milli bağımsızlık mücadelesinde yer aldı.",
+      "İkinci savaşta başkent Cahar savunmasında ve stratejik yarma harekâtında çarpıştı. Saadi-Kotar direnişinde Kagarmanov ailesinin yiğitleri ile aynı siperde vuruştu. Mart 2000’de Saadi-Kotar muharebesinde otuz dokuz yaşında kahramanca şehit düştü."
     ]
   },
   {
@@ -5717,7 +5299,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ruhmad-hadisov.webp",
-        "caption": "Ruhmad Hadisov (1974–1999) — Arşiv fotoğrafı."
+        "caption": "Ruhmad Hadisov (1974–1999)"
       }
     ],
     "summary": "1974 yılında Nojay-Yurt bölgesi Zandak köyünde doğan yiğit Çeçen direniş mücahididir. 1999 yılında Rus işgal ordusunun saldırılarına karşı gönüllü olarak cepheye çıktı.",
@@ -5741,13 +5323,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ahmed-mediyev.webp",
-        "caption": "Ahmed Mediyev (1977–2000) — Arşiv fotoğrafı."
+        "caption": "Ahmed Mediyev (1977–2000)"
       }
     ],
-    "summary": "1977 doğumlu, Urus-Martan İslam Cemaati mensubu genç Çeçen direniş savaşçısıdır. Komutan ramzan ahmadov’un birliklerinde cesur ve sadık bir mücahid olarak tanındı.",
+    "summary": "1977 doğumlu, Urus-Martan İslam Cemaati mensubu genç Çeçen direniş savaşçısıdır. Komutan Ramzan Ahmadov’un birliklerinde cesur ve sadık bir mücahid olarak tanındı.",
     "bio": [
-      "1977 doğumlu, Urus-Martan İslam Cemaati mensubu genç Çeçen direniş savaşçısıdır. Komutan ramzan ahmadov’un birliklerinde cesur ve sadık bir mücahid olarak tanındı.",
-      "1999-2000 kışında başkent Cahar savunması ve Güneye çekiliş harekatına katıldı. Ulus-Kert’te pskov hava indirme Alayına karşı yapılan hücumda ön safta çarpıştı. Mart 2000’de Ulus-Kert muharebesinde yirmi üç yaşında şehitlik mertebesine ulaştı."
+      "1977 doğumlu, Urus-Martan İslam Cemaati mensubu genç Çeçen direniş savaşçısıdır. Komutan Ramzan Ahmadov’un birliklerinde cesur ve sadık bir mücahid olarak tanındı.",
+      "1999-2000 kışında başkent Cahar savunması ve güneye çekiliş harekâtına katıldı. Ulus-Kert’te Pskov Hava İndirme Alayı’na karşı yapılan hücumda ön safta çarpıştı. Mart 2000’de Ulus-Kert muharebesinde yirmi üç yaşında şehitlik mertebesine ulaştı."
     ]
   },
   {
@@ -5765,12 +5347,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/zaurbek-gaysumov.webp",
-        "caption": "Zaurbek Gaysumov (1986–2008) — Arşiv fotoğrafı."
+        "caption": "Zaurbek Gaysumov (1986–2008)"
       }
     ],
-    "summary": "1986 yılında Roşni-Çu köyünde doğan, abdurrahman lakaplı genç Çeçen mücahididir. Genç yaşta işgalcilere boyun eğmeyerek dağlardaki direniş saflarına katıldı.",
+    "summary": "1986 yılında Roşni-Çu köyünde doğan, Abdurrahman lakaplı genç Çeçen mücahididir. Genç yaşta işgalcilere boyun eğmeyerek dağlardaki direniş saflarına katıldı.",
     "bio": [
-      "1986 yılında Roşni-Çu köyünde doğan, abdurrahman lakaplı genç Çeçen mücahididir. Genç yaşta işgalcilere boyun eğmeyerek dağlardaki direniş saflarına katıldı.",
+      "1986 yılında Roşni-Çu köyünde doğan, Abdurrahman lakaplı genç Çeçen mücahididir. Genç yaşta işgalcilere boyun eğmeyerek dağlardaki direniş saflarına katıldı.",
       "Urus-Martan ve Şalaji bölgesindeki operasyonlarda cesaretle görev yaptı. Şalaji yakınlarında kuşatma altında üstün düşman güçlerine karşı sonuna kadar çarpıştı. 10 Kasım 2008’de Şalaji çarpışmasında yirmi iki yaşında kahramanca şehit düştü."
     ]
   },
@@ -5789,13 +5371,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/cambulat-sadayev.webp",
-        "caption": "Cambulat Sadayev (1973–2006) — Arşiv fotoğrafı."
+        "caption": "Cambulat Sadayev (1973–2006)"
       }
     ],
-    "summary": "Çeçenistan’ın umalt-yurt (Prigorodnoye) köyünde doğdu ve serbest güreşte spor ustası oldu. 1994 yılında başlayan Birinci rus-çeçen savaşı’ndan itibaren bağımsızlık mücadelesine katıldı.",
+    "summary": "Çeçenistan’ın Umalt-Yurt (Prigorodnoye) köyünde doğdu ve serbest güreşte spor ustası oldu. 1994 yılında başlayan Birinci Rus-Çeçen Savaşı’ndan itibaren bağımsızlık mücadelesine katıldı.",
     "bio": [
-      "Çeçenistan’ın umalt-yurt (Prigorodnoye) köyünde doğdu ve serbest güreşte spor ustası oldu. 1994 yılında başlayan Birinci rus-çeçen savaşı’ndan itibaren bağımsızlık mücadelesine katıldı.",
-      "Cephede ‘Burka’ künyesiyle tanındı ve merkez cephesi Komutan yardımcısı olarak görev üstlendi. On iki yıl boyunca dağlarda ve başkent Cahar’da işgalci güçlere karşı ön saflarda çarpıştı. 16 Ağustos 2006 tarihinde başkent Cahar’da girdiği eşitsiz çatışmada kahramanca şehit düştü."
+      "Çeçenistan’ın Umalt-Yurt (Prigorodnoye) köyünde doğdu ve serbest güreşte spor ustası oldu. 1994 yılında başlayan Birinci Rus-Çeçen Savaşı’ndan itibaren bağımsızlık mücadelesine katıldı.",
+      "Cephede ‘Burka’ künyesiyle tanındı ve Merkez Cephesi Komutan Yardımcısı olarak görev üstlendi. On iki yıl boyunca dağlarda ve başkent Cahar’da işgalci güçlere karşı ön saflarda çarpıştı. 16 Ağustos 2006 tarihinde başkent Cahar’da girdiği eşitsiz çatışmada kahramanca şehit düştü."
     ]
   },
   {
@@ -5813,13 +5395,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/arbi-naduyev.webp",
-        "caption": "Arbi Naduyev (1966–2000) — Arşiv fotoğrafı."
+        "caption": "Arbi Naduyev (1966–2000)"
       }
     ],
-    "summary": "20 Aralık 1966 tarihinde Nojay-Yurt bölgesine bağlı Zandak köyünde dünyaya geldi. 1994 yılı başından itibaren Rus işgalcilere karşı vatan savunmasının ilk saflarında yer Aldı.",
+    "summary": "20 Aralık 1966 tarihinde Nojay-Yurt bölgesine bağlı Zandak köyünde dünyaya geldi. 1994 yılı başından itibaren Rus işgalcilere karşı vatan savunmasının ilk saflarında yer aldı.",
     "bio": [
-      "20 Aralık 1966 tarihinde Nojay-Yurt bölgesine bağlı Zandak köyünde dünyaya geldi. 1994 yılı başından itibaren Rus işgalcilere karşı vatan savunmasının ilk saflarında yer Aldı.",
-      "Komutan aydamir abalayev’in birliğinde Komutan yardımcısı olarak Cahar ve Gudermes’te çarpıştı. 1995 Gudermes operasyonu ile doğduğu Zandak köyünün savunmasında önemli rol oynadı. İkinci rus-çeçen savaşı’nda vatan topraklarını savunurken çatışmada şehit düştü."
+      "20 Aralık 1966 tarihinde Nojay-Yurt bölgesine bağlı Zandak köyünde dünyaya geldi. 1994 yılı başından itibaren Rus işgalcilere karşı vatan savunmasının ilk saflarında yer aldı.",
+      "Komutan Aydamir Abalayev’in birliğinde komutan yardımcısı olarak Cahar ve Gudermes’te çarpıştı. 1995 Gudermes operasyonu ile doğduğu Zandak köyünün savunmasında önemli rol oynadı. İkinci Rus-Çeçen Savaşı’nda vatan topraklarını savunurken çatışmada şehit düştü."
     ]
   },
   {
@@ -5837,13 +5419,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/abdul-vahid-gapurayev.webp",
-        "caption": "Abdul-Vahid Gapurayev (1972–1999) — Arşiv fotoğrafı."
+        "caption": "Abdul-Vahid Gapurayev (1972–1999)"
       }
     ],
-    "summary": "Çeçenistan’ın Urus-Martan bölgesine bağlı tengi-çu köyünde dünyaya geldi. Genç yaşından itibaren imani ahlakı, cesareti ve fedakârlığıyla kardeşleri arasında örnek oldu.",
+    "summary": "Çeçenistan’ın Urus-Martan bölgesine bağlı Tengi-Çu köyünde dünyaya geldi. Genç yaşından itibaren imani ahlakı, cesareti ve fedakârlığıyla kardeşleri arasında örnek oldu.",
     "bio": [
-      "Çeçenistan’ın Urus-Martan bölgesine bağlı tengi-çu köyünde dünyaya geldi. Genç yaşından itibaren imani ahlakı, cesareti ve fedakârlığıyla kardeşleri arasında örnek oldu.",
-      "Birinci rus-çeçen savaşı’nda tengi-çu ve Urus-Martan cephelerinde işgalcilere karşı çarpıştı. Direniş saflarında cemaat emiri olarak mücahit kardeşlerine cephede öncülük etti. Ekim 1999’da İkinci rus-çeçen savaşı’nın ilk çarpışmalarında şehit düştü."
+      "Çeçenistan’ın Urus-Martan bölgesine bağlı Tengi-Çu köyünde dünyaya geldi. Genç yaşından itibaren imani ahlakı, cesareti ve fedakârlığıyla kardeşleri arasında örnek oldu.",
+      "Birinci Rus-Çeçen Savaşı’nda Tengi-Çu ve Urus-Martan cephelerinde işgalcilere karşı çarpıştı. Direniş saflarında cemaat emiri olarak mücahit kardeşlerine cephede öncülük etti. Ekim 1999’da İkinci Rus-Çeçen Savaşı’nın ilk çarpışmalarında şehit düştü."
     ]
   },
   {
@@ -5861,7 +5443,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/mohmad-baysultanov.webp",
-        "caption": "Mohmad Baysultanov (1975–2005) — Arşiv fotoğrafı."
+        "caption": "Mohmad Baysultanov (1975–2005)"
       }
     ],
     "summary": "Çeçenistan’ın Şali bölgesine bağlı direniş kalesi Avtury köyünde dünyaya geldi. Avtury sektöründe cemaat emiri olarak yıllarca işgalci kuvvetlere karşı operasyonları yönetti.",
@@ -5885,13 +5467,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/aslambek-tuguzov.webp",
-        "caption": "Aslambek Tuguzov (1972–2000) — Arşiv fotoğrafı."
+        "caption": "Aslambek Tuguzov (1972–2000)"
       }
     ],
-    "summary": "Çeçenistan’da dünyaya geldi ve cephede silah arkadaşları arasında ‘Buka’ künyesiyle tanındı. İçkerya Silahlı Kuvvetleri’nin seçkin ‘Borz’ Özel amaçlı birliği saflarında görev yaptı.",
+    "summary": "Çeçenistan’da dünyaya geldi ve cephede silah arkadaşları arasında ‘Buka’ künyesiyle tanındı. İçkerya Silahlı Kuvvetleri’nin seçkin ‘Borz’ Özel Amaçlı Birliği saflarında görev yaptı.",
     "bio": [
-      "Çeçenistan’da dünyaya geldi ve cephede silah arkadaşları arasında ‘Buka’ künyesiyle tanındı. İçkerya Silahlı Kuvvetleri’nin seçkin ‘Borz’ Özel amaçlı birliği saflarında görev yaptı.",
-      "Birinci ve İkinci rus-çeçen savaşlarının her ikisinde de en ön cephelerde çarpıştı. Başkent Cahar ve Güney dağ hatlarındaki stratejik savunma muharebelerinde yer Aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) direnişinde kahramanca şehit düştü."
+      "Çeçenistan’da dünyaya geldi ve cephede silah arkadaşları arasında ‘Buka’ künyesiyle tanındı. İçkerya Silahlı Kuvvetleri’nin seçkin ‘Borz’ Özel Amaçlı Birliği saflarında görev yaptı.",
+      "Birinci ve İkinci Rus-Çeçen Savaşları’nın her ikisinde de en ön cephelerde çarpıştı. Başkent Cahar ve güney dağ hatlarındaki stratejik savunma muharebelerinde yer aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) direnişinde kahramanca şehit düştü."
     ]
   },
   {
@@ -5909,13 +5491,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/mikail-kurbanov.webp",
-        "caption": "Mikail Kurbanov (1962–2000) — Arşiv fotoğrafı."
+        "caption": "Mikail Kurbanov (1962–2000)"
       }
     ],
-    "summary": "Çeçenistan’ın köklü hacaroy taypına mensup yiğit bir özgürlük savaşçısıydı. 1994 yılından itibaren Çeçenistan’ın bağımsızlığı için cephede Silahlı mücadeleye katıldı.",
+    "summary": "Çeçenistan’ın köklü Hacaroy taypına mensup yiğit bir özgürlük savaşçısıydı. 1994 yılından itibaren Çeçenistan’ın bağımsızlığı için cephede silahlı mücadeleye katıldı.",
     "bio": [
-      "Çeçenistan’ın köklü hacaroy taypına mensup yiğit bir özgürlük savaşçısıydı. 1994 yılından itibaren Çeçenistan’ın bağımsızlığı için cephede Silahlı mücadeleye katıldı.",
-      "Komutan badruddi ganatov’un liderliğindeki direniş birliğinde ön saflarda görev yaptı. İkinci rus-çeçen savaşı’nda başkent Cahar ve dağ geçitlerinin savunmasında çarpıştı. Mart 2000’de Saadi-Kotar (Komsomolskoye) kuşatmasında çarpışarak şehit düştü."
+      "Çeçenistan’ın köklü Hacaroy taypına mensup yiğit bir özgürlük savaşçısıydı. 1994 yılından itibaren Çeçenistan’ın bağımsızlığı için cephede silahlı mücadeleye katıldı.",
+      "Komutan Badruddi Ganatov’un liderliğindeki direniş birliğinde ön saflarda görev yaptı. İkinci Rus-Çeçen Savaşı’nda başkent Cahar ve dağ geçitlerinin savunmasında çarpıştı. Mart 2000’de Saadi-Kotar (Komsomolskoye) kuşatmasında çarpışarak şehit düştü."
     ]
   },
   {
@@ -5933,13 +5515,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/isa-baharciyev.webp",
-        "caption": "İsa Baharçiyev (1974–2000) — Arşiv fotoğrafı."
+        "caption": "İsa Baharçiyev (1974–2000)"
       }
     ],
-    "summary": "1974 yılında Prigorodnoye köyünde dünyaya geldi ve Çeçenistan’ın mulkoy taypına mensuptu. Genç yaşında vatan savunmasına katılarak Rus işgalcilere karşı ön cephelerde çarpıştı.",
+    "summary": "1974 yılında Prigorodnoye köyünde dünyaya geldi ve Çeçenistan’ın Mulkoy taypına mensuptu. Genç yaşında vatan savunmasına katılarak Rus işgalcilere karşı ön cephelerde çarpıştı.",
     "bio": [
-      "1974 yılında Prigorodnoye köyünde dünyaya geldi ve Çeçenistan’ın mulkoy taypına mensuptu. Genç yaşında vatan savunmasına katılarak Rus işgalcilere karşı ön cephelerde çarpıştı.",
-      "Mart 2000’de Saadi-Kotar köyünde ağır kuşatma altında son kalan mücahitler arasında yer Aldı. Çatışmada iki kez yaralanıp omurgası kırılmasına rağmen ‘Teslim ol’ çağrılarına ateşle karşılık verdi. Makineli tüfeğiyle son nefesine kadar vuruşarak 26 yaşında Saadi-Kotar’da şehit düştü."
+      "1974 yılında Prigorodnoye köyünde dünyaya geldi ve Çeçenistan’ın Mulkoy taypına mensuptu. Genç yaşında vatan savunmasına katılarak Rus işgalcilere karşı ön cephelerde çarpıştı.",
+      "Mart 2000’de Saadi-Kotar köyünde ağır kuşatma altında son kalan mücahitler arasında yer aldı. Çatışmada iki kez yaralanıp omurgası kırılmasına rağmen ‘Teslim ol’ çağrılarına ateşle karşılık verdi. Makineli tüfeğiyle son nefesine kadar vuruşarak 26 yaşında Saadi-Kotar’da şehit düştü."
     ]
   },
   {
@@ -5957,13 +5539,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/zelimhan-musayev.webp",
-        "caption": "Zelimhan Musayev (1975–2000) — Arşiv fotoğrafı."
+        "caption": "Zelimhan Musayev (1975–2000)"
       }
     ],
     "summary": "Çeçenistan’ın direniş merkezlerinden Urus-Martan şehrinde dünyaya geldi. Samimiyeti, güler yüzü ve sarsılmaz cesaretiyle silah arkadaşlarının gönlünde yer edindi.",
     "bio": [
       "Çeçenistan’ın direniş merkezlerinden Urus-Martan şehrinde dünyaya geldi. Samimiyeti, güler yüzü ve sarsılmaz cesaretiyle silah arkadaşlarının gönlünde yer edindi.",
-      "Rus işgaline karşı vatan toprağını savunmak üzere mücahit birliklerine katıldı. İkinci rus-çeçen savaşı’nda Cahar ve Güney cephesindeki ağır çarpışmalarda yer Aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) muharebesinde kahramanca şehit düştü."
+      "Rus işgaline karşı vatan toprağını savunmak üzere mücahit birliklerine katıldı. İkinci Rus-Çeçen Savaşı’nda Cahar ve Güney Cephesi’ndeki ağır çarpışmalarda yer aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) muharebesinde kahramanca şehit düştü."
     ]
   },
   {
@@ -5981,13 +5563,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/said-sabayev.webp",
-        "caption": "Said Şabayev (1973–2000) — Arşiv fotoğrafı."
+        "caption": "Said Şabayev (1973–2000)"
       }
     ],
     "summary": "Çeçenistan’ın Urus-Martan bölgesine bağlı Gehi köyünde dünyaya geldi. Vatansever ailesinin terbiyesiyle yetişerek genç yaşta bağımsızlık mücadelesine katıldı.",
     "bio": [
       "Çeçenistan’ın Urus-Martan bölgesine bağlı Gehi köyünde dünyaya geldi. Vatansever ailesinin terbiyesiyle yetişerek genç yaşta bağımsızlık mücadelesine katıldı.",
-      "Birinci ve İkinci rus-çeçen savaşlarında Gehi ve Urus-Martan hatlarında ön safta çarpıştı. Kuşatma altındaki silah arkadaşlarını yalnız bırakmayarak sonuna kadar direndi. Mart 2000’de Saadi-Kotar (Komsomolskoye) direnişinde çarpışarak şehit düştü."
+      "Birinci ve İkinci Rus-Çeçen Savaşları’nda Gehi ve Urus-Martan hatlarında ön safta çarpıştı. Kuşatma altındaki silah arkadaşlarını yalnız bırakmayarak sonuna kadar direndi. Mart 2000’de Saadi-Kotar (Komsomolskoye) direnişinde çarpışarak şehit düştü."
     ]
   },
   {
@@ -6005,13 +5587,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/badruddi-ganatov.webp",
-        "caption": "Badruddi Ganatov (1965–2000) — Arşiv fotoğrafı."
+        "caption": "Badruddi Ganatov (1965–2000)"
       }
     ],
-    "summary": "Prigorodnoye köyünde doğdu, hacaroy taypına mensup olup cephede ‘Tano’ künyesiyle tanındı. Birinci rus-çeçen savaşı’nda birlik Komutanı olarak başkent Cahar savunmasında çarpıştı.",
+    "summary": "Prigorodnoye köyünde doğdu, Hacaroy taypına mensup olup cephede ‘Tano’ künyesiyle tanındı. Birinci Rus-Çeçen Savaşı’nda birlik komutanı olarak başkent Cahar savunmasında çarpıştı.",
     "bio": [
-      "Prigorodnoye köyünde doğdu, hacaroy taypına mensup olup cephede ‘Tano’ künyesiyle tanındı. Birinci rus-çeçen savaşı’nda birlik Komutanı olarak başkent Cahar savunmasında çarpıştı.",
-      "1997–1999 yılları arasında başkent Cahar’ın Leninski bölgesi kaymakamı olarak görev yaptı. İkinci rus-çeçen savaşı başlayınca yeniden mücahit birliğinin başına geçerek cepheye koştu. Mart 2000’de Saadi-Kotar (Komsomolskoye) muharebesinde kahramanca şehit düştü."
+      "Prigorodnoye köyünde doğdu, Hacaroy taypına mensup olup cephede ‘Tano’ künyesiyle tanındı. Birinci Rus-Çeçen Savaşı’nda birlik komutanı olarak başkent Cahar savunmasında çarpıştı.",
+      "1997–1999 yılları arasında başkent Cahar’ın Leninski bölgesi kaymakamı olarak görev yaptı. İkinci Rus-Çeçen Savaşı başlayınca yeniden mücahit birliğinin başına geçerek cepheye koştu. Mart 2000’de Saadi-Kotar (Komsomolskoye) muharebesinde kahramanca şehit düştü."
     ]
   },
   {
@@ -6029,13 +5611,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ilyas-mikayev.webp",
-        "caption": "İlyas Mikayev (1970–1996) — Arşiv fotoğrafı."
+        "caption": "İlyas Mikayev (1970–1996)"
       }
     ],
-    "summary": "Çeçenistan’da dünyaya geldi ve genç yaşından itibaren vatansever duruşuyla çevresinde tanındı. 1994 yılında başlayan Birinci rus-çeçen savaşı’nda gönüllü olarak cepheye koştu.",
+    "summary": "Çeçenistan’da dünyaya geldi ve genç yaşından itibaren vatansever duruşuyla çevresinde tanındı. 1994 yılında başlayan Birinci Rus-Çeçen Savaşı’nda gönüllü olarak cepheye koştu.",
     "bio": [
-      "Çeçenistan’da dünyaya geldi ve genç yaşından itibaren vatansever duruşuyla çevresinde tanındı. 1994 yılında başlayan Birinci rus-çeçen savaşı’nda gönüllü olarak cepheye koştu.",
-      "İçkerya direniş birliklerinde ön hatlarda haberleşme ve taarruz görevlerinde yer Aldı. Ağustos 1996’daki başkent Cahar’ı (Grozni) kurtarma operasyonunda en ön saflarda çarpıştı. 13 Ağustos 1996 tarihinde zaferin eşiğinde Cahar muharebelerinde kahramanca şehit düştü."
+      "Çeçenistan’da dünyaya geldi ve genç yaşından itibaren vatansever duruşuyla çevresinde tanındı. 1994 yılında başlayan Birinci Rus-Çeçen Savaşı’nda gönüllü olarak cepheye koştu.",
+      "İçkerya direniş birliklerinde ön hatlarda haberleşme ve taarruz görevlerinde yer aldı. Ağustos 1996’daki başkent Cahar’ı (Grozni) kurtarma operasyonunda en ön saflarda çarpıştı. 13 Ağustos 1996 tarihinde zaferin eşiğinde Cahar muharebelerinde kahramanca şehit düştü."
     ]
   },
   {
@@ -6053,13 +5635,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/bekhan-abastov.webp",
-        "caption": "Bekhan Abastov (1974–2000) — Arşiv fotoğrafı."
+        "caption": "Bekhan Abastov (1974–2000)"
       }
     ],
-    "summary": "Çeçenistan’ın direniş kalesi Urus-Martan şehrinde dünyaya geldi. Birinci rus-çeçen savaşı’nda Emir hattab ve ramzan ahmadov’un saflarında cephede çarpıştı.",
+    "summary": "Çeçenistan’ın direniş kalesi Urus-Martan şehrinde dünyaya geldi. Birinci Rus-Çeçen Savaşı’nda Emir Hattab ve Ramzan Ahmadov’un saflarında cephede çarpıştı.",
     "bio": [
-      "Çeçenistan’ın direniş kalesi Urus-Martan şehrinde dünyaya geldi. Birinci rus-çeçen savaşı’nda Emir hattab ve ramzan ahmadov’un saflarında cephede çarpıştı.",
-      "Urus-Martan Cemaati bünyesinde muhammed tsagarayev ve silah arkadaşlarıyla omuz omuza savaştı. İkinci rus-çeçen savaşı başlayınca yeniden silah kuşanarak vatan savunmasına katıldı. Rus işgalcilere karşı yürütülen çarpışmalarda son nefesine kadar vuruşarak şehit düştü."
+      "Çeçenistan’ın direniş kalesi Urus-Martan şehrinde dünyaya geldi. Birinci Rus-Çeçen Savaşı’nda Emir Hattab ve Ramzan Ahmadov’un saflarında cephede çarpıştı.",
+      "Urus-Martan Cemaati bünyesinde Muhammed Tsagarayev ve silah arkadaşlarıyla omuz omuza savaştı. İkinci Rus-Çeçen Savaşı başlayınca yeniden silah kuşanarak vatan savunmasına katıldı. Rus işgalcilere karşı yürütülen çarpışmalarda son nefesine kadar vuruşarak şehit düştü."
     ]
   },
   {
@@ -6077,13 +5659,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/rustam-timarov.webp",
-        "caption": "Rustam Timarov (1975–1999) — Arşiv fotoğrafı."
+        "caption": "Rustam Timarov (1975–1999)"
       }
     ],
-    "summary": "Çeçenistan’ın Urus-Martan şehrinde doğdu ve Çeçenlerin köklü peşhoy taypına mensuptu. Direniş saflarında ve kardeşleri arasında ‘Muhammed-Salah’ ismiyle tanındı.",
+    "summary": "Çeçenistan’ın Urus-Martan şehrinde doğdu ve Çeçenlerin köklü Peşhoy taypına mensuptu. Direniş saflarında ve kardeşleri arasında ‘Muhammed-Salah’ ismiyle tanındı.",
     "bio": [
-      "Çeçenistan’ın Urus-Martan şehrinde doğdu ve Çeçenlerin köklü peşhoy taypına mensuptu. Direniş saflarında ve kardeşleri arasında ‘Muhammed-Salah’ ismiyle tanındı.",
-      "Genç yaşta imani bilinci ve cesaretiyle Urus-Martan mücahit birliklerinde yer Aldı. 1999 sonbaharında başlayan İkinci rus-çeçen savaşı’nda vatan savunmasının ön hattına koştu. 19 Aralık 1999’da mübarek ramazan ayında işgalcilere karşı çarpışırken şehit düştü."
+      "Çeçenistan’ın Urus-Martan şehrinde doğdu ve Çeçenlerin köklü Peşhoy taypına mensuptu. Direniş saflarında ve kardeşleri arasında ‘Muhammed-Salah’ ismiyle tanındı.",
+      "Genç yaşta imani bilinci ve cesaretiyle Urus-Martan mücahit birliklerinde yer aldı. 1999 sonbaharında başlayan İkinci Rus-Çeçen Savaşı’nda vatan savunmasının ön hattına koştu. 19 Aralık 1999’da mübarek Ramazan ayında işgalcilere karşı çarpışırken şehit düştü."
     ]
   },
   {
@@ -6101,12 +5683,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/isa-tusayev.webp",
-        "caption": "İsa Tuşayev (1974–2002) — Arşiv fotoğrafı."
+        "caption": "İsa Tuşayev (1974–2002)"
       }
     ],
-    "summary": "Çeçenistan’ın stratejik geçidi Duba-Yurt köyünde doğdu ve cephede ‘Arab’ künyesiyle tanındı. Birinci ve İkinci rus-çeçen savaşlarında Argun boğazı girişindeki cephelerde savaştı.",
+    "summary": "Çeçenistan’ın stratejik geçidi Duba-Yurt köyünde doğdu ve cephede ‘Arab’ künyesiyle tanındı. Birinci ve İkinci Rus-Çeçen Savaşları’nda Argun boğazı girişindeki cephelerde savaştı.",
     "bio": [
-      "Çeçenistan’ın stratejik geçidi Duba-Yurt köyünde doğdu ve cephede ‘Arab’ künyesiyle tanındı. Birinci ve İkinci rus-çeçen savaşlarında Argun boğazı girişindeki cephelerde savaştı.",
+      "Çeçenistan’ın stratejik geçidi Duba-Yurt köyünde doğdu ve cephede ‘Arab’ künyesiyle tanındı. Birinci ve İkinci Rus-Çeçen Savaşları’nda Argun boğazı girişindeki cephelerde savaştı.",
       "Duba-Yurt Cemaati emiri olarak bölgedeki direniş birliklerine komuta etti. Ağır kuşatma şartlarında mücahitlerin lojistik ve savunma hatlarını kararlılıkla yönetti. 17 Şubat 2002 tarihinde Duba-Yurt köyünde Rus güçleriyle girdiği çatışmada şehit düştü."
     ]
   },
@@ -6125,13 +5707,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/hizar-irishanov.webp",
-        "caption": "Hizar İrishanov (1971–2001) — Arşiv fotoğrafı."
+        "caption": "Hizar İrishanov (1971–2001)"
       }
     ],
-    "summary": "Çeçenistan’ın Vedeno bölgesine bağlı Agişbatoy (Egaşbeta) köyünde dünyaya geldi. Dağlık Vedeno cephesinde yetişerek bağımsızlık mücadelesinin ilk saflarında yer Aldı.",
+    "summary": "Çeçenistan’ın Vedeno bölgesine bağlı Agişbatoy (Egaşbeta) köyünde dünyaya geldi. Dağlık Vedeno cephesinde yetişerek bağımsızlık mücadelesinin ilk saflarında yer aldı.",
     "bio": [
-      "Çeçenistan’ın Vedeno bölgesine bağlı Agişbatoy (Egaşbeta) köyünde dünyaya geldi. Dağlık Vedeno cephesinde yetişerek bağımsızlık mücadelesinin ilk saflarında yer Aldı.",
-      "Birinci ve İkinci rus-çeçen savaşlarında Güneydoğu dağ sektöründe cesurca çarpıştı. Agişbatoy ve Vedeno ormanlarındaki savunma ve pusu operasyonlarında önemli görevler üstlendi. 13 Ağustos 2001 tarihinde işgalci kuvvetlerle girdiği çatışmada kahramanca şehit düştü."
+      "Çeçenistan’ın Vedeno bölgesine bağlı Agişbatoy (Egaşbeta) köyünde dünyaya geldi. Dağlık Vedeno cephesinde yetişerek bağımsızlık mücadelesinin ilk saflarında yer aldı.",
+      "Birinci ve İkinci Rus-Çeçen Savaşları’nda güneydoğu dağ sektöründe cesurca çarpıştı. Agişbatoy ve Vedeno ormanlarındaki savunma ve pusu operasyonlarında önemli görevler üstlendi. 13 Ağustos 2001 tarihinde işgalci kuvvetlerle girdiği çatışmada kahramanca şehit düştü."
     ]
   },
   {
@@ -6149,13 +5731,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/emi-yunusov.webp",
-        "caption": "Emi Yunusov (1976–2001) — Arşiv fotoğrafı."
+        "caption": "Emi Yunusov (1976–2001)"
       }
     ],
-    "summary": "Çeçenistan’ın köklü ve direnişçi elistanjhoy taypına mensup bir mücahit olarak yetişti. Genç yaşından itibaren Rus işgaline boyun eğmeyerek bağımsızlık saflarına katıldı.",
+    "summary": "Çeçenistan’ın köklü ve direnişçi Elistanjhoy taypına mensup bir mücahit olarak yetişti. Genç yaşından itibaren Rus işgaline boyun eğmeyerek bağımsızlık saflarına katıldı.",
     "bio": [
-      "Çeçenistan’ın köklü ve direnişçi elistanjhoy taypına mensup bir mücahit olarak yetişti. Genç yaşından itibaren Rus işgaline boyun eğmeyerek bağımsızlık saflarına katıldı.",
-      "İkinci rus-çeçen savaşı’nda stratejik Argun şehrindeki direniş gruplarından birinin emiri oldu. Argun ve çevresinde işgalci birliklere karşı düzenlenen şehir operasyonlarına liderlik etti. 2001 yılında Argun şehrinde girdiği çatışmada son kurşununa kadar vuruşarak şehit düştü."
+      "Çeçenistan’ın köklü ve direnişçi Elistanjhoy taypına mensup bir mücahit olarak yetişti. Genç yaşından itibaren Rus işgaline boyun eğmeyerek bağımsızlık saflarına katıldı.",
+      "İkinci Rus-Çeçen Savaşı’nda stratejik Argun şehrindeki direniş gruplarından birinin emiri oldu. Argun ve çevresinde işgalci birliklere karşı düzenlenen şehir operasyonlarına liderlik etti. 2001 yılında Argun şehrinde girdiği çatışmada son kurşununa kadar vuruşarak şehit düştü."
     ]
   },
   {
@@ -6173,13 +5755,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/abdul-vahid-dibirov.webp",
-        "caption": "Abdul-Vahid Dibirov (1968–2000) — Arşiv fotoğrafı."
+        "caption": "Abdul-Vahid Dibirov (1968–2000)"
       }
     ],
-    "summary": "Çeçenistan’ın Kuzeyindeki naurskaya bölgesinde dünyaya geldi. Vatanseverliği ve ağırbaşlı kişiliğiyle naurskaya halkı ve mücahitler arasında sevildi.",
+    "summary": "Çeçenistan’ın kuzeyindeki Naurskaya bölgesinde dünyaya geldi. Vatanseverliği ve ağırbaşlı kişiliğiyle Naurskaya halkı ve mücahitler arasında sevildi.",
     "bio": [
-      "Çeçenistan’ın Kuzeyindeki naurskaya bölgesinde dünyaya geldi. Vatanseverliği ve ağırbaşlı kişiliğiyle naurskaya halkı ve mücahitler arasında sevildi.",
-      "Birinci ve İkinci rus-çeçen savaşlarında naurskaya mücahitleriyle omuz omuza cephede savaştı. 2000 yılı başında başkent Cahar yarma harekâtı ve Güney yürüyüşünde yer Aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) direnişinde kahramanca şehit düştü."
+      "Çeçenistan’ın kuzeyindeki Naurskaya bölgesinde dünyaya geldi. Vatanseverliği ve ağırbaşlı kişiliğiyle Naurskaya halkı ve mücahitler arasında sevildi.",
+      "Birinci ve İkinci Rus-Çeçen Savaşları’nda Naurskaya mücahitleriyle omuz omuza cephede savaştı. 2000 yılı başında başkent Cahar yarma harekâtı ve güney yürüyüşünde yer aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) direnişinde kahramanca şehit düştü."
     ]
   },
   {
@@ -6197,13 +5779,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ismail-gayrbekov.webp",
-        "caption": "İsmail Gayrbekov (1975–2000) — Arşiv fotoğrafı."
+        "caption": "İsmail Gayrbekov (1975–2000)"
       }
     ],
-    "summary": "Çeçenistan’ın Urus-Martan şehrinde dünyaya geldi ve genç yaşta direniş saflarına katıldı. Her iki rus-çeçen savaşı’nda da vatan topraklarını savunan tecrübeli bir mücahitti.",
+    "summary": "Çeçenistan’ın Urus-Martan şehrinde dünyaya geldi ve genç yaşta direniş saflarına katıldı. Her iki Rus-Çeçen Savaşı’nda da vatan topraklarını savunan tecrübeli bir mücahitti.",
     "bio": [
-      "Çeçenistan’ın Urus-Martan şehrinde dünyaya geldi ve genç yaşta direniş saflarına katıldı. Her iki rus-çeçen savaşı’nda da vatan topraklarını savunan tecrübeli bir mücahitti.",
-      "Birinci savaşta Komutan şamil basayev’in emrindeki birliklerde ön cephelerde çarpıştı. İkinci savaşta Komutan arbi barayev’in Özel amaçlı İslam Alayı saflarında görev yaptı. 2000 yılında dağlık Şatoy bölgesindeki muharebelerde çarpışarak şehit düştü."
+      "Çeçenistan’ın Urus-Martan şehrinde dünyaya geldi ve genç yaşta direniş saflarına katıldı. Her iki Rus-Çeçen Savaşı’nda da vatan topraklarını savunan tecrübeli bir mücahitti.",
+      "Birinci savaşta Komutan Şamil Basayev’in emrindeki birliklerde ön cephelerde çarpıştı. İkinci savaşta Komutan Arbi Barayev’in Özel Amaçlı İslam Alayı saflarında görev yaptı. 2000 yılında dağlık Şatoy bölgesindeki muharebelerde çarpışarak şehit düştü."
     ]
   },
   {
@@ -6221,13 +5803,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/bislan-zakriyev.webp",
-        "caption": "Bislan Zakriyev (1974–2002) — Arşiv fotoğrafı."
+        "caption": "Bislan Zakriyev (1974–2002)"
       }
     ],
-    "summary": "Çeçenistan’ın Urus-Martan şehrinde doğdu ve cephede ‘Hayrullah’ künyesiyle tanındı. Meşhur ahmadov kardeşlerin liderliğindeki Urus-Martan Cemaati saflarında ön hatlarda savaştı.",
+    "summary": "Çeçenistan’ın Urus-Martan şehrinde doğdu ve cephede ‘Hayrullah’ künyesiyle tanındı. Meşhur Ahmadov kardeşlerin liderliğindeki Urus-Martan Cemaati saflarında ön hatlarda savaştı.",
     "bio": [
-      "Çeçenistan’ın Urus-Martan şehrinde doğdu ve cephede ‘Hayrullah’ künyesiyle tanındı. Meşhur ahmadov kardeşlerin liderliğindeki Urus-Martan Cemaati saflarında ön hatlarda savaştı.",
-      "Şubat 2000’de Ulus-Kert’te pskov hava indirme tümeni’ne karşı verilen muharebede yer Aldı. İşgalcilere ve işbirlikçilere karşı düzenlenen cesur operasyonların korkusuz savaşçılarından oldu. Vatanının bağımsızlığı uğruna verdiği mücadelede çatışmada kahramanca şehit düştü."
+      "Çeçenistan’ın Urus-Martan şehrinde doğdu ve cephede ‘Hayrullah’ künyesiyle tanındı. Meşhur Ahmadov kardeşlerin liderliğindeki Urus-Martan Cemaati saflarında ön hatlarda savaştı.",
+      "Şubat 2000’de Ulus-Kert’te Pskov Hava İndirme Tümeni’ne karşı verilen muharebede yer aldı. İşgalcilere ve işbirlikçilere karşı düzenlenen cesur operasyonların korkusuz savaşçılarından oldu. Vatanının bağımsızlığı uğruna verdiği mücadelede çatışmada kahramanca şehit düştü."
     ]
   },
   {
@@ -6245,13 +5827,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/zayndi-elgiriyev.webp",
-        "caption": "Zayndi Elgiriyev (1977–2001) — Arşiv fotoğrafı."
+        "caption": "Zayndi Elgiriyev (1977–2001)"
       }
     ],
-    "summary": "Çeçenistan’ın Gudermes şehrinde dünyaya geldi ve genç yaşta istiklal mücadelesine katıldı. Gudermes’te Emir abdur-rahman’ın liderliğindeki cemaat saflarında omuz omuza çarpıştı.",
+    "summary": "Çeçenistan’ın Gudermes şehrinde dünyaya geldi ve genç yaşta istiklal mücadelesine katıldı. Gudermes’te Emir Abdur-Rahman’ın liderliğindeki cemaat saflarında omuz omuza çarpıştı.",
     "bio": [
-      "Çeçenistan’ın Gudermes şehrinde dünyaya geldi ve genç yaşta istiklal mücadelesine katıldı. Gudermes’te Emir abdur-rahman’ın liderliğindeki cemaat saflarında omuz omuza çarpıştı.",
-      "İkinci rus-çeçen savaşı’nda Gudermes ve Doğu cephesindeki direniş faaliyetlerinde yer Aldı. İşgalci konvoylarına karşı yürütülen mayınlama ve pusu operasyonlarında görev üstlendi. Şubat 2001’de bir mayınlama operasyonu sırasında meydana gelen patlamada şehit düştü."
+      "Çeçenistan’ın Gudermes şehrinde dünyaya geldi ve genç yaşta istiklal mücadelesine katıldı. Gudermes’te Emir Abdur-Rahman’ın liderliğindeki cemaat saflarında omuz omuza çarpıştı.",
+      "İkinci Rus-Çeçen Savaşı’nda Gudermes ve Doğu Cephesi’ndeki direniş faaliyetlerinde yer aldı. İşgalci konvoylarına karşı yürütülen mayınlama ve pusu operasyonlarında görev üstlendi. Şubat 2001’de bir mayınlama operasyonu sırasında meydana gelen patlamada şehit düştü."
     ]
   },
   {
@@ -6269,7 +5851,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ayub-caharov.webp",
-        "caption": "Ayub Caharov (1964–1994) — Arşiv fotoğrafı."
+        "caption": "Ayub Caharov (1964–1994)"
       }
     ],
     "summary": "Çeçenistan’ın Argun şehrinde dünyaya geldi ve vatansever duruşuyla halkı arasında sevildi. Çeçen İçkerya Cumhuriyeti’nin istiklal mücadelesine ilk günlerden itibaren katıldı.",
@@ -6293,12 +5875,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ramazan-saritov.webp",
-        "caption": "Ramazan Saritov (1983–2012) — Arşiv fotoğrafı."
+        "caption": "Ramazan Saritov (1983–2012)"
       }
     ],
-    "summary": "Kafkasya’nın bamat-yurt köyünde doğdu ve genç yaşta başarılı bir serbest güreşçi olarak tanındı. Spor kariyerindeki başarılarını geride bırakarak Kafkasya direniş saflarına katıldı.",
+    "summary": "Kafkasya’nın Bamat-Yurt köyünde doğdu ve genç yaşta başarılı bir serbest güreşçi olarak tanındı. Spor kariyerindeki başarılarını geride bırakarak Kafkasya direniş saflarına katıldı.",
     "bio": [
-      "Kafkasya’nın bamat-yurt köyünde doğdu ve genç yaşta başarılı bir serbest güreşçi olarak tanındı. Spor kariyerindeki başarılarını geride bırakarak Kafkasya direniş saflarına katıldı.",
+      "Kafkasya’nın Bamat-Yurt köyünde doğdu ve genç yaşta başarılı bir serbest güreşçi olarak tanındı. Spor kariyerindeki başarılarını geride bırakarak Kafkasya direniş saflarına katıldı.",
       "Çeçenistan ve Dağıstan cephelerinde işgalci güçlere karşı omuz omuza mücadele etti. Cesareti, fiziksel gücü ve sarsılmaz imanıyla kardeşleri arasında örnek gösterildi. 2012 yılında Hasavyurt’ta işgal güçleriyle girdiği çatışmada kahramanca şehit düştü."
     ]
   },
@@ -6317,12 +5899,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/murad-gisayev.webp",
-        "caption": "Murad Gişayev (1978–2004) — Arşiv fotoğrafı."
+        "caption": "Murad Gişayev (1978–2004)"
       }
     ],
-    "summary": "Çeçenistan’da dünyaya geldi ve genç yaşından itibaren İslami kimliğiyle çevresinde tanındı. İkinci rus-çeçen savaşı’nda işgalcilere karşı dağ birliklerinde silah kuşandı.",
+    "summary": "Çeçenistan’da dünyaya geldi ve genç yaşından itibaren İslami kimliğiyle çevresinde tanındı. İkinci Rus-Çeçen Savaşı’nda işgalcilere karşı dağ birliklerinde silah kuşandı.",
     "bio": [
-      "Çeçenistan’da dünyaya geldi ve genç yaşından itibaren İslami kimliğiyle çevresinde tanındı. İkinci rus-çeçen savaşı’nda işgalcilere karşı dağ birliklerinde silah kuşandı.",
+      "Çeçenistan’da dünyaya geldi ve genç yaşından itibaren İslami kimliğiyle çevresinde tanındı. İkinci Rus-Çeçen Savaşı’nda işgalcilere karşı dağ birliklerinde silah kuşandı.",
       "Urus-Martan ve Roşni-Çu dağ sektöründeki mücahit gruplarıyla omuz omuza çarpıştı. Ağır kuşatma ve kış şartlarında cephe hatlarından asla geri adım atmadı. 2004 yılında Roşni-Çu ormanlarında Rus keşif birliğiyle girdiği çatışmada şehit düştü."
     ]
   },
@@ -6341,13 +5923,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/hadid-dadayev.webp",
-        "caption": "Hadid Dadayev (1963–2001) — Arşiv fotoğrafı."
+        "caption": "Hadid Dadayev (1963–2001)"
       }
     ],
-    "summary": "Çeçenistan’ın köklü tundakho taypına mensup bir vatansever olarak dünyaya geldi. Birinci rus-çeçen savaşı’nda üstün komuta başarısı göstererek Tuğgeneral rütbesine yükseldi.",
+    "summary": "Çeçenistan’ın köklü Tundakho taypına mensup bir vatansever olarak dünyaya geldi. Birinci Rus-Çeçen Savaşı’nda üstün komuta başarısı göstererek tuğgeneral rütbesine yükseldi.",
     "bio": [
-      "Çeçenistan’ın köklü tundakho taypına mensup bir vatansever olarak dünyaya geldi. Birinci rus-çeçen savaşı’nda üstün komuta başarısı göstererek Tuğgeneral rütbesine yükseldi.",
-      "Çeçen İçkerya Cumhuriyeti Silahlı Kuvvetleri bünyesinde kritik savunma hatlarını yönetti. İkinci rus-çeçen savaşı’nda kardeşi dires Dadayev ile birlikte direniş saflarında yer Aldı. 2001 yılında Rus işgalcilerin çernokozovo kampında işkenceye boyun eğmeyerek şehit düştü."
+      "Çeçenistan’ın köklü Tundakho taypına mensup bir vatansever olarak dünyaya geldi. Birinci Rus-Çeçen Savaşı’nda üstün komuta başarısı göstererek tuğgeneral rütbesine yükseldi.",
+      "Çeçen İçkerya Cumhuriyeti Silahlı Kuvvetleri bünyesinde kritik savunma hatlarını yönetti. İkinci Rus-Çeçen Savaşı’nda kardeşi Dires Dadayev ile birlikte direniş saflarında yer aldı. 2001 yılında Rus işgalcilerin Çernokozovo kampında işkenceye boyun eğmeyerek şehit düştü."
     ]
   },
   {
@@ -6365,13 +5947,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/leci-haciyev.webp",
-        "caption": "Leçi Haciyev (1976–2000) — Arşiv fotoğrafı."
+        "caption": "Leçi Haciyev (1976–2000)"
       }
     ],
-    "summary": "Çeçenistan’ın Kuzeyindeki naurskaya bölgesinde doğdu ve şaro taypına mensuptu. Genç yaşından itibaren vatan savunmasına katılarak naurskaya mücahitleriyle omuz omuza durdu.",
+    "summary": "Çeçenistan’ın kuzeyindeki Naurskaya bölgesinde doğdu ve Şaro taypına mensuptu. Genç yaşından itibaren vatan savunmasına katılarak Naurskaya mücahitleriyle omuz omuza durdu.",
     "bio": [
-      "Çeçenistan’ın Kuzeyindeki naurskaya bölgesinde doğdu ve şaro taypına mensuptu. Genç yaşından itibaren vatan savunmasına katılarak naurskaya mücahitleriyle omuz omuza durdu.",
-      "İkinci rus-çeçen savaşı’nda başkent Cahar savunması ve Güney yürüyüşünde yer Aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyündeki tarihi direniş hattında çarpıştı. Saadi-Kotar kuşatmasında son kurşununa kadar vuruşarak kahramanca şehit düştü."
+      "Çeçenistan’ın kuzeyindeki Naurskaya bölgesinde doğdu ve Şaro taypına mensuptu. Genç yaşından itibaren vatan savunmasına katılarak Naurskaya mücahitleriyle omuz omuza durdu.",
+      "İkinci Rus-Çeçen Savaşı’nda başkent Cahar savunması ve güney yürüyüşünde yer aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyündeki tarihi direniş hattında çarpıştı. Saadi-Kotar kuşatmasında son kurşununa kadar vuruşarak kahramanca şehit düştü."
     ]
   },
   {
@@ -6389,13 +5971,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/sultan-hortsayev.webp",
-        "caption": "Sultan Hortsayev (1973–2000) — Arşiv fotoğrafı."
+        "caption": "Sultan Hortsayev (1973–2000)"
       }
     ],
-    "summary": "Çeçenistan’ın zakan-yurt köyünde dünyaya geldi ve Haçaro taypına mensuptu. Birinci ve İkinci rus-çeçen savaşlarında vatan topraklarını savunmak için cepheye koştu.",
+    "summary": "Çeçenistan’ın Zakan-Yurt köyünde dünyaya geldi ve Haçaro taypına mensuptu. Birinci ve İkinci Rus-Çeçen Savaşları’nda vatan topraklarını savunmak için cepheye koştu.",
     "bio": [
-      "Çeçenistan’ın zakan-yurt köyünde dünyaya geldi ve Haçaro taypına mensuptu. Birinci ve İkinci rus-çeçen savaşlarında vatan topraklarını savunmak için cepheye koştu.",
-      "2000 yılı başında başkent Cahar yarma harekâtı ve dağ yürüyüşüne katıldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyünde kurulan savunma mevziilerinde savaştı. Ağır Rus bombardımanı altında Saadi-Kotar muharebesinde çarpışarak şehit düştü."
+      "Çeçenistan’ın Zakan-Yurt köyünde dünyaya geldi ve Haçaro taypına mensuptu. Birinci ve İkinci Rus-Çeçen Savaşları’nda vatan topraklarını savunmak için cepheye koştu.",
+      "2000 yılı başında başkent Cahar yarma harekâtı ve dağ yürüyüşüne katıldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyünde kurulan savunma mevzilerinde savaştı. Ağır Rus bombardımanı altında Saadi-Kotar muharebesinde çarpışarak şehit düştü."
     ]
   },
   {
@@ -6413,13 +5995,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ilyas-husparov.webp",
-        "caption": "İlyas Huşparov (1972–2000) — Arşiv fotoğrafı."
+        "caption": "İlyas Huşparov (1972–2000)"
       }
     ],
-    "summary": "Çeçenistan’ın köklü ve savaşçı terlo taypına mensup bir mücahit olarak yetişti. İmani bilinci, cesareti ve fedakârlığıyla direniş birlikleri arasında saygı kazandı.",
+    "summary": "Çeçenistan’ın köklü ve savaşçı Terlo taypına mensup bir mücahit olarak yetişti. İmani bilinci, cesareti ve fedakârlığıyla direniş birlikleri arasında saygı kazandı.",
     "bio": [
-      "Çeçenistan’ın köklü ve savaşçı terlo taypına mensup bir mücahit olarak yetişti. İmani bilinci, cesareti ve fedakârlığıyla direniş birlikleri arasında saygı kazandı.",
-      "İkinci rus-çeçen savaşı’nda başkent Cahar ve Güney cephesi muharebelerinde yer Aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) kuşatmasında silah arkadaşlarıyla omuz omuza durdu. Saadi-Kotar direnişinde işgalci ordulara karşı çarpışırken kahramanca şehit düştü."
+      "Çeçenistan’ın köklü ve savaşçı Terlo taypına mensup bir mücahit olarak yetişti. İmani bilinci, cesareti ve fedakârlığıyla direniş birlikleri arasında saygı kazandı.",
+      "İkinci Rus-Çeçen Savaşı’nda başkent Cahar ve Güney Cephesi muharebelerinde yer aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) kuşatmasında silah arkadaşlarıyla omuz omuza durdu. Saadi-Kotar direnişinde işgalci ordulara karşı çarpışırken kahramanca şehit düştü."
     ]
   },
   {
@@ -6437,12 +6019,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/imran-oysayev.webp",
-        "caption": "İmran Oysayev (1966–2000) — Arşiv fotoğrafı."
+        "caption": "İmran Oysayev (1966–2000)"
       }
     ],
-    "summary": "Roşni-Çu köyünde doğdu, Çinhoy taypına mensuptu ve cephede ‘Ebu-Ahmed’ künyesiyle tanındı. Urus-Martan’da ahmadov kardeşlerin komşusu ve yakın silah arkadaşı olarak mücadele etti.",
+    "summary": "Roşni-Çu köyünde doğdu, Çinhoy taypına mensuptu ve cephede ‘Ebu-Ahmed’ künyesiyle tanındı. Urus-Martan’da Ahmadov kardeşlerin komşusu ve yakın silah arkadaşı olarak mücadele etti.",
     "bio": [
-      "Roşni-Çu köyünde doğdu, Çinhoy taypına mensuptu ve cephede ‘Ebu-Ahmed’ künyesiyle tanındı. Urus-Martan’da ahmadov kardeşlerin komşusu ve yakın silah arkadaşı olarak mücadele etti.",
+      "Roşni-Çu köyünde doğdu, Çinhoy taypına mensuptu ve cephede ‘Ebu-Ahmed’ künyesiyle tanındı. Urus-Martan’da Ahmadov kardeşlerin komşusu ve yakın silah arkadaşı olarak mücadele etti.",
       "İçkerya Cumhuriyeti Urus-Martan bölgesi Şeriat güvenlik teşkilatı başkanlığı görevini yürüttü. İkinci savaşta Cahar savunması ve Saadi-Kotar (Komsomolskoye) yarma harekâtında ön safta çarpıştı. Mart 2000’de Saadi-Kotar muharebesinde son nefesine kadar vuruşarak şehit düştü."
     ]
   },
@@ -6461,13 +6043,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/samhan-avdadayev.webp",
-        "caption": "Şamhan Avdadayev (1984–2009) — Arşiv fotoğrafı."
+        "caption": "Şamhan Avdadayev (1984–2009)"
       }
     ],
-    "summary": "Çeçenistan’ın Vedeno bölgesinde dünyaya geldi ve direnişte ‘El-Bara’ künyesiyle tanındı. Öz kardeşi şamil Avdadayev ile birlikte genç yaşta dağ birliklerine katıldı.",
+    "summary": "Çeçenistan’ın Vedeno bölgesinde dünyaya geldi ve direnişte ‘El-Bara’ künyesiyle tanındı. Öz kardeşi Şamil Avdadayev ile birlikte genç yaşta dağ birliklerine katıldı.",
     "bio": [
-      "Çeçenistan’ın Vedeno bölgesinde dünyaya geldi ve direnişte ‘El-Bara’ künyesiyle tanındı. Öz kardeşi şamil Avdadayev ile birlikte genç yaşta dağ birliklerine katıldı.",
-      "Vedeno sektöründe Emir mahran saidov’un komutasındaki mücahit birliğinde görev yaptı. Güney dağ cephesinde işgalci kuvvetlere karşı düzenlenen operasyonlarda cesurca savaştı. Vedeno dağlarında işgal güçleriyle girdiği çatışmada kardeşiyle aynı yolda şehit düştü."
+      "Çeçenistan’ın Vedeno bölgesinde dünyaya geldi ve direnişte ‘El-Bara’ künyesiyle tanındı. Öz kardeşi Şamil Avdadayev ile birlikte genç yaşta dağ birliklerine katıldı.",
+      "Vedeno sektöründe Emir Mahran Saidov’un komutasındaki mücahit birliğinde görev yaptı. Güney dağ cephesinde işgalci kuvvetlere karşı düzenlenen operasyonlarda cesurca savaştı. Vedeno dağlarında işgal güçleriyle girdiği çatışmada kardeşiyle aynı yolda şehit düştü."
     ]
   },
   {
@@ -6485,13 +6067,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/hamzat-guloyev.webp",
-        "caption": "Hamzat Guloyev (1983–2012) — Arşiv fotoğrafı."
+        "caption": "Hamzat Guloyev (1983–2012)"
       }
     ],
     "summary": "Kafkasya’da dünyaya geldi ve direniş saflarında ‘Salman’ künyesiyle tanındı. Sunca Cemaati bünyesinde İnguşetya ve Çeçenistan sınır ormanlarında mücadele etti.",
     "bio": [
       "Kafkasya’da dünyaya geldi ve direniş saflarında ‘Salman’ künyesiyle tanındı. Sunca Cemaati bünyesinde İnguşetya ve Çeçenistan sınır ormanlarında mücadele etti.",
-      "Mayıs 2012’de nesterovskaya ormanlarında Rus Gru Özel Kuvvetleriyle karşı karşıya geldi. Şafak vakti başlayan baskında makineli tüfeğiyle düşman hattının üzerine yürüdü. Yirmi dakika süren yakın çatışmada silah arkadaşı müslim ile birlikte şehit düştü."
+      "Mayıs 2012’de Nesterovskaya ormanlarında Rus GRU özel kuvvetleriyle karşı karşıya geldi. Şafak vakti başlayan baskında makineli tüfeğiyle düşman hattının üzerine yürüdü. Yirmi dakika süren yakın çatışmada silah arkadaşı Müslim ile birlikte şehit düştü."
     ]
   },
   {
@@ -6509,13 +6091,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/cingishan-temerkayev.webp",
-        "caption": "Çingishan Temerkayev (1985–2009) — Arşiv fotoğrafı."
+        "caption": "Çingishan Temerkayev (1985–2009)"
       }
     ],
-    "summary": "Çeçenistan’ın Şali şehrinde dünyaya geldi ve Çeçenlerin şuono taypına mensuptu. Genç yaşında Şali sektöründeki direniş birliklerine katılarak vatan savunmasında saf tuttu.",
+    "summary": "Çeçenistan’ın Şali şehrinde dünyaya geldi ve Çeçenlerin Şuono taypına mensuptu. Genç yaşında Şali sektöründeki direniş birliklerine katılarak vatan savunmasında saf tuttu.",
     "bio": [
-      "Çeçenistan’ın Şali şehrinde dünyaya geldi ve Çeçenlerin şuono taypına mensuptu. Genç yaşında Şali sektöründeki direniş birliklerine katılarak vatan savunmasında saf tuttu.",
-      "Silah arkadaşı rizvan mihaylov ile birlikte işgalci güçlere karşı omuz omuza çarpıştı. Ağır kuşatma şartlarında Şali ve çevresindeki operasyonlarda üstün cesaret gösterdi. 2009 yılında işgal Kuvvetleriyle girdiği çatışmada silah arkadaşıyla birlikte şehit düştü."
+      "Çeçenistan’ın Şali şehrinde dünyaya geldi ve Çeçenlerin Şuono taypına mensuptu. Genç yaşında Şali sektöründeki direniş birliklerine katılarak vatan savunmasında saf tuttu.",
+      "Silah arkadaşı Rizvan Mihaylov ile birlikte işgalci güçlere karşı omuz omuza çarpıştı. Ağır kuşatma şartlarında Şali ve çevresindeki operasyonlarda üstün cesaret gösterdi. 2009 yılında işgal kuvvetleriyle girdiği çatışmada silah arkadaşıyla birlikte şehit düştü."
     ]
   },
   {
@@ -6533,13 +6115,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/muhammed-yaricev.webp",
-        "caption": "Muhammed Yarıçev (1976–2000) — Arşiv fotoğrafı."
+        "caption": "Muhammed Yarıçev (1976–2000)"
       }
     ],
-    "summary": "Çeçenistan’ın Kulary köyünde dünyaya geldi ve yalkhoy taypına mensuptu. İkinci rus-çeçen savaşı’nda Kulary mücahitleriyle birlikte başkent Cahar savunmasına katıldı.",
+    "summary": "Çeçenistan’ın Kulary köyünde dünyaya geldi ve Yalkhoy taypına mensuptu. İkinci Rus-Çeçen Savaşı’nda Kulary mücahitleriyle birlikte başkent Cahar savunmasına katıldı.",
     "bio": [
-      "Çeçenistan’ın Kulary köyünde dünyaya geldi ve yalkhoy taypına mensuptu. İkinci rus-çeçen savaşı’nda Kulary mücahitleriyle birlikte başkent Cahar savunmasına katıldı.",
-      "Şubat 2000’deki Cahar yarma harekâtı ve Güney dağ yürüyüşünde ön saflarda yer Aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyündeki tarihi direniş hattında savaştı. Saadi-Kotar kuşatmasında son nefesine kadar çarpışarak kahramanca şehit düştü."
+      "Çeçenistan’ın Kulary köyünde dünyaya geldi ve Yalkhoy taypına mensuptu. İkinci Rus-Çeçen Savaşı’nda Kulary mücahitleriyle birlikte başkent Cahar savunmasına katıldı.",
+      "Şubat 2000’deki Cahar yarma harekâtı ve güney dağ yürüyüşünde ön saflarda yer aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyündeki tarihi direniş hattında savaştı. Saadi-Kotar kuşatmasında son nefesine kadar çarpışarak kahramanca şehit düştü."
     ]
   },
   {
@@ -6557,13 +6139,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/aslan-aslahanov.webp",
-        "caption": "Aslan Aslahanov (1977–2000) — Arşiv fotoğrafı."
+        "caption": "Aslan Aslahanov (1977–2000)"
       }
     ],
-    "summary": "Çeçenistan’da dünyaya geldi, aki taypına mensuptu ve cephede ‘Mansur’ künyesiyle tanındı. Genç yaşından itibaren İslami ahlakı ve cesaretiyle silah arkadaşları arasında sevildi.",
+    "summary": "Çeçenistan’da dünyaya geldi, Aki taypına mensuptu ve cephede ‘Mansur’ künyesiyle tanındı. Genç yaşından itibaren İslami ahlakı ve cesaretiyle silah arkadaşları arasında sevildi.",
     "bio": [
-      "Çeçenistan’da dünyaya geldi, aki taypına mensuptu ve cephede ‘Mansur’ künyesiyle tanındı. Genç yaşından itibaren İslami ahlakı ve cesaretiyle silah arkadaşları arasında sevildi.",
-      "İkinci rus-çeçen savaşı’nda işgal ordularına karşı direniş saflarında silah kuşandı. Başkent Cahar ve Argun boğazı hattındaki çetin savunma muharebelerinde görev Aldı. 2000 yılında vatan topraklarını savunurken girdiği çatışmada kahramanca şehit düştü."
+      "Çeçenistan’da dünyaya geldi, Aki taypına mensuptu ve cephede ‘Mansur’ künyesiyle tanındı. Genç yaşından itibaren İslami ahlakı ve cesaretiyle silah arkadaşları arasında sevildi.",
+      "İkinci Rus-Çeçen Savaşı’nda işgal ordularına karşı direniş saflarında silah kuşandı. Başkent Cahar ve Argun boğazı hattındaki çetin savunma muharebelerinde görev aldı. 2000 yılında vatan topraklarını savunurken girdiği çatışmada kahramanca şehit düştü."
     ]
   },
   {
@@ -6581,13 +6163,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/anzor-tsurayev.webp",
-        "caption": "Anzor Tsurayev (1988–2014) — Arşiv fotoğrafı."
+        "caption": "Anzor Tsurayev (1988–2014)"
       }
     ],
-    "summary": "Çeçenistan’ın Bamut köyünde doğdu, ‘Abdul-Hakim’ künyesini Aldı ve Bamutlu musa’nın yeğeniydi. Tarihi Bamut direnişinin ruhuyla büyüyerek genç yaşta dağ birliklerine katıldı.",
+    "summary": "Çeçenistan’ın Bamut köyünde doğdu, ‘Abdul-Hakim’ künyesini aldı ve Bamutlu Musa’nın yeğeniydi. Tarihi Bamut direnişinin ruhuyla büyüyerek genç yaşta dağ birliklerine katıldı.",
     "bio": [
-      "Çeçenistan’ın Bamut köyünde doğdu, ‘Abdul-Hakim’ künyesini Aldı ve Bamutlu musa’nın yeğeniydi. Tarihi Bamut direnişinin ruhuyla büyüyerek genç yaşta dağ birliklerine katıldı.",
-      "Açhoy-Martan ve sunca ormanlarında mücahit gruplarıyla birlikte yıllarca mücadele etti. Zorlu kış ve kuşatma şartlarında sarsılmaz iradesiyle kardeşlerine örnek bir mücahit oldu. 2014 yılında işgal güçleriyle girdiği çatışmada Bamutlu amcası gibi şehit düştü."
+      "Çeçenistan’ın Bamut köyünde doğdu, ‘Abdul-Hakim’ künyesini aldı ve Bamutlu Musa’nın yeğeniydi. Tarihi Bamut direnişinin ruhuyla büyüyerek genç yaşta dağ birliklerine katıldı.",
+      "Açhoy-Martan ve Sunca ormanlarında mücahit gruplarıyla birlikte yıllarca mücadele etti. Zorlu kış ve kuşatma şartlarında sarsılmaz iradesiyle kardeşlerine örnek bir mücahit oldu. 2014 yılında işgal güçleriyle girdiği çatışmada Bamutlu amcası gibi şehit düştü."
     ]
   },
   {
@@ -6605,13 +6187,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/aslan-dukuzov.webp",
-        "caption": "Aslan Dukuzov (1973–2002) — Arşiv fotoğrafı."
+        "caption": "Aslan Dukuzov (1973–2002)"
       }
     ],
-    "summary": "Çeçenistan’ın Urus-Martan şehrinde dünyaya geldi ve Çinhoy taypına mensuptu. Direniş saflarında ‘Emir halid’ künyesiyle tanınarak Urus-Martan birliklerine komuta etti.",
+    "summary": "Çeçenistan’ın Urus-Martan şehrinde dünyaya geldi ve Çinhoy taypına mensuptu. Direniş saflarında ‘Emir Halid’ künyesiyle tanınarak Urus-Martan birliklerine komuta etti.",
     "bio": [
-      "Çeçenistan’ın Urus-Martan şehrinde dünyaya geldi ve Çinhoy taypına mensuptu. Direniş saflarında ‘Emir halid’ künyesiyle tanınarak Urus-Martan birliklerine komuta etti.",
-      "Birinci ve İkinci rus-çeçen savaşlarında işgalcilere karşı sayısız operasyonu yönetti. Cesareti, askeri dehası ve fedakârlığıyla Urus-Martan cephesinin öncü isimlerinden oldu. Nisan 2002’de Urus-Martan’da Rus güçleriyle girdiği çatışmada kahramanca şehit düştü."
+      "Çeçenistan’ın Urus-Martan şehrinde dünyaya geldi ve Çinhoy taypına mensuptu. Direniş saflarında ‘Emir Halid’ künyesiyle tanınarak Urus-Martan birliklerine komuta etti.",
+      "Birinci ve İkinci Rus-Çeçen Savaşları’nda işgalcilere karşı sayısız operasyonu yönetti. Cesareti, askeri dehası ve fedakârlığıyla Urus-Martan cephesinin öncü isimlerinden oldu. Nisan 2002’de Urus-Martan’da Rus güçleriyle girdiği çatışmada kahramanca şehit düştü."
     ]
   },
   {
@@ -6629,13 +6211,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/muhammed-salah-abubakarov.webp",
-        "caption": "Muhammed-Salah Abubakarov (1975–2002) — Arşiv fotoğrafı."
+        "caption": "Muhammed-Salah Abubakarov (1975–2002)"
       }
     ],
-    "summary": "Çeçenistan’ın Şali şehrinde dünyaya geldi ve Çeçenlerin şuono taypına mensuptu. Birinci ve İkinci rus-çeçen savaşlarında vatan savunmasında aktif olarak yer Aldı.",
+    "summary": "Çeçenistan’ın Şali şehrinde dünyaya geldi ve Çeçenlerin Şuono taypına mensuptu. Birinci ve İkinci Rus-Çeçen Savaşları’nda vatan savunmasında aktif olarak yer aldı.",
     "bio": [
-      "Çeçenistan’ın Şali şehrinde dünyaya geldi ve Çeçenlerin şuono taypına mensuptu. Birinci ve İkinci rus-çeçen savaşlarında vatan savunmasında aktif olarak yer Aldı.",
-      "Şali ve Doğu cephesi sektöründeki mücahit birlikleriyle omuz omuza çarpıştı. Ağır kuşatma altında dahi memleketi Şali’deki direniş hattını terk etmedi. 2002 yılında Rus işgal güçleriyle girdiği Silahlı çatışmada kahramanca şehit düştü."
+      "Çeçenistan’ın Şali şehrinde dünyaya geldi ve Çeçenlerin Şuono taypına mensuptu. Birinci ve İkinci Rus-Çeçen Savaşları’nda vatan savunmasında aktif olarak yer aldı.",
+      "Şali ve Doğu Cephesi sektöründeki mücahit birlikleriyle omuz omuza çarpıştı. Ağır kuşatma altında dahi memleketi Şali’deki direniş hattını terk etmedi. 2002 yılında Rus işgal güçleriyle girdiği silahlı çatışmada kahramanca şehit düştü."
     ]
   },
   {
@@ -6653,13 +6235,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/salman-aspanov.webp",
-        "caption": "Salman Aspanov (1980–2002) — Arşiv fotoğrafı."
+        "caption": "Salman Aspanov (1980–2002)"
       }
     ],
     "summary": "Çeçenistan’ın başkenti Cahar’ın (Grozni) Çernoreçye beldesinde dünyaya geldi. Genç yaşında başkent Cahar savunmasına katılarak silah arkadaşlarıyla saf tuttu.",
     "bio": [
       "Çeçenistan’ın başkenti Cahar’ın (Grozni) Çernoreçye beldesinde dünyaya geldi. Genç yaşında başkent Cahar savunmasına katılarak silah arkadaşlarıyla saf tuttu.",
-      "İkinci rus-çeçen savaşı’nda şehir içi direniş ve gerilla operasyonlarında görev Aldı. Samimiyeti, cesareti ve kardeşlik ruhuyla Çernoreçye mücahitleri arasında çok sevildi. 2002 yılında başkent Cahar’da işgal Kuvvetleriyle çarpışarak kahramanca şehit düştü."
+      "İkinci Rus-Çeçen Savaşı’nda şehir içi direniş ve gerilla operasyonlarında görev aldı. Samimiyeti, cesareti ve kardeşlik ruhuyla Çernoreçye mücahitleri arasında çok sevildi. 2002 yılında başkent Cahar’da işgal kuvvetleriyle çarpışarak kahramanca şehit düştü."
     ]
   },
   {
@@ -6677,13 +6259,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/yunus-vagapov.webp",
-        "caption": "Yunus Vagapov (1975–2001) — Arşiv fotoğrafı."
+        "caption": "Yunus Vagapov (1975–2001)"
       }
     ],
     "summary": "Çeçenistan’ın Şali şehrinde dünyaya geldi ve Kurchaloy taypına mensuptu. Vatanseverliği ve dindar kişiliğiyle genç yaşta Çeçen direniş saflarına katıldı.",
     "bio": [
       "Çeçenistan’ın Şali şehrinde dünyaya geldi ve Kurchaloy taypına mensuptu. Vatanseverliği ve dindar kişiliğiyle genç yaşta Çeçen direniş saflarına katıldı.",
-      "İkinci rus-çeçen savaşı’nda Şali ve Güney dağ cephesi birliklerinde mücadele etti. Zorlu cephe şartlarında silah arkadaşlarına her zaman destek ve moral kaynağı oldu. 2001 yılında işgalci Rus birlikleriyle girdiği çatışmada kahramanca şehit düştü."
+      "İkinci Rus-Çeçen Savaşı’nda Şali ve güney dağ cephesi birliklerinde mücadele etti. Zorlu cephe şartlarında silah arkadaşlarına her zaman destek ve moral kaynağı oldu. 2001 yılında işgalci Rus birlikleriyle girdiği çatışmada kahramanca şehit düştü."
     ]
   },
   {
@@ -6701,12 +6283,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/rustam-betalgeriyev.webp",
-        "caption": "Rustam Betalgeriyev (1976–2001) — Arşiv fotoğrafı."
+        "caption": "Rustam Betalgeriyev (1976–2001)"
       }
     ],
-    "summary": "Çeçenistan’ın Gudermes şehrinde dünyaya geldi ve cephede ‘Klyaks’ lâkabıyla tanındı. Birinci ve İkinci rus-çeçen savaşlarında Doğu cephesi birliklerinde silah kuşandı.",
+    "summary": "Çeçenistan’ın Gudermes şehrinde dünyaya geldi ve cephede ‘Klyaks’ lâkabıyla tanındı. Birinci ve İkinci Rus-Çeçen Savaşları’nda Doğu Cephesi birliklerinde silah kuşandı.",
     "bio": [
-      "Çeçenistan’ın Gudermes şehrinde dünyaya geldi ve cephede ‘Klyaks’ lâkabıyla tanındı. Birinci ve İkinci rus-çeçen savaşlarında Doğu cephesi birliklerinde silah kuşandı.",
+      "Çeçenistan’ın Gudermes şehrinde dünyaya geldi ve cephede ‘Klyaks’ lâkabıyla tanındı. Birinci ve İkinci Rus-Çeçen Savaşları’nda Doğu Cephesi birliklerinde silah kuşandı.",
       "Gudermes ve çevresinde işgalci güçlere karşı düzenlenen baskınlarda cesurca çarpıştı. Kuşatma altındaki şehir ve dağ hatlarında mücahit kardeşleriyle omuz omuza direndi. 2001 yılında Rus işgal güçleriyle girdiği çatışmada vuruşarak kahramanca şehit düştü."
     ]
   },
@@ -6725,13 +6307,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ibrahim-canhotov.webp",
-        "caption": "İbrahim Canhotov (1978–2003) — Arşiv fotoğrafı."
+        "caption": "İbrahim Canhotov (1978–2003)"
       }
     ],
-    "summary": "Kafkasya’da dünyaya geldi ve gençlik yıllarında direniş saflarında yerini Aldı. İkinci rus-çeçen savaşı’nda dağ ve şehir birliklerinde işgalcilere karşı savaştı.",
+    "summary": "Kafkasya’da dünyaya geldi ve gençlik yıllarında direniş saflarında yerini aldı. İkinci Rus-Çeçen Savaşı’nda dağ ve şehir birliklerinde işgalcilere karşı savaştı.",
     "bio": [
-      "Kafkasya’da dünyaya geldi ve gençlik yıllarında direniş saflarında yerini Aldı. İkinci rus-çeçen savaşı’nda dağ ve şehir birliklerinde işgalcilere karşı savaştı.",
-      "Soğukkanlılığı, cesareti ve fedakârlığıyla Komutanlarının güvenini kazandı. Ağır kuşatma ve takip altında dahi direniş mevziilerini asla terk etmedi. 2003 yılında işgal Kuvvetleriyle girdiği Silahlı çatışmada kahramanca şehit düştü."
+      "Kafkasya’da dünyaya geldi ve gençlik yıllarında direniş saflarında yerini aldı. İkinci Rus-Çeçen Savaşı’nda dağ ve şehir birliklerinde işgalcilere karşı savaştı.",
+      "Soğukkanlılığı, cesareti ve fedakârlığıyla komutanlarının güvenini kazandı. Ağır kuşatma ve takip altında dahi direniş mevzilerini asla terk etmedi. 2003 yılında işgal kuvvetleriyle girdiği silahlı çatışmada kahramanca şehit düştü."
     ]
   },
   {
@@ -6749,12 +6331,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/gilani-susuyev.webp",
-        "caption": "Gilani Susuyev (1965–1996) — Arşiv fotoğrafı."
+        "caption": "Gilani Susuyev (1965–1996)"
       }
     ],
-    "summary": "Çeçenistan’da dünyaya geldi ve istiklal mücadelesinde ‘Emir Gilani’ künyesiyle tanındı. Birinci rus-çeçen savaşı’nda mücahit birliklerine komuta ederek ön cephelerde savaştı.",
+    "summary": "Çeçenistan’da dünyaya geldi ve istiklal mücadelesinde ‘Emir Gilani’ künyesiyle tanındı. Birinci Rus-Çeçen Savaşı’nda mücahit birliklerine komuta ederek ön cephelerde savaştı.",
     "bio": [
-      "Çeçenistan’da dünyaya geldi ve istiklal mücadelesinde ‘Emir Gilani’ künyesiyle tanındı. Birinci rus-çeçen savaşı’nda mücahit birliklerine komuta ederek ön cephelerde savaştı.",
+      "Çeçenistan’da dünyaya geldi ve istiklal mücadelesinde ‘Emir Gilani’ künyesiyle tanındı. Birinci Rus-Çeçen Savaşı’nda mücahit birliklerine komuta ederek ön cephelerde savaştı.",
       "Ağustos 1996’daki başkent Cahar’ı (Grozni) kurtarma harekâtında birliğiyle kritik rol oynadı. Cesareti, askeri disiplini ve sarsılmaz imanıyla silah arkadaşlarına örnek oldu. 8 Eylül 1996 tarihinde vatan savunmasında kahramanca çarpışarak şehit düştü."
     ]
   },
@@ -6773,13 +6355,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/dalambek-bahayev.webp",
-        "caption": "Dalambek Bahayev (1968–1996) — Arşiv fotoğrafı."
+        "caption": "Dalambek Bahayev (1968–1996)"
       }
     ],
-    "summary": "Çeçenistan’ın Alleroy köyünde dünyaya geldi ve Çeçenlerin Alleroy taypına mensuptu. Savaş öncesinde hamzat gelayev’in Özel kuvvetler birliğinde, savaşta hunkar-paşa’nın emrinde görev yaptı.",
+    "summary": "Çeçenistan’ın Alleroy köyünde dünyaya geldi ve Çeçenlerin Alleroy taypına mensuptu. Savaş öncesinde Hamzat Gelayev’in özel kuvvetler birliğinde, savaşta Hunkar-Paşa’nın emrinde görev yaptı.",
     "bio": [
-      "Çeçenistan’ın Alleroy köyünde dünyaya geldi ve Çeçenlerin Alleroy taypına mensuptu. Savaş öncesinde hamzat gelayev’in Özel kuvvetler birliğinde, savaşta hunkar-paşa’nın emrinde görev yaptı.",
-      "31 Aralık 1994 Cahar savunmasında ve tarihi Bamut direnişinde yaklaşık on Rus tankını imha etti. Her muharebe öncesi roketatar mühimmatını bizzat hazırlayan usta bir zırhlı avcısıydı. 6 Ağustos 1996’da Cahar’daki ‘Cihad’ Operasyonunda Hunkar-Paşa ile Çarpışırken Şehit Düştü."
+      "Çeçenistan’ın Alleroy köyünde dünyaya geldi ve Çeçenlerin Alleroy taypına mensuptu. Savaş öncesinde Hamzat Gelayev’in özel kuvvetler birliğinde, savaşta Hunkar-Paşa’nın emrinde görev yaptı.",
+      "31 Aralık 1994 Cahar savunmasında ve tarihi Bamut direnişinde yaklaşık on Rus tankını imha etti. Her muharebe öncesi roketatar mühimmatını bizzat hazırlayan usta bir zırhlı avcısıydı. 6 Ağustos 1996’da Cahar’daki ‘Cihad’ Operasyonu’nda Hunkar-Paşa ile çarpışırken şehit düştü."
     ]
   },
   {
@@ -6797,13 +6379,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/rizvan-daayev.webp",
-        "caption": "Rizvan Daayev (1964–2000) — Arşiv fotoğrafı."
+        "caption": "Rizvan Daayev (1964–2000)"
       }
     ],
-    "summary": "Çeçenistan’da dünyaya geldi ve Çeçen İçkerya Cumhuriyeti Silahlı Kuvvetlerinde Komutanlık yaptı. Üstün komuta başarısıyla Güneybatı cephesi 1. sektör Komutanlığı ve Tuğgeneral rütbesine yükseldi.",
+    "summary": "Çeçenistan’da dünyaya geldi ve Çeçen İçkerya Cumhuriyeti Silahlı Kuvvetleri’nde komutanlık yaptı. Üstün komuta başarısıyla Güneybatı Cephesi 1. Sektör Komutanlığı ve tuğgeneral rütbesine yükseldi.",
     "bio": [
-      "Çeçenistan’da dünyaya geldi ve Çeçen İçkerya Cumhuriyeti Silahlı Kuvvetlerinde Komutanlık yaptı. Üstün komuta başarısıyla Güneybatı cephesi 1. sektör Komutanlığı ve Tuğgeneral rütbesine yükseldi.",
-      "Nurullah’ Tugayı bünyesinde Birinci ve İkinci rus-çeçen savaşlarında ön safta çarpıştı. Ocak-Şubat 2000’de kuşatma altındaki başkent Cahar’ın savunması ve yarma harekâtına katıldı. 8 Şubat 2000 tarihinde Rus işgal Kuvvetleriyle girdiği çatışmada kahramanca şehit düştü."
+      "Çeçenistan’da dünyaya geldi ve Çeçen İçkerya Cumhuriyeti Silahlı Kuvvetleri’nde komutanlık yaptı. Üstün komuta başarısıyla Güneybatı Cephesi 1. Sektör Komutanlığı ve tuğgeneral rütbesine yükseldi.",
+      "‘Nurullah’ Tugayı bünyesinde Birinci ve İkinci Rus-Çeçen Savaşları’nda ön safta çarpıştı. Ocak-Şubat 2000’de kuşatma altındaki başkent Cahar’ın savunması ve yarma harekâtına katıldı. 8 Şubat 2000 tarihinde Rus işgal kuvvetleriyle girdiği çatışmada kahramanca şehit düştü."
     ]
   },
   {
@@ -6821,7 +6403,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/hamzat-gaurgasvili.webp",
-        "caption": "Hamzat Gaurgaşvili (1971–1995) — Arşiv fotoğrafı."
+        "caption": "Hamzat Gaurgaşvili (1971–1995)"
       }
     ],
     "summary": "Çeçenistan’ın Sernovodsk köyünde dünyaya geldi ve Çeçenlerin Dişni taypına mensuptu. Aralık 1994’te Rus ordusunun Çeçenistan’ı işgaline karşı ilk günden gönüllü olarak çıktı.",
@@ -6845,13 +6427,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ruslan-elmurzayev.webp",
-        "caption": "Ruslan Elmurzayev (1968–1999) — Arşiv fotoğrafı."
+        "caption": "Ruslan Elmurzayev (1968–1999)"
       }
     ],
-    "summary": "Çeçenistan’ın Gudermes ve enhallo bölgesinde dünyaya geldi ve İslami kimliğiyle tanındı. Birinci ve İkinci rus-çeçen savaşlarında vatan topraklarını savunmak için silah kuşandı.",
+    "summary": "Çeçenistan’ın Gudermes ve Enhallo bölgesinde dünyaya geldi ve İslami kimliğiyle tanındı. Birinci ve İkinci Rus-Çeçen Savaşları’nda vatan topraklarını savunmak için silah kuşandı.",
     "bio": [
-      "Çeçenistan’ın Gudermes ve enhallo bölgesinde dünyaya geldi ve İslami kimliğiyle tanındı. Birinci ve İkinci rus-çeçen savaşlarında vatan topraklarını savunmak için silah kuşandı.",
-      "1999 sonbaharında Rus ordusunun yeniden başlattığı işgale karşı Doğu ve Güney cephelerinde savaştı. Vedeno dağlarında kış şartlarında yürütülen savunma harekâtlarında büyük fedakârlık gösterdi. 31 Aralık 1999 tarihinde Vedeno bölgesinde Rus güçleriyle girdiği çatışmada şehit düştü."
+      "Çeçenistan’ın Gudermes ve Enhallo bölgesinde dünyaya geldi ve İslami kimliğiyle tanındı. Birinci ve İkinci Rus-Çeçen Savaşları’nda vatan topraklarını savunmak için silah kuşandı.",
+      "1999 sonbaharında Rus ordusunun yeniden başlattığı işgale karşı doğu ve güney cephelerinde savaştı. Vedeno dağlarında kış şartlarında yürütülen savunma harekâtlarında büyük fedakârlık gösterdi. 31 Aralık 1999 tarihinde Vedeno bölgesinde Rus güçleriyle girdiği çatışmada şehit düştü."
     ]
   },
   {
@@ -6869,13 +6451,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/muhammed-nauzov.webp",
-        "caption": "Muhammed Nauzov (1978–2006) — Arşiv fotoğrafı."
+        "caption": "Muhammed Nauzov (1978–2006)"
       }
     ],
-    "summary": "Çeçenistan’da dünyaya geldi, bilto taypına mensuptu ve cephede ‘Halid’ künyesiyle tanındı. İlim sevgisi, takvası ve cesaretiyle direniş saflarındaki kardeşleri arasında örnek oldu.",
+    "summary": "Çeçenistan’da dünyaya geldi, Bilto taypına mensuptu ve cephede ‘Halid’ künyesiyle tanındı. İlim sevgisi, takvası ve cesaretiyle direniş saflarındaki kardeşleri arasında örnek oldu.",
     "bio": [
-      "Çeçenistan’da dünyaya geldi, bilto taypına mensuptu ve cephede ‘Halid’ künyesiyle tanındı. İlim sevgisi, takvası ve cesaretiyle direniş saflarındaki kardeşleri arasında örnek oldu.",
-      "İkinci rus-çeçen savaşı’nda işgalci kuvvetlere karşı gerilla operasyonlarında yer Aldı. Yıllarca süren ağır kuşatma şartlarında imanından ve mücadelesinden taviz vermedi. 31 Ocak 2006 tarihinde Rus işgal güçleriyle girdiği çatışmada kahramanca şehit düştü."
+      "Çeçenistan’da dünyaya geldi, Bilto taypına mensuptu ve cephede ‘Halid’ künyesiyle tanındı. İlim sevgisi, takvası ve cesaretiyle direniş saflarındaki kardeşleri arasında örnek oldu.",
+      "İkinci Rus-Çeçen Savaşı’nda işgalci kuvvetlere karşı gerilla operasyonlarında yer aldı. Yıllarca süren ağır kuşatma şartlarında imanından ve mücadelesinden taviz vermedi. 31 Ocak 2006 tarihinde Rus işgal güçleriyle girdiği çatışmada kahramanca şehit düştü."
     ]
   },
   {
@@ -6893,7 +6475,7 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/adam-husalayev.webp",
-        "caption": "Adam Huşalayev (1982–2013) — Arşiv fotoğrafı."
+        "caption": "Adam Huşalayev (1982–2013)"
       }
     ],
     "summary": "Çeçenistan’da dünyaya geldi ve direniş saflarında ‘Abdul-Malik’ künyesiyle mücadele etti. Genç yaşında Vedeno sektöründeki dağ birliklerine katılarak silah arkadaşlarıyla saf tuttu.",
@@ -6907,7 +6489,7 @@ export const PEOPLE: Person[] = [
     "name": "Yunus Ahmadov",
     "born": "1978",
     "died": "2007",
-    "title": "Kafkasya İmameti naibi ve komutan",
+    "title": "Çeçen direniş komutanı",
     "era": "yakin",
     "region": "Çeçenya",
     "birthPlace": "Çeçenya",
@@ -6917,13 +6499,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/yunus-ahmadov.webp",
-        "caption": "Yunus Ahmadov (1978–2007) — Arşiv fotoğrafı."
+        "caption": "Yunus Ahmadov (1978–2007)"
       }
     ],
-    "summary": "1 Ağustos 1978’de dünyaya geldi, phamtoy taypına mensuptu ve Cahar’da direnişe katıldı. Başkent Cahar’ın (Grozni) Oktyabrski bölgesi emiri olarak şehir içi operasyonları yönetti.",
+    "summary": "1 Ağustos 1978’de dünyaya geldi, Phamtoy taypına mensuptu ve Cahar’da direnişe katıldı. Başkent Cahar’ın (Grozni) Oktyabrski bölgesi emiri olarak şehir içi operasyonları yönetti.",
     "bio": [
-      "1 Ağustos 1978’de dünyaya geldi, phamtoy taypına mensuptu ve Cahar’da direnişe katıldı. Başkent Cahar’ın (Grozni) Oktyabrski bölgesi emiri olarak şehir içi operasyonları yönetti.",
-      "Merkez cephesi Komutanı ebubekir basayev’in Birinci naibi (Yardımcısı) olarak görev yaptı. Son çatışmasında halkına zulmeden üst düzey bir işbirlikçiyi bizzat cezalandırdı. 7 Temmuz 2007 gecesi başkent Cahar’da eşitsiz çatışmada kahramanca şehit düştü."
+      "1 Ağustos 1978’de dünyaya geldi, Phamtoy taypına mensuptu ve Cahar’da direnişe katıldı. Başkent Cahar’ın (Grozni) Oktyabrski bölgesi emiri olarak şehir içi operasyonları yönetti.",
+      "Merkez Cephesi Komutanı Ebubekir Basayev’in birinci naibi (yardımcısı) olarak görev yaptı. Son çatışmasında halkına zulmeden üst düzey bir işbirlikçiyi bizzat cezalandırdı. 7 Temmuz 2007 gecesi başkent Cahar’da eşitsiz çatışmada kahramanca şehit düştü."
     ]
   },
   {
@@ -6941,13 +6523,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/dires-dadayev.webp",
-        "caption": "Dires Dadayev (1976–2001) — Arşiv fotoğrafı."
+        "caption": "Dires Dadayev (1976–2001)"
       }
     ],
-    "summary": "Çeçenistan’ın zakan-yurt köyünde doğdu ve Çeçenlerin köklü tundakho taypına mensuptu. İçkerya Tuğgenerali hadid Dadayev’in küçük kardeşi olarak genç yaşta vatan savunmasına katıldı.",
+    "summary": "Çeçenistan’ın Zakan-Yurt köyünde doğdu ve Çeçenlerin köklü Tundakho taypına mensuptu. İçkerya Tuğgenerali Hadid Dadayev’in küçük kardeşi olarak genç yaşta vatan savunmasına katıldı.",
     "bio": [
-      "Çeçenistan’ın zakan-yurt köyünde doğdu ve Çeçenlerin köklü tundakho taypına mensuptu. İçkerya Tuğgenerali hadid Dadayev’in küçük kardeşi olarak genç yaşta vatan savunmasına katıldı.",
-      "Birinci ve İkinci rus-çeçen savaşlarında ağabeyiyle omuz omuza cephede çarpıştı. Zakan-Yurt ve başkent Cahar hattındaki çetin savunma muharebelerinde cesaret gösterdi. 2001 yılında işgalci Rus Kuvvetlerine karşı yürüttüğü mücadelede şehit düştü."
+      "Çeçenistan’ın Zakan-Yurt köyünde doğdu ve Çeçenlerin köklü Tundakho taypına mensuptu. İçkerya Tuğgenerali Hadid Dadayev’in küçük kardeşi olarak genç yaşta vatan savunmasına katıldı.",
+      "Birinci ve İkinci Rus-Çeçen Savaşları’nda ağabeyiyle omuz omuza cephede çarpıştı. Zakan-Yurt ve başkent Cahar hattındaki çetin savunma muharebelerinde cesaret gösterdi. 2001 yılında işgalci Rus kuvvetlerine karşı yürüttüğü mücadelede şehit düştü."
     ]
   },
   {
@@ -6965,13 +6547,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/uvays-ahmadov.webp",
-        "caption": "Uvays Ahmadov (1975–2001) — Arşiv fotoğrafı."
+        "caption": "Uvays Ahmadov (1975–2001)"
       }
     ],
     "summary": "Çeçenistan’ın Argun şehrinde boksör olarak yetişti ve Türkiye’deki tedavisinin ardından cepheye döndü. Argun’da bir mücahit grubuna komuta ederek işgalcilere karşı başarılı operasyonlar düzenledi.",
     "bio": [
       "Çeçenistan’ın Argun şehrinde boksör olarak yetişti ve Türkiye’deki tedavisinin ardından cepheye döndü. Argun’da bir mücahit grubuna komuta ederek işgalcilere karşı başarılı operasyonlar düzenledi.",
-      "Rusların babasını rehin alması üzerine halkına zarar gelmemesi için düşmanı tek başına üzerine çekti. Moskovski mevkisinde beş ural, iki zırhlı ve üç uaz’dan oluşan Rus konvoyuna tek başına pusu kurdu. 16 Haziran 2001’de 18 işgalciyi imha edip elinde steçkin tabancasıyla çarpışarak şehit düştü."
+      "Rusların babasını rehin alması üzerine halkına zarar gelmemesi için düşmanı tek başına üzerine çekti. Moskovski mevkisinde beş Ural, iki zırhlı ve üç UAZ’dan oluşan Rus konvoyuna tek başına pusu kurdu. 16 Haziran 2001’de 18 işgalciyi imha edip elinde Steçkin tabancasıyla çarpışarak şehit düştü."
     ]
   },
   {
@@ -6989,13 +6571,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/movladi-magamadov.webp",
-        "caption": "Movladi Magamadov (1974–2006) — Arşiv fotoğrafı."
+        "caption": "Movladi Magamadov (1974–2006)"
       }
     ],
-    "summary": "Çeçenistan’ın hattuni köyünde dünyaya geldi ve Çeçenlerin tsadaharo taypına mensuptu. Birinci ve İkinci rus-çeçen savaşlarında Çeçen İçkerya Silahlı Kuvvetleri saflarında çarpıştı.",
+    "summary": "Çeçenistan’ın Hattuni köyünde dünyaya geldi ve Çeçenlerin Tsadaharo taypına mensuptu. Birinci ve İkinci Rus-Çeçen Savaşları’nda Çeçen İçkerya Silahlı Kuvvetleri saflarında çarpıştı.",
     "bio": [
-      "Çeçenistan’ın hattuni köyünde dünyaya geldi ve Çeçenlerin tsadaharo taypına mensuptu. Birinci ve İkinci rus-çeçen savaşlarında Çeçen İçkerya Silahlı Kuvvetleri saflarında çarpıştı.",
-      "Güney dağ cephesi ve Vedeno ormanlarında yıllarca süren gerilla direnişinde yer Aldı. Zorlu kış ve kuşatma şartlarında sarsılmaz imanı ve sabrıyla kardeşlerine örnek oldu. 2006 yılında Rus işgal güçleriyle girdiği Silahlı çatışmada kahramanca şehit düştü."
+      "Çeçenistan’ın Hattuni köyünde dünyaya geldi ve Çeçenlerin Tsadaharo taypına mensuptu. Birinci ve İkinci Rus-Çeçen Savaşları’nda Çeçen İçkerya Silahlı Kuvvetleri saflarında çarpıştı.",
+      "Güney dağ cephesi ve Vedeno ormanlarında yıllarca süren gerilla direnişinde yer aldı. Zorlu kış ve kuşatma şartlarında sarsılmaz imanı ve sabrıyla kardeşlerine örnek oldu. 2006 yılında Rus işgal güçleriyle girdiği silahlı çatışmada kahramanca şehit düştü."
     ]
   },
   {
@@ -7013,12 +6595,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/yunus-emri.webp",
-        "caption": "Yunus Emri (1978–2003) — Arşiv fotoğrafı."
+        "caption": "Yunus Emri (1978–2003)"
       }
     ],
-    "summary": "Türkiye’de dünyaya geldi ve Kafkasya’daki müslüman kardeşlerinin cihadına gönüllü olarak katıldı. Çeçenistan dağlarındaki mücahit birliklerinde ağır makineli tüfek nişancısı olarak görev yaptı.",
+    "summary": "Türkiye’de dünyaya geldi ve Kafkasya’daki Müslüman kardeşlerinin cihadına gönüllü olarak katıldı. Çeçenistan dağlarındaki mücahit birliklerinde ağır makineli tüfek nişancısı olarak görev yaptı.",
     "bio": [
-      "Türkiye’de dünyaya geldi ve Kafkasya’daki müslüman kardeşlerinin cihadına gönüllü olarak katıldı. Çeçenistan dağlarındaki mücahit birliklerinde ağır makineli tüfek nişancısı olarak görev yaptı.",
+      "Türkiye’de dünyaya geldi ve Kafkasya’daki Müslüman kardeşlerinin cihadına gönüllü olarak katıldı. Çeçenistan dağlarındaki mücahit birliklerinde ağır makineli tüfek nişancısı olarak görev yaptı.",
       "Güler yüzü, cesareti ve fedakârlığıyla Çeçen ve muhacir kardeşleri arasında çok sevildi. Şali ve Serjen-Yurt ormanlarında işgalci Rus birliklerine karşı sayısız operasyonda çarpıştı. 2003 yılında Serjen-Yurt’ta Rus hava indirme birlikleriyle girdiği çatışmada şehit düştü."
     ]
   },
@@ -7037,13 +6619,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ruslan-bibulatov.webp",
-        "caption": "Ruslan Bibulatov (1977–1999) — Arşiv fotoğrafı."
+        "caption": "Ruslan Bibulatov (1977–1999)"
       }
     ],
-    "summary": "Çeçenistan’ın katır-yurt köyünde dünyaya geldi ve Çeçenlerin naşho taypına mensuptu. Katır-Yurt Komutanı olhazar Bibulatov’un oğlu olarak genç yaşta vatan savunmasına katıldı.",
+    "summary": "Çeçenistan’ın Katır-Yurt köyünde dünyaya geldi ve Çeçenlerin Naşho taypına mensuptu. Katır-Yurt Komutanı Olhazar Bibulatov’un oğlu olarak genç yaşta vatan savunmasına katıldı.",
     "bio": [
-      "Çeçenistan’ın katır-yurt köyünde dünyaya geldi ve Çeçenlerin naşho taypına mensuptu. Katır-Yurt Komutanı olhazar Bibulatov’un oğlu olarak genç yaşta vatan savunmasına katıldı.",
-      "İkinci rus-çeçen savaşı başında başkent Cahar’ı (Grozni) savunan birliklerde görev Aldı. Süra-Kort bölgesinde Komutan dokka umarov’un karargâhını koruyan mücahitler arasında yer Aldı. 19 Aralık 1999’da başkent Cahar’da Rus füze saldırısı sonucunda kahramanca şehit düştü."
+      "Çeçenistan’ın Katır-Yurt köyünde dünyaya geldi ve Çeçenlerin Naşho taypına mensuptu. Katır-Yurt Komutanı Olhazar Bibulatov’un oğlu olarak genç yaşta vatan savunmasına katıldı.",
+      "İkinci Rus-Çeçen Savaşı başında başkent Cahar’ı (Grozni) savunan birliklerde görev aldı. Süra-Kort bölgesinde Komutan Dokka Umarov’un karargâhını koruyan mücahitler arasında yer aldı. 19 Aralık 1999’da başkent Cahar’da Rus füze saldırısı sonucunda kahramanca şehit düştü."
     ]
   },
   {
@@ -7061,13 +6643,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/zayndi-ibayev.webp",
-        "caption": "Zayndi İbayev (1968–2000) — Arşiv fotoğrafı."
+        "caption": "Zayndi İbayev (1968–2000)"
       }
     ],
-    "summary": "Çeçenistan’ın Prigorodnoye köyünde doğdu, çinho taypına mensuptu ve ‘Patriot-1’ çağrı adıyla tanındı. Birinci ve İkinci rus-çeçen savaşlarında mücahit birliklerine Komutanlık yaptı.",
+    "summary": "Çeçenistan’ın Prigorodnoye köyünde doğdu, Çinho taypına mensuptu ve ‘Patriot-1’ çağrı adıyla tanındı. Birinci ve İkinci Rus-Çeçen Savaşları’nda mücahit birliklerine komutanlık yaptı.",
     "bio": [
-      "Çeçenistan’ın Prigorodnoye köyünde doğdu, çinho taypına mensuptu ve ‘Patriot-1’ çağrı adıyla tanındı. Birinci ve İkinci rus-çeçen savaşlarında mücahit birliklerine Komutanlık yaptı.",
-      "Ağustos 1996 cihad harekâtı’ndaki üstün cesaretinden dolayı ‘Qoman siy’ ve ‘Qoman turpal’ nişanlarını Aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyündeki tarihi direniş hattında çarpıştı. Saadi-Kotar muharebesinde son kurşununa kadar vuruşarak kahramanca şehit düştü."
+      "Çeçenistan’ın Prigorodnoye köyünde doğdu, Çinho taypına mensuptu ve ‘Patriot-1’ çağrı adıyla tanındı. Birinci ve İkinci Rus-Çeçen Savaşları’nda mücahit birliklerine komutanlık yaptı.",
+      "Ağustos 1996 Cihad Harekâtı’ndaki üstün cesaretinden dolayı ‘Qoman Siy’ ve ‘Qoman Turpal’ nişanlarını aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyündeki tarihi direniş hattında çarpıştı. Saadi-Kotar muharebesinde son kurşununa kadar vuruşarak kahramanca şehit düştü."
     ]
   },
   {
@@ -7085,13 +6667,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/adam-movsarov.webp",
-        "caption": "Adam Movsarov (1976–2000) — Arşiv fotoğrafı."
+        "caption": "Adam Movsarov (1976–2000)"
       }
     ],
     "summary": "Çeçenistan’ın Sernovodsk köyünde dünyaya geldi ve Çeçenlerin Dişni taypına mensuptu. Genç yaşından itibaren vatan savunmasına katılarak direniş birliklerinde silah kuşandı.",
     "bio": [
       "Çeçenistan’ın Sernovodsk köyünde dünyaya geldi ve Çeçenlerin Dişni taypına mensuptu. Genç yaşından itibaren vatan savunmasına katılarak direniş birliklerinde silah kuşandı.",
-      "İkinci rus-çeçen savaşı’nda başkent Cahar savunması ve Güney yarma harekâtında yer Aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyündeki kuşatma hattında omuz omuza savaştı. Saadi-Kotar direnişinde işgalci ordulara karşı çarpışarak kahramanca şehit düştü."
+      "İkinci Rus-Çeçen Savaşı’nda başkent Cahar savunması ve güney yarma harekâtında yer aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyündeki kuşatma hattında omuz omuza savaştı. Saadi-Kotar direnişinde işgalci ordulara karşı çarpışarak kahramanca şehit düştü."
     ]
   },
   {
@@ -7109,13 +6691,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/muhammed-batsiyev.webp",
-        "caption": "Muhammed Batsiyev (1974–2000) — Arşiv fotoğrafı."
+        "caption": "Muhammed Batsiyev (1974–2000)"
       }
     ],
-    "summary": "Çeçenistan’ın novoterskoye köyünde doğdu, himo taypına mensuptu ve ‘Mada’ lâkabıyla tanındı. Birinci ve İkinci rus-çeçen savaşlarında naurski Taburu saflarında ön cephede savaştı.",
+    "summary": "Çeçenistan’ın Novoterskoye köyünde doğdu, Himo taypına mensuptu ve ‘Mada’ lâkabıyla tanındı. Birinci ve İkinci Rus-Çeçen Savaşları’nda Naurski Taburu saflarında ön cephede savaştı.",
     "bio": [
-      "Çeçenistan’ın novoterskoye köyünde doğdu, himo taypına mensuptu ve ‘Mada’ lâkabıyla tanındı. Birinci ve İkinci rus-çeçen savaşlarında naurski Taburu saflarında ön cephede savaştı.",
-      "2000 yılı başında başkent Cahar kuşatmasını yararak Güneye yürüyen birliklerde yer Aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyünde kurulan savunma siperlerinde çarpıştı. Saadi-Kotar muharebesinde naurski kardeşleriyle birlikte vuruşarak kahramanca şehit düştü."
+      "Çeçenistan’ın Novoterskoye köyünde doğdu, Himo taypına mensuptu ve ‘Mada’ lâkabıyla tanındı. Birinci ve İkinci Rus-Çeçen Savaşları’nda Naurski Taburu saflarında ön cephede savaştı.",
+      "2000 yılı başında başkent Cahar kuşatmasını yararak güneye yürüyen birliklerde yer aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyünde kurulan savunma siperlerinde çarpıştı. Saadi-Kotar muharebesinde Naurski kardeşleriyle birlikte vuruşarak kahramanca şehit düştü."
     ]
   },
   {
@@ -7133,12 +6715,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/timur-batalov.webp",
-        "caption": "Timur Batalov (1979–2000) — Arşiv fotoğrafı."
+        "caption": "Timur Batalov (1979–2000)"
       }
     ],
-    "summary": "1979 yılında Sernovodsk köyünde doğdu, mulko taypına mensuptu ve ‘Abdul-Malik’ künyesini Aldı. Genç yaşta İkinci rus-çeçen savaşı’na katılarak başkent Cahar savunmasında görev yaptı.",
+    "summary": "1979 yılında Sernovodsk köyünde doğdu, Mulko taypına mensuptu ve ‘Abdul-Malik’ künyesini aldı. Genç yaşta İkinci Rus-Çeçen Savaşı’na katılarak başkent Cahar savunmasında görev yaptı.",
     "bio": [
-      "1979 yılında Sernovodsk köyünde doğdu, mulko taypına mensuptu ve ‘Abdul-Malik’ künyesini Aldı. Genç yaşta İkinci rus-çeçen savaşı’na katılarak başkent Cahar savunmasında görev yaptı.",
+      "1979 yılında Sernovodsk köyünde doğdu, Mulko taypına mensuptu ve ‘Abdul-Malik’ künyesini aldı. Genç yaşta İkinci Rus-Çeçen Savaşı’na katılarak başkent Cahar savunmasında görev yaptı.",
       "Şubat 2000’de kuşatma altındaki başkentten çıkarak zorlu kış yürüyüşünü tamamladı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyündeki tarihi direniş mevzilerinde savaştı. Yirmi bir yaşında Saadi-Kotar kuşatmasında çarpışarak kahramanca şehit düştü."
     ]
   },
@@ -7157,13 +6739,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ahmed-haciyev.webp",
-        "caption": "Ahmed Haciyev (1977–2000) — Arşiv fotoğrafı."
+        "caption": "Ahmed Haciyev (1977–2000)"
       }
     ],
-    "summary": "Çeçenistan’ın naurski bölgesi rubejnoye köyünde doğdu ve hakmado taypına mensuptu. İkinci rus-çeçen savaşı’nda naurski mücahitleriyle birlikte vatan savunmasına koştu.",
+    "summary": "Çeçenistan’ın Naurski bölgesi Rubejnoye köyünde doğdu ve Hakmado taypına mensuptu. İkinci Rus-Çeçen Savaşı’nda Naurski mücahitleriyle birlikte vatan savunmasına koştu.",
     "bio": [
-      "Çeçenistan’ın naurski bölgesi rubejnoye köyünde doğdu ve hakmado taypına mensuptu. İkinci rus-çeçen savaşı’nda naurski mücahitleriyle birlikte vatan savunmasına koştu.",
-      "Başkent Cahar (Grozni) savunması ve ardından gerçekleşen Güney yarma harekâtında çarpıştı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyünde Rus ordusunun kuşatmasına karşı direndi. Saadi-Kotar muharebesinde son nefesine kadar vuruşarak kahramanca şehit düştü."
+      "Çeçenistan’ın Naurski bölgesi Rubejnoye köyünde doğdu ve Hakmado taypına mensuptu. İkinci Rus-Çeçen Savaşı’nda Naurski mücahitleriyle birlikte vatan savunmasına koştu.",
+      "Başkent Cahar (Grozni) savunması ve ardından gerçekleşen güney yarma harekâtında çarpıştı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyünde Rus ordusunun kuşatmasına karşı direndi. Saadi-Kotar muharebesinde son nefesine kadar vuruşarak kahramanca şehit düştü."
     ]
   },
   {
@@ -7181,12 +6763,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/sayd-hasan-sabayev.webp",
-        "caption": "Sayd-Hasan Şabayev (1975–2000) — Arşiv fotoğrafı."
+        "caption": "Sayd-Hasan Şabayev (1975–2000)"
       }
     ],
-    "summary": "Çeçenistan’ın Gehi köyünde dünyaya geldi ve İslami ahlakıyla çevresinde sevildi. İkinci rus-çeçen savaşı’nda Komutan ebu el-valid’in Cemaati bünyesinde cepheye katıldı.",
+    "summary": "Çeçenistan’ın Gehi köyünde dünyaya geldi ve İslami ahlakıyla çevresinde sevildi. İkinci Rus-Çeçen Savaşı’nda Komutan Ebu el-Velid’in cemaati bünyesinde cepheye katıldı.",
     "bio": [
-      "Çeçenistan’ın Gehi köyünde dünyaya geldi ve İslami ahlakıyla çevresinde sevildi. İkinci rus-çeçen savaşı’nda Komutan ebu el-valid’in Cemaati bünyesinde cepheye katıldı.",
+      "Çeçenistan’ın Gehi köyünde dünyaya geldi ve İslami ahlakıyla çevresinde sevildi. İkinci Rus-Çeçen Savaşı’nda Komutan Ebu el-Velid’in cemaati bünyesinde cepheye katıldı.",
       "Başkent Cahar savunması ve Şubat 2000’deki zorlu dağ yürüyüşünde ön safta yürüdü. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyündeki kuşatma hattında cesurca çarpıştı. Saadi-Kotar direnişinde silah arkadaşlarıyla omuz omuza vuruşarak şehit düştü."
     ]
   },
@@ -7205,13 +6787,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/rizvan-akuyev.webp",
-        "caption": "Rizvan Akuyev (1983–2009) — Arşiv fotoğrafı."
+        "caption": "Rizvan Akuyev (1983–2009)"
       }
     ],
-    "summary": "Çeçenistan’da dünyaya geldi ve genç yaşta Açhoy-Martan sektöründeki direnişe katıldı. Batı cephesi ormanlarında mücahit birlikleriyle birlikte işgalcilere karşı mücadele etti.",
+    "summary": "Çeçenistan’da dünyaya geldi ve genç yaşta Açhoy-Martan sektöründeki direnişe katıldı. Batı Cephesi ormanlarında mücahit birlikleriyle birlikte işgalcilere karşı mücadele etti.",
     "bio": [
-      "Çeçenistan’da dünyaya geldi ve genç yaşta Açhoy-Martan sektöründeki direnişe katıldı. Batı cephesi ormanlarında mücahit birlikleriyle birlikte işgalcilere karşı mücadele etti.",
-      "Ağır kış ve kuşatma şartlarında Açhoy-Martan dağlarındaki savunma hatlarını terk etmedi. Cesareti, ihlası ve fedakârlığıyla silah arkadaşları arasında örnek bir mücahit oldu. 11 Kasım 2009 tarihinde Rus işgal Kuvvetleriyle girdiği çatışmada kahramanca şehit düştü."
+      "Çeçenistan’da dünyaya geldi ve genç yaşta Açhoy-Martan sektöründeki direnişe katıldı. Batı Cephesi ormanlarında mücahit birlikleriyle birlikte işgalcilere karşı mücadele etti.",
+      "Ağır kış ve kuşatma şartlarında Açhoy-Martan dağlarındaki savunma hatlarını terk etmedi. Cesareti, ihlası ve fedakârlığıyla silah arkadaşları arasında örnek bir mücahit oldu. 11 Kasım 2009 tarihinde Rus işgal kuvvetleriyle girdiği çatışmada kahramanca şehit düştü."
     ]
   },
   {
@@ -7229,13 +6811,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/hamzat-batayev.webp",
-        "caption": "Hamzat Batayev (1966–2000) — Arşiv fotoğrafı."
+        "caption": "Hamzat Batayev (1966–2000)"
       }
     ],
-    "summary": "Çeçenistan’ın Batı cephesinde yetişti ve efsanevi Bamut Taburu’nun Komutanlığını üstlendi. Birinci rus-çeçen savaşı’nda Bamut kalesi’ni aylarca işgalci ordulara karşı kahramanca savundu.",
+    "summary": "Çeçenistan’ın Batı Cephesi’nde yetişti ve efsanevi Bamut Taburu’nun komutanlığını üstlendi. Birinci Rus-Çeçen Savaşı’nda Bamut Kalesi’ni aylarca işgalci ordulara karşı kahramanca savundu.",
     "bio": [
-      "Çeçenistan’ın Batı cephesinde yetişti ve efsanevi Bamut Taburu’nun Komutanlığını üstlendi. Birinci rus-çeçen savaşı’nda Bamut kalesi’ni aylarca işgalci ordulara karşı kahramanca savundu.",
-      "Üstün cesareti ve liderliğiyle Çeçen İçkerya Cumhuriyeti’nin Milli kahramanları arasına girdi. İkinci savaşta başkent Cahar savunması ve Mart 2000’deki Saadi-Kotar direnişinde çarpıştı. Mart 2000’de Saadi-Kotar (Komsomolskoye) muharebesinde kahramanca şehit düştü."
+      "Çeçenistan’ın Batı Cephesi’nde yetişti ve efsanevi Bamut Taburu’nun komutanlığını üstlendi. Birinci Rus-Çeçen Savaşı’nda Bamut Kalesi’ni aylarca işgalci ordulara karşı kahramanca savundu.",
+      "Üstün cesareti ve liderliğiyle Çeçen İçkerya Cumhuriyeti’nin milli kahramanları arasına girdi. İkinci savaşta başkent Cahar savunması ve Mart 2000’deki Saadi-Kotar direnişinde çarpıştı. Mart 2000’de Saadi-Kotar (Komsomolskoye) muharebesinde kahramanca şehit düştü."
     ]
   },
   {
@@ -7253,13 +6835,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ahmed-labazanov.webp",
-        "caption": "Ahmed Labazanov (1968–1999) — Arşiv fotoğrafı."
+        "caption": "Ahmed Labazanov (1968–1999)"
       }
     ],
-    "summary": "1991’den itibaren cumhurbaşkanı Cahar dudayev’in Muhafız birliği saflarında bağımsızlık yoluna çıktı. Birinci rus-çeçen savaşı’nda ön cephede çarpıştı, yaralanmasına rağmen mücadelesinden dönmedi.",
+    "summary": "1991’den itibaren cumhurbaşkanı Cahar Dudayev’in Muhafız birliği saflarında bağımsızlık yoluna çıktı. Birinci Rus-Çeçen Savaşı’nda ön cephede çarpıştı, yaralanmasına rağmen mücadelesinden dönmedi.",
     "bio": [
-      "1991’den itibaren cumhurbaşkanı Cahar dudayev’in Muhafız birliği saflarında bağımsızlık yoluna çıktı. Birinci rus-çeçen savaşı’nda ön cephede çarpıştı, yaralanmasına rağmen mücadelesinden dönmedi.",
-      "İkinci rus-çeçen savaşı başında ‘33’ çağrı adlı mücahit grubunun Komutanlığını yaptı. 20 Kasım 1999’da Alleroy hattında seçkin Rus Özel Kuvvetleri ve t-90 tanklarına karşı savaştı. Kasım 1999’da düşman kuşatmasına karşı son nefesine kadar vuruşarak kahramanca şehit düştü."
+      "1991’den itibaren cumhurbaşkanı Cahar Dudayev’in Muhafız birliği saflarında bağımsızlık yoluna çıktı. Birinci Rus-Çeçen Savaşı’nda ön cephede çarpıştı, yaralanmasına rağmen mücadelesinden dönmedi.",
+      "İkinci Rus-Çeçen Savaşı başında ‘33’ çağrı adlı mücahit grubunun komutanlığını yaptı. 20 Kasım 1999’da Alleroy hattında seçkin Rus özel kuvvetleri ve T-90 tanklarına karşı savaştı. Kasım 1999’da düşman kuşatmasına karşı son nefesine kadar vuruşarak kahramanca şehit düştü."
     ]
   },
   {
@@ -7277,12 +6859,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/yusi-hantiyev.webp",
-        "caption": "Yusi Hantiyev (1954–1995) — Arşiv fotoğrafı."
+        "caption": "Yusi Hantiyev (1954–1995)"
       }
     ],
-    "summary": "Çeçen halkının yetiştirdiği değerli şair, aydın ve vaynah demokratik partisi’nin kıdemli Muhafızıydı. Bağımsız Çeçen İçkerya Cumhuriyeti parlamentosu’nda milletvekili olarak halkının iradesini temsil etti.",
+    "summary": "Çeçen halkının yetiştirdiği değerli şair, aydın ve Vaynah Demokratik Partisi’nin kıdemli muhafızıydı. Bağımsız Çeçen İçkerya Cumhuriyeti Parlamentosu’nda milletvekili olarak halkının iradesini temsil etti.",
     "bio": [
-      "Çeçen halkının yetiştirdiği değerli şair, aydın ve vaynah demokratik partisi’nin kıdemli Muhafızıydı. Bağımsız Çeçen İçkerya Cumhuriyeti parlamentosu’nda milletvekili olarak halkının iradesini temsil etti.",
+      "Çeçen halkının yetiştirdiği değerli şair, aydın ve Vaynah Demokratik Partisi’nin kıdemli muhafızıydı. Bağımsız Çeçen İçkerya Cumhuriyeti Parlamentosu’nda milletvekili olarak halkının iradesini temsil etti.",
       "Aralık 1994’te Rus işgali başlayınca kaleminin yanına silahını kuşanıp en ön cepheye koştu. Yarış-Mardı ve Serjen-Yurt dağlarındaki savunma mevzilerinde mücahitlerle omuz omuza çarpıştı. Mayıs 1995’te Serjen-Yurt yakınlarındaki çetin muharebede kahramanca şehit düştü."
     ]
   },
@@ -7301,13 +6883,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/deni-sultanov.webp",
-        "caption": "Deni Sultanov (1977–2000) — Arşiv fotoğrafı."
+        "caption": "Deni Sultanov (1977–2000)"
       }
     ],
-    "summary": "Çeçenistan’ın Gudermes şehrinde dünyaya geldi ve Komutan abdurrahman’ın Cemaatine katıldı. İkinci rus-çeçen savaşı’nda Duba-Yurt yakınlarındaki stratejik 825 rakımlı tepe hücumunda savaştı.",
+    "summary": "Çeçenistan’ın Gudermes şehrinde dünyaya geldi ve Komutan Abdurrahman’ın cemaatine katıldı. İkinci Rus-Çeçen Savaşı’nda Duba-Yurt yakınlarındaki stratejik 825 rakımlı tepe hücumunda savaştı.",
     "bio": [
-      "Çeçenistan’ın Gudermes şehrinde dünyaya geldi ve Komutan abdurrahman’ın Cemaatine katıldı. İkinci rus-çeçen savaşı’nda Duba-Yurt yakınlarındaki stratejik 825 rakımlı tepe hücumunda savaştı.",
-      "825 rakımlı tepe’deki son Rus sığınağına tek başına atlayıp keskin nişancıyı etkisiz bıraktı. Sığınaktan otuz saniye sonra ele geçirdiği svd tüfeğiyle çıkıp kardeşlerine büyük moral kazandırdı. Mart 2000 başında duts-hote köyünde yaralı haldeyken kahramanca şehit düştü."
+      "Çeçenistan’ın Gudermes şehrinde dünyaya geldi ve Komutan Abdurrahman’ın cemaatine katıldı. İkinci Rus-Çeçen Savaşı’nda Duba-Yurt yakınlarındaki stratejik 825 rakımlı tepe hücumunda savaştı.",
+      "825 Rakımlı Tepe’deki son Rus sığınağına tek başına atlayıp keskin nişancıyı etkisiz bıraktı. Sığınaktan otuz saniye sonra ele geçirdiği SVD tüfeğiyle çıkıp kardeşlerine büyük moral kazandırdı. Mart 2000 başında Duts-Hote köyünde yaralı haldeyken kahramanca şehit düştü."
     ]
   },
   {
@@ -7325,13 +6907,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/islam-zalautdinov.webp",
-        "caption": "İslam Zalautdinov (1978–2002) — Arşiv fotoğrafı."
+        "caption": "İslam Zalautdinov (1978–2002)"
       }
     ],
-    "summary": "Çeçenistan’ın Çeçen-Aul köyünde doğdu, yalho taypına mensuptu ve ‘Spartak’ çağrı adıyla tanındı. Savaş öncesinde ‘Nizam’ televizyon kanalında kameraman olarak çalışıp hakikatin sesini kayda geçirdi.",
+    "summary": "Çeçenistan’ın Çeçen-Aul köyünde doğdu, Yalho taypına mensuptu ve ‘Spartak’ çağrı adıyla tanındı. Savaş öncesinde ‘Nizam’ televizyon kanalında kameraman olarak çalışıp hakikatin sesini kayda geçirdi.",
     "bio": [
-      "Çeçenistan’ın Çeçen-Aul köyünde doğdu, yalho taypına mensuptu ve ‘Spartak’ çağrı adıyla tanındı. Savaş öncesinde ‘Nizam’ televizyon kanalında kameraman olarak çalışıp hakikatin sesini kayda geçirdi.",
-      "İkinci rus-çeçen savaşı’nda ahmadov Cemaati saflarında silah kuşanarak cepheye katıldı. Rizvan ahmadov ve hayrullah zakriyev gibi Komutanlarla birlikte ön cephe operasyonlarında çarpıştı. Tsotsi-Yurt’taki çatışmada şehit düştü (İnşallah) ve köyün merkez kabristanına defnedildi."
+      "Çeçenistan’ın Çeçen-Aul köyünde doğdu, Yalho taypına mensuptu ve ‘Spartak’ çağrı adıyla tanındı. Savaş öncesinde ‘Nizam’ televizyon kanalında kameraman olarak çalışıp hakikatin sesini kayda geçirdi.",
+      "İkinci Rus-Çeçen Savaşı’nda Ahmadov Cemaati saflarında silah kuşanarak cepheye katıldı. Rizvan Ahmadov ve Hayrullah Zakriyev gibi komutanlarla birlikte ön cephe operasyonlarında çarpıştı. Tsotsi-Yurt’taki çatışmada şehit düştü (inşallah) ve köyün merkez kabristanına defnedildi."
     ]
   },
   {
@@ -7349,12 +6931,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/turpal-ali-camalhanov.webp",
-        "caption": "Turpal-Ali Camalhanov (1990–2009) — Arşiv fotoğrafı."
+        "caption": "Turpal-Ali Camalhanov (1990–2009)"
       }
     ],
-    "summary": "1990 yılında Vedeno bölgesinin tsa-vedeno köyünde doğdu ve inançlı bir ailede yetişti. 2004 yılında henüz on dört yaşındayken işgale boyun eğmeyip dağlardaki mücahitlere katıldı.",
+    "summary": "1990 yılında Vedeno bölgesinin Tsa-Vedeno köyünde doğdu ve inançlı bir ailede yetişti. 2004 yılında henüz on dört yaşındayken işgale boyun eğmeyip dağlardaki mücahitlere katıldı.",
     "bio": [
-      "1990 yılında Vedeno bölgesinin tsa-vedeno köyünde doğdu ve inançlı bir ailede yetişti. 2004 yılında henüz on dört yaşındayken işgale boyun eğmeyip dağlardaki mücahitlere katıldı.",
+      "1990 yılında Vedeno bölgesinin Tsa-Vedeno köyünde doğdu ve inançlı bir ailede yetişti. 2004 yılında henüz on dört yaşındayken işgale boyun eğmeyip dağlardaki mücahitlere katıldı.",
       "2004’ten 2009’a kadar beş yıl boyunca Vedeno ormanlarında Rus güçlerine karşı savaştı. Genç yaşına rağmen telsizciliği, cesareti ve tebessümüyle silah arkadaşlarına örnek oldu. 2009 yılında on dokuz yaşında işgalcilerle girdiği çatışmada kahramanca şehit düştü."
     ]
   },
@@ -7373,13 +6955,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/aslambek-bacayev.webp",
-        "caption": "Aslambek Baçayev (1978–2002) — Arşiv fotoğrafı."
+        "caption": "Aslambek Baçayev (1978–2002)"
       }
     ],
-    "summary": "Çeçenistan’ın novıye-atagi (Cim-Atagi) köyünde doğdu ve genç yaşta direnişe katıldı. İkinci rus-çeçen savaşı’nda Şali ve Argun boğazı hattındaki mücahit birliklerinde görev yaptı.",
+    "summary": "Çeçenistan’ın Novıye-Atagi (Cim-Atagi) köyünde doğdu ve genç yaşta direnişe katıldı. İkinci Rus-Çeçen Savaşı’nda Şali ve Argun boğazı hattındaki mücahit birliklerinde görev yaptı.",
     "bio": [
-      "Çeçenistan’ın novıye-atagi (Cim-Atagi) köyünde doğdu ve genç yaşta direnişe katıldı. İkinci rus-çeçen savaşı’nda Şali ve Argun boğazı hattındaki mücahit birliklerinde görev yaptı.",
-      "Ağır kuşatma ve takip şartlarında işgalci Rus birliklerine karşı cesaretle mücadele etti. Vatanına bağlılığı, ihlası ve fedakârlığıyla köy halkı ve kardeşleri arasında sevildi. 2002 yılında novıye-atagi’de uğradığı hain saldırı sonucu şehit düştü."
+      "Çeçenistan’ın Novıye-Atagi (Cim-Atagi) köyünde doğdu ve genç yaşta direnişe katıldı. İkinci Rus-Çeçen Savaşı’nda Şali ve Argun boğazı hattındaki mücahit birliklerinde görev yaptı.",
+      "Ağır kuşatma ve takip şartlarında işgalci Rus birliklerine karşı cesaretle mücadele etti. Vatanına bağlılığı, ihlası ve fedakârlığıyla köy halkı ve kardeşleri arasında sevildi. 2002 yılında Novıye-Atagi’de uğradığı hain saldırı sonucu şehit düştü."
     ]
   },
   {
@@ -7397,13 +6979,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/hamid-mahamasev.webp",
-        "caption": "Hamid Mahamaşev (1965–2000) — Arşiv fotoğrafı."
+        "caption": "Hamid Mahamaşev (1965–2000)"
       }
     ],
-    "summary": "1965 yılında naurski bölgesi rubejnoye köyünde doğdu ve hakmado taypına mensuptu. Çeçenistan’ın özgürlük ve bağımsızlık mücadelesinde naurski mücahitleriyle birlikte saf tuttu.",
+    "summary": "1965 yılında Naurski bölgesi Rubejnoye köyünde doğdu ve Hakmado taypına mensuptu. Çeçenistan’ın özgürlük ve bağımsızlık mücadelesinde Naurski mücahitleriyle birlikte saf tuttu.",
     "bio": [
-      "1965 yılında naurski bölgesi rubejnoye köyünde doğdu ve hakmado taypına mensuptu. Çeçenistan’ın özgürlük ve bağımsızlık mücadelesinde naurski mücahitleriyle birlikte saf tuttu.",
-      "İkinci rus-çeçen savaşı’nda başkent Cahar (Grozni) savunması ve kış yarma harekâtına katıldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyündeki tarihi direniş mevzilerinde çarpıştı. Saadi-Kotar muharebesinde son kurşununa kadar vuruşarak kahramanca şehit düştü."
+      "1965 yılında Naurski bölgesi Rubejnoye köyünde doğdu ve Hakmado taypına mensuptu. Çeçenistan’ın özgürlük ve bağımsızlık mücadelesinde Naurski mücahitleriyle birlikte saf tuttu.",
+      "İkinci Rus-Çeçen Savaşı’nda başkent Cahar (Grozni) savunması ve kış yarma harekâtına katıldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyündeki tarihi direniş mevzilerinde çarpıştı. Saadi-Kotar muharebesinde son kurşununa kadar vuruşarak kahramanca şehit düştü."
     ]
   },
   {
@@ -7421,13 +7003,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/isa-canaraliyev.webp",
-        "caption": "İsa Canaraliyev (1980–2000) — Arşiv fotoğrafı."
+        "caption": "İsa Canaraliyev (1980–2000)"
       }
     ],
-    "summary": "20 Mayıs 1980’de Urus-Martan’da dünyaya geldi ve Çeçenlerin köklü beno taypına mensuptu. Gençliğinin baharında İkinci rus-çeçen savaşı başlayınca vatan savunmasına koştu.",
+    "summary": "20 Mayıs 1980’de Urus-Martan’da dünyaya geldi ve Çeçenlerin köklü Beno taypına mensuptu. Gençliğinin baharında İkinci Rus-Çeçen Savaşı başlayınca vatan savunmasına koştu.",
     "bio": [
-      "20 Mayıs 1980’de Urus-Martan’da dünyaya geldi ve Çeçenlerin köklü beno taypına mensuptu. Gençliğinin baharında İkinci rus-çeçen savaşı başlayınca vatan savunmasına koştu.",
-      "Kuşatma altındaki başkent Cahar savunmasında ve Şubat 2000’deki zorlu kış yürüyüşünde yer Aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyünde Rus ordusuna karşı omuz omuza direndi. Henüz on dokuz yaşında Saadi-Kotar muharebesinde kahramanca şehit düştü."
+      "20 Mayıs 1980’de Urus-Martan’da dünyaya geldi ve Çeçenlerin köklü Beno taypına mensuptu. Gençliğinin baharında İkinci Rus-Çeçen Savaşı başlayınca vatan savunmasına koştu.",
+      "Kuşatma altındaki başkent Cahar savunmasında ve Şubat 2000’deki zorlu kış yürüyüşünde yer aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyünde Rus ordusuna karşı omuz omuza direndi. Henüz on dokuz yaşında Saadi-Kotar muharebesinde kahramanca şehit düştü."
     ]
   },
   {
@@ -7445,13 +7027,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/musa-magomadov.webp",
-        "caption": "Musa Magomadov (1980–2000) — Arşiv fotoğrafı."
+        "caption": "Musa Magomadov (1980–2000)"
       }
     ],
-    "summary": "1980 yılında Çeçenistan’da doğdu, dört kahraman Magomadov kardeşin en küçüğüydü. Ağabeyleri muhammed, ebubekir ve muhammed-emin ile birlikte vatan savunmasında silah kuşandı.",
+    "summary": "1980 yılında Çeçenistan’da doğdu, dört kahraman Magomadov kardeşin en küçüğüydü. Ağabeyleri Muhammed, Ebubekir ve Muhammed-Emin ile birlikte vatan savunmasında silah kuşandı.",
     "bio": [
-      "1980 yılında Çeçenistan’da doğdu, dört kahraman Magomadov kardeşin en küçüğüydü. Ağabeyleri muhammed, ebubekir ve muhammed-emin ile birlikte vatan savunmasında silah kuşandı.",
-      "İkinci rus-çeçen savaşı’nda başkent Cahar savunması ve Güney yarma harekâtında görev Aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyünde üç ağabeyiyle aynı siperde savaştı. Yirmi yaşında üç ağabeyiyle birlikte Saadi-Kotar’da çarpışarak kahramanca şehit düştü."
+      "1980 yılında Çeçenistan’da doğdu, dört kahraman Magomadov kardeşin en küçüğüydü. Ağabeyleri Muhammed, Ebubekir ve Muhammed-Emin ile birlikte vatan savunmasında silah kuşandı.",
+      "İkinci Rus-Çeçen Savaşı’nda başkent Cahar savunması ve güney yarma harekâtında görev aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyünde üç ağabeyiyle aynı siperde savaştı. Yirmi yaşında üç ağabeyiyle birlikte Saadi-Kotar’da çarpışarak kahramanca şehit düştü."
     ]
   },
   {
@@ -7469,13 +7051,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/movldi-islamov.webp",
-        "caption": "Movldi İslamov (1958–2000) — Arşiv fotoğrafı."
+        "caption": "Movldi İslamov (1958–2000)"
       }
     ],
-    "summary": "Her iki rus-çeçen savaşı’nda da ön cephede çarpışan kıdemli İçkerya mücahitlerindendi. Ocak 1996’daki tarihi pervomaysk harekâtı’na katılarak kuşatmayı yaran gaziler arasında yer Aldı.",
+    "summary": "Her iki Rus-Çeçen Savaşı’nda da ön cephede çarpışan kıdemli İçkerya mücahitlerindendi. Ocak 1996’daki tarihi Pervomaysk Harekâtı’na katılarak kuşatmayı yaran gaziler arasında yer aldı.",
     "bio": [
-      "Her iki rus-çeçen savaşı’nda da ön cephede çarpışan kıdemli İçkerya mücahitlerindendi. Ocak 1996’daki tarihi pervomaysk harekâtı’na katılarak kuşatmayı yaran gaziler arasında yer Aldı.",
-      "Birinci savaş zaferinin ardından şelkovskoy bölgesi çervlyonnaya idare başkanlığı görevini yürüttü. 1999’da Rus işgali yeniden başlayınca makamını bırakıp tekrar cephe saflarına koştu. İkinci rus-çeçen savaşı’nda vatan topraklarını savunurken kahramanca şehit düştü."
+      "Her iki Rus-Çeçen Savaşı’nda da ön cephede çarpışan kıdemli İçkerya mücahitlerindendi. Ocak 1996’daki tarihi Pervomaysk Harekâtı’na katılarak kuşatmayı yaran gaziler arasında yer aldı.",
+      "Birinci savaş zaferinin ardından Şelkovskoy bölgesi Çervlyonnaya idare başkanlığı görevini yürüttü. 1999’da Rus işgali yeniden başlayınca makamını bırakıp tekrar cephe saflarına koştu. İkinci Rus-Çeçen Savaşı’nda vatan topraklarını savunurken kahramanca şehit düştü."
     ]
   },
   {
@@ -7493,13 +7075,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/arbi-visayev.webp",
-        "caption": "Arbi Visayev (1973–2000) — Arşiv fotoğrafı."
+        "caption": "Arbi Visayev (1973–2000)"
       }
     ],
-    "summary": "1973 yılında Urus-Martan’ın goyskoye köyünde doğdu ve köklü terlo taypına mensuptu. Çeçen İçkerya Cumhuriyeti Silahlı Kuvvetleri’ne bağlı Şatoy Alayı saflarında görev yaptı.",
+    "summary": "1973 yılında Urus-Martan’ın Goyskoye köyünde doğdu ve köklü Terlo taypına mensuptu. Çeçen İçkerya Cumhuriyeti Silahlı Kuvvetleri’ne bağlı Şatoy Alayı saflarında görev yaptı.",
     "bio": [
-      "1973 yılında Urus-Martan’ın goyskoye köyünde doğdu ve köklü terlo taypına mensuptu. Çeçen İçkerya Cumhuriyeti Silahlı Kuvvetleri’ne bağlı Şatoy Alayı saflarında görev yaptı.",
-      "İkinci rus-çeçen savaşı’nda başkent Cahar ve Güney dağ geçitlerindeki çatışmalara katıldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyündeki tarihi direniş mevzilerinde savaştı. Mart 2000’de Saadi-Kotar muharebesinde son nefesine dek çarpışarak şehit düştü."
+      "1973 yılında Urus-Martan’ın Goyskoye köyünde doğdu ve köklü Terlo taypına mensuptu. Çeçen İçkerya Cumhuriyeti Silahlı Kuvvetleri’ne bağlı Şatoy Alayı saflarında görev yaptı.",
+      "İkinci Rus-Çeçen Savaşı’nda başkent Cahar ve güney dağ geçitlerindeki çatışmalara katıldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyündeki tarihi direniş mevzilerinde savaştı. Mart 2000’de Saadi-Kotar muharebesinde son nefesine dek çarpışarak şehit düştü."
     ]
   },
   {
@@ -7517,13 +7099,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/vahid-visayev.webp",
-        "caption": "Vahid Visayev (1974–2000) — Arşiv fotoğrafı."
+        "caption": "Vahid Visayev (1974–2000)"
       }
     ],
-    "summary": "1974 yılında Çeçenistan’da dünyaya geldi ve Çeçenlerin terlo taypına mensuptu. İkinci rus-çeçen savaşı’nda Komutan abu elmurzayev’in birliği saflarında cepheye katıldı.",
+    "summary": "1974 yılında Çeçenistan’da dünyaya geldi ve Çeçenlerin Terlo taypına mensuptu. İkinci Rus-Çeçen Savaşı’nda Komutan Abu Elmurzayev’in birliği saflarında cepheye katıldı.",
     "bio": [
-      "1974 yılında Çeçenistan’da dünyaya geldi ve Çeçenlerin terlo taypına mensuptu. İkinci rus-çeçen savaşı’nda Komutan abu elmurzayev’in birliği saflarında cepheye katıldı.",
-      "Kuşatma altındaki başkent Cahar (Grozni) savunmasında en ön hatlarda görev Aldı. Süra-Kort tepeleri ve otuzuncu bölge mevzilerinde ağır Rus saldırılarına karşı direndi. Ocak 2000 başında süra-kort hattındaki yoğun topçu ateşinde kahramanca şehit düştü."
+      "1974 yılında Çeçenistan’da dünyaya geldi ve Çeçenlerin Terlo taypına mensuptu. İkinci Rus-Çeçen Savaşı’nda Komutan Abu Elmurzayev’in birliği saflarında cepheye katıldı.",
+      "Kuşatma altındaki başkent Cahar (Grozni) savunmasında en ön hatlarda görev aldı. Süra-Kort tepeleri ve otuzuncu bölge mevzilerinde ağır Rus saldırılarına karşı direndi. Ocak 2000 başında Süra-Kort hattındaki yoğun topçu ateşinde kahramanca şehit düştü."
     ]
   },
   {
@@ -7541,13 +7123,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/hamzat-bamatgiriyev.webp",
-        "caption": "Hamzat Bamatgiriyev (1981–2000) — Arşiv fotoğrafı."
+        "caption": "Hamzat Bamatgiriyev (1981–2000)"
       }
     ],
-    "summary": "1981 yılında doğdu, Dişni taypına mensuptu ve İçkerya Tuğgenerali vahid Bamatgiriyev’in oğluydu. Gençliğinin baharında babası vahid Bamatgiriyev’in yanında vatan savunması saflarına katıldı.",
+    "summary": "1981 yılında doğdu, Dişni taypına mensuptu ve İçkerya Tuğgenerali Vahid Bamatgiriyev’in oğluydu. Gençliğinin baharında babası Vahid Bamatgiriyev’in yanında vatan savunması saflarına katıldı.",
     "bio": [
-      "1981 yılında doğdu, Dişni taypına mensuptu ve İçkerya Tuğgenerali vahid Bamatgiriyev’in oğluydu. Gençliğinin baharında babası vahid Bamatgiriyev’in yanında vatan savunması saflarına katıldı.",
-      "İkinci rus-çeçen savaşı’nda başkent Cahar savunması ve kış yarma harekâtında yer Aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyünde babasıyla omuz omuza işgalcilere direndi. Henüz on dokuz yaşında babasıyla birlikte Saadi-Kotar’da vuruşarak kahramanca şehit düştü."
+      "1981 yılında doğdu, Dişni taypına mensuptu ve İçkerya Tuğgenerali Vahid Bamatgiriyev’in oğluydu. Gençliğinin baharında babası Vahid Bamatgiriyev’in yanında vatan savunması saflarına katıldı.",
+      "İkinci Rus-Çeçen Savaşı’nda başkent Cahar savunması ve kış yarma harekâtında yer aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyünde babasıyla omuz omuza işgalcilere direndi. Henüz on dokuz yaşında babasıyla birlikte Saadi-Kotar’da vuruşarak kahramanca şehit düştü."
     ]
   },
   {
@@ -7565,13 +7147,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ebubekir-magomadov.webp",
-        "caption": "Ebubekir Magomadov (1971–2000) — Arşiv fotoğrafı."
+        "caption": "Ebubekir Magomadov (1971–2000)"
       }
     ],
-    "summary": "1971 yılında doğdu, vatan yolunda can veren dört kahraman Magomadov kardeşten biriydi. Kardeşleri muhammed, musa ve muhammed-emin ile birlikte Çeçen direnişi saflarında savaştı.",
+    "summary": "1971 yılında doğdu, vatan yolunda can veren dört kahraman Magomadov kardeşten biriydi. Kardeşleri Muhammed, Musa ve Muhammed-Emin ile birlikte Çeçen direnişi saflarında savaştı.",
     "bio": [
-      "1971 yılında doğdu, vatan yolunda can veren dört kahraman Magomadov kardeşten biriydi. Kardeşleri muhammed, musa ve muhammed-emin ile birlikte Çeçen direnişi saflarında savaştı.",
-      "İkinci rus-çeçen savaşı’nda başkent Cahar kuşatması ve zorlu kış yürüyüşüne katıldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyünde üç kardeşiyle aynı cephede vuruştu. Mart 2000’de üç kardeşiyle birlikte Saadi-Kotar direnişinde kahramanca şehit düştü."
+      "1971 yılında doğdu, vatan yolunda can veren dört kahraman Magomadov kardeşten biriydi. Kardeşleri Muhammed, Musa ve Muhammed-Emin ile birlikte Çeçen direnişi saflarında savaştı.",
+      "İkinci Rus-Çeçen Savaşı’nda başkent Cahar kuşatması ve zorlu kış yürüyüşüne katıldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyünde üç kardeşiyle aynı cephede vuruştu. Mart 2000’de üç kardeşiyle birlikte Saadi-Kotar direnişinde kahramanca şehit düştü."
     ]
   },
   {
@@ -7589,13 +7171,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/apti-cukayev.webp",
-        "caption": "Apti Çukayev (1978–2000) — Arşiv fotoğrafı."
+        "caption": "Apti Çukayev (1978–2000)"
       }
     ],
-    "summary": "1978 yılında Gudermes şehrinde doğdu ve genç yaşta Komutan abdurrahman’ın Cemaatine katıldı. İkinci rus-çeçen savaşı’nda Argun boğazı girişindeki kritik savunma hatlarında görev Aldı.",
+    "summary": "1978 yılında Gudermes şehrinde doğdu ve genç yaşta Komutan Abdurrahman’ın cemaatine katıldı. İkinci Rus-Çeçen Savaşı’nda Argun boğazı girişindeki kritik savunma hatlarında görev aldı.",
     "bio": [
-      "1978 yılında Gudermes şehrinde doğdu ve genç yaşta Komutan abdurrahman’ın Cemaatine katıldı. İkinci rus-çeçen savaşı’nda Argun boğazı girişindeki kritik savunma hatlarında görev Aldı.",
-      "Ocak 2000’de Duba-Yurt civarındaki stratejik 825 rakımlı tepe hücumunda en önde yürüdü. Dondurucu kış şartlarında Rus mevzilerine karşı sarsılmaz bir cesaret ve imanla çarpıştı. 15 Ocak 2000’de 825 rakımlı tepe’yi ele geçirme harekâtında kahramanca şehit düştü."
+      "1978 yılında Gudermes şehrinde doğdu ve genç yaşta Komutan Abdurrahman’ın cemaatine katıldı. İkinci Rus-Çeçen Savaşı’nda Argun boğazı girişindeki kritik savunma hatlarında görev aldı.",
+      "Ocak 2000’de Duba-Yurt civarındaki stratejik 825 rakımlı tepe hücumunda en önde yürüdü. Dondurucu kış şartlarında Rus mevzilerine karşı sarsılmaz bir cesaret ve imanla çarpıştı. 15 Ocak 2000’de 825 Rakımlı Tepe’yi ele geçirme harekâtında kahramanca şehit düştü."
     ]
   },
   {
@@ -7613,13 +7195,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ilyas-umhayev.webp",
-        "caption": "İlyas Umhayev (1977–2000) — Arşiv fotoğrafı."
+        "caption": "İlyas Umhayev (1977–2000)"
       }
     ],
-    "summary": "1977 yılında Gudermes şehrinde dünyaya geldi ve Komutan abdurrahman’ın Cemaatinde yer Aldı. İkinci rus-çeçen savaşı’nda Gudermesli kardeşleriyle birlikte ön cephe muharebelerine katıldı.",
+    "summary": "1977 yılında Gudermes şehrinde dünyaya geldi ve Komutan Abdurrahman’ın cemaatinde yer aldı. İkinci Rus-Çeçen Savaşı’nda Gudermesli kardeşleriyle birlikte ön cephe muharebelerine katıldı.",
     "bio": [
-      "1977 yılında Gudermes şehrinde dünyaya geldi ve Komutan abdurrahman’ın Cemaatinde yer Aldı. İkinci rus-çeçen savaşı’nda Gudermesli kardeşleriyle birlikte ön cephe muharebelerine katıldı.",
-      "Ocak 2000’deki Duba-Yurt ve Güney dağ hattı çatışmalarında büyük fedakârlık gösterdi. Ağır kış ve kuşatma altında yaralı silah arkadaşlarını asla yalnız bırakmadı. Mart 2000 başında duts-hote köyüne düzenlenen Rus füze saldırısında şehit düştü."
+      "1977 yılında Gudermes şehrinde dünyaya geldi ve Komutan Abdurrahman’ın cemaatinde yer aldı. İkinci Rus-Çeçen Savaşı’nda Gudermesli kardeşleriyle birlikte ön cephe muharebelerine katıldı.",
+      "Ocak 2000’deki Duba-Yurt ve güney dağ hattı çatışmalarında büyük fedakârlık gösterdi. Ağır kış ve kuşatma altında yaralı silah arkadaşlarını asla yalnız bırakmadı. Mart 2000 başında Duts-Hote köyüne düzenlenen Rus füze saldırısında şehit düştü."
     ]
   },
   {
@@ -7637,13 +7219,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/idris-amayev.webp",
-        "caption": "İdris Amayev (1975–2000) — Arşiv fotoğrafı."
+        "caption": "İdris Amayev (1975–2000)"
       }
     ],
-    "summary": "1975 yılında naurski bölgesi novoterskoye köyünde doğdu ve himo taypına mensuptu. İkinci rus-çeçen savaşı’nda İçkerya ordusu’nun naurski Taburu saflarında silah kuşandı.",
+    "summary": "1975 yılında Naurski bölgesi Novoterskoye köyünde doğdu ve Himo taypına mensuptu. İkinci Rus-Çeçen Savaşı’nda İçkerya Ordusu’nun Naurski Taburu saflarında silah kuşandı.",
     "bio": [
-      "1975 yılında naurski bölgesi novoterskoye köyünde doğdu ve himo taypına mensuptu. İkinci rus-çeçen savaşı’nda İçkerya ordusu’nun naurski Taburu saflarında silah kuşandı.",
-      "Kuşatma altındaki başkent Cahar savunmasında silah arkadaşı aslanbek murtsaliyev ile savaştı. Şubat 2000 yarma harekâtıyla Saadi-Kotar (Komsomolskoye) direniş mevzilerine ulaştı. Mart 2000’de Saadi-Kotar muharebesinde işgalcilere karşı çarpışarak şehit düştü."
+      "1975 yılında Naurski bölgesi Novoterskoye köyünde doğdu ve Himo taypına mensuptu. İkinci Rus-Çeçen Savaşı’nda İçkerya Ordusu’nun Naurski Taburu saflarında silah kuşandı.",
+      "Kuşatma altındaki başkent Cahar savunmasında silah arkadaşı Aslanbek Murtsaliyev ile savaştı. Şubat 2000 yarma harekâtıyla Saadi-Kotar (Komsomolskoye) direniş mevzilerine ulaştı. Mart 2000’de Saadi-Kotar muharebesinde işgalcilere karşı çarpışarak şehit düştü."
     ]
   },
   {
@@ -7661,13 +7243,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/umar-borcasvili.webp",
-        "caption": "Umar Borçaşvili (1967–2000) — Arşiv fotoğrafı."
+        "caption": "Umar Borçaşvili (1967–2000)"
       }
     ],
     "summary": "1967 yılında dünyaya geldi ve Çeçenistan’ın batısındaki Assinovskaya beldesinde yaşadı. Vatanseverliği, cesareti ve sarsılmaz imanıyla çevresinde saygı gören bir mücahitti.",
     "bio": [
       "1967 yılında dünyaya geldi ve Çeçenistan’ın batısındaki Assinovskaya beldesinde yaşadı. Vatanseverliği, cesareti ve sarsılmaz imanıyla çevresinde saygı gören bir mücahitti.",
-      "İkinci rus-çeçen savaşı’nda başkent Cahar’dan Güney dağ eteklerine kadar cephede vuruştu. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyündeki çetin kuşatma hattında görev yaptı. Mart 2000’de Saadi-Kotar direnişinde son kurşununa kadar savaşarak şehit düştü."
+      "İkinci Rus-Çeçen Savaşı’nda başkent Cahar’dan güney dağ eteklerine kadar cephede vuruştu. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyündeki çetin kuşatma hattında görev yaptı. Mart 2000’de Saadi-Kotar direnişinde son kurşununa kadar savaşarak şehit düştü."
     ]
   },
   {
@@ -7685,13 +7267,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/has-muhammed-edilsultanov.webp",
-        "caption": "Has-Muhammed Edilsultanov (1976–2000) — Arşiv fotoğrafı."
+        "caption": "Has-Muhammed Edilsultanov (1976–2000)"
       }
     ],
-    "summary": "1976 yılında Kurçaloy bölgesinin Geldagan köyünde doğdu ve şono taypına mensuptu. Genç yaşta Çeçen İçkerya Cumhuriyeti’nin bağımsızlığını korumak için direnişe katıldı.",
+    "summary": "1976 yılında Kurçaloy bölgesinin Geldagan köyünde doğdu ve Şono taypına mensuptu. Genç yaşta Çeçen İçkerya Cumhuriyeti’nin bağımsızlığını korumak için direnişe katıldı.",
     "bio": [
-      "1976 yılında Kurçaloy bölgesinin Geldagan köyünde doğdu ve şono taypına mensuptu. Genç yaşta Çeçen İçkerya Cumhuriyeti’nin bağımsızlığını korumak için direnişe katıldı.",
-      "İkinci rus-çeçen savaşı’nda başkent Cahar kuşatması ve kış yarma harekâtında çarpıştı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyünde ezici Rus güçlerine karşı direndi. Yirmi dört yaşında Saadi-Kotar muharebesinde vatanı uğruna kahramanca şehit düştü."
+      "1976 yılında Kurçaloy bölgesinin Geldagan köyünde doğdu ve Şono taypına mensuptu. Genç yaşta Çeçen İçkerya Cumhuriyeti’nin bağımsızlığını korumak için direnişe katıldı.",
+      "İkinci Rus-Çeçen Savaşı’nda başkent Cahar kuşatması ve kış yarma harekâtında çarpıştı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyünde ezici Rus güçlerine karşı direndi. Yirmi dört yaşında Saadi-Kotar muharebesinde vatanı uğruna kahramanca şehit düştü."
     ]
   },
   {
@@ -7709,13 +7291,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/saaman-magomadov.webp",
-        "caption": "Şaaman Magomadov (1973–1994) — Arşiv fotoğrafı."
+        "caption": "Şaaman Magomadov (1973–1994)"
       }
     ],
-    "summary": "17 Mart 1973’te Urus-Martan’ın tangi-çu köyünde doğdu ve belgato taypına mensuptu. Genç yaşta Çeçen halkının özgürlük ve bağımsızlık mücadelesi saflarında yer Aldı.",
+    "summary": "17 Mart 1973’te Urus-Martan’ın Tangi-Çu köyünde doğdu ve Belgato taypına mensuptu. Genç yaşta Çeçen halkının özgürlük ve bağımsızlık mücadelesi saflarında yer aldı.",
     "bio": [
-      "17 Mart 1973’te Urus-Martan’ın tangi-çu köyünde doğdu ve belgato taypına mensuptu. Genç yaşta Çeçen halkının özgürlük ve bağımsızlık mücadelesi saflarında yer Aldı.",
-      "Ekim 1994’te Rus istihbaratı destekli gantemirov paralı güçlerine karşı harekete geçti. Altı silah arkadaşıyla Gehi’deki işgal edilmiş füze üssünü kurtarma baskınına öncülük etti. Ekim 1994’te Gehi füze üssü çatışmasında yirmi bir yaşında kahramanca şehit düştü."
+      "17 Mart 1973’te Urus-Martan’ın Tangi-Çu köyünde doğdu ve Belgato taypına mensuptu. Genç yaşta Çeçen halkının özgürlük ve bağımsızlık mücadelesi saflarında yer aldı.",
+      "Ekim 1994’te Rus istihbaratı destekli Gantemirov paralı güçlerine karşı harekete geçti. Altı silah arkadaşıyla Gehi’deki işgal edilmiş füze üssünü kurtarma baskınına öncülük etti. Ekim 1994’te Gehi füze üssü çatışmasında yirmi bir yaşında kahramanca şehit düştü."
     ]
   },
   {
@@ -7733,13 +7315,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/zambek-isayev.webp",
-        "caption": "Zambek İsayev (1960–2000) — Arşiv fotoğrafı."
+        "caption": "Zambek İsayev (1960–2000)"
       }
     ],
     "summary": "1960 yılında dünyaya geldi, Sernovodsk beldesindendi ve köklü Dişni taypına mensuptu. Silah arkadaşları arasında ‘Kaga’ lakabıyla tanınan cesur ve tecrübeli bir mücahitti.",
     "bio": [
       "1960 yılında dünyaya geldi, Sernovodsk beldesindendi ve köklü Dişni taypına mensuptu. Silah arkadaşları arasında ‘Kaga’ lakabıyla tanınan cesur ve tecrübeli bir mücahitti.",
-      "İkinci rus-çeçen savaşı’nda vatan topraklarını Rus işgaline karşı ön cephede savundu. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyüne açılan stratejik vadi girişini tuttu. Mart 2000’de Saadi-Kotar vadisi girişinde işgalcilerle çarpışarak kahramanca şehit düştü."
+      "İkinci Rus-Çeçen Savaşı’nda vatan topraklarını Rus işgaline karşı ön cephede savundu. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyüne açılan stratejik vadi girişini tuttu. Mart 2000’de Saadi-Kotar vadisi girişinde işgalcilerle çarpışarak kahramanca şehit düştü."
     ]
   },
   {
@@ -7757,13 +7339,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/islam-baysangurov.webp",
-        "caption": "İslam Baysangurov (1978–2000) — Arşiv fotoğrafı."
+        "caption": "İslam Baysangurov (1978–2000)"
       }
     ],
-    "summary": "1978 yılında Çeçenistan’ın batısındaki Sernovodskoye’de doğdu ve terlo taypına mensuptu. Gençliğinin baharında Çeçen İçkerya Cumhuriyeti’ni savunmak için direniş saflarına katıldı.",
+    "summary": "1978 yılında Çeçenistan’ın batısındaki Sernovodskoye’de doğdu ve Terlo taypına mensuptu. Gençliğinin baharında Çeçen İçkerya Cumhuriyeti’ni savunmak için direniş saflarına katıldı.",
     "bio": [
-      "1978 yılında Çeçenistan’ın batısındaki Sernovodskoye’de doğdu ve terlo taypına mensuptu. Gençliğinin baharında Çeçen İçkerya Cumhuriyeti’ni savunmak için direniş saflarına katıldı.",
-      "İkinci rus-çeçen savaşı’nda ağır kış kuşatması ve cephe muharebelerinde görev Aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyünde ezici Rus kuşatmasına karşı direndi. Mart 2000’de henüz yirmi iki yaşındayken Saadi-Kotar’da kahramanca şehit düştü."
+      "1978 yılında Çeçenistan’ın batısındaki Sernovodskoye’de doğdu ve Terlo taypına mensuptu. Gençliğinin baharında Çeçen İçkerya Cumhuriyeti’ni savunmak için direniş saflarına katıldı.",
+      "İkinci Rus-Çeçen Savaşı’nda ağır kış kuşatması ve cephe muharebelerinde görev aldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyünde ezici Rus kuşatmasına karşı direndi. Mart 2000’de henüz yirmi iki yaşındayken Saadi-Kotar’da kahramanca şehit düştü."
     ]
   },
   {
@@ -7781,13 +7363,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/balavdi-movsarov.webp",
-        "caption": "Balavdi Movsarov (1974–2000) — Arşiv fotoğrafı."
+        "caption": "Balavdi Movsarov (1974–2000)"
       }
     ],
-    "summary": "1974 yılında doğdu, savaş öncesinden itibaren gelayev’in Özel ‘Borz’ birliğinde görev Aldı. Birinci rus-çeçen savaşı’nda Komutan hamzat gelayev ile birçok ağır cephede çarpıştı.",
+    "summary": "1974 yılında doğdu, savaş öncesinden itibaren Gelayev’in özel ‘Borz’ birliğinde görev aldı. Birinci Rus-Çeçen Savaşı’nda Komutan Hamzat Gelayev ile birçok ağır cephede çarpıştı.",
     "bio": [
-      "1974 yılında doğdu, savaş öncesinden itibaren gelayev’in Özel ‘Borz’ birliğinde görev Aldı. Birinci rus-çeçen savaşı’nda Komutan hamzat gelayev ile birçok ağır cephede çarpıştı.",
-      "Şubat 2000’de başkent Cahar’dan mayın tarlasını hamzat gelayev ile omuz omuza yürüyerek aştı. Saadi-Kotar’da mahzendeki gelayev ve mücahitleri ezmek isteyen Rus tankını imha etti. Mart 2000’de Saadi-Kotar’da başını eğmeden son nefesine dek vuruşarak şehit düştü."
+      "1974 yılında doğdu, savaş öncesinden itibaren Gelayev’in özel ‘Borz’ birliğinde görev aldı. Birinci Rus-Çeçen Savaşı’nda Komutan Hamzat Gelayev ile birçok ağır cephede çarpıştı.",
+      "Şubat 2000’de başkent Cahar’dan mayın tarlasını Hamzat Gelayev ile omuz omuza yürüyerek aştı. Saadi-Kotar’da mahzendeki Gelayev ve mücahitleri ezmek isteyen Rus tankını imha etti. Mart 2000’de Saadi-Kotar’da başını eğmeden son nefesine dek vuruşarak şehit düştü."
     ]
   },
   {
@@ -7805,13 +7387,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/yusuf-gobi.webp",
-        "caption": "Yusuf Gobi (1972–2000) — Arşiv fotoğrafı."
+        "caption": "Yusuf Gobi (1972–2000)"
       }
     ],
-    "summary": "1972 yılında başkent Cahar’ın karpinka semtinde doğdu ve phamto taypına mensuptu. Çeçen direnişi saflarında Emir şadid komutasındaki birlikte ön cephe mücahidi olarak savaştı.",
+    "summary": "1972 yılında başkent Cahar’ın karpinka semtinde doğdu ve Phamto taypına mensuptu. Çeçen direnişi saflarında Emir Şadid komutasındaki birlikte ön cephe mücahidi olarak savaştı.",
     "bio": [
-      "1972 yılında başkent Cahar’ın karpinka semtinde doğdu ve phamto taypına mensuptu. Çeçen direnişi saflarında Emir şadid komutasındaki birlikte ön cephe mücahidi olarak savaştı.",
-      "İkinci rus-çeçen savaşı’nda başkent Cahar savunması ve kış yarma harekâtına katıldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyündeki çetin savunma mevzilerinde vuruştu. Mart 2000’de Saadi-Kotar direnişinde vatanı ve inancı uğruna şehit düştü."
+      "1972 yılında başkent Cahar’ın karpinka semtinde doğdu ve Phamto taypına mensuptu. Çeçen direnişi saflarında Emir Şadid komutasındaki birlikte ön cephe mücahidi olarak savaştı.",
+      "İkinci Rus-Çeçen Savaşı’nda başkent Cahar savunması ve kış yarma harekâtına katıldı. Mart 2000’de Saadi-Kotar (Komsomolskoye) köyündeki çetin savunma mevzilerinde vuruştu. Mart 2000’de Saadi-Kotar direnişinde vatanı ve inancı uğruna şehit düştü."
     ]
   },
   {
@@ -7829,13 +7411,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ismail-razakov.webp",
-        "caption": "İsmail Razakov (1969–2000) — Arşiv fotoğrafı."
+        "caption": "İsmail Razakov (1969–2000)"
       }
     ],
-    "summary": "1969 yılında Grozni bölgesinin ilinovka köyünde doğdu ve ‘Emir bagram’ lakabıyla tanındı. Birinci rus-çeçen savaşı’ndan itibaren ön cephede birliklere komuta eden cesur bir emirdi.",
+    "summary": "1969 yılında Grozni bölgesinin İlinovka köyünde doğdu ve ‘Emir Bagram’ lakabıyla tanındı. Birinci Rus-Çeçen Savaşı’ndan itibaren ön cephede birliklere komuta eden cesur bir emirdi.",
     "bio": [
-      "1969 yılında Grozni bölgesinin ilinovka köyünde doğdu ve ‘Emir bagram’ lakabıyla tanındı. Birinci rus-çeçen savaşı’ndan itibaren ön cephede birliklere komuta eden cesur bir emirdi.",
-      "Çatışmalarda bir gözünü kaybetmesine rağmen cepheden ayrılmayıp mücadeleyi sürdürdü. İkinci rus-çeçen savaşı’nın en ağır kış muharebelerinde mücahitlere öncülük etti. Şubat 2000’de Rus işgalcilere karşı yürütülen kış direnişinde kahramanca şehit düştü."
+      "1969 yılında Grozni bölgesinin İlinovka köyünde doğdu ve ‘Emir Bagram’ lakabıyla tanındı. Birinci Rus-Çeçen Savaşı’ndan itibaren ön cephede birliklere komuta eden cesur bir emirdi.",
+      "Çatışmalarda bir gözünü kaybetmesine rağmen cepheden ayrılmayıp mücadeleyi sürdürdü. İkinci Rus-Çeçen Savaşı’nın en ağır kış muharebelerinde mücahitlere öncülük etti. Şubat 2000’de Rus işgalcilere karşı yürütülen kış direnişinde kahramanca şehit düştü."
     ]
   },
   {
@@ -7853,13 +7435,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/rasid-molayev.webp",
-        "caption": "Raşid Molayev (1960–2021) — Arşiv fotoğrafı."
+        "caption": "Raşid Molayev (1960–2021)"
       }
     ],
-    "summary": "1960 yılında doğdu, özgürlük yoluna baş koyan köklü Molayev ailesinin mensubuydu. Her iki rus-çeçen savaşı’na da ilk günden itibaren kardeşleriyle birlikte ön cephede katıldı.",
+    "summary": "1960 yılında doğdu, özgürlük yoluna baş koyan köklü Molayev ailesinin mensubuydu. Her iki Rus-Çeçen Savaşı’na da ilk günden itibaren kardeşleriyle birlikte ön cephede katıldı.",
     "bio": [
-      "1960 yılında doğdu, özgürlük yoluna baş koyan köklü Molayev ailesinin mensubuydu. Her iki rus-çeçen savaşı’na da ilk günden itibaren kardeşleriyle birlikte ön cephede katıldı.",
-      "Kardeşinin 2004’teki şehadetinin ardından da yıllarca dağlarda direniş sancağını bırakmadı. Çeçen mücahitlerin emiri hamzat (Aslan bütükayev) ile birlikte zorlu kış şartlarında direndi. 20 Ocak 2021’de katar-yurt yakınlarında düşmanın hain pususunda şehit düştü."
+      "1960 yılında doğdu, özgürlük yoluna baş koyan köklü Molayev ailesinin mensubuydu. Her iki Rus-Çeçen Savaşı’na da ilk günden itibaren kardeşleriyle birlikte ön cephede katıldı.",
+      "Kardeşinin 2004’teki şehadetinin ardından da yıllarca dağlarda direniş sancağını bırakmadı. Çeçen mücahitlerin emiri Hamzat (Aslan Bütükayev) ile birlikte zorlu kış şartlarında direndi. 20 Ocak 2021’de Katar-Yurt yakınlarında düşmanın hain pususunda şehit düştü."
     ]
   },
   {
@@ -7877,13 +7459,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/isa-bazurkayev.webp",
-        "caption": "İsa Bazurkayev (1979–2021) — Arşiv fotoğrafı."
+        "caption": "İsa Bazurkayev (1979–2021)"
       }
     ],
     "summary": "1979 yılında Çeçenistan’da dünyaya geldi ve direnişte ‘İsak’ lakabıyla tanındı. 2006 yılından itibaren Rus işgal güçlerinin on beş yıl boyunca yakalayamadığı bir mücahitti.",
     "bio": [
       "1979 yılında Çeçenistan’da dünyaya geldi ve direnişte ‘İsak’ lakabıyla tanındı. 2006 yılından itibaren Rus işgal güçlerinin on beş yıl boyunca yakalayamadığı bir mücahitti.",
-      "Dağlardaki dondurucu kışlara ve tam kuşatmaya rağmen sarsılmaz bir imanla yaşadı. Emir hamzat (Aslan bütükayev) komutasındaki son direniş birliğinde omuz omuza görev Aldı. 20 Ocak 2021’de katar-yurt bölgesinde silah arkadaşlarıyla birlikte şehit düştü."
+      "Dağlardaki dondurucu kışlara ve tam kuşatmaya rağmen sarsılmaz bir imanla yaşadı. Emir Hamzat (Aslan Bütükayev) komutasındaki son direniş birliğinde omuz omuza görev aldı. 20 Ocak 2021’de Katar-Yurt bölgesinde silah arkadaşlarıyla birlikte şehit düştü."
     ]
   },
   {
@@ -7901,13 +7483,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/vahit-darsayev.webp",
-        "caption": "Vahit Darşayev (1987–2021) — Arşiv fotoğrafı."
+        "caption": "Vahit Darşayev (1987–2021)"
       }
     ],
     "summary": "1987 yılında Çeçenistan’da doğdu ve mücahitler arasında ‘Basri’ lakabıyla bilindi. Genç yaşta işgalcilerin zulmüne boyun eğmeyerek Çeçenistan dağlarındaki direnişe katıldı.",
     "bio": [
       "1987 yılında Çeçenistan’da doğdu ve mücahitler arasında ‘Basri’ lakabıyla bilindi. Genç yaşta işgalcilerin zulmüne boyun eğmeyerek Çeçenistan dağlarındaki direnişe katıldı.",
-      "Yıllar süren ağır mahrumiyet, soğuk ve takibe karşı ahdi ve imanından taviz vermedi. Emir hamzat (Aslan bütükayev) ve dört sadık yoldaşıyla son nefesine kadar birlikte kaldı. 20 Ocak 2021’de katar-yurt civarındaki gizli üste hain komployla şehit düştü."
+      "Yıllar süren ağır mahrumiyet, soğuk ve takibe karşı ahdi ve imanından taviz vermedi. Emir Hamzat (Aslan Bütükayev) ve dört sadık yoldaşıyla son nefesine kadar birlikte kaldı. 20 Ocak 2021’de Katar-Yurt civarındaki gizli üste hain komployla şehit düştü."
     ]
   },
   {
@@ -7925,13 +7507,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/samhan-saraliyev.webp",
-        "caption": "Şamhan Saraliyev (1996–2021) — Arşiv fotoğrafı."
+        "caption": "Şamhan Saraliyev (1996–2021)"
       }
     ],
-    "summary": "1996 yılında Çeçenistan’da dünyaya geldi, aslambek Saraliyev’in kahraman oğluydu. Henüz gençliğinin ilk yıllarında dünya rahatını terk ederek özgürlük mücadelesine katıldı.",
+    "summary": "1996 yılında Çeçenistan’da dünyaya geldi, Aslambek Saraliyev’in kahraman oğluydu. Henüz gençliğinin ilk yıllarında dünya rahatını terk ederek özgürlük mücadelesine katıldı.",
     "bio": [
-      "1996 yılında Çeçenistan’da dünyaya geldi, aslambek Saraliyev’in kahraman oğluydu. Henüz gençliğinin ilk yıllarında dünya rahatını terk ederek özgürlük mücadelesine katıldı.",
-      "Kuşatma altındaki dağlarda açlık ve dondurucu soğukta yalnızca Allah’a tevekkül etti. Emir hamzat (Aslan bütükayev) yanında kıdemli gazilerle aynı siperi ve kaderi paylaştı. 20 Ocak 2021’de katar-yurt yakınlarında yirmi beş yaşında kahramanca şehit düştü."
+      "1996 yılında Çeçenistan’da dünyaya geldi, Aslambek Saraliyev’in kahraman oğluydu. Henüz gençliğinin ilk yıllarında dünya rahatını terk ederek özgürlük mücadelesine katıldı.",
+      "Kuşatma altındaki dağlarda açlık ve dondurucu soğukta yalnızca Allah’a tevekkül etti. Emir Hamzat (Aslan Bütükayev) yanında kıdemli gazilerle aynı siperi ve kaderi paylaştı. 20 Ocak 2021’de Katar-Yurt yakınlarında yirmi beş yaşında kahramanca şehit düştü."
     ]
   },
   {
@@ -7949,12 +7531,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/turpal-ali-mejidov.webp",
-        "caption": "Turpal-Ali Mejidov (1990–2026) — Arşiv fotoğrafı."
+        "caption": "Turpal-Ali Mejidov (1990–2026)"
       }
     ],
-    "summary": "1990 yılında Gudermes’te doğdu, ihlası ve cesaretiyle tanınan yiğit bir Çeçen Konah’ıydı. İnsanları tedavi etti, kutsal topraklara ziyaretler düzenledi ve İslami davet çalışmaları yaptı.",
+    "summary": "1990 yılında Gudermes’te doğdu, ihlası ve cesaretiyle tanınan yiğit bir Çeçen ‘konah’ıydı. İnsanları tedavi etti, kutsal topraklara ziyaretler düzenledi ve İslami davet çalışmaları yaptı.",
     "bio": [
-      "1990 yılında Gudermes’te doğdu, ihlası ve cesaretiyle tanınan yiğit bir Çeçen Konah’ıydı. İnsanları tedavi etti, kutsal topraklara ziyaretler düzenledi ve İslami davet çalışmaları yaptı.",
+      "1990 yılında Gudermes’te doğdu, ihlası ve cesaretiyle tanınan yiğit bir Çeçen ‘konah’ıydı. İnsanları tedavi etti, kutsal topraklara ziyaretler düzenledi ve İslami davet çalışmaları yaptı.",
       "Rus işgalciler tarafından defalarca kaçırılıp ağır işkencelere maruz kalsa da imanından taviz vermedi. Son yıllarında yeraltı direniş saflarında işgalcilere karşı Allah yolunda mücadele yürüttü. 19 Ekim 2026’da teslim olmayıp son mermisine dek çarpışarak kahramanca şehit düştü."
     ]
   },
@@ -7973,13 +7555,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/leca-cemnigov.webp",
-        "caption": "Leça Cemnigov (1972–2000) — Arşiv fotoğrafı."
+        "caption": "Leça Cemnigov (1972–2000)"
       }
     ],
-    "summary": "1972 yılında Çeçenistan’ın oyshara beldesinde sayd-muhammed Cemnigov’un oğlu olarak doğdu. Genç yaşta Çeçen halkının özgürlük ve bağımsızlık mücadelesi saflarında yer Aldı.",
+    "summary": "1972 yılında Çeçenistan’ın Oyshara beldesinde Sayd-Muhammed Cemnigov’un oğlu olarak doğdu. Genç yaşta Çeçen halkının özgürlük ve bağımsızlık mücadelesi saflarında yer aldı.",
     "bio": [
-      "1972 yılında Çeçenistan’ın oyshara beldesinde sayd-muhammed Cemnigov’un oğlu olarak doğdu. Genç yaşta Çeçen halkının özgürlük ve bağımsızlık mücadelesi saflarında yer Aldı.",
-      "Her iki rus-çeçen savaşı’nda da vatan topraklarını Rus işgal ordularına karşı cesurca savundu. 1999–2000 kışında kuşatma altındaki başkent Cahar-Kala savunma mevzilerinde çarpıştı. 13 Ocak 2000’de başkent Cahar savunmasında yirmi sekiz yaşında kahramanca şehit düştü."
+      "1972 yılında Çeçenistan’ın Oyshara beldesinde Sayd-Muhammed Cemnigov’un oğlu olarak doğdu. Genç yaşta Çeçen halkının özgürlük ve bağımsızlık mücadelesi saflarında yer aldı.",
+      "Her iki Rus-Çeçen Savaşı’nda da vatan topraklarını Rus işgal ordularına karşı cesurca savundu. 1999–2000 kışında kuşatma altındaki başkent Cahar-Kala savunma mevzilerinde çarpıştı. 13 Ocak 2000’de başkent Cahar savunmasında yirmi sekiz yaşında kahramanca şehit düştü."
     ]
   },
   {
@@ -7997,13 +7579,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/yusuf-temirhanov.webp",
-        "caption": "Yusuf Temirhanov (1972–2018) — Arşiv fotoğrafı."
+        "caption": "Yusuf Temirhanov (1972–2018)"
       }
     ],
-    "summary": "6 Mayıs 1972’de Geldagan köyünde doğdu ve Çeçen halkı arasında ‘Milletin onuru’ olarak anıldı. Masum Çeçen kızı elza kungayeva’yı katleden Rus Albay budanov’dan milletin intikamını almaya and içti.",
+    "summary": "6 Mayıs 1972’de Geldagan köyünde doğdu ve Çeçen halkı arasında ‘Milletin Onuru’ olarak anıldı. Masum Çeçen kızı Elza Kungayeva’yı katleden Rus Albay Budanov’dan milletin intikamını almaya and içti.",
     "bio": [
-      "6 Mayıs 1972’de Geldagan köyünde doğdu ve Çeçen halkı arasında ‘Milletin onuru’ olarak anıldı. Masum Çeçen kızı elza kungayeva’yı katleden Rus Albay budanov’dan milletin intikamını almaya and içti.",
-      "10 Haziran 2011’de Moskova’da savaş suçlusu Albay budanov’u cezalandırarak adaleti sağladı. Yıllarca Rus cezaevlerindeki ağır işkencelere rağmen vakarıyla asla boyun eğmeden direndi. 3 Ağustos 2018’de Rus esaretinde halkının onur sembolü olarak kahramanca şehit düştü."
+      "6 Mayıs 1972’de Geldagan köyünde doğdu ve Çeçen halkı arasında ‘Milletin Onuru’ olarak anıldı. Masum Çeçen kızı Elza Kungayeva’yı katleden Rus Albay Budanov’dan milletin intikamını almaya and içti.",
+      "10 Haziran 2011’de Moskova’da savaş suçlusu Albay Budanov’u cezalandırarak adaleti sağladı. Yıllarca Rus cezaevlerindeki ağır işkencelere rağmen vakarıyla asla boyun eğmeden direndi. 3 Ağustos 2018’de Rus esaretinde halkının onur sembolü olarak kahramanca şehit düştü."
     ]
   },
   {
@@ -8021,13 +7603,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/apti-cabrailov.webp",
-        "caption": "Apti Cabrailov (1975–2002) — Arşiv fotoğrafı."
+        "caption": "Apti Cabrailov (1975–2002)"
       }
     ],
-    "summary": "1975 yılında Şali’de doğdu, direnişte ‘Emir cundullah’ ismiyle tanınan cesur bir Komutandı. 1997’de Şeriat Muhafızlarında emirlik yaptı ve muhammed tsagarayev’in sağ kolu oldu.",
+    "summary": "1975 yılında Şali’de doğdu, direnişte ‘Emir Cundullah’ ismiyle tanınan cesur bir komutandı. 1997’de Şeriat Muhafızları’nda emirlik yaptı ve Muhammed Tsagarayev’in sağ kolu oldu.",
     "bio": [
-      "1975 yılında Şali’de doğdu, direnişte ‘Emir cundullah’ ismiyle tanınan cesur bir Komutandı. 1997’de Şeriat Muhafızlarında emirlik yaptı ve muhammed tsagarayev’in sağ kolu oldu.",
-      "1999’da ağır yaralanmasına rağmen iyileşip Şali ve Hasavyurt sektörlerinden sorumlu Emir oldu. Başkent Cahar’daki Rus işgal güçlerine ve işbirlikçilere karşı sayısız başarılı baskın yönetti. 22 Ocak 2002’de Cahar 56. bölgede şarjörünü son mermisine dek boşaltarak şehit düştü."
+      "1975 yılında Şali’de doğdu, direnişte ‘Emir Cundullah’ ismiyle tanınan cesur bir komutandı. 1997’de Şeriat Muhafızları’nda emirlik yaptı ve Muhammed Tsagarayev’in sağ kolu oldu.",
+      "1999’da ağır yaralanmasına rağmen iyileşip Şali ve Hasavyurt sektörlerinden sorumlu emir oldu. Başkent Cahar’daki Rus işgal güçlerine ve işbirlikçilere karşı sayısız başarılı baskın yönetti. 22 Ocak 2002’de Cahar 56. bölgede şarjörünü son mermisine dek boşaltarak şehit düştü."
     ]
   },
   {
@@ -8045,13 +7627,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/rustam-labazanov.webp",
-        "caption": "Rustam Labazanov (1976–2002) — Arşiv fotoğrafı."
+        "caption": "Rustam Labazanov (1976–2002)"
       }
     ],
-    "summary": "1976 yılında başkent Cahar’da doğdu, Galay taypına mensuptu ve umar Labazanov’un kuzeniydi. Kuzeni umar’ın Mart 2000’deki şehadetinin ardından ‘Emir şadid’ lakabını devralarak sancak tuttu.",
+    "summary": "1976 yılında başkent Cahar’da doğdu, Galay taypına mensuptu ve Umar Labazanov’un kuzeniydi. Kuzeni Umar’ın Mart 2000’deki şehadetinin ardından ‘Emir Şadid’ lakabını devralarak sancak tuttu.",
     "bio": [
-      "1976 yılında başkent Cahar’da doğdu, Galay taypına mensuptu ve umar Labazanov’un kuzeniydi. Kuzeni umar’ın Mart 2000’deki şehadetinin ardından ‘Emir şadid’ lakabını devralarak sancak tuttu.",
-      "Cahar Cemaati Emir yardımcısı olarak başkentteki Özel direniş hücrelerini ve operasyonları yönetti. 22 Ocak 2002’de kuşatıldığında cemaat emaneti düşmana kalmasın diye paraları tek tek yırttı. 22 Ocak 2002’de Cahar 56. bölgede esir düşmemek için bombasını patlatarak şehit düştü."
+      "1976 yılında başkent Cahar’da doğdu, Galay taypına mensuptu ve Umar Labazanov’un kuzeniydi. Kuzeni Umar’ın Mart 2000’deki şehadetinin ardından ‘Emir Şadid’ lakabını devralarak sancak tuttu.",
+      "Cahar Cemaati emir yardımcısı olarak başkentteki özel direniş hücrelerini ve operasyonları yönetti. 22 Ocak 2002’de kuşatıldığında cemaat emaneti düşmana kalmasın diye paraları tek tek yırttı. 22 Ocak 2002’de Cahar 56. bölgede esir düşmemek için bombasını patlatarak şehit düştü."
     ]
   },
   {
@@ -8069,13 +7651,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ilyas-zakriyev.webp",
-        "caption": "İlyas Zakriyev (1980–2002) — Arşiv fotoğrafı."
+        "caption": "İlyas Zakriyev (1980–2002)"
       }
     ],
     "summary": "1980 yılında Çeçenistan’ın Prigorodnoye köyünde doğdu ve genç yaşta direnişe katıldı. Çeçen İçkerya Cumhuriyeti Silahlı Kuvvetleri bünyesinde Prigorodnoye Cemaati emiri olarak görev yaptı.",
     "bio": [
       "1980 yılında Çeçenistan’ın Prigorodnoye köyünde doğdu ve genç yaşta direnişe katıldı. Çeçen İçkerya Cumhuriyeti Silahlı Kuvvetleri bünyesinde Prigorodnoye Cemaati emiri olarak görev yaptı.",
-      "İkinci rus-çeçen savaşı’nda başkent Cahar ve çevresindeki stratejik hatlarda cihad yürüttü. İPON emiri murad yusufhaciyev ile omuz omuza işgalci Rus birliklerine ağır kayıplar verdirdi. 2 Ekim 2002 şafağında Cahar’da eşitsiz çatışmada yirmi iki yaşında kahramanca şehit düştü."
+      "İkinci Rus-Çeçen Savaşı’nda başkent Cahar ve çevresindeki stratejik hatlarda cihad yürüttü. İPON emiri Murad Yusufhaciyev ile omuz omuza işgalci Rus birliklerine ağır kayıplar verdirdi. 2 Ekim 2002 şafağında Cahar’da eşitsiz çatışmada yirmi iki yaşında kahramanca şehit düştü."
     ]
   },
   {
@@ -8093,13 +7675,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/emir-abuzar.webp",
-        "caption": "Emir Abuzar (1978–2004) — Arşiv fotoğrafı."
+        "caption": "Emir Abuzar (1978–2004)"
       }
     ],
     "summary": "1978 yılında Argun şehrinde dünyaya geldi ve direnişte ‘Gerat’ savaş lakabıyla tanındı. Çeçen İçkerya Cumhuriyeti Silahlı Kuvvetleri Argun sektörü cemaat emiri olarak birliklere komuta etti.",
     "bio": [
       "1978 yılında Argun şehrinde dünyaya geldi ve direnişte ‘Gerat’ savaş lakabıyla tanındı. Çeçen İçkerya Cumhuriyeti Silahlı Kuvvetleri Argun sektörü cemaat emiri olarak birliklere komuta etti.",
-      "Temmuz 2004’te Emir hamas ile birlikte Argun’daki işgalci güçlere hedefli harekât başlattı. İki gün süren çarpışmalarda iki Rus zırhlısını imha edip onlarca işgalciyi etkisiz kıldı. 29 Temmuz 2004’te Argun’daki eşitsiz çatışmada yirmi altı yaşında kahramanca şehit düştü."
+      "Temmuz 2004’te Emir Hamas ile birlikte Argun’daki işgalci güçlere hedefli harekât başlattı. İki gün süren çarpışmalarda iki Rus zırhlısını imha edip onlarca işgalciyi etkisiz kıldı. 29 Temmuz 2004’te Argun’daki eşitsiz çatışmada yirmi altı yaşında kahramanca şehit düştü."
     ]
   },
   {
@@ -8117,13 +7699,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/olhazar-bibulatov.webp",
-        "caption": "Olhazar Bibulatov (1955–1995) — Arşiv fotoğrafı."
+        "caption": "Olhazar Bibulatov (1955–1995)"
       }
     ],
-    "summary": "8 Mart 1955’te katır-yurt köyünde doğdu, naşho taypına mensuptu ve şehit ruslan Bibulatov’un babasıydı. Birinci rus-çeçen savaşı’nda katır-yurt müfrezesi Komutanı ve bölge Komutanı olarak görev yaptı.",
+    "summary": "8 Mart 1955’te Katır-Yurt köyünde doğdu, Naşho taypına mensuptu ve şehit Ruslan Bibulatov’un babasıydı. Birinci Rus-Çeçen Savaşı’nda Katır-Yurt müfrezesi komutanı ve bölge komutanı olarak görev yaptı.",
     "bio": [
-      "8 Mart 1955’te katır-yurt köyünde doğdu, naşho taypına mensuptu ve şehit ruslan Bibulatov’un babasıydı. Birinci rus-çeçen savaşı’nda katır-yurt müfrezesi Komutanı ve bölge Komutanı olarak görev yaptı.",
-      "31 Aralık 1994 yılbaşı hücumunda başkent Cahar’da Başkanlık Sarayı ve kavkaz oteli’ni savundu. Bamut, yandi-kotar ve aşhoy-kotar cephelerinde Güneybatı direniş hattının ön saflarında çarpıştı. 11 Haziran 1995’te zonah köyü yakınlarında Rus zırhlı kolonunu imha ederken şehit düştü."
+      "8 Mart 1955’te Katır-Yurt köyünde doğdu, Naşho taypına mensuptu ve şehit Ruslan Bibulatov’un babasıydı. Birinci Rus-Çeçen Savaşı’nda Katır-Yurt müfrezesi komutanı ve bölge komutanı olarak görev yaptı.",
+      "31 Aralık 1994 yılbaşı hücumunda başkent Cahar’da Başkanlık Sarayı ve Kavkaz Oteli’ni savundu. Bamut, Yandi-Kotar ve Aşhoy-Kotar cephelerinde güneybatı direniş hattının ön saflarında çarpıştı. 11 Haziran 1995’te Zonah köyü yakınlarında Rus zırhlı kolonunu imha ederken şehit düştü."
     ]
   },
   {
@@ -8141,13 +7723,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/arsen-mejidov.webp",
-        "caption": "Arsen Mejidov (1984–2004) — Arşiv fotoğrafı."
+        "caption": "Arsen Mejidov (1984–2004)"
       }
     ],
-    "summary": "1984 yılında Çeçenistan’ın Açhoy-Martan şehrinde doğdu ve imanlı bir ailede yetişti. İkinci rus-çeçen savaşı başladığında henüz on altı yaşındayken silahlanarak cepheye çıktı.",
+    "summary": "1984 yılında Çeçenistan’ın Açhoy-Martan şehrinde doğdu ve imanlı bir ailede yetişti. İkinci Rus-Çeçen Savaşı başladığında henüz on altı yaşındayken silahlanarak cepheye çıktı.",
     "bio": [
-      "1984 yılında Çeçenistan’ın Açhoy-Martan şehrinde doğdu ve imanlı bir ailede yetişti. İkinci rus-çeçen savaşı başladığında henüz on altı yaşındayken silahlanarak cepheye çıktı.",
-      "Dört yıl boyunca Açhoy-Martan ve Batı cephesi dağlarında Rus işgalcilere karşı savaştı. Genç yaşına rağmen çetin kış şartlarında ve kuşatmalarda büyük bir cesaret örneği sergiledi. 23 Şubat 2004 sürgün yıl dönümünde yirmi yaşında çarpışarak kahramanca şehit düştü."
+      "1984 yılında Çeçenistan’ın Açhoy-Martan şehrinde doğdu ve imanlı bir ailede yetişti. İkinci Rus-Çeçen Savaşı başladığında henüz on altı yaşındayken silahlanarak cepheye çıktı.",
+      "Dört yıl boyunca Açhoy-Martan ve Batı Cephesi dağlarında Rus işgalcilere karşı savaştı. Genç yaşına rağmen çetin kış şartlarında ve kuşatmalarda büyük bir cesaret örneği sergiledi. 23 Şubat 2004 sürgün yıl dönümünde yirmi yaşında çarpışarak kahramanca şehit düştü."
     ]
   },
   {
@@ -8165,12 +7747,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/kazbek-gisnurkayev.webp",
-        "caption": "Kazbek Gişnurkayev (1982–2002) — Arşiv fotoğrafı."
+        "caption": "Kazbek Gişnurkayev (1982–2002)"
       }
     ],
-    "summary": "1982 yılında Çeçenistan’ın direniş kalesi Açhoy-Martan’da dünyaya geldi ve büyüdü. İkinci rus-çeçen savaşı’nın ilk günlerinden itibaren genç yoldaşlarıyla cihad saflarına katıldı.",
+    "summary": "1982 yılında Çeçenistan’ın direniş kalesi Açhoy-Martan’da dünyaya geldi ve büyüdü. İkinci Rus-Çeçen Savaşı’nın ilk günlerinden itibaren genç yoldaşlarıyla cihad saflarına katıldı.",
     "bio": [
-      "1982 yılında Çeçenistan’ın direniş kalesi Açhoy-Martan’da dünyaya geldi ve büyüdü. İkinci rus-çeçen savaşı’nın ilk günlerinden itibaren genç yoldaşlarıyla cihad saflarına katıldı.",
+      "1982 yılında Çeçenistan’ın direniş kalesi Açhoy-Martan’da dünyaya geldi ve büyüdü. İkinci Rus-Çeçen Savaşı’nın ilk günlerinden itibaren genç yoldaşlarıyla cihad saflarına katıldı.",
       "Açhoy-Martan sektöründeki direniş birliklerinde omuz omuza işgalci Rus ordusuna karşı vuruştu. Silah arkadaşlarıyla birlikte vatan topraklarının özgürlüğü için hiçbir fedakârlıktan kaçınmadı. 2002 yılında henüz yirmi yaşındayken Rus işgalcilerle çatışmada şehit düştü."
     ]
   },
@@ -8189,13 +7771,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/muhammed-guluyev.webp",
-        "caption": "Muhammed Guluyev (1977–2002) — Arşiv fotoğrafı."
+        "caption": "Muhammed Guluyev (1977–2002)"
       }
     ],
-    "summary": "1977 yılında tsa-vedeno’da doğdu, dokuz yaşında hafız oldu ve ‘Ustaz Muhammed’ lakabıyla tanındı. 1994’te on yedi yaşında cepheye çıktı, şehit cumhurbaşkanı abdul-halim sadulayev’in talebesiydi.",
+    "summary": "1977 yılında Tsa-Vedeno’da doğdu, dokuz yaşında hafız oldu ve ‘Ustaz Muhammed’ lakabıyla tanındı. 1994’te on yedi yaşında cepheye çıktı, şehit cumhurbaşkanı Abdul-Halim Sadulayev’in talebesiydi.",
     "bio": [
-      "1977 yılında tsa-vedeno’da doğdu, dokuz yaşında hafız oldu ve ‘Ustaz Muhammed’ lakabıyla tanındı. 1994’te on yedi yaşında cepheye çıktı, şehit cumhurbaşkanı abdul-halim sadulayev’in talebesiydi.",
-      "1997–1998 yıllarında Şeriat mahkemelerinde görev yaptı, vaazları ve kur’an tilavetiyle gençleri eğitti. 2000’de ağır yaralanıp tedavi görmesine rağmen rahatı seçmeyip Argun Cemaati saflarına geri döndü. 7 Ocak 2002’de Argun’da yoldaşlarını korumak için el bombasıyla geride kalarak şehit düştü."
+      "1977 yılında Tsa-Vedeno’da doğdu, dokuz yaşında hafız oldu ve ‘Ustaz Muhammed’ lakabıyla tanındı. 1994’te on yedi yaşında cepheye çıktı, şehit cumhurbaşkanı Abdul-Halim Sadulayev’in talebesiydi.",
+      "1997–1998 yıllarında Şeriat mahkemelerinde görev yaptı, vaazları ve Kur’an tilavetiyle gençleri eğitti. 2000’de ağır yaralanıp tedavi görmesine rağmen rahatı seçmeyip Argun Cemaati saflarına geri döndü. 7 Ocak 2002’de Argun’da yoldaşlarını korumak için el bombasıyla geride kalarak şehit düştü."
     ]
   },
   {
@@ -8213,13 +7795,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/ismail-eskiyev.webp",
-        "caption": "İsmail Eskiyev (1973–2003) — Arşiv fotoğrafı."
+        "caption": "İsmail Eskiyev (1973–2003)"
       }
     ],
-    "summary": "1973 yılında Argun’da doğdu, çermoy taypına mensuptu ve direnişte ‘Emir salah’ diye tanındı. Ağustos 1996 cihad harekâtı’nda ve cundullah İslam Tugayı bünyesinde Rus işgalcilere karşı çarpıştı.",
+    "summary": "1973 yılında Argun’da doğdu, Çermoy taypına mensuptu ve direnişte ‘Emir Salah’ diye tanındı. Ağustos 1996 Cihad Harekâtı’nda ve Cundullah İslam Tugayı bünyesinde Rus işgalcilere karşı çarpıştı.",
     "bio": [
-      "1973 yılında Argun’da doğdu, çermoy taypına mensuptu ve direnişte ‘Emir salah’ diye tanındı. Ağustos 1996 cihad harekâtı’nda ve cundullah İslam Tugayı bünyesinde Rus işgalcilere karşı çarpıştı.",
-      "Şubat 2000 Cahar çıkışında eşi meryem’i bombardımana karşı siper ederken bir elini kaybetti. Ocak 2002’de başından vurulup geçici körlük yaşasa da iyileşip Argun sektörü Komutanlığını üstlendi. 30 Temmuz 2003’te Argun’da kuşatıldığı evde teslim olmayıp çarpışarak şehit düştü."
+      "1973 yılında Argun’da doğdu, Çermoy taypına mensuptu ve direnişte ‘Emir Salah’ diye tanındı. Ağustos 1996 Cihad Harekâtı’nda ve Cundullah İslam Tugayı bünyesinde Rus işgalcilere karşı çarpıştı.",
+      "Şubat 2000 Cahar çıkışında eşi Meryem’i bombardımana karşı siper ederken bir elini kaybetti. Ocak 2002’de başından vurulup geçici körlük yaşasa da iyileşip Argun sektörü komutanlığını üstlendi. 30 Temmuz 2003’te Argun’da kuşatıldığı evde teslim olmayıp çarpışarak şehit düştü."
     ]
   },
   {
@@ -8237,13 +7819,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/apti-takayev.webp",
-        "caption": "Apti Takayev (1968–1995) — Arşiv fotoğrafı."
+        "caption": "Apti Takayev (1968–1995)"
       }
     ],
-    "summary": "1968 yılında Urus-Martan’da doğdu, Gendargenoy taypına mensup yiğit bir Çeçen Komutan olarak yetişti. Çeçen İçkerya Cumhuriyeti Başkanlık Muhafızları Özel kuvvetler birliği Komutanlığı görevini yürüttü.",
+    "summary": "1968 yılında Urus-Martan’da doğdu, Gendargenoy taypına mensup yiğit bir Çeçen komutan olarak yetişti. Çeçen İçkerya Cumhuriyeti Başkanlık Muhafızları Özel Kuvvetler Birliği Komutanlığı görevini yürüttü.",
     "bio": [
-      "1968 yılında Urus-Martan’da doğdu, Gendargenoy taypına mensup yiğit bir Çeçen Komutan olarak yetişti. Çeçen İçkerya Cumhuriyeti Başkanlık Muhafızları Özel kuvvetler birliği Komutanlığı görevini yürüttü.",
-      "İlk cumhurbaşkanı Cahar dudayev’in sadık bir silah arkadaşı olarak başkent Cahar savunmasına katıldı. 1994–1995 kışında başkent Cahar’ın en tehlikeli cephe hatlarında savaşçılarına bizzat öncülük etti. 1 Ocak 1995’te Cahar sokaklarında Rus zırhlılarına karşı çarpışırken kahramanca şehit düştü."
+      "1968 yılında Urus-Martan’da doğdu, Gendargenoy taypına mensup yiğit bir Çeçen komutan olarak yetişti. Çeçen İçkerya Cumhuriyeti Başkanlık Muhafızları Özel Kuvvetler Birliği Komutanlığı görevini yürüttü.",
+      "İlk cumhurbaşkanı Cahar Dudayev’in sadık bir silah arkadaşı olarak başkent Cahar savunmasına katıldı. 1994–1995 kışında başkent Cahar’ın en tehlikeli cephe hatlarında savaşçılarına bizzat öncülük etti. 1 Ocak 1995’te Cahar sokaklarında Rus zırhlılarına karşı çarpışırken kahramanca şehit düştü."
     ]
   },
   {
@@ -8261,13 +7843,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/idris-bakarov.webp",
-        "caption": "İdris Bakarov (1964–1999) — Arşiv fotoğrafı."
+        "caption": "İdris Bakarov (1964–1999)"
       }
     ],
-    "summary": "1964 yılında Vedeno’nun mahketı köyünde doğdu ve Çeçenistan’ın köklü haraçoy taypına mensuptu. İslami ahlakı, cesareti ve bilgeliğiyle halkı arasında büyük bir saygı ve itibar kazandı.",
+    "summary": "1964 yılında Vedeno’nun Mahketı köyünde doğdu ve Çeçenistan’ın köklü Haraçoy taypına mensuptu. İslami ahlakı, cesareti ve bilgeliğiyle halkı arasında büyük bir saygı ve itibar kazandı.",
     "bio": [
-      "1964 yılında Vedeno’nun mahketı köyünde doğdu ve Çeçenistan’ın köklü haraçoy taypına mensuptu. İslami ahlakı, cesareti ve bilgeliğiyle halkı arasında büyük bir saygı ve itibar kazandı.",
-      "Belgatoy köyü emiri olarak toplumun manevi birliğini ve kardeşlik hukukunu omuzladı. Rus işgaline karşı Çeçen halkının özgürlük ve iman mücadelesinde öncü bir lider olarak yer Aldı. 1999 yılında vatan ve iman uğrunda yürüttüğü cihadda kahramanca şehit düştü."
+      "1964 yılında Vedeno’nun Mahketı köyünde doğdu ve Çeçenistan’ın köklü Haraçoy taypına mensuptu. İslami ahlakı, cesareti ve bilgeliğiyle halkı arasında büyük bir saygı ve itibar kazandı.",
+      "Belgatoy köyü emiri olarak toplumun manevi birliğini ve kardeşlik hukukunu omuzladı. Rus işgaline karşı Çeçen halkının özgürlük ve iman mücadelesinde öncü bir lider olarak yer aldı. 1999 yılında vatan ve iman uğrunda yürüttüğü cihadda kahramanca şehit düştü."
     ]
   },
   {
@@ -8285,13 +7867,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/timur-aslambekov.webp",
-        "caption": "Timur Aslambekov (1981–2005) — Arşiv fotoğrafı."
+        "caption": "Timur Aslambekov (1981–2005)"
       }
     ],
-    "summary": "1981 yılında başkent Cahar’da büyüdü ve direniş saflarında ‘Kartal’ savaş lakabıyla tanındı. On yedi yaşında direnişe katıldı, Emir hattab’ın eğitim kampında uzman rpg nişancısı olarak yetişti.",
+    "summary": "1981 yılında başkent Cahar’da büyüdü ve direniş saflarında ‘Kartal’ savaş lakabıyla tanındı. On yedi yaşında direnişe katıldı, Emir Hattab’ın eğitim kampında uzman RPG nişancısı olarak yetişti.",
     "bio": [
-      "1981 yılında başkent Cahar’da büyüdü ve direniş saflarında ‘Kartal’ savaş lakabıyla tanındı. On yedi yaşında direnişe katıldı, Emir hattab’ın eğitim kampında uzman rpg nişancısı olarak yetişti.",
-      "İki kez yakalanıp ağır işkenceler görmesine rağmen üçüncü kez canlı yakalanmamaya yemin etti. Emir musa madayev Cemaati saflarında başkent Cahar’daki işgalcilere karşı operasyonlara katıldı. 11 Ekim 2005’te Cahar mayakovski’de eşiyle birlikte son nefesine dek çarpışarak şehit düştü."
+      "1981 yılında başkent Cahar’da büyüdü ve direniş saflarında ‘Kartal’ savaş lakabıyla tanındı. On yedi yaşında direnişe katıldı, Emir Hattab’ın eğitim kampında uzman RPG nişancısı olarak yetişti.",
+      "İki kez yakalanıp ağır işkenceler görmesine rağmen üçüncü kez canlı yakalanmamaya yemin etti. Emir Musa Madayev Cemaati saflarında başkent Cahar’daki işgalcilere karşı operasyonlara katıldı. 11 Ekim 2005’te Cahar Mayakovski’de eşiyle birlikte son nefesine dek çarpışarak şehit düştü."
     ]
   },
   {
@@ -8309,13 +7891,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/muhammed-tagirov.webp",
-        "caption": "Muhammed Tagirov (1977–2001) — Arşiv fotoğrafı."
+        "caption": "Muhammed Tagirov (1977–2001)"
       }
     ],
-    "summary": "1977 yılında başkent Cahar’ın staraya sunja beldesinde doğdu ve imanlı bir genç olarak yetişti. İkinci rus-çeçen savaşı başladığında vatan topraklarını savunmak üzere cihad saflarına katıldı.",
+    "summary": "1977 yılında başkent Cahar’ın Staraya Sunja beldesinde doğdu ve imanlı bir genç olarak yetişti. İkinci Rus-Çeçen Savaşı başladığında vatan topraklarını savunmak üzere cihad saflarına katıldı.",
     "bio": [
-      "1977 yılında başkent Cahar’ın staraya sunja beldesinde doğdu ve imanlı bir genç olarak yetişti. İkinci rus-çeçen savaşı başladığında vatan topraklarını savunmak üzere cihad saflarına katıldı.",
-      "Staraya sunja ve Argun direniş hatlarında mücahid kardeşleriyle omuz omuza işgalcilere karşı vuruştu. Kuşatma altındaki şehirlerde yürüttüğü cesur baskınlarla Rus birliklerine kayıplar verdirdi. 8 Kasım 2001’de Argun’da Rus işgal güçleriyle çıkan çatışmada kahramanca şehit düştü."
+      "1977 yılında başkent Cahar’ın Staraya Sunja beldesinde doğdu ve imanlı bir genç olarak yetişti. İkinci Rus-Çeçen Savaşı başladığında vatan topraklarını savunmak üzere cihad saflarına katıldı.",
+      "Staraya Sunja ve Argun direniş hatlarında mücahid kardeşleriyle omuz omuza işgalcilere karşı vuruştu. Kuşatma altındaki şehirlerde yürüttüğü cesur baskınlarla Rus birliklerine kayıplar verdirdi. 8 Kasım 2001’de Argun’da Rus işgal güçleriyle çıkan çatışmada kahramanca şehit düştü."
     ]
   },
   {
@@ -8333,12 +7915,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/zelim-elmurzayev.webp",
-        "caption": "Zelim Elmurzayev (1979–2004) — Arşiv fotoğrafı."
+        "caption": "Zelim Elmurzayev (1979–2004)"
       }
     ],
-    "summary": "1979 yılında Urus-Martan şehrinde doğdu, gözü pek cesareti ve atılgan karakteriyle tanındı. İkinci rus-çeçen savaşı’nda halkını ve vatan topraklarını savunmak için silaha sarıldı.",
+    "summary": "1979 yılında Urus-Martan şehrinde doğdu, gözü pek cesareti ve atılgan karakteriyle tanındı. İkinci Rus-Çeçen Savaşı’nda halkını ve vatan topraklarını savunmak için silaha sarıldı.",
     "bio": [
-      "1979 yılında Urus-Martan şehrinde doğdu, gözü pek cesareti ve atılgan karakteriyle tanındı. İkinci rus-çeçen savaşı’nda halkını ve vatan topraklarını savunmak için silaha sarıldı.",
+      "1979 yılında Urus-Martan şehrinde doğdu, gözü pek cesareti ve atılgan karakteriyle tanındı. İkinci Rus-Çeçen Savaşı’nda halkını ve vatan topraklarını savunmak için silaha sarıldı.",
       "Urus-Martan ve başkent Cahar sektörlerindeki direniş hücrelerinde işgalcilere karşı mücadele etti. 16 Ocak 2004’te Cahar’ın Katayama bölgesinde Rus işgal güçleriyle yakın mesafeden çatışmaya girdi. Tabancasıyla işgalcileri vurup son mermisine dek direnerek kahramanca şehit düştü."
     ]
   },
@@ -8357,12 +7939,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/islam-lecayev.webp",
-        "caption": "İslam Leçayev (1984–2002) — Arşiv fotoğrafı."
+        "caption": "İslam Leçayev (1984–2002)"
       }
     ],
-    "summary": "1984 yılında Çeçenistan’da doğdu, direniş saflarında ‘Sayf-İslam’ savaş lakabıyla tanındı. Henüz on sekiz yaşındayken muhammed-said cansayev ve bilal halidov ile omuz omuza savaştı.",
+    "summary": "1984 yılında Çeçenistan’da doğdu, direniş saflarında ‘Sayf-İslam’ savaş lakabıyla tanındı. Henüz on sekiz yaşındayken Muhammed-Said Cansayev ve Bilal Halidov ile omuz omuza savaştı.",
     "bio": [
-      "1984 yılında Çeçenistan’da doğdu, direniş saflarında ‘Sayf-İslam’ savaş lakabıyla tanındı. Henüz on sekiz yaşındayken muhammed-said cansayev ve bilal halidov ile omuz omuza savaştı.",
+      "1984 yılında Çeçenistan’da doğdu, direniş saflarında ‘Sayf-İslam’ savaş lakabıyla tanındı. Henüz on sekiz yaşındayken Muhammed-Said Cansayev ve Bilal Halidov ile omuz omuza savaştı.",
       "Savaş meydanında keskin bir kılıç kadar cesur, dost meclisinde ise son derece mütevazıydı. Genç yaşına rağmen ağır sorumluluklar üstlenerek işgalci Rus birliklerine karşı çarpıştı. 2002 yılında on sekiz yaşındayken son mermisine kadar çarpışarak kahramanca şehit düştü."
     ]
   },
@@ -8381,12 +7963,12 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/muhammed-denilhanov.webp",
-        "caption": "Muhammed Denilhanov (1974–2000) — Arşiv fotoğrafı."
+        "caption": "Muhammed Denilhanov (1974–2000)"
       }
     ],
-    "summary": "1974 yılında Alhan-Yurt köyünde doğdu, kurşlo taypına mensuptu ve ‘Madi’ lakabıyla tanındı. Her iki rus-çeçen savaşı’nda da vatan topraklarını işgalcilere karşı savunan yiğitlerdendi.",
+    "summary": "1974 yılında Alhan-Yurt köyünde doğdu, Kurşlo taypına mensuptu ve ‘Madi’ lakabıyla tanındı. Her iki Rus-Çeçen Savaşı’nda da vatan topraklarını işgalcilere karşı savunan yiğitlerdendi.",
     "bio": [
-      "1974 yılında Alhan-Yurt köyünde doğdu, kurşlo taypına mensuptu ve ‘Madi’ lakabıyla tanındı. Her iki rus-çeçen savaşı’nda da vatan topraklarını işgalcilere karşı savunan yiğitlerdendi.",
+      "1974 yılında Alhan-Yurt köyünde doğdu, Kurşlo taypına mensuptu ve ‘Madi’ lakabıyla tanındı. Her iki Rus-Çeçen Savaşı’nda da vatan topraklarını işgalcilere karşı savunan yiğitlerdendi.",
       "Mart 2000’de kuşatma altındaki Saadi-Kotar köyüne girerken Rus hava indirme birlikleriyle çarpıştı. Çatışmada bir gözünü kaybetmesine ve ağır yaralanmasına rağmen silahını bırakmayıp direnişi sürdürdü. Tek gözüyle dört saat boyunca çarpıştıktan sonra Saadi-Kotar’da kahramanca şehit düştü."
     ]
   },
@@ -8405,13 +7987,13 @@ export const PEOPLE: Person[] = [
     "gallery": [
       {
         "src": "/images/people/arsen-tsumayev.webp",
-        "caption": "Arsen Tsumayev (1981–2004) — Arşiv fotoğrafı."
+        "caption": "Arsen Tsumayev (1981–2004)"
       }
     ],
-    "summary": "1981 yılında Çeçenistan’ın Açhoy-Martan bölgesinde doğdu ve yurtsever bir ailede yetişti. İkinci rus-çeçen savaşı’nda genç yaşta direniş saflarına katılarak Silahlı mücadeleye başladı.",
+    "summary": "1981 yılında Çeçenistan’ın Açhoy-Martan bölgesinde doğdu ve yurtsever bir ailede yetişti. İkinci Rus-Çeçen Savaşı’nda genç yaşta direniş saflarına katılarak silahlı mücadeleye başladı.",
     "bio": [
-      "1981 yılında Çeçenistan’ın Açhoy-Martan bölgesinde doğdu ve yurtsever bir ailede yetişti. İkinci rus-çeçen savaşı’nda genç yaşta direniş saflarına katılarak Silahlı mücadeleye başladı.",
-      "Açhoy-Martan ve Batı cephesi birimlerinde mücahid kardeşleriyle omuz omuza işgalcilere karşı vuruştu. Zorlu kuşatma ve kış şartlarında sarsılmaz imanı ve tebessümüyle yoldaşlarına moral kaynağı oldu. 2004 yılında Açhoy-Martan’da Rus işgal güçleriyle çatışmada kahramanca şehit düştü."
+      "1981 yılında Çeçenistan’ın Açhoy-Martan bölgesinde doğdu ve yurtsever bir ailede yetişti. İkinci Rus-Çeçen Savaşı’nda genç yaşta direniş saflarına katılarak silahlı mücadeleye başladı.",
+      "Açhoy-Martan ve Batı Cephesi birimlerinde mücahid kardeşleriyle omuz omuza işgalcilere karşı vuruştu. Zorlu kuşatma ve kış şartlarında sarsılmaz imanı ve tebessümüyle yoldaşlarına moral kaynağı oldu. 2004 yılında Açhoy-Martan’da Rus işgal güçleriyle çatışmada kahramanca şehit düştü."
     ]
   }
 ];
@@ -8749,7 +8331,7 @@ export const TIMELINE: TimelineEvent[] = [
     featuredOnHome: true,
     description:
       "Targim, Erzi, Vovnuşki ve Argun vadilerindeki taş kule yerleşimleri etrafında şekillenen özgür Vaynah toplulukları; Mehk-Khel (Ülke Meclisi) aracılığıyla kendi hukukunu ve bağımsızlığını korudu.",
-    people: ["idris-bazorkin"],
+    people: ["seyh-mansur", "baysangur-benoyski"],
     docs: ["targim-kuleleri-fotografi", "kuleler-albumu"],
   },
   {
@@ -8783,7 +8365,7 @@ export const TIMELINE: TimelineEvent[] = [
     featuredOnHome: true,
     description:
       "Gazi Muhammed ve Hamzat Bek'in ardından 1834'te Şeyh Şamil'in imam seçilmesiyle Çeçenya ve Dağıstan; naiplikler, divan ve yazılı hukuk düzeniyle tek bir yönetim altında birleşti.",
-    people: ["seyh-samil", "gazi-muhammed", "hamzat-bek", "tasav-haci", "haci-murad"],
+    people: ["tasav-haci", "suayip-molla", "isa-gendargeno", "ahmad-avturinski"],
     docs: ["samil-donemi-mektup", "imamet-dergisi-notlari"],
   },
   {
@@ -8794,7 +8376,7 @@ export const TIMELINE: TimelineEvent[] = [
     image: "/images/yerlesimler.jpg",
     description:
       "Ağustos 1859'da Gunib kuşatmasıyla merkezi İmamet idaresi sona erdi; ancak Benoy Naibi Baysangur kuşatmayı yararak Çeçenya dağlarında 1861'e dek mücadeleyi sürdürdü.",
-    people: ["seyh-samil", "baysangur-benoyski"],
+    people: ["baysangur-benoyski", "talhig-salinski", "uma-duyev"],
   },
   {
     year: 1864,
@@ -8805,7 +8387,7 @@ export const TIMELINE: TimelineEvent[] = [
     featuredOnHome: true,
     description:
       "1864–1865 yıllarında Kafkas Savaşı'nın bitimiyle yüz binlerce Kafkasyalı Anadolu, Balkanlar ve Orta Doğu'ya zorunlu göçe (muhaceret) tabi tutuldu; Şeyh Kunta Hacı sürgüne gönderildi.",
-    people: ["kunta-haci"],
+    people: ["uma-duyev", "alibek-haci"],
     docs: ["rus-raporu-1864", "kafkasya-haritasi-1871"],
   },
   {
@@ -8816,18 +8398,18 @@ export const TIMELINE: TimelineEvent[] = [
     image: "/images/warrior.jpg",
     description:
       "1877–1878 Osmanlı-Rus Harbi sırasında genç imam Alibek Hacı Aldamov önderliğinde Vedeno ve Dağıstan yaylalarında büyük bir bağımsızlık ayaklanması patlak verdi.",
-    people: ["alibek-haci", "uzun-haci"],
+    people: ["alibek-haci", "soltamurad-benoyevski"],
   },
   {
     year: 1917,
     title: "Kuzey Kafkasya Cumhuriyeti ve Yeni Arayışlar",
     short: "Yeni arayışlar",
     era: "sovyet",
-    image: "/images/p-seripov.jpg",
+    image: "/images/ex-ozgurluk.jpg",
     featuredOnHome: true,
     description:
       "Çarlığın çöküşüyle Mayıs 1918'de Kuzey Kafkasya Dağlıları Cumhuriyeti, 1919'da ise Vedeno merkezli Kuzey Kafkasya Emirliği kurularak bağımsız devlet arayışları canlandı.",
-    people: ["uzun-haci", "aslanbek-seripov"],
+    people: ["deni-arsanov", "hamid-molla", "sita-istamulov"],
     docs: ["atli-birlik-fotografi"],
   },
   {
@@ -8839,7 +8421,7 @@ export const TIMELINE: TimelineEvent[] = [
     featuredOnHome: true,
     description:
       "23 Şubat 1944 sabahı ('Mercimek Operasyonu') Çeçen ve İnguş halkının tamamı bir gecede vatanlarından koparılarak Kazakistan ve Kırgızistan'a sürgün edildi; nüfusun üçte birinden fazlası hayatını kaybetti.",
-    people: ["abdurrahman-avtorhanov", "mahmud-esambayev", "idris-bazorkin"],
+    people: ["hasan-israilov", "mayrbek-seripov", "cevher-dudayev"],
     docs: ["surgun-listeleri-1944"],
   },
   {
@@ -8850,7 +8432,7 @@ export const TIMELINE: TimelineEvent[] = [
     image: "/images/c-gelenek.jpg",
     description:
       "1957 kararnamesiyle sürgündeki aileler ata topraklarına dönmeye başladı; dağ köyleri, edebi hafıza ve kültürel kurumlar büyük bir azimle yeniden ayağa kaldırıldı.",
-    people: ["idris-bazorkin", "mahmud-esambayev"],
+    people: ["hasuha-magomadov", "cevher-dudayev"],
   },
   {
     year: 1991,
@@ -8861,7 +8443,7 @@ export const TIMELINE: TimelineEvent[] = [
     featuredOnHome: true,
     description:
       "1991 sonrasında Kuzey Kafkasya'da ağır sınavlarla dolu yeni bir dönem başladı; 1992'de İnguşetya Cumhuriyeti kuruldu, Çeçenya ise yıkıcı savaşların ortasında kimlik mücadelesi verdi.",
-    people: ["abdurrahman-avtorhanov"],
+    people: ["cevher-dudayev", "zelimhan-yandarbiyev", "aslan-mashadov"],
   },
   {
     year: 2000,
@@ -8899,6 +8481,8 @@ export type Place = {
   period: string;
   image: string;
   description: string;
+  people?: string[];
+  docs?: string[];
 };
 
 export const PLACES: Place[] = [
@@ -8913,6 +8497,8 @@ export const PLACES: Place[] = [
     image: "/images/hf-kule-gunbatimi.jpg",
     description:
       "İnguşetya'nın Cerah–Assa havzasında yükselen dört büyük klasik savaş kulesi ve konut yapılarından oluşan tarihi kompleks. Arşivimize adını veren hafıza vadisi.",
+    people: ["seyh-mansur", "hasan-israilov"],
+    docs: ["kule-ici-yazma-kodeks", "oymali-vaynah-kule-kapisi", "targim-safak-kulesi-ve-istang", "targim-kuleleri-fotografi"],
   },
   {
     id: "vovnuski",
@@ -8925,6 +8511,8 @@ export const PLACES: Place[] = [
     image: "/images/hf-kule-sisli-sirt.jpg",
     description:
       "Sarp kayalık zirvelerin bıçak sırtına harçla kenetlenmiş, Vaynah savunma mimarisinin en çarpıcı kule topluluğu.",
+    people: ["seyh-mansur", "hasan-israilov"],
+    docs: ["kuleler-albumu", "kule-arsivi-sinematik-storyboard"],
   },
   {
     id: "erzi",
@@ -8937,6 +8525,8 @@ export const PLACES: Place[] = [
     image: "/images/hf-kule-sabah.jpg",
     description:
       "İnguşçada 'Kartal' anlamına gelen, Armhi vadisine hâkim sekiz savaş kulesi ve çok sayıda konut kulesinden oluşan anıtsal yerleşim.",
+    people: ["seyh-mansur", "batuko-satoyski"],
+    docs: ["kuleler-albumu", "targim-kuleleri-fotografi"],
   },
   {
     id: "itum-kale",
@@ -8949,6 +8539,8 @@ export const PLACES: Place[] = [
     image: "/images/doc-tower.jpg",
     description:
       "Argun Boğazı'nın yukarı kesimlerinde Phakoç kale kompleksi, gözetleme kuleleri ve taş mezar anıtlarıyla ünlü tarihi Çeçen yerleşimi.",
+    people: ["batuko-satoyski", "tarhan-gaziyev"],
+    docs: ["kuleler-albumu"],
   },
   {
     id: "aldi",
@@ -8958,9 +8550,11 @@ export const PLACES: Place[] = [
     lon: 45.65,
     year: 1760,
     period: "XVIII. yüzyıl",
-    image: "/images/p-mansur.jpg",
+    image: "/images/mountains.jpg",
     description:
       "Şeyh Mansur'un (Uşurma) doğduğu ve 1785 birleşme hareketinin ilk kıvılcımının çaktığı tarihi Sunja köyü.",
+    people: ["seyh-mansur", "beybulat-taymiyev"],
+    docs: ["kafkas-atlasi"],
   },
   {
     id: "vedeno",
@@ -8973,6 +8567,8 @@ export const PLACES: Place[] = [
     image: "/images/imamet.jpg",
     description:
       "1845'ten 1859'a kadar Şeyh Şamil'in başkenti, 1919'da ise Uzun Hacı'nın Kuzey Kafkasya Emirliği'nin merkezi olan tarihi İçkeriya yerleşimi.",
+    people: ["baysangur-benoyski", "alibek-haci", "zelimhan-haracoyn", "samil-basayev"],
+    docs: ["samil-donemi-mektup", "imamet-dergisi-notlari"],
   },
   {
     id: "dargo",
@@ -8985,6 +8581,8 @@ export const PLACES: Place[] = [
     image: "/images/sergiler.jpg",
     description:
       "1845 yazında Prens Vorontsov komutasındaki büyük ordunun İçkeriya ormanlarında ağır yenilgiyle geri çekilmek zorunda kaldığı tarihi direniş zaferi.",
+    people: ["tasav-haci", "suayip-molla", "isa-gendargeno", "baysangur-benoyski"],
+    docs: ["samil-donemi-mektup"],
   },
   {
     id: "gimri",
@@ -8994,9 +8592,11 @@ export const PLACES: Place[] = [
     lon: 46.84,
     year: 1832,
     period: "Ekim 1832",
-    image: "/images/p-gazi.jpg",
+    image: "/images/imamet.jpg",
     description:
       "Birinci İmam Gazi Muhammed ve Üçüncü İmam Şeyh Şamil'in doğduğu, 1832 kuşatmasında Gazi Muhammed'in şehit düştüğü sarp Avar köyü.",
+    people: ["tasav-haci", "ahmad-avturinski"],
+    docs: ["imamet-dergisi-notlari"],
   },
   {
     id: "gunib",
@@ -9006,9 +8606,11 @@ export const PLACES: Place[] = [
     lon: 46.96,
     year: 1859,
     period: "Ağustos 1859",
-    image: "/images/p-samil.jpg",
+    image: "/images/ex-ozgurluk.jpg",
     description:
       "Şeyh Şamil'in son savunmasını yaptığı ve Baysangur Benoyski'nin kuşatmayı yararak Çeçenya'ya çıktığı doğal kale görünümlü yüksek plato.",
+    people: ["baysangur-benoyski", "talhig-salinski", "uma-duyev"],
+    docs: ["samil-donemi-mektup", "rus-raporu-1864"],
   },
   {
     id: "sunja",
@@ -9021,6 +8623,8 @@ export const PLACES: Place[] = [
     image: "/images/kisiler.jpg",
     description:
       "Şeyh Mansur önderliğindeki Kafkas gönüllülerinin Sunja ormanlarında Albay Pieri müfrezesini mağlup ettiği dönüm noktası.",
+    people: ["seyh-mansur", "beybulat-taymiyev"],
+    docs: ["kafkas-atlasi"],
   },
   {
     id: "harachoy",
@@ -9030,9 +8634,11 @@ export const PLACES: Place[] = [
     lon: 46.14,
     year: 1872,
     period: "XIX–XX. yüzyıllar",
-    image: "/images/p-zelimhan.jpg",
+    image: "/images/arsiv.jpg",
     description:
       "Vedeno geçidinin kapısında yer alan, kaynak suları ve Abrek Zelimhan Guşmazukayev'in memleketi olmasıyla tanınan dağ köyü.",
+    people: ["zelimhan-haracoyn", "alibek-haci"],
+    docs: ["atli-birlik-fotografi"],
   },
   {
     id: "grozni",
@@ -9045,6 +8651,8 @@ export const PLACES: Place[] = [
     image: "/images/doc-map.jpg",
     description:
       "Sunja Nehri kıyısında tarihi Çeçen köylerinin kavşağında kurulan, bugün Çeçenya'nın siyasi ve kültürel merkezi olan başkent.",
+    people: ["deni-arsanov", "cevher-dudayev", "zelimhan-yandarbiyev", "aslan-mashadov"],
+    docs: ["kafkasya-haritasi-1871", "surgun-listeleri-1944"],
   },
   {
     id: "nazran",
@@ -9054,9 +8662,11 @@ export const PLACES: Place[] = [
     lon: 44.77,
     year: 1781,
     period: "XVIII. yüzyıl – günümüz",
-    image: "/images/p-bazorkin.jpg",
+    image: "/images/targim-towers.jpg",
     description:
       "İnguş ovalık yerleşimlerinin tarihsel kalbi ve kültürel-edebi yaşamın en önemli merkezlerinden biri.",
+    people: ["seyh-mansur", "hasan-israilov"],
+    docs: ["targim-kuleleri-fotografi", "surgun-listeleri-1944"],
   },
   {
     id: "hasavyurt",
@@ -9066,9 +8676,11 @@ export const PLACES: Place[] = [
     lon: 46.59,
     year: 1846,
     period: "1846 – günümüz",
-    image: "/images/p-naib.jpg",
+    image: "/images/archive-hero.jpg",
     description:
       "Çeçenya ile Kumuk Ovası arasındaki geçiş noktasında yer alan yerleşim; Benoy Naibi Baysangur Mart 1861'de burada idam edilmiştir.",
+    people: ["tasav-haci", "baysangur-benoyski", "aslan-mashadov"],
+    docs: ["rus-raporu-1864"],
   },
 ];
 
@@ -9116,7 +8728,7 @@ export const EXHIBITIONS: Exhibition[] = [
       "Sergide Şeyh Mansur, Beybulat Taymiyev, Gazi Muhammed, Taşav Hacı, Şeyh Şamil ve Baysangur Benoyski'nin izlerini taşıyan nadir arşiv belgelerini inceleyebilirsiniz.",
     ],
     docs: ["samil-donemi-mektup", "imamet-dergisi-notlari", "kafkas-atlasi"],
-    people: ["seyh-mansur", "seyh-samil", "baysangur-benoyski", "tasav-haci"],
+    people: ["seyh-mansur", "beybulat-taymiyev", "tasav-haci", "baysangur-benoyski"],
   },
   {
     slug: "kuleler-ve-yerlesimler",
@@ -9141,7 +8753,7 @@ export const EXHIBITIONS: Exhibition[] = [
       "targim-kuleleri-fotografi",
       "kuleler-albumu",
     ],
-    people: ["idris-bazorkin"],
+    people: ["seyh-mansur", "baysangur-benoyski"],
   },
   {
     slug: "surgun-1944",
@@ -9160,7 +8772,7 @@ export const EXHIBITIONS: Exhibition[] = [
       "Bu sergi; istatistiklerin ardındaki insan yüzlerini, tren istasyonu kayıtlarını ve 1957'de ata ocaklarına dönüşün sarsıcı tanıklıklarını belgeliyor.",
     ],
     docs: ["surgun-listeleri-1944", "rus-raporu-1864"],
-    people: ["abdurrahman-avtorhanov", "idris-bazorkin", "mahmud-esambayev"],
+    people: ["hasan-israilov", "hasuha-magomadov", "cevher-dudayev"],
   },
   {
     slug: "kultur-ve-gunluk-yasam",
@@ -9178,7 +8790,7 @@ export const EXHIBITIONS: Exhibition[] = [
       "Ocak ateşinin başında yaşlıların anlattığı atasözleri ve dechig-pondar eşliğinde söylenen epik 'illi' destanları, yazılı arşivlerin yakıldığı dönemlerde dahi tarihi canlı tutan birer hafıza hazinesi işlevi görmüştür.",
     ],
     docs: ["el-sanatlari-katalogu", "atli-birlik-fotografi"],
-    people: ["mahmud-esambayev", "kunta-haci"],
+    people: ["seyh-mansur", "zelimhan-haracoyn", "deni-arsanov"],
   },
 ];
 
@@ -9314,3 +8926,404 @@ export const CULTURE_ITEMS: CultureItem[] = [
     text: "“Toprak unutmaz, insan bazen unutur.” · “Kule taşla, insan sözüyle ayakta durur.” Asırların süzgecinden geçmiş bu özlü sözler, toplumun tarihsel belleğini birkaç kelimede özetler.",
   },
 ];
+
+/* ------------------------------------------------------------------ */
+/* ÇAPRAZ SAYFA BAĞLANTILARI VE ÖNE ÇIKANLAR                           */
+/* ------------------------------------------------------------------ */
+
+const FEATURED_SLUGS = [
+  "seyh-mansur",
+  "beybulat-taymiyev",
+  "tasav-haci",
+  "baysangur-benoyski",
+  "zelimhan-haracoyn",
+  "deni-arsanov",
+  "cevher-dudayev",
+  "aslan-mashadov",
+] as const;
+
+export const FEATURED_PEOPLE: Person[] = FEATURED_SLUGS.map((s) => getPerson(s)).filter(
+  (p): p is Person => Boolean(p),
+);
+
+const parseYearNum = (val?: string): number | null => {
+  if (!val) return null;
+  const m = val.match(/\d{4}/);
+  return m ? Number(m[0]) : null;
+};
+
+const GENERIC_PLACES = new Set([
+  "çeçenya",
+  "çeçenistan",
+  "kafkasya",
+  "kuzey kafkasya",
+  "dağıstan",
+  "inguşetya",
+]);
+
+export function getRelatedPeople(person: Person, limit = 5): Person[] {
+  const seen = new Set<string>([person.slug]);
+  const out: Person[] = [];
+
+  const push = (cand?: Person) => {
+    if (!cand || seen.has(cand.slug) || out.length >= limit) return;
+    seen.add(cand.slug);
+    out.push(cand);
+  };
+
+  for (const slug of person.related ?? []) {
+    push(getPerson(slug));
+  }
+  if (out.length >= limit) return out;
+
+  const parts = person.name.trim().split(/\s+/);
+  const lastName = parts.length > 1 ? parts[parts.length - 1].toLocaleLowerCase("tr") : "";
+  const bp = person.birthPlace?.trim().toLocaleLowerCase("tr") ?? "";
+  const specificBp = bp.length >= 3 && !GENERIC_PLACES.has(bp);
+  const pBorn = parseYearNum(person.born);
+  const pYear = parseYearNum(person.died) ?? (pBorn ? pBorn + 30 : 1950);
+
+  const scored = PEOPLE.filter((c) => !seen.has(c.slug)).map((c) => {
+    let score = 0;
+    const cParts = c.name.trim().split(/\s+/);
+    const cLast = cParts.length > 1 ? cParts[cParts.length - 1].toLocaleLowerCase("tr") : "";
+    if (lastName.length >= 5 && cLast === lastName) score += 60;
+    const cBp = c.birthPlace?.trim().toLocaleLowerCase("tr") ?? "";
+    if (specificBp && cBp === bp) score += 45;
+    if (c.era === person.era) score += 30;
+    const cBorn = parseYearNum(c.born);
+    const cYear = parseYearNum(c.died) ?? (cBorn ? cBorn + 30 : 1950);
+    const diff = Math.abs(cYear - pYear);
+    score += Math.max(0, 24 - Math.min(24, Math.floor(diff / 3)));
+    return { c, score };
+  });
+
+  scored.sort((a, b) => b.score - a.score);
+  for (const item of scored) {
+    push(item.c);
+    if (out.length >= limit) break;
+  }
+  return out;
+}
+
+const PLACE_KEYWORDS: { id: string; terms: string[] }[] = [
+  { id: "aldi", terms: ["aldı", "aldi"] },
+  { id: "vedeno", terms: ["vedeno", "benoy", "içkeriya", "dargo"] },
+  { id: "harachoy", terms: ["harachoy", "haraçoy"] },
+  { id: "grozni", terms: ["grozni", "cahar", "cevherkale", "sölja"] },
+  { id: "itum-kale", terms: ["itum-kale", "itum-kali", "argun boğazı", "şatoy"] },
+  { id: "sunja", terms: ["sunja", "sunca"] },
+  { id: "gunib", terms: ["gunib"] },
+  { id: "gimri", terms: ["gimri"] },
+  { id: "dargo", terms: ["dargo"] },
+  { id: "hasavyurt", terms: ["hasavyurt", "endirey", "kumuk", "auhov"] },
+  { id: "nazran", terms: ["nazran", "inguş", "ekajevo", "malgobek"] },
+  { id: "targim", terms: ["targim", "cerah", "assa"] },
+];
+
+export function getPlacesForPerson(person: Person, limit = 3): Place[] {
+  const seen = new Set<string>();
+  const out: Place[] = [];
+
+  for (const pl of PLACES) {
+    if (pl.people?.includes(person.slug)) {
+      seen.add(pl.id);
+      out.push(pl);
+    }
+  }
+
+  const hay = [
+    person.birthPlace,
+    person.deathPlace,
+    person.center ?? "",
+    person.region,
+    person.summary,
+    ...person.bio,
+  ]
+    .join(" ")
+    .toLocaleLowerCase("tr");
+
+  for (const pk of PLACE_KEYWORDS) {
+    if (out.length >= limit) break;
+    if (seen.has(pk.id)) continue;
+    if (pk.terms.some((t) => hay.includes(t))) {
+      const pl = PLACES.find((x) => x.id === pk.id);
+      if (pl) {
+        seen.add(pl.id);
+        out.push(pl);
+      }
+    }
+  }
+
+  if (out.length === 0) {
+    const fallbackId =
+      person.era === "imamet"
+        ? "vedeno"
+        : person.era === "imparatorluk"
+          ? "harachoy"
+          : "grozni";
+    const pl = PLACES.find((x) => x.id === fallbackId);
+    if (pl) out.push(pl);
+  }
+
+  return out.slice(0, limit);
+}
+
+export function getEventsForPerson(person: Person, limit = 2): TimelineEvent[] {
+  const direct = TIMELINE.filter((e) => e.people?.includes(person.slug));
+  if (direct.length > 0) return direct.slice(0, limit);
+
+  const b = parseYearNum(person.born);
+  const d = parseYearNum(person.died);
+  const mid = d ?? (b ? b + 30 : null);
+
+  const eraEvents = TIMELINE.filter((e) => e.era === person.era);
+  if (eraEvents.length > 0 && mid !== null) {
+    return [...eraEvents]
+      .sort((a, c) => Math.abs(a.year - mid) - Math.abs(c.year - mid))
+      .slice(0, limit);
+  }
+  return eraEvents.slice(0, limit);
+}
+
+export function getDocsForPerson(person: Person, limit = 3): ArchiveDoc[] {
+  const seen = new Set<string>();
+  const out: ArchiveDoc[] = [];
+
+  const pushSlug = (s: string) => {
+    if (seen.has(s) || out.length >= limit) return;
+    const d = getDoc(s);
+    if (d) {
+      seen.add(s);
+      out.push(d);
+    }
+  };
+
+  for (const s of person.docs ?? []) pushSlug(s);
+
+  for (const ev of getEventsForPerson(person, 2)) {
+    for (const s of ev.docs ?? []) pushSlug(s);
+  }
+
+  if (out.length === 0) {
+    for (const d of DOCS) {
+      if (d.era === person.era) pushSlug(d.slug);
+      if (out.length >= 2) break;
+    }
+  }
+
+  return out;
+}
+
+export function getExhibitionsForPerson(person: Person): Exhibition[] {
+  const direct = EXHIBITIONS.filter((ex) => ex.people?.includes(person.slug));
+  if (direct.length > 0) return direct;
+
+  const fallbackSlug =
+    person.era === "imamet"
+      ? "kafkasyanin-ozgurluk-mucadelesi"
+      : person.era === "sovyet"
+        ? "surgun-1944"
+        : person.era === "imparatorluk"
+          ? "kultur-ve-gunluk-yasam"
+          : "kafkasyanin-ozgurluk-mucadelesi";
+
+  const ex = getExhibition(fallbackSlug);
+  return ex ? [ex] : [];
+}
+
+export function getPeopleForDoc(docSlug: string, limit = 6): Person[] {
+  const doc = getDoc(docSlug);
+  const seen = new Set<string>();
+  const out: Person[] = [];
+
+  const push = (p?: Person) => {
+    if (!p || seen.has(p.slug) || out.length >= limit) return;
+    seen.add(p.slug);
+    out.push(p);
+  };
+
+  for (const p of PEOPLE) {
+    if (p.docs?.includes(docSlug)) push(p);
+  }
+  for (const ev of TIMELINE) {
+    if (ev.docs?.includes(docSlug)) {
+      for (const ps of ev.people ?? []) push(getPerson(ps));
+    }
+  }
+  for (const ex of EXHIBITIONS) {
+    if (ex.docs.includes(docSlug)) {
+      for (const ps of ex.people ?? []) push(getPerson(ps));
+    }
+  }
+  if (out.length < 3 && doc) {
+    for (const p of PEOPLE) {
+      if (p.era === doc.era) push(p);
+      if (out.length >= 4) break;
+    }
+  }
+  return out;
+}
+
+export function getExhibitionsForDoc(docSlug: string): Exhibition[] {
+  return EXHIBITIONS.filter((ex) => ex.docs.includes(docSlug));
+}
+
+export function getPlacesForDoc(docSlug: string): Place[] {
+  return PLACES.filter((pl) => pl.docs?.includes(docSlug));
+}
+
+export function getPlacesForEvent(event: TimelineEvent, limit = 3): Place[] {
+  const seen = new Set<string>();
+  const out: Place[] = [];
+  const push = (pl?: Place) => {
+    if (!pl || seen.has(pl.id) || out.length >= limit) return;
+    seen.add(pl.id);
+    out.push(pl);
+  };
+
+  const hay = `${event.title} ${event.short} ${event.description}`.toLocaleLowerCase("tr");
+  for (const pk of PLACE_KEYWORDS) {
+    if (pk.terms.some((t) => hay.includes(t))) {
+      push(PLACES.find((x) => x.id === pk.id));
+    }
+  }
+  for (const ds of event.docs ?? []) {
+    for (const pl of PLACES) {
+      if (pl.docs?.includes(ds)) push(pl);
+    }
+  }
+  for (const pl of PLACES) {
+    if (pl.year === event.year) push(pl);
+  }
+  if (out.length === 0) {
+    const fallbackId =
+      event.era === "imamet"
+        ? "vedeno"
+        : event.era === "imparatorluk"
+          ? "harachoy"
+          : "grozni";
+    push(PLACES.find((x) => x.id === fallbackId));
+  }
+  return out;
+}
+
+export function getPlacesForExhibition(ex: Exhibition, limit = 4): Place[] {
+  const seen = new Set<string>();
+  const out: Place[] = [];
+  const push = (pl?: Place) => {
+    if (!pl || seen.has(pl.id) || out.length >= limit) return;
+    seen.add(pl.id);
+    out.push(pl);
+  };
+
+  for (const ds of ex.docs) {
+    for (const pl of PLACES) {
+      if (pl.docs?.includes(ds)) push(pl);
+    }
+  }
+  const hay = `${ex.title} ${ex.subtitle} ${ex.summary} ${ex.body.join(" ")}`.toLocaleLowerCase("tr");
+  for (const pk of PLACE_KEYWORDS) {
+    if (pk.terms.some((t) => hay.includes(t))) {
+      push(PLACES.find((x) => x.id === pk.id));
+    }
+  }
+  return out;
+}
+
+export function getEventsForExhibition(ex: Exhibition, limit = 3): TimelineEvent[] {
+  const seen = new Set<number>();
+  const out: TimelineEvent[] = [];
+  const push = (ev?: TimelineEvent) => {
+    if (!ev || seen.has(ev.year) || out.length >= limit) return;
+    seen.add(ev.year);
+    out.push(ev);
+  };
+
+  for (const ev of TIMELINE) {
+    if (ev.docs?.some((d) => ex.docs.includes(d))) push(ev);
+  }
+  for (const ev of TIMELINE) {
+    if (ev.people?.some((ps) => ex.people?.includes(ps))) push(ev);
+  }
+  return out;
+}
+
+const CULTURE_CATEGORY_LINKS: Record<
+  CultureCat,
+  { docs: string[]; exhibitions: string[]; places: string[]; people: string[] }
+> = {
+  gelenek: {
+    docs: ["kule-ici-yazma-kodeks", "imamet-dergisi-notlari"],
+    exhibitions: ["kultur-ve-gunluk-yasam", "kafkasyanin-ozgurluk-mucadelesi"],
+    places: ["targim", "vedeno", "nazran"],
+    people: ["seyh-mansur", "beybulat-taymiyev", "tasav-haci"],
+  },
+  mimari: {
+    docs: ["oymali-vaynah-kule-kapisi", "targim-safak-kulesi-ve-istang", "kuleler-albumu"],
+    exhibitions: ["kuleler-ve-yerlesimler"],
+    places: ["targim", "vovnuski", "erzi", "itum-kale"],
+    people: ["seyh-mansur", "baysangur-benoyski"],
+  },
+  muzik: {
+    docs: ["el-sanatlari-katalogu", "atli-birlik-fotografi"],
+    exhibitions: ["kultur-ve-gunluk-yasam"],
+    places: ["harachoy", "grozni", "vedeno"],
+    people: ["imam-alimsultanov", "zelimhan-haracoyn"],
+  },
+  giyim: {
+    docs: ["el-sanatlari-katalogu", "targim-safak-kulesi-ve-istang"],
+    exhibitions: ["kultur-ve-gunluk-yasam"],
+    places: ["vedeno", "harachoy", "grozni"],
+    people: ["baysangur-benoyski", "soltamurad-benoyevski", "zelimhan-haracoyn"],
+  },
+  yemek: {
+    docs: ["el-sanatlari-katalogu", "kule-ici-yazma-kodeks"],
+    exhibitions: ["kultur-ve-gunluk-yasam"],
+    places: ["targim", "grozni", "nazran"],
+    people: ["deni-arsanov", "seyh-mansur"],
+  },
+  sozlu: {
+    docs: ["surgun-listeleri-1944", "rus-raporu-1864"],
+    exhibitions: ["surgun-1944", "kultur-ve-gunluk-yasam"],
+    places: ["grozni", "nazran", "itum-kale"],
+    people: ["hasan-israilov", "hasuha-magomadov", "cevher-dudayev"],
+  },
+};
+
+export function getLinksForCultureItem(item: CultureItem) {
+  const cfg = CULTURE_CATEGORY_LINKS[item.cat];
+  return {
+    docs: cfg.docs.map((s) => getDoc(s)).filter((d): d is ArchiveDoc => Boolean(d)),
+    exhibitions: cfg.exhibitions
+      .map((s) => getExhibition(s))
+      .filter((e): e is Exhibition => Boolean(e)),
+    places: cfg.places
+      .map((id) => PLACES.find((p) => p.id === id))
+      .filter((p): p is Place => Boolean(p)),
+    people: cfg.people.map((s) => getPerson(s)).filter((p): p is Person => Boolean(p)),
+  };
+}
+
+export function getCultureForExhibition(ex: Exhibition, limit = 3): CultureItem[] {
+  const cats: CultureCat[] =
+    ex.slug === "kuleler-ve-yerlesimler"
+      ? ["mimari", "gelenek"]
+      : ex.slug === "surgun-1944"
+        ? ["sozlu", "gelenek"]
+        : ex.slug === "kultur-ve-gunluk-yasam"
+          ? ["gelenek", "giyim", "muzik"]
+          : ["gelenek", "muzik"];
+  const out: CultureItem[] = [];
+  for (const cat of cats) {
+    for (const item of CULTURE_ITEMS) {
+      if (item.cat === cat && !out.some((x) => x.id === item.id)) {
+        out.push(item);
+        if (out.length >= limit) return out;
+      }
+    }
+  }
+  return out;
+}
+
+

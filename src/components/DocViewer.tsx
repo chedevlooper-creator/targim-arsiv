@@ -39,16 +39,16 @@ export function DocViewer({
         {prevHref ? (
           <Link
             href={prevHref}
-            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold/50 bg-ink/80 text-gold-light transition hover:border-gold-light hover:bg-gold/15"
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/12 bg-white/[0.04] text-white/80 transition hover:border-gold-light/45 hover:bg-white/[0.08] hover:text-gold-light"
             aria-label="Önceki belge"
           >
             <ChevronLeft size={18} />
           </Link>
         ) : (
-          <span className="w-11 shrink-0" />
+          <span className="w-10 shrink-0" />
         )}
 
-        <div className="museum-card relative aspect-[4/5] flex-1 overflow-hidden bg-[#14100b]">
+        <div className="museum-card relative aspect-[4/5] flex-1 overflow-hidden bg-night">
           <div
             className="relative h-full w-full transition-transform duration-300"
             style={{ transform: `scale(${inlineZoom})`, transformOrigin: "center center" }}
@@ -59,49 +59,49 @@ export function DocViewer({
               fill
               priority
               sizes="(max-width:1024px) 100vw, 50vw"
-              className="object-contain p-3"
+              className="object-contain p-4"
             />
           </div>
 
           {/* Sağ üst satır içi büyüteç kontrolü */}
-          <div className="absolute right-3 top-3 z-10 flex items-center overflow-hidden rounded border border-gold/35 bg-ink/85 backdrop-blur-sm">
+          <div className="absolute right-3 top-3 z-10 flex items-center overflow-hidden rounded-full border border-white/15 bg-ink/85 px-1 backdrop-blur-md">
             <button
               onClick={() => setInlineZoom((z) => Math.max(1, +(z - 0.25).toFixed(2)))}
-              className="p-2 text-gold-light hover:bg-gold/15"
+              className="p-2 text-white/75 transition hover:text-gold-light"
               aria-label="Uzaklaştır"
             >
               <Minus size={14} />
             </button>
-            <span className="px-2 font-mono text-[0.65rem] text-[#efe5d0]">{Math.round(inlineZoom * 100)}%</span>
+            <span className="px-1.5 font-mono text-[0.65rem] text-white/85">{Math.round(inlineZoom * 100)}%</span>
             <button
               onClick={() => setInlineZoom((z) => Math.min(2.5, +(z + 0.25).toFixed(2)))}
-              className="p-2 text-gold-light hover:bg-gold/15"
+              className="p-2 text-white/75 transition hover:text-gold-light"
               aria-label="Yakınlaştır"
             >
               <Plus size={14} />
             </button>
           </div>
 
-          <div className="absolute bottom-3 left-3 z-10 border border-gold/30 bg-ink/80 px-2.5 py-1 font-mono text-[0.62rem] text-gold-light">
+          <span className="badge-glass absolute bottom-3 left-3 z-10 font-mono">
             {doc.catalogNo}
-          </div>
+          </span>
         </div>
 
         {nextHref ? (
           <Link
             href={nextHref}
-            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold/50 bg-ink/80 text-gold-light transition hover:border-gold-light hover:bg-gold/15"
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/12 bg-white/[0.04] text-white/80 transition hover:border-gold-light/45 hover:bg-white/[0.08] hover:text-gold-light"
             aria-label="Sonraki belge"
           >
             <ChevronRight size={18} />
           </Link>
         ) : (
-          <span className="w-11 shrink-0" />
+          <span className="w-10 shrink-0" />
         )}
       </div>
 
-      {/* Alt Araç Çubuğu */}
-      <div className="mt-5 flex flex-wrap items-center gap-3 sm:px-[56px]">
+      {/* Alt Araç Çubuğu: Tüm düğmeler aynı rounded-full geometrisinde */}
+      <div className="mt-5 flex flex-wrap items-center gap-2.5 sm:px-[52px]">
         <a href={doc.image} download className="btn-gold">
           <Download size={14} /> Tıpkıbasımı İndir
         </a>
@@ -110,13 +110,13 @@ export function DocViewer({
             setZoom(1);
             setFull(true);
           }}
-          className="inline-flex items-center gap-2 border border-gold/35 bg-panel px-4 py-2.5 text-xs tracking-[0.18em] text-[#ece3d0] transition hover:border-gold-light hover:text-gold-light uppercase"
+          className="btn-glass"
         >
           <Maximize2 size={14} /> Tam Ekran İncele
         </button>
         <button
           onClick={copyCitation}
-          className="inline-flex items-center gap-2 border border-gold/25 bg-ink/60 px-4 py-2.5 text-xs tracking-[0.16em] text-mist transition hover:border-gold/60 hover:text-white uppercase"
+          className="btn-glass"
         >
           {copied ? <Check size={14} className="text-gold-light" /> : <Copy size={14} />}
           {copied ? "Künye Kopyalandı" : "Kaynak Göster"}
@@ -125,38 +125,43 @@ export function DocViewer({
 
       {/* Tam Ekran Işıklı Masa */}
       {full && (
-        <div className="fixed inset-0 z-[90] flex flex-col bg-black/96" role="dialog" aria-modal="true">
-          <div className="flex items-center justify-between border-b border-gold/25 px-6 py-4">
+        <div
+          data-lenis-prevent
+          className="fixed inset-0 z-[90] flex flex-col bg-ink/96 backdrop-blur-xl"
+          role="dialog"
+          aria-modal="true"
+        >
+          <div className="flex items-center justify-between border-b border-white/10 px-6 py-4">
             <div>
-              <span className="font-mono text-xs text-gold">{doc.catalogNo}</span>
-              <span className="ml-3 font-display text-base text-[#f3ead6]">{doc.title}</span>
+              <span className="font-mono text-xs text-gold-light">{doc.catalogNo}</span>
+              <span className="ml-3 text-base font-semibold text-white">{doc.title}</span>
             </div>
             <div className="flex items-center gap-2">
               <button
                 onClick={() => setZoom((z) => Math.max(1, z - 0.25))}
-                className="rounded border border-gold/25 p-2 text-mist hover:border-gold hover:text-white"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/[0.04] text-white/75 transition hover:border-white/30 hover:text-white"
                 aria-label="Uzaklaştır"
               >
-                <Minus size={17} />
+                <Minus size={16} />
               </button>
-              <span className="w-14 text-center font-mono text-xs text-[#efe5d0]">{Math.round(zoom * 100)}%</span>
+              <span className="w-14 text-center font-mono text-xs text-white/85">{Math.round(zoom * 100)}%</span>
               <button
                 onClick={() => setZoom((z) => Math.min(3.5, z + 0.25))}
-                className="rounded border border-gold/25 p-2 text-mist hover:border-gold hover:text-white"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/[0.04] text-white/75 transition hover:border-white/30 hover:text-white"
                 aria-label="Yakınlaştır"
               >
-                <Plus size={17} />
+                <Plus size={16} />
               </button>
               <button
                 onClick={() => setFull(false)}
-                className="ml-3 rounded border border-gold/35 p-2 text-mist hover:border-gold-light hover:text-white"
+                className="ml-2 flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/[0.04] text-white/75 transition hover:border-gold-light/45 hover:text-white"
                 aria-label="Kapat"
               >
-                <X size={19} />
+                <X size={18} />
               </button>
             </div>
           </div>
-          <div className="relative flex-1 overflow-auto p-6">
+          <div data-lenis-prevent className="relative flex-1 overflow-auto overscroll-contain p-6">
             <div
               className="relative mx-auto h-full w-full transition-transform duration-300"
               style={{ transform: `scale(${zoom})`, transformOrigin: "center top" }}
@@ -187,15 +192,15 @@ export function DocTabs({ doc }: { doc: ArchiveDoc }) {
 
   return (
     <div className="museum-card p-6">
-      <div className="flex flex-wrap gap-1 border-b border-gold/20">
+      <div className="inline-flex flex-wrap gap-1 rounded-full border border-white/[0.08] bg-white/[0.03] p-1">
         {tabs.map((t) => (
           <button
             key={t.id}
             onClick={() => setActive(t.id)}
-            className={`-mb-px border-b-2 px-4 py-3 font-display text-xs tracking-wider transition uppercase ${
+            className={`rounded-full px-3.5 py-1.5 text-xs font-medium transition ${
               active === t.id
-                ? "border-gold text-gold-light"
-                : "border-transparent text-mist hover:text-white"
+                ? "bg-white/[0.12] text-white"
+                : "text-white/55 hover:text-white"
             }`}
           >
             {t.label}
@@ -206,7 +211,7 @@ export function DocTabs({ doc }: { doc: ArchiveDoc }) {
       <div
         key={active}
         dir={isArabicScript ? "rtl" : "ltr"}
-        className={`animate-fade-up whitespace-pre-line pt-6 leading-relaxed text-[#e6dcc8] ${
+        className={`animate-fade-up whitespace-pre-line pt-6 leading-relaxed text-white/82 ${
           isArabicScript ? "text-right font-serif text-2xl leading-loose" : "font-serif text-xl"
         }`}
       >

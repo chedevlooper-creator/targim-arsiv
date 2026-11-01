@@ -123,46 +123,46 @@ export default function TowerArchiveShowcase() {
           <div className="flex flex-wrap items-center justify-between gap-3 pb-4">
             <div>
               <p className="eyebrow">Özel Koleksiyon · Görsel-İşitsel Belgeleme</p>
-              <h2 className="mt-1 font-display text-2xl font-semibold text-[#f5ecd8] md:text-3xl">
+              <h2 className="mt-1 font-display text-2xl font-semibold text-white md:text-3xl">
                 Vaynah Kule İçi Saklı Arşiv
               </h2>
             </div>
 
-            <div className="flex flex-wrap items-center overflow-hidden border border-gold/35 bg-ink/80">
+            <div className="inline-flex flex-wrap items-center gap-1 rounded-full border border-white/[0.08] bg-white/[0.03] p-1">
               <button
                 onClick={() => {
                   setView("kule");
                   setPlaying(true);
                 }}
-                className={`inline-flex items-center gap-1.5 px-3 py-1.5 text-[0.66rem] tracking-[0.16em] uppercase transition ${
-                  view === "kule" ? "bg-gold/25 text-gold-light" : "text-mist hover:text-white"
+                className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[0.68rem] font-medium transition ${
+                  view === "kule" ? "bg-white/[0.12] text-white" : "text-white/55 hover:text-white"
                 }`}
               >
-                <Film size={12} /> Kule Arşivi (00:15)
+                <Film size={12} className="text-gold-light" /> Kule Arşivi (00:15)
               </button>
               <button
                 onClick={() => {
                   setView("ithaf");
                   setPlaying(true);
                 }}
-                className={`inline-flex items-center gap-1.5 px-3 py-1.5 text-[0.66rem] tracking-[0.16em] uppercase transition ${
-                  view === "ithaf" ? "bg-gold/25 text-gold-light" : "text-mist hover:text-white"
+                className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[0.68rem] font-medium transition ${
+                  view === "ithaf" ? "bg-white/[0.12] text-white" : "text-white/55 hover:text-white"
                 }`}
               >
-                <Film size={12} /> Babamın Emeğine (00:15)
+                <Film size={12} className="text-gold-light" /> Babamın Emeğine (00:15)
               </button>
               <button
                 onClick={() => setView("storyboard")}
-                className={`inline-flex items-center gap-1.5 px-3 py-1.5 text-[0.66rem] tracking-[0.16em] uppercase transition ${
-                  view === "storyboard" ? "bg-gold/25 text-gold-light" : "text-mist hover:text-white"
+                className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[0.68rem] font-medium transition ${
+                  view === "storyboard" ? "bg-white/[0.12] text-white" : "text-white/55 hover:text-white"
                 }`}
               >
-                <LayoutGrid size={12} /> 6 Kare Pafta
+                <LayoutGrid size={12} className="text-gold-light" /> 6 Kare Pafta
               </button>
             </div>
           </div>
 
-          <div className="relative aspect-video overflow-hidden border border-gold/45 bg-black shadow-[0_14px_38px_rgba(0,0,0,0.75)]">
+          <div className="relative aspect-video overflow-hidden rounded-2xl border border-white/10 bg-night shadow-[0_18px_42px_-16px_rgba(0,0,0,0.85)]">
             {isVideo ? (
               <>
                 <video
@@ -178,27 +178,27 @@ export default function TowerArchiveShowcase() {
                   onPause={() => setPlaying(false)}
                   className="h-full w-full object-cover"
                 />
-                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black/85 to-transparent" />
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-ink/90 to-transparent" />
                 <div className="absolute bottom-3 left-3 right-3 flex flex-wrap items-center justify-between gap-2">
                   <div className="flex items-center gap-2">
                     <button
                       onClick={togglePlay}
-                      className="inline-flex items-center gap-2 border border-gold/50 bg-ink/85 px-3 py-1.5 text-[0.68rem] tracking-[0.18em] text-gold-light uppercase backdrop-blur-sm transition hover:border-gold-light hover:bg-gold/20"
+                      className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-ink/80 px-3.5 py-1.5 text-xs font-medium text-white backdrop-blur-md transition hover:border-gold-light/45 hover:text-gold-light"
                     >
                       {playing ? <Pause size={12} /> : <Play size={12} />}
                       {playing ? "Duraklat" : "Oynat"}
                     </button>
                     <button
                       onClick={toggleSound}
-                      className="inline-flex items-center gap-1.5 border border-gold/45 bg-ink/85 px-3 py-1.5 text-[0.66rem] tracking-[0.18em] text-[#ece3d0] uppercase backdrop-blur-sm transition hover:border-gold-light hover:text-gold-light"
+                      className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-ink/80 px-3.5 py-1.5 text-xs font-medium text-white/85 backdrop-blur-md transition hover:border-gold-light/45 hover:text-gold-light"
                     >
-                      {muted ? <VolumeX size={12} className="text-gold" /> : <Volume2 size={12} className="text-gold-light" />}
+                      {muted ? <VolumeX size={12} className="text-gold-light" /> : <Volume2 size={12} className="text-gold-light" />}
                       {muted ? "Sesli İzle" : "Ses Açık"}
                     </button>
                   </div>
                   <button
                     onClick={openFullscreen}
-                    className="inline-flex items-center gap-1.5 border border-gold/35 bg-ink/80 px-2.5 py-1.5 text-[0.65rem] tracking-widest text-[#ece3d0] uppercase backdrop-blur-sm transition hover:border-gold-light hover:text-gold-light"
+                    className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-ink/80 px-3 py-1.5 text-xs font-medium text-white/80 backdrop-blur-md transition hover:border-gold-light/45 hover:text-gold-light"
                     aria-label="Tam ekran oynat"
                   >
                     <Maximize2 size={12} /> Tam Ekran
@@ -214,7 +214,7 @@ export default function TowerArchiveShowcase() {
                   sizes="(max-width:1024px) 100vw, 55vw"
                   className="object-cover transition duration-500 group-hover:scale-103"
                 />
-                <span className="absolute bottom-3 right-3 border border-gold/45 bg-ink/85 px-3 py-1 text-[0.65rem] tracking-[0.18em] text-gold-light uppercase">
+                <span className="badge-glass absolute bottom-3 right-3">
                   TRG-AV-2024-101 · Tıpkıbasımı Aç →
                 </span>
               </Link>
@@ -231,7 +231,7 @@ export default function TowerArchiveShowcase() {
               <button
                 key={b.label}
                 onClick={() => jump(b.t)}
-                className="truncate border border-gold/25 bg-ink/70 px-2 py-1.5 text-left text-[0.64rem] tracking-wider text-[#d6cdbb] transition hover:border-gold hover:bg-gold/15 hover:text-gold-light"
+                className="truncate rounded-xl border border-white/[0.08] bg-white/[0.03] px-2.5 py-1.5 text-left text-[0.68rem] text-white/70 transition hover:border-gold-light/40 hover:bg-white/[0.07] hover:text-gold-light"
               >
                 {b.label}
               </button>
@@ -241,7 +241,7 @@ export default function TowerArchiveShowcase() {
 
         {/* Sağ: 2x2 Yüksek Çözünürlüklü Kule & Yazma Seçkisi */}
         <div className="flex flex-col justify-between">
-          <p className="font-serif text-base leading-relaxed text-[#d9d0be] md:text-lg">
+          <p className="font-serif text-base leading-relaxed text-white/75 md:text-lg">
             Sarp dağ sırtlarındaki Vaynah savaş kulelerinin oymalı meşe kapıları ardında; asırlar boyunca yangınlardan
             ve sürgünlerden saklanan deri ciltli el yazmaları, kırmızı mum mühürlü ahitnameler ve köy sicilleri yer alır.
           </p>
@@ -251,9 +251,9 @@ export default function TowerArchiveShowcase() {
               <Link
                 key={c.href}
                 href={c.href}
-                className="group relative flex overflow-hidden border border-gold/30 bg-ink/80 transition hover:border-gold-light"
+                className="group relative flex overflow-hidden rounded-xl border border-white/[0.08] bg-white/[0.03] transition hover:border-gold-light/40 hover:bg-white/[0.05]"
               >
-                <div className="relative h-28 w-24 shrink-0 overflow-hidden bg-black">
+                <div className="relative h-28 w-24 shrink-0 overflow-hidden bg-night">
                   <Image
                     src={c.image}
                     alt={c.title}
@@ -264,13 +264,13 @@ export default function TowerArchiveShowcase() {
                 </div>
                 <div className="flex flex-1 flex-col justify-between p-3">
                   <div>
-                    <span className="font-mono text-[0.58rem] tracking-wider text-gold">{c.code}</span>
-                    <h3 className="mt-0.5 font-display text-sm leading-snug text-[#f5ecd8] group-hover:text-gold-light">
+                    <span className="font-mono text-[0.6rem] tracking-wider text-gold-light/85">{c.code}</span>
+                    <h3 className="mt-0.5 text-sm font-semibold leading-snug text-white transition group-hover:text-gold-light">
                       {c.title}
                     </h3>
-                    <p className="mt-1 line-clamp-2 text-[0.7rem] leading-snug text-mist">{c.sub}</p>
+                    <p className="mt-1 line-clamp-2 text-[0.7rem] leading-snug text-white/55">{c.sub}</p>
                   </div>
-                  <span className="mt-1.5 inline-flex items-center gap-1 text-[0.64rem] tracking-[0.16em] text-gold-light uppercase">
+                  <span className="mt-1.5 inline-flex items-center gap-1 text-[0.68rem] font-medium text-gold-light">
                     İncele <ArrowRight size={11} className="transition-transform group-hover:translate-x-0.5" />
                   </span>
                 </div>

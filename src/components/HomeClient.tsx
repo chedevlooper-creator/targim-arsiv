@@ -23,10 +23,10 @@ import { FiligreeLink } from "@/components/Brand";
 /* Sol dikey bölüm göstergesi + bağlı Tanıtım Filmi tetikleyicisi */
 const RAIL = [
   { id: "daglar", href: "#daglar", label: "Dağlar" },
-  { id: "insanlar", href: "/kisiler", label: "İnsanlar" },
   { id: "mucadele", href: "#mucadele", label: "Mücadele" },
-  { id: "yerlesimler", href: "/harita", label: "Yerleşimler" },
-  { id: "belgeler", href: "/arsiv", label: "Belgeler" },
+  { id: "insanlar", href: "#insanlar", label: "İnsanlar" },
+  { id: "ithaf", href: "#ithaf", label: "Kule Belleği" },
+  { id: "yerlesimler", href: "/harita", label: "Atlas" },
 ];
 
 export type ReelId = "kule" | "ithaf";
@@ -469,11 +469,12 @@ function IntroFilmModalBody({
 
   return (
     <motion.div
+      data-lenis-prevent
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.35 }}
-      className="fixed inset-0 z-[90] bg-black"
+      className="fixed inset-0 z-[90] overscroll-contain bg-black"
       role="dialog"
       aria-modal="true"
       aria-label="Targim Archive Tanıtım Filmi"
@@ -527,15 +528,15 @@ function IntroFilmModalBody({
             </span>
           </div>
 
-          <div className="flex flex-wrap items-center overflow-hidden rounded-sm border border-gold/35 bg-black/65 backdrop-blur-sm">
+          <div className="flex flex-wrap items-center gap-1 rounded-full border border-white/15 bg-black/65 p-1 backdrop-blur-md">
             <button
               onClick={() => {
                 setMode("kule");
                 setCurrentTime(0);
                 setPaused(false);
               }}
-              className={`inline-flex items-center gap-1.5 px-3 py-1.5 text-[0.68rem] tracking-[0.16em] uppercase transition ${
-                mode === "kule" ? "bg-gold/25 text-gold-light" : "text-mist hover:text-white"
+              className={`inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-[0.68rem] font-medium tracking-[0.12em] uppercase transition ${
+                mode === "kule" ? "bg-[#f3ead8] text-[#090b10]" : "text-white/70 hover:text-white"
               }`}
             >
               <Film size={12} /> Kule Arşivi (00:15)
@@ -546,8 +547,8 @@ function IntroFilmModalBody({
                 setCurrentTime(0);
                 setPaused(false);
               }}
-              className={`inline-flex items-center gap-1.5 px-3 py-1.5 text-[0.68rem] tracking-[0.16em] uppercase transition ${
-                mode === "ithaf" ? "bg-gold/25 text-gold-light" : "text-mist hover:text-white"
+              className={`inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-[0.68rem] font-medium tracking-[0.12em] uppercase transition ${
+                mode === "ithaf" ? "bg-[#f3ead8] text-[#090b10]" : "text-white/70 hover:text-white"
               }`}
             >
               <Film size={12} /> Babamın Emeğine (00:15)
@@ -557,8 +558,8 @@ function IntroFilmModalBody({
                 setMode("slides");
                 setPaused(false);
               }}
-              className={`inline-flex items-center gap-1.5 px-3 py-1.5 text-[0.68rem] tracking-[0.16em] uppercase transition ${
-                mode === "slides" ? "bg-gold/25 text-gold-light" : "text-mist hover:text-white"
+              className={`inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-[0.68rem] font-medium tracking-[0.12em] uppercase transition ${
+                mode === "slides" ? "bg-[#f3ead8] text-[#090b10]" : "text-white/70 hover:text-white"
               }`}
             >
               <LayoutGrid size={12} /> 6 Kare &amp; Anlatı
@@ -576,14 +577,14 @@ function IntroFilmModalBody({
                     videoRef.current.play();
                   }
                 }}
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-gold/40 bg-black/50 text-gold-light transition hover:border-gold hover:bg-gold/15"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-black/55 text-white/85 backdrop-blur-md transition hover:border-white/35 hover:bg-white/10 hover:text-white"
                 aria-label="Baştan oynat"
               >
                 <RotateCcw size={14} />
               </button>
               <button
                 onClick={() => setMuted((m) => !m)}
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-gold/40 bg-black/50 text-gold-light transition hover:border-gold hover:bg-gold/15"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-black/55 text-white/85 backdrop-blur-md transition hover:border-white/35 hover:bg-white/10 hover:text-white"
                 aria-label={muted ? "Sesi aç" : "Sesi kapat"}
               >
                 {muted ? <VolumeX size={15} /> : <Volume2 size={15} />}
@@ -592,14 +593,14 @@ function IntroFilmModalBody({
           )}
           <button
             onClick={() => (isVideo ? toggleVideoPlay() : setPaused((p) => !p))}
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-gold/40 bg-black/50 text-gold-light transition hover:border-gold hover:bg-gold/15"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-black/55 text-white/85 backdrop-blur-md transition hover:border-white/35 hover:bg-white/10 hover:text-white"
             aria-label={paused ? "Oynat" : "Duraklat"}
           >
             {paused ? <Play size={15} className="ml-0.5" /> : <Pause size={15} />}
           </button>
           <button
             onClick={onClose}
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 bg-black/50 text-white transition hover:border-gold hover:text-gold-light"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-black/60 text-white transition hover:border-white/45 hover:bg-white/12"
             aria-label="Kapat"
           >
             <X size={20} />
@@ -631,10 +632,10 @@ function IntroFilmModalBody({
                     videoRef.current.currentTime = ratio * duration;
                   }
                 }}
-                className="group relative h-1.5 w-full cursor-pointer overflow-hidden bg-white/20"
+                className="group relative h-1.5 w-full cursor-pointer overflow-hidden rounded-full bg-white/20"
               >
                 <div
-                  className="h-full bg-gradient-to-r from-gold to-gold-light transition-[width] duration-150"
+                  className="h-full rounded-full bg-gradient-to-r from-gold to-gold-light transition-[width] duration-150"
                   style={{ width: `${Math.min(100, (currentTime / Math.max(1, duration)) * 100)}%` }}
                 />
               </div>
@@ -645,10 +646,10 @@ function IntroFilmModalBody({
                     <button
                       key={ch.chapter}
                       onClick={() => jumpToScene(idx)}
-                      className={`border px-2.5 py-1 text-[0.65rem] tracking-[0.16em] uppercase transition ${
+                      className={`rounded-full border px-3 py-1 text-[0.65rem] font-medium tracking-[0.12em] uppercase transition ${
                         idx === activeChapterIdx
-                          ? "border-gold-light bg-gold/25 text-gold-light"
-                          : "border-white/20 bg-black/45 text-mist hover:border-gold/50 hover:text-white"
+                          ? "border-[#f3ead8] bg-[#f3ead8] text-[#090b10]"
+                          : "border-white/15 bg-black/50 text-white/65 hover:border-white/35 hover:text-white"
                       }`}
                     >
                       0{idx + 1} · {ch.short}
@@ -668,8 +669,8 @@ function IntroFilmModalBody({
                     key={idx}
                     onClick={() => setI(idx)}
                     aria-label={`Sahne ${idx + 1}`}
-                    className={`h-1 transition-all duration-300 ${
-                      idx === i ? "w-16 bg-gold" : "w-7 bg-white/30 hover:bg-white/60"
+                    className={`h-1 rounded-full transition-all duration-300 ${
+                      idx === i ? "w-16 bg-gold-light" : "w-7 bg-white/30 hover:bg-white/60"
                     }`}
                   />
                 ))}
@@ -677,14 +678,14 @@ function IntroFilmModalBody({
               <div className="flex items-center gap-2">
                 <button
                   onClick={() => setI((v) => (v - 1 + SLIDES.length) % SLIDES.length)}
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-gold/40 text-gold-light hover:bg-gold/15"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-black/55 text-white/85 hover:border-white/35 hover:text-white"
                   aria-label="Önceki sahne"
                 >
                   <ArrowLeft size={16} />
                 </button>
                 <button
                   onClick={() => setI((v) => (v + 1) % SLIDES.length)}
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-gold/40 text-gold-light hover:bg-gold/15"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-black/55 text-white/85 hover:border-white/35 hover:text-white"
                   aria-label="Sonraki sahne"
                 >
                   <ArrowRight size={16} />
@@ -850,7 +851,9 @@ export function TimelineStrip() {
                     alt={t.title}
                     fill
                     sizes="64px"
-                    className="object-cover transition duration-500 group-hover:scale-110"
+                    className={`object-cover transition duration-500 group-hover:scale-110 ${
+                      t.image.startsWith("/images/people/") ? "portrait-tone object-top" : ""
+                    }`}
                   />
                 </div>
                 <div className="min-w-0 flex-1">

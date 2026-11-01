@@ -19,7 +19,7 @@ export default function KisilerPage() {
         crumbs={[{ label: "Kişiler" }]}
         count={PEOPLE.length}
       />
-      <section className="mx-auto max-w-[1440px] px-5 pt-10 md:px-10">
+      <section className="mx-auto max-w-[1440px] px-5 pb-20 pt-10 md:px-10">
         <PeopleGrid />
       </section>
     </>

@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import Fuse from "fuse.js";
 import { ArrowRight, ChevronDown, Menu, Search, X } from "lucide-react";
-import { DOCS, EXHIBITIONS, PEOPLE, PLACES, TIMELINE } from "@/lib/data";
+import { CULTURE_CATS, CULTURE_ITEMS, DOCS, EXHIBITIONS, PEOPLE, PLACES, TIMELINE } from "@/lib/data";
 import { NAV, Logo } from "./Brand";
 
 interface SearchCatalogItem {
@@ -53,6 +53,16 @@ const SEARCH_CATALOG: SearchCatalogItem[] = [
     image: pl.image,
     keywords: pl.description,
   })),
+  ...CULTURE_ITEMS.map((c) => {
+    const cat = CULTURE_CATS.find((x) => x.id === c.cat);
+    return {
+      href: `/kultur?oge=${c.id}`,
+      title: c.title,
+      meta: `Kültür · ${cat?.label ?? c.cat}${c.nativeTerm ? ` · ${c.nativeTerm}` : ""}`,
+      image: cat?.image ?? "/images/kultur.jpg",
+      keywords: `${c.nativeTerm ?? ""} ${c.text} ${cat?.label ?? ""}`,
+    };
+  }),
 ];
 
 const FUSE_INDEX = new Fuse(SEARCH_CATALOG, {
@@ -65,7 +75,7 @@ const FUSE_INDEX = new Fuse(SEARCH_CATALOG, {
   ignoreLocation: true,
 });
 
-const QUICK_TERMS = ["Şeyh Şamil", "Baysangur", "Targim", "1944", "Harita"];
+const QUICK_TERMS = ["Şeyh Mansur", "Baysangur", "Cevher Dudayev", "Targim", "Nohçalla", "1944"];
 
 export default function Header() {
   const pathname = usePathname();
@@ -173,7 +183,9 @@ export default function Header() {
     <>
       <header
         ref={headerRef}
-        className={`site-header-scroll fixed inset-x-0 top-0 z-50 flex h-[78px] items-center border-b transition-colors duration-300 ${
+        className={`${
+          pathname === "/" ? "site-header-scroll-home" : "site-header-scroll-sub"
+        } fixed inset-x-0 top-0 z-50 flex h-[78px] items-center border-b transition-colors duration-300 ${
           scrolled || pathname !== "/"
             ? "border-white/[0.08] bg-ink/84 backdrop-blur-xl"
             : "border-transparent bg-gradient-to-b from-ink/85 via-ink/35 to-transparent"
@@ -275,7 +287,8 @@ export default function Header() {
           }`}
         />
         <aside
-          className={`absolute right-0 top-0 flex h-full w-full max-w-md flex-col border-l border-white/10 bg-ink/95 px-8 py-7 backdrop-blur-2xl transition-transform duration-300 ${
+          data-lenis-prevent
+          className={`absolute right-0 top-0 flex h-full w-full max-w-md flex-col overflow-y-auto border-l border-white/10 bg-ink/95 px-8 py-7 backdrop-blur-2xl transition-transform duration-300 ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
@@ -331,9 +344,10 @@ export default function Header() {
       {/* Modern Web Guidance (light-dismiss-a-dialog): Native top-layer <dialog closedby="any"> */}
       <dialog
         ref={dialogRef}
+        data-lenis-prevent
         aria-labelledby={searchTitleId}
         {...({ closedby: "any" } as Record<string, string>)}
-        className="search-dialog museum-card fixed inset-x-0 top-20 mx-auto hidden w-[calc(100%-2rem)] max-w-2xl bg-transparent p-6 text-white shadow-2xl open:block"
+        className="search-dialog search-dialog-panel fixed inset-x-0 top-20 mx-auto hidden w-[calc(100%-2rem)] max-w-2xl p-6 text-white open:block"
       >
         <h2 id={searchTitleId} className="sr-only">
           Targim Dijital Katalogda Ara
@@ -344,7 +358,7 @@ export default function Header() {
             ref={inputRef}
             value={q}
             onChange={(e) => setQ(e.target.value)}
-            placeholder="Şahsiyet, arşiv belgesi, kule yerleşimi veya yıl arayın…"
+            placeholder="Şahsiyet, arşiv belgesi, kültür öğesi, yerleşim veya yıl arayın…"
             className="flex-1 bg-transparent text-lg text-white outline-none placeholder:text-white/40"
           />
           {q && (
@@ -385,7 +399,10 @@ export default function Header() {
             “{q}” için eşleşen kayıt bulunamadı.
           </p>
         ) : (
-          <ul className="mt-3 max-h-[54vh] space-y-1 overflow-y-auto pr-1">
+          <ul
+            data-lenis-prevent
+            className="mt-3 max-h-[54vh] space-y-1 overflow-y-auto overscroll-contain pr-1"
+          >
             {results.map((r) => (
               <li key={r.href}>
                 <Link
@@ -393,8 +410,18 @@ export default function Header() {
                   onClick={closeSearchDialog}
                   className="group flex items-center gap-3.5 rounded-xl px-3 py-2.5 transition hover:bg-white/[0.07]"
                 >
-                  <span className="relative h-11 w-11 shrink-0 overflow-hidden rounded-lg border border-white/12 bg-ink">
-                    <Image src={r.image} alt="" fill sizes="44px" className="object-cover" />
+                  <span className="relative h-11 w-11 shrink-0 overflow-hidden rounded-lg border border-white/12 bg-night">
+                    <Image
+                      src={r.image}
+                      alt=""
+                      fill
+                      sizes="44px"
+                      className={
+                        r.href.startsWith("/kisiler/")
+                          ? "portrait-tone object-cover object-top"
+                          : "object-cover"
+                      }
+                    />
                   </span>
                   <span className="min-w-0 flex-1">
                     <span className="block truncate text-sm font-medium text-white group-hover:text-gold-light">

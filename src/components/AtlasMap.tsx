@@ -3,9 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { useEffect, useMemo, useRef, useState } from "react";
-import { ArrowRight, Compass, Locate, Minus, Plus, X } from "lucide-react";
-import { PLACES, PLACE_KINDS, type Place, type PlaceKind } from "@/lib/data";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { ArrowRight, Compass, Locate, Minus, Plus, ScrollText, X } from "lucide-react";
+import { PLACES, PLACE_KINDS, getDoc, getPerson, type Place, type PlaceKind } from "@/lib/data";
 
 /* Kuzey Kafkasya merkezli eşdikdörtgen projeksiyon */
 const W = 1000;
@@ -170,10 +170,29 @@ const PEAKS = (() => {
 
 const TICKS = [1700, 1785, 1834, 1864, 1917, 1944, 1991, 2000];
 
+const LABEL_LAYOUT: Record<string, { dx: number; dy: number; anchor: "start" | "middle" | "end" }> = {
+  targim: { dx: -10, dy: -16, anchor: "end" },
+  vovnuski: { dx: 12, dy: -14, anchor: "start" },
+  erzi: { dx: 0, dy: 24, anchor: "middle" },
+  grozni: { dx: 12, dy: -16, anchor: "start" },
+  aldi: { dx: 14, dy: 19, anchor: "start" },
+  sunja: { dx: -12, dy: 19, anchor: "end" },
+  vedeno: { dx: -12, dy: -15, anchor: "end" },
+  dargo: { dx: 14, dy: -13, anchor: "start" },
+  harachoy: { dx: 0, dy: 24, anchor: "middle" },
+};
+
 function Marker({ p, selected, onClick }: { p: Place; selected: boolean; onClick: () => void }) {
   const x = px(p.lon);
   const y = py(p.lat);
   const r = selected ? 9 : 7;
+  const layout = LABEL_LAYOUT[p.id] ?? { dx: 0, dy: -r - 15, anchor: "middle" as const };
+  const pillW = p.name.length * 6.8 + 20;
+  const rectX =
+    layout.anchor === "start" ? -8 : layout.anchor === "end" ? -pillW + 8 : -pillW / 2;
+  const textX =
+    layout.anchor === "start" ? pillW / 2 - 8 : layout.anchor === "end" ? -pillW / 2 + 8 : 0;
+
   return (
     <g
       transform={`translate(${x},${y})`}
@@ -182,7 +201,7 @@ function Marker({ p, selected, onClick }: { p: Place; selected: boolean; onClick
       role="button"
       aria-label={p.name}
     >
-      {selected && <circle r={24} fill="rgba(201,164,92,0.22)" className="animate-pulse" />}
+      {selected && <circle r={24} fill="rgba(212,180,117,0.22)" className="animate-pulse" />}
       {p.kind === "kule" && (
         <rect
           x={-r}
@@ -190,47 +209,49 @@ function Marker({ p, selected, onClick }: { p: Place; selected: boolean; onClick
           width={r * 2}
           height={r * 2}
           transform="rotate(45)"
-          fill="#c9a45c"
-          stroke="#06080b"
+          fill="#d4b475"
+          stroke="#07090d"
           strokeWidth={2}
         />
       )}
-      {p.kind === "koy" && <circle r={r} fill="#ebd29d" stroke="#06080b" strokeWidth={2} />}
+      {p.kind === "koy" && <circle r={r} fill="#f2e2be" stroke="#07090d" strokeWidth={2} />}
       {p.kind === "yerlesim" && (
         <rect
           x={-r}
           y={-r}
           width={r * 2}
           height={r * 2}
-          fill="#06080b"
-          stroke="#ebd29d"
-          strokeWidth={2.4}
+          rx={2}
+          fill="#07090d"
+          stroke="#f2e2be"
+          strokeWidth={2.2}
         />
       )}
       {p.kind === "savas" && (
-        <g stroke="#e8735a" strokeWidth={2.8} strokeLinecap="round">
-          <circle r={r + 3} fill="#06080b" stroke="#e8735a" strokeWidth={1.6} />
-          <line x1={-4.8} y1={-4.8} x2={4.8} y2={4.8} />
-          <line x1={4.8} y1={-4.8} x2={-4.8} y2={4.8} />
+        <g stroke="#e8735a" strokeWidth={2.6} strokeLinecap="round">
+          <circle r={r + 3} fill="#07090d" stroke="#e8735a" strokeWidth={1.6} />
+          <line x1={-4.6} y1={-4.6} x2={4.6} y2={4.6} />
+          <line x1={4.6} y1={-4.6} x2={-4.6} y2={4.6} />
         </g>
       )}
-      <g transform={`translate(0,${-r - 15})`}>
+      <g transform={`translate(${layout.dx},${layout.dy})`}>
         <rect
-          x={-(p.name.length * 3.8 + 12)}
-          y={-12}
-          width={p.name.length * 7.6 + 24}
-          height={22}
-          rx={3}
-          fill={selected ? "#c9a45c" : "rgba(6,8,11,0.88)"}
-          stroke="#c9a45c"
-          strokeOpacity={0.78}
+          x={rectX}
+          y={-11}
+          width={pillW}
+          height={21}
+          rx={10}
+          fill={selected ? "#f3ead8" : "rgba(8,11,16,0.9)"}
+          stroke={selected ? "#f3ead8" : "rgba(242,226,190,0.34)"}
+          strokeWidth={1}
         />
         <text
+          x={textX}
           textAnchor="middle"
           y={3.5}
-          fontSize={11.5}
-          fontWeight={selected ? 600 : 400}
-          fill={selected ? "#161108" : "#f3ead6"}
+          fontSize={11}
+          fontWeight={selected ? 600 : 500}
+          fill={selected ? "#090b10" : "#f3f1ec"}
           fontFamily="var(--font-inter)"
         >
           {p.name}
@@ -244,54 +265,110 @@ export default function AtlasMap() {
   const searchParams = useSearchParams();
   const katmanParam = searchParams.get("katman");
   const yerParam = searchParams.get("yer");
+  const validKatman =
+    katmanParam && PLACE_KINDS.some((k) => k.id === katmanParam) ? (katmanParam as PlaceKind) : null;
+  const validYer = yerParam && PLACES.some((p) => p.id === yerParam) ? yerParam : null;
+  const validYerPlace = validYer ? PLACES.find((x) => x.id === validYer) ?? null : null;
 
-  const startKinds =
-    katmanParam && PLACE_KINDS.some((k) => k.id === katmanParam)
-      ? [katmanParam as PlaceKind]
-      : PLACE_KINDS.map((k) => k.id);
-
-  const [kinds, setKinds] = useState<PlaceKind[]>(startKinds);
+  const [kinds, setKinds] = useState<PlaceKind[]>(() => {
+    if (validKatman) {
+      return validYerPlace && validYerPlace.kind !== validKatman
+        ? [validKatman, validYerPlace.kind]
+        : [validKatman];
+    }
+    return PLACE_KINDS.map((k) => k.id);
+  });
   const [showRivers, setShowRivers] = useState(true);
   const [showRegions, setShowRegions] = useState(true);
   const [showImamate, setShowImamate] = useState(true);
   const [showExile, setShowExile] = useState(true);
-  const [year, setYear] = useState(2000);
-  const [selected, setSelected] = useState<string>(
-    yerParam && PLACES.some((p) => p.id === yerParam) ? yerParam : "targim"
+  const [year, setYear] = useState(() =>
+    validYerPlace ? Math.max(2000, validYerPlace.year) : 2000
   );
+  const [selected, setSelected] = useState<string>(() => {
+    if (validYer) return validYer;
+    if (validKatman) return PLACES.find((p) => p.kind === validKatman)?.id ?? "targim";
+    return "targim";
+  });
+  const [prevParams, setPrevParams] = useState({ yer: validYer, katman: validKatman });
 
-  useEffect(() => {
-    if (yerParam && PLACES.some((p) => p.id === yerParam)) {
-      setSelected(yerParam);
+  const [view, setView] = useState(() => {
+    if (validYerPlace) {
+      const k = 1.75;
+      return { k, x: W / 2 - px(validYerPlace.lon) * k, y: H / 2 - py(validYerPlace.lat) * k };
     }
-  }, [yerParam]);
+    return { k: 1, x: 0, y: 0 };
+  });
 
-  useEffect(() => {
-    if (katmanParam && PLACE_KINDS.some((k) => k.id === katmanParam)) {
-      setKinds([katmanParam as PlaceKind]);
+  if (validYer !== prevParams.yer || validKatman !== prevParams.katman) {
+    const katmanChanged = validKatman !== prevParams.katman;
+    setPrevParams({ yer: validYer, katman: validKatman });
+
+    if (katmanChanged) {
+      if (validKatman) {
+        const nextKinds: PlaceKind[] =
+          validYerPlace && validYerPlace.kind !== validKatman
+            ? [validKatman, validYerPlace.kind]
+            : [validKatman];
+        setKinds(nextKinds);
+        if (!validYer) {
+          const firstMatch = PLACES.find((p) => p.kind === validKatman);
+          if (firstMatch) setSelected(firstMatch.id);
+          setView({ k: 1, x: 0, y: 0 });
+        }
+      } else {
+        setKinds(PLACE_KINDS.map((k) => k.id));
+        if (!validYer) {
+          setView({ k: 1, x: 0, y: 0 });
+        }
+      }
     }
-  }, [katmanParam]);
 
-  const [view, setView] = useState({ k: 1, x: 0, y: 0 });
+    if (validYerPlace) {
+      setSelected(validYerPlace.id);
+      setKinds((prev) =>
+        prev.includes(validYerPlace.kind) ? prev : [...prev, validYerPlace.kind]
+      );
+      setYear((prev) => Math.max(prev, validYerPlace.year));
+      const k = 1.75;
+      setView({ k, x: W / 2 - px(validYerPlace.lon) * k, y: H / 2 - py(validYerPlace.lat) * k });
+    }
+  }
+
   const drag = useRef<{ sx: number; sy: number; x: number; y: number } | null>(null);
   const svgRef = useRef<SVGSVGElement>(null);
 
-  const visible = useMemo(
-    () => PLACES.filter((p) => kinds.includes(p.kind) && p.year <= year),
-    [kinds, year]
-  );
+  const visible = useMemo(() => {
+    const list = PLACES.filter((p) => kinds.includes(p.kind) && p.year <= year);
+    return [...list].sort((a, b) => (a.id === selected ? 1 : b.id === selected ? -1 : 0));
+  }, [kinds, year, selected]);
   const sel = PLACES.find((p) => p.id === selected);
+  const selPeople = (sel?.people ?? []).map(getPerson).filter((p) => p !== undefined);
+  const selDocs = (sel?.docs ?? []).map(getDoc).filter((d) => d !== undefined);
 
   const toggle = (k: PlaceKind) =>
     setKinds((v) => (v.includes(k) ? v.filter((x) => x !== k) : [...v, k]));
 
-  const zoom = (f: number) =>
+  const zoom = useCallback((f: number) => {
     setView((v) => {
       const k = Math.min(4, Math.max(1, v.k * f));
       const cx = W / 2,
         cy = H / 2;
       return { k, x: cx - ((cx - v.x) * k) / v.k, y: cy - ((cy - v.y) * k) / v.k };
     });
+  }, []);
+
+  useEffect(() => {
+    const el = svgRef.current;
+    if (!el) return;
+    const handleWheel = (e: WheelEvent) => {
+      e.preventDefault();
+      e.stopPropagation();
+      zoom(e.deltaY < 0 ? 1.15 : 1 / 1.15);
+    };
+    el.addEventListener("wheel", handleWheel, { passive: false });
+    return () => el.removeEventListener("wheel", handleWheel);
+  }, [zoom]);
 
   const focus = (p: Place) => {
     setSelected(p.id);
@@ -319,19 +396,19 @@ export default function AtlasMap() {
   const sliderPct = ((year - TICKS[0]) / (TICKS[TICKS.length - 1] - TICKS[0])) * 100;
 
   return (
-    <div className="grid gap-5 lg:grid-cols-[245px_1fr_350px]">
+    <div className="grid gap-5 lg:grid-cols-[245px_1fr_360px]">
       {/* Sol Katmanlar ve Lejant Konsolu */}
       <aside className="museum-card h-fit p-5">
         <h2 className="eyebrow mb-4">Nokta Katmanları</h2>
         <ul className="space-y-1">
           {PLACE_KINDS.map((k) => (
             <li key={k.id}>
-              <label className="flex cursor-pointer items-center gap-3 rounded px-2 py-2 text-sm text-[#ece3d0] transition hover:bg-gold/10">
+              <label className="flex cursor-pointer items-center gap-3 rounded-xl px-2.5 py-2 text-sm text-white/80 transition hover:bg-white/[0.05] hover:text-white">
                 <input
                   type="checkbox"
                   checked={kinds.includes(k.id)}
                   onChange={() => toggle(k.id)}
-                  className="accent-[#c9a45c]"
+                  className="accent-[#d4b475]"
                 />
                 {k.label}
                 <span className="ml-auto font-mono text-xs text-gold-light/80">
@@ -344,47 +421,47 @@ export default function AtlasMap() {
 
         <div className="divider-gold my-4" />
         <h3 className="eyebrow mb-3">Tarihsel Hatlar</h3>
-        <ul className="space-y-1 text-sm text-[#ece3d0]">
+        <ul className="space-y-1 text-sm text-white/80">
           <li>
-            <label className="flex cursor-pointer items-center gap-3 rounded px-2 py-2 hover:bg-gold/10">
+            <label className="flex cursor-pointer items-center gap-3 rounded-xl px-2.5 py-2 transition hover:bg-white/[0.05] hover:text-white">
               <input
                 type="checkbox"
                 checked={showImamate}
                 onChange={() => setShowImamate((v) => !v)}
-                className="accent-[#c9a45c]"
+                className="accent-[#d4b475]"
               />
               <span>İmamet Havzası (1845)</span>
             </label>
           </li>
           <li>
-            <label className="flex cursor-pointer items-center gap-3 rounded px-2 py-2 hover:bg-gold/10">
+            <label className="flex cursor-pointer items-center gap-3 rounded-xl px-2.5 py-2 transition hover:bg-white/[0.05] hover:text-white">
               <input
                 type="checkbox"
                 checked={showExile}
                 onChange={() => setShowExile((v) => !v)}
-                className="accent-[#c9a45c]"
+                className="accent-[#d4b475]"
               />
               <span>Sürgün Rotaları</span>
             </label>
           </li>
           <li>
-            <label className="flex cursor-pointer items-center gap-3 rounded px-2 py-2 hover:bg-gold/10">
+            <label className="flex cursor-pointer items-center gap-3 rounded-xl px-2.5 py-2 transition hover:bg-white/[0.05] hover:text-white">
               <input
                 type="checkbox"
                 checked={showRivers}
                 onChange={() => setShowRivers((v) => !v)}
-                className="accent-[#c9a45c]"
+                className="accent-[#d4b475]"
               />
               <span>Nehir Ağları</span>
             </label>
           </li>
           <li>
-            <label className="flex cursor-pointer items-center gap-3 rounded px-2 py-2 hover:bg-gold/10">
+            <label className="flex cursor-pointer items-center gap-3 rounded-xl px-2.5 py-2 transition hover:bg-white/[0.05] hover:text-white">
               <input
                 type="checkbox"
                 checked={showRegions}
                 onChange={() => setShowRegions((v) => !v)}
-                className="accent-[#c9a45c]"
+                className="accent-[#d4b475]"
               />
               <span>Bölge İsimleri</span>
             </label>
@@ -393,7 +470,7 @@ export default function AtlasMap() {
 
         <div className="divider-gold my-4" />
         <h3 className="eyebrow mb-3">Harita Lejantı</h3>
-        <ul className="space-y-2.5 text-xs text-mist">
+        <ul className="space-y-2.5 text-xs text-white/55">
           <li className="flex items-center gap-3">
             <span className="h-2.5 w-2.5 rotate-45 bg-gold" /> Vaynah Kule Kompleksi
           </li>
@@ -416,29 +493,31 @@ export default function AtlasMap() {
       </aside>
 
       {/* Orta Kartografik Sahne */}
-      <div className="museum-card relative overflow-hidden">
+      <div data-lenis-prevent className="museum-card relative overflow-hidden">
         <svg
           ref={svgRef}
+          data-lenis-prevent
+          role="img"
+          aria-label="Kuzey Kafkasya interaktif tarih haritası"
           viewBox={`0 0 ${W} ${H}`}
-          className="block h-auto w-full cursor-grab touch-none select-none bg-[#0b0f14] active:cursor-grabbing"
+          className="block h-auto w-full cursor-grab touch-none select-none bg-[#080b10] active:cursor-grabbing"
           onPointerDown={onDown}
           onPointerMove={onMove}
           onPointerUp={onUp}
           onPointerLeave={onUp}
-          onWheel={(e) => zoom(e.deltaY < 0 ? 1.15 : 1 / 1.15)}
         >
           <defs>
             <radialGradient id="land" cx="50%" cy="42%" r="75%">
-              <stop offset="0%" stopColor="#352d1e" />
-              <stop offset="62%" stopColor="#1e1a13" />
-              <stop offset="100%" stopColor="#090c10" />
+              <stop offset="0%" stopColor="#141d2b" />
+              <stop offset="62%" stopColor="#0d131d" />
+              <stop offset="100%" stopColor="#07090d" />
             </radialGradient>
             <linearGradient id="mount" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#8a7248" />
-              <stop offset="100%" stopColor="#2a2317" />
+              <stop offset="0%" stopColor="#3a4659" />
+              <stop offset="100%" stopColor="#131924" />
             </linearGradient>
             <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
-              <line x1="0" y1="0" x2="0" y2="10" stroke="#c9a45c" strokeOpacity="0.05" strokeWidth="1" />
+              <line x1="0" y1="0" x2="0" y2="10" stroke="#d4b475" strokeOpacity="0.045" strokeWidth="1" />
             </pattern>
             <marker id="arrow-exile" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
               <path d="M 0 1 L 10 5 L 0 9 z" fill="#e8735a" />
@@ -450,7 +529,7 @@ export default function AtlasMap() {
 
           <g transform={`translate(${view.x},${view.y}) scale(${view.k})`}>
             <rect width={W} height={H} fill="url(#land)" />
-            {/* Antik rölyef harita dokusu katmanı */}
+            {/* Antik rölyef harita dokusu katmanı — koyu arduvaz temayla uyumlu */}
             <image
               href="/images/atlas.jpg"
               x={0}
@@ -458,7 +537,8 @@ export default function AtlasMap() {
               width={W}
               height={H}
               preserveAspectRatio="xMidYMid slice"
-              opacity={0.22}
+              opacity={0.14}
+              style={{ mixBlendMode: "luminosity" }}
             />
             <rect width={W} height={H} fill="url(#hatch)" />
 
@@ -652,24 +732,24 @@ export default function AtlasMap() {
         </svg>
 
         {/* Yakınlaştırma Kontrolü */}
-        <div className="absolute right-4 top-24 flex flex-col overflow-hidden rounded border border-gold/40 bg-ink/85 backdrop-blur-sm">
+        <div className="absolute right-4 top-24 flex flex-col overflow-hidden rounded-2xl border border-white/15 bg-ink/85 backdrop-blur-md">
           <button
             onClick={() => zoom(1.3)}
-            className="p-2.5 text-gold-light hover:bg-gold/15"
+            className="p-2.5 text-white/80 transition hover:bg-white/[0.08] hover:text-gold-light"
             aria-label="Yakınlaştır"
           >
             <Plus size={16} />
           </button>
           <button
             onClick={() => zoom(1 / 1.3)}
-            className="border-t border-gold/20 p-2.5 text-gold-light hover:bg-gold/15"
+            className="border-t border-white/10 p-2.5 text-white/80 transition hover:bg-white/[0.08] hover:text-gold-light"
             aria-label="Uzaklaştır"
           >
             <Minus size={16} />
           </button>
           <button
             onClick={() => setView({ k: 1, x: 0, y: 0 })}
-            className="border-t border-gold/20 p-2.5 text-gold-light hover:bg-gold/15"
+            className="border-t border-white/10 p-2.5 text-white/80 transition hover:bg-white/[0.08] hover:text-gold-light"
             aria-label="Görünümü sıfırla"
           >
             <Locate size={16} />
@@ -677,16 +757,16 @@ export default function AtlasMap() {
         </div>
 
         {/* Alt Zaman Kaydırıcısı */}
-        <div className="border-t border-gold/20 bg-ink/85 px-6 pb-4 pt-5">
+        <div className="border-t border-white/[0.08] bg-ink/85 px-6 pb-4 pt-5">
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
-              <Compass size={15} className="text-gold" />
+              <Compass size={15} className="text-gold-light" />
               <span className="w-12 font-display text-lg font-semibold text-gold-light">{year}</span>
             </div>
             <div className="relative flex-1">
-              <div className="absolute top-1/2 h-px w-full -translate-y-1/2 bg-gold/25" />
+              <div className="absolute top-1/2 h-px w-full -translate-y-1/2 bg-white/15" />
               <div
-                className="absolute top-1/2 h-0.5 -translate-y-1/2 bg-gold"
+                className="absolute top-1/2 h-0.5 -translate-y-1/2 bg-gold-light"
                 style={{ width: `${sliderPct}%` }}
               />
               <input
@@ -695,17 +775,17 @@ export default function AtlasMap() {
                 max={TICKS[TICKS.length - 1]}
                 value={year}
                 onChange={(e) => setYear(parseInt(e.target.value, 10))}
-                className="relative w-full cursor-pointer appearance-none bg-transparent accent-[#c9a45c]"
+                className="relative w-full cursor-pointer appearance-none bg-transparent accent-[#d4b475]"
                 aria-label="Tarihsel yıl filtresi"
               />
             </div>
           </div>
-          <div className="mt-2 flex justify-between pl-16 text-[0.68rem] font-medium text-mist">
+          <div className="mt-2 flex justify-between pl-16 text-[0.68rem] font-medium text-white/45">
             {TICKS.map((t) => (
               <button
                 key={t}
                 onClick={() => setYear(t)}
-                className={`transition hover:text-gold-light ${year >= t ? "text-[#efe5d0]" : ""}`}
+                className={`transition hover:text-gold-light ${year >= t ? "text-white/85" : ""}`}
               >
                 {t}
               </button>
@@ -718,37 +798,93 @@ export default function AtlasMap() {
       <aside className="museum-card h-fit overflow-hidden">
         {sel ? (
           <div key={sel.id} className="animate-fade-up">
-            <div className="relative aspect-[4/3] bg-ink">
-              <Image src={sel.image} alt={sel.name} fill sizes="350px" className="object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-panel via-transparent to-transparent" />
+            <div className="relative aspect-[4/3] bg-night">
+              <Image src={sel.image} alt={sel.name} fill sizes="360px" className="object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent" />
               <button
                 onClick={() => setSelected("")}
-                className="absolute right-3 top-3 rounded-full border border-gold/35 bg-ink/80 p-1.5 text-mist transition hover:text-white"
+                className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full border border-white/15 bg-ink/80 text-white/75 backdrop-blur-md transition hover:border-gold-light/45 hover:text-white"
                 aria-label="Listeye dön"
               >
-                <X size={16} />
+                <X size={15} />
               </button>
-              <span className="absolute bottom-3 left-4 border border-gold/35 bg-ink/80 px-2.5 py-0.5 text-[0.62rem] tracking-widest text-gold-light uppercase">
+              <span className="badge-glass absolute bottom-3 left-4">
                 {PLACE_KINDS.find((k) => k.id === sel.kind)?.label}
               </span>
             </div>
 
             <div className="p-6">
-              <h2 className="font-display text-2xl font-semibold text-[#f5ecd8]">{sel.name}</h2>
-              <p className="mt-3 font-serif text-lg leading-relaxed text-[#ddd3c0]">{sel.description}</p>
+              <h2 className="font-display text-2xl font-semibold text-white">{sel.name}</h2>
+              <p className="mt-2.5 text-sm leading-relaxed text-white/70">{sel.description}</p>
 
-              <dl className="mt-5 divide-y divide-gold/15 border-y border-gold/20 text-sm">
+              <dl className="mt-5 divide-y divide-white/[0.08] border-y border-white/[0.08] text-sm">
                 <div className="grid grid-cols-[95px_1fr] py-2.5">
-                  <dt className="text-xs tracking-wider text-gold-light/80 uppercase">Dönem</dt>
-                  <dd className="text-[#f1e8d5]">{sel.period}</dd>
+                  <dt className="text-xs font-medium tracking-wider text-gold-light/80 uppercase">Dönem</dt>
+                  <dd className="text-white/85">{sel.period}</dd>
                 </div>
                 <div className="grid grid-cols-[95px_1fr] py-2.5">
-                  <dt className="text-xs tracking-wider text-gold-light/80 uppercase">Koordinat</dt>
-                  <dd className="font-mono text-xs text-[#f1e8d5]">
+                  <dt className="text-xs font-medium tracking-wider text-gold-light/80 uppercase">Koordinat</dt>
+                  <dd className="font-mono text-xs text-white/85">
                     {sel.lat.toFixed(2)}°K, {sel.lon.toFixed(2)}°D
                   </dd>
                 </div>
               </dl>
+
+              {/* İlgili Şahsiyetler */}
+              {selPeople.length > 0 && (
+                <div className="mt-5">
+                  <p className="text-[0.65rem] font-medium tracking-[0.2em] text-gold-light uppercase">
+                    İlgili Şahsiyetler
+                  </p>
+                  <div className="mt-2.5 space-y-2">
+                    {selPeople.map((p) => (
+                      <Link
+                        key={p.slug}
+                        href={`/kisiler/${p.slug}`}
+                        className="group flex items-center gap-3 rounded-xl border border-white/[0.08] bg-white/[0.03] p-2 transition hover:border-gold-light/40 hover:bg-white/[0.06]"
+                      >
+                        <span className="relative h-12 w-10 shrink-0 overflow-hidden rounded-lg border border-white/12 bg-night">
+                          <Image
+                            src={p.image}
+                            alt={p.name}
+                            fill
+                            sizes="40px"
+                            className="portrait-tone object-cover object-top"
+                          />
+                        </span>
+                        <span className="min-w-0 flex-1">
+                          <span className="block truncate text-xs font-semibold text-white transition group-hover:text-gold-light">
+                            {p.name}
+                          </span>
+                          <span className="block truncate text-[0.68rem] text-white/50">{p.title}</span>
+                        </span>
+                        <ArrowRight size={13} className="shrink-0 text-gold-light/70 transition-transform group-hover:translate-x-0.5" />
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* İlgili Belgeler */}
+              {selDocs.length > 0 && (
+                <div className="mt-5">
+                  <p className="text-[0.65rem] font-medium tracking-[0.2em] text-gold-light uppercase">
+                    Arşiv Belgeleri
+                  </p>
+                  <div className="mt-2 space-y-1.5">
+                    {selDocs.map((d) => (
+                      <Link
+                        key={d.slug}
+                        href={`/arsiv/${d.slug}`}
+                        className="group flex items-center gap-2 rounded-xl border border-white/[0.08] bg-white/[0.03] px-3 py-2 text-xs text-white/80 transition hover:border-gold-light/40 hover:bg-white/[0.06] hover:text-gold-light"
+                      >
+                        <ScrollText size={13} className="shrink-0 text-gold-light" />
+                        <span className="truncate">{d.title}</span>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               <Link
                 href={
@@ -760,22 +896,25 @@ export default function AtlasMap() {
                 }
                 className="btn-gold mt-6 w-full justify-center"
               >
-                İlgili Kayıtları Aç <ArrowRight size={14} />
+                {sel.kind === "kule" ? "Kuleler Sergisini Aç" : "Kronolojide İncele"} <ArrowRight size={14} />
               </Link>
             </div>
           </div>
         ) : (
           <div className="p-6">
             <h2 className="eyebrow">Haritadaki Noktalar ({visible.length})</h2>
-            <ul className="mt-4 max-h-[520px] divide-y divide-gold/10 overflow-y-auto pr-1">
+            <ul
+              data-lenis-prevent
+              className="mt-4 max-h-[520px] divide-y divide-white/[0.08] overflow-y-auto overscroll-contain pr-1"
+            >
               {visible.map((p) => (
                 <li key={p.id}>
                   <button
                     onClick={() => focus(p)}
-                    className="flex w-full items-center justify-between py-2.5 text-left text-sm text-[#ece3d0] transition hover:text-gold-light"
+                    className="flex w-full items-center justify-between py-2.5 text-left text-sm text-white/85 transition hover:text-gold-light"
                   >
-                    <span className="font-display text-sm">{p.name}</span>
-                    <span className="text-xs text-mist">{p.period}</span>
+                    <span className="font-medium">{p.name}</span>
+                    <span className="text-xs text-white/45">{p.period}</span>
                   </button>
                 </li>
               ))}

@@ -23,11 +23,11 @@ export default function ContributionForm() {
   if (submitted) {
     return (
       <div className="museum-card p-10 text-center animate-fade-up">
-        <CheckCircle2 size={46} className="mx-auto text-gold" />
-        <h3 className="mt-4 font-display text-2xl font-semibold text-[#f5ecd8]">
+        <CheckCircle2 size={46} className="mx-auto text-gold-light" />
+        <h3 className="mt-4 font-display text-2xl font-semibold text-white">
           Belge Başvurunuz Kayda Alındı
         </h3>
-        <p className="mt-3 font-serif text-xl leading-relaxed text-[#cfc6b4]">
+        <p className="mt-3 text-base leading-relaxed text-white/70">
           Targim Archive yayın ve tasnif kurulu ilettiğiniz bilgileri inceleyerek en kısa sürede e-posta üzerinden
           sizinle iletişime geçecektir. Ortak hafızamıza katkınız için teşekkür ederiz.
         </p>
@@ -48,7 +48,7 @@ export default function ContributionForm() {
     <form onSubmit={handleSubmit} className="museum-card space-y-4 p-6 md:p-8">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         <div>
-          <label className="mb-1.5 block font-display text-[0.68rem] tracking-[0.18em] text-gold-light/85 uppercase">
+          <label className="mb-1.5 block text-[0.68rem] font-medium tracking-[0.16em] text-gold-light/85 uppercase">
             Ad Soyad
           </label>
           <input
@@ -60,7 +60,7 @@ export default function ContributionForm() {
           />
         </div>
         <div>
-          <label className="mb-1.5 block font-display text-[0.68rem] tracking-[0.18em] text-gold-light/85 uppercase">
+          <label className="mb-1.5 block text-[0.68rem] font-medium tracking-[0.16em] text-gold-light/85 uppercase">
             E-Posta Adresi
           </label>
           <input
@@ -76,13 +76,13 @@ export default function ContributionForm() {
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         <div>
-          <label className="mb-1.5 block font-display text-[0.68rem] tracking-[0.18em] text-gold-light/85 uppercase">
+          <label className="mb-1.5 block text-[0.68rem] font-medium tracking-[0.16em] text-gold-light/85 uppercase">
             Materyal Türü
           </label>
           <select
             value={formData.type}
             onChange={(e) => setFormData({ ...formData, type: e.target.value })}
-            className="input-dark w-full px-4 py-2.5 text-sm"
+            className="input-dark w-full px-4 py-2.5 text-sm [&>option]:bg-panel"
           >
             <option value="fotograf">Tarihi Fotoğraf / Albüm</option>
             <option value="el-yazmasi">El Yazması / Mektup</option>
@@ -92,7 +92,7 @@ export default function ContributionForm() {
           </select>
         </div>
         <div>
-          <label className="mb-1.5 block font-display text-[0.68rem] tracking-[0.18em] text-gold-light/85 uppercase">
+          <label className="mb-1.5 block text-[0.68rem] font-medium tracking-[0.16em] text-gold-light/85 uppercase">
             Tahmini Tarih / Dönem
           </label>
           <input
@@ -105,7 +105,7 @@ export default function ContributionForm() {
       </div>
 
       <div>
-        <label className="mb-1.5 block font-display text-[0.68rem] tracking-[0.18em] text-gold-light/85 uppercase">
+        <label className="mb-1.5 block text-[0.68rem] font-medium tracking-[0.16em] text-gold-light/85 uppercase">
           Belgenin Hikâyesi ve Bağlamı
         </label>
         <textarea
@@ -120,7 +120,7 @@ export default function ContributionForm() {
 
       <div
         onClick={() => fileRef.current?.click()}
-        className="cursor-pointer border border-dashed border-gold/35 bg-ink/45 p-6 text-center transition hover:border-gold-light hover:bg-gold/5"
+        className="cursor-pointer rounded-2xl border border-dashed border-white/15 bg-white/[0.03] p-6 text-center transition hover:border-gold-light/45 hover:bg-white/[0.06]"
       >
         <input
           ref={fileRef}
@@ -133,13 +133,13 @@ export default function ContributionForm() {
           <>
             <FileCheck2 size={24} className="mx-auto mb-2 text-gold-light" />
             <p className="text-sm font-medium text-gold-light">{fileName}</p>
-            <p className="mt-1 text-xs text-mist">Değiştirmek için tıklayın</p>
+            <p className="mt-1 text-xs text-white/50">Değiştirmek için tıklayın</p>
           </>
         ) : (
           <>
-            <Upload size={24} className="mx-auto mb-2 text-gold" />
-            <p className="text-sm text-[#ece3d0]">Dijital kopya eklemek için tıklayın (İsteğe bağlı)</p>
-            <p className="mt-1 text-xs text-mist">JPG, PNG, PDF veya Ses Kaydı (Maks. 25 MB)</p>
+            <Upload size={24} className="mx-auto mb-2 text-gold-light" />
+            <p className="text-sm text-white/85">Dijital kopya eklemek için tıklayın (İsteğe bağlı)</p>
+            <p className="mt-1 text-xs text-white/45">JPG, PNG, PDF veya Ses Kaydı (Maks. 25 MB)</p>
           </>
         )}
       </div>
