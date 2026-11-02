@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# 4K film: GitHub 100 MB siniri, depoda degil harici depolamada
+/public/videos/kule-arsivi-tanitim.mp4

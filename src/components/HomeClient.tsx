@@ -17,17 +17,6 @@ import {
   VolumeX,
   X,
 } from "lucide-react";
-import { TIMELINE } from "@/lib/data";
-import { FiligreeLink } from "@/components/Brand";
-
-/* Sol dikey bölüm göstergesi + bağlı Tanıtım Filmi tetikleyicisi */
-const RAIL = [
-  { id: "daglar", href: "#daglar", label: "Dağlar" },
-  { id: "mucadele", href: "#mucadele", label: "Mücadele" },
-  { id: "insanlar", href: "#insanlar", label: "İnsanlar" },
-  { id: "ithaf", href: "#ithaf", label: "Kule Belleği" },
-  { id: "yerlesimler", href: "/harita", label: "Atlas" },
-];
 
 export type ReelId = "kule" | "ithaf";
 
@@ -115,6 +104,10 @@ const DEDICATION_CHAPTERS: VideoChapter[] = [
   },
 ];
 
+/* 350 MB'lık 4K film GitHub sınırını aştığı için depoda değil; adresi ortam değişkeninden gelir */
+const FILM_4K = process.env.NEXT_PUBLIC_HERO_FILM_URL;
+const FILM_1080 = "/videos/kule-arsivi-tanitim-1080.mp4";
+
 export const REELS: Record<
   ReelId,
   {
@@ -132,7 +125,7 @@ export const REELS: Record<
     shortLabel: "01 · Kule Arşivi",
     badgeLabel: "TARGİM ARCHIVE · VAYNAH KULE ARŞİVİ FİLMİ",
     title: "Vaynah Kule Arşivi (00:15)",
-    src: "/videos/kule-arsivi-tanitim.mp4",
+    src: FILM_4K || FILM_1080,
     poster: "/images/hf-kule-gunbatimi.jpg",
     chapters: VIDEO_CHAPTERS,
   },
@@ -184,115 +177,70 @@ const SLIDES = [
 /* HERO TAM EKRAN KESİNTİSİZ VİDEO HAREKETİ (AMBIENT VIDEO MOTION)            */
 /* ========================================================================== */
 
+/* Geniş ekranda 4K film; telefon verisi 367 MB harcamasın diye dar ekranda hafif sürüm */
+const HERO_VIDEO_LIGHT = "/videos/kule-arsivi-hero.mp4";
+const FILM_START_TIMEOUT = 6000;
+const FILM_STALL_TIMEOUT = 2500;
+
 export function HeroVideoBackdrop() {
-  const parallaxRef = useRef<HTMLDivElement>(null);
-  const kuleRef = useRef<HTMLVideoElement>(null);
-  const ithafRef = useRef<HTMLVideoElement>(null);
-  const [active, setActive] = useState<ReelId>("kule");
-  const switchingRef = useRef(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    if (mq.matches) return;
-    let raf = 0;
-    const onScroll = () => {
-      cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(() => {
-        if (!parallaxRef.current) return;
-        const y = Math.min(window.scrollY, 900);
-        const shift = (y * 0.16).toFixed(1);
-        const scale = (1.02 + y * 0.00006).toFixed(4);
-        parallaxRef.current.style.transform = `translate3d(0, ${shift}px, 0) scale(${scale})`;
-      });
+    const video = videoRef.current;
+    if (!video) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      video.pause();
+      return;
+    }
+    if (!FILM_4K) return;
+
+    // 4K film 196 Mbps akıyor; bağlantı yetişmezse takılmak yerine 1080p'ye geçilir
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    const wait = (ms: number) => {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        if (!FILM_4K || !video.currentSrc.endsWith(FILM_4K)) return;
+        video.src = FILM_1080;
+        video.play().catch(() => {});
+      }, ms);
     };
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
+    const onWaiting = () => wait(FILM_STALL_TIMEOUT);
+    const onPlaying = () => clearTimeout(timer);
+
+    wait(FILM_START_TIMEOUT);
+    video.addEventListener("waiting", onWaiting);
+    video.addEventListener("playing", onPlaying);
     return () => {
-      cancelAnimationFrame(raf);
-      window.removeEventListener("scroll", onScroll);
+      clearTimeout(timer);
+      video.removeEventListener("waiting", onWaiting);
+      video.removeEventListener("playing", onPlaying);
     };
   }, []);
 
-  const crossfadeTo = (next: ReelId) => {
-    if (switchingRef.current) return;
-    switchingRef.current = true;
-    const incoming = next === "ithaf" ? ithafRef.current : kuleRef.current;
-    const outgoing = next === "ithaf" ? kuleRef.current : ithafRef.current;
-    if (incoming) {
-      incoming.currentTime = 0;
-      incoming.play().catch(() => {});
-    }
-    setActive(next);
-    window.setTimeout(() => {
-      if (outgoing) {
-        outgoing.pause();
-        outgoing.currentTime = 0;
-      }
-      switchingRef.current = false;
-    }, 1050);
-  };
-
   return (
-    <div className="absolute inset-0 overflow-hidden bg-ink">
-      <div
-        ref={parallaxRef}
-        className="absolute inset-0 will-change-transform transition-transform duration-150 ease-out"
-        style={{ transform: "translate3d(0, 0px, 0) scale(1.02)" }}
+    <div className="pointer-events-none absolute inset-0 select-none" aria-hidden="true">
+      <video
+        ref={videoRef}
+        poster={REELS.kule.poster}
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="metadata"
+        className="h-full w-full object-cover object-[70%_50%] saturate-[0.8]"
       >
-        <video
-          ref={kuleRef}
-          src={REELS.kule.src}
-          poster={REELS.kule.poster}
-          autoPlay
-          muted
-          playsInline
-          preload="auto"
-          onTimeUpdate={(e) => {
-            const v = e.currentTarget;
-            if (active === "kule" && v.duration > 0 && v.currentTime >= v.duration - 0.9) {
-              crossfadeTo("ithaf");
-            }
-          }}
-          onEnded={() => crossfadeTo("ithaf")}
-          className={`absolute inset-0 h-full w-full object-cover object-center transition-opacity duration-1000 ${
-            active === "kule" ? "opacity-100" : "opacity-0"
-          }`}
-        />
-        <video
-          ref={ithafRef}
-          src={REELS.ithaf.src}
-          poster={REELS.ithaf.poster}
-          muted
-          playsInline
-          preload="auto"
-          onTimeUpdate={(e) => {
-            if (active === "ithaf" && e.currentTarget.currentTime >= 11.8) {
-              crossfadeTo("kule");
-            }
-          }}
-          onEnded={() => crossfadeTo("kule")}
-          className={`absolute inset-0 h-full w-full object-cover object-center transition-opacity duration-1000 ${
-            active === "ithaf" ? "opacity-100" : "opacity-0"
-          }`}
-        />
-      </div>
-
-      {/* Yalnızca sol metin alanını koruyan dengeli sinematik vinyet — video hareketini açık bırakır */}
-      <div
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(ellipse 56% 66% at 23% 44%, rgba(6,8,11,0.82) 0%, rgba(6,8,11,0.44) 56%, rgba(6,8,11,0.12) 100%)",
-        }}
-      />
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-ink/86 via-ink/36 to-transparent" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-72 bg-gradient-to-t from-ink via-ink/82 to-transparent" />
+        {FILM_4K && <source src={FILM_4K} type="video/mp4" media="(min-width: 1024px)" />}
+        <source src={FILM_1080} type="video/mp4" media="(min-width: 1024px)" />
+        <source src={HERO_VIDEO_LIGHT} type="video/mp4" />
+      </video>
+      <div className="absolute inset-0 bg-gradient-to-r from-ink/80 via-ink/55 to-ink/10 md:from-ink md:via-ink/72 md:to-ink/5" />
+      <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/60" />
     </div>
   );
 }
 
 /* ========================================================================== */
-/* ÖZEL İTHAF BÖLÜMÜ: "BABAMIN EMEĞİNE AYRILDI" İKİ SÜTUNLU FİLM KARTI        */
+/* KAĞIT SAYFADA İTHAF: "BABAMIN EMEĞİNE AYRILDI"                             */
 /* ========================================================================== */
 
 export function DedicationFilmSection() {
@@ -313,69 +261,60 @@ export function DedicationFilmSection() {
   };
 
   return (
-    <section id="ithaf" className="mx-auto max-w-[1440px] scroll-mt-24 px-5 pt-20 md:px-10">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
-        className="museum-card grid items-center gap-8 overflow-hidden p-6 md:p-12 lg:grid-cols-[0.94fr_1.06fr]"
-      >
-        {/* Sol Sütun: İthaf Metni ve İki Ana Bölüm Geçişi */}
+    <section id="ithaf" className="paper-screen scroll-mt-20">
+      <div className="mx-auto grid max-w-[1500px] grid-cols-1 items-center gap-12 px-5 py-20 md:px-12 lg:min-h-svh lg:grid-cols-[0.85fr_1.15fr] lg:py-24">
         <div>
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/[0.04] px-3.5 py-1 text-[0.68rem] font-medium tracking-[0.18em] text-gold-light uppercase">
-            <span className="h-1.5 w-1.5 rounded-full bg-gold-light" />
-            Vefa ve Hafıza
-          </span>
-          <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-white md:text-4xl">
+          <h2 className="crt-glow font-serif text-[3.2rem] leading-[1.04] font-medium text-parchment md:text-[5rem] xl:text-[6rem]">
             Babamın Emeğine Ayrıldı
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-white/70 md:text-lg">
+          <p className="mt-5 text-2xl leading-snug text-parchment">Vefa ve hafıza</p>
+          <p className="mt-7 max-w-[34rem] text-lg leading-relaxed text-white/85">
             Mühürlü el yazmalarından taş kulelerin yüksek mazgallarına uzanan bu dijital bellek; yıllar boyunca
             dağılan kayıtları, soy hafızasını ve Kafkasya mirasını bir araya getiren babamın emeğine ithaf edilmiştir.
           </p>
-
-          <div className="mt-8">
-            <FiligreeLink href="/arsiv">Arşiv Belgelerine Geç</FiligreeLink>
-          </div>
+          <Link href="/arsiv" className="link-crt mt-8 inline-flex items-center gap-2.5 text-xl text-parchment">
+            Arşiv belgelerine geç
+            <ArrowRight size={18} />
+          </Link>
         </div>
 
-        {/* Sağ Sütun: 16:9 Tam Kadraj Sade Sinema Çerçevesi */}
-        <div className="relative aspect-video overflow-hidden rounded-2xl border border-white/12 bg-black shadow-[0_24px_60px_-15px_rgba(0,0,0,0.85)]">
-          <video
-            ref={videoRef}
-            src="/videos/babamin-emegine-ayrildi.mp4"
-            poster="/images/hf-ic-arsiv-yazmalar.jpg"
-            autoPlay
-            loop
-            muted={muted}
-            playsInline
-            className="h-full w-full object-cover"
-          />
+        <div className="ink-screen p-2.5 md:p-3.5">
+          <div className="relative aspect-video overflow-hidden bg-black">
+            <video
+              ref={videoRef}
+              src="/videos/babamin-emegine-ayrildi.mp4"
+              poster="/images/hf-ic-arsiv-yazmalar.jpg"
+              autoPlay
+              loop
+              muted={muted}
+              playsInline
+              className="h-full w-full object-cover"
+            />
 
-          <div className="absolute right-3.5 top-3.5 flex items-center gap-2">
-            <button
-              onClick={toggleSound}
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-black/60 text-white/85 backdrop-blur-md transition hover:border-white/35 hover:bg-black/80 hover:text-white"
-              aria-label={muted ? "Sesi aç" : "Sesi kapat"}
-              title={muted ? "Sesi aç" : "Sesi kapat"}
-            >
-              {muted ? <VolumeX size={14} /> : <Volume2 size={14} />}
-            </button>
-            <button
-              onClick={() => {
-                videoRef.current?.pause();
-                setModalOpen(true);
-              }}
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-black/60 text-white/85 backdrop-blur-md transition hover:border-white/35 hover:bg-black/80 hover:text-white"
-              aria-label="Tam ekran izle"
-              title="Tam ekran izle"
-            >
-              <Maximize2 size={13} />
-            </button>
+            <div className="absolute right-3 top-3 flex items-center gap-1.5">
+              <button
+                onClick={toggleSound}
+                className="flex h-9 w-9 items-center justify-center bg-ink text-parchment transition hover:bg-parchment hover:text-ink"
+                aria-label={muted ? "Sesi aç" : "Sesi kapat"}
+                title={muted ? "Sesi aç" : "Sesi kapat"}
+              >
+                {muted ? <VolumeX size={14} /> : <Volume2 size={14} />}
+              </button>
+              <button
+                onClick={() => {
+                  videoRef.current?.pause();
+                  setModalOpen(true);
+                }}
+                className="flex h-9 w-9 items-center justify-center bg-ink text-parchment transition hover:bg-parchment hover:text-ink"
+                aria-label="Tam ekran izle"
+                title="Tam ekran izle"
+              >
+                <Maximize2 size={13} />
+              </button>
+            </div>
           </div>
         </div>
-      </motion.div>
+      </div>
 
       <IntroFilmModal
         open={modalOpen}
@@ -696,185 +635,5 @@ function IntroFilmModalBody({
         </div>
       </div>
     </motion.div>
-  );
-}
-
-export function SectionRail() {
-  const [active, setActive] = useState("daglar");
-  const [filmOpen, setFilmOpen] = useState(false);
-
-  useEffect(() => {
-    const obs = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => e.isIntersecting && setActive(e.target.id));
-      },
-      { rootMargin: "-35% 0px -55% 0px" }
-    );
-    RAIL.forEach((r) => {
-      const el = document.getElementById(r.id);
-      if (el) obs.observe(el);
-    });
-    return () => obs.disconnect();
-  }, []);
-
-  return (
-    <>
-      <nav aria-label="Sayfa bölümleri" className="relative hidden lg:flex lg:flex-col lg:items-start lg:gap-7">
-        <ul className="flex flex-col gap-3.5 border-l border-white/12 pl-4">
-          {RAIL.map((r, i) => {
-            const on = active === r.id;
-            return (
-              <li key={r.id} className="relative">
-                {on && (
-                  <span className="-left-[17px] top-1/2 absolute h-4 w-[2px] -translate-y-1/2 rounded-full bg-gold-light" />
-                )}
-                <Link href={r.href} className="group flex items-center gap-3">
-                  <span
-                    className={`font-mono text-[0.68rem] transition-colors ${
-                      on ? "text-gold-light" : "text-white/35 group-hover:text-white/70"
-                    }`}
-                  >
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <span
-                    className={`text-xs font-medium tracking-[0.12em] uppercase transition-colors ${
-                      on ? "text-white" : "text-white/50 group-hover:text-white/85"
-                    }`}
-                  >
-                    {r.label}
-                  </span>
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-
-        <button
-          onClick={() => setFilmOpen(true)}
-          className="group inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/[0.05] py-2 pl-2 pr-4 text-left backdrop-blur-md transition hover:border-white/30 hover:bg-white/10"
-        >
-          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gold-light text-[#090b10] transition-transform duration-300 group-hover:scale-105">
-            <Play size={12} className="ml-0.5 fill-current" />
-          </span>
-          <span className="text-[0.7rem] font-medium tracking-[0.12em] text-white/85 uppercase group-hover:text-white">
-            Tanıtım Filmi
-          </span>
-        </button>
-      </nav>
-
-      <IntroFilmModal open={filmOpen} onClose={() => setFilmOpen(false)} />
-    </>
-  );
-}
-
-/* Mobil ve Tablet için kompakt Tanıtım Filmi butonu */
-export function MobileIntroFilm() {
-  const [open, setOpen] = useState(false);
-  return (
-    <>
-      <button
-        onClick={() => setOpen(true)}
-        className="group inline-flex h-10 items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-4 text-[0.7rem] font-medium tracking-[0.1em] text-white/90 uppercase backdrop-blur-md transition hover:border-white/30 hover:bg-white/12 lg:hidden"
-      >
-        <Play size={12} className="fill-gold-light text-gold-light" />
-        <span>Tanıtım Filmi</span>
-      </button>
-      <IntroFilmModal open={open} onClose={() => setOpen(false)} />
-    </>
-  );
-}
-
-/* Ana Sayfa Modern Yatay Zaman Çizelgesi Şeridi */
-export function TimelineStrip() {
-  const ref = useRef<HTMLDivElement>(null);
-  const [showAll, setShowAll] = useState(false);
-
-  const items = showAll ? TIMELINE : TIMELINE.filter((t) => t.featuredOnHome);
-
-  const scroll = (dir: number) => {
-    if (!ref.current) return;
-    const el = ref.current;
-    if (!showAll && el.scrollWidth <= el.clientWidth + 8 && dir > 0) {
-      setShowAll(true);
-      setTimeout(() => el.scrollBy({ left: 260, behavior: "smooth" }), 60);
-      return;
-    }
-    el.scrollBy({ left: dir * 280, behavior: "smooth" });
-  };
-
-  return (
-    <div>
-      <div className="mb-5 flex flex-wrap items-center justify-between gap-4">
-        <div className="flex items-center gap-3">
-          <span className="h-1.5 w-1.5 rounded-full bg-gold-light" />
-          <h2 className="text-xs font-semibold tracking-[0.2em] text-white/80 uppercase">
-            Tarihsel Kronoloji
-          </h2>
-        </div>
-
-        <div className="flex items-center gap-3">
-          <button
-            onClick={() => setShowAll((v) => !v)}
-            className="rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-1.5 text-[0.7rem] font-medium text-white/70 transition hover:border-white/25 hover:text-white"
-          >
-            {showAll ? "8 Ana Dönüm Noktası" : `Tüm Dönüm Noktaları (${TIMELINE.length})`}
-          </button>
-          <Link
-            href="/zaman-cizelgesi"
-            className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-1.5 text-[0.7rem] font-medium text-gold-light transition hover:border-white/25 hover:text-white"
-          >
-            Kronolojiyi Aç <ArrowRight size={12} />
-          </Link>
-        </div>
-      </div>
-
-      <div className="relative flex items-center gap-3">
-        <button
-          onClick={() => scroll(-1)}
-          className="group flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/12 bg-white/[0.04] text-white/75 transition hover:border-white/30 hover:bg-white/10 hover:text-white"
-          aria-label="Zaman çizelgesinde sola kaydır"
-        >
-          <ArrowLeft size={16} className="transition-transform group-hover:-translate-x-0.5" />
-        </button>
-
-        <div ref={ref} className="no-scrollbar relative flex-1 overflow-x-auto py-1">
-          <div className="flex gap-3">
-            {items.map((t) => (
-              <Link
-                key={t.year}
-                href={`/zaman-cizelgesi?yil=${t.year}`}
-                className="group flex w-[220px] shrink-0 items-center gap-3.5 rounded-2xl border border-white/10 bg-white/[0.03] p-2.5 transition duration-300 hover:-translate-y-0.5 hover:border-white/25 hover:bg-white/[0.07]"
-              >
-                <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-xl border border-white/10 bg-ink">
-                  <Image
-                    src={t.image}
-                    alt={t.title}
-                    fill
-                    sizes="64px"
-                    className={`object-cover transition duration-500 group-hover:scale-110 ${
-                      t.image.startsWith("/images/people/") ? "portrait-tone object-top" : ""
-                    }`}
-                  />
-                </div>
-                <div className="min-w-0 flex-1">
-                  <span className="font-mono text-xs font-semibold text-gold-light">{t.year}</span>
-                  <p className="mt-0.5 line-clamp-2 text-xs leading-snug text-white/80 group-hover:text-white">
-                    {t.short}
-                  </p>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-
-        <button
-          onClick={() => scroll(1)}
-          className="group flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/12 bg-white/[0.04] text-white/75 transition hover:border-white/30 hover:bg-white/10 hover:text-white"
-          aria-label="Zaman çizelgesinde sağa kaydır"
-        >
-          <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
-        </button>
-      </div>
-    </div>
   );
 }

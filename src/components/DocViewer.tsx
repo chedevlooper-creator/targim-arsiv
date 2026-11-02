@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import {
   Check,
   ChevronLeft,
@@ -59,7 +60,7 @@ export function DocViewer({
           <span className="w-10 shrink-0" />
         )}
 
-        <div className="museum-card relative aspect-[4/5] flex-1 overflow-hidden bg-night">
+        <div className="museum-card relative aspect-[4/5] flex-1 overflow-hidden bg-night lg:aspect-auto lg:h-[calc(100svh-17rem)]">
           <div
             className="relative h-full w-full transition-transform duration-300"
             style={{ transform: `scale(${inlineZoom})`, transformOrigin: "center center" }}
@@ -143,7 +144,7 @@ export function DocViewer({
       </div>
 
       {/* Tam Ekran Işıklı Masa */}
-      {full && (
+      {full && createPortal(
         <div
           data-lenis-prevent
           className="fixed inset-0 z-[90] flex flex-col bg-ink/96 backdrop-blur-xl"
@@ -188,7 +189,8 @@ export function DocViewer({
               <Image src={doc.image} alt={doc.title} fill sizes="100vw" className="object-contain" />
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </>
   );
@@ -219,7 +221,7 @@ export function DocTabs({ doc }: { doc: ArchiveDoc }) {
             className={`rounded-full px-3.5 py-1.5 text-xs font-medium transition ${
               active === t.id
                 ? "bg-white/[0.12] text-white"
-                : "text-white/55 hover:text-white"
+                : "text-white/75 hover:text-white"
             }`}
           >
             {t.label}

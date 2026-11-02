@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
-import { ArrowLeft, ArrowRight, Layers, MapPin, ScrollText } from "lucide-react";
-import { Breadcrumbs, PageBackdrop } from "@/components/PageHeader";
+import { ArrowRight, Layers, MapPin, ScrollText } from "lucide-react";
+import { Breadcrumbs, NextRecord } from "@/components/PageHeader";
 import PersonGallery from "@/components/PersonGallery";
 import {
   PEOPLE,
@@ -18,6 +18,7 @@ import {
   getPlacesForPerson,
   getRelatedPeople,
 } from "@/lib/data";
+import { pageMetadata } from "@/lib/site";
 
 export function generateStaticParams() {
   return PEOPLE.map((p) => ({ slug: p.slug }));
@@ -26,7 +27,8 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps<"/kisiler/[slug]">): Promise<Metadata> {
   const { slug } = await params;
   const p = getPerson(slug);
-  return { title: p ? p.name : "Kişi bulunamadı", description: p?.summary };
+  if (!p) return { title: "Kişi bulunamadı" };
+  return pageMetadata({ title: p.name, description: p.summary, path: `/kisiler/${p.slug}`, image: p.image });
 }
 
 export default function PersonPage(props: PageProps<"/kisiler/[slug]">) {
@@ -44,7 +46,7 @@ async function PersonPageContent({ params }: PageProps<"/kisiler/[slug]">) {
 
   const idx = PEOPLE.findIndex((x) => x.slug === p.slug);
   const prev = PEOPLE[idx - 1];
-  const next = PEOPLE[idx + 1];
+  const next = PEOPLE[idx + 1] ?? PEOPLE[0];
   const related = getRelatedPeople(p, 5);
   const events = getEventsForPerson(p, 2);
   const linkedDocs = getDocsForPerson(p, 3);
@@ -68,41 +70,24 @@ async function PersonPageContent({ params }: PageProps<"/kisiler/[slug]">) {
   if (p.center) facts.push(["Faaliyet Merkezi", p.center]);
 
   return (
-    <article className="pb-20 pt-[78px]">
+    <article className="paper-screen pt-[78px]">
       {/* Üst Biyografi Sahnesi */}
-      <section className="grain relative overflow-hidden border-b border-white/[0.08] bg-ink">
-        <PageBackdrop />
-
-        <div className="relative mx-auto max-w-[1440px] px-5 pb-16 pt-10 md:px-10">
+      <section className="relative overflow-hidden border-b border-white/15">
+        <div className="relative mx-auto max-w-[1500px] px-5 pb-16 pt-10 md:px-12">
           <Breadcrumbs items={[{ href: "/kisiler", label: "Kişiler" }, { label: p.name }]} />
 
-          <div className="mt-8 grid gap-10 lg:grid-cols-[minmax(0,430px)_1fr] xl:gap-14">
+          <div className="mt-8 grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,430px)_1fr] xl:gap-14">
             <PersonGallery name={p.name} items={gallery} />
 
-            <div className="flex flex-col justify-center animate-fade-up">
-              <div className="flex flex-wrap items-center gap-2.5">
-                <span className="badge-glass">{eraLabel(p.era)}</span>
-                <span className="font-mono text-xs text-gold-light/85">
-                  {p.born} – {p.died}
-                </span>
-              </div>
-
-              <h1 className="mt-4 font-display text-4xl font-semibold tracking-tight text-white md:text-6xl xl:text-7xl">
+            <div className="flex flex-col justify-center">
+              <h1 className="crt-glow font-serif text-[2.7rem] leading-[1.04] font-medium text-parchment [overflow-wrap:anywhere] sm:text-[3.2rem] md:text-[5rem] xl:text-[6.2rem]">
                 {p.name}
               </h1>
-              <p className="mt-3 font-serif text-2xl italic text-gold-light/90">
-                {p.title} · {p.region}
+              <p className="mt-4 text-2xl leading-snug text-parchment md:text-[1.7rem]">
+                {p.title}, {p.born}–{p.died}
               </p>
 
-              <div className="mt-5 flex items-center gap-3" aria-hidden="true">
-                <span className="h-px w-20 bg-gold-light/50" />
-                <span className="h-1.5 w-1.5 rotate-45 bg-gold-light" />
-                <span className="h-px w-40 bg-gradient-to-r from-gold-light/40 to-transparent" />
-              </div>
-
-              <p className="mt-6 max-w-2xl font-serif text-xl leading-relaxed text-white/85 md:text-2xl">
-                {p.summary}
-              </p>
+              <p className="mt-6 max-w-2xl text-xl leading-relaxed text-white/85">{p.summary}</p>
 
               <dl className="museum-card mt-8 grid max-w-2xl divide-y divide-white/[0.08] px-6 py-2">
                 {facts.map(([k, v]) => (
@@ -118,7 +103,7 @@ async function PersonPageContent({ params }: PageProps<"/kisiler/[slug]">) {
       </section>
 
       {/* Biyografi Metni, İlgili Belgeler ve Yan Panel */}
-      <section className="mx-auto grid max-w-[1440px] gap-14 px-5 pt-16 md:px-10 lg:grid-cols-[1fr_380px]">
+      <section className="mx-auto grid max-w-[1500px] grid-cols-1 gap-14 px-5 pt-16 md:px-12 lg:grid-cols-[1fr_380px]">
         <div>
           <h2 className="eyebrow">Tarihsel Biyografi</h2>
           <div className="mt-6 space-y-6 font-serif text-[1.35rem] leading-relaxed text-white/82">
@@ -129,7 +114,7 @@ async function PersonPageContent({ params }: PageProps<"/kisiler/[slug]">) {
                   key={i}
                   className={
                     hasDropCap
-                      ? "flow-root first-letter:float-left first-letter:mr-3.5 first-letter:font-display first-letter:text-6xl first-letter:leading-none first-letter:text-gold-light"
+                      ? "flow-root first-letter:float-left first-letter:mr-3.5 first-letter:font-serif first-letter:text-6xl first-letter:leading-none first-letter:text-parchment"
                       : undefined
                   }
                 >
@@ -320,35 +305,13 @@ async function PersonPageContent({ params }: PageProps<"/kisiler/[slug]">) {
         </aside>
       </section>
 
-      {/* Önceki / Sonraki Şahsiyet */}
-      <nav className="mx-auto mt-20 flex max-w-[1440px] items-center justify-between gap-4 border-t border-white/[0.08] px-5 pt-8 md:px-10">
-        {prev ? (
-          <Link href={`/kisiler/${prev.slug}`} className="group flex items-center gap-3 text-sm text-white/55 hover:text-gold-light">
-            <span className="relative hidden h-12 w-10 shrink-0 overflow-hidden rounded-lg border border-white/12 bg-night sm:block">
-              <Image src={prev.image} alt={prev.name} fill sizes="40px" className="portrait-tone object-cover object-top" />
-            </span>
-            <ArrowLeft size={16} className="text-gold-light transition-transform group-hover:-translate-x-1" />
-            <span>
-              <span className="block text-[0.62rem] tracking-widest uppercase">Önceki Şahsiyet</span>
-              <span className="text-sm font-semibold text-white transition group-hover:text-gold-light">{prev.name}</span>
-            </span>
-          </Link>
-        ) : (
-          <span />
-        )}
-        {next && (
-          <Link href={`/kisiler/${next.slug}`} className="group flex items-center gap-3 text-right text-sm text-white/55 hover:text-gold-light">
-            <span>
-              <span className="block text-[0.62rem] tracking-widest uppercase">Sonraki Şahsiyet</span>
-              <span className="text-sm font-semibold text-white transition group-hover:text-gold-light">{next.name}</span>
-            </span>
-            <ArrowRight size={16} className="text-gold-light transition-transform group-hover:translate-x-1" />
-            <span className="relative hidden h-12 w-10 shrink-0 overflow-hidden rounded-lg border border-white/12 bg-night sm:block">
-              <Image src={next.image} alt={next.name} fill sizes="40px" className="portrait-tone object-cover object-top" />
-            </span>
-          </Link>
-        )}
-      </nav>
+      <NextRecord
+        label="Sıradaki Şahsiyet"
+        title={next.name}
+        sub={next.title}
+        href={`/kisiler/${next.slug}`}
+        prev={prev ? { label: `Önceki: ${prev.name}`, href: `/kisiler/${prev.slug}` } : undefined}
+      />
     </article>
   );
 }

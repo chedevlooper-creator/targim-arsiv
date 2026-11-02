@@ -2,11 +2,14 @@ import type { Metadata } from "next";
 import ExhibitionsList from "@/components/ExhibitionsList";
 import PageHeader from "@/components/PageHeader";
 import { EXHIBITIONS } from "@/lib/data";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Sergiler",
   description: "Kafkasya'nın özgürlük mücadelesi, Vaynah kule mimarisi, 1944 sürgünü ve günlük yaşam üzerine küratöryel dijital sergiler.",
-};
+  path: "/sergiler",
+  image: "/images/imamet.jpg",
+});
 
 export default function SergilerPage() {
   return (

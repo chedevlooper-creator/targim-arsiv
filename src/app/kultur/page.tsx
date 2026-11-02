@@ -3,11 +3,14 @@ import { Suspense } from "react";
 import CultureExplorer from "@/components/CultureExplorer";
 import PageHeader from "@/components/PageHeader";
 import { CULTURE_ITEMS } from "@/lib/data";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Kültür",
   description: "Nohçalla ve Ezdel ahlakı, Vaynah kule mimarisi, dechig-pondar müziği, geleneksel giyim ve Kafkas mutfak mirası.",
-};
+  path: "/kultur",
+  image: "/images/kultur.jpg",
+});
 
 export default function KulturPage() {
   return (

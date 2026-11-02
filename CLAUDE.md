@@ -14,7 +14,7 @@ All user-facing copy is Turkish. Write new copy in Turkish, keep the existing re
 
 ```bash
 npm run dev      # dev server on http://localhost:3000 (Turbopack)
-npm run build    # production build → 397 prerendered routes
+npm run build    # production build → 398 prerendered routes
 npm run start    # serve the production build
 npm run lint     # ESLint (eslint-config-next: core-web-vitals + typescript)
 npm test         # node --test tests/archive-integrity.test.mts
@@ -60,7 +60,7 @@ Note the derived counts: `EXHIBITIONS[].count`, `CULTURE_CATS[].count`, and each
 
 | Route | File | Rendering |
 |---|---|---|
-| `/` | `src/app/page.tsx` | Server shell + `<HomeClient>` (video hero, timeline strip) |
+| `/` | `src/app/page.tsx` | Server shell + `BootScreen`, `FilmReel` (section directory), `HomeClient` (video hero, dedication) |
 | `/kisiler` | `src/app/kisiler/page.tsx` | `PeopleGrid` client component |
 | `/kisiler/[slug]` | `src/app/kisiler/[slug]/page.tsx` | `generateStaticParams` over `PEOPLE` |
 | `/arsiv` | `src/app/arsiv/page.tsx` | `ArchiveBrowser` client component |
@@ -70,14 +70,17 @@ Note the derived counts: `EXHIBITIONS[].count`, `CULTURE_CATS[].count`, and each
 | `/sergiler`, `/sergiler/[slug]` | `src/app/sergiler/**` | `ExhibitionsList`, per-exhibition page |
 | `/kultur` | `src/app/kultur/page.tsx` | `CultureExplorer` |
 | `/hakkinda` | `src/app/hakkinda/page.tsx` | Static editorial page |
+| `/surgun-1944` | `src/app/surgun-1944/page.tsx` | `Surgun1944` server component inside `PinnedSteps` |
 
-`src/app/layout.tsx` supplies the shell: `<Header>` / `<main>` / `<Footer>` inside `<SmoothScrollProvider>` (Lenis smooth scroll, `lenis/react`), and the three `next/font` families Cinzel (display) / Cormorant Garamond (serif) / Inter (sans) exposed as `--font-cinzel`, `--font-cormorant`, `--font-inter`.
+`sitemap.ts`, `robots.ts` and `manifest.ts` sit in `src/app/`. `src/lib/site.ts` holds the canonical domain, the Instagram account and `pageMetadata()`; use that helper for every new page so canonical, Open Graph and Twitter tags stay complete. A new top-level route also goes into `PAGES` in `sitemap.ts`.
 
-Nav links are declared once in `src/components/Brand.tsx` (`NAV`), alongside the shared `Logo`, `FiligreeLink` (pill CTA), and `DiamondDivider` primitives.
+`src/app/layout.tsx` supplies the shell: `<Header>` / `<main>` / `<Footer>` inside `<SmoothScrollProvider>` (Lenis smooth scroll, `lenis/react`), the fixed `.crt-overlay` layer, and the two `next/font` families STIX Two Text (display, serif and sans tokens) and VT323 (`font-mono`, boot screen) exposed as `--font-stix`, `--font-vt323`.
+
+Nav links are declared once in `src/components/Brand.tsx`: `NAV` for the header, `NAV_ALL` (adds Ana Sayfa and Hakkında) for the drawer and footer, alongside the shared `Logo`, `TowerMark`, `InstagramLink`, `FiligreeLink` (primary CTA), and `DiamondDivider` primitives.
 
 ### Server/client split
 
-Pages are server components; anything interactive lives in `src/components/` with `"use client"` at the top. Currently client-side: `ArchiveBrowser`, `AtlasMap`, `CultureExplorer`, `DocViewer`, `ExhibitionsList`, `Header`, `HomeClient`, `PeopleGrid`, `PersonGallery`, `SmoothScrollProvider`, `TimelineExplorer`, `TowerArchiveShowcase`.
+Pages are server components; anything interactive lives in `src/components/` with `"use client"` at the top. Currently client-side: `ArchiveBrowser`, `AtlasMap`, `CultureExplorer`, `DocViewer`, `ExhibitionsList`, `FilmReel`, `Header`, `HomeClient`, `HorizontalReel`, `PeopleGrid`, `PersonGallery`, `PinnedSteps`, `SmoothScrollProvider`, `TimelineExplorer`, `TowerArchiveShowcase`.
 
 **A client component that calls `useSearchParams()` must be wrapped in `<Suspense>`** by its page — `harita`, `zaman-cizelgesi`, and `kultur` all do this. Without the boundary the route cannot be prerendered.
 
@@ -94,18 +97,23 @@ Because `Header.tsx` is a client component that imports `PEOPLE`, `DOCS`, `TIMEL
 
 ### Design system
 
-`src/app/globals.css` holds everything. Tailwind v4 (`@import "tailwindcss"`) with `@theme` tokens — `ink`, `night`, `panel`, `panel-2`, `gold`, `gold-light`, `gold-dark`, `parchment`, `mist` — plus `--font-display` / `--font-serif` / `--font-sans` and the `kenburns` / `fade-up` animations.
+`src/app/globals.css` holds everything. Tailwind v4 (`@import "tailwindcss"`) with `@theme` tokens — `ink`, `night`, `panel`, `panel-2`, `gold`, `gold-light`, `gold-dark`, `parchment`, `mist`, `paper`, `paper-ink`, `istang`, `boot` — plus `--font-display` / `--font-serif` / `--font-sans` / `--font-mono`, 2px radius tokens and the `kenburns` / `fade-up` animations.
 
-Reusable classes live in `@layer components`: `.gold-text`, `.eyebrow`, `.panel`, `.museum-card`, `.btn-gold`, `.btn-glass`, `.chip` / `.chip-active`, `.badge-glass`, `.portrait-tone`, `.topo-bg`, `.grain`, `.input-dark`, `.divider-gold`, `.search-dialog-panel`, `.defer-offscreen-section`.
+Reusable classes live in `@layer components`: `.gold-text`, `.crt-glow`, `.link-crt`, `.eyebrow`, `.panel`, `.museum-card`, `.btn-gold`, `.btn-glass`, `.chip` / `.chip-active`, `.badge-glass`, `.portrait-tone`, `.topo-bg`, `.grain`, `.input-dark`, `.divider-gold`, `.istang-band`, `.search-dialog-panel`, `.defer-offscreen-section`.
 
-Use these classes rather than inventing new one-off styling — they carry the museum-glass look and hover transitions the whole site depends on.
+Use these classes rather than inventing new one-off styling — they carry the CRT archive look the whole site depends on: sharp corners, phosphor-glow serif headlines, underlined links.
+
+**Paper scopes.** `.paper-screen` re-declares the colour tokens (including `--color-white`), so every `text-white/*` and `border-white/*` utility inside it flips to ink on paper; `.ink-screen` flips a block back to dark inside paper. Detail pages (`/arsiv/[slug]`, `/kisiler/[slug]`, `/sergiler/[slug]`) use it, and `Header` matches the same routes. A `position: fixed` child inside `HorizontalReel` is trapped by its transform, so portal it to `document.body` as `DocViewer` does.
+
+**The CRT effect is CSS, not canvas.** The real DOM stays readable and indexable; only `FilmReel` is WebGL2. It falls back to a plain strip when WebGL2 is missing or reduced motion is on. `BootScreen` runs once per session, on the home page only.
 
 ### Images
 
 - **Portraits**: `public/images/people/<slug>.webp`, exactly **800×1000 (4:5) WebP**, referenced as `/images/people/<slug>.webp?v=N`. The `?v=N` query is a cache-bust and the test enforces that **all 330 portraits share one uniform version string** — bumping it means editing all 330 `image` fields *and* their `gallery[].src` entries.
 - **Archive documents**: `public/images/archive/*.jpg`, one per doc slug.
 - **Scene/editorial images**: `public/images/*.jpg` (`hero.jpg`, `atlas.jpg`, `hf-*.jpg`, category tiles).
-- **Video**: `public/videos/*.mp4` (`kule-arsivi-tanitim.mp4`, `babamin-emegine-ayrildi.mp4`), played by `HomeClient`.
+- **Brand**: `public/images/brand/` holds the round badge (`targim-logo.webp`), the small tower emblem (`targim-mark.webp`), manifest icons and the share image (`og.jpg`). `src/app/icon.png`, `apple-icon.png` and `favicon.ico` use the same emblem.
+- **Video**: `public/videos/*.mp4`, played by `HomeClient`. The 350 MB 4K60 film `kule-arsivi-tanitim.mp4` is **git-ignored** because it exceeds GitHub's 100 MB limit; it stays on disk and `NEXT_PUBLIC_HERO_FILM_URL` points the home hero at it (`.env.local` locally; in production the Vercel Blob store `targim-medya`, set on the Vercel project for production and preview). Without that variable, wide screens get `kule-arsivi-tanitim-1080.mp4` (H.264; keep it H.264, HEVC does not play in most Chrome installs). The hero also falls back to 1080p when the 4K film stalls. `kule-arsivi-hero.mp4` (3 MB) is the narrow-screen hero.
 
 Everything goes through `next/image` with `fill` + an explicit `sizes` attribute. `next.config.ts` allowlists `localPatterns` for `/images/**`.
 

@@ -98,11 +98,11 @@ export default function ArchiveBrowser() {
           />
         </label>
 
-        <div className="relative">
+        <div className="relative max-w-full">
           <select
             value={type}
             onChange={(e) => setType(e.target.value as DocType | "all")}
-            className="h-10 appearance-none rounded-full border border-white/10 bg-white/[0.04] pl-4 pr-9 text-xs font-medium text-white/80 outline-none transition hover:border-white/25 focus:border-gold-light/45 [&>option]:bg-panel"
+            className="h-10 max-w-full appearance-none truncate rounded-full border border-white/10 bg-white/[0.04] pl-4 pr-9 text-xs font-medium text-white/80 outline-none transition hover:border-white/25 focus:border-gold-light/45 [&>option]:bg-panel"
             aria-label="Belge türü"
           >
             <option value="all">Tüm Belge Türleri</option>
@@ -115,11 +115,11 @@ export default function ArchiveBrowser() {
           <ChevronDown size={13} className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-white/45" />
         </div>
 
-        <div className="relative">
+        <div className="relative max-w-full">
           <select
             value={era}
             onChange={(e) => setEra(e.target.value as Era | "all")}
-            className="h-10 appearance-none rounded-full border border-white/10 bg-white/[0.04] pl-4 pr-9 text-xs font-medium text-white/80 outline-none transition hover:border-white/25 focus:border-gold-light/45 [&>option]:bg-panel"
+            className="h-10 max-w-full appearance-none truncate rounded-full border border-white/10 bg-white/[0.04] pl-4 pr-9 text-xs font-medium text-white/80 outline-none transition hover:border-white/25 focus:border-gold-light/45 [&>option]:bg-panel"
             aria-label="Dönem"
           >
             <option value="all">Tüm Dönemler</option>
@@ -132,11 +132,11 @@ export default function ArchiveBrowser() {
           <ChevronDown size={13} className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-white/45" />
         </div>
 
-        <div className="relative">
+        <div className="relative max-w-full">
           <select
             value={region}
             onChange={(e) => setRegion(e.target.value)}
-            className="h-10 appearance-none rounded-full border border-white/10 bg-white/[0.04] pl-4 pr-9 text-xs font-medium text-white/80 outline-none transition hover:border-white/25 focus:border-gold-light/45 [&>option]:bg-panel"
+            className="h-10 max-w-full appearance-none truncate rounded-full border border-white/10 bg-white/[0.04] pl-4 pr-9 text-xs font-medium text-white/80 outline-none transition hover:border-white/25 focus:border-gold-light/45 [&>option]:bg-panel"
             aria-label="Bölge"
           >
             <option value="all">Tüm Bölgeler</option>
@@ -149,11 +149,11 @@ export default function ArchiveBrowser() {
           <ChevronDown size={13} className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-white/45" />
         </div>
 
-        <div className="relative">
+        <div className="relative max-w-full">
           <select
             value={sort}
             onChange={(e) => setSort(e.target.value as "asc" | "desc")}
-            className="h-10 appearance-none rounded-full border border-white/10 bg-white/[0.04] pl-4 pr-9 text-xs font-medium text-white/80 outline-none transition hover:border-white/25 focus:border-gold-light/45 [&>option]:bg-panel"
+            className="h-10 max-w-full appearance-none truncate rounded-full border border-white/10 bg-white/[0.04] pl-4 pr-9 text-xs font-medium text-white/80 outline-none transition hover:border-white/25 focus:border-gold-light/45 [&>option]:bg-panel"
             aria-label="Tarih sırası"
           >
             <option value="asc">Tarih (Eskiden Yeniye)</option>

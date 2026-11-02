@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronRight } from "lucide-react";
+import { ArrowRight, ChevronRight } from "lucide-react";
 
 type Crumb = { href?: string; label: string };
 
 export function Breadcrumbs({ items }: { items: Crumb[] }) {
   return (
-    <nav aria-label="Konum" className="flex flex-wrap items-center gap-1.5 text-xs text-white/50">
+    <nav aria-label="Konum" className="flex flex-wrap items-center gap-1.5 text-sm text-white/65">
       <Link href="/" className="transition hover:text-white">
         Ana Sayfa
       </Link>
@@ -35,11 +35,47 @@ export function PageBackdrop() {
         fill
         priority
         sizes="100vw"
-        className="object-cover object-[50%_30%] opacity-28"
+        className="object-cover object-[50%_30%] opacity-40 saturate-[0.7]"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/88 to-ink/52" />
-      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/42 to-ink/72" />
+      <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/80 to-ink/30" />
+      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-ink/60" />
     </div>
+  );
+}
+
+/** Kağıt sayfanın kapanışı: sıradaki kayda geçiş. */
+export function NextRecord({
+  label,
+  title,
+  sub,
+  href,
+  prev,
+}: {
+  label: string;
+  title: string;
+  sub?: string;
+  href: string;
+  prev?: { label: string; href: string };
+}) {
+  return (
+    <nav aria-label="Sıradaki kayıt" className="mx-auto max-w-4xl px-5 py-24 text-center md:py-32">
+      <p className="link-crt text-xl text-parchment">{label}</p>
+      <p className="crt-glow mt-4 font-serif text-[2.3rem] leading-[1.06] font-medium text-parchment [overflow-wrap:anywhere] [text-wrap:balance] sm:text-[2.8rem] md:text-[4.6rem]">
+        {title}
+      </p>
+      {sub && <p className="mt-3 text-xl text-parchment">{sub}</p>}
+      <Link href={href} className="btn-gold mt-8">
+        <span>Devam Et</span>
+        <ArrowRight size={17} />
+      </Link>
+      {prev && (
+        <p className="mt-7">
+          <Link href={prev.href} className="link-crt text-white/75">
+            {prev.label}
+          </Link>
+        </p>
+      )}
+    </nav>
   );
 }
 
@@ -59,36 +95,27 @@ export default function PageHeader({
   children?: React.ReactNode;
 }) {
   return (
-    <section className="grain relative overflow-hidden border-b border-white/[0.08] bg-ink pt-[78px]">
+    <section className="relative overflow-hidden bg-ink pt-[78px]">
       <PageBackdrop />
 
-      <div className="relative mx-auto max-w-[1440px] px-5 pb-10 pt-10 md:px-10 md:pb-12 md:pt-14">
+      <div className="relative mx-auto max-w-[1500px] px-5 pb-12 pt-10 md:px-12 md:pb-16 md:pt-16">
         {crumbs && <Breadcrumbs items={crumbs} />}
-        {eyebrow && (
-          <span className="mt-5 inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/[0.06] px-3 py-1 text-[0.6rem] font-medium tracking-[0.18em] text-gold-light uppercase backdrop-blur-md">
-            <span className="h-1 w-1 rounded-full bg-gold-light" />
-            {eyebrow}
-          </span>
-        )}
+        {eyebrow && <p className="eyebrow mt-6">{eyebrow}</p>}
         <div className="flex items-end justify-between gap-6">
-          <h1 className="mt-3 font-display text-3xl font-semibold tracking-tight md:text-[2.75rem] animate-fade-up">
-            <span className="gold-text">{title}</span>
+          <h1 className="crt-glow mt-3 min-w-0 font-serif text-[2.7rem] leading-[1.04] font-medium text-parchment [overflow-wrap:anywhere] sm:text-[3.2rem] md:text-[5.5rem] xl:text-[6.5rem]">
+            {title}
           </h1>
           {count !== undefined && (
             <span
-              className="font-display text-4xl font-semibold tabular-nums leading-none text-white/20 md:text-6xl animate-fade-up"
+              className="font-mono text-5xl leading-none text-white/35 md:text-7xl"
               aria-label={`${count} kayıt`}
             >
               {count}
             </span>
           )}
         </div>
-        {subtitle && (
-          <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/65 md:text-[0.95rem] animate-fade-up [animation-delay:100ms]">
-            {subtitle}
-          </p>
-        )}
-        {children && <div className="mt-6 animate-fade-up [animation-delay:180ms]">{children}</div>}
+        {subtitle && <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/80 md:text-xl">{subtitle}</p>}
+        {children && <div className="mt-7">{children}</div>}
       </div>
     </section>
   );

@@ -59,7 +59,7 @@ export default function TowerArchiveShowcase() {
   const [view, setView] = useState<"kule" | "ithaf" | "storyboard">("kule");
 
   const isVideo = view === "kule" || view === "ithaf";
-  const videoSrc = view === "ithaf" ? "/videos/babamin-emegine-ayrildi.mp4" : "/videos/kule-arsivi-tanitim.mp4";
+  const videoSrc = view === "ithaf" ? "/videos/babamin-emegine-ayrildi.mp4" : "/videos/kule-arsivi-tanitim-1080.mp4";
   const posterSrc = view === "ithaf" ? "/images/hf-ic-arsiv-yazmalar.jpg" : "/images/hf-kule-gunbatimi.jpg";
   const beats = view === "ithaf" ? ITHAF_BEATS : KULE_BEATS;
 

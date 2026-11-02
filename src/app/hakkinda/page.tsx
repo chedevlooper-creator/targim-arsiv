@@ -2,14 +2,17 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { DiamondDivider } from "@/components/Brand";
+import { DiamondDivider, InstagramLink } from "@/components/Brand";
 import { DedicationFilmSection } from "@/components/HomeClient";
 import PageHeader from "@/components/PageHeader";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Hakkında",
   description: "Targim Archive dijital hafıza projesinin misyonu ve arşivleme ilkeleri.",
-};
+  path: "/hakkinda",
+  image: "/images/targim-towers.jpg",
+});
 
 export default function HakkindaPage() {
   return (
@@ -115,6 +118,15 @@ export default function HakkindaPage() {
                 <p className="mt-3 text-sm leading-relaxed text-white/65">{item.text}</p>
               </div>
             ))}
+          </div>
+
+          <div className="mt-14">
+            <h2 className="font-display text-3xl font-semibold text-white md:text-4xl">Bize Ulaşın</h2>
+            <p className="mt-4 max-w-2xl text-lg leading-relaxed text-white/80">
+              Elinizdeki aile fotoğrafları, mektuplar veya sürgün belgeleri için ya da bir kayıttaki hatayı bildirmek
+              için Instagram hesabımızdan mesaj gönderin.
+            </p>
+            <InstagramLink className="mt-5 text-xl text-parchment" />
           </div>
         </div>
       </section>

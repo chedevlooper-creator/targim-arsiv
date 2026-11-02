@@ -3,12 +3,15 @@ import ArchiveBrowser from "@/components/ArchiveBrowser";
 import PageHeader from "@/components/PageHeader";
 import TowerArchiveShowcase from "@/components/TowerArchiveShowcase";
 import { DOCS } from "@/lib/data";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Arşiv",
   description:
     "Çeçen, İnguş ve Kuzey Kafkasya tarihine ait uluslararası arşivlerden doğrulanmış birincil el yazmaları, haritalar, resmi belgeler, erken fotoğraflar ve basılı eserler.",
-};
+  path: "/arsiv",
+  image: "/images/hf-ic-arsiv-yazmalar.jpg",
+});
 
 export default function ArsivPage() {
   return (

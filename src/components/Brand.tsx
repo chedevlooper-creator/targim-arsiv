@@ -1,45 +1,93 @@
+import { useId } from "react";
+import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { SITE } from "@/lib/site";
 
 export const NAV = [
-  { href: "/", label: "Ana Sayfa" },
   { href: "/kisiler", label: "Kişiler" },
   { href: "/arsiv", label: "Arşiv" },
   { href: "/zaman-cizelgesi", label: "Zaman Çizelgesi" },
   { href: "/harita", label: "Harita" },
   { href: "/sergiler", label: "Sergiler" },
   { href: "/kultur", label: "Kültür" },
-  { href: "/hakkinda", label: "Hakkında" },
+  { href: "/surgun-1944", label: "1944 Sürgünü" },
 ];
+
+/* Üst menüde logo ana sayfaya gider; tam liste yan menü ve alt bilgide */
+export const NAV_ALL = [{ href: "/", label: "Ana Sayfa" }, ...NAV, { href: "/hakkinda", label: "Hakkında" }];
+
+const MARK_STRIPES = ["currentColor", "#d8402f", "currentColor", "#e6ae47", "currentColor", "#d8402f", "currentColor"];
+
+/** Istang çizgileriyle dokunmuş Vaynah kulesi silueti. */
+export function TowerMark({ className = "" }: { className?: string }) {
+  const clipId = useId();
+  return (
+    <svg viewBox="0 0 28 36" className={className} aria-hidden="true">
+      <defs>
+        <clipPath id={clipId}>
+          <path d="M14 0 21 8h-2l2.2 28H6.8L9 8H7z" />
+        </clipPath>
+      </defs>
+      <g clipPath={`url(#${clipId})`}>
+        {MARK_STRIPES.map((fill, i) => (
+          <rect key={i} x="0" y={i * 5.2} width="28" height="3.8" fill={fill} />
+        ))}
+      </g>
+    </svg>
+  );
+}
 
 export function Logo({ small = false }: { small?: boolean }) {
   return (
     <Link
       href="/"
-      className="group inline-flex items-center gap-3 leading-none select-none"
+      className="group inline-flex items-center gap-2.5 leading-none select-none"
       aria-label="Targim Archive ana sayfa"
     >
-      <span className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/15 bg-white/[0.05] font-display text-sm font-semibold tracking-wider text-gold-light transition group-hover:border-gold/50 group-hover:bg-gold/15">
-        T
-      </span>
-      <span className="flex flex-col">
-        <span
-          className={`font-display font-semibold tracking-[0.18em] text-white transition duration-300 group-hover:text-gold-light ${
-            small ? "text-base" : "text-lg md:text-xl"
-          }`}
-        >
-          TARGİM
-        </span>
-        <span className="mt-0.5 text-[0.55rem] font-medium tracking-[0.38em] text-white/50 uppercase">
-          Dijital Arşiv
+      <Image
+        src="/images/brand/targim-mark.webp"
+        alt=""
+        width={160}
+        height={160}
+        sizes="48px"
+        className={small ? "h-10 w-10" : "h-11 w-11"}
+      />
+      <span
+        className={`font-display font-semibold tracking-[0.06em] text-white transition group-hover:text-gold-light ${
+          small ? "text-lg" : "text-xl md:text-[1.4rem]"
+        }`}
+      >
+        TARGİM
+        <span lang="en" className="mt-1 block text-[0.52em] font-medium tracking-[0.34em]">
+          ARCHIVE
         </span>
       </span>
     </Link>
   );
 }
 
+/** Marka Instagram hesabı; lucide-react marka simgesi taşımadığı için simge burada çizilir. */
+export function InstagramLink({ className = "" }: { className?: string }) {
+  return (
+    <a
+      href={SITE.instagram.url}
+      target="_blank"
+      rel="me noopener noreferrer"
+      className={`link-crt inline-flex items-center gap-2.5 ${className}`}
+    >
+      <svg viewBox="0 0 24 24" className="h-[1.1em] w-[1.1em]" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+        <rect x="3" y="3" width="18" height="18" rx="5" />
+        <circle cx="12" cy="12" r="4" />
+        <circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" />
+      </svg>
+      {SITE.instagram.handle}
+    </a>
+  );
+}
+
 /**
- * Modern yüksek kontrastlı kapsül CTA butonu.
+ * Keskin köşeli, tam dolgulu birincil bağlantı.
  */
 export function FiligreeLink({
   href,
@@ -53,22 +101,13 @@ export function FiligreeLink({
   size?: "sm" | "md";
 }) {
   const isAnchor = href.startsWith("#");
-  const sizing =
-    size === "sm"
-      ? "h-10 gap-2.5 px-5 text-[0.7rem] tracking-[0.1em]"
-      : "h-12 gap-3 px-6 text-[0.78rem] tracking-[0.12em]";
   const inner = (
-    <span
-      className={`group relative inline-flex items-center rounded-full bg-[#f4ead5] font-sans font-semibold text-[#090b10] uppercase shadow-[0_10px_30px_-8px_rgba(244,234,213,0.4)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:shadow-[0_14px_34px_-6px_rgba(255,255,255,0.45)] ${sizing}`}
-    >
+    <span className="btn-gold group">
       <span>{children}</span>
-      <span
-        className={`flex items-center justify-center rounded-full bg-[#090b10]/10 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 ${
-          size === "sm" ? "h-5 w-5" : "h-6 w-6"
-        }`}
-      >
-        <ArrowUpRight size={size === "sm" ? 12 : 14} className="text-[#090b10]" />
-      </span>
+      <ArrowRight
+        size={size === "sm" ? 15 : 17}
+        className="transition-transform duration-200 group-hover:translate-x-0.5"
+      />
     </span>
   );
 
@@ -89,9 +128,9 @@ export function FiligreeLink({
 export function DiamondDivider({ className = "" }: { className?: string }) {
   return (
     <div className={`flex items-center justify-center gap-3 ${className}`} aria-hidden="true">
-      <span className="h-px flex-1 max-w-[120px] bg-gradient-to-r from-transparent to-white/20" />
-      <span className="h-1.5 w-1.5 rounded-full bg-gold-light/70" />
-      <span className="h-px flex-1 max-w-[120px] bg-gradient-to-l from-transparent to-white/20" />
+      <span className="h-px max-w-[120px] flex-1 bg-white/20" />
+      <TowerMark className="h-4 w-auto" />
+      <span className="h-px max-w-[120px] flex-1 bg-white/20" />
     </div>
   );
 }

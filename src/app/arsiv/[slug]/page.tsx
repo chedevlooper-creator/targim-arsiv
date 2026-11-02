@@ -5,7 +5,8 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { ArrowRight, ExternalLink, Layers, MapPin } from "lucide-react";
 import { DocTabs, DocViewer } from "@/components/DocViewer";
-import { Breadcrumbs, PageBackdrop } from "@/components/PageHeader";
+import HorizontalReel from "@/components/HorizontalReel";
+import { Breadcrumbs, NextRecord } from "@/components/PageHeader";
 import {
   DOCS,
   PLACE_KINDS,
@@ -16,6 +17,7 @@ import {
   getPeopleForDoc,
   getPlacesForDoc,
 } from "@/lib/data";
+import { pageMetadata } from "@/lib/site";
 
 export function generateStaticParams() {
   return DOCS.map((d) => ({ slug: d.slug }));
@@ -24,7 +26,8 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps<"/arsiv/[slug]">): Promise<Metadata> {
   const { slug } = await params;
   const d = getDoc(slug);
-  return { title: d ? d.title : "Belge bulunamadı", description: d?.description };
+  if (!d) return { title: "Belge bulunamadı" };
+  return pageMetadata({ title: d.title, description: d.description, path: `/arsiv/${d.slug}`, image: d.image });
 }
 
 export default function DocPage(props: PageProps<"/arsiv/[slug]">) {
@@ -42,7 +45,7 @@ async function DocPageContent({ params }: PageProps<"/arsiv/[slug]">) {
 
   const idx = DOCS.findIndex((x) => x.slug === d.slug);
   const prev = DOCS[idx - 1];
-  const next = DOCS[idx + 1];
+  const next = DOCS[idx + 1] ?? DOCS[0];
   const similar = DOCS.filter((x) => x.slug !== d.slug && (x.type === d.type || x.era === d.era)).slice(0, 4);
   const relatedPeople = getPeopleForDoc(d.slug, 6);
   const relatedExhibitions = getExhibitionsForDoc(d.slug);
@@ -60,107 +63,108 @@ async function DocPageContent({ params }: PageProps<"/arsiv/[slug]">) {
   ];
 
   return (
-    <article className="pb-20 pt-[78px]">
-      <section className="grain relative overflow-hidden border-b border-white/[0.08] bg-ink">
-        <PageBackdrop />
-
-        <div className="relative mx-auto max-w-[1440px] px-5 pb-16 pt-10 md:px-10">
+    <article className="paper-screen">
+      <HorizontalReel>
+        {/* Birinci panel: kapak */}
+        <section className="flex shrink-0 flex-col justify-center px-5 pb-12 pt-[110px] md:px-12 lg:h-full lg:w-[min(68vw,1040px)] lg:pb-10">
           <Breadcrumbs items={[{ href: "/arsiv", label: "Arşiv" }, { label: d.title }]} />
+          <h1 className="crt-glow mt-6 font-serif text-[2.3rem] leading-[1.05] font-medium text-parchment [overflow-wrap:anywhere] [text-wrap:balance] sm:text-[2.9rem] md:text-[4.4rem] xl:text-[5.2rem]">
+            {d.title}
+          </h1>
+          <p className="mt-5 text-2xl leading-snug text-parchment md:text-[1.7rem]">
+            {docTypeLabel(d.type)}, {d.dateLabel}
+          </p>
+          <p className="mt-7 line-clamp-6 max-w-[38rem] text-lg leading-relaxed text-white/85">{d.description}</p>
+          <a
+            href={d.sourceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-crt mt-7 inline-flex w-fit items-center gap-2.5 text-xl text-parchment"
+          >
+            Orijinal arşiv kaynağını aç <ExternalLink size={17} />
+          </a>
+        </section>
 
-          <div className="mt-8 grid gap-12 lg:grid-cols-[1.02fr_1fr]">
-            <div>
-              <DocViewer
-                doc={d}
-                prevHref={prev ? `/arsiv/${prev.slug}` : undefined}
-                nextHref={next ? `/arsiv/${next.slug}` : undefined}
-              />
-            </div>
+        {/* İkinci panel: belge görüntüsü */}
+        <section
+          aria-label="Belge görüntüsü"
+          className="ink-screen flex shrink-0 flex-col justify-center px-3 py-8 md:px-8 lg:mt-[100px] lg:h-[calc(100%-125px)] lg:w-[min(84vw,1120px)]"
+        >
+          <DocViewer
+            doc={d}
+            prevHref={prev ? `/arsiv/${prev.slug}` : undefined}
+            nextHref={`/arsiv/${next.slug}`}
+          />
+        </section>
 
-            <div className="animate-fade-up">
-              <div className="flex flex-wrap items-center gap-2.5">
-                <span className="badge-glass">{docTypeLabel(d.type)}</span>
-                <span className="font-mono text-xs text-gold-light/85">{d.catalogNo}</span>
+        {/* Üçüncü panel: künye */}
+        <section
+          aria-label="Belge künyesi"
+          className="flex shrink-0 flex-col justify-center px-5 py-12 md:px-12 lg:h-full lg:w-[min(58vw,820px)] lg:pt-[100px]"
+        >
+          <p className="font-mono text-2xl text-gold-light">{d.catalogNo}</p>
+          <dl className="mt-5 divide-y divide-white/15 border-y border-white/15">
+            {meta.map(([k, v]) => (
+              <div key={k} className="grid grid-cols-[150px_1fr] gap-3 py-2.5">
+                <dt className="text-white/65">{k}</dt>
+                <dd className="text-parchment">{v}</dd>
               </div>
+            ))}
+          </dl>
+        </section>
+      </HorizontalReel>
 
-              <h1 className="mt-4 font-display text-3xl font-semibold tracking-tight text-white md:text-5xl">
-                {d.title}
-              </h1>
+      <div className="mx-auto max-w-[1500px] px-5 md:px-12">
+        <section className="mx-auto max-w-4xl pt-20">
+          <DocTabs doc={d} />
 
-              <dl className="museum-card mt-7 divide-y divide-white/[0.08] px-6 py-2">
-                {meta.map(([k, v]) => (
-                  <div key={k} className="grid grid-cols-[145px_1fr] py-3 text-sm">
-                    <dt className="text-xs font-medium tracking-wider text-gold-light/80 uppercase">{k}</dt>
-                    <dd className="text-white/85">{v}</dd>
+          {(relatedPlaces.length > 0 || relatedExhibitions.length > 0) && (
+            <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
+              {relatedPlaces.map((pl) => (
+                <Link
+                  key={pl.id}
+                  href={`/harita?yer=${pl.id}`}
+                  className="museum-card group flex items-center justify-between gap-3 p-4"
+                >
+                  <div className="min-w-0">
+                    <span className="flex items-center gap-1.5 text-sm text-gold-light">
+                      <MapPin size={13} /> Atlas noktası
+                    </span>
+                    <span className="mt-1 block truncate text-lg font-medium text-white transition group-hover:text-gold-light">
+                      {pl.name}
+                    </span>
+                    <span className="text-sm text-white/60">
+                      {PLACE_KINDS.find((k) => k.id === pl.kind)?.label}
+                    </span>
                   </div>
-                ))}
-                <div className="grid grid-cols-[145px_1fr] py-3 text-sm">
-                  <dt className="text-xs font-medium tracking-wider text-gold-light/80 uppercase">Dış Arşiv Kaydı</dt>
-                  <dd>
-                    <a
-                      href={d.sourceUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 font-medium text-gold-light underline-offset-4 transition hover:text-white hover:underline"
-                    >
-                      Orijinal Arşiv Kaynağını Aç <ExternalLink size={13} />
-                    </a>
-                  </dd>
-                </div>
-              </dl>
+                  <ArrowRight size={16} className="shrink-0 text-gold-light transition-transform group-hover:translate-x-0.5" />
+                </Link>
+              ))}
 
-              <div className="mt-8">
-                <DocTabs doc={d} />
-              </div>
-
-              {(relatedPlaces.length > 0 || relatedExhibitions.length > 0) && (
-                <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                  {relatedPlaces.map((pl) => (
-                    <Link
-                      key={pl.id}
-                      href={`/harita?yer=${pl.id}`}
-                      className="museum-card group flex items-center justify-between gap-3 p-4"
-                    >
-                      <div className="min-w-0">
-                        <span className="flex items-center gap-1.5 text-[0.65rem] font-medium tracking-widest text-gold-light uppercase">
-                          <MapPin size={12} /> Atlas Noktası
-                        </span>
-                        <span className="mt-1 block truncate text-sm font-semibold text-white transition group-hover:text-gold-light">
-                          {pl.name}
-                        </span>
-                        <span className="text-xs text-white/50">
-                          {PLACE_KINDS.find((k) => k.id === pl.kind)?.label}
-                        </span>
-                      </div>
-                      <ArrowRight size={15} className="shrink-0 text-gold-light transition-transform group-hover:translate-x-0.5" />
-                    </Link>
-                  ))}
-
-                  {relatedExhibitions.map((ex) => (
-                    <Link
-                      key={ex.slug}
-                      href={`/sergiler/${ex.slug}`}
-                      className="museum-card group flex items-center justify-between gap-3 p-4"
-                    >
-                      <div className="min-w-0">
-                        <span className="flex items-center gap-1.5 text-[0.65rem] font-medium tracking-widest text-gold-light uppercase">
-                          <Layers size={12} /> Küratöryel Sergi
-                        </span>
-                        <span className="mt-1 block truncate text-sm font-semibold text-white transition group-hover:text-gold-light">
-                          {ex.title}
-                        </span>
-                        <span className="text-xs text-white/50">{ex.period}</span>
-                      </div>
-                      <ArrowRight size={15} className="shrink-0 text-gold-light transition-transform group-hover:translate-x-0.5" />
-                    </Link>
-                  ))}
-                </div>
-              )}
+              {relatedExhibitions.map((ex) => (
+                <Link
+                  key={ex.slug}
+                  href={`/sergiler/${ex.slug}`}
+                  className="museum-card group flex items-center justify-between gap-3 p-4"
+                >
+                  <div className="min-w-0">
+                    <span className="flex items-center gap-1.5 text-sm text-gold-light">
+                      <Layers size={13} /> Küratöryel sergi
+                    </span>
+                    <span className="mt-1 block truncate text-lg font-medium text-white transition group-hover:text-gold-light">
+                      {ex.title}
+                    </span>
+                    <span className="text-sm text-white/60">{ex.period}</span>
+                  </div>
+                  <ArrowRight size={16} className="shrink-0 text-gold-light transition-transform group-hover:translate-x-0.5" />
+                </Link>
+              ))}
             </div>
-          </div>
-        </div>
-      </section>
+          )}
+        </section>
+      </div>
 
-      <div className="mx-auto max-w-[1440px] px-5 md:px-10">
+      <div className="mx-auto max-w-[1500px] px-5 md:px-12">
         {/* İlgili Şahsiyetler */}
         {relatedPeople.length > 0 && (
           <section className="pt-16">
@@ -226,6 +230,8 @@ async function DocPageContent({ params }: PageProps<"/arsiv/[slug]">) {
           </section>
         )}
       </div>
+
+      <NextRecord label="Sıradaki Belge" title={next.title} sub={next.dateLabel} href={`/arsiv/${next.slug}`} />
     </article>
   );
 }

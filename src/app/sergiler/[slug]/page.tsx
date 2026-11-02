@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
-import { ArrowLeft, ArrowRight, Clock, ExternalLink, MapPin, Sparkles } from "lucide-react";
+import { ArrowRight, Clock, ExternalLink, MapPin, Sparkles } from "lucide-react";
 import { FiligreeLink } from "@/components/Brand";
-import { Breadcrumbs, PageBackdrop } from "@/components/PageHeader";
+import { Breadcrumbs, NextRecord } from "@/components/PageHeader";
 import {
   CULTURE_CATS,
   EXHIBITIONS,
@@ -17,6 +17,7 @@ import {
   getPerson,
   getPlacesForExhibition,
 } from "@/lib/data";
+import { pageMetadata } from "@/lib/site";
 
 export function generateStaticParams() {
   return EXHIBITIONS.map((e) => ({ slug: e.slug }));
@@ -25,10 +26,8 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps<"/sergiler/[slug]">): Promise<Metadata> {
   const { slug } = await params;
   const e = getExhibition(slug);
-  return {
-    title: e ? e.title : "Sergi bulunamadı",
-    description: e?.summary,
-  };
+  if (!e) return { title: "Sergi bulunamadı" };
+  return pageMetadata({ title: e.title, description: e.summary, path: `/sergiler/${e.slug}`, image: e.image });
 }
 
 export default function ExhibitionDetailPage(props: PageProps<"/sergiler/[slug]">) {
@@ -46,7 +45,7 @@ async function ExhibitionDetailContent({ params }: PageProps<"/sergiler/[slug]">
 
   const idx = EXHIBITIONS.findIndex((x) => x.slug === ex.slug);
   const prev = EXHIBITIONS[idx - 1];
-  const next = EXHIBITIONS[idx + 1];
+  const next = EXHIBITIONS[idx + 1] ?? EXHIBITIONS[0];
 
   const linkedDocs = ex.docs.map(getDoc).filter((d) => d !== undefined);
   const linkedPeople = (ex.people ?? []).map(getPerson).filter((p) => p !== undefined);
@@ -55,26 +54,31 @@ async function ExhibitionDetailContent({ params }: PageProps<"/sergiler/[slug]">
   const linkedCulture = getCultureForExhibition(ex, 3);
 
   return (
-    <article className="pb-16 pt-[78px]">
+    <article className="paper-screen pt-[78px]">
       {/* Sergi Kapak Sahnesi */}
-      <section className="grain relative overflow-hidden border-b border-white/[0.08] bg-ink">
-        <PageBackdrop />
-
-        <div className="relative mx-auto flex max-w-[1440px] flex-col justify-end px-5 pb-14 pt-10 md:px-10 md:pb-16 md:pt-14">
-          <Breadcrumbs items={[{ href: "/sergiler", label: "Sergiler" }, { label: ex.title }]} />
-          <span className="badge-glass mt-6 w-fit">
-            {ex.theme} · {ex.period} · {ex.count} ESER
-          </span>
-          <h1 className="mt-4 font-display text-4xl font-semibold tracking-tight text-white md:text-6xl animate-fade-up">
-            {ex.title}
-          </h1>
-          <p className="mt-2 font-serif text-2xl italic text-gold-light/90">{ex.subtitle}</p>
-          <p className="mt-4 max-w-3xl text-base leading-relaxed text-white/75 md:text-lg">{ex.summary}</p>
+      <section className="relative overflow-hidden border-b border-white/15">
+        <div className="relative mx-auto grid max-w-[1500px] grid-cols-1 items-center gap-10 px-5 pb-16 pt-10 md:px-12 lg:grid-cols-[1.15fr_0.85fr] lg:pt-14">
+          <div>
+            <Breadcrumbs items={[{ href: "/sergiler", label: "Sergiler" }, { label: ex.title }]} />
+            <h1 className="crt-glow mt-6 font-serif text-[2.7rem] leading-[1.04] font-medium text-parchment [overflow-wrap:anywhere] [text-wrap:balance] sm:text-[3.2rem] md:text-[5rem] xl:text-[6rem]">
+              {ex.title}
+            </h1>
+            <p className="mt-5 text-2xl leading-snug text-parchment md:text-[1.7rem]">{ex.subtitle}</p>
+            <p className="mt-6 max-w-[40rem] text-lg leading-relaxed text-white/85">{ex.summary}</p>
+            <p className="mt-5 text-white/65">
+              {ex.theme}, {ex.period}, {ex.count} eser
+            </p>
+          </div>
+          <div className="ink-screen p-2.5 md:p-3.5">
+            <div className="relative aspect-[4/5] overflow-hidden bg-black sm:aspect-[4/3] lg:aspect-[4/5]">
+              <Image src={ex.image} alt={ex.title} fill priority sizes="(max-width:1024px) 100vw, 40vw" className="object-cover" />
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Küratöryel Metin, Belgeler ve Yan Panel */}
-      <section className="mx-auto grid max-w-[1440px] gap-12 px-5 py-16 md:px-10 lg:grid-cols-[1fr_380px]">
+      <section className="mx-auto grid max-w-[1500px] grid-cols-1 gap-12 px-5 py-16 md:px-12 lg:grid-cols-[1fr_380px]">
         <div>
           <h2 className="eyebrow">Küratör Notu ve Sergi Anlatısı</h2>
           <div className="mt-6 space-y-6 font-serif text-[1.32rem] leading-relaxed text-white/82">
@@ -85,7 +89,7 @@ async function ExhibitionDetailContent({ params }: PageProps<"/sergiler/[slug]">
                   key={i}
                   className={
                     hasDropCap
-                      ? "flow-root first-letter:float-left first-letter:mr-3.5 first-letter:font-display first-letter:text-6xl first-letter:leading-none first-letter:text-gold-light"
+                      ? "flow-root first-letter:float-left first-letter:mr-3.5 first-letter:font-serif first-letter:text-6xl first-letter:leading-none first-letter:text-parchment"
                       : undefined
                   }
                 >
@@ -302,29 +306,13 @@ async function ExhibitionDetailContent({ params }: PageProps<"/sergiler/[slug]">
         </aside>
       </section>
 
-      {/* Önceki / Sonraki Sergi */}
-      <nav className="mx-auto flex max-w-[1440px] justify-between border-t border-white/[0.08] px-5 pt-8 md:px-10">
-        {prev ? (
-          <Link
-            href={`/sergiler/${prev.slug}`}
-            className="group flex items-center gap-3 text-sm text-white/55 hover:text-gold-light"
-          >
-            <ArrowLeft size={16} className="text-gold-light transition-transform group-hover:-translate-x-1" />
-            <span className="text-sm font-semibold text-white transition group-hover:text-gold-light">{prev.title}</span>
-          </Link>
-        ) : (
-          <span />
-        )}
-        {next && (
-          <Link
-            href={`/sergiler/${next.slug}`}
-            className="group flex items-center gap-3 text-sm text-white/55 hover:text-gold-light"
-          >
-            <span className="text-sm font-semibold text-white transition group-hover:text-gold-light">{next.title}</span>
-            <ArrowRight size={16} className="text-gold-light transition-transform group-hover:translate-x-1" />
-          </Link>
-        )}
-      </nav>
+      <NextRecord
+        label="Sıradaki Sergi"
+        title={next.title}
+        sub={next.subtitle}
+        href={`/sergiler/${next.slug}`}
+        prev={prev ? { label: `Önceki: ${prev.title}`, href: `/sergiler/${prev.slug}` } : undefined}
+      />
     </article>
   );
 }

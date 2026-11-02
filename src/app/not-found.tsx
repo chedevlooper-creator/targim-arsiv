@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { DiamondDivider, FiligreeLink } from "@/components/Brand";
 import { PageBackdrop } from "@/components/PageHeader";
+import { PEOPLE } from "@/lib/data";
 
 export default function NotFound() {
   return (
@@ -18,7 +19,7 @@ export default function NotFound() {
         <DiamondDivider className="my-8 w-64" />
         <div className="flex flex-wrap items-center justify-center gap-3">
           <FiligreeLink href="/" size="sm">Ana Sayfaya Dön</FiligreeLink>
-          <Link href="/kisiler" className="btn-glass">Kişiler (330)</Link>
+          <Link href="/kisiler" className="btn-glass">Kişiler ({PEOPLE.length})</Link>
           <Link href="/arsiv" className="btn-glass">Arşiv Belgeleri</Link>
         </div>
       </div>

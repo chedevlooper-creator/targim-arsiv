@@ -7,7 +7,7 @@ import { useEffect, useId, useMemo, useRef, useState } from "react";
 import Fuse from "fuse.js";
 import { ArrowRight, Menu, Search, X } from "lucide-react";
 import { CULTURE_CATS, CULTURE_ITEMS, DOCS, EXHIBITIONS, PEOPLE, PLACES, TIMELINE } from "@/lib/data";
-import { NAV, Logo } from "./Brand";
+import { InstagramLink, NAV, NAV_ALL, Logo } from "./Brand";
 
 interface SearchCatalogItem {
   href: string;
@@ -77,8 +77,11 @@ const FUSE_INDEX = new Fuse(SEARCH_CATALOG, {
 
 const QUICK_TERMS = ["Şeyh Mansur", "Baysangur", "Serlo", "Vedeno", "Targim", "Nohçalla", "1944"];
 
+const PAPER_ROUTES = /^\/(arsiv|kisiler|sergiler)\/[^/]+/;
+
 export default function Header() {
   const pathname = usePathname();
+  const onPaper = PAPER_ROUTES.test(pathname);
   const searchTitleId = useId();
   const headerRef = useRef<HTMLElement>(null);
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -182,32 +185,30 @@ export default function Header() {
       <header
         ref={headerRef}
         className={`${
-          pathname === "/" ? "site-header-scroll-home" : "site-header-scroll-sub"
+          onPaper
+            ? "paper-screen site-header-scroll-paper"
+            : pathname === "/"
+              ? "site-header-scroll-home"
+              : "site-header-scroll-sub"
         } fixed inset-x-0 top-0 z-50 flex h-[78px] items-center border-b transition-colors duration-300 ${
           scrolled || pathname !== "/"
-            ? "border-white/[0.08] bg-ink/84 backdrop-blur-xl"
-            : "border-transparent bg-gradient-to-b from-ink/85 via-ink/35 to-transparent"
+            ? "border-white/15 bg-ink/90"
+            : "border-white/12 bg-gradient-to-b from-ink/85 via-ink/35 to-transparent"
         }`}
       >
-        <div className="mx-auto flex w-full max-w-[1440px] items-center justify-between px-5 md:px-10">
+        <div className="mx-auto flex w-full max-w-[1500px] items-center justify-between px-5 md:px-12">
           <Logo />
 
-          {/* Modern Kapsül Navigasyon */}
-          <nav
-            className="hidden xl:flex items-center gap-1 rounded-full border border-white/[0.09] bg-white/[0.04] p-1 backdrop-blur-xl"
-            aria-label="Ana menü"
-          >
+          {/* Altı çizili metin navigasyonu; etkin sayfa çizgisizdir */}
+          <nav className="hidden items-center gap-6 xl:flex" aria-label="Ana menü">
             {NAV.map((n) => {
               const active = isActive(n.href);
               return (
                 <Link
                   key={n.href}
                   href={n.href}
-                  className={`relative rounded-full px-3.5 py-1.5 text-[0.76rem] font-medium transition-all duration-200 ${
-                    active
-                      ? "bg-white/14 text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.18)]"
-                      : "text-white/70 hover:bg-white/[0.06] hover:text-white"
-                  }`}
+                  aria-current={active ? "page" : undefined}
+                  className={active ? "text-white" : "link-crt text-white/90 hover:text-white"}
                 >
                   {n.label}
                 </Link>
@@ -219,19 +220,16 @@ export default function Header() {
             {/* Hızlı Arama Kapsülü */}
             <button
               onClick={openSearchDialog}
-              className="flex h-9 items-center gap-2.5 rounded-full border border-white/12 bg-white/[0.05] px-3.5 text-xs text-white/75 backdrop-blur-md transition hover:border-white/25 hover:bg-white/10 hover:text-white"
+              className="flex h-9 items-center gap-2 text-white transition hover:text-gold-light"
               aria-label="Arşivde ara (Ctrl+K)"
             >
-              <Search size={14} className="text-gold-light" />
-              <span className="hidden sm:inline">Arşivde ara</span>
-              <kbd className="hidden rounded border border-white/15 bg-black/35 px-1.5 py-0.5 font-mono text-[0.62rem] text-white/60 md:inline">
-                ⌘K
-              </kbd>
+              <Search size={17} />
+              <span className="link-crt hidden sm:inline">Arşivde ara</span>
             </button>
 
             <button
               onClick={() => setMenuOpen(true)}
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/12 bg-white/[0.05] text-white/80 transition hover:border-white/25 hover:bg-white/10 hover:text-white xl:hidden"
+              className="flex h-9 w-9 items-center justify-center bg-parchment text-ink transition hover:opacity-85 xl:hidden"
               aria-label="Menüyü aç"
             >
               <Menu size={18} />
@@ -253,7 +251,7 @@ export default function Header() {
         />
         <aside
           data-lenis-prevent
-          className={`absolute right-0 top-0 flex h-full w-full max-w-md flex-col overflow-y-auto border-l border-white/10 bg-ink/95 px-8 py-7 backdrop-blur-2xl transition-transform duration-300 ${
+          className={`absolute right-0 top-0 flex h-full w-full max-w-md flex-col overflow-y-auto border-l border-white/15 bg-ink px-8 py-7 transition-transform duration-300 ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
@@ -269,21 +267,18 @@ export default function Header() {
           </div>
 
           <nav className="mt-6 flex flex-col gap-1">
-            {NAV.map((n, i) => {
+            {NAV_ALL.map((n) => {
               const active = isActive(n.href);
               return (
                 <Link
                   key={n.href}
                   href={n.href}
                   onClick={() => setMenuOpen(false)}
-                  className={`group flex items-center justify-between rounded-xl px-4 py-3 text-base font-medium transition-colors ${
-                    active ? "bg-white/10 text-white" : "text-white/75 hover:bg-white/[0.05] hover:text-white"
+                  className={`group flex items-center justify-between py-2.5 font-serif text-3xl transition-colors ${
+                    active ? "text-gold-light" : "text-white hover:text-gold-light"
                   }`}
                 >
-                  <span className="flex items-center gap-3.5">
-                    <span className="font-mono text-xs text-white/40">{String(i + 1).padStart(2, "0")}</span>
-                    <span>{n.label}</span>
-                  </span>
+                  <span>{n.label}</span>
                   <ArrowRight
                     size={15}
                     className="text-white/40 transition-transform group-hover:translate-x-1 group-hover:text-white"
@@ -295,13 +290,10 @@ export default function Header() {
 
           <div className="mt-auto border-t border-white/10 pt-5">
             <p className="eyebrow">Dijital Hafıza Koleksiyonu</p>
-            <div className="mt-3 flex items-center justify-between text-xs text-white/50">
-              <span>{PEOPLE.length} Şahsiyet</span>
-              <span>·</span>
-              <span>{DOCS.length} Birincil Belge</span>
-              <span>·</span>
-              <span>{PLACES.length} Yerleşim</span>
-            </div>
+            <p className="mt-2 text-white/70">
+              {PEOPLE.length} şahsiyet, {DOCS.length} birincil belge, {PLACES.length} yerleşim
+            </p>
+            <InstagramLink className="mt-4 text-parchment" />
           </div>
         </aside>
       </div>

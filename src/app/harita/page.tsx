@@ -3,11 +3,14 @@ import { Suspense } from "react";
 import AtlasMap from "@/components/AtlasMap";
 import PageHeader from "@/components/PageHeader";
 import { PLACES } from "@/lib/data";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Kafkasya Tarih Atlası",
   description: "Vaynah taş kuleleri, tarihi dağ köyleri, İmamet sınırları ve 1865 / 1944 sürgün rotalarını gösteren interaktif atlas.",
-};
+  path: "/harita",
+  image: "/images/atlas.jpg",
+});
 
 export default function HaritaPage() {
   return (

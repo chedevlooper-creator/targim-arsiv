@@ -2,11 +2,14 @@ import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import PeopleGrid from "@/components/PeopleGrid";
 import { PEOPLE } from "@/lib/data";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Kişiler",
   description: "Kafkasya tarihine yön veren imamlar, komutanlar, mutasavvıflar, yazarlar ve sanatçılar.",
-};
+  path: "/kisiler",
+  image: "/images/kisiler.jpg",
+});
 
 export default function KisilerPage() {
   return (

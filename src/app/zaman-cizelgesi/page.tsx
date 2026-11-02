@@ -3,11 +3,14 @@ import { Suspense } from "react";
 import PageHeader from "@/components/PageHeader";
 import TimelineExplorer from "@/components/TimelineExplorer";
 import { TIMELINE } from "@/lib/data";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Zaman Çizelgesi",
   description: "1700'den günümüze Kuzey Kafkasya tarihinin dönüm noktaları, direniş hareketleri, sürgünler ve kültürel hafıza.",
-};
+  path: "/zaman-cizelgesi",
+  image: "/images/hf-muhurlu-evrak.jpg",
+});
 
 export default function ZamanCizelgesiPage() {
   return (
