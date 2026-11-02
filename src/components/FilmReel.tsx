@@ -33,6 +33,7 @@ uniform vec2 uRes;
 uniform float uScroll;
 uniform float uCount;
 uniform float uRing;
+uniform vec2 uTilt;
 in vec2 vUv;
 out vec4 fragColor;
 
@@ -49,12 +50,7 @@ float roundBox(vec2 p, vec2 b, float r) {
 }
 
 vec3 frameColor(vec2 uv, float layer) {
-  float shift = 0.0022;
-  return vec3(
-    texture(uFrames, vec3(uv + vec2(shift, 0.0), layer)).r,
-    texture(uFrames, vec3(uv, layer)).g,
-    texture(uFrames, vec3(uv - vec2(shift, 0.0), layer)).b
-  );
+  return texture(uFrames, vec3(uv, layer)).rgb;
 }
 
 vec4 film(float s, float v) {
@@ -89,10 +85,10 @@ void main() {
   p.y -= 0.17;
 
   float glow = exp(-2.4 * length(vec2(q.x * 0.7, q.y + 1.15)));
-  vec3 color = mix(vec3(0.016, 0.018, 0.05), vec3(0.17, 0.31, 0.53), smoothstep(0.75, -1.0, q.y));
-  color += vec3(0.5, 0.33, 0.2) * glow * 0.55;
+  vec3 color = mix(vec3(0.039, 0.035, 0.027), vec3(0.095, 0.08, 0.058), smoothstep(0.75, -1.0, q.y));
+  color += vec3(0.38, 0.28, 0.16) * glow * 0.42;
 
-  mat3 tilt = rotX(-0.12) * rotZ(0.13);
+  mat3 tilt = rotX(uTilt.x) * rotZ(uTilt.y);
   vec3 ro = tilt * vec3(0.0, 0.0, CAM);
   vec3 rd = tilt * normalize(vec3(p, -FOCAL));
 
@@ -187,7 +183,9 @@ export default function FilmReel({ items }: { items: ReelItem[] }) {
 function AnimatedReel({ items }: { items: ReelItem[] }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const seekRef = useRef<(index: number) => void>(() => {});
+  const stepRef = useRef<(delta: number) => void>(() => {});
   const [active, setActive] = useState(0);
+  const [dragging, setDragging] = useState(false);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -209,24 +207,69 @@ function AnimatedReel({ items }: { items: ReelItem[] }) {
 
     const uRes = gl.getUniformLocation(program, "uRes");
     const uScroll = gl.getUniformLocation(program, "uScroll");
+    const uTilt = gl.getUniformLocation(program, "uTilt");
     const count = items.length;
     gl.uniform1f(gl.getUniformLocation(program, "uCount"), count);
     gl.uniform1f(gl.getUniformLocation(program, "uRing"), count * Math.ceil(RING_MIN / count));
 
+    const BASE_TILT_X = -0.12;
+    const BASE_TILT_Z = 0.13;
+
     let target = 0;
     let current = 0;
+    let velocity = 0;
+    let isPointerDown = false;
+    let lastX = 0;
+    let lastY = 0;
+    let dragDistance = 0;
+    let targetTiltX = BASE_TILT_X;
+    let targetTiltZ = BASE_TILT_Z;
+    let currentTiltX = BASE_TILT_X;
+    let currentTiltZ = BASE_TILT_Z;
     let frame = 0;
     let visible = false;
     let dirty = true;
+    let lastActiveIndex = 0;
+
+    const syncActive = (scrollValue: number) => {
+      const normalized = ((Math.round(scrollValue) % count) + count) % count;
+      if (normalized !== lastActiveIndex) {
+        lastActiveIndex = normalized;
+        setActive(normalized);
+      }
+    };
 
     const draw = () => {
       frame = 0;
       if (!visible) return;
-      current += (target - current) * 0.14;
-      const settled = Math.abs(target - current) < 0.0006;
-      if (settled) current = target;
+
+      if (!isPointerDown && Math.abs(velocity) > 0.0001) {
+        target += velocity;
+        velocity *= 0.92;
+        if (Math.abs(velocity) <= 0.0001) velocity = 0;
+      }
+
+      const ease = isPointerDown ? 0.35 : 0.14;
+      current += (target - current) * ease;
+      currentTiltX += (targetTiltX - currentTiltX) * 0.14;
+      currentTiltZ += (targetTiltZ - currentTiltZ) * 0.14;
+
+      const settledScroll = Math.abs(target - current) < 0.0005 && Math.abs(velocity) <= 0.0001;
+      const settledTilt =
+        Math.abs(targetTiltX - currentTiltX) < 0.0005 && Math.abs(targetTiltZ - currentTiltZ) < 0.0005;
+      const settled = settledScroll && settledTilt;
+
+      if (settledScroll) current = target;
+      if (settledTilt) {
+        currentTiltX = targetTiltX;
+        currentTiltZ = targetTiltZ;
+      }
+
+      syncActive(current);
+
       if (dirty || !settled) {
         gl.uniform1f(uScroll, current + 0.5);
+        gl.uniform2f(uTilt, currentTiltX, currentTiltZ);
         gl.drawArrays(gl.TRIANGLES, 0, 3);
         dirty = false;
       }
@@ -240,19 +283,101 @@ function AnimatedReel({ items }: { items: ReelItem[] }) {
 
     // Makara halka olduğu için hedefe en kısa yönden döner
     seekRef.current = (index) => {
-      const delta = ((index - target) % count + count + count / 2) % count - count / 2;
-      target += delta;
+      velocity = 0;
+      const roundedTarget = Math.round(target);
+      const delta = (((index - roundedTarget) % count) + count + count / 2) % count - count / 2;
+      target = roundedTarget + delta;
       invalidate();
     };
 
+    stepRef.current = (delta) => {
+      velocity = 0;
+      target = Math.round(target + delta);
+      invalidate();
+    };
+
+    let cachedWidth = 960;
+    let cachedHeight = 440;
+
+    const onPointerDown = (e: PointerEvent) => {
+      if (e.button !== 0 && e.pointerType === "mouse") return;
+      isPointerDown = true;
+      setDragging(true);
+      velocity = 0;
+      lastX = e.clientX;
+      lastY = e.clientY;
+      dragDistance = 0;
+      canvas.setPointerCapture?.(e.pointerId);
+      invalidate();
+    };
+
+    const onPointerMove = (e: PointerEvent) => {
+      if (!isPointerDown) return;
+
+      const dx = e.clientX - lastX;
+      const dy = e.clientY - lastY;
+      lastX = e.clientX;
+      lastY = e.clientY;
+      dragDistance += Math.hypot(dx, dy);
+
+      const deltaScroll = -(dx / Math.max(cachedWidth, 320)) * 3.4;
+      target += deltaScroll;
+      velocity = deltaScroll * 0.85;
+
+      targetTiltX = Math.max(-0.32, Math.min(0.12, targetTiltX - (dy / Math.max(cachedHeight, 240)) * 0.28));
+      invalidate();
+    };
+
+    const endPointer = (e: PointerEvent) => {
+      if (!isPointerDown) return;
+      isPointerDown = false;
+      setDragging(false);
+      if (canvas.hasPointerCapture?.(e.pointerId)) {
+        canvas.releasePointerCapture(e.pointerId);
+      }
+      targetTiltX = BASE_TILT_X;
+      targetTiltZ = BASE_TILT_Z;
+
+      // Sürüklemeden tek tıklama yapıldıysa sol/sağ kareye döndür
+      if (dragDistance < 6) {
+        const rect = canvas.getBoundingClientRect();
+        const relX = (e.clientX - rect.left) / Math.max(rect.width, 1);
+        if (relX < 0.36) {
+          target = Math.round(target) - 1;
+        } else if (relX > 0.64) {
+          target = Math.round(target) + 1;
+        }
+      }
+      invalidate();
+    };
+
+    const onWheel = (e: WheelEvent) => {
+      // Yatay kaydırma veya Shift+tekerlek ile makarayı döndür
+      if (Math.abs(e.deltaX) > Math.abs(e.deltaY) || e.shiftKey) {
+        e.preventDefault();
+        const delta = (Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY) * 0.0035;
+        target += delta;
+        velocity = delta * 0.4;
+        invalidate();
+      }
+    };
+
     const onResize = () => {
-      const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
-      canvas.width = Math.round(canvas.clientWidth * dpr);
-      canvas.height = Math.round(canvas.clientHeight * dpr);
+      const dpr = Math.min(window.devicePixelRatio || 1, 1.25);
+      cachedWidth = Math.max(canvas.clientWidth, 320);
+      cachedHeight = Math.max(canvas.clientHeight, 240);
+      canvas.width = Math.round(cachedWidth * dpr);
+      canvas.height = Math.round(cachedHeight * dpr);
       gl.viewport(0, 0, canvas.width, canvas.height);
       gl.uniform2f(uRes, canvas.width, canvas.height);
       invalidate();
     };
+
+    canvas.addEventListener("pointerdown", onPointerDown);
+    canvas.addEventListener("pointermove", onPointerMove);
+    canvas.addEventListener("pointerup", endPointer);
+    canvas.addEventListener("pointercancel", endPointer);
+    canvas.addEventListener("wheel", onWheel, { passive: false });
 
     const resizer = new ResizeObserver(onResize);
     resizer.observe(canvas);
@@ -267,6 +392,11 @@ function AnimatedReel({ items }: { items: ReelItem[] }) {
     return () => {
       cancelled = true;
       cancelAnimationFrame(frame);
+      canvas.removeEventListener("pointerdown", onPointerDown);
+      canvas.removeEventListener("pointermove", onPointerMove);
+      canvas.removeEventListener("pointerup", endPointer);
+      canvas.removeEventListener("pointercancel", endPointer);
+      canvas.removeEventListener("wheel", onWheel);
       resizer.disconnect();
       observer.disconnect();
       gl.deleteTexture(texture);
@@ -280,40 +410,92 @@ function AnimatedReel({ items }: { items: ReelItem[] }) {
   };
 
   return (
-    <section aria-labelledby="bolumler" className="relative flex min-h-svh flex-col bg-ink pt-[78px]">
-      <h2
-        id="bolumler"
-        className="crt-glow relative z-10 px-5 pt-8 text-center font-serif text-[2.6rem] leading-tight font-medium text-parchment md:text-[3.6rem]"
-      >
-        Nereden başlamak istersiniz?
-      </h2>
-
-      <div className="relative mt-2 min-h-[260px] flex-1">
-        <canvas ref={canvasRef} aria-hidden="true" className="absolute inset-0 h-full w-full" />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink via-transparent to-ink" />
+    <section aria-labelledby="bolumler" className="relative border-t border-white/10 bg-ink py-16 md:py-24">
+      <div className="relative z-10 mx-auto max-w-[1500px] px-5 text-center md:px-12">
+        <p className="eyebrow">Keşif Dizini · 6 Koleksiyon</p>
+        <h2
+          id="bolumler"
+          className="crt-glow mt-3 font-serif text-[2.6rem] leading-tight font-medium text-parchment md:text-[3.8rem]"
+        >
+          Nereden başlamak istersiniz?
+        </h2>
       </div>
 
-      <nav aria-label="Bölümler" className="relative mx-auto w-full max-w-[1500px] px-5 pb-10 pt-5 md:px-12">
-        <ul className="grid grid-cols-2 gap-x-6 gap-y-5 md:grid-cols-3 xl:grid-cols-6">
-          {items.map((item, i) => (
-            <li key={item.href}>
-              <Link
-                href={item.href}
-                onMouseEnter={() => show(i)}
-                onFocus={() => show(i)}
-                className="group block"
-              >
-                <span
-                  className={`font-serif text-2xl font-medium text-parchment ${
-                    i === active ? "link-crt" : "group-hover:text-gold-light"
+      <div className="relative mt-4 h-[330px] w-full select-none sm:h-[390px] md:h-[450px]">
+        <canvas
+          ref={canvasRef}
+          aria-label="3B Arşiv Film Şeridi — döndürmek için fareyle sürükleyin"
+          className={`absolute inset-0 h-full w-full touch-pan-y ${
+            dragging ? "cursor-grabbing" : "cursor-grab"
+          }`}
+        />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink via-transparent to-ink" />
+
+        <div className="pointer-events-none absolute inset-x-0 bottom-3 z-10 flex items-center justify-center gap-3">
+          <button
+            type="button"
+            onClick={() => stepRef.current(-1)}
+            aria-label="Önceki bölüm"
+            className="pointer-events-auto flex h-8 w-8 items-center justify-center rounded-full border border-white/15 bg-night/85 text-sm text-parchment/80 transition hover:border-gold-light/50 hover:text-gold-light"
+          >
+            ‹
+          </button>
+          <span className="rounded-full border border-white/10 bg-night/80 px-3.5 py-1 text-xs tracking-wider text-white/65">
+            Fareyle tutup döndürün
+          </span>
+          <button
+            type="button"
+            onClick={() => stepRef.current(1)}
+            aria-label="Sonraki bölüm"
+            className="pointer-events-auto flex h-8 w-8 items-center justify-center rounded-full border border-white/15 bg-night/85 text-sm text-parchment/80 transition hover:border-gold-light/50 hover:text-gold-light"
+          >
+            ›
+          </button>
+        </div>
+      </div>
+
+      <nav aria-label="Bölümler" className="relative mx-auto w-full max-w-[1500px] px-5 pt-4 md:px-12">
+        <ul className="grid grid-cols-2 gap-3.5 md:grid-cols-3 xl:grid-cols-6">
+          {items.map((item, i) => {
+            const isCurrent = i === active;
+            return (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  onMouseEnter={() => show(i)}
+                  onFocus={() => show(i)}
+                  className={`group flex h-full flex-col justify-between rounded-xl border p-4 transition-all duration-200 ${
+                    isCurrent
+                      ? "border-gold/45 bg-panel/90"
+                      : "border-white/[0.08] bg-white/[0.02] hover:border-gold-light/35 hover:bg-white/[0.05]"
                   }`}
                 >
-                  {item.title}
-                </span>
-                <span className="mt-1 block text-white/70">{item.sub}</span>
-              </Link>
-            </li>
-          ))}
+                  <div>
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="font-mono text-[0.68rem] tracking-widest text-gold/80">
+                        0{i + 1}
+                      </span>
+                      <span
+                        className={`text-xs transition-transform duration-200 group-hover:translate-x-0.5 ${
+                          isCurrent ? "text-gold-light" : "text-white/35 group-hover:text-gold-light"
+                        }`}
+                      >
+                        →
+                      </span>
+                    </div>
+                    <span
+                      className={`mt-1.5 block font-serif text-2xl font-semibold transition-colors ${
+                        isCurrent ? "text-gold-light" : "text-parchment group-hover:text-gold-light"
+                      }`}
+                    >
+                      {item.title}
+                    </span>
+                  </div>
+                  <span className="mt-1.5 block text-xs leading-snug text-white/60">{item.sub}</span>
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </section>

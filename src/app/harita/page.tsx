@@ -16,18 +16,19 @@ export default function HaritaPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Kartografik Hafıza"
+        eyebrow="3B Kartografik Hafıza"
         title="Kafkasya Tarih Atlası"
-        subtitle="Vaynah kule vadileri, İmamet başkentleri, meydan muharebeleri ve sürgün rotaları. Haritayı sürükleyin, yakınlaştırın ve zaman kaydırıcısıyla yüzyıllar arasında gezinin."
+        subtitle="Vaynah kule vadileri, İmamet başkentleri, meydan muharebeleri ve sürgün rotaları. 3B dağ rölyefini fareyle döndürün, eğimini değiştirin ve zaman kaydırıcısıyla yüzyıllar arasında gezinin."
         crumbs={[{ label: "Harita" }]}
         count={PLACES.length}
+        image="/images/atlas.jpg"
       />
-      <section className="mx-auto max-w-[1440px] px-5 pb-20 pt-10 md:px-10">
-        <Suspense fallback={<div className="py-24 text-center text-mist">Kafkasya Tarih Atlası yükleniyor...</div>}>
+      <section className="mx-auto max-w-[1500px] px-5 pb-20 pt-10 md:px-12">
+        <Suspense fallback={<div className="py-24 text-center text-mist">Kafkasya 3B Tarih Atlası yükleniyor...</div>}>
           <AtlasMap />
         </Suspense>
         <p className="mt-4 text-xs tracking-wider text-mist/75">
-          * Harita projeksiyonu Kuzey Kafkasya dağ havzası (42.2°K–43.65°K, 44.4°D–47.3°D) merkez alınarak tarihsel kaynaklara göre ölçeklenmiştir.
+          * 3B topografik rölyef modeli Kuzey Kafkasya dağ havzası (42.2°K–43.65°K, 44.4°D–47.3°D) merkez alınarak tarihsel kaynaklara göre ölçeklenmiştir.
         </p>
       </section>
     </>

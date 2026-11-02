@@ -198,7 +198,7 @@ export default function TimelineExplorer() {
               {docs.length > 0 && (
                 <div className="mt-6">
                   <p className="text-[0.65rem] font-medium tracking-[0.22em] text-gold-light uppercase">
-                    Birincil Arşiv Kaynakları
+                    Bağlı Arşiv Kayıtları
                   </p>
                   <div className="mt-2.5 flex flex-wrap gap-2.5">
                     {docs.map((d) => (

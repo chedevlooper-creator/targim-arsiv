@@ -115,7 +115,7 @@ export function DocViewer({
       {/* Alt Araç Çubuğu: Tüm düğmeler aynı rounded-full geometrisinde */}
       <div className="mt-5 flex flex-wrap items-center gap-2.5 sm:px-[52px]">
         <a href={doc.image} download className="btn-gold">
-          <Download size={14} /> Tıpkıbasımı İndir
+          <Download size={14} /> Görseli İndir
         </a>
         <button
           onClick={() => {
@@ -139,7 +139,7 @@ export function DocViewer({
           rel="noopener noreferrer"
           className="btn-glass"
         >
-          <ExternalLink size={14} /> Orijinal Arşiv Kaynağı
+          <ExternalLink size={14} /> Kaynak Sayfası
         </a>
       </div>
 
@@ -203,7 +203,7 @@ export function DocTabs({ doc }: { doc: ArchiveDoc }) {
       label: "Açıklama & Fiziksel Notlar",
       body: [doc.description, doc.notes ? `Fiziksel Özellikler: ${doc.notes}` : ""].filter(Boolean).join("\n\n"),
     },
-    { id: "tr", label: "Orijinal Transkripsiyon", body: doc.transcription },
+    { id: "tr", label: "Transkripsiyon", body: doc.transcription },
     { id: "ceviri", label: "Türkçe Çeviri", body: doc.translation },
   ].filter((t) => t.body);
 

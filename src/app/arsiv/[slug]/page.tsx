@@ -5,17 +5,19 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { ArrowRight, ExternalLink, Layers, MapPin } from "lucide-react";
 import { DocTabs, DocViewer } from "@/components/DocViewer";
-import HorizontalReel from "@/components/HorizontalReel";
-import { Breadcrumbs, NextRecord } from "@/components/PageHeader";
+import { Breadcrumbs, NextRecord, PageBackdrop } from "@/components/PageHeader";
 import {
   DOCS,
   PLACE_KINDS,
+  DOC_RIGHTS,
+  docSourceHost,
   docTypeLabel,
   eraLabel,
   getDoc,
   getExhibitionsForDoc,
   getPeopleForDoc,
   getPlacesForDoc,
+  licenseUrl,
 } from "@/lib/data";
 import { pageMetadata } from "@/lib/site";
 
@@ -52,117 +54,130 @@ async function DocPageContent({ params }: PageProps<"/arsiv/[slug]">) {
   const relatedPlaces = getPlacesForDoc(d.slug);
 
   const meta: [string, string][] = [
-    ["Katalog No", d.catalogNo],
+    ["Targim Kayıt No", d.catalogNo],
     ["Tarih", d.dateLabel],
     ["Belge Türü", docTypeLabel(d.type)],
     ["Tarihsel Dönem", eraLabel(d.era)],
     ["Coğrafi Bölge", d.region],
     ["Dil / Yazı", d.language],
     ...(d.author ? ([["Müellif / Kaynak", d.author]] as [string, string][]) : []),
-    ["Koleksiyon / Fon", d.source],
+    ["Kayıtlı Kaynak", d.source],
+    ["Erişilen Kopya", docSourceHost(d)],
   ];
+  const rights = DOC_RIGHTS[d.slug];
 
   return (
-    <article className="paper-screen">
-      <HorizontalReel>
-        {/* Birinci panel: kapak */}
-        <section className="flex shrink-0 flex-col justify-center px-5 pb-12 pt-[110px] md:px-12 lg:h-full lg:w-[min(68vw,1040px)] lg:pb-10">
+    <article className="pt-[78px]">
+      <section className="relative overflow-hidden border-b border-white/10 bg-ink">
+        <PageBackdrop src="/images/hf-ic-arsiv-yazmalar.jpg" />
+
+        <div className="relative mx-auto max-w-[1500px] px-5 pb-16 pt-10 md:px-12">
           <Breadcrumbs items={[{ href: "/arsiv", label: "Arşiv" }, { label: d.title }]} />
-          <h1 className="crt-glow mt-6 font-serif text-[2.3rem] leading-[1.05] font-medium text-parchment [overflow-wrap:anywhere] [text-wrap:balance] sm:text-[2.9rem] md:text-[4.4rem] xl:text-[5.2rem]">
-            {d.title}
-          </h1>
-          <p className="mt-5 text-2xl leading-snug text-parchment md:text-[1.7rem]">
-            {docTypeLabel(d.type)}, {d.dateLabel}
-          </p>
-          <p className="mt-7 line-clamp-6 max-w-[38rem] text-lg leading-relaxed text-white/85">{d.description}</p>
-          <a
-            href={d.sourceUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link-crt mt-7 inline-flex w-fit items-center gap-2.5 text-xl text-parchment"
-          >
-            Orijinal arşiv kaynağını aç <ExternalLink size={17} />
-          </a>
-        </section>
 
-        {/* İkinci panel: belge görüntüsü */}
-        <section
-          aria-label="Belge görüntüsü"
-          className="ink-screen flex shrink-0 flex-col justify-center px-3 py-8 md:px-8 lg:mt-[100px] lg:h-[calc(100%-125px)] lg:w-[min(84vw,1120px)]"
-        >
-          <DocViewer
-            doc={d}
-            prevHref={prev ? `/arsiv/${prev.slug}` : undefined}
-            nextHref={`/arsiv/${next.slug}`}
-          />
-        </section>
-
-        {/* Üçüncü panel: künye */}
-        <section
-          aria-label="Belge künyesi"
-          className="flex shrink-0 flex-col justify-center px-5 py-12 md:px-12 lg:h-full lg:w-[min(58vw,820px)] lg:pt-[100px]"
-        >
-          <p className="font-mono text-2xl text-gold-light">{d.catalogNo}</p>
-          <dl className="mt-5 divide-y divide-white/15 border-y border-white/15">
-            {meta.map(([k, v]) => (
-              <div key={k} className="grid grid-cols-[150px_1fr] gap-3 py-2.5">
-                <dt className="text-white/65">{k}</dt>
-                <dd className="text-parchment">{v}</dd>
-              </div>
-            ))}
-          </dl>
-        </section>
-      </HorizontalReel>
-
-      <div className="mx-auto max-w-[1500px] px-5 md:px-12">
-        <section className="mx-auto max-w-4xl pt-20">
-          <DocTabs doc={d} />
-
-          {(relatedPlaces.length > 0 || relatedExhibitions.length > 0) && (
-            <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
-              {relatedPlaces.map((pl) => (
-                <Link
-                  key={pl.id}
-                  href={`/harita?yer=${pl.id}`}
-                  className="museum-card group flex items-center justify-between gap-3 p-4"
-                >
-                  <div className="min-w-0">
-                    <span className="flex items-center gap-1.5 text-sm text-gold-light">
-                      <MapPin size={13} /> Atlas noktası
-                    </span>
-                    <span className="mt-1 block truncate text-lg font-medium text-white transition group-hover:text-gold-light">
-                      {pl.name}
-                    </span>
-                    <span className="text-sm text-white/60">
-                      {PLACE_KINDS.find((k) => k.id === pl.kind)?.label}
-                    </span>
-                  </div>
-                  <ArrowRight size={16} className="shrink-0 text-gold-light transition-transform group-hover:translate-x-0.5" />
-                </Link>
-              ))}
-
-              {relatedExhibitions.map((ex) => (
-                <Link
-                  key={ex.slug}
-                  href={`/sergiler/${ex.slug}`}
-                  className="museum-card group flex items-center justify-between gap-3 p-4"
-                >
-                  <div className="min-w-0">
-                    <span className="flex items-center gap-1.5 text-sm text-gold-light">
-                      <Layers size={13} /> Küratöryel sergi
-                    </span>
-                    <span className="mt-1 block truncate text-lg font-medium text-white transition group-hover:text-gold-light">
-                      {ex.title}
-                    </span>
-                    <span className="text-sm text-white/60">{ex.period}</span>
-                  </div>
-                  <ArrowRight size={16} className="shrink-0 text-gold-light transition-transform group-hover:translate-x-0.5" />
-                </Link>
-              ))}
+          <div className="mt-8 grid grid-cols-1 gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
+            {/* Sol sütun: belge görüntüsü */}
+            <div className="lg:sticky lg:top-[96px]">
+              <DocViewer
+                doc={d}
+                prevHref={prev ? `/arsiv/${prev.slug}` : undefined}
+                nextHref={`/arsiv/${next.slug}`}
+              />
             </div>
-          )}
-        </section>
-      </div>
+
+            {/* Sağ sütun: başlık, künye ve sekmeler */}
+            <div>
+              <p className="font-mono text-sm tracking-[0.14em] text-gold-light uppercase">{d.catalogNo}</p>
+              <h1 className="crt-glow mt-2 font-serif text-[2.2rem] leading-[1.08] font-medium text-parchment [overflow-wrap:anywhere] [text-wrap:balance] sm:text-[2.8rem] md:text-[3.4rem]">
+                {d.title}
+              </h1>
+              <p className="mt-3 font-serif text-xl leading-snug text-gold-light/90">
+                {docTypeLabel(d.type)} · {d.dateLabel}
+              </p>
+              <p className="mt-5 text-base leading-relaxed text-white/80">{d.description}</p>
+
+              <a
+                href={d.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-crt mt-5 inline-flex w-fit items-center gap-2 text-sm text-parchment"
+              >
+                Kaynak sayfasını aç ({docSourceHost(d)}) <ExternalLink size={15} />
+              </a>
+
+              <dl className="museum-card mt-7 divide-y divide-white/[0.08] px-6 py-2 text-sm">
+                {meta.map(([k, v]) => (
+                  <div key={k} className="grid grid-cols-[145px_1fr] gap-3 py-2.5">
+                    <dt className="text-xs font-medium tracking-wider text-gold-light/80 uppercase">{k}</dt>
+                    <dd className="text-parchment">{v}</dd>
+                  </div>
+                ))}
+              </dl>
+
+              {rights && (
+                <p className="mt-4 text-xs leading-relaxed text-white/65">
+                  Görsel: {rights.creator},{" "}
+                  {licenseUrl(rights.license) ? (
+                    <a href={licenseUrl(rights.license)} target="_blank" rel="noopener noreferrer license" className="link-crt">
+                      {rights.license}
+                    </a>
+                  ) : (
+                    rights.license
+                  )}
+                  . {rights.made ? `Bu harita ${rights.made} yılında hazırlanmış modern bir çalışmadır.` : null}
+                </p>
+              )}
+
+              <div className="mt-8">
+                <DocTabs doc={d} />
+              </div>
+
+              {(relatedPlaces.length > 0 || relatedExhibitions.length > 0) && (
+                <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  {relatedPlaces.map((pl) => (
+                    <Link
+                      key={pl.id}
+                      href={`/harita?yer=${pl.id}`}
+                      className="museum-card group flex items-center justify-between gap-3 p-4"
+                    >
+                      <div className="min-w-0">
+                        <span className="flex items-center gap-1.5 text-sm text-gold-light">
+                          <MapPin size={13} /> Atlas noktası
+                        </span>
+                        <span className="mt-1 block truncate text-lg font-medium text-white transition group-hover:text-gold-light">
+                          {pl.name}
+                        </span>
+                        <span className="text-sm text-white/60">
+                          {PLACE_KINDS.find((k) => k.id === pl.kind)?.label}
+                        </span>
+                      </div>
+                      <ArrowRight size={16} className="shrink-0 text-gold-light transition-transform group-hover:translate-x-0.5" />
+                    </Link>
+                  ))}
+
+                  {relatedExhibitions.map((ex) => (
+                    <Link
+                      key={ex.slug}
+                      href={`/sergiler/${ex.slug}`}
+                      className="museum-card group flex items-center justify-between gap-3 p-4"
+                    >
+                      <div className="min-w-0">
+                        <span className="flex items-center gap-1.5 text-sm text-gold-light">
+                          <Layers size={13} /> Küratöryel sergi
+                        </span>
+                        <span className="mt-1 block truncate text-lg font-medium text-white transition group-hover:text-gold-light">
+                          {ex.title}
+                        </span>
+                        <span className="text-sm text-white/60">{ex.period}</span>
+                      </div>
+                      <ArrowRight size={16} className="shrink-0 text-gold-light transition-transform group-hover:translate-x-0.5" />
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
 
       <div className="mx-auto max-w-[1500px] px-5 md:px-12">
         {/* İlgili Şahsiyetler */}

@@ -24,7 +24,7 @@ const ITHAF_BEATS = [
 const SHOWCASE_CARDS = [
   {
     href: "/arsiv/imam-samil-naib-isa-mektubu-1842",
-    code: "CAU-MS-1842-017",
+    code: "TRG-MS-1842-017",
     title: "İmam Şamil'den Naib İsa'ya Mektup",
     sub: "1842 tarihli Arapça İmamet divan yazışması ve tam çeviri",
     image: "/images/archive/imam-samil-naib-isa-mektubu-1842.jpg",
@@ -38,16 +38,16 @@ const SHOWCASE_CARDS = [
   },
   {
     href: "/arsiv/kuzey-kafkasya-emirligi-100-ruble-vedeno-1919",
-    code: "NCE-DOC-1919-032",
+    code: "TRG-DOC-1919-032",
     title: "Vedeno 100 Ruble Banknotu (1919)",
     sub: "Kuzey Kafkasya Emirliği'nin Arapça-Rusça-Fransızca resmi parası",
     image: "/images/archive/kuzey-kafkasya-emirligi-100-ruble-vedeno-1919.jpg",
   },
   {
     href: "/arsiv/serlo-cecence-gazete-1926",
-    code: "SRL-BK-1926-038",
+    code: "TRG-BK-1926-038",
     title: "Çeçence 'Serlo' Gazetesi (1926)",
-    sub: "1925 Çeçen Latin alfabesiyle basılmış 1 Mayıs 1926 orijinal nüsha",
+    sub: "1925 Çeçen Latin alfabesiyle basılmış 1 Mayıs 1926 nüshası",
     image: "/images/archive/serlo-cecence-gazete-1926.jpg",
   },
 ];

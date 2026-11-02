@@ -21,8 +21,9 @@ export default function ZamanCizelgesiPage() {
         subtitle="Dağ meclisleri ve kule yerleşimlerinden İmamet Çağı'na, 1864 ve 1944 sürgünlerinden günümüz dijital hafıza çalışmalarına uzanan kronoloji."
         crumbs={[{ label: "Zaman Çizelgesi" }]}
         count={TIMELINE.length}
+        image="/images/hf-muhurlu-evrak.jpg"
       />
-      <section className="mx-auto max-w-[1440px] px-5 pb-20 pt-10 md:px-10">
+      <section className="mx-auto max-w-[1500px] px-5 pb-20 pt-10 md:px-12">
         <Suspense fallback={<div className="py-20 text-center text-mist">Zaman çizelgesi yükleniyor...</div>}>
           <TimelineExplorer />
         </Suspense>

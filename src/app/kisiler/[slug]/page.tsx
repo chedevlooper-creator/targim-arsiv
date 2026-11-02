@@ -4,7 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { ArrowRight, Layers, MapPin, ScrollText } from "lucide-react";
-import { Breadcrumbs, NextRecord } from "@/components/PageHeader";
+import { Breadcrumbs, NextRecord, PageBackdrop } from "@/components/PageHeader";
 import PersonGallery from "@/components/PersonGallery";
 import {
   PEOPLE,
@@ -70,9 +70,10 @@ async function PersonPageContent({ params }: PageProps<"/kisiler/[slug]">) {
   if (p.center) facts.push(["Faaliyet Merkezi", p.center]);
 
   return (
-    <article className="paper-screen pt-[78px]">
+    <article className="pt-[78px]">
       {/* Üst Biyografi Sahnesi */}
-      <section className="relative overflow-hidden border-b border-white/15">
+      <section className="relative overflow-hidden border-b border-white/10 bg-ink">
+        <PageBackdrop />
         <div className="relative mx-auto max-w-[1500px] px-5 pb-16 pt-10 md:px-12">
           <Breadcrumbs items={[{ href: "/kisiler", label: "Kişiler" }, { label: p.name }]} />
 
@@ -80,14 +81,17 @@ async function PersonPageContent({ params }: PageProps<"/kisiler/[slug]">) {
             <PersonGallery name={p.name} items={gallery} />
 
             <div className="flex flex-col justify-center">
-              <h1 className="crt-glow font-serif text-[2.7rem] leading-[1.04] font-medium text-parchment [overflow-wrap:anywhere] sm:text-[3.2rem] md:text-[5rem] xl:text-[6.2rem]">
+              <p className="eyebrow">
+                {eraLabel(p.era)} · {p.region}
+              </p>
+              <h1 className="crt-glow mt-3 font-serif text-[2.7rem] leading-[1.04] font-medium text-parchment [overflow-wrap:anywhere] sm:text-[3.2rem] md:text-[4.6rem] xl:text-[5.4rem]">
                 {p.name}
               </h1>
-              <p className="mt-4 text-2xl leading-snug text-parchment md:text-[1.7rem]">
-                {p.title}, {p.born}–{p.died}
+              <p className="mt-3 font-serif text-2xl leading-snug text-gold-light/90 md:text-[1.65rem]">
+                {p.title} · <span className="font-mono text-xl">{p.born}–{p.died}</span>
               </p>
 
-              <p className="mt-6 max-w-2xl text-xl leading-relaxed text-white/85">{p.summary}</p>
+              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/82 md:text-xl">{p.summary}</p>
 
               <dl className="museum-card mt-8 grid max-w-2xl divide-y divide-white/[0.08] px-6 py-2">
                 {facts.map(([k, v]) => (

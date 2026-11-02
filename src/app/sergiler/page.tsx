@@ -20,8 +20,9 @@ export default function SergilerPage() {
         subtitle="Arşivimizdeki el yazmaları, haritalar ve fotoğrafların tematik bir anlatı etrafında bir araya getirildiği özel koleksiyonlar."
         crumbs={[{ label: "Sergiler" }]}
         count={EXHIBITIONS.length}
+        image="/images/imamet.jpg"
       />
-      <section className="mx-auto max-w-[1440px] px-5 pb-20 pt-10 md:px-10">
+      <section className="mx-auto max-w-[1500px] px-5 pb-20 pt-10 md:px-12">
         <ExhibitionsList />
       </section>
     </>

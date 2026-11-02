@@ -179,63 +179,103 @@ const SLIDES = [
 
 /* Geniş ekranda 4K film; telefon verisi 367 MB harcamasın diye dar ekranda hafif sürüm */
 const HERO_VIDEO_LIGHT = "/videos/kule-arsivi-hero.mp4";
-const FILM_START_TIMEOUT = 6000;
-const FILM_STALL_TIMEOUT = 2500;
 
 export function HeroVideoBackdrop() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const userPausedRef = useRef(false);
+  const [playing, setPlaying] = useState(true);
+
+  const togglePlayback = () => {
+    const video = videoRef.current;
+    if (!video) return;
+    if (video.paused) {
+      userPausedRef.current = false;
+      video.play().catch(() => {});
+    } else {
+      userPausedRef.current = true;
+      video.pause();
+    }
+  };
 
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduceMotion) {
       video.pause();
       return;
     }
-    if (!FILM_4K) return;
 
-    // 4K film 196 Mbps akıyor; bağlantı yetişmezse takılmak yerine 1080p'ye geçilir
-    let timer: ReturnType<typeof setTimeout> | undefined;
-    const wait = (ms: number) => {
-      clearTimeout(timer);
-      timer = setTimeout(() => {
-        if (!FILM_4K || !video.currentSrc.endsWith(FILM_4K)) return;
-        video.src = FILM_1080;
-        video.play().catch(() => {});
-      }, ms);
+    const onLoaded = () => {
+      // Durağan açılış karesini atlayıp doğrudan kuleye giriş hareketinden başlat
+      if (video.currentTime < 1.5) {
+        video.currentTime = 1.5;
+      }
+      video.playbackRate = 1.45;
     };
-    const onWaiting = () => wait(FILM_STALL_TIMEOUT);
-    const onPlaying = () => clearTimeout(timer);
 
-    wait(FILM_START_TIMEOUT);
-    video.addEventListener("waiting", onWaiting);
-    video.addEventListener("playing", onPlaying);
+    const onTimeUpdate = () => {
+      // İlk sahne geçişini hızlı (1.45x), iç mekan sahnelerini akıcı (1.15x) oynat
+      const targetRate = video.currentTime < 4.2 ? 1.45 : 1.15;
+      if (Math.abs(video.playbackRate - targetRate) > 0.05) {
+        video.playbackRate = targetRate;
+      }
+    };
+
+    video.addEventListener("loadedmetadata", onLoaded);
+    video.addEventListener("timeupdate", onTimeUpdate);
+    if (video.readyState >= 1) {
+      onLoaded();
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !userPausedRef.current) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      },
+      { threshold: 0.05 }
+    );
+    observer.observe(video);
     return () => {
-      clearTimeout(timer);
-      video.removeEventListener("waiting", onWaiting);
-      video.removeEventListener("playing", onPlaying);
+      video.removeEventListener("loadedmetadata", onLoaded);
+      video.removeEventListener("timeupdate", onTimeUpdate);
+      observer.disconnect();
     };
   }, []);
 
   return (
-    <div className="pointer-events-none absolute inset-0 select-none" aria-hidden="true">
+    <>
+      <div className="pointer-events-none absolute inset-0 select-none" aria-hidden="true">
       <video
         ref={videoRef}
+        src={HERO_VIDEO_LIGHT}
         poster={REELS.kule.poster}
         autoPlay
         loop
         muted
         playsInline
-        preload="metadata"
-        className="h-full w-full object-cover object-[70%_50%] saturate-[0.8]"
+        preload="auto"
+        onPlay={() => setPlaying(true)}
+        onPause={() => setPlaying(false)}
+        className="h-full w-full object-cover object-[70%_50%] brightness-90 saturate-[0.45] contrast-[1.06]"
+      />
+      {/* Metin arkasında sabit siyah okuma gölgesi; film ve sayfa aynı paleti paylaşır. */}
+      <div className="absolute inset-0 bg-gradient-to-r from-ink/85 via-ink/40 to-ink/10 md:from-ink/85 md:via-ink/30 md:to-ink/10" />
+      <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/25" />
+      </div>
+      <button
+        type="button"
+        onClick={togglePlayback}
+        className="hero-playback absolute right-5 top-[98px] z-10 md:right-12"
+        aria-label={playing ? "Arka plan filmini duraklat" : "Arka plan filmini oynat"}
       >
-        {FILM_4K && <source src={FILM_4K} type="video/mp4" media="(min-width: 1024px)" />}
-        <source src={FILM_1080} type="video/mp4" media="(min-width: 1024px)" />
-        <source src={HERO_VIDEO_LIGHT} type="video/mp4" />
-      </video>
-      <div className="absolute inset-0 bg-gradient-to-r from-ink/80 via-ink/55 to-ink/10 md:from-ink md:via-ink/72 md:to-ink/5" />
-      <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/60" />
-    </div>
+        {playing ? <Pause size={14} aria-hidden="true" /> : <Play size={14} aria-hidden="true" />}
+        <span className="hidden sm:inline">{playing ? "Filmi duraklat" : "Filmi oynat"}</span>
+      </button>
+    </>
   );
 }
 
@@ -247,6 +287,28 @@ export function DedicationFilmSection() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [muted, setMuted] = useState(true);
   const [modalOpen, setModalOpen] = useState(false);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      video.pause();
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !modalOpen) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, [modalOpen]);
 
   const toggleSound = () => {
     const v = videoRef.current;
@@ -261,40 +323,40 @@ export function DedicationFilmSection() {
   };
 
   return (
-    <section id="ithaf" className="paper-screen scroll-mt-20">
-      <div className="mx-auto grid max-w-[1500px] grid-cols-1 items-center gap-12 px-5 py-20 md:px-12 lg:min-h-svh lg:grid-cols-[0.85fr_1.15fr] lg:py-24">
+    <section id="ithaf" className="scroll-mt-20 border-t border-white/10 bg-ink">
+      <div className="mx-auto grid max-w-[1500px] grid-cols-1 items-center gap-12 px-5 py-20 md:px-12 lg:grid-cols-[0.85fr_1.15fr] lg:py-24">
         <div>
-          <h2 className="crt-glow font-serif text-[3.2rem] leading-[1.04] font-medium text-parchment md:text-[5rem] xl:text-[6rem]">
+          <p className="eyebrow">Vefa ve Hafıza</p>
+          <h2 className="mt-3 font-serif text-[3rem] leading-[1.06] font-medium text-parchment md:text-[4.2rem] xl:text-[5rem]">
             Babamın Emeğine Ayrıldı
           </h2>
-          <p className="mt-5 text-2xl leading-snug text-parchment">Vefa ve hafıza</p>
-          <p className="mt-7 max-w-[34rem] text-lg leading-relaxed text-white/85">
+          <p className="mt-6 max-w-[34rem] text-lg leading-relaxed text-white/80">
             Mühürlü el yazmalarından taş kulelerin yüksek mazgallarına uzanan bu dijital bellek; yıllar boyunca
             dağılan kayıtları, soy hafızasını ve Kafkasya mirasını bir araya getiren babamın emeğine ithaf edilmiştir.
           </p>
-          <Link href="/arsiv" className="link-crt mt-8 inline-flex items-center gap-2.5 text-xl text-parchment">
+          <Link href="/arsiv" className="link-crt mt-8 inline-flex items-center gap-2.5 text-lg text-parchment">
             Arşiv belgelerine geç
             <ArrowRight size={18} />
           </Link>
         </div>
 
-        <div className="ink-screen p-2.5 md:p-3.5">
-          <div className="relative aspect-video overflow-hidden bg-black">
+        <div className="museum-card overflow-hidden p-2 md:p-3">
+          <div className="relative aspect-video overflow-hidden rounded-lg bg-night">
             <video
               ref={videoRef}
               src="/videos/babamin-emegine-ayrildi.mp4"
               poster="/images/hf-ic-arsiv-yazmalar.jpg"
-              autoPlay
               loop
               muted={muted}
               playsInline
+              preload="metadata"
               className="h-full w-full object-cover"
             />
 
-            <div className="absolute right-3 top-3 flex items-center gap-1.5">
+            <div className="absolute right-3 top-3 flex items-center gap-2">
               <button
                 onClick={toggleSound}
-                className="flex h-9 w-9 items-center justify-center bg-ink text-parchment transition hover:bg-parchment hover:text-ink"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-ink/80 text-parchment backdrop-blur-md transition hover:border-gold-light/50 hover:text-gold-light"
                 aria-label={muted ? "Sesi aç" : "Sesi kapat"}
                 title={muted ? "Sesi aç" : "Sesi kapat"}
               >
@@ -305,7 +367,7 @@ export function DedicationFilmSection() {
                   videoRef.current?.pause();
                   setModalOpen(true);
                 }}
-                className="flex h-9 w-9 items-center justify-center bg-ink text-parchment transition hover:bg-parchment hover:text-ink"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-ink/80 text-parchment backdrop-blur-md transition hover:border-gold-light/50 hover:text-gold-light"
                 aria-label="Tam ekran izle"
                 title="Tam ekran izle"
               >
@@ -475,7 +537,7 @@ function IntroFilmModalBody({
                 setPaused(false);
               }}
               className={`inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-[0.68rem] font-medium tracking-[0.12em] uppercase transition ${
-                mode === "kule" ? "bg-[#f3ead8] text-[#090b10]" : "text-white/70 hover:text-white"
+                mode === "kule" ? "bg-[#f3ead8] text-[#100e0b]" : "text-white/70 hover:text-white"
               }`}
             >
               <Film size={12} /> Kule Arşivi (00:15)
@@ -487,7 +549,7 @@ function IntroFilmModalBody({
                 setPaused(false);
               }}
               className={`inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-[0.68rem] font-medium tracking-[0.12em] uppercase transition ${
-                mode === "ithaf" ? "bg-[#f3ead8] text-[#090b10]" : "text-white/70 hover:text-white"
+                mode === "ithaf" ? "bg-[#f3ead8] text-[#100e0b]" : "text-white/70 hover:text-white"
               }`}
             >
               <Film size={12} /> Babamın Emeğine (00:15)
@@ -498,7 +560,7 @@ function IntroFilmModalBody({
                 setPaused(false);
               }}
               className={`inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-[0.68rem] font-medium tracking-[0.12em] uppercase transition ${
-                mode === "slides" ? "bg-[#f3ead8] text-[#090b10]" : "text-white/70 hover:text-white"
+                mode === "slides" ? "bg-[#f3ead8] text-[#100e0b]" : "text-white/70 hover:text-white"
               }`}
             >
               <LayoutGrid size={12} /> 6 Kare &amp; Anlatı
@@ -587,7 +649,7 @@ function IntroFilmModalBody({
                       onClick={() => jumpToScene(idx)}
                       className={`rounded-full border px-3 py-1 text-[0.65rem] font-medium tracking-[0.12em] uppercase transition ${
                         idx === activeChapterIdx
-                          ? "border-[#f3ead8] bg-[#f3ead8] text-[#090b10]"
+                          ? "border-[#f3ead8] bg-[#f3ead8] text-[#100e0b]"
                           : "border-white/15 bg-black/50 text-white/65 hover:border-white/35 hover:text-white"
                       }`}
                     >

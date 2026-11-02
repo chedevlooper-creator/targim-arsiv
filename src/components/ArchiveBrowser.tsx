@@ -64,6 +64,7 @@ export default function ArchiveBrowser() {
             <button
               key={t.id}
               onClick={() => setType(on ? "all" : t.id)}
+              aria-pressed={on}
               className={`museum-card flex items-center gap-3.5 p-4 text-left transition ${
                 on ? "border-gold-light/55 bg-white/[0.06]" : ""
               }`}
@@ -87,13 +88,14 @@ export default function ArchiveBrowser() {
       </div>
 
       {/* Birleşik Filtre Konsolu (PeopleGrid ile birebir uyumlu rounded-full pill sistemi) */}
-      <div className="mt-6 flex flex-wrap items-center gap-2.5">
+      <div className="catalogue-toolbar mt-6 flex flex-wrap items-center gap-2.5">
         <label className="relative min-w-[230px] flex-1 sm:max-w-md">
           <Search size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-white/40" />
           <input
             value={q}
+            aria-label="Belge adı, kayıt numarası, dil veya bölge ara"
             onChange={(e) => setQ(e.target.value)}
-            placeholder="Belge adı, katalog no (TRG-MS), dil veya bölge ara"
+            placeholder="Belge adı, kayıt no (TRG-MS), dil veya bölge ara"
             className="h-10 w-full rounded-full border border-white/10 bg-white/[0.04] pl-10 pr-4 text-sm text-white outline-none transition placeholder:text-white/35 focus:border-gold-light/45 focus:bg-white/[0.07]"
           />
         </label>
@@ -177,11 +179,11 @@ export default function ArchiveBrowser() {
         )}
       </div>
 
-      <div className="mt-7 flex items-center justify-between text-xs text-white/45">
-        <span>
+      <div className="mt-7 flex flex-wrap items-center justify-between gap-2 text-xs text-white/65">
+        <span role="status" aria-live="polite">
           <span className="font-medium text-white/85">{list.length}</span> katalog kaydı gösteriliyor
         </span>
-        <span className="tracking-wider uppercase">Dijital Tıpkıbasım Arşivi</span>
+        <span className="tracking-wider uppercase">Dijital Belge Arşivi</span>
       </div>
 
       {/* Belge Kartları */}
@@ -190,7 +192,7 @@ export default function ArchiveBrowser() {
           <Link
             key={d.slug}
             href={`/arsiv/${d.slug}`}
-            className="museum-card group flex flex-col overflow-hidden animate-fade-up"
+            className="museum-card group flex flex-col overflow-hidden"
           >
             <div className="relative aspect-[4/5] overflow-hidden bg-night">
               <Image
@@ -198,9 +200,8 @@ export default function ArchiveBrowser() {
                 alt={d.title}
                 fill
                 sizes="(max-width:640px) 100vw, (max-width:1024px) 33vw, 20vw"
-                className="object-cover transition duration-700 group-hover:scale-105"
+                className="object-contain p-3 transition duration-500 group-hover:scale-[1.025]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-transparent to-transparent" />
               <span className="badge-glass absolute left-3 top-3">
                 {docTypeLabel(d.type)}
               </span>
@@ -212,11 +213,11 @@ export default function ArchiveBrowser() {
                 <h2 className="mt-1 text-[0.95rem] font-semibold leading-snug text-white transition group-hover:text-gold-light">
                   {d.title}
                 </h2>
-                <p className="mt-2 line-clamp-2 text-xs leading-relaxed text-white/55">
+                <p className="mt-2 line-clamp-2 text-xs leading-relaxed text-white/70">
                   {d.description}
                 </p>
               </div>
-              <div className="mt-4 flex items-center justify-between border-t border-white/[0.08] pt-2.5 text-xs text-white/45">
+              <div className="mt-4 flex items-center justify-between border-t border-white/[0.08] pt-2.5 text-xs text-white/65">
                 <span>{d.dateLabel}</span>
                 <span className="inline-flex items-center gap-1 font-medium text-gold-light">
                   İncele <ArrowRight size={12} className="transition-transform group-hover:translate-x-0.5" />

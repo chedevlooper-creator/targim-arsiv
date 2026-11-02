@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { DiamondDivider, InstagramLink } from "@/components/Brand";
-import { DedicationFilmSection } from "@/components/HomeClient";
 import PageHeader from "@/components/PageHeader";
 import { pageMetadata } from "@/lib/site";
 
@@ -21,24 +20,23 @@ export default function HakkindaPage() {
         eyebrow="Dijital Hafıza Girişimi"
         title={
           <>
-            <span className="gold-text">Targim</span>{" "}
-            <span lang="en" className="gold-text [font-feature-settings:'locl'_0]">
+            Targim{" "}
+            <span lang="en" className="[font-feature-settings:'locl'_0]">
               Archive
             </span>{" "}
-            <span className="gold-text">Hakkında</span>
+            Hakkında
           </>
         }
         subtitle="Dağlar susar, tarih konuşur. Çeçen, İnguş ve Kuzey Kafkasya halklarının asırlara yayılan yazılı, görsel ve sözlü mirasını koruma projesi."
         crumbs={[{ label: "Hakkında" }]}
+        image="/images/targim-towers.jpg"
       />
 
-      <DedicationFilmSection />
-
-      <section className="mx-auto max-w-[1440px] px-5 pb-20 pt-16 md:px-10">
-        <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_1fr]">
+      <section className="mx-auto max-w-[1500px] px-5 pb-20 pt-14 md:px-12">
+        <div className="museum-card grid items-center gap-10 p-7 md:p-12 lg:grid-cols-[1.08fr_0.92fr]">
           <div>
             <span className="eyebrow">İsim ve Sembolizm</span>
-            <h2 className="mt-3 font-display text-3xl font-semibold text-white md:text-5xl">
+            <h2 className="mt-3 font-display text-3xl font-semibold text-parchment md:text-5xl">
               Neden Targim?
             </h2>
             <div className="mt-6 space-y-5 font-serif text-xl leading-relaxed text-white/80">
@@ -61,8 +59,8 @@ export default function HakkindaPage() {
               </p>
             </div>
             <div className="mt-7 flex flex-wrap gap-3">
-              <Link href="/harita?yer=targim" className="btn-glass">
-                Targim&apos;i Atlasta İncele <ArrowRight size={13} />
+              <Link href="/harita?yer=targim" className="btn-gold">
+                Targim&apos;i Atlasta İncele <ArrowRight size={14} />
               </Link>
               <Link href="/sergiler/kuleler-ve-yerlesimler" className="btn-glass">
                 Kuleler Sergisi <ArrowRight size={13} />
@@ -70,7 +68,7 @@ export default function HakkindaPage() {
             </div>
           </div>
 
-          <div className="museum-card relative aspect-[4/3] overflow-hidden bg-night">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-white/10 bg-night">
             <Image
               src="/images/targim-towers.jpg"
               alt="Cerah vadisinde Targim taş savaş kuleleri"
@@ -86,20 +84,20 @@ export default function HakkindaPage() {
           </div>
         </div>
 
-        <DiamondDivider className="my-20" />
+        <DiamondDivider className="my-16" />
 
         {/* Arşivleme İlkelerimiz */}
         <div>
           <span className="eyebrow">Metodoloji ve Etik</span>
-          <h2 className="mt-3 font-display text-3xl font-semibold text-white md:text-4xl">
+          <h2 className="mt-3 font-display text-3xl font-semibold text-parchment md:text-4xl">
             Arşivleme İlkelerimiz
           </h2>
           <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
             {[
               {
                 no: "01",
-                title: "Birincil Kaynak Sadakati",
-                text: "Arapça, Osmanlı Türkçesi, Rusça ve yerel dillerdeki belgeler; orijinal imlası, fiziksel mühür/kâğıt notları ve karşılaştırmalı çevirileriyle birlikte tahrif edilmeden yayımlanır.",
+                title: "Kaynağa Sadakat",
+                text: "Her kayıtta kaynak bağlantısı, görsel lisansı ve erişilen kopya belirtilir. Metni okunabilen belgelerde transkripsiyon ve Türkçe çeviri verilir; çeviriler tamamlandıkça eklenir.",
               },
               {
                 no: "02",
@@ -114,19 +112,50 @@ export default function HakkindaPage() {
             ].map((item) => (
               <div key={item.no} className="museum-card p-7">
                 <span className="font-display text-3xl font-semibold text-gold-light">{item.no}</span>
-                <h3 className="mt-3 text-lg font-semibold text-white">{item.title}</h3>
+                <h3 className="mt-3 text-lg font-semibold text-parchment">{item.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-white/65">{item.text}</p>
               </div>
             ))}
           </div>
 
-          <div className="mt-14">
-            <h2 className="font-display text-3xl font-semibold text-white md:text-4xl">Bize Ulaşın</h2>
-            <p className="mt-4 max-w-2xl text-lg leading-relaxed text-white/80">
-              Elinizdeki aile fotoğrafları, mektuplar veya sürgün belgeleri için ya da bir kayıttaki hatayı bildirmek
-              için Instagram hesabımızdan mesaj gönderin.
-            </p>
-            <InstagramLink className="mt-5 text-xl text-parchment" />
+          <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-[1.3fr_0.7fr]">
+            <div id="kaynaklar" className="museum-card scroll-mt-28 p-7 md:p-10">
+              <span className="eyebrow">Akademik Şeffaflık</span>
+              <h2 className="mt-2 font-display text-2xl font-semibold text-parchment md:text-3xl">
+                Kaynaklar ve Yöntem
+              </h2>
+              <ul className="mt-5 list-disc space-y-3 pl-5 text-base leading-relaxed text-white/75">
+                <li>
+                  Arşiv görsellerinin neredeyse tamamı Wikimedia Commons&apos;taki açık kopyalardan alınmıştır. Eserin kayıtlı
+                  olduğu kurum künyede ayrıca belirtilir; bu, görselin o kurumdan doğrudan alındığı anlamına gelmez.
+                </li>
+                <li>
+                  Arşivde dönem belgelerinin yanında sonradan hazırlanmış haritalar ve günümüzde çekilmiş fotoğraflar da
+                  vardır. Yapım bilgisi ve lisans her kaydın künyesindedir.
+                </li>
+                <li>TRG ile başlayan kayıt numaraları Targim&apos;in kendi numaralarıdır, kurum katalog numarası değildir.</li>
+                <li>
+                  Kişi portreleri dijital olarak temizlenmiş ve onarılmıştır; bazılarında arka plan sonradan üretilmiştir.
+                  Bu nedenle portreleri belge değil, görsel anlatım olarak değerlendirin.
+                </li>
+              </ul>
+            </div>
+
+            <div className="museum-card flex flex-col justify-between p-7 md:p-10">
+              <div>
+                <span className="eyebrow">Koleksiyona Katkı</span>
+                <h2 className="mt-2 font-display text-2xl font-semibold text-parchment md:text-3xl">
+                  Bize Ulaşın
+                </h2>
+                <p className="mt-4 text-base leading-relaxed text-white/75">
+                  Elinizdeki aile fotoğrafları, mektuplar veya sürgün belgeleri için ya da bir kayıttaki hatayı bildirmek
+                  için Instagram hesabımızdan mesaj gönderin.
+                </p>
+              </div>
+              <div className="mt-8 border-t border-white/10 pt-5">
+                <InstagramLink className="text-lg font-medium text-gold-light" />
+              </div>
+            </div>
           </div>
         </div>
       </section>

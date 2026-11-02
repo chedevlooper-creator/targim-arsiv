@@ -132,7 +132,7 @@ export default function CultureExplorer() {
                 type="button"
                 key={item.id}
                 onClick={() => setActiveItem(item)}
-                className="museum-card group flex cursor-pointer flex-col justify-between p-6 text-left animate-fade-up"
+                className="museum-card group flex cursor-pointer flex-col justify-between p-6 text-left"
               >
                 <div>
                   <div className="flex items-center justify-between gap-2">

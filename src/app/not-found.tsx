@@ -13,7 +13,7 @@ export default function NotFound() {
           <span className="gold-text">Aradığınız Sayfa Arşivde Yok</span>
         </h1>
         <p className="mt-4 max-w-lg text-base leading-relaxed text-white/65">
-          Bağlantı taşınmış veya katalog numarası değişmiş olabilir. Ana sayfaya dönerek veya biyografi ve belge
+          Bağlantı taşınmış veya kayıt numarası değişmiş olabilir. Ana sayfaya dönerek veya biyografi ve belge
           koleksiyonlarını açarak keşfe devam edebilirsiniz.
         </p>
         <DiamondDivider className="my-8 w-64" />

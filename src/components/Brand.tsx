@@ -17,7 +17,15 @@ export const NAV = [
 /* Üst menüde logo ana sayfaya gider; tam liste yan menü ve alt bilgide */
 export const NAV_ALL = [{ href: "/", label: "Ana Sayfa" }, ...NAV, { href: "/hakkinda", label: "Hakkında" }];
 
-const MARK_STRIPES = ["currentColor", "#d8402f", "currentColor", "#e6ae47", "currentColor", "#d8402f", "currentColor"];
+const MARK_STRIPES = [
+  "var(--color-gold-light)",
+  "var(--color-gold-dark)",
+  "var(--color-gold-light)",
+  "var(--color-gold)",
+  "var(--color-gold-light)",
+  "var(--color-gold-dark)",
+  "var(--color-gold-light)",
+];
 
 /** Istang çizgileriyle dokunmuş Vaynah kulesi silueti. */
 export function TowerMark({ className = "" }: { className?: string }) {

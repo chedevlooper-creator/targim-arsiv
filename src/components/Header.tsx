@@ -77,11 +77,8 @@ const FUSE_INDEX = new Fuse(SEARCH_CATALOG, {
 
 const QUICK_TERMS = ["Şeyh Mansur", "Baysangur", "Serlo", "Vedeno", "Targim", "Nohçalla", "1944"];
 
-const PAPER_ROUTES = /^\/(arsiv|kisiler|sergiler)\/[^/]+/;
-
 export default function Header() {
   const pathname = usePathname();
-  const onPaper = PAPER_ROUTES.test(pathname);
   const searchTitleId = useId();
   const headerRef = useRef<HTMLElement>(null);
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -185,12 +182,8 @@ export default function Header() {
       <header
         ref={headerRef}
         className={`${
-          onPaper
-            ? "paper-screen site-header-scroll-paper"
-            : pathname === "/"
-              ? "site-header-scroll-home"
-              : "site-header-scroll-sub"
-        } fixed inset-x-0 top-0 z-50 flex h-[78px] items-center border-b transition-colors duration-300 ${
+          pathname === "/" ? "site-header-scroll-home" : "site-header-scroll-sub"
+        } site-header fixed inset-x-0 top-0 z-50 flex h-[78px] items-center border-b transition-colors duration-300 ${
           scrolled || pathname !== "/"
             ? "border-white/15 bg-ink/90"
             : "border-white/12 bg-gradient-to-b from-ink/85 via-ink/35 to-transparent"
@@ -199,7 +192,6 @@ export default function Header() {
         <div className="mx-auto flex w-full max-w-[1500px] items-center justify-between px-5 md:px-12">
           <Logo />
 
-          {/* Altı çizili metin navigasyonu; etkin sayfa çizgisizdir */}
           <nav className="hidden items-center gap-6 xl:flex" aria-label="Ana menü">
             {NAV.map((n) => {
               const active = isActive(n.href);
@@ -208,7 +200,11 @@ export default function Header() {
                   key={n.href}
                   href={n.href}
                   aria-current={active ? "page" : undefined}
-                  className={active ? "text-white" : "link-crt text-white/90 hover:text-white"}
+                  className={`relative py-1 text-sm transition ${
+                    active
+                      ? "font-semibold text-gold-light after:absolute after:inset-x-0 after:-bottom-0.5 after:h-px after:bg-gold-light"
+                      : "font-medium text-white/78 hover:text-gold-light"
+                  }`}
                 >
                   {n.label}
                 </Link>
@@ -220,19 +216,24 @@ export default function Header() {
             {/* Hızlı Arama Kapsülü */}
             <button
               onClick={openSearchDialog}
-              className="flex h-9 items-center gap-2 text-white transition hover:text-gold-light"
+              className="flex h-9 items-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-3.5 text-xs font-medium text-white/85 transition hover:border-gold-light/45 hover:bg-white/[0.08] hover:text-gold-light"
               aria-label="Arşivde ara (Ctrl+K)"
             >
-              <Search size={17} />
-              <span className="link-crt hidden sm:inline">Arşivde ara</span>
+              <Search size={14} className="text-gold-light" />
+              <span className="hidden sm:inline">Arşivde ara</span>
+              <kbd className="hidden rounded border border-white/15 bg-white/[0.05] px-1.5 py-0.5 font-mono text-[0.62rem] text-white/50 md:inline">
+                ⌘K
+              </kbd>
             </button>
 
             <button
               onClick={() => setMenuOpen(true)}
-              className="flex h-9 w-9 items-center justify-center bg-parchment text-ink transition hover:opacity-85 xl:hidden"
+              aria-expanded={menuOpen}
+              aria-controls="site-mobile-menu"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/[0.05] text-parchment transition hover:border-gold-light/45 hover:text-gold-light xl:hidden"
               aria-label="Menüyü aç"
             >
-              <Menu size={18} />
+              <Menu size={17} />
             </button>
           </div>
         </div>
@@ -242,6 +243,7 @@ export default function Header() {
       <div
         className={`fixed inset-0 z-[60] transition ${menuOpen ? "pointer-events-auto" : "pointer-events-none"}`}
         aria-hidden={!menuOpen}
+        inert={!menuOpen}
       >
         <div
           onClick={() => setMenuOpen(false)}
@@ -250,6 +252,7 @@ export default function Header() {
           }`}
         />
         <aside
+          id="site-mobile-menu"
           data-lenis-prevent
           className={`absolute right-0 top-0 flex h-full w-full max-w-md flex-col overflow-y-auto border-l border-white/15 bg-ink px-8 py-7 transition-transform duration-300 ${
             menuOpen ? "translate-x-0" : "translate-x-full"
@@ -291,7 +294,7 @@ export default function Header() {
           <div className="mt-auto border-t border-white/10 pt-5">
             <p className="eyebrow">Dijital Hafıza Koleksiyonu</p>
             <p className="mt-2 text-white/70">
-              {PEOPLE.length} şahsiyet, {DOCS.length} birincil belge, {PLACES.length} yerleşim
+              {PEOPLE.length} şahsiyet, {DOCS.length} arşiv kaydı, {PLACES.length} yerleşim
             </p>
             <InstagramLink className="mt-4 text-parchment" />
           </div>
@@ -313,10 +316,11 @@ export default function Header() {
           <Search className="text-gold-light" size={18} />
           <input
             ref={inputRef}
+            aria-label="Tüm koleksiyonlarda ara"
             value={q}
             onChange={(e) => setQ(e.target.value)}
             placeholder="Şahsiyet, arşiv belgesi, kültür öğesi, yerleşim veya yıl arayın…"
-            className="flex-1 bg-transparent text-lg text-white outline-none placeholder:text-white/40"
+            className="min-w-0 flex-1 bg-transparent text-base text-white outline-none placeholder:text-white/55 sm:text-lg"
           />
           {q && (
             <button

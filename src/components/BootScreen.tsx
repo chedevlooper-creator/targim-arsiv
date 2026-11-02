@@ -3,7 +3,7 @@ import { DOCS, EXHIBITIONS, PEOPLE, PLACES } from "@/lib/data";
 
 const CHECKS = [
   ["Portre koleksiyonu", `${PEOPLE.length} kayıt`],
-  ["Birincil belgeler", `${DOCS.length} kayıt`],
+  ["Arşiv kayıtları", `${DOCS.length} kayıt`],
   ["Atlas noktaları", `${PLACES.length} kayıt`],
   ["Küratöryel sergiler", `${EXHIBITIONS.length} kayıt`],
 ];

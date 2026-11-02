@@ -26,19 +26,19 @@ export function Breadcrumbs({ items }: { items: Crumb[] }) {
   );
 }
 
-export function PageBackdrop() {
+export function PageBackdrop({ src = "/images/hf-kule-gunbatimi.jpg" }: { src?: string }) {
   return (
     <div className="pointer-events-none absolute inset-0 select-none">
       <Image
-        src="/images/hf-kule-gunbatimi.jpg"
+        src={src}
         alt=""
         fill
         priority
         sizes="100vw"
-        className="object-cover object-[50%_30%] opacity-40 saturate-[0.7]"
+        className="object-cover object-[50%_30%] opacity-35"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/80 to-ink/30" />
-      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-ink/60" />
+      <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-ink/35" />
+      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/35 to-ink/65" />
     </div>
   );
 }
@@ -58,19 +58,19 @@ export function NextRecord({
   prev?: { label: string; href: string };
 }) {
   return (
-    <nav aria-label="Sıradaki kayıt" className="mx-auto max-w-4xl px-5 py-24 text-center md:py-32">
-      <p className="link-crt text-xl text-parchment">{label}</p>
-      <p className="crt-glow mt-4 font-serif text-[2.3rem] leading-[1.06] font-medium text-parchment [overflow-wrap:anywhere] [text-wrap:balance] sm:text-[2.8rem] md:text-[4.6rem]">
+    <nav aria-label="Sıradaki kayıt" className="mx-auto max-w-4xl border-t border-white/10 px-5 py-20 text-center md:py-28">
+      <p className="eyebrow">{label}</p>
+      <p className="crt-glow mt-4 font-serif text-[2.3rem] leading-[1.06] font-medium text-parchment [overflow-wrap:anywhere] [text-wrap:balance] sm:text-[2.8rem] md:text-[4.2rem]">
         {title}
       </p>
-      {sub && <p className="mt-3 text-xl text-parchment">{sub}</p>}
+      {sub && <p className="mt-3 text-lg text-white/75">{sub}</p>}
       <Link href={href} className="btn-gold mt-8">
         <span>Devam Et</span>
-        <ArrowRight size={17} />
+        <ArrowRight size={16} />
       </Link>
       {prev && (
-        <p className="mt-7">
-          <Link href={prev.href} className="link-crt text-white/75">
+        <p className="mt-6">
+          <Link href={prev.href} className="link-crt text-sm text-white/70">
             {prev.label}
           </Link>
         </p>
@@ -85,6 +85,7 @@ export default function PageHeader({
   subtitle,
   crumbs,
   count,
+  image,
   children,
 }: {
   title: React.ReactNode;
@@ -92,29 +93,35 @@ export default function PageHeader({
   subtitle?: string;
   crumbs?: Crumb[];
   count?: number;
+  image?: string;
   children?: React.ReactNode;
 }) {
   return (
-    <section className="relative overflow-hidden bg-ink pt-[78px]">
-      <PageBackdrop />
+    <section className="relative overflow-hidden border-b border-white/10 bg-ink pt-[78px]">
+      <PageBackdrop src={image} />
 
-      <div className="relative mx-auto max-w-[1500px] px-5 pb-12 pt-10 md:px-12 md:pb-16 md:pt-16">
+      <div className="relative mx-auto max-w-[1500px] px-5 pb-12 pt-10 md:px-12 md:pb-16 md:pt-14">
         {crumbs && <Breadcrumbs items={crumbs} />}
         {eyebrow && <p className="eyebrow mt-6">{eyebrow}</p>}
-        <div className="flex items-end justify-between gap-6">
-          <h1 className="crt-glow mt-3 min-w-0 font-serif text-[2.7rem] leading-[1.04] font-medium text-parchment [overflow-wrap:anywhere] sm:text-[3.2rem] md:text-[5.5rem] xl:text-[6.5rem]">
+        <div className="mt-3 flex flex-wrap items-end justify-between gap-6">
+          <h1 className="crt-glow min-w-0 font-serif text-[2.7rem] leading-[1.04] font-medium text-parchment [overflow-wrap:anywhere] sm:text-[3.4rem] md:text-[4.8rem] xl:text-[5.6rem]">
             {title}
           </h1>
           {count !== undefined && (
-            <span
-              className="font-mono text-5xl leading-none text-white/35 md:text-7xl"
+            <div
+              className="museum-card px-5 py-3 text-right"
               aria-label={`${count} kayıt`}
             >
-              {count}
-            </span>
+              <span className="block font-serif text-3xl leading-none font-semibold text-gold-light md:text-4xl">
+                {count}
+              </span>
+              <span className="mt-1 block text-[0.65rem] font-semibold tracking-[0.2em] text-white/55 uppercase">
+                Katalog Kaydı
+              </span>
+            </div>
           )}
         </div>
-        {subtitle && <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/80 md:text-xl">{subtitle}</p>}
+        {subtitle && <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/78 md:text-lg">{subtitle}</p>}
         {children && <div className="mt-7">{children}</div>}
       </div>
     </section>

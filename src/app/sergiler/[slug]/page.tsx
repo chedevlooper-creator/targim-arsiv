@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { ArrowRight, Clock, ExternalLink, MapPin, Sparkles } from "lucide-react";
 import { FiligreeLink } from "@/components/Brand";
-import { Breadcrumbs, NextRecord } from "@/components/PageHeader";
+import { Breadcrumbs, NextRecord, PageBackdrop } from "@/components/PageHeader";
 import {
   CULTURE_CATS,
   EXHIBITIONS,
@@ -54,25 +54,29 @@ async function ExhibitionDetailContent({ params }: PageProps<"/sergiler/[slug]">
   const linkedCulture = getCultureForExhibition(ex, 3);
 
   return (
-    <article className="paper-screen pt-[78px]">
+    <article className="pt-[78px]">
       {/* Sergi Kapak Sahnesi */}
-      <section className="relative overflow-hidden border-b border-white/15">
+      <section className="relative overflow-hidden border-b border-white/10 bg-ink">
+        <PageBackdrop />
         <div className="relative mx-auto grid max-w-[1500px] grid-cols-1 items-center gap-10 px-5 pb-16 pt-10 md:px-12 lg:grid-cols-[1.15fr_0.85fr] lg:pt-14">
           <div>
             <Breadcrumbs items={[{ href: "/sergiler", label: "Sergiler" }, { label: ex.title }]} />
-            <h1 className="crt-glow mt-6 font-serif text-[2.7rem] leading-[1.04] font-medium text-parchment [overflow-wrap:anywhere] [text-wrap:balance] sm:text-[3.2rem] md:text-[5rem] xl:text-[6rem]">
+            <p className="eyebrow mt-6">Küratöryel Dijital Sergi · {ex.theme}</p>
+            <h1 className="crt-glow mt-3 font-serif text-[2.6rem] leading-[1.05] font-medium text-parchment [overflow-wrap:anywhere] [text-wrap:balance] sm:text-[3.2rem] md:text-[4.4rem] xl:text-[5rem]">
               {ex.title}
             </h1>
-            <p className="mt-5 text-2xl leading-snug text-parchment md:text-[1.7rem]">{ex.subtitle}</p>
-            <p className="mt-6 max-w-[40rem] text-lg leading-relaxed text-white/85">{ex.summary}</p>
-            <p className="mt-5 text-white/65">
-              {ex.theme}, {ex.period}, {ex.count} eser
+            <p className="mt-4 font-serif text-2xl italic leading-snug text-gold-light md:text-[1.65rem]">
+              {ex.subtitle}
             </p>
-          </div>
-          <div className="ink-screen p-2.5 md:p-3.5">
-            <div className="relative aspect-[4/5] overflow-hidden bg-black sm:aspect-[4/3] lg:aspect-[4/5]">
-              <Image src={ex.image} alt={ex.title} fill priority sizes="(max-width:1024px) 100vw, 40vw" className="object-cover" />
+            <p className="mt-5 max-w-[40rem] text-base leading-relaxed text-white/80 md:text-lg">{ex.summary}</p>
+            <div className="mt-6 flex flex-wrap items-center gap-2">
+              <span className="badge-glass">{ex.theme}</span>
+              <span className="badge-glass font-mono">{ex.period}</span>
+              <span className="badge-glass">{ex.count} Eser</span>
             </div>
+          </div>
+          <div className="museum-card relative aspect-[4/5] overflow-hidden bg-night sm:aspect-[4/3] lg:aspect-[4/5]">
+            <Image src={ex.image} alt={ex.title} fill priority sizes="(max-width:1024px) 100vw, 40vw" className="object-cover" />
           </div>
         </div>
       </section>
@@ -102,7 +106,7 @@ async function ExhibitionDetailContent({ params }: PageProps<"/sergiler/[slug]">
           {/* Sergilenen Arşiv Belgeleri */}
           {linkedDocs.length > 0 && (
             <div className="mt-16">
-              <h2 className="eyebrow">Sergi Seçkisindeki Birincil Belgeler</h2>
+              <h2 className="eyebrow">Sergi Seçkisindeki Belgeler</h2>
               <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {linkedDocs.map((doc) => (
                   <Link

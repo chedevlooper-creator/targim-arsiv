@@ -21,8 +21,9 @@ export default function KulturPage() {
         subtitle="Nohçalla ve Ezdel görgü yasalarından savatlı gümüş işçiliğine, taş kulelerden üç telli pondar ezgilerine Kafkas dağ kültürünün dokusu."
         crumbs={[{ label: "Kültür" }]}
         count={CULTURE_ITEMS.length}
+        image="/images/kultur.jpg"
       />
-      <section className="mx-auto max-w-[1440px] px-5 pb-20 pt-10 md:px-10">
+      <section className="mx-auto max-w-[1500px] px-5 pb-20 pt-10 md:px-12">
         <Suspense fallback={<div className="py-20 text-center text-mist">Kültür koleksiyonu yükleniyor...</div>}>
           <CultureExplorer />
         </Suspense>

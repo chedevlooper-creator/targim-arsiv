@@ -1,22 +1,28 @@
 import type { Metadata, Viewport } from "next";
-import { STIX_Two_Text, VT323 } from "next/font/google";
+import { Cormorant_Garamond, JetBrains_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SmoothScrollProvider from "@/components/SmoothScrollProvider";
 import { SITE } from "@/lib/site";
 
-const stix = STIX_Two_Text({
-  variable: "--font-stix",
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
   subsets: ["latin", "latin-ext"],
   weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
 });
 
-const vt323 = VT323({
-  variable: "--font-vt323",
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
   subsets: ["latin", "latin-ext"],
-  weight: "400",
+  weight: ["400", "500", "600", "700"],
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains",
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "500"],
 });
 
 export const metadata: Metadata = {
@@ -29,7 +35,7 @@ export const metadata: Metadata = {
   description: SITE.description,
 };
 
-export const viewport: Viewport = { themeColor: "#070605" };
+export const viewport: Viewport = { themeColor: "#08090b" };
 
 const STRUCTURED_DATA = {
   "@context": "https://schema.org",
@@ -50,7 +56,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="tr"
       suppressHydrationWarning
-      className={`${stix.variable} ${vt323.variable} h-full antialiased`}
+      className={`${cormorant.variable} ${jakarta.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <script
@@ -70,7 +76,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           </main>
           <Footer />
         </SmoothScrollProvider>
-        <div className="crt-overlay" aria-hidden="true" />
       </body>
     </html>
   );
