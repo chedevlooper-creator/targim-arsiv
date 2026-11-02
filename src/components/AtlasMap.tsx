@@ -5,13 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import * as maplibregl from "maplibre-gl";
+import type * as maplibregl from "maplibre-gl";
 import {
   ArrowRight,
   ChevronLeft,
   ChevronRight,
   Compass,
-  Eye,
   Layers,
   Locate,
   Maximize2,
@@ -28,11 +27,19 @@ import {
   Route,
   ScrollText,
   Search,
+  Settings2,
   SlidersHorizontal,
   Tag,
   X,
 } from "lucide-react";
-import { PLACES, PLACE_KINDS, getDoc, getPerson, type Place, type PlaceKind } from "@/lib/data";
+import {
+  PLACES,
+  PLACE_KINDS,
+  getDoc,
+  getPerson,
+  type Place,
+  type PlaceKind,
+} from "@/lib/data";
 
 /* ========================================================================== */
 /* COĞRAFİ RAKIM (METRE) VE HAVZA VERİLERİ (26 TARİHSEL NOKTA)                */
@@ -101,12 +108,42 @@ const PLACE_VALLEY: Record<string, string> = {
 /* ========================================================================== */
 
 const CAUCASUS_PEAKS = [
-  { id: "kazbek", name: "Kazbek Dağı", elev: "5.033 m", lon: 44.51, lat: 42.69 },
-  { id: "tebulosmta", name: "Tebulosmta", elev: "4.493 m", lon: 45.31, lat: 42.57 },
+  {
+    id: "kazbek",
+    name: "Kazbek Dağı",
+    elev: "5.033 m",
+    lon: 44.51,
+    lat: 42.69,
+  },
+  {
+    id: "tebulosmta",
+    name: "Tebulosmta",
+    elev: "4.493 m",
+    lon: 45.31,
+    lat: 42.57,
+  },
   { id: "san", name: "Şan Dağı", elev: "4.451 m", lon: 44.76, lat: 42.67 },
-  { id: "diklosmta", name: "Diklosmta", elev: "4.285 m", lon: 45.78, lat: 42.52 },
-  { id: "daryal", name: "Daryal Boğazı", elev: "1.204 m", lon: 44.63, lat: 42.74 },
-  { id: "kezenoy", name: "Kezenoy-Am Gölü", elev: "1.869 m", lon: 46.15, lat: 42.77 },
+  {
+    id: "diklosmta",
+    name: "Diklosmta",
+    elev: "4.285 m",
+    lon: 45.78,
+    lat: 42.52,
+  },
+  {
+    id: "daryal",
+    name: "Daryal Boğazı",
+    elev: "1.204 m",
+    lon: 44.63,
+    lat: 42.74,
+  },
+  {
+    id: "kezenoy",
+    name: "Kezenoy-Am Gölü",
+    elev: "1.869 m",
+    lon: 46.15,
+    lat: 42.77,
+  },
 ];
 
 const IMAMATE_COORDS: [number, number][] = [
@@ -236,6 +273,7 @@ const EXILE_GEOJSON: GeoJSON.FeatureCollection = {
 const TICKS = [1700, 1785, 1834, 1864, 1917, 1944, 1991, 2000];
 
 type BaseMapStyle = "hybrid" | "satellite" | "topo" | "dark";
+type RenderQuality = "auto" | "high" | "fast";
 
 interface CameraPreset {
   id: string;
@@ -250,9 +288,9 @@ const CAMERA_PRESETS: CameraPreset[] = [
   {
     id: "overview",
     label: "Kafkasya 3B Genel",
-    center: [45.62, 42.95],
-    zoom: 8.2,
-    pitch: 62,
+    center: [45.16, 42.83],
+    zoom: 9.3,
+    pitch: 58,
     bearing: -14,
   },
   {
@@ -320,7 +358,8 @@ const GUIDED_TOURS: GuidedTour[] = [
   {
     id: "surgun",
     title: "1944 Sürgün ve Hafıza Rotaları",
-    subtitle: "23 Şubat 1944 sevkiyat merkezleri, Haybah ve 1957 dönüş istasyonları",
+    subtitle:
+      "23 Şubat 1944 sevkiyat merkezleri, Haybah ve 1957 dönüş istasyonları",
     stops: ["nazran", "grozni", "haybah", "itum-kale", "hasavyurt"],
   },
 ];
@@ -331,13 +370,15 @@ function createMapStyle(
   showExile: boolean,
   showRivers: boolean,
   exaggeration: number,
-  year: number
+  year: number,
 ): maplibregl.StyleSpecification {
   const showImamateNow = showImamate && year >= 1834;
   const filteredExile: GeoJSON.FeatureCollection = {
     type: "FeatureCollection",
     features: showExile
-      ? EXILE_GEOJSON.features.filter((f) => year >= (f.properties?.minYear ?? 0))
+      ? EXILE_GEOJSON.features.filter(
+          (f) => year >= (f.properties?.minYear ?? 0),
+        )
       : [],
   };
 
@@ -346,12 +387,12 @@ function createMapStyle(
   return {
     version: 8,
     sky: {
-      "sky-color": "#0a0907",
-      "sky-horizon-blend": 0.45,
-      "horizon-color": "#262018",
-      "horizon-fog-blend": 0.65,
-      "fog-color": "#12100c",
-      "fog-ground-blend": 0.35,
+      "sky-color": "#14232f",
+      "sky-horizon-blend": 0.7,
+      "horizon-color": "#aab9bf",
+      "horizon-fog-blend": 0.8,
+      "fog-color": "#8c9d9f",
+      "fog-ground-blend": 0.15,
     },
     sources: {
       satellite: {
@@ -360,8 +401,9 @@ function createMapStyle(
           "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
         ],
         tileSize: 256,
-        maxzoom: 18,
-        attribution: "Esri World Imagery",
+        maxzoom: 19,
+        attribution:
+          'Imagery © <a href="https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9" target="_blank" rel="noopener noreferrer">Esri, Maxar, Earthstar Geographics & GIS User Community</a>',
       },
       "hybrid-labels": {
         type: "raster",
@@ -376,28 +418,27 @@ function createMapStyle(
         tiles: ["https://tile.opentopomap.org/{z}/{x}/{y}.png"],
         tileSize: 256,
         maxzoom: 16,
-        attribution: "OpenTopoMap",
+        attribution:
+          '© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors · <a href="https://opentopomap.org" target="_blank" rel="noopener noreferrer">OpenTopoMap</a> (CC-BY-SA)',
       },
       dark: {
         type: "raster",
         tiles: ["https://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png"],
         tileSize: 256,
         maxzoom: 18,
-        attribution: "CARTO",
+        attribution:
+          '© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors · © <a href="https://carto.com/attributions" target="_blank" rel="noopener noreferrer">CARTO</a>',
       },
       "terrain-dem": {
         type: "raster-dem",
-        tiles: ["https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"],
+        tiles: [
+          "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png",
+        ],
         encoding: "terrarium",
         tileSize: 256,
-        maxzoom: 12,
-      },
-      "hillshade-dem": {
-        type: "raster-dem",
-        tiles: ["https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"],
-        encoding: "terrarium",
-        tileSize: 256,
-        maxzoom: 12,
+        maxzoom: 14,
+        attribution:
+          '<a href="https://registry.opendata.aws/terrain-tiles/" target="_blank" rel="noopener noreferrer">Terrain Tiles</a> · Mapzen / AWS',
       },
       rivers: {
         type: "geojson",
@@ -428,14 +469,19 @@ function createMapStyle(
         : undefined,
     layers: [
       {
+        id: "atlas-background",
+        type: "background",
+        paint: { "background-color": "#152125" },
+      },
+      {
         id: "layer-satellite",
         type: "raster",
         source: "satellite",
         layout: { visibility: isSat ? "visible" : "none" },
         paint: {
-          "raster-saturation": 0.04,
-          "raster-contrast": 0.14,
-          "raster-brightness-min": 0.03,
+          "raster-saturation": -0.12,
+          "raster-contrast": 0.035,
+          "raster-fade-duration": 180,
         },
       },
       {
@@ -455,23 +501,12 @@ function createMapStyle(
         layout: { visibility: baseStyle === "dark" ? "visible" : "none" },
       },
       {
-        id: "layer-hillshade",
-        type: "hillshade",
-        source: "hillshade-dem",
-        paint: {
-          "hillshade-exaggeration": baseStyle === "dark" ? 0.68 : 0.42,
-          "hillshade-shadow-color": "#050709",
-          "hillshade-highlight-color": baseStyle === "dark" ? "#dcb877" : "#fff6e0",
-          "hillshade-accent-color": "#1c242b",
-        },
-      },
-      {
         id: "layer-hybrid-labels",
         type: "raster",
         source: "hybrid-labels",
         layout: { visibility: baseStyle === "hybrid" ? "visible" : "none" },
         paint: {
-          "raster-opacity": 0.78,
+          "raster-opacity": 0.65,
         },
       },
       {
@@ -562,9 +597,14 @@ export default function AtlasMap() {
   const katmanParam = searchParams.get("katman");
   const yerParam = searchParams.get("yer");
   const validKatman =
-    katmanParam && PLACE_KINDS.some((k) => k.id === katmanParam) ? (katmanParam as PlaceKind) : null;
-  const validYer = yerParam && PLACES.some((p) => p.id === yerParam) ? yerParam : null;
-  const validYerPlace = validYer ? PLACES.find((x) => x.id === validYer) ?? null : null;
+    katmanParam && PLACE_KINDS.some((k) => k.id === katmanParam)
+      ? (katmanParam as PlaceKind)
+      : null;
+  const validYer =
+    yerParam && PLACES.some((p) => p.id === yerParam) ? yerParam : null;
+  const validYerPlace = validYer
+    ? (PLACES.find((x) => x.id === validYer) ?? null)
+    : null;
 
   const [kinds, setKinds] = useState<PlaceKind[]>(() => {
     if (validKatman) {
@@ -575,16 +615,24 @@ export default function AtlasMap() {
     return PLACE_KINDS.map((k) => k.id);
   });
   const [searchQuery, setSearchQuery] = useState("");
-  const [baseStyle, setBaseStyle] = useState<BaseMapStyle>("hybrid");
-  const [exaggeration, setExaggeration] = useState<number>(1.65);
-  const [showImamate, setShowImamate] = useState(true);
-  const [showExile, setShowExile] = useState(true);
-  const [showRivers, setShowRivers] = useState(true);
+  const [baseStyle, setBaseStyle] = useState<BaseMapStyle>("satellite");
+  const [exaggeration, setExaggeration] = useState<number>(1.35);
+  const [showImamate, setShowImamate] = useState(false);
+  const [showExile, setShowExile] = useState(false);
+  const [showRivers, setShowRivers] = useState(false);
   const [showPeaks, setShowPeaks] = useState(true);
   const [showAllLabels, setShowAllLabels] = useState(false);
   const [leftClickOrbit, setLeftClickOrbit] = useState(false);
-  const [leftHudOpen, setLeftHudOpen] = useState(true);
-  const [rightHudOpen, setRightHudOpen] = useState(true);
+  const [leftHudOpen, setLeftHudOpen] = useState(false);
+  const [rightHudOpen, setRightHudOpen] = useState(() => Boolean(validYer));
+  const [presetId, setPresetId] = useState(validYer ? "" : "overview");
+  const [quality, setQuality] = useState<RenderQuality>("auto");
+  const [mapReady, setMapReady] = useState(false);
+  const [mapError, setMapError] = useState(false);
+  const [retryKey, setRetryKey] = useState(0);
+  const [tilesLoading, setTilesLoading] = useState(true);
+  const [tileWarning, setTileWarning] = useState(false);
+  const [sceneActive, setSceneActive] = useState(true);
   const [fullscreen, setFullscreen] = useState(false);
   const [orbiting, setOrbiting] = useState(false);
   const [timelinePlaying, setTimelinePlaying] = useState(false);
@@ -593,20 +641,26 @@ export default function AtlasMap() {
   const [tourAutoPlay, setTourAutoPlay] = useState(false);
 
   const [year, setYear] = useState(() =>
-    validYerPlace ? Math.max(2000, validYerPlace.year) : 2000
+    validYerPlace ? Math.max(2000, validYerPlace.year) : 2000,
   );
   const [selected, setSelected] = useState<string>(() => {
     if (validYer) return validYer;
-    if (validKatman) return PLACES.find((p) => p.kind === validKatman)?.id ?? "targim";
+    if (validKatman)
+      return PLACES.find((p) => p.kind === validKatman)?.id ?? "targim";
     return "targim";
   });
-  const [prevParams, setPrevParams] = useState({ yer: validYer, katman: validKatman });
+  const [prevParams, setPrevParams] = useState({
+    yer: validYer,
+    katman: validKatman,
+  });
 
   const viewportWrapRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const compassRef = useRef<HTMLSpanElement>(null);
   const telemetryRef = useRef<HTMLSpanElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
+  const fullscreenButtonRef = useRef<HTMLButtonElement>(null);
+  const tourStepRef = useRef(0);
   const markersRef = useRef<
     Map<
       string,
@@ -620,20 +674,24 @@ export default function AtlasMap() {
 
   const visible = useMemo(() => {
     const q = searchQuery.trim().toLocaleLowerCase("tr-TR");
-    return PLACES.filter((p) => kinds.includes(p.kind) && p.year <= year).filter(
+    return PLACES.filter(
+      (p) => kinds.includes(p.kind) && p.year <= year,
+    ).filter(
       (p) =>
         !q ||
         `${p.name} ${p.description} ${PLACE_VALLEY[p.id] ?? ""}`
           .toLocaleLowerCase("tr-TR")
-          .includes(q)
+          .includes(q),
     );
   }, [kinds, year, searchQuery]);
 
   const sel = PLACES.find((p) => p.id === selected);
-  const selPeople = (sel?.people ?? []).map(getPerson).filter((p) => p !== undefined);
+  const selPeople = (sel?.people ?? [])
+    .map(getPerson)
+    .filter((p) => p !== undefined);
   const selDocs = (sel?.docs ?? []).map(getDoc).filter((d) => d !== undefined);
-  const selElevation = sel ? PLACE_ELEVATION[sel.id] ?? 850 : 0;
-  const selValley = sel ? PLACE_VALLEY[sel.id] ?? "Kuzey Kafkasya" : "";
+  const selElevation = sel ? (PLACE_ELEVATION[sel.id] ?? 850) : 0;
+  const selValley = sel ? (PLACE_VALLEY[sel.id] ?? "Kuzey Kafkasya") : "";
 
   const activeTour = GUIDED_TOURS.find((t) => t.id === activeTourId) ?? null;
 
@@ -641,13 +699,14 @@ export default function AtlasMap() {
     const map = mapRef.current;
     if (!map) return;
     setOrbiting(false);
+    setPresetId("");
     map.flyTo({
       center: [p.lon, p.lat],
-      zoom: Math.max(map.getZoom(), zoomLevel),
+      zoom: zoomLevel,
       pitch: p.kind === "kule" || p.kind === "savas" ? 68 : 60,
       bearing: p.lon < 45.3 ? 22 : -22,
       duration: 1650,
-      essential: true,
+      offset: window.innerWidth >= 1024 ? [-140, 0] : [0, -70],
     });
   }, []);
 
@@ -655,20 +714,23 @@ export default function AtlasMap() {
     (p: Place, zoomLevel = 11.6) => {
       setSelected(p.id);
       setRightHudOpen(true);
+      setSearchQuery("");
+      if (window.innerWidth < 1024) setLeftHudOpen(false);
       flyToPlace(p, zoomLevel);
     },
-    [flyToPlace]
+    [flyToPlace],
   );
 
   const stepSelectedPlace = useCallback(
     (delta: number) => {
       if (visible.length === 0) return;
       const curIdx = visible.findIndex((p) => p.id === selected);
-      const nextIdx = curIdx === -1 ? 0 : (curIdx + delta + visible.length) % visible.length;
+      const nextIdx =
+        curIdx === -1 ? 0 : (curIdx + delta + visible.length) % visible.length;
       const nextPlace = visible[nextIdx];
       if (nextPlace) focus(nextPlace);
     },
-    [visible, selected, focus]
+    [visible, selected, focus],
   );
 
   if (validYer !== prevParams.yer || validKatman !== prevParams.katman) {
@@ -694,7 +756,9 @@ export default function AtlasMap() {
     if (validYerPlace) {
       setSelected(validYerPlace.id);
       setKinds((prev) =>
-        prev.includes(validYerPlace.kind) ? prev : [...prev, validYerPlace.kind]
+        prev.includes(validYerPlace.kind)
+          ? prev
+          : [...prev, validYerPlace.kind],
       );
       setYear((prev) => Math.max(prev, validYerPlace.year));
     }
@@ -704,55 +768,110 @@ export default function AtlasMap() {
   useEffect(() => {
     const container = containerRef.current;
     if (!container || mapRef.current) return;
+    let disposed = false;
+    let dispose: (() => void) | undefined;
 
-    const startCenter: [number, number] = validYerPlace
-      ? [validYerPlace.lon, validYerPlace.lat]
-      : CAMERA_PRESETS[0].center;
-    const startZoom = validYerPlace ? 11.5 : CAMERA_PRESETS[0].zoom;
-    const startPitch = validYerPlace ? 66 : CAMERA_PRESETS[0].pitch;
-    const startBearing = validYerPlace ? 18 : CAMERA_PRESETS[0].bearing;
+    const initialize = async () => {
+      const maplibregl = await import("maplibre-gl");
+      if (disposed) return;
+      maplibregl.setWorkerUrl(
+        new URL(
+          "maplibre-gl/dist/maplibre-gl-worker.mjs",
+          import.meta.url,
+        ).toString(),
+      );
 
-    const map = new maplibregl.Map({
-      container,
-      style: createMapStyle("hybrid", true, true, true, 1.65, 2000),
-      center: startCenter,
-      zoom: startZoom,
-      pitch: startPitch,
-      bearing: startBearing,
-      maxPitch: 78,
-      minZoom: 6.2,
-      maxZoom: 16.5,
-      maxBounds: [
-        [42.5, 40.8],
-        [49.2, 45.0],
-      ],
-      attributionControl: false,
-    });
+      const startCenter: [number, number] = validYerPlace
+        ? [validYerPlace.lon, validYerPlace.lat]
+        : CAMERA_PRESETS[0].center;
+      const startZoom = validYerPlace ? 11.5 : CAMERA_PRESETS[0].zoom;
+      const startPitch = validYerPlace ? 66 : CAMERA_PRESETS[0].pitch;
+      const startBearing = validYerPlace ? 18 : CAMERA_PRESETS[0].bearing;
 
-    map.addControl(new maplibregl.AttributionControl({ compact: true }), "bottom-right");
+      const map = new maplibregl.Map({
+        container,
+        style: createMapStyle("satellite", false, false, false, 1.35, 2000),
+        center: startCenter,
+        zoom: startZoom,
+        pitch: startPitch,
+        bearing: startBearing,
+        maxPitch: 78,
+        minZoom: 6.2,
+        maxZoom: 18,
+        maxBounds: [
+          [42.5, 40.8],
+          [49.2, 45.0],
+        ],
+        attributionControl: false,
+        pixelRatio: 1,
+        maxTileCacheZoomLevels: 3,
+        fadeDuration: 120,
+        canvasContextAttributes: {
+          antialias: false,
+          powerPreference: "high-performance",
+        },
+      });
 
-    const syncMove = () => {
-      const pitch = Math.round(map.getPitch());
-      const bearing = Math.round(map.getBearing());
-      const zoom = map.getZoom().toFixed(1);
-      if (compassRef.current) {
-        compassRef.current.style.transform = `rotate(${-bearing}deg)`;
-      }
-      if (telemetryRef.current) {
-        telemetryRef.current.textContent = `${pitch}° 3B Eğim · ${bearing}° Yön · Zoom ${zoom}`;
-      }
-    };
-    map.on("move", syncMove);
+      map.addControl(
+        new maplibregl.AttributionControl({ compact: true }),
+        "bottom-right",
+      );
+      map.addControl(
+        new maplibregl.ScaleControl({ maxWidth: 110, unit: "metric" }),
+        "bottom-left",
+      );
+      map.on("style.load", () => {
+        if (!disposed) setMapReady(true);
+      });
+      map.on("dataloading", () => {
+        if (!disposed) setTilesLoading(true);
+      });
+      map.on("idle", () => {
+        if (!disposed) {
+          setTilesLoading(false);
+          setTileWarning(false);
+        }
+      });
+      map.on("error", (event) => {
+        if (disposed) return;
+        if (/worker|webgl/i.test(event.error?.message ?? "")) setMapError(true);
+        else if ("sourceId" in event) setTileWarning(true);
+      });
+      const resizeObserver = new ResizeObserver(() => map.resize());
+      resizeObserver.observe(container);
+      const onContextLost = () => {
+        if (!disposed) setMapError(true);
+      };
+      const onContextRestored = () => {
+        if (!disposed) setMapError(false);
+      };
+      map.getCanvas().addEventListener("webglcontextlost", onContextLost);
+      map
+        .getCanvas()
+        .addEventListener("webglcontextrestored", onContextRestored);
 
-    /* Tüm PLACES noktaları için DOM işaretçilerini oluştur */
-    const markerStore = markersRef.current;
-    PLACES.forEach((p) => {
-      const elev = PLACE_ELEVATION[p.id] ?? 800;
-      const btn = document.createElement("button");
-      btn.type = "button";
-      btn.className = `atlas-3d-marker atlas-kind-${p.kind}`;
-      btn.setAttribute("aria-label", p.name);
-      btn.innerHTML = `
+      const syncMove = () => {
+        const pitch = Math.round(map.getPitch());
+        const bearing = Math.round(map.getBearing());
+        const zoom = map.getZoom().toFixed(1);
+        if (compassRef.current) {
+          compassRef.current.style.transform = `rotate(${-bearing}deg)`;
+        }
+        if (telemetryRef.current) {
+          telemetryRef.current.textContent = `${pitch}° 3B Eğim · ${bearing}° Yön · Zoom ${zoom}`;
+        }
+      };
+      map.on("move", syncMove);
+
+      /* Tüm PLACES noktaları için DOM işaretçilerini oluştur */
+      const markerStore = markersRef.current;
+      PLACES.forEach((p) => {
+        const elev = PLACE_ELEVATION[p.id] ?? 800;
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = `atlas-3d-marker atlas-kind-${p.kind}`;
+        btn.setAttribute("aria-label", p.name);
+        btn.innerHTML = `
         <span class="atlas-marker-pin">
           <span class="atlas-marker-core"></span>
         </span>
@@ -761,67 +880,83 @@ export default function AtlasMap() {
           <span class="atlas-marker-sub">${elev} m · ${p.period}</span>
         </span>
       `;
-      btn.addEventListener("click", (ev) => {
-        ev.stopPropagation();
-        setOrbiting(false);
-        setSelected(p.id);
-        setRightHudOpen(true);
-        map.flyTo({
-          center: [p.lon, p.lat],
-          zoom: Math.max(map.getZoom(), 11.6),
-          pitch: p.kind === "kule" || p.kind === "savas" ? 68 : 60,
-          bearing: p.lon < 45.3 ? 22 : -22,
-          duration: 1650,
-          essential: true,
+        btn.addEventListener("click", (ev) => {
+          ev.stopPropagation();
+          setOrbiting(false);
+          setSelected(p.id);
+          setPresetId("");
+          setRightHudOpen(true);
+          if (window.innerWidth < 1024) setLeftHudOpen(false);
+          map.flyTo({
+            center: [p.lon, p.lat],
+            zoom: 12.1,
+            pitch: p.kind === "kule" || p.kind === "savas" ? 68 : 60,
+            bearing: p.lon < 45.3 ? 22 : -22,
+            duration: 1650,
+            offset: window.innerWidth >= 1024 ? [-140, 0] : [0, -70],
+          });
         });
+
+        const marker = new maplibregl.Marker({
+          element: btn,
+          anchor: "bottom",
+        })
+          .setLngLat([p.lon, p.lat])
+          .addTo(map);
+
+        markerStore.set(p.id, { marker, root: btn });
       });
 
-      const marker = new maplibregl.Marker({
-        element: btn,
-        anchor: "bottom",
-      })
-        .setLngLat([p.lon, p.lat])
-        .addTo(map);
+      /* Kafkas Zirveleri ve Geçitleri Rozetleri */
+      const createdPeaks: HTMLElement[] = [];
+      CAUCASUS_PEAKS.forEach((pk) => {
+        const el = document.createElement("div");
+        el.className = "atlas-peak-marker";
+        el.innerHTML = `<span>▲</span><span>${pk.name}</span><span style="color:#dcb877">${pk.elev}</span>`;
+        new maplibregl.Marker({ element: el, anchor: "center" })
+          .setLngLat([pk.lon, pk.lat])
+          .addTo(map);
+        createdPeaks.push(el);
+      });
+      peakMarkersRef.current = createdPeaks;
 
-      markerStore.set(p.id, { marker, root: btn });
+      mapRef.current = map;
+
+      dispose = () => {
+        resizeObserver.disconnect();
+        map.getCanvas().removeEventListener("webglcontextlost", onContextLost);
+        map
+          .getCanvas()
+          .removeEventListener("webglcontextrestored", onContextRestored);
+        markerStore.forEach(({ marker }) => marker.remove());
+        markerStore.clear();
+        peakMarkersRef.current = [];
+        map.remove();
+        mapRef.current = null;
+      };
+    };
+    void initialize().catch(() => {
+      if (!disposed) setMapError(true);
     });
-
-    /* Kafkas Zirveleri ve Geçitleri Rozetleri */
-    const createdPeaks: HTMLElement[] = [];
-    CAUCASUS_PEAKS.forEach((pk) => {
-      const el = document.createElement("div");
-      el.className = "atlas-peak-marker";
-      el.innerHTML = `<span>▲</span><span>${pk.name}</span><span style="color:#dcb877">${pk.elev}</span>`;
-      new maplibregl.Marker({ element: el, anchor: "center" })
-        .setLngLat([pk.lon, pk.lat])
-        .addTo(map);
-      createdPeaks.push(el);
-    });
-    peakMarkersRef.current = createdPeaks;
-
-    mapRef.current = map;
 
     return () => {
-      markerStore.forEach(({ marker }) => marker.remove());
-      markerStore.clear();
-      peakMarkersRef.current = [];
-      map.remove();
-      mapRef.current = null;
+      disposed = true;
+      dispose?.();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [retryKey]);
 
   /* URL'den yeni bir yer seçildiğinde kamerayı uçur */
   useEffect(() => {
     if (validYerPlace && mapRef.current) {
       flyToPlace(validYerPlace, 11.6);
     }
-  }, [validYerPlace, flyToPlace]);
+  }, [validYerPlace, flyToPlace, mapReady]);
 
   /* Altlık Harita Katmanı (Hibrit / Uydu / Topo / Koyu) Değişimi */
   useEffect(() => {
     const map = mapRef.current;
-    if (!map || !map.isStyleLoaded()) return;
+    if (!map || !mapReady) return;
     const setVis = (id: string, on: boolean) => {
       if (map.getLayer(id)) {
         map.setLayoutProperty(id, "visibility", on ? "visible" : "none");
@@ -832,55 +967,102 @@ export default function AtlasMap() {
     setVis("layer-hybrid-labels", baseStyle === "hybrid");
     setVis("layer-topo", baseStyle === "topo");
     setVis("layer-dark", baseStyle === "dark");
-  }, [baseStyle]);
+    const needsHillshade = baseStyle === "dark" || baseStyle === "topo";
+    if (needsHillshade && !map.getSource("hillshade-dem")) {
+      map.addSource("hillshade-dem", {
+        type: "raster-dem",
+        tiles: [
+          "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png",
+        ],
+        encoding: "terrarium",
+        tileSize: 256,
+        maxzoom: 12,
+      });
+      map.addLayer(
+        {
+          id: "layer-hillshade",
+          type: "hillshade",
+          source: "hillshade-dem",
+          paint: {
+            "hillshade-exaggeration": 0.3,
+            "hillshade-shadow-color": "#050709",
+            "hillshade-highlight-color": "#d8e2df",
+            "hillshade-accent-color": "#1c242b",
+          },
+        },
+        "layer-hybrid-labels",
+      );
+    }
+    setVis("layer-hillshade", needsHillshade);
+  }, [baseStyle, mapReady]);
 
   /* 3B DEM Arazi Kabartma Gücü Değişimi */
   useEffect(() => {
     const map = mapRef.current;
-    if (!map || !map.isStyleLoaded()) return;
+    if (!map || !mapReady) return;
     if (exaggeration > 0) {
       map.setTerrain({ source: "terrain-dem", exaggeration });
     } else {
       map.setTerrain(null);
     }
-  }, [exaggeration]);
+  }, [exaggeration, mapReady]);
 
   /* İmamet, Sürgün, Nehirler ve Zirve Katmanları Güncellemesi */
   useEffect(() => {
     const map = mapRef.current;
-    if (!map || !map.isStyleLoaded()) return;
+    if (!map || !mapReady) return;
 
     const showImamateNow = showImamate && year >= 1834;
     if (map.getLayer("imamate-fill")) {
-      map.setLayoutProperty("imamate-fill", "visibility", showImamateNow ? "visible" : "none");
+      map.setLayoutProperty(
+        "imamate-fill",
+        "visibility",
+        showImamateNow ? "visible" : "none",
+      );
     }
     if (map.getLayer("imamate-line")) {
-      map.setLayoutProperty("imamate-line", "visibility", showImamateNow ? "visible" : "none");
+      map.setLayoutProperty(
+        "imamate-line",
+        "visibility",
+        showImamateNow ? "visible" : "none",
+      );
     }
     if (map.getLayer("rivers-glow")) {
-      map.setLayoutProperty("rivers-glow", "visibility", showRivers ? "visible" : "none");
+      map.setLayoutProperty(
+        "rivers-glow",
+        "visibility",
+        showRivers ? "visible" : "none",
+      );
     }
     if (map.getLayer("rivers-line")) {
-      map.setLayoutProperty("rivers-line", "visibility", showRivers ? "visible" : "none");
+      map.setLayoutProperty(
+        "rivers-line",
+        "visibility",
+        showRivers ? "visible" : "none",
+      );
     }
 
-    const exileSource = map.getSource("exile-routes") as maplibregl.GeoJSONSource | undefined;
+    const exileSource = map.getSource("exile-routes") as
+      | maplibregl.GeoJSONSource
+      | undefined;
     if (exileSource) {
       exileSource.setData({
         type: "FeatureCollection",
         features: showExile
-          ? EXILE_GEOJSON.features.filter((f) => year >= (f.properties?.minYear ?? 0))
+          ? EXILE_GEOJSON.features.filter(
+              (f) => year >= (f.properties?.minYear ?? 0),
+            )
           : [],
       });
     }
-  }, [showImamate, showExile, showRivers, year]);
+  }, [showImamate, showExile, showRivers, year, mapReady]);
 
   /* Zirve İşaretçileri Görünürlüğü */
   useEffect(() => {
     peakMarkersRef.current.forEach((el) => {
       el.style.display = showPeaks ? "inline-flex" : "none";
     });
-  }, [showPeaks]);
+  }, [showPeaks, mapReady]);
 
   /* İşaretçi Görünürlük, Seçili Durum ve Etiket Modu Güncellemesi */
   useEffect(() => {
@@ -891,25 +1073,103 @@ export default function AtlasMap() {
       root.classList.toggle("is-selected", id === selected);
       root.classList.toggle("show-label", showAllLabels || id === selected);
     });
-  }, [visible, selected, showAllLabels]);
+  }, [visible, selected, showAllLabels, mapReady]);
 
-  /* Tam Ekran Değişiminde Harita Boyutunu Yenile */
+  /* Keep high-density output at rest; lower the GPU load while navigating. */
   useEffect(() => {
     const map = mapRef.current;
-    if (!map) return;
-    const t = setTimeout(() => map.resize(), 60);
-    return () => clearTimeout(t);
+    if (!map || !mapReady) return;
+    let refineTimer: ReturnType<typeof setTimeout>;
+    const limited = navigator.hardwareConcurrency <= 4;
+    const stillRatio = () =>
+      quality === "fast"
+        ? 1
+        : quality === "high"
+          ? 2
+          : window.matchMedia("(max-width: 767px)").matches || limited
+            ? 1.5
+            : 2;
+    let changingRatio = false;
+    const setRatio = (ratio: number) => {
+      if (Math.abs(map.getPixelRatio() - ratio) > 0.01) {
+        changingRatio = true;
+        try {
+          map.setPixelRatio(ratio);
+        } finally {
+          changingRatio = false;
+        }
+      }
+    };
+    const onStart = () => {
+      if (changingRatio) return;
+      clearTimeout(refineTimer);
+      setRatio(quality === "high" ? 2 : 1);
+    };
+    const onEnd = () => {
+      if (changingRatio) return;
+      clearTimeout(refineTimer);
+      refineTimer = setTimeout(() => setRatio(stillRatio()), 180);
+    };
+    map.on("movestart", onStart);
+    map.on("moveend", onEnd);
+    if (map.isMoving()) onStart();
+    else onEnd();
+    return () => {
+      clearTimeout(refineTimer);
+      map.off("movestart", onStart);
+      map.off("moveend", onEnd);
+    };
+  }, [quality, mapReady]);
+
+  /* Pause continuous work when the atlas is offscreen or the tab is hidden. */
+  useEffect(() => {
+    let inView = true;
+    const sync = () => setSceneActive(inView && !document.hidden);
+    const observer = new IntersectionObserver(([entry]) => {
+      inView = entry.isIntersecting;
+      sync();
+    });
+    if (containerRef.current) observer.observe(containerRef.current);
+    document.addEventListener("visibilitychange", sync);
+    return () => {
+      observer.disconnect();
+      document.removeEventListener("visibilitychange", sync);
+    };
+  }, []);
+
+  /* Fullscreen exits with Escape and restores focus without re-creating WebGL. */
+  useEffect(() => {
+    if (!fullscreen) return;
+    const oldOverflow = document.documentElement.style.overflow;
+    document.documentElement.style.overflow = "hidden";
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setFullscreen(false);
+        fullscreenButtonRef.current?.focus({ preventScroll: true });
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.documentElement.style.overflow = oldOverflow;
+      window.removeEventListener("keydown", onKey);
+    };
   }, [fullscreen]);
 
   /* 360° Yörünge Kamerası (Seçili Nokta Etrafında Otomatik Dönüş) */
   useEffect(() => {
-    if (!orbiting) return;
+    if (!orbiting || !sceneActive) return;
     const map = mapRef.current;
     if (!map) return;
 
     let rafId = 0;
-    const spin = () => {
-      map.setBearing(map.getBearing() + 0.18);
+    let lastFrame = 0;
+    const spin = (time: number) => {
+      if (lastFrame && time - lastFrame >= 32) {
+        map.setBearing(
+          map.getBearing() + Math.min(time - lastFrame, 100) * 0.008,
+        );
+        lastFrame = time;
+      } else if (!lastFrame) lastFrame = time;
       rafId = requestAnimationFrame(spin);
     };
     rafId = requestAnimationFrame(spin);
@@ -924,11 +1184,11 @@ export default function AtlasMap() {
       canvas.removeEventListener("pointerdown", stopOnInput);
       canvas.removeEventListener("wheel", stopOnInput);
     };
-  }, [orbiting]);
+  }, [orbiting, sceneActive]);
 
   /* Zaman Çizelgesi Otomatik Oynatıcı (1700 -> 2000) */
   useEffect(() => {
-    if (!timelinePlaying) return;
+    if (!timelinePlaying || !sceneActive) return;
     const timer = setInterval(() => {
       setYear((prev) => {
         if (prev >= 2000) {
@@ -939,24 +1199,23 @@ export default function AtlasMap() {
       });
     }, 110);
     return () => clearInterval(timer);
-  }, [timelinePlaying]);
+  }, [timelinePlaying, sceneActive]);
 
   /* Rehberli 3B Keşif Turu Otomatik Uçuş Zamanlayıcısı */
   useEffect(() => {
-    if (!activeTour || !tourAutoPlay) return;
+    if (!activeTour || !tourAutoPlay || !sceneActive) return;
     const timer = setInterval(() => {
-      setTourStepIdx((prev) => {
-        const nextIdx = (prev + 1) % activeTour.stops.length;
-        const nextPlace = PLACES.find((p) => p.id === activeTour.stops[nextIdx]);
-        if (nextPlace) {
-          setSelected(nextPlace.id);
-          flyToPlace(nextPlace, 12.1);
-        }
-        return nextIdx;
-      });
+      const nextIdx = (tourStepRef.current + 1) % activeTour.stops.length;
+      tourStepRef.current = nextIdx;
+      setTourStepIdx(nextIdx);
+      const nextPlace = PLACES.find((p) => p.id === activeTour.stops[nextIdx]);
+      if (nextPlace) {
+        setSelected(nextPlace.id);
+        flyToPlace(nextPlace, 12.1);
+      }
     }, 5500);
     return () => clearInterval(timer);
-  }, [activeTour, tourAutoPlay, flyToPlace]);
+  }, [activeTour, tourAutoPlay, flyToPlace, sceneActive]);
 
   /* Sol Tıkla 3B Döndürme (Orbit) Desteği */
   useEffect(() => {
@@ -1002,7 +1261,7 @@ export default function AtlasMap() {
       window.removeEventListener("pointerup", onUp);
       map.dragPan.enable();
     };
-  }, [leftClickOrbit]);
+  }, [leftClickOrbit, mapReady]);
 
   const toggleKind = (k: PlaceKind) =>
     setKinds((v) => (v.includes(k) ? v.filter((x) => x !== k) : [...v, k]));
@@ -1011,21 +1270,23 @@ export default function AtlasMap() {
     const map = mapRef.current;
     if (!map) return;
     setOrbiting(false);
+    setPresetId(preset.id);
     map.flyTo({
       center: preset.center,
       zoom: preset.zoom,
       pitch: preset.pitch,
       bearing: preset.bearing,
       duration: 1600,
-      essential: true,
     });
   };
 
   const startTour = (tour: GuidedTour) => {
     setKinds(PLACE_KINDS.map((k) => k.id));
+    setSearchQuery("");
     setYear(2000);
     setActiveTourId(tour.id);
     setTourStepIdx(0);
+    tourStepRef.current = 0;
     setTourAutoPlay(true);
     const firstPlace = PLACES.find((p) => p.id === tour.stops[0]);
     if (firstPlace) {
@@ -1037,16 +1298,18 @@ export default function AtlasMap() {
     if (!activeTour) return;
     const bounded = (idx + activeTour.stops.length) % activeTour.stops.length;
     setTourStepIdx(bounded);
+    tourStepRef.current = bounded;
     const targetPlace = PLACES.find((p) => p.id === activeTour.stops[bounded]);
     if (targetPlace) {
       focus(targetPlace, 12.1);
     }
   };
 
-  const sliderPct = ((year - TICKS[0]) / (TICKS[TICKS.length - 1] - TICKS[0])) * 100;
+  const sliderPct =
+    ((year - TICKS[0]) / (TICKS[TICKS.length - 1] - TICKS[0])) * 100;
 
   return (
-    <div className="space-y-10">
+    <div className="atlas-experience space-y-8">
       {/* Üst Sinematik 3B Keşif Rotaları (Guided Flight Tours) Şeridi */}
       <div className="grid grid-cols-1 gap-3.5 md:grid-cols-3">
         {GUIDED_TOURS.map((tour, idx) => {
@@ -1055,7 +1318,13 @@ export default function AtlasMap() {
             <button
               key={tour.id}
               type="button"
-              onClick={() => (isCurrent ? setActiveTourId(null) : startTour(tour))}
+              aria-pressed={isCurrent}
+              onClick={() => {
+                if (isCurrent) {
+                  setActiveTourId(null);
+                  setTourAutoPlay(false);
+                } else startTour(tour);
+              }}
               className={`museum-card group flex items-center justify-between gap-4 p-4 text-left transition ${
                 isCurrent ? "border-gold-light/70 bg-white/[0.06]" : ""
               }`}
@@ -1072,7 +1341,9 @@ export default function AtlasMap() {
                 <h2 className="mt-1.5 truncate font-display text-lg font-semibold text-parchment transition group-hover:text-gold-light">
                   {tour.title}
                 </h2>
-                <p className="mt-0.5 line-clamp-1 text-xs text-white/55">{tour.subtitle}</p>
+                <p className="mt-0.5 line-clamp-1 text-xs text-white/70">
+                  {tour.subtitle}
+                </p>
               </div>
               <span
                 className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full border transition ${
@@ -1092,143 +1363,194 @@ export default function AtlasMap() {
       <div
         ref={viewportWrapRef}
         className={
-          fullscreen
-            ? "fixed inset-0 z-[80] flex flex-col bg-ink"
-            : "museum-card relative flex flex-col overflow-hidden"
+          fullscreen ? "atlas-shell is-fullscreen" : "atlas-shell museum-card"
         }
       >
-        {/* Üst Komuta Çubuğu: Bölge Kamera Açıları + Altlık Harita + Araçlar */}
-        <div className="flex flex-wrap items-center justify-between gap-2 border-b border-white/[0.08] bg-night/95 px-3.5 py-2.5">
-          <div className="flex flex-wrap items-center gap-1.5">
-            <button
-              type="button"
-              onClick={() => setLeftHudOpen((v) => !v)}
-              className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[0.7rem] font-semibold transition ${
-                leftHudOpen
-                  ? "border-gold-light/60 bg-gold-light/15 text-gold-light"
-                  : "border-white/15 bg-white/[0.04] text-white/80 hover:text-white"
-              }`}
-              title="Sol katman ve filtre panelini aç/kapat"
+        <div className="atlas-toolbar">
+          <div className="atlas-toolbar-top">
+            <div className="atlas-title">
+              <span className="dialog-eyebrow">
+                Kuzey Kafkasya · İnteraktif atlas
+              </span>
+              <h2>Dağların hafızası</h2>
+            </div>
+            <div
+              className="atlas-basemaps"
+              role="group"
+              aria-label="Harita görünümü"
             >
-              <SlidersHorizontal size={12} />
-              <span>Katmanlar ({visible.length})</span>
-            </button>
-
-            <span className="mx-0.5 hidden h-4 w-px bg-white/10 sm:inline-block" />
-
-            {CAMERA_PRESETS.map((preset) => (
-              <button
-                key={preset.id}
-                type="button"
-                onClick={() => applyPreset(preset)}
-                className="inline-flex items-center gap-1 rounded-full border border-white/12 bg-white/[0.03] px-2.5 py-1 text-[0.7rem] font-medium text-white/80 transition hover:border-gold-light/45 hover:bg-white/[0.07] hover:text-gold-light"
-              >
-                <Eye size={11} className="text-gold" />
-                {preset.label}
-              </button>
-            ))}
-          </div>
-
-          <div className="flex flex-wrap items-center gap-1.5">
-            {/* 4 Altlık Harita Seçici */}
-            <div className="flex items-center gap-0.5 rounded-full border border-white/12 bg-ink/85 p-0.5">
               {(
                 [
-                  { id: "hybrid", label: "3B Hibrit" },
-                  { id: "satellite", label: "Saf Uydu" },
+                  { id: "satellite", label: "Uydu" },
+                  { id: "hybrid", label: "Hibrit" },
                   { id: "topo", label: "Topoğrafik" },
-                  { id: "dark", label: "Koyu Atlas" },
+                  { id: "dark", label: "Koyu" },
                 ] as const
-              ).map((m) => (
+              ).map((style) => (
                 <button
-                  key={m.id}
+                  key={style.id}
                   type="button"
-                  onClick={() => setBaseStyle(m.id)}
-                  className={`rounded-full px-2.5 py-0.5 text-[0.68rem] font-medium transition ${
-                    baseStyle === m.id
-                      ? "bg-gold-light text-ink"
-                      : "text-white/70 hover:text-white"
-                  }`}
+                  aria-pressed={baseStyle === style.id}
+                  onClick={() => {
+                    setBaseStyle(style.id);
+                    setTileWarning(false);
+                  }}
                 >
-                  {m.label}
+                  {style.label}
                 </button>
               ))}
             </div>
-
-            {/* Sol Tıkla Kaydır / 3B Döndür Seçici */}
-            <div className="flex items-center gap-0.5 rounded-full border border-white/12 bg-ink/85 p-0.5">
+          </div>
+          <div className="atlas-toolbar-bottom">
+            <label className="atlas-select">
+              <Locate size={15} aria-hidden="true" />
+              <select
+                aria-label="Bölge görünümü"
+                value={presetId}
+                onChange={(event) => {
+                  const preset = CAMERA_PRESETS.find(
+                    (p) => p.id === event.target.value,
+                  );
+                  if (preset) applyPreset(preset);
+                }}
+              >
+                <option value="" disabled>
+                  Seçili konum
+                </option>
+                {CAMERA_PRESETS.map((preset) => (
+                  <option key={preset.id} value={preset.id}>
+                    {preset.label}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <div className="atlas-tools">
               <button
                 type="button"
-                onClick={() => setLeftClickOrbit(false)}
-                className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[0.68rem] font-medium transition ${
-                  !leftClickOrbit ? "bg-gold-light text-ink" : "text-white/70 hover:text-white"
-                }`}
-                title="Sol tıkla haritayı kaydır"
+                className="atlas-tool"
+                aria-expanded={leftHudOpen}
+                onClick={() => {
+                  setLeftHudOpen((v) => !v);
+                  if (window.innerWidth < 1024) setRightHudOpen(false);
+                }}
               >
-                <Move size={11} /> Kaydır
+                <SlidersHorizontal size={15} /> Katmanlar{" "}
+                <span className="atlas-count">{visible.length}</span>
               </button>
               <button
                 type="button"
-                onClick={() => setLeftClickOrbit(true)}
-                className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[0.68rem] font-medium transition ${
-                  leftClickOrbit ? "bg-gold-light text-ink" : "text-white/70 hover:text-white"
-                }`}
-                title="Sol tıkla 3B döndür ve eğ"
+                className="atlas-tool"
+                aria-pressed={leftClickOrbit}
+                onClick={() => setLeftClickOrbit((v) => !v)}
+                title="Sürükleyerek 3B döndürme modunu değiştir"
               >
-                <Orbit size={11} /> 3B Döndür
+                {leftClickOrbit ? <Orbit size={15} /> : <Move size={15} />}
+                {leftClickOrbit ? "3B döndür" : "Kaydır"}
+              </button>
+              <button
+                type="button"
+                className="atlas-tool"
+                aria-pressed={orbiting}
+                onClick={() => setOrbiting((v) => !v)}
+              >
+                <Orbit size={15} /> <span>360°</span>
+              </button>
+              <button
+                type="button"
+                className="atlas-tool"
+                aria-pressed={showAllLabels}
+                onClick={() => setShowAllLabels((v) => !v)}
+              >
+                <Tag size={15} /> İsimler
               </button>
             </div>
-
-            <button
-              type="button"
-              onClick={() => setOrbiting((v) => !v)}
-              className={`inline-flex items-center gap-1 rounded-full border px-2.5 py-1 text-[0.68rem] font-medium transition ${
-                orbiting
-                  ? "border-gold-light bg-gold-light text-ink"
-                  : "border-white/12 bg-white/[0.03] text-white/75 hover:border-gold-light/45 hover:text-gold-light"
-              }`}
-              title="Kamera seçili vadi etrafında 360° döner"
-            >
-              <Orbit size={11} /> 360° Yörünge
-            </button>
-
-            <button
-              type="button"
-              onClick={() => setShowAllLabels((v) => !v)}
-              className={`inline-flex items-center gap-1 rounded-full border px-2.5 py-1 text-[0.68rem] font-medium transition ${
-                showAllLabels
-                  ? "border-gold-light/60 bg-gold-light/15 text-gold-light"
-                  : "border-white/12 bg-white/[0.03] text-white/70 hover:text-white"
-              }`}
-              title="Tüm nokta isimlerini göster/gizle"
-            >
-              <Tag size={11} /> İsimler
-            </button>
-
-            <button
-              type="button"
-              onClick={() => setFullscreen((v) => !v)}
-              className="inline-flex h-7 items-center gap-1 rounded-full border border-white/12 bg-white/[0.03] px-2.5 text-[0.68rem] font-medium text-white/80 transition hover:border-gold-light/45 hover:text-gold-light"
-              aria-label={fullscreen ? "Tam ekrandan çık" : "Tam ekran 3B sahne"}
-              title={fullscreen ? "Tam ekrandan çık" : "Tam ekran 3B sahne"}
-            >
-              {fullscreen ? <Minimize2 size={12} /> : <Maximize2 size={12} />}
-              <span className="hidden sm:inline">{fullscreen ? "Küçült" : "Tam Ekran"}</span>
-            </button>
+            <div className="atlas-display-tools">
+              <label className="atlas-select atlas-quality">
+                <Settings2 size={14} aria-hidden="true" />
+                <select
+                  aria-label="Görüntü kalitesi"
+                  value={quality}
+                  onChange={(event) =>
+                    setQuality(event.target.value as RenderQuality)
+                  }
+                >
+                  <option value="auto">Otomatik kalite</option>
+                  <option value="high">Yüksek kalite</option>
+                  <option value="fast">Hız öncelikli</option>
+                </select>
+              </label>
+              <button
+                ref={fullscreenButtonRef}
+                type="button"
+                className="icon-button"
+                onClick={() => setFullscreen((v) => !v)}
+                aria-label={
+                  fullscreen ? "Tam ekrandan çık" : "Tam ekran 3B sahne"
+                }
+                title={fullscreen ? "Tam ekrandan çık (Esc)" : "Tam ekran"}
+              >
+                {fullscreen ? <Minimize2 size={17} /> : <Maximize2 size={17} />}
+              </button>
+            </div>
           </div>
         </div>
 
         {/* 3B WebGL Harita Sahnesi + Yüzen Sol/Sağ HUD Panelleri */}
         <div
-          className={`relative w-full overflow-hidden bg-night ${
-            fullscreen ? "flex-1" : "h-[640px] md:h-[740px]"
-          }`}
+          className="atlas-stage"
+          role="region"
+          aria-label="İnteraktif 3B Kafkasya haritası"
+          data-map-ready={mapReady && !mapError}
         >
           <div ref={containerRef} className="h-full w-full" />
+          {!mapError && (tilesLoading || !mapReady) && (
+            <div className="atlas-loading" role="status">
+              <span />
+              {mapReady
+                ? "Görüntü ayrıntıları yükleniyor"
+                : "3B arazi hazırlanıyor"}
+            </div>
+          )}
+          {mapError && (
+            <div className="atlas-error" role="alert">
+              <Mountain size={30} />
+              <h3>Harita görüntülenemedi</h3>
+              <p>
+                Bağlantınızı ve tarayıcınızın grafik desteğini kontrol edip
+                yeniden deneyin. Yerleşim dizinini aşağıdan inceleyebilirsiniz.
+              </p>
+              <button
+                className="btn-gold"
+                type="button"
+                onClick={() => {
+                  setMapError(false);
+                  setMapReady(false);
+                  setTilesLoading(true);
+                  setRetryKey((v) => v + 1);
+                }}
+              >
+                Yeniden dene
+              </button>
+            </div>
+          )}
+          {tileWarning && !mapError && (
+            <div className="atlas-tile-warning" role="status">
+              Bazı harita görüntüleri yüklenemedi.
+              <button
+                type="button"
+                onClick={() => {
+                  setBaseStyle("dark");
+                  setTileWarning(false);
+                }}
+              >
+                Koyu haritaya geç
+              </button>
+            </div>
+          )}
 
           {/* Aktif 3B Keşif Turu Üst Orta HUD Çubuğu */}
           {activeTour && (
-            <div className="pointer-events-auto absolute left-1/2 top-3 z-30 flex -translate-x-1/2 items-center gap-2.5 rounded-full border border-gold-light/50 bg-ink/90 px-4 py-2 shadow-2xl">
+            <div className="atlas-tour-player">
               <button
                 type="button"
                 onClick={() => goToTourStep(tourStepIdx - 1)}
@@ -1243,14 +1565,22 @@ export default function AtlasMap() {
                 className="flex h-7 w-7 items-center justify-center rounded-full bg-gold-light text-ink transition hover:brightness-105"
                 aria-label={tourAutoPlay ? "Turu duraklat" : "Turu oynat"}
               >
-                {tourAutoPlay ? <Pause size={13} /> : <Play size={13} className="ml-0.5" />}
+                {tourAutoPlay ? (
+                  <Pause size={13} />
+                ) : (
+                  <Play size={13} className="ml-0.5" />
+                )}
               </button>
               <div className="px-1 text-center">
                 <span className="block text-[0.6rem] font-semibold tracking-[0.18em] text-gold uppercase">
-                  {activeTour.title} ({tourStepIdx + 1}/{activeTour.stops.length})
+                  {activeTour.title} ({tourStepIdx + 1}/
+                  {activeTour.stops.length})
                 </span>
                 <span className="block font-display text-sm font-semibold text-parchment">
-                  {PLACES.find((p) => p.id === activeTour.stops[tourStepIdx])?.name}
+                  {
+                    PLACES.find((p) => p.id === activeTour.stops[tourStepIdx])
+                      ?.name
+                  }
                 </span>
               </div>
               <button
@@ -1267,7 +1597,7 @@ export default function AtlasMap() {
                   setActiveTourId(null);
                   setTourAutoPlay(false);
                 }}
-                className="ml-1 flex h-6 w-6 items-center justify-center rounded-full text-white/55 transition hover:bg-white/10 hover:text-white"
+                className="ml-1 flex h-6 w-6 items-center justify-center rounded-full text-white/70 transition hover:bg-white/10 hover:text-white"
                 aria-label="Turu kapat"
               >
                 <X size={13} />
@@ -1279,7 +1609,8 @@ export default function AtlasMap() {
           {leftHudOpen && (
             <aside
               data-lenis-prevent
-              className="pointer-events-auto absolute left-3 top-3 z-20 max-h-[calc(100%-4.5rem)] w-[265px] overflow-y-auto overscroll-contain rounded-2xl border border-white/12 bg-ink/90 p-4 shadow-2xl"
+              className="atlas-layer-panel"
+              aria-label="Harita katmanları"
             >
               <div className="flex items-center justify-between">
                 <h2 className="eyebrow">Katmanlar &amp; Filtre</h2>
@@ -1295,12 +1626,16 @@ export default function AtlasMap() {
 
               {/* Hızlı Nokta Arama */}
               <label className="relative mt-3 block">
-                <Search size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-white/40" />
+                <Search
+                  size={13}
+                  className="absolute left-3 top-1/2 -translate-y-1/2 text-white/40"
+                />
                 <input
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Kule, köy veya vadi ara…"
-                  className="h-8 w-full rounded-full border border-white/12 bg-white/[0.04] pl-8 pr-3 text-xs text-white outline-none transition placeholder:text-white/35 focus:border-gold-light/50"
+                  aria-label="Haritada yerleşim ara"
+                  className="field-control w-full pl-9 pr-3 text-xs"
                 />
               </label>
 
@@ -1334,14 +1669,15 @@ export default function AtlasMap() {
                 <div className="mt-1.5 grid grid-cols-4 gap-1 rounded-xl border border-white/10 bg-white/[0.03] p-1">
                   {[
                     { val: 0, label: "2B" },
-                    { val: 1.1, label: "1.1x" },
-                    { val: 1.65, label: "1.6x" },
-                    { val: 2.25, label: "2.2x" },
+                    { val: 1.35, label: "1.35×" },
+                    { val: 1.65, label: "1.65×" },
+                    { val: 2.25, label: "2.25×" },
                   ].map((opt) => (
                     <button
                       key={opt.label}
                       type="button"
                       onClick={() => setExaggeration(opt.val)}
+                      aria-pressed={exaggeration === opt.val}
                       className={`rounded-lg py-1 font-mono text-[0.65rem] font-medium transition ${
                         exaggeration === opt.val
                           ? "bg-gold-light text-ink"
@@ -1432,10 +1768,17 @@ export default function AtlasMap() {
             <aside
               key={sel.id}
               data-lenis-prevent
-              className="pointer-events-auto absolute right-16 top-3 z-20 hidden max-h-[calc(100%-4.5rem)] w-[355px] overflow-y-auto overscroll-contain rounded-2xl border border-white/14 bg-ink/92 shadow-2xl lg:block"
+              className="atlas-inspector"
+              aria-label="Seçili yerleşim"
             >
-              <div className="relative aspect-[16/10] bg-night">
-                <Image src={sel.image} alt={sel.name} fill sizes="360px" className="object-cover" />
+              <div className="atlas-inspector-cover relative bg-night">
+                <Image
+                  src={sel.image}
+                  alt={sel.name}
+                  fill
+                  sizes="360px"
+                  className="object-cover"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/25 to-transparent" />
 
                 <div className="absolute inset-x-3 top-3 flex items-center justify-between">
@@ -1504,28 +1847,37 @@ export default function AtlasMap() {
                         : "border-white/12 bg-white/[0.04] text-white/80 hover:border-gold-light/40 hover:text-gold-light"
                     }`}
                   >
-                    <Orbit size={12} /> {orbiting ? "Dönüşü Durdur" : "360° Çevresinde Dön"}
+                    <Orbit size={12} />{" "}
+                    {orbiting ? "Dönüşü Durdur" : "360° Çevresinde Dön"}
                   </button>
                 </div>
 
-                <p className="mt-3 text-xs leading-relaxed text-white/75">{sel.description}</p>
+                <p className="mt-3 text-xs leading-relaxed text-white/75">
+                  {sel.description}
+                </p>
 
                 {/* Coğrafi ve Tarihsel Künye */}
                 <div className="mt-3.5 grid grid-cols-3 gap-2 rounded-xl border border-white/[0.08] bg-white/[0.03] p-2.5 text-center">
                   <div>
-                    <span className="block text-[0.58rem] tracking-wider text-white/45 uppercase">Rakım</span>
+                    <span className="block text-[0.58rem] tracking-wider text-white/65 uppercase">
+                      Rakım
+                    </span>
                     <span className="mt-0.5 block font-mono text-xs font-semibold text-gold-light">
                       ~{selElevation} m
                     </span>
                   </div>
                   <div className="border-x border-white/[0.08]">
-                    <span className="block text-[0.58rem] tracking-wider text-white/45 uppercase">Koordinat</span>
+                    <span className="block text-[0.58rem] tracking-wider text-white/65 uppercase">
+                      Koordinat
+                    </span>
                     <span className="mt-0.5 block font-mono text-[0.68rem] text-white/85">
                       {sel.lat.toFixed(2)}°K {sel.lon.toFixed(2)}°D
                     </span>
                   </div>
                   <div>
-                    <span className="block text-[0.58rem] tracking-wider text-white/45 uppercase">Dönem</span>
+                    <span className="block text-[0.58rem] tracking-wider text-white/65 uppercase">
+                      Dönem
+                    </span>
                     <span className="mt-0.5 block truncate px-1 text-[0.68rem] text-white/85">
                       {sel.year}
                     </span>
@@ -1557,7 +1909,9 @@ export default function AtlasMap() {
                             <span className="block truncate text-xs font-semibold text-white transition group-hover:text-gold-light">
                               {p.name}
                             </span>
-                            <span className="block truncate text-[0.64rem] text-white/50">{p.title}</span>
+                            <span className="block truncate text-[0.64rem] text-white/50">
+                              {p.title}
+                            </span>
                           </span>
                           <ArrowRight
                             size={12}
@@ -1581,7 +1935,10 @@ export default function AtlasMap() {
                           href={`/arsiv/${d.slug}`}
                           className="group flex items-center gap-2 rounded-xl border border-white/[0.08] bg-white/[0.03] px-2.5 py-1.5 text-xs text-white/80 transition hover:border-gold-light/40 hover:bg-white/[0.06] hover:text-gold-light"
                         >
-                          <ScrollText size={12} className="shrink-0 text-gold-light" />
+                          <ScrollText
+                            size={12}
+                            className="shrink-0 text-gold-light"
+                          />
                           <span className="truncate">{d.title}</span>
                         </Link>
                       ))}
@@ -1595,23 +1952,30 @@ export default function AtlasMap() {
                       ? "/sergiler/kuleler-ve-yerlesimler"
                       : `/zaman-cizelgesi?yil=${
                           [...TICKS, 1859, 1877].sort(
-                            (a, b) => Math.abs(a - sel.year) - Math.abs(b - sel.year)
+                            (a, b) =>
+                              Math.abs(a - sel.year) - Math.abs(b - sel.year),
                           )[0]
                         }`
                   }
                   className="btn-gold mt-4 w-full justify-center py-2 text-xs"
                 >
-                  {sel.kind === "kule" ? "Kuleler Sergisini Aç" : "Kronolojide İncele"}{" "}
+                  {sel.kind === "kule"
+                    ? "Kuleler Sergisini Aç"
+                    : "Kronolojide İncele"}{" "}
                   <ArrowRight size={13} />
                 </Link>
               </div>
             </aside>
           ) : (
-            !rightHudOpen && (
+            !rightHudOpen &&
+            visible.some((p) => p.id === selected) && (
               <button
                 type="button"
-                onClick={() => setRightHudOpen(true)}
-                className="pointer-events-auto absolute right-16 top-3 z-20 hidden items-center gap-1.5 rounded-full border border-white/15 bg-ink/85 px-3.5 py-1.5 text-xs font-medium text-gold-light shadow-lg transition hover:border-gold-light lg:inline-flex"
+                onClick={() => {
+                  setRightHudOpen(true);
+                  if (window.innerWidth < 1024) setLeftHudOpen(false);
+                }}
+                className="atlas-selected-place"
               >
                 <span>Seçili Nokta: {sel?.name ?? "İncele"}</span>
               </button>
@@ -1619,12 +1983,16 @@ export default function AtlasMap() {
           )}
 
           {/* Sağ Üst 3B Pusula ve Kamera Kontrol Kulesi */}
-          <div className="pointer-events-auto absolute right-3 top-3 z-20 flex flex-col items-center gap-2">
+          <div className="atlas-camera-controls">
             <button
               type="button"
               onClick={() => {
                 setOrbiting(false);
-                mapRef.current?.easeTo({ bearing: 0, pitch: 60, duration: 900 });
+                mapRef.current?.easeTo({
+                  bearing: 0,
+                  pitch: 60,
+                  duration: 900,
+                });
               }}
               title="Kuzeye hizala"
               className="group relative flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-ink/85 shadow-lg transition hover:border-gold-light"
@@ -1635,9 +2003,19 @@ export default function AtlasMap() {
                 style={{ transform: "rotate(14deg)" }}
               >
                 <svg viewBox="0 0 40 40" className="h-8 w-8" aria-hidden="true">
-                  <circle cx="20" cy="20" r="16" fill="none" stroke="rgba(255,255,255,0.22)" strokeWidth="1" />
+                  <circle
+                    cx="20"
+                    cy="20"
+                    r="16"
+                    fill="none"
+                    stroke="rgba(255,255,255,0.22)"
+                    strokeWidth="1"
+                  />
                   <polygon points="20,5 23,20 20,17 17,20" fill="#f6e4bb" />
-                  <polygon points="20,35 22.5,20 20,23 17.5,20" fill="rgba(255,255,255,0.32)" />
+                  <polygon
+                    points="20,35 22.5,20 20,23 17.5,20"
+                    fill="rgba(255,255,255,0.32)"
+                  />
                 </svg>
               </span>
               <span className="absolute -top-1 rounded bg-ink px-1 font-mono text-[0.52rem] font-semibold text-gold-light">
@@ -1668,7 +2046,8 @@ export default function AtlasMap() {
                 type="button"
                 onClick={() => {
                   const m = mapRef.current;
-                  if (m) m.easeTo({ bearing: m.getBearing() - 35, duration: 450 });
+                  if (m)
+                    m.easeTo({ bearing: m.getBearing() - 35, duration: 450 });
                 }}
                 className="border-t border-white/10 p-2 text-white/80 transition hover:bg-white/[0.08] hover:text-gold-light"
                 aria-label="Sola döndür"
@@ -1680,7 +2059,8 @@ export default function AtlasMap() {
                 type="button"
                 onClick={() => {
                   const m = mapRef.current;
-                  if (m) m.easeTo({ bearing: m.getBearing() + 35, duration: 450 });
+                  if (m)
+                    m.easeTo({ bearing: m.getBearing() + 35, duration: 450 });
                 }}
                 className="border-t border-white/10 p-2 text-white/80 transition hover:bg-white/[0.08] hover:text-gold-light"
                 aria-label="Sağa döndür"
@@ -1715,12 +2095,12 @@ export default function AtlasMap() {
           </div>
 
           {/* Sol Alt Kamera Telemetri ve Kullanım İpucu */}
-          <div className="pointer-events-none absolute bottom-3 left-3 z-20 flex flex-wrap items-center gap-2">
+          <div className="atlas-telemetry">
             <span
               ref={telemetryRef}
               className="rounded-full border border-white/12 bg-ink/85 px-2.5 py-1 font-mono text-[0.64rem] text-gold-light/90"
             >
-              62° 3B Eğim · -14° Yön · Zoom 8.2
+              58° 3B Eğim · -14° Yön · Zoom 9.3
             </span>
             <span className="hidden rounded-full border border-white/10 bg-ink/80 px-2.5 py-1 text-[0.65rem] text-white/70 sm:inline">
               Sağ tık + sürükle: 3B döndür &amp; eğ · Tekerlek: Yakınlaştır
@@ -1729,7 +2109,7 @@ export default function AtlasMap() {
         </div>
 
         {/* Alt Zaman Kaydırıcısı + Kronolojik Oynatıcı (1700 – 2000) */}
-        <div className="border-t border-white/[0.08] bg-ink/95 px-5 pb-3.5 pt-3.5">
+        <div className="atlas-timeline">
           <div className="flex items-center gap-3.5">
             <button
               type="button"
@@ -1740,15 +2120,29 @@ export default function AtlasMap() {
                 setTimelinePlaying((v) => !v);
               }}
               className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-gold-light/50 bg-gold/15 text-gold-light transition hover:bg-gold-light hover:text-ink"
-              aria-label={timelinePlaying ? "Zaman akışını duraklat" : "Tarihsel akışı oynat"}
-              title={timelinePlaying ? "Zaman akışını duraklat" : "1700'den 2000'e kronolojik oynat"}
+              aria-label={
+                timelinePlaying
+                  ? "Zaman akışını duraklat"
+                  : "Tarihsel akışı oynat"
+              }
+              title={
+                timelinePlaying
+                  ? "Zaman akışını duraklat"
+                  : "1700'den 2000'e kronolojik oynat"
+              }
             >
-              {timelinePlaying ? <Pause size={13} /> : <Play size={13} className="ml-0.5" />}
+              {timelinePlaying ? (
+                <Pause size={13} />
+              ) : (
+                <Play size={13} className="ml-0.5" />
+              )}
             </button>
 
             <div className="flex items-center gap-1.5">
               <Compass size={14} className="text-gold-light" />
-              <span className="w-11 font-mono text-sm font-semibold text-gold-light">{year}</span>
+              <span className="w-11 font-mono text-sm font-semibold text-gold-light">
+                {year}
+              </span>
             </div>
 
             <div className="relative flex-1">
@@ -1771,7 +2165,7 @@ export default function AtlasMap() {
               />
             </div>
           </div>
-          <div className="mt-1.5 flex justify-between pl-24 text-[0.65rem] font-medium text-white/45">
+          <div className="mt-1.5 flex justify-between pl-24 text-[0.65rem] font-medium text-white/65">
             {TICKS.map((t) => (
               <button
                 key={t}
@@ -1794,12 +2188,22 @@ export default function AtlasMap() {
         <div className="museum-card overflow-hidden lg:hidden">
           <div className="grid grid-cols-1 sm:grid-cols-[220px_1fr]">
             <div className="relative aspect-[16/10] bg-night sm:aspect-auto">
-              <Image src={sel.image} alt={sel.name} fill sizes="320px" className="object-cover" />
+              <Image
+                src={sel.image}
+                alt={sel.name}
+                fill
+                sizes="320px"
+                className="object-cover"
+              />
             </div>
             <div className="p-5">
               <span className="eyebrow">{selValley}</span>
-              <h2 className="mt-1 font-display text-2xl font-semibold text-parchment">{sel.name}</h2>
-              <p className="mt-2 text-xs leading-relaxed text-white/75">{sel.description}</p>
+              <h2 className="mt-1 font-display text-2xl font-semibold text-parchment">
+                {sel.name}
+              </h2>
+              <p className="mt-2 text-xs leading-relaxed text-white/75">
+                {sel.description}
+              </p>
               <div className="mt-4 flex flex-wrap gap-2">
                 <button
                   type="button"
@@ -1818,13 +2222,16 @@ export default function AtlasMap() {
       <div>
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="eyebrow">Coğrafi Katalog · {PLACES.length} Tarihsel Nokta</p>
+            <p className="eyebrow">
+              Coğrafi Katalog · {PLACES.length} Tarihsel Nokta
+            </p>
             <h2 className="mt-2 font-display text-2xl font-semibold text-parchment md:text-4xl">
               Bölgesel ve Tematik Yerleşim Dizini
             </h2>
           </div>
-          <p className="text-xs text-white/55">
-            Bir yerleşime tıkladığınızda 3B kamera doğrudan ilgili vadi ve rakıma uçar.
+          <p className="text-xs text-white/70">
+            Bir yerleşime tıkladığınızda 3B kamera doğrudan ilgili vadi ve
+            rakıma uçar.
           </p>
         </div>
 
@@ -1884,14 +2291,16 @@ export default function AtlasMap() {
                             >
                               {p.name}
                             </span>
-                            <span className="mt-0.5 block truncate font-mono text-[0.62rem] text-white/45">
+                            <span className="mt-0.5 block truncate font-mono text-[0.62rem] text-white/65">
                               ~{elev} m · {p.period}
                             </span>
                           </span>
                           <ArrowRight
                             size={12}
                             className={`shrink-0 transition-transform group-hover:translate-x-0.5 ${
-                              isSel ? "text-gold-light" : "text-white/30 group-hover:text-gold-light"
+                              isSel
+                                ? "text-gold-light"
+                                : "text-white/30 group-hover:text-gold-light"
                             }`}
                           />
                         </button>
