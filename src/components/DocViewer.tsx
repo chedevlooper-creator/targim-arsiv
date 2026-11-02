@@ -2,8 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { createPortal } from "react-dom";
+import { useEffect, useId, useLayoutEffect, useRef, useState } from "react";
 import {
   Check,
   ChevronLeft,
@@ -14,8 +13,9 @@ import {
   Maximize2,
   Minus,
   Plus,
-  X,
+  RotateCcw,
 } from "lucide-react";
+import ArchiveDialog from "./ArchiveDialog";
 import { formatDocCitation, type ArchiveDoc } from "@/lib/data";
 
 export function DocViewer({
@@ -31,107 +31,146 @@ export function DocViewer({
   const [zoom, setZoom] = useState(1);
   const [inlineZoom, setInlineZoom] = useState(1);
   const [copied, setCopied] = useState(false);
+  const [citationOpen, setCitationOpen] = useState(false);
+  const copyTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const canvasRef = useRef<HTMLDivElement>(null);
+  const previousZoom = useRef(1);
 
-  useEffect(() => {
-    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setFull(false);
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, []);
+  useLayoutEffect(() => {
+    const canvas = canvasRef.current;
+    if (canvas) {
+      const factor = zoom / previousZoom.current;
+      canvas.scrollLeft =
+        (canvas.scrollLeft + canvas.clientWidth / 2) * factor -
+        canvas.clientWidth / 2;
+      canvas.scrollTop =
+        (canvas.scrollTop + canvas.clientHeight / 2) * factor -
+        canvas.clientHeight / 2;
+    }
+    previousZoom.current = zoom;
+  }, [zoom, full]);
 
-  const copyCitation = () => {
-    const cite = formatDocCitation(doc);
-    navigator.clipboard?.writeText(cite);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2200);
+  useEffect(
+    () => () => {
+      if (copyTimer.current) clearTimeout(copyTimer.current);
+    },
+    [],
+  );
+
+  const copyCitation = async () => {
+    try {
+      if (!navigator.clipboard?.writeText)
+        throw new Error("Clipboard is unavailable");
+      await navigator.clipboard.writeText(formatDocCitation(doc));
+      setCopied(true);
+      if (copyTimer.current) clearTimeout(copyTimer.current);
+      copyTimer.current = setTimeout(() => setCopied(false), 2400);
+    } catch {
+      setCopied(false);
+      setCitationOpen(true);
+    }
   };
 
   return (
     <>
-      <div className="relative flex items-center gap-3">
+      <div className="document-preview-layout">
         {prevHref ? (
           <Link
             href={prevHref}
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/12 bg-white/[0.04] text-white/80 transition hover:border-gold-light/45 hover:bg-white/[0.08] hover:text-gold-light"
+            className="icon-button document-previous"
             aria-label="Önceki belge"
           >
-            <ChevronLeft size={18} />
+            <ChevronLeft size={19} />
           </Link>
         ) : (
-          <span className="w-10 shrink-0" />
+          <span className="document-previous" />
         )}
-
-        <div className="museum-card relative aspect-[4/5] flex-1 overflow-hidden bg-night lg:aspect-auto lg:h-[calc(100svh-17rem)]">
+        <div className="museum-card document-preview">
           <div
             className="relative h-full w-full transition-transform duration-300"
-            style={{ transform: `scale(${inlineZoom})`, transformOrigin: "center center" }}
+            style={{ transform: `scale(${inlineZoom})` }}
           >
             <Image
               src={doc.image}
               alt={doc.title}
               fill
-              priority
+              preload
               sizes="(max-width:1024px) 100vw, 50vw"
-              className="object-contain p-4"
+              className="object-contain p-5"
             />
           </div>
-
-          {/* Sağ üst satır içi büyüteç kontrolü */}
-          <div className="absolute right-3 top-3 z-10 flex items-center overflow-hidden rounded-full border border-white/15 bg-ink/85 px-1 backdrop-blur-md">
+          <div
+            className="zoom-control absolute right-3 top-3 z-10"
+            role="group"
+            aria-label="Görsel yakınlaştırma"
+          >
             <button
-              onClick={() => setInlineZoom((z) => Math.max(1, +(z - 0.25).toFixed(2)))}
-              className="p-2 text-white/75 transition hover:text-gold-light"
+              type="button"
+              className="zoom-button"
+              disabled={inlineZoom <= 1}
+              onClick={() =>
+                setInlineZoom((value) => Math.max(1, value - 0.25))
+              }
               aria-label="Uzaklaştır"
             >
-              <Minus size={14} />
+              <Minus size={15} />
             </button>
-            <span className="px-1.5 font-mono text-[0.65rem] text-white/85">{Math.round(inlineZoom * 100)}%</span>
             <button
-              onClick={() => setInlineZoom((z) => Math.min(2.5, +(z + 0.25).toFixed(2)))}
-              className="p-2 text-white/75 transition hover:text-gold-light"
+              type="button"
+              className="zoom-value"
+              onClick={() => setInlineZoom(1)}
+              aria-label="Ölçeği sıfırla"
+            >
+              {Math.round(inlineZoom * 100)}%
+            </button>
+            <button
+              type="button"
+              className="zoom-button"
+              disabled={inlineZoom >= 2.5}
+              onClick={() =>
+                setInlineZoom((value) => Math.min(2.5, value + 0.25))
+              }
               aria-label="Yakınlaştır"
             >
-              <Plus size={14} />
+              <Plus size={15} />
             </button>
           </div>
-
-          <span className="badge-glass absolute bottom-3 left-3 z-10 font-mono">
+          <span className="badge-glass absolute bottom-3 left-3 font-mono">
             {doc.catalogNo}
           </span>
         </div>
-
         {nextHref ? (
           <Link
             href={nextHref}
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/12 bg-white/[0.04] text-white/80 transition hover:border-gold-light/45 hover:bg-white/[0.08] hover:text-gold-light"
+            className="icon-button document-next"
             aria-label="Sonraki belge"
           >
-            <ChevronRight size={18} />
+            <ChevronRight size={19} />
           </Link>
         ) : (
-          <span className="w-10 shrink-0" />
+          <span className="document-next" />
         )}
       </div>
-
-      {/* Alt Araç Çubuğu: Tüm düğmeler aynı rounded-full geometrisinde */}
-      <div className="mt-5 flex flex-wrap items-center gap-2.5 sm:px-[52px]">
-        <a href={doc.image} download className="btn-gold">
-          <Download size={14} /> Görseli İndir
-        </a>
+      <div className="document-actions">
         <button
+          type="button"
           onClick={() => {
             setZoom(1);
             setFull(true);
           }}
-          className="btn-glass"
+          className="btn-gold"
+          aria-haspopup="dialog"
         >
-          <Maximize2 size={14} /> Tam Ekran İncele
+          <Maximize2 size={16} /> Tam ekran incele
         </button>
-        <button
-          onClick={copyCitation}
-          className="btn-glass"
-        >
-          {copied ? <Check size={14} className="text-gold-light" /> : <Copy size={14} />}
-          {copied ? "Künye Kopyalandı" : "Kaynak Göster"}
+        <a href={doc.image} download className="btn-glass">
+          <Download size={16} /> Görseli indir
+        </a>
+        <button type="button" onClick={copyCitation} className="btn-glass">
+          {copied ? <Check size={16} /> : <Copy size={16} />}
+          <span>
+            {copied ? "Künye kopyalandı" : "Künyeyi kopyala"}
+          </span>
         </button>
         <a
           href={doc.sourceUrl}
@@ -139,105 +178,192 @@ export function DocViewer({
           rel="noopener noreferrer"
           className="btn-glass"
         >
-          <ExternalLink size={14} /> Kaynak Sayfası
+          <ExternalLink size={16} /> Kaynak sayfası
         </a>
       </div>
-
-      {/* Tam Ekran Işıklı Masa */}
-      {full && createPortal(
-        <div
-          data-lenis-prevent
-          className="fixed inset-0 z-[90] flex flex-col bg-ink/96 backdrop-blur-xl"
-          role="dialog"
-          aria-modal="true"
-        >
-          <div className="flex items-center justify-between border-b border-white/10 px-6 py-4">
-            <div>
-              <span className="font-mono text-xs text-gold-light">{doc.catalogNo}</span>
-              <span className="ml-3 text-base font-semibold text-white">{doc.title}</span>
+      <p className="sr-only" role="status">
+        {copied ? "Belgenin kaynak künyesi kopyalandı." : ""}
+      </p>
+      <ArchiveDialog
+        open={full}
+        onClose={() => setFull(false)}
+        title={doc.title}
+        eyebrow={doc.catalogNo}
+        variant="fullscreen"
+        bodyClassName="document-dialog-body"
+      >
+        {full && (
+          <>
+            <div className="document-toolbar">
+              <div
+                className="zoom-control"
+                role="group"
+                aria-label="Tam ekran yakınlaştırma"
+              >
+                <button
+                  type="button"
+                  className="zoom-button"
+                  disabled={zoom <= 1}
+                  onClick={() => setZoom((value) => Math.max(1, value - 0.25))}
+                  aria-label="Uzaklaştır"
+                >
+                  <Minus size={16} />
+                </button>
+                <output className="zoom-value" aria-label="Görsel ölçeği">
+                  {Math.round(zoom * 100)}%
+                </output>
+                <button
+                  type="button"
+                  className="zoom-button"
+                  disabled={zoom >= 3.5}
+                  onClick={() =>
+                    setZoom((value) => Math.min(3.5, value + 0.25))
+                  }
+                  aria-label="Yakınlaştır"
+                >
+                  <Plus size={16} />
+                </button>
+              </div>
+              <button
+                type="button"
+                className="btn-quiet"
+                onClick={() => setZoom(1)}
+              >
+                <RotateCcw size={14} /> Sıfırla
+              </button>
+              <p>Yakınlaştırdığınız görseli kaydırarak inceleyebilirsiniz.</p>
             </div>
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => setZoom((z) => Math.max(1, z - 0.25))}
-                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/[0.04] text-white/75 transition hover:border-white/30 hover:text-white"
-                aria-label="Uzaklaştır"
-              >
-                <Minus size={16} />
-              </button>
-              <span className="w-14 text-center font-mono text-xs text-white/85">{Math.round(zoom * 100)}%</span>
-              <button
-                onClick={() => setZoom((z) => Math.min(3.5, z + 0.25))}
-                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/[0.04] text-white/75 transition hover:border-white/30 hover:text-white"
-                aria-label="Yakınlaştır"
-              >
-                <Plus size={16} />
-              </button>
-              <button
-                onClick={() => setFull(false)}
-                className="ml-2 flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/[0.04] text-white/75 transition hover:border-gold-light/45 hover:text-white"
-                aria-label="Kapat"
-              >
-                <X size={18} />
-              </button>
-            </div>
-          </div>
-          <div data-lenis-prevent className="relative flex-1 overflow-auto overscroll-contain p-6">
             <div
-              className="relative mx-auto h-full w-full transition-transform duration-300"
-              style={{ transform: `scale(${zoom})`, transformOrigin: "center top" }}
+              ref={canvasRef}
+              className="document-canvas"
+              tabIndex={0}
+              aria-label="Belge görseli; büyüttükten sonra kaydırarak inceleyin"
             >
-              <Image src={doc.image} alt={doc.title} fill sizes="100vw" className="object-contain" />
+              <div
+                className="relative"
+                style={{
+                  width: `${zoom * 100}%`,
+                  height: `${zoom * 100}%`,
+                  minWidth: "100%",
+                  minHeight: "100%",
+                }}
+              >
+                <Image
+                  src={doc.image}
+                  alt={doc.title}
+                  fill
+                  sizes="100vw"
+                  className="object-contain p-6"
+                />
+              </div>
             </div>
-          </div>
-        </div>,
-        document.body
-      )}
+          </>
+        )}
+      </ArchiveDialog>
+      <ArchiveDialog
+        open={citationOpen}
+        onClose={() => setCitationOpen(false)}
+        title="Kaynak künyesi"
+        eyebrow="Atıf bilgisi"
+      >
+        <p className="mb-4 text-sm leading-relaxed text-mist">
+          Tarayıcı panoya erişemedi. Aşağıdaki künyeyi seçip
+          kopyalayabilirsiniz.
+        </p>
+        <textarea
+          readOnly
+          value={formatDocCitation(doc)}
+          onFocus={(event) => event.currentTarget.select()}
+          className="citation-field"
+          aria-label="Kaynak künyesi"
+          rows={6}
+        />
+        <div className="dialog-actions">
+          <button
+            type="button"
+            className="btn-gold"
+            onClick={() => setCitationOpen(false)}
+          >
+            Tamam
+          </button>
+        </div>
+      </ArchiveDialog>
     </>
   );
 }
 
 export function DocTabs({ doc }: { doc: ArchiveDoc }) {
+  const id = useId();
   const tabs = [
     {
       id: "aciklama",
-      label: "Açıklama & Fiziksel Notlar",
-      body: [doc.description, doc.notes ? `Fiziksel Özellikler: ${doc.notes}` : ""].filter(Boolean).join("\n\n"),
+      label: "Açıklama ve notlar",
+      body: [
+        doc.description,
+        doc.notes ? `Fiziksel özellikler: ${doc.notes}` : "",
+      ]
+        .filter(Boolean)
+        .join("\n\n"),
     },
     { id: "tr", label: "Transkripsiyon", body: doc.transcription },
-    { id: "ceviri", label: "Türkçe Çeviri", body: doc.translation },
-  ].filter((t) => t.body);
-
+    { id: "ceviri", label: "Türkçe çeviri", body: doc.translation },
+  ].filter((tab) => tab.body);
   const [active, setActive] = useState(tabs[0]?.id);
-  const current = tabs.find((t) => t.id === active) ?? tabs[0];
-  const isArabicScript = active === "tr" && /[\u0600-\u06FF]/.test(current?.body ?? "");
+  const activeId = tabs.some((tab) => tab.id === active) ? active : tabs[0]?.id;
+  const tabRefs = useRef<Array<HTMLButtonElement | null>>([]);
 
   return (
-    <div className="museum-card p-6">
-      <div className="inline-flex flex-wrap gap-1 rounded-full border border-white/[0.08] bg-white/[0.03] p-1">
-        {tabs.map((t) => (
+    <div className="museum-card record-reading-panel">
+      <div className="record-tabs" role="tablist" aria-label="Belge içeriği">
+        {tabs.map((tab, index) => (
           <button
-            key={t.id}
-            onClick={() => setActive(t.id)}
-            className={`rounded-full px-3.5 py-1.5 text-xs font-medium transition ${
-              active === t.id
-                ? "bg-white/[0.12] text-white"
-                : "text-white/75 hover:text-white"
-            }`}
+            key={tab.id}
+            ref={(element) => {
+              tabRefs.current[index] = element;
+            }}
+            type="button"
+            role="tab"
+            id={`${id}-tab-${tab.id}`}
+            aria-controls={`${id}-panel-${tab.id}`}
+            aria-selected={activeId === tab.id}
+            tabIndex={activeId === tab.id ? 0 : -1}
+            onClick={() => setActive(tab.id)}
+            onKeyDown={(event) => {
+              let next = index;
+              if (event.key === "ArrowRight") next = (index + 1) % tabs.length;
+              else if (event.key === "ArrowLeft")
+                next = (index - 1 + tabs.length) % tabs.length;
+              else if (event.key === "Home") next = 0;
+              else if (event.key === "End") next = tabs.length - 1;
+              else return;
+              event.preventDefault();
+              setActive(tabs[next].id);
+              tabRefs.current[next]?.focus();
+            }}
           >
-            {t.label}
+            {tab.label}
           </button>
         ))}
       </div>
-
-      <div
-        key={active}
-        dir={isArabicScript ? "rtl" : "ltr"}
-        className={`animate-fade-up whitespace-pre-line pt-6 leading-relaxed text-white/82 ${
-          isArabicScript ? "text-right font-serif text-2xl leading-loose" : "font-serif text-xl"
-        }`}
-      >
-        {current?.body}
-      </div>
+      {tabs.map((tab) => {
+        const arabic =
+          tab.id === "tr" && /[\u0600-\u06FF]/.test(tab.body ?? "");
+        return (
+          <div
+            key={tab.id}
+            id={`${id}-panel-${tab.id}`}
+            role="tabpanel"
+            aria-labelledby={`${id}-tab-${tab.id}`}
+            hidden={activeId !== tab.id}
+            tabIndex={0}
+            dir={arabic ? "rtl" : "ltr"}
+            lang={arabic ? "ar" : undefined}
+            className={`record-tab-content ${arabic ? "arabic-copy" : "reading-copy"}`}
+          >
+            {tab.body}
+          </div>
+        );
+      })}
     </div>
   );
 }

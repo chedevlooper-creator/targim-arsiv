@@ -24,11 +24,18 @@ export function generateStaticParams() {
   return PEOPLE.map((p) => ({ slug: p.slug }));
 }
 
-export async function generateMetadata({ params }: PageProps<"/kisiler/[slug]">): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps<"/kisiler/[slug]">): Promise<Metadata> {
   const { slug } = await params;
   const p = getPerson(slug);
   if (!p) return { title: "Kişi bulunamadı" };
-  return pageMetadata({ title: p.name, description: p.summary, path: `/kisiler/${p.slug}`, image: p.image });
+  return pageMetadata({
+    title: p.name,
+    description: p.summary,
+    path: `/kisiler/${p.slug}`,
+    image: p.image,
+  });
 }
 
 export default function PersonPage(props: PageProps<"/kisiler/[slug]">) {
@@ -63,7 +70,12 @@ async function PersonPageContent({ params }: PageProps<"/kisiler/[slug]">) {
     ["Doğum", `${p.born}, ${p.birthPlace}`],
     isLiving
       ? ["Durum", "Hayatta (Gazi)"]
-      : ["Vefat", p.deathPlace && p.deathPlace !== "—" ? `${p.died}, ${p.deathPlace}` : p.died],
+      : [
+          "Vefat",
+          p.deathPlace && p.deathPlace !== "—"
+            ? `${p.died}, ${p.deathPlace}`
+            : p.died,
+        ],
     ["Tarihsel Dönem", eraLabel(p.era)],
     ["Bölge", p.region],
   ];
@@ -75,10 +87,12 @@ async function PersonPageContent({ params }: PageProps<"/kisiler/[slug]">) {
       <section className="relative overflow-hidden border-b border-white/10 bg-ink">
         <PageBackdrop />
         <div className="relative mx-auto max-w-[1500px] px-5 pb-16 pt-10 md:px-12">
-          <Breadcrumbs items={[{ href: "/kisiler", label: "Kişiler" }, { label: p.name }]} />
+          <Breadcrumbs
+            items={[{ href: "/kisiler", label: "Kişiler" }, { label: p.name }]}
+          />
 
           <div className="mt-8 grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,430px)_1fr] xl:gap-14">
-            <PersonGallery name={p.name} items={gallery} />
+            <PersonGallery key={p.slug} name={p.name} items={gallery} />
 
             <div className="flex flex-col justify-center">
               <p className="eyebrow">
@@ -88,15 +102,25 @@ async function PersonPageContent({ params }: PageProps<"/kisiler/[slug]">) {
                 {p.name}
               </h1>
               <p className="mt-3 font-serif text-2xl leading-snug text-gold-light/90 md:text-[1.65rem]">
-                {p.title} · <span className="font-mono text-xl">{p.born}–{p.died}</span>
+                {p.title} ·{" "}
+                <span className="font-mono text-xl">
+                  {p.born}–{p.died}
+                </span>
               </p>
 
-              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/82 md:text-xl">{p.summary}</p>
+              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/82 md:text-xl">
+                {p.summary}
+              </p>
 
-              <dl className="museum-card mt-8 grid max-w-2xl divide-y divide-white/[0.08] px-6 py-2">
+              <dl className="museum-card record-facts mt-8 grid max-w-2xl divide-y divide-white/[0.08] px-6 py-2">
                 {facts.map(([k, v]) => (
-                  <div key={k} className="grid grid-cols-[150px_1fr] py-3 text-sm">
-                    <dt className="text-xs font-medium tracking-wider text-gold-light/80 uppercase">{k}</dt>
+                  <div
+                    key={k}
+                    className="grid grid-cols-[150px_1fr] py-3 text-sm"
+                  >
+                    <dt className="text-xs font-medium tracking-wider text-gold-light/80 uppercase">
+                      {k}
+                    </dt>
                     <dd className="text-white/85">{v}</dd>
                   </div>
                 ))}
@@ -110,9 +134,10 @@ async function PersonPageContent({ params }: PageProps<"/kisiler/[slug]">) {
       <section className="mx-auto grid max-w-[1500px] grid-cols-1 gap-14 px-5 pt-16 md:px-12 lg:grid-cols-[1fr_380px]">
         <div>
           <h2 className="eyebrow">Tarihsel Biyografi</h2>
-          <div className="mt-6 space-y-6 font-serif text-[1.35rem] leading-relaxed text-white/82">
+          <div className="reading-copy biography-copy mt-6 space-y-6">
             {p.bio.map((para, i) => {
-              const hasDropCap = i === 0 && /^\p{Lu}\p{Ll}/u.test(para.trimStart());
+              const hasDropCap =
+                i === 0 && /^\p{Lu}\p{Ll}/u.test(para.trimStart());
               return (
                 <p
                   key={i}
@@ -133,7 +158,10 @@ async function PersonPageContent({ params }: PageProps<"/kisiler/[slug]">) {
             <div className="mt-16">
               <div className="flex items-center justify-between gap-4">
                 <h2 className="eyebrow">İlgili Arşiv Kayıtları</h2>
-                <Link href="/arsiv" className="text-xs text-white/55 transition hover:text-gold-light">
+                <Link
+                  href="/arsiv"
+                  className="text-xs text-white/55 transition hover:text-gold-light"
+                >
                   Tüm Arşiv →
                 </Link>
               </div>
@@ -155,7 +183,8 @@ async function PersonPageContent({ params }: PageProps<"/kisiler/[slug]">) {
                     </div>
                     <div className="p-4">
                       <span className="flex items-center gap-1.5 text-[0.62rem] font-medium tracking-widest text-gold-light uppercase">
-                        <ScrollText size={11} /> {docTypeLabel(d.type)} · {d.dateLabel}
+                        <ScrollText size={11} /> {docTypeLabel(d.type)} ·{" "}
+                        {d.dateLabel}
                       </span>
                       <h3 className="mt-1.5 text-sm font-semibold text-white transition group-hover:text-gold-light">
                         {d.title}
@@ -172,7 +201,10 @@ async function PersonPageContent({ params }: PageProps<"/kisiler/[slug]">) {
             <div className="mt-16">
               <div className="flex items-center justify-between gap-4">
                 <h2 className="eyebrow">Kronolojideki Dönem &amp; Olaylar</h2>
-                <Link href="/zaman-cizelgesi" className="text-xs text-white/55 transition hover:text-gold-light">
+                <Link
+                  href="/zaman-cizelgesi"
+                  className="text-xs text-white/55 transition hover:text-gold-light"
+                >
                   Zaman Çizelgesi →
                 </Link>
               </div>
@@ -183,15 +215,22 @@ async function PersonPageContent({ params }: PageProps<"/kisiler/[slug]">) {
                       href={`/zaman-cizelgesi?yil=${e.year}`}
                       className="museum-card group flex items-center gap-5 p-4"
                     >
-                      <span className="font-display text-2xl font-semibold text-gold-light">{e.year}</span>
+                      <span className="font-display text-2xl font-semibold text-gold-light">
+                        {e.year}
+                      </span>
                       <span className="h-6 w-px bg-white/12" />
                       <div className="min-w-0 flex-1">
                         <span className="block text-base font-semibold text-white transition group-hover:text-gold-light">
                           {e.title}
                         </span>
-                        <span className="block truncate text-xs text-white/55">{e.short}</span>
+                        <span className="block truncate text-xs text-white/55">
+                          {e.short}
+                        </span>
                       </div>
-                      <ArrowRight size={15} className="shrink-0 text-gold-light transition-transform group-hover:translate-x-1" />
+                      <ArrowRight
+                        size={15}
+                        className="shrink-0 text-gold-light transition-transform group-hover:translate-x-1"
+                      />
                     </Link>
                   </li>
                 ))}
@@ -208,7 +247,10 @@ async function PersonPageContent({ params }: PageProps<"/kisiler/[slug]">) {
               <ul className="mt-5 divide-y divide-white/[0.08]">
                 {related.map((r) => (
                   <li key={r.slug} className="py-3.5 first:pt-0 last:pb-0">
-                    <Link href={`/kisiler/${r.slug}`} className="group flex items-center gap-3.5">
+                    <Link
+                      href={`/kisiler/${r.slug}`}
+                      className="group flex items-center gap-3.5"
+                    >
                       <span className="relative h-16 w-14 shrink-0 overflow-hidden rounded-xl border border-white/12 bg-night">
                         <Image
                           src={r.image}
@@ -222,7 +264,9 @@ async function PersonPageContent({ params }: PageProps<"/kisiler/[slug]">) {
                         <span className="block truncate text-sm font-semibold text-white transition group-hover:text-gold-light">
                           {r.name}
                         </span>
-                        <span className="block truncate text-xs text-white/55">{r.title}</span>
+                        <span className="block truncate text-xs text-white/55">
+                          {r.title}
+                        </span>
                         <span className="font-mono text-[0.7rem] text-gold-light/75">
                           {r.born} – {r.died}
                         </span>
@@ -240,8 +284,9 @@ async function PersonPageContent({ params }: PageProps<"/kisiler/[slug]">) {
               <h3 className="eyebrow">Coğrafi Bağlam &amp; Atlas</h3>
             </div>
             <p className="mt-3 text-sm leading-relaxed text-white/65">
-              {p.name} ile ilişkili <strong className="font-medium text-white/90">{p.region}</strong> coğrafyasındaki
-              tarihsel noktalar:
+              {p.name} ile ilişkili{" "}
+              <strong className="font-medium text-white/90">{p.region}</strong>{" "}
+              coğrafyasındaki tarihsel noktalar:
             </p>
             <ul className="mt-4 space-y-2.5">
               {places.map((pl) => (
@@ -255,16 +300,23 @@ async function PersonPageContent({ params }: PageProps<"/kisiler/[slug]">) {
                         {pl.name}
                       </span>
                       <span className="text-[0.68rem] text-white/45">
-                        {PLACE_KINDS.find((k) => k.id === pl.kind)?.label} · {pl.period}
+                        {PLACE_KINDS.find((k) => k.id === pl.kind)?.label} ·{" "}
+                        {pl.period}
                       </span>
                     </div>
-                    <ArrowRight size={14} className="shrink-0 text-gold-light/75 transition-transform group-hover:translate-x-0.5" />
+                    <ArrowRight
+                      size={14}
+                      className="shrink-0 text-gold-light/75 transition-transform group-hover:translate-x-0.5"
+                    />
                   </Link>
                 </li>
               ))}
             </ul>
             <div className="mt-4">
-              <Link href="/harita" className="btn-glass w-full justify-center text-xs">
+              <Link
+                href="/harita"
+                className="btn-glass w-full justify-center text-xs"
+              >
                 Kafkasya Tarih Atlasını Aç <ArrowRight size={13} />
               </Link>
             </div>
@@ -292,13 +344,17 @@ async function PersonPageContent({ params }: PageProps<"/kisiler/[slug]">) {
                           className="object-cover transition duration-700 group-hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/20 to-transparent" />
-                        <span className="badge-glass absolute bottom-2.5 left-3">{ex.period}</span>
+                        <span className="badge-glass absolute bottom-2.5 left-3">
+                          {ex.period}
+                        </span>
                       </div>
                       <div className="p-3.5">
                         <span className="block text-sm font-semibold text-white transition group-hover:text-gold-light">
                           {ex.title}
                         </span>
-                        <span className="mt-1 line-clamp-1 block text-xs text-white/55">{ex.subtitle}</span>
+                        <span className="mt-1 line-clamp-1 block text-xs text-white/55">
+                          {ex.subtitle}
+                        </span>
                       </div>
                     </Link>
                   </li>
@@ -314,7 +370,11 @@ async function PersonPageContent({ params }: PageProps<"/kisiler/[slug]">) {
         title={next.name}
         sub={next.title}
         href={`/kisiler/${next.slug}`}
-        prev={prev ? { label: `Önceki: ${prev.name}`, href: `/kisiler/${prev.slug}` } : undefined}
+        prev={
+          prev
+            ? { label: `Önceki: ${prev.name}`, href: `/kisiler/${prev.slug}` }
+            : undefined
+        }
       />
     </article>
   );

@@ -4,21 +4,42 @@ import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { ArrowRight, ChevronLeft, ChevronRight, MapPin, ScrollText } from "lucide-react";
-import { DOCS, ERAS, PEOPLE, TIMELINE, eraLabel, getPlacesForEvent, type Era } from "@/lib/data";
+import {
+  ArrowRight,
+  ChevronLeft,
+  ChevronRight,
+  MapPin,
+  ScrollText,
+} from "lucide-react";
+import {
+  DOCS,
+  ERAS,
+  PEOPLE,
+  TIMELINE,
+  eraLabel,
+  getPlacesForEvent,
+  type Era,
+} from "@/lib/data";
 
 export default function TimelineExplorer() {
   const searchParams = useSearchParams();
   const yilParam = searchParams.get("yil");
   const parsedParamYear = yilParam ? parseInt(yilParam, 10) : undefined;
   const validParamYear =
-    parsedParamYear && TIMELINE.some((t) => t.year === parsedParamYear) ? parsedParamYear : undefined;
+    parsedParamYear && TIMELINE.some((t) => t.year === parsedParamYear)
+      ? parsedParamYear
+      : undefined;
 
   const [era, setEra] = useState<Era | "all">("all");
-  const events = useMemo(() => TIMELINE.filter((t) => era === "all" || t.era === era), [era]);
+  const events = useMemo(
+    () => TIMELINE.filter((t) => era === "all" || t.era === era),
+    [era],
+  );
 
   const [year, setYear] = useState<number>(() => validParamYear ?? 1834);
-  const [prevParamYear, setPrevParamYear] = useState<number | undefined>(validParamYear);
+  const [prevParamYear, setPrevParamYear] = useState<number | undefined>(
+    validParamYear,
+  );
 
   if (validParamYear !== prevParamYear) {
     setPrevParamYear(validParamYear);
@@ -40,13 +61,28 @@ export default function TimelineExplorer() {
       const n = events[idx + d];
       if (n) setYear(n.year);
     },
-    [events, idx]
+    [events, idx],
   );
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "ArrowRight") go(1);
-      if (e.key === "ArrowLeft") go(-1);
+      const target = e.target instanceof HTMLElement ? e.target : null;
+      if (
+        e.defaultPrevented ||
+        document.querySelector("dialog[open]") ||
+        target?.closest(
+          'input, textarea, select, [contenteditable], [role="textbox"]',
+        )
+      )
+        return;
+      if (e.key === "ArrowRight") {
+        e.preventDefault();
+        go(1);
+      }
+      if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        go(-1);
+      }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
@@ -76,13 +112,18 @@ export default function TimelineExplorer() {
     <div>
       {/* Dönem Seçici */}
       <div className="flex flex-wrap items-center gap-2">
-        <button onClick={() => selectEra("all")} className={`chip ${era === "all" ? "chip-active" : ""}`}>
+        <button
+          onClick={() => selectEra("all")}
+          aria-pressed={era === "all"}
+          className={`chip ${era === "all" ? "chip-active" : ""}`}
+        >
           Tüm Dönemler ({TIMELINE.length})
         </button>
         {ERAS.map((e) => (
           <button
             key={e.id}
             onClick={() => selectEra(e.id)}
+            aria-pressed={era === e.id}
             className={`chip ${era === e.id ? "chip-active" : ""}`}
           >
             {e.label} · {e.range}
@@ -111,7 +152,13 @@ export default function TimelineExplorer() {
                         : "border-white/15 opacity-65 group-hover:border-white/35 group-hover:opacity-100"
                     }`}
                   >
-                    <Image src={e.image} alt="" fill sizes="80px" className="object-cover" />
+                    <Image
+                      src={e.image}
+                      alt=""
+                      fill
+                      sizes="80px"
+                      className="object-cover"
+                    />
                   </div>
 
                   <span className="h-3 w-px bg-white/25" />
@@ -125,14 +172,23 @@ export default function TimelineExplorer() {
 
                   <span
                     className={`mt-3 font-display text-sm font-semibold transition ${
-                      on ? "text-gold-light" : "text-white/75 group-hover:text-white"
+                      on
+                        ? "text-gold-light"
+                        : "text-white/75 group-hover:text-white"
                     }`}
                   >
                     {e.year}
                   </span>
-                  <span className="mt-0.5 line-clamp-1 text-[0.66rem] text-white/45">{e.short}</span>
+                  <span className="mt-0.5 line-clamp-1 text-[0.66rem] text-white/65">
+                    {e.short}
+                  </span>
 
-                  {on && <span className="mt-2 h-4 w-px bg-gold-light/70" aria-hidden="true" />}
+                  {on && (
+                    <span
+                      className="mt-2 h-4 w-px bg-gold-light/70"
+                      aria-hidden="true"
+                    />
+                  )}
                 </button>
               );
             })}
@@ -150,8 +206,9 @@ export default function TimelineExplorer() {
             <div>
               <div className="flex items-center justify-between gap-4">
                 <span className="badge-glass">{eraLabel(current.era)}</span>
-                <span className="font-mono text-xs text-white/45">
-                  {String(idx + 1).padStart(2, "0")} / {String(events.length).padStart(2, "0")}
+                <span className="font-mono text-xs text-white/65">
+                  {String(idx + 1).padStart(2, "0")} /{" "}
+                  {String(events.length).padStart(2, "0")}
                 </span>
               </div>
 
@@ -161,7 +218,9 @@ export default function TimelineExplorer() {
               <h2 className="mt-2 font-display text-2xl font-semibold text-white md:text-4xl">
                 {current.title}
               </h2>
-              <p className="mt-5 font-serif text-xl leading-relaxed text-white/80">{current.description}</p>
+              <p className="mt-5 font-serif text-xl leading-relaxed text-white/80">
+                {current.description}
+              </p>
 
               {/* İlgili Şahsiyetler */}
               {people.length > 0 && (
@@ -254,7 +313,7 @@ export default function TimelineExplorer() {
               >
                 <ChevronRight size={18} />
               </button>
-              <span className="ml-2 text-xs text-white/45">
+              <span className="ml-2 text-xs text-white/65">
                 Klavye sol / sağ ok tuşlarıyla gezinebilirsiniz
               </span>
             </div>
@@ -276,7 +335,8 @@ export default function TimelineExplorer() {
       {/* Tam Kronoloji Dökümü */}
       <div className="mt-20">
         <h2 className="eyebrow">
-          Tam Tarihsel Döküm ({TIMELINE[0]?.year} – {TIMELINE[TIMELINE.length - 1]?.year})
+          Tam Tarihsel Döküm ({TIMELINE[0]?.year} –{" "}
+          {TIMELINE[TIMELINE.length - 1]?.year})
         </h2>
         <ol className="relative mt-8 space-y-5 border-l border-white/12 pl-7 md:pl-10">
           {events.map((e) => {
@@ -285,7 +345,9 @@ export default function TimelineExplorer() {
               <li key={e.year} className="relative">
                 <span
                   className={`absolute -left-[34px] top-6 h-3 w-3 rotate-45 border md:-left-[46px] ${
-                    active ? "border-white bg-gold-light" : "border-gold-light/50 bg-ink"
+                    active
+                      ? "border-white bg-gold-light"
+                      : "border-gold-light/50 bg-ink"
                   }`}
                 />
                 <div
@@ -308,14 +370,21 @@ export default function TimelineExplorer() {
                   </div>
                   <div>
                     <div className="flex flex-wrap items-baseline gap-3">
-                      <span className="font-display text-2xl font-semibold text-gold-light">{e.year}</span>
+                      <span className="font-display text-2xl font-semibold text-gold-light">
+                        {e.year}
+                      </span>
                       <span className="text-lg font-semibold text-white transition group-hover:text-gold-light">
                         {e.title}
                       </span>
                     </div>
-                    <p className="mt-1.5 line-clamp-2 text-sm leading-relaxed text-white/60">{e.description}</p>
+                    <p className="mt-1.5 line-clamp-2 text-sm leading-relaxed text-white/60">
+                      {e.description}
+                    </p>
                   </div>
-                  <ArrowRight size={16} className="hidden text-gold-light transition-transform group-hover:translate-x-1 sm:block" />
+                  <ArrowRight
+                    size={16}
+                    className="hidden text-gold-light transition-transform group-hover:translate-x-1 sm:block"
+                  />
                 </div>
               </li>
             );

@@ -3,11 +3,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useId, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Fuse from "fuse.js";
 import { ArrowRight, Menu, Search, X } from "lucide-react";
-import { CULTURE_CATS, CULTURE_ITEMS, DOCS, EXHIBITIONS, PEOPLE, PLACES, TIMELINE } from "@/lib/data";
+import {
+  CULTURE_CATS,
+  CULTURE_ITEMS,
+  DOCS,
+  EXHIBITIONS,
+  PEOPLE,
+  PLACES,
+  TIMELINE,
+} from "@/lib/data";
 import { InstagramLink, NAV, NAV_ALL, Logo } from "./Brand";
+import ArchiveDialog from "./ArchiveDialog";
 
 interface SearchCatalogItem {
   href: string;
@@ -75,336 +84,258 @@ const FUSE_INDEX = new Fuse(SEARCH_CATALOG, {
   ignoreLocation: true,
 });
 
-const QUICK_TERMS = ["Şeyh Mansur", "Baysangur", "Serlo", "Vedeno", "Targim", "Nohçalla", "1944"];
+const QUICK_TERMS = [
+  "Şeyh Mansur",
+  "Baysangur",
+  "Serlo",
+  "Vedeno",
+  "Targim",
+  "Nohçalla",
+  "1944",
+];
 
 export default function Header() {
   const pathname = usePathname();
-  const searchTitleId = useId();
   const headerRef = useRef<HTMLElement>(null);
-  const dialogRef = useRef<HTMLDialogElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
-
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const [q, setQ] = useState("");
 
-  // Modern Web Guidance (shrinking-header-on-scroll): JS fallback only when CSS scroll-driven animations are unsupported
   useEffect(() => {
-    const supportsScrollTimeline =
+    if (
       typeof CSS !== "undefined" &&
-      typeof CSS.supports === "function" &&
-      CSS.supports("(animation-timeline: scroll()) and (animation-range: 0% 100%)");
-
-    if (supportsScrollTimeline) return;
-
-    const header = headerRef.current;
-    const initialHeight = 78;
-    const finalHeight = 62;
-    const scrollDistance = 96;
-
+      CSS.supports(
+        "(animation-timeline: scroll()) and (animation-range: 0% 100%)",
+      )
+    )
+      return;
     const onScroll = () => {
-      const scrollY = window.scrollY;
-      setScrolled(scrollY > 20);
-      if (header) {
-        const scrollPercent = Math.min(1, scrollY / scrollDistance);
-        const newHeight = initialHeight - (initialHeight - finalHeight) * scrollPercent;
-        header.style.height = `${newHeight}px`;
-      }
+      const progress = Math.min(1, window.scrollY / 96);
+      setScrolled(window.scrollY > 20);
+      if (headerRef.current)
+        headerRef.current.style.height = `${78 - 14 * progress}px`;
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const openSearchDialog = () => {
-    const dialog = dialogRef.current;
-    if (!dialog) return;
-    if (!dialog.open) {
-      dialog.showModal();
-    }
-    requestAnimationFrame(() => inputRef.current?.focus());
-  };
-
-  const closeSearchDialog = () => {
-    const dialog = dialogRef.current;
-    if (dialog?.open) {
-      dialog.close();
-    }
-  };
-
-  // Modern Web Guidance (light-dismiss-a-dialog): Fallback for browsers without native dialog[closedby] support
   useEffect(() => {
-    const dialog = dialogRef.current;
-    if (!dialog || typeof HTMLDialogElement === "undefined") return;
-
-    if (!("closedBy" in HTMLDialogElement.prototype)) {
-      const onDialogClick = (event: MouseEvent) => {
-        if (event.target !== dialog) return;
-        const rect = dialog.getBoundingClientRect();
-        const isDialogContent =
-          rect.top <= event.clientY &&
-          event.clientY <= rect.top + rect.height &&
-          rect.left <= event.clientX &&
-          event.clientX <= rect.left + rect.width;
-
-        if (isDialogContent) return;
-        dialog.close();
-      };
-      dialog.addEventListener("click", onDialogClick);
-      return () => dialog.removeEventListener("click", onDialogClick);
-    }
-  }, []);
-
-  useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
+    const onKey = (event: KeyboardEvent) => {
+      if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k") {
+        event.preventDefault();
         setMenuOpen(false);
-      }
-      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
-        e.preventDefault();
-        openSearchDialog();
+        setSearchOpen((open) => !open);
       }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
-  const isActive = (href: string) => (href === "/" ? pathname === "/" : pathname.startsWith(href));
-
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
   const results = useMemo(() => {
     const term = q.trim();
-    if (term.length < 2) return [];
-    return FUSE_INDEX.search(term, { limit: 12 }).map((hit) => hit.item);
+    return term.length < 2
+      ? []
+      : FUSE_INDEX.search(term, { limit: 12 }).map((hit) => hit.item);
   }, [q]);
 
   return (
     <>
       <header
         ref={headerRef}
-        className={`${
-          pathname === "/" ? "site-header-scroll-home" : "site-header-scroll-sub"
-        } site-header fixed inset-x-0 top-0 z-50 flex h-[78px] items-center border-b transition-colors duration-300 ${
-          scrolled || pathname !== "/"
-            ? "border-white/15 bg-ink/90"
-            : "border-white/12 bg-gradient-to-b from-ink/85 via-ink/35 to-transparent"
-        }`}
+        className={`${pathname === "/" ? "site-header-scroll-home" : "site-header-scroll-sub"} site-header fixed inset-x-0 top-0 z-50 flex h-[78px] items-center border-b transition-colors duration-300 ${scrolled || pathname !== "/" ? "border-white/15 bg-ink/90" : "border-white/12 bg-gradient-to-b from-ink/85 via-ink/35 to-transparent"}`}
       >
-        <div className="mx-auto flex w-full max-w-[1500px] items-center justify-between px-5 md:px-12">
+        <div className="mx-auto flex w-full max-w-[1500px] items-center justify-between gap-4 px-5 md:px-12">
           <Logo />
-
-          <nav className="hidden items-center gap-6 xl:flex" aria-label="Ana menü">
-            {NAV.map((n) => {
-              const active = isActive(n.href);
-              return (
-                <Link
-                  key={n.href}
-                  href={n.href}
-                  aria-current={active ? "page" : undefined}
-                  className={`relative py-1 text-sm transition ${
-                    active
-                      ? "font-semibold text-gold-light after:absolute after:inset-x-0 after:-bottom-0.5 after:h-px after:bg-gold-light"
-                      : "font-medium text-white/78 hover:text-gold-light"
-                  }`}
-                >
-                  {n.label}
-                </Link>
-              );
-            })}
+          <nav
+            className="hidden items-center gap-6 xl:flex"
+            aria-label="Ana menü"
+          >
+            {NAV.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                aria-current={isActive(item.href) ? "page" : undefined}
+                className={`header-nav-link ${isActive(item.href) ? "is-active" : ""}`}
+              >
+                {item.label}
+              </Link>
+            ))}
           </nav>
-
-          <div className="flex items-center gap-2.5">
-            {/* Hızlı Arama Kapsülü */}
+          <div className="flex shrink-0 items-center gap-2">
             <button
-              onClick={openSearchDialog}
-              className="flex h-9 items-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-3.5 text-xs font-medium text-white/85 transition hover:border-gold-light/45 hover:bg-white/[0.08] hover:text-gold-light"
+              type="button"
+              onClick={() => setSearchOpen(true)}
+              className="header-search-button"
               aria-label="Arşivde ara (Ctrl+K)"
+              aria-haspopup="dialog"
             >
-              <Search size={14} className="text-gold-light" />
+              <Search size={16} aria-hidden="true" />
               <span className="hidden sm:inline">Arşivde ara</span>
-              <kbd className="hidden rounded border border-white/15 bg-white/[0.05] px-1.5 py-0.5 font-mono text-[0.62rem] text-white/50 md:inline">
-                ⌘K
-              </kbd>
+              <kbd className="hidden md:inline">Ctrl K</kbd>
             </button>
-
             <button
+              type="button"
               onClick={() => setMenuOpen(true)}
-              aria-expanded={menuOpen}
-              aria-controls="site-mobile-menu"
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/[0.05] text-parchment transition hover:border-gold-light/45 hover:text-gold-light xl:hidden"
+              className="icon-button xl:hidden"
               aria-label="Menüyü aç"
+              aria-haspopup="dialog"
+              aria-expanded={menuOpen}
             >
-              <Menu size={17} />
+              <Menu size={19} aria-hidden="true" />
             </button>
           </div>
         </div>
       </header>
 
-      {/* Sağ Çekmece Menü */}
-      <div
-        className={`fixed inset-0 z-[60] transition ${menuOpen ? "pointer-events-auto" : "pointer-events-none"}`}
-        aria-hidden={!menuOpen}
-        inert={!menuOpen}
+      <ArchiveDialog
+        open={menuOpen}
+        onClose={() => setMenuOpen(false)}
+        title="Keşfet"
+        eyebrow="Targim Archive"
+        variant="drawer"
       >
-        <div
-          onClick={() => setMenuOpen(false)}
-          className={`absolute inset-0 bg-black/70 backdrop-blur-sm transition-opacity duration-300 ${
-            menuOpen ? "opacity-100" : "opacity-0"
-          }`}
-        />
-        <aside
-          id="site-mobile-menu"
-          data-lenis-prevent
-          className={`absolute right-0 top-0 flex h-full w-full max-w-md flex-col overflow-y-auto border-l border-white/15 bg-ink px-8 py-7 transition-transform duration-300 ${
-            menuOpen ? "translate-x-0" : "translate-x-full"
-          }`}
-        >
-          <div className="flex items-center justify-between border-b border-white/10 pb-5">
-            <Logo small />
-            <button
+        <nav aria-label="Mobil ana menü" className="drawer-nav">
+          {NAV_ALL.map((item, index) => (
+            <Link
+              key={item.href}
+              href={item.href}
               onClick={() => setMenuOpen(false)}
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/12 text-white/70 transition hover:border-white/30 hover:text-white"
-              aria-label="Kapat"
+              aria-current={isActive(item.href) ? "page" : undefined}
             >
-              <X size={18} />
-            </button>
-          </div>
+              <span className="drawer-index">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <span>{item.label}</span>
+              <ArrowRight size={16} aria-hidden="true" />
+            </Link>
+          ))}
+        </nav>
+        <div className="drawer-footer">
+          <p className="eyebrow">Dijital hafıza koleksiyonu</p>
+          <p>
+            {PEOPLE.length} şahsiyet · {DOCS.length} arşiv kaydı ·{" "}
+            {PLACES.length} yerleşim
+          </p>
+          <InstagramLink className="mt-4 text-sm text-gold-light" />
+        </div>
+      </ArchiveDialog>
 
-          <nav className="mt-6 flex flex-col gap-1">
-            {NAV_ALL.map((n) => {
-              const active = isActive(n.href);
-              return (
-                <Link
-                  key={n.href}
-                  href={n.href}
-                  onClick={() => setMenuOpen(false)}
-                  className={`group flex items-center justify-between py-2.5 font-serif text-3xl transition-colors ${
-                    active ? "text-gold-light" : "text-white hover:text-gold-light"
-                  }`}
-                >
-                  <span>{n.label}</span>
-                  <ArrowRight
-                    size={15}
-                    className="text-white/40 transition-transform group-hover:translate-x-1 group-hover:text-white"
-                  />
-                </Link>
-              );
-            })}
-          </nav>
-
-          <div className="mt-auto border-t border-white/10 pt-5">
-            <p className="eyebrow">Dijital Hafıza Koleksiyonu</p>
-            <p className="mt-2 text-white/70">
-              {PEOPLE.length} şahsiyet, {DOCS.length} arşiv kaydı, {PLACES.length} yerleşim
-            </p>
-            <InstagramLink className="mt-4 text-parchment" />
-          </div>
-        </aside>
-      </div>
-
-      {/* Modern Web Guidance (light-dismiss-a-dialog): Native top-layer <dialog closedby="any"> */}
-      <dialog
-        ref={dialogRef}
-        data-lenis-prevent
-        aria-labelledby={searchTitleId}
-        {...({ closedby: "any" } as Record<string, string>)}
-        className="search-dialog search-dialog-panel fixed inset-x-0 top-20 mx-auto hidden w-[calc(100%-2rem)] max-w-2xl p-6 text-white open:block"
+      <ArchiveDialog
+        open={searchOpen}
+        onClose={() => setSearchOpen(false)}
+        title="Arşivde ara"
+        eyebrow="Tüm koleksiyonlar"
+        initialFocusRef={inputRef}
+        bodyClassName="search-dialog-body"
       >
-        <h2 id={searchTitleId} className="sr-only">
-          Targim Dijital Katalogda Ara
-        </h2>
-        <div className="flex items-center gap-3 border-b border-white/10 pb-4">
-          <Search className="text-gold-light" size={18} />
+        <div className="search-field">
+          <Search size={20} aria-hidden="true" />
           <input
             ref={inputRef}
+            type="search"
             aria-label="Tüm koleksiyonlarda ara"
             value={q}
-            onChange={(e) => setQ(e.target.value)}
-            placeholder="Şahsiyet, arşiv belgesi, kültür öğesi, yerleşim veya yıl arayın…"
-            className="min-w-0 flex-1 bg-transparent text-base text-white outline-none placeholder:text-white/55 sm:text-lg"
+            onChange={(event) => setQ(event.target.value)}
+            placeholder="İsim, belge, yer veya yıl…"
+            autoComplete="off"
+            spellCheck={false}
+            maxLength={200}
           />
           {q && (
             <button
               type="button"
-              onClick={() => setQ("")}
-              className="rounded-full bg-white/10 px-2.5 py-1 text-[0.68rem] font-medium text-white/75 hover:bg-white/15 hover:text-white"
+              onClick={() => {
+                setQ("");
+                inputRef.current?.focus();
+              }}
+              className="search-clear"
+              aria-label="Aramayı temizle"
             >
-              Temizle
+              <X size={16} aria-hidden="true" />
             </button>
           )}
-          <form method="dialog">
-            <button
-              type="submit"
-              className="rounded-full p-1.5 text-white/60 hover:bg-white/10 hover:text-white"
-              aria-label="Kapat"
-            >
-              <X size={18} />
-            </button>
-          </form>
         </div>
-
         {q.trim().length < 2 ? (
-          <div className="py-5">
-            <p className="text-[0.68rem] font-medium tracking-[0.18em] text-white/45 uppercase">
-              Önerilen Aramalar
+          <div className="search-suggestions-panel">
+            <p className="control-label">Bir aramayla başlayın</p>
+            <p className="mt-2 text-sm leading-relaxed text-mist">
+              Belgeler, biyografiler, kültür ve tarih atlasında en az iki
+              karakterle arama yapın.
             </p>
-            <div className="mt-3 flex flex-wrap gap-2">
+            <div className="mt-5 flex flex-wrap gap-2">
               {QUICK_TERMS.map((term) => (
-                <button key={term} type="button" onClick={() => setQ(term)} className="chip text-xs">
+                <button
+                  key={term}
+                  type="button"
+                  onClick={() => {
+                    setQ(term);
+                    inputRef.current?.focus();
+                  }}
+                  className="chip"
+                >
                   {term}
                 </button>
               ))}
             </div>
           </div>
         ) : results.length === 0 ? (
-          <p className="py-10 text-center text-sm text-white/55">
-            “{q}” için eşleşen kayıt bulunamadı.
-          </p>
+          <div className="search-empty">
+            <Search size={28} strokeWidth={1.25} aria-hidden="true" />
+            <h3>Bir kayıt bulunamadı.</h3>
+            <p>
+              “{q}” için farklı bir isim, tarih veya anahtar kelime deneyin.
+            </p>
+          </div>
         ) : (
-          <ul
-            data-lenis-prevent
-            className="mt-3 max-h-[54vh] space-y-1 overflow-y-auto overscroll-contain pr-1"
-          >
-            {results.map((r) => (
-              <li key={r.href}>
+          <ul className="search-results" aria-label="Arama sonuçları">
+            {results.map((result) => (
+              <li key={result.href}>
                 <Link
-                  href={r.href}
-                  onClick={closeSearchDialog}
-                  className="group flex items-center gap-3.5 rounded-xl px-3 py-2.5 transition hover:bg-white/[0.07]"
+                  href={result.href}
+                  onClick={() => setSearchOpen(false)}
+                  className="search-result"
                 >
-                  <span className="relative h-11 w-11 shrink-0 overflow-hidden rounded-lg border border-white/12 bg-night">
+                  <span className="search-result-image">
                     <Image
-                      src={r.image}
+                      src={result.image}
                       alt=""
                       fill
-                      sizes="44px"
+                      sizes="48px"
                       className={
-                        r.href.startsWith("/kisiler/")
-                          ? "portrait-tone object-cover object-top"
-                          : "object-cover"
+                        result.href.startsWith("/kisiler/")
+                          ? "object-cover object-top"
+                          : "object-contain p-1"
                       }
                     />
                   </span>
                   <span className="min-w-0 flex-1">
-                    <span className="block truncate text-sm font-medium text-white group-hover:text-gold-light">
-                      {r.title}
-                    </span>
-                    <span className="block truncate text-xs text-white/50">{r.meta}</span>
+                    <span className="search-result-title">{result.title}</span>
+                    <span className="search-result-meta">{result.meta}</span>
                   </span>
-                  <ArrowRight
-                    size={14}
-                    className="shrink-0 text-white/40 transition group-hover:translate-x-0.5 group-hover:text-white"
-                  />
+                  <ArrowRight size={16} aria-hidden="true" />
                 </Link>
               </li>
             ))}
           </ul>
         )}
-
-        <div className="mt-4 flex items-center justify-between border-t border-white/10 pt-3 text-[0.65rem] tracking-[0.14em] text-white/40 uppercase">
-          <span>Targim Dijital Katalog</span>
-          <span>ESC · ⌘K</span>
+        <div className="dialog-footnote">
+          <span role="status" aria-live="polite">
+            {q.trim().length < 2
+              ? "Targim dijital katalog"
+              : results.length === 12
+                ? "İlk 12 eşleşme"
+                : `${results.length} eşleşen kayıt`}
+          </span>
+          <span>
+            <kbd>Esc</kbd> Kapat
+          </span>
         </div>
-      </dialog>
+      </ArchiveDialog>
     </>
   );
 }

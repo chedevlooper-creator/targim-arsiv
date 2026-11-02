@@ -14,7 +14,14 @@ import {
   ScrollText,
   Search,
 } from "lucide-react";
-import { DOCS, DOC_TYPES, ERAS, docTypeLabel, type DocType, type Era } from "@/lib/data";
+import {
+  DOCS,
+  DOC_TYPES,
+  ERAS,
+  docTypeLabel,
+  type DocType,
+  type Era,
+} from "@/lib/data";
 
 const ICONS: Record<DocType, React.ElementType> = {
   "el-yazmasi": ScrollText,
@@ -32,8 +39,11 @@ export default function ArchiveBrowser() {
   const [sort, setSort] = useState<"asc" | "desc">("asc");
 
   const regions = useMemo(
-    () => Array.from(new Set(DOCS.map((d) => d.region))).sort((a, b) => a.localeCompare(b, "tr")),
-    []
+    () =>
+      Array.from(new Set(DOCS.map((d) => d.region))).sort((a, b) =>
+        a.localeCompare(b, "tr"),
+      ),
+    [],
   );
 
   const list = useMemo(() => {
@@ -46,12 +56,17 @@ export default function ArchiveBrowser() {
           !term ||
           `${d.title} ${d.description} ${d.region} ${d.catalogNo} ${d.language} ${d.author ?? ""} ${d.source} ${d.transcription ?? ""} ${d.translation ?? ""}`
             .toLocaleLowerCase("tr-TR")
-            .includes(term)
+            .includes(term),
       )
       .sort((a, b) => (sort === "asc" ? a.year - b.year : b.year - a.year));
   }, [q, type, era, region, sort]);
 
-  const hasFilters = type !== "all" || era !== "all" || region !== "all" || q.trim().length > 0;
+  const hasFilters =
+    type !== "all" ||
+    era !== "all" ||
+    region !== "all" ||
+    q.trim().length > 0 ||
+    sort !== "asc";
 
   return (
     <div>
@@ -79,7 +94,9 @@ export default function ArchiveBrowser() {
                 <Icon size={19} />
               </span>
               <span className="min-w-0">
-                <span className="block truncate text-sm font-semibold text-white">{t.label}</span>
+                <span className="block truncate text-sm font-semibold text-white">
+                  {t.label}
+                </span>
                 <span className="text-xs text-white/50">{t.count}</span>
               </span>
             </button>
@@ -90,13 +107,16 @@ export default function ArchiveBrowser() {
       {/* Birleşik Filtre Konsolu (PeopleGrid ile birebir uyumlu rounded-full pill sistemi) */}
       <div className="catalogue-toolbar mt-6 flex flex-wrap items-center gap-2.5">
         <label className="relative min-w-[230px] flex-1 sm:max-w-md">
-          <Search size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-white/40" />
+          <Search
+            size={15}
+            className="absolute left-3.5 top-1/2 -translate-y-1/2 text-white/40"
+          />
           <input
             value={q}
             aria-label="Belge adı, kayıt numarası, dil veya bölge ara"
             onChange={(e) => setQ(e.target.value)}
             placeholder="Belge adı, kayıt no (TRG-MS), dil veya bölge ara"
-            className="h-10 w-full rounded-full border border-white/10 bg-white/[0.04] pl-10 pr-4 text-sm text-white outline-none transition placeholder:text-white/35 focus:border-gold-light/45 focus:bg-white/[0.07]"
+            className="field-control h-10 w-full rounded-lg border border-white/10 bg-white/[0.04] pl-10 pr-4 text-sm text-white outline-none transition placeholder:text-white/60 focus:border-gold-light/45 focus:bg-white/[0.07]"
           />
         </label>
 
@@ -104,7 +124,7 @@ export default function ArchiveBrowser() {
           <select
             value={type}
             onChange={(e) => setType(e.target.value as DocType | "all")}
-            className="h-10 max-w-full appearance-none truncate rounded-full border border-white/10 bg-white/[0.04] pl-4 pr-9 text-xs font-medium text-white/80 outline-none transition hover:border-white/25 focus:border-gold-light/45 [&>option]:bg-panel"
+            className="field-control h-10 max-w-full appearance-none truncate rounded-lg border border-white/10 bg-white/[0.04] pl-4 pr-9 text-xs font-medium text-white/80 outline-none transition hover:border-white/25 focus:border-gold-light/45 [&>option]:bg-panel"
             aria-label="Belge türü"
           >
             <option value="all">Tüm Belge Türleri</option>
@@ -114,14 +134,17 @@ export default function ArchiveBrowser() {
               </option>
             ))}
           </select>
-          <ChevronDown size={13} className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-white/45" />
+          <ChevronDown
+            size={13}
+            className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-white/65"
+          />
         </div>
 
         <div className="relative max-w-full">
           <select
             value={era}
             onChange={(e) => setEra(e.target.value as Era | "all")}
-            className="h-10 max-w-full appearance-none truncate rounded-full border border-white/10 bg-white/[0.04] pl-4 pr-9 text-xs font-medium text-white/80 outline-none transition hover:border-white/25 focus:border-gold-light/45 [&>option]:bg-panel"
+            className="field-control h-10 max-w-full appearance-none truncate rounded-lg border border-white/10 bg-white/[0.04] pl-4 pr-9 text-xs font-medium text-white/80 outline-none transition hover:border-white/25 focus:border-gold-light/45 [&>option]:bg-panel"
             aria-label="Dönem"
           >
             <option value="all">Tüm Dönemler</option>
@@ -131,14 +154,17 @@ export default function ArchiveBrowser() {
               </option>
             ))}
           </select>
-          <ChevronDown size={13} className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-white/45" />
+          <ChevronDown
+            size={13}
+            className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-white/65"
+          />
         </div>
 
         <div className="relative max-w-full">
           <select
             value={region}
             onChange={(e) => setRegion(e.target.value)}
-            className="h-10 max-w-full appearance-none truncate rounded-full border border-white/10 bg-white/[0.04] pl-4 pr-9 text-xs font-medium text-white/80 outline-none transition hover:border-white/25 focus:border-gold-light/45 [&>option]:bg-panel"
+            className="field-control h-10 max-w-full appearance-none truncate rounded-lg border border-white/10 bg-white/[0.04] pl-4 pr-9 text-xs font-medium text-white/80 outline-none transition hover:border-white/25 focus:border-gold-light/45 [&>option]:bg-panel"
             aria-label="Bölge"
           >
             <option value="all">Tüm Bölgeler</option>
@@ -148,31 +174,38 @@ export default function ArchiveBrowser() {
               </option>
             ))}
           </select>
-          <ChevronDown size={13} className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-white/45" />
+          <ChevronDown
+            size={13}
+            className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-white/65"
+          />
         </div>
 
         <div className="relative max-w-full">
           <select
             value={sort}
             onChange={(e) => setSort(e.target.value as "asc" | "desc")}
-            className="h-10 max-w-full appearance-none truncate rounded-full border border-white/10 bg-white/[0.04] pl-4 pr-9 text-xs font-medium text-white/80 outline-none transition hover:border-white/25 focus:border-gold-light/45 [&>option]:bg-panel"
+            className="field-control h-10 max-w-full appearance-none truncate rounded-lg border border-white/10 bg-white/[0.04] pl-4 pr-9 text-xs font-medium text-white/80 outline-none transition hover:border-white/25 focus:border-gold-light/45 [&>option]:bg-panel"
             aria-label="Tarih sırası"
           >
             <option value="asc">Tarih (Eskiden Yeniye)</option>
             <option value="desc">Tarih (Yeniden Eskiye)</option>
           </select>
-          <ChevronDown size={13} className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-white/45" />
+          <ChevronDown
+            size={13}
+            className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-white/65"
+          />
         </div>
 
         {hasFilters && (
           <button
             onClick={() => {
               setQ("");
+              setSort("asc");
               setType("all");
               setEra("all");
               setRegion("all");
             }}
-            className="inline-flex h-10 items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.03] px-3.5 text-xs text-white/65 transition hover:border-white/25 hover:text-white"
+            className="btn-glass"
           >
             <RotateCcw size={13} /> Sıfırla
           </button>
@@ -181,7 +214,8 @@ export default function ArchiveBrowser() {
 
       <div className="mt-7 flex flex-wrap items-center justify-between gap-2 text-xs text-white/65">
         <span role="status" aria-live="polite">
-          <span className="font-medium text-white/85">{list.length}</span> katalog kaydı gösteriliyor
+          <span className="font-medium text-white/85">{list.length}</span>{" "}
+          katalog kaydı gösteriliyor
         </span>
         <span className="tracking-wider uppercase">Dijital Belge Arşivi</span>
       </div>
@@ -209,7 +243,9 @@ export default function ArchiveBrowser() {
 
             <div className="flex flex-1 flex-col justify-between p-4">
               <div>
-                <p className="font-mono text-[0.62rem] tracking-wider text-gold-light/80">{d.catalogNo}</p>
+                <p className="font-mono text-[0.62rem] tracking-wider text-gold-light/80">
+                  {d.catalogNo}
+                </p>
                 <h2 className="mt-1 text-[0.95rem] font-semibold leading-snug text-white transition group-hover:text-gold-light">
                   {d.title}
                 </h2>
@@ -220,7 +256,11 @@ export default function ArchiveBrowser() {
               <div className="mt-4 flex items-center justify-between border-t border-white/[0.08] pt-2.5 text-xs text-white/65">
                 <span>{d.dateLabel}</span>
                 <span className="inline-flex items-center gap-1 font-medium text-gold-light">
-                  İncele <ArrowRight size={12} className="transition-transform group-hover:translate-x-0.5" />
+                  İncele{" "}
+                  <ArrowRight
+                    size={12}
+                    className="transition-transform group-hover:translate-x-0.5"
+                  />
                 </span>
               </div>
             </div>
@@ -230,7 +270,9 @@ export default function ArchiveBrowser() {
 
       {list.length === 0 && (
         <div className="museum-card mt-8 py-16 text-center">
-          <p className="text-sm text-white/55">Seçilen filtrelere uygun arşiv belgesi bulunamadı.</p>
+          <p className="text-sm text-white/70">
+            Seçilen filtrelere uygun arşiv belgesi bulunamadı.
+          </p>
         </div>
       )}
     </div>

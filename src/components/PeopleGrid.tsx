@@ -6,7 +6,8 @@ import { useMemo, useState } from "react";
 import { ArrowRight, ChevronDown, RotateCcw, Search } from "lucide-react";
 import { ERAS, PEOPLE, type Era, type Person } from "@/lib/data";
 
-const parseYear = (s: string) => parseInt(s.replace(/\D/g, "").slice(0, 4) || "0", 10);
+const parseYear = (s: string) =>
+  parseInt(s.replace(/\D/g, "").slice(0, 4) || "0", 10);
 const getSortYear = (p: Person) => {
   const b = parseYear(p.born);
   if (b > 0) return b;
@@ -24,8 +25,11 @@ export default function PeopleGrid() {
   const [visibleCount, setVisibleCount] = useState(PAGE_STEP);
 
   const regions = useMemo(
-    () => Array.from(new Set(PEOPLE.map((p) => p.region))).sort((a, b) => a.localeCompare(b, "tr")),
-    []
+    () =>
+      Array.from(new Set(PEOPLE.map((p) => p.region))).sort((a, b) =>
+        a.localeCompare(b, "tr"),
+      ),
+    [],
   );
 
   const list = useMemo(() => {
@@ -35,24 +39,35 @@ export default function PeopleGrid() {
       .filter(
         (p) =>
           !term ||
-          `${p.name} ${p.title} ${p.region} ${p.summary}`.toLocaleLowerCase("tr-TR").includes(term)
+          `${p.name} ${p.title} ${p.region} ${p.summary}`
+            .toLocaleLowerCase("tr-TR")
+            .includes(term),
       )
       .sort((a, b) =>
-        sort === "born" ? getSortYear(a) - getSortYear(b) : a.name.localeCompare(b.name, "tr")
+        sort === "born"
+          ? getSortYear(a) - getSortYear(b)
+          : a.name.localeCompare(b.name, "tr"),
       );
   }, [era, region, q, sort]);
 
   const visibleList = list.slice(0, visibleCount);
   const remaining = Math.max(0, list.length - visibleList.length);
-  const hasFilters = era !== "all" || region !== "all" || q.trim().length > 0;
+  const hasFilters =
+    era !== "all" || region !== "all" || q.trim().length > 0 || sort !== "born";
 
   return (
     <div>
       {/* Dönem Sekmeleri (Diğer tüm sayfalarla aynı chip / chip-active sistemi) */}
       <div className="flex flex-wrap items-center gap-2">
-        {[{ id: "all" as const, label: "Tüm Dönemler", range: "" }, ...ERAS].map((e) => {
+        {[
+          { id: "all" as const, label: "Tüm Dönemler", range: "" },
+          ...ERAS,
+        ].map((e) => {
           const active = era === e.id;
-          const count = e.id === "all" ? PEOPLE.length : PEOPLE.filter((p) => p.era === e.id).length;
+          const count =
+            e.id === "all"
+              ? PEOPLE.length
+              : PEOPLE.filter((p) => p.era === e.id).length;
           return (
             <button
               key={e.id}
@@ -73,7 +88,10 @@ export default function PeopleGrid() {
       {/* Filtre Araç Çubuğu */}
       <div className="mt-5 flex flex-wrap items-center gap-2.5">
         <label className="relative min-w-[230px] flex-1 sm:max-w-md">
-          <Search size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-white/40" />
+          <Search
+            size={15}
+            className="absolute left-3.5 top-1/2 -translate-y-1/2 text-white/40"
+          />
           <input
             value={q}
             onChange={(e) => {
@@ -82,7 +100,7 @@ export default function PeopleGrid() {
             }}
             placeholder="İsim, unvan veya bölge ara"
             aria-label="İsim, unvan veya bölge ara"
-            className="h-10 w-full rounded-full border border-white/12 bg-white/[0.04] pl-10 pr-4 text-sm text-white outline-none transition placeholder:text-white/35 focus:border-gold-light/45 focus:bg-white/[0.07]"
+            className="field-control h-10 w-full rounded-lg border border-white/12 bg-white/[0.04] pl-10 pr-4 text-sm text-white outline-none transition placeholder:text-white/60 focus:border-gold-light/45 focus:bg-white/[0.07]"
           />
         </label>
 
@@ -93,7 +111,7 @@ export default function PeopleGrid() {
               setRegion(e.target.value);
               setVisibleCount(PAGE_STEP);
             }}
-            className="h-10 appearance-none rounded-full border border-white/12 bg-white/[0.04] pl-4 pr-9 text-xs font-medium text-white/80 outline-none transition hover:border-white/25 focus:border-gold-light/45 [&>option]:bg-panel"
+            className="field-control h-10 max-w-full appearance-none rounded-lg border border-white/12 bg-white/[0.04] pl-4 pr-9 text-xs font-medium text-white/80 outline-none transition hover:border-white/25 focus:border-gold-light/45 [&>option]:bg-panel"
             aria-label="Bölge seçimi"
           >
             <option value="all">Tüm Bölgeler</option>
@@ -103,7 +121,10 @@ export default function PeopleGrid() {
               </option>
             ))}
           </select>
-          <ChevronDown size={13} className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-white/45" />
+          <ChevronDown
+            size={13}
+            className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-white/65"
+          />
         </div>
 
         <div className="relative">
@@ -113,36 +134,45 @@ export default function PeopleGrid() {
               setSort(e.target.value as "born" | "name");
               setVisibleCount(PAGE_STEP);
             }}
-            className="h-10 appearance-none rounded-full border border-white/12 bg-white/[0.04] pl-4 pr-9 text-xs font-medium text-white/80 outline-none transition hover:border-white/25 focus:border-gold-light/45 [&>option]:bg-panel"
+            className="field-control h-10 max-w-full appearance-none rounded-lg border border-white/12 bg-white/[0.04] pl-4 pr-9 text-xs font-medium text-white/80 outline-none transition hover:border-white/25 focus:border-gold-light/45 [&>option]:bg-panel"
             aria-label="Sıralama"
           >
             <option value="born">Doğum Yılına Göre</option>
             <option value="name">A&apos;dan Z&apos;ye</option>
           </select>
-          <ChevronDown size={13} className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-white/45" />
+          <ChevronDown
+            size={13}
+            className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-white/65"
+          />
         </div>
 
         {hasFilters && (
           <button
             onClick={() => {
               setEra("all");
+              setSort("born");
               setRegion("all");
               setQ("");
               setVisibleCount(PAGE_STEP);
             }}
-            className="inline-flex h-10 items-center gap-1.5 rounded-full border border-white/12 bg-white/[0.03] px-3.5 text-xs text-white/65 transition hover:border-white/25 hover:text-white"
+            className="btn-glass"
           >
             <RotateCcw size={13} /> Sıfırla
           </button>
         )}
       </div>
 
-      <div className="mt-7 flex items-center justify-between text-xs text-white/45">
-        <span>
-          <span className="font-medium text-white/85">{visibleList.length}</span> /{" "}
-          <span className="text-white/65">{list.length}</span> şahsiyet gösteriliyor
+      <div className="mt-7 flex flex-wrap items-center justify-between gap-2 text-xs text-white/65">
+        <span role="status" aria-live="polite">
+          <span className="font-medium text-white/85">
+            {visibleList.length}
+          </span>{" "}
+          / <span className="text-white/65">{list.length}</span> şahsiyet
+          gösteriliyor
         </span>
-        <span className="tracking-wider uppercase">Biyografik Portre Koleksiyonu</span>
+        <span className="tracking-wider uppercase">
+          Biyografik Portre Koleksiyonu
+        </span>
       </div>
 
       {/* Portre Galerisi: Arşiv ve Sergiler ile birebir aynı museum-card kalitesinde */}
@@ -158,7 +188,7 @@ export default function PeopleGrid() {
                 src={p.image}
                 alt={p.name}
                 fill
-                priority={i < 4}
+                preload={i < 4}
                 sizes="(max-width:640px) 100vw, (max-width:1024px) 33vw, 25vw"
                 className="portrait-tone object-cover object-top group-hover:scale-[1.03]"
               />
@@ -176,12 +206,18 @@ export default function PeopleGrid() {
                 <h2 className="mt-1 font-display text-xl font-semibold leading-snug text-parchment transition group-hover:text-gold-light">
                   {p.name}
                 </h2>
-                <p className="mt-1 line-clamp-2 text-xs leading-relaxed text-white/60">{p.title}</p>
+                <p className="mt-1 line-clamp-2 text-xs leading-relaxed text-white/60">
+                  {p.title}
+                </p>
               </div>
-              <div className="mt-4 flex items-center justify-between border-t border-white/[0.08] pt-2.5 text-xs text-white/45">
+              <div className="mt-4 flex items-center justify-between border-t border-white/[0.08] pt-2.5 text-xs text-white/65">
                 <span className="truncate">{p.birthPlace}</span>
                 <span className="inline-flex shrink-0 items-center gap-1 font-medium text-gold-light">
-                  Biyografi <ArrowRight size={12} className="transition-transform group-hover:translate-x-0.5" />
+                  Biyografi{" "}
+                  <ArrowRight
+                    size={12}
+                    className="transition-transform group-hover:translate-x-0.5"
+                  />
                 </span>
               </div>
             </div>
@@ -210,7 +246,9 @@ export default function PeopleGrid() {
 
       {list.length === 0 && (
         <div className="museum-card mt-8 py-16 text-center">
-          <p className="text-sm text-white/55">Bu filtrelere uyan şahsiyet bulunamadı.</p>
+          <p className="text-sm text-white/70">
+            Bu filtrelere uyan şahsiyet bulunamadı.
+          </p>
         </div>
       )}
     </div>

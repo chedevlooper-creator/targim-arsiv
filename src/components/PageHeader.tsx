@@ -6,13 +6,20 @@ type Crumb = { href?: string; label: string };
 
 export function Breadcrumbs({ items }: { items: Crumb[] }) {
   return (
-    <nav aria-label="Konum" className="flex flex-wrap items-center gap-1.5 text-sm text-white/65">
+    <nav
+      aria-label="Konum"
+      className="flex flex-wrap items-center gap-1.5 text-sm text-white/65"
+    >
       <Link href="/" className="transition hover:text-white">
         Ana Sayfa
       </Link>
       {items.map((c, i) => (
         <span key={i} className="flex items-center gap-1.5">
-          <ChevronRight size={12} className="text-white/30" aria-hidden="true" />
+          <ChevronRight
+            size={12}
+            className="text-white/30"
+            aria-hidden="true"
+          />
           {c.href ? (
             <Link href={c.href} className="transition hover:text-white">
               {c.label}
@@ -26,14 +33,18 @@ export function Breadcrumbs({ items }: { items: Crumb[] }) {
   );
 }
 
-export function PageBackdrop({ src = "/images/hf-kule-gunbatimi.jpg" }: { src?: string }) {
+export function PageBackdrop({
+  src = "/images/hf-kule-gunbatimi.jpg",
+}: {
+  src?: string;
+}) {
   return (
     <div className="pointer-events-none absolute inset-0 select-none">
       <Image
         src={src}
         alt=""
         fill
-        priority
+        preload
         sizes="100vw"
         className="object-cover object-[50%_30%] opacity-35"
       />
@@ -58,7 +69,10 @@ export function NextRecord({
   prev?: { label: string; href: string };
 }) {
   return (
-    <nav aria-label="Sıradaki kayıt" className="mx-auto max-w-4xl border-t border-white/10 px-5 py-20 text-center md:py-28">
+    <nav
+      aria-label="Sıradaki kayıt"
+      className="mx-auto max-w-4xl border-t border-white/10 px-5 py-20 text-center md:py-28"
+    >
       <p className="eyebrow">{label}</p>
       <p className="crt-glow mt-4 font-serif text-[2.3rem] leading-[1.06] font-medium text-parchment [overflow-wrap:anywhere] [text-wrap:balance] sm:text-[2.8rem] md:text-[4.2rem]">
         {title}
@@ -115,13 +129,17 @@ export default function PageHeader({
               <span className="block font-serif text-3xl leading-none font-semibold text-gold-light md:text-4xl">
                 {count}
               </span>
-              <span className="mt-1 block text-[0.65rem] font-semibold tracking-[0.2em] text-white/55 uppercase">
+              <span className="mt-1 block text-[0.65rem] font-semibold tracking-[0.2em] text-white/65 uppercase">
                 Katalog Kaydı
               </span>
             </div>
           )}
         </div>
-        {subtitle && <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/78 md:text-lg">{subtitle}</p>}
+        {subtitle && (
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/78 md:text-lg">
+            {subtitle}
+          </p>
+        )}
         {children && <div className="mt-7">{children}</div>}
       </div>
     </section>

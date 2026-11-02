@@ -25,8 +25,9 @@ export default function Footer() {
           <div className="max-w-md">
             <Logo />
             <p className="mt-4 text-sm leading-relaxed text-white/65">
-              Çeçen, İnguş ve Kuzey Kafkasya halklarının tarihini, öncü şahsiyetlerini ve yazılı mirasını bir araya
-              getiren açık erişimli dijital hafıza koleksiyonu.
+              Çeçen, İnguş ve Kuzey Kafkasya halklarının tarihini, öncü
+              şahsiyetlerini ve yazılı mirasını bir araya getiren açık erişimli
+              dijital hafıza koleksiyonu.
             </p>
             <div className="mt-4">
               <InstagramLink className="text-sm text-gold-light" />
@@ -39,7 +40,10 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-white/75">
               {PRIMARY_LINKS.map((n) => (
                 <li key={n.href}>
-                  <Link href={n.href} className="transition hover:text-gold-light">
+                  <Link
+                    href={n.href}
+                    className="transition hover:text-gold-light"
+                  >
                     {n.label}
                   </Link>
                 </li>
@@ -53,7 +57,10 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-white/75">
               {SECONDARY_LINKS.map((n) => (
                 <li key={n.href}>
-                  <Link href={n.href} className="transition hover:text-gold-light">
+                  <Link
+                    href={n.href}
+                    className="transition hover:text-gold-light"
+                  >
                     {n.label}
                   </Link>
                 </li>
@@ -62,9 +69,10 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-white/[0.08] pt-6 text-xs text-white/45 sm:flex-row">
+        <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-white/[0.08] pt-6 text-xs text-white/65 sm:flex-row">
           <span>
-            © 2026 Targim <span lang="en">Archive</span> · Dağlar susar, tarih konuşur.
+            © 2026 Targim <span lang="en">Archive</span> · Dağlar susar, tarih
+            konuşur.
           </span>
           <div className="flex flex-wrap items-center gap-3 font-mono text-[0.7rem] text-white/50">
             <Link href="/kisiler" className="transition hover:text-gold-light">
