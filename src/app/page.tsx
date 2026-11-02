@@ -124,47 +124,6 @@ export default function Home() {
       {/* BÖLÜM DİZİNİ: ARŞİV MAKARASI VE ALTI BÖLÜM                        */}
       {/* ================================================================ */}
       <FilmReel items={COLLECTIONS} />
-
-      {/* ================================================================ */}
-      {/* 1944 SÜRGÜNÜ: KENDİ SAYFASINA GİRİŞ                               */}
-      {/* ================================================================ */}
-      <section className="border-t border-white/10 bg-ink px-5 py-20 md:px-12 md:py-28">
-        <div className="museum-card mx-auto max-w-[1500px] overflow-hidden p-8 md:p-14">
-          <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
-            <div>
-              <p className="eyebrow">Toplumsal Hafıza Dosyası</p>
-              <h2 className="crt-glow mt-3 font-serif text-[2.8rem] leading-[1.04] font-medium text-parchment md:text-[4.6rem]">
-                23 Şubat 1944 Sürgünü
-              </h2>
-              <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/80 md:text-xl">
-                Şafak vakti başlatılan operasyonla 493.269 Çeçen ve İnguş, 180 tren katarıyla Orta Asya bozkırlarına
-                sürüldü. Devlet telgraflarından 1957 dönüşüne, bir halkın sürgününü arşiv kayıtlarıyla gün gün inceleyin.
-              </p>
-              <div className="mt-8">
-                <Link href="/surgun-1944" className="btn-gold">
-                  <span>Sürgünün Hikâyesini Oku</span>
-                  <ArrowRight size={16} />
-                </Link>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 lg:grid-cols-1">
-              <div className="rounded-xl border border-white/10 bg-night/70 p-5">
-                <p className="font-serif text-3xl font-semibold text-gold-light md:text-4xl">493.269</p>
-                <p className="mt-1 text-xs tracking-wider text-white/60 uppercase">Sürgün Edilen Çeçen ve İnguş</p>
-              </div>
-              <div className="rounded-xl border border-white/10 bg-night/70 p-5">
-                <p className="font-serif text-3xl font-semibold text-gold-light md:text-4xl">180 Katar</p>
-                <p className="mt-1 text-xs tracking-wider text-white/60 uppercase">Kazakistan ve Kırgızistan Sevkıyatı</p>
-              </div>
-              <div className="rounded-xl border border-white/10 bg-night/70 p-5">
-                <p className="font-serif text-3xl font-semibold text-gold-light md:text-4xl">1944 – 1957</p>
-                <p className="mt-1 text-xs tracking-wider text-white/60 uppercase">13 Yıllık Sürgün ve Vatanına Dönüş</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
