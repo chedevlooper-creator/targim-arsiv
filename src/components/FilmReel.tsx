@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 
 export interface ReelItem {
@@ -9,6 +10,64 @@ export interface ReelItem {
   title: string;
   sub: string;
   image: string;
+}
+
+const COLLECTION_LABELS = [
+  "Portreler ve biyografiler",
+  "Birincil kaynaklar",
+  "Tarihsel dönüm noktaları",
+  "Mekânlar ve hafıza",
+  "Küratöryel seçkiler",
+  "Yaşayan miras",
+];
+
+function CollectionDirectory({
+  items,
+  active,
+  onSelect,
+}: {
+  items: ReelItem[];
+  active?: number;
+  onSelect?: (index: number) => void;
+}) {
+  return (
+    <nav aria-label="Bölümler" className="collection-directory">
+      <ul className="collection-directory-grid">
+        {items.map((item, index) => (
+          <li key={item.href}>
+            <Link
+              href={item.href}
+              onMouseEnter={() => onSelect?.(index)}
+              onFocus={() => onSelect?.(index)}
+              className={`collection-entry ${active === index ? "is-current" : ""}`}
+            >
+              <span className="collection-entry-image" aria-hidden="true">
+                <Image
+                  src={item.image}
+                  alt=""
+                  fill
+                  sizes="(max-width: 639px) 60vw, (max-width: 1023px) 35vw, 24vw"
+                  className="object-cover"
+                />
+              </span>
+              <span className="collection-entry-overline">
+                <span className="collection-entry-index">{String(index + 1).padStart(2, "0")}</span>
+                <span>{COLLECTION_LABELS[index]}</span>
+              </span>
+              <span className="collection-entry-copy">
+                <span className="collection-entry-title">{item.title}</span>
+                <span className="collection-entry-meta">{item.sub}</span>
+              </span>
+              <span className="collection-entry-arrow" aria-hidden="true">
+                <ArrowUpRight size={20} strokeWidth={1.4} />
+              </span>
+              <span className="collection-entry-line" aria-hidden="true" />
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
 }
 
 const FRAME_W = 960;
@@ -454,50 +513,7 @@ function AnimatedReel({ items }: { items: ReelItem[] }) {
         </div>
       </div>
 
-      <nav aria-label="Bölümler" className="relative mx-auto w-full max-w-[1500px] px-5 pt-4 md:px-12">
-        <ul className="grid grid-cols-2 gap-3.5 md:grid-cols-3 xl:grid-cols-6">
-          {items.map((item, i) => {
-            const isCurrent = i === active;
-            return (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  onMouseEnter={() => show(i)}
-                  onFocus={() => show(i)}
-                  className={`group flex h-full flex-col justify-between rounded-xl border p-4 transition-all duration-200 ${
-                    isCurrent
-                      ? "border-gold/45 bg-panel/90"
-                      : "border-white/[0.08] bg-white/[0.02] hover:border-gold-light/35 hover:bg-white/[0.05]"
-                  }`}
-                >
-                  <div>
-                    <div className="flex items-center justify-between text-xs">
-                      <span className="font-mono text-[0.68rem] tracking-widest text-gold/80">
-                        0{i + 1}
-                      </span>
-                      <span
-                        className={`text-xs transition-transform duration-200 group-hover:translate-x-0.5 ${
-                          isCurrent ? "text-gold-light" : "text-white/35 group-hover:text-gold-light"
-                        }`}
-                      >
-                        →
-                      </span>
-                    </div>
-                    <span
-                      className={`mt-1.5 block font-serif text-2xl font-semibold transition-colors ${
-                        isCurrent ? "text-gold-light" : "text-parchment group-hover:text-gold-light"
-                      }`}
-                    >
-                      {item.title}
-                    </span>
-                  </div>
-                  <span className="mt-1.5 block text-xs leading-snug text-white/60">{item.sub}</span>
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      </nav>
+      <CollectionDirectory items={items} active={active} onSelect={show} />
     </section>
   );
 }
@@ -505,28 +521,16 @@ function AnimatedReel({ items }: { items: ReelItem[] }) {
 /* WebGL2 yoksa veya hareket azaltma açıksa aynı dizin, görselli kartlarla */
 function PlainReel({ items }: { items: ReelItem[] }) {
   return (
-    <section aria-labelledby="bolumler" className="bg-ink px-5 py-16 md:px-12">
+    <section aria-labelledby="bolumler" className="bg-ink py-16">
       <h2
         id="bolumler"
         className="crt-glow text-center font-serif text-[2.6rem] leading-tight font-medium text-parchment md:text-[3.6rem]"
       >
         Nereden başlamak istersiniz?
       </h2>
-      <ul className="mx-auto mt-10 grid max-w-[1500px] grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {items.map((item) => (
-          <li key={item.href}>
-            <Link href={item.href} className="group block">
-              <span className="relative block aspect-[3/2] overflow-hidden bg-night">
-                <Image src={item.image} alt="" fill sizes="(max-width:1024px) 50vw, 33vw" className="object-cover" />
-              </span>
-              <span className="mt-3 block font-serif text-2xl text-parchment group-hover:text-gold-light">
-                {item.title}
-              </span>
-              <span className="block text-white/70">{item.sub}</span>
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <div className="mt-10">
+        <CollectionDirectory items={items} />
+      </div>
     </section>
   );
 }
