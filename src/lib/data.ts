@@ -46,10 +46,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Aldı",
     "deathPlace": "Şlisselburg Kalesi",
     "center": "Aldı, Sunja Havzası",
-    "image": "/images/people/seyh-mansur.webp?v=4",
+    "image": "/images/people/seyh-mansur.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/seyh-mansur.webp?v=4",
+        "src": "/images/people/seyh-mansur.webp?v=6",
         "caption": "Şeyh Mansur (1760–1794)"
       }
     ],
@@ -80,10 +80,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Mayurtup",
     "deathPlace": "Çeçenya",
     "center": "Şali, Mayurtup",
-    "image": "/images/people/beybulat-taymiyev.webp?v=4",
+    "image": "/images/people/beybulat-taymiyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/beybulat-taymiyev.webp?v=4",
+        "src": "/images/people/beybulat-taymiyev.webp?v=6",
         "caption": "Beybulat Taymiyev (1779–1831)"
       }
     ],
@@ -113,10 +113,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Endirey",
     "deathPlace": "Çeçenya",
     "center": "Sayasan, İçkeriya",
-    "image": "/images/people/tasav-haci.webp?v=4",
+    "image": "/images/people/tasav-haci.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/tasav-haci.webp?v=4",
+        "src": "/images/people/tasav-haci.webp?v=6",
         "caption": "Taşav Hacı Endireyevski (1770–1843)"
       }
     ],
@@ -146,10 +146,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Tsentoroy",
     "deathPlace": "Çeçenya",
     "center": "Tsentoroy",
-    "image": "/images/people/suayip-molla.webp?v=4",
+    "image": "/images/people/suayip-molla.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/suayip-molla.webp?v=4",
+        "src": "/images/people/suayip-molla.webp?v=6",
         "caption": "Şuayip Molla Tsentoroyevski (1805–1844)"
       }
     ],
@@ -175,10 +175,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/isa-gendargeno.webp?v=4",
+    "image": "/images/people/isa-gendargeno.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/isa-gendargeno.webp?v=4",
+        "src": "/images/people/isa-gendargeno.webp?v=6",
         "caption": "İsa Gendargeno (1795–1845)"
       }
     ],
@@ -204,10 +204,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Avtury",
     "deathPlace": "Çeçenya",
     "center": "Avtury",
-    "image": "/images/people/ahmad-avturinski.webp?v=4",
+    "image": "/images/people/ahmad-avturinski.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ahmad-avturinski.webp?v=4",
+        "src": "/images/people/ahmad-avturinski.webp?v=6",
         "caption": "Ahmad Avturinski (1824–1852)"
       }
     ],
@@ -228,10 +228,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Tsentoroy",
     "deathPlace": "Çeçenya",
     "center": "Tsentoroy",
-    "image": "/images/people/dada-tsentoroyevski.webp?v=4",
+    "image": "/images/people/dada-tsentoroyevski.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/dada-tsentoroyevski.webp?v=4",
+        "src": "/images/people/dada-tsentoroyevski.webp?v=6",
         "caption": "Dada Tsentoroyevski (1800–1852)"
       }
     ],
@@ -252,10 +252,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Auh",
     "deathPlace": "Çeçenya",
     "center": "Auh",
-    "image": "/images/people/goytemir-auhovski.webp?v=4",
+    "image": "/images/people/goytemir-auhovski.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/goytemir-auhovski.webp?v=4",
+        "src": "/images/people/goytemir-auhovski.webp?v=6",
         "caption": "Goytemir Auhovski (1810–1853)"
       }
     ],
@@ -281,10 +281,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Dey",
     "deathPlace": "Çeçenya",
     "center": "Dey, Çanti-Argun",
-    "image": "/images/people/bokka-deyski.webp?v=4",
+    "image": "/images/people/bokka-deyski.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/bokka-deyski.webp?v=4",
+        "src": "/images/people/bokka-deyski.webp?v=6",
         "caption": "Bokka Deyski (1810–1858)"
       }
     ],
@@ -305,10 +305,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/batuko-satoyski.webp?v=4",
+    "image": "/images/people/batuko-satoyski.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/batuko-satoyski.webp?v=4",
+        "src": "/images/people/batuko-satoyski.webp?v=6",
         "caption": "Batuko Şatoyski (1802–1859)"
       }
     ],
@@ -333,10 +333,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Benoy",
     "deathPlace": "Hasavyurt",
     "center": "Benoy, Gunib",
-    "image": "/images/people/baysangur-benoyski.webp?v=4",
+    "image": "/images/people/baysangur-benoyski.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/baysangur-benoyski.webp?v=4",
+        "src": "/images/people/baysangur-benoyski.webp?v=6",
         "caption": "Benoylu Baysungur (1794–1861)"
       }
     ],
@@ -366,10 +366,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/talhig-salinski.webp?v=4",
+    "image": "/images/people/talhig-salinski.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/talhig-salinski.webp?v=4",
+        "src": "/images/people/talhig-salinski.webp?v=6",
         "caption": "Talhig Şalinski (1800–1861)"
       }
     ],
@@ -395,10 +395,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Benoy",
     "deathPlace": "Çeçenya",
     "center": "Benoy",
-    "image": "/images/people/soltamurad-benoyevski.webp?v=4",
+    "image": "/images/people/soltamurad-benoyevski.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/soltamurad-benoyevski.webp?v=4",
+        "src": "/images/people/soltamurad-benoyevski.webp?v=6",
         "caption": "Soltamurad Benoyevski (1807–1878)"
       }
     ],
@@ -423,10 +423,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Zumsoy",
     "deathPlace": "Grozni",
     "center": "Zumsoy, Argun Vadisi",
-    "image": "/images/people/uma-duyev.webp?v=4",
+    "image": "/images/people/uma-duyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/uma-duyev.webp?v=4",
+        "src": "/images/people/uma-duyev.webp?v=6",
         "caption": "Uma Duyev (1809–1878)"
       }
     ],
@@ -452,10 +452,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Simsir",
     "deathPlace": "Grozni",
     "center": "Simsir, Vedeno",
-    "image": "/images/people/alibek-haci.webp?v=4",
+    "image": "/images/people/alibek-haci.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/alibek-haci.webp?v=4",
+        "src": "/images/people/alibek-haci.webp?v=6",
         "caption": "Alibek Hacı Aldamov (1850–1878)"
       }
     ],
@@ -482,10 +482,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Harachoy",
     "deathPlace": "Şali yakınları",
     "center": "Harachoy, Assa ve Argun Vadileri",
-    "image": "/images/people/zelimhan-haracoyn.webp?v=4",
+    "image": "/images/people/zelimhan-haracoyn.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/zelimhan-haracoyn.webp?v=4",
+        "src": "/images/people/zelimhan-haracoyn.webp?v=6",
         "caption": "Zelimhan Guşmazukayev (Harachoyski) (1872–1913)"
       }
     ],
@@ -512,10 +512,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Zandak-Ara",
     "deathPlace": "Grozni",
     "center": "Nadtereçni, Çeçenya",
-    "image": "/images/people/deni-arsanov.webp?v=4",
+    "image": "/images/people/deni-arsanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/deni-arsanov.webp?v=4",
+        "src": "/images/people/deni-arsanov.webp?v=6",
         "caption": "Şeyh Deni Arsanov (1851–1917)"
       }
     ],
@@ -541,10 +541,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hamid-molla.webp?v=4",
+    "image": "/images/people/hamid-molla.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/hamid-molla.webp?v=4",
+        "src": "/images/people/hamid-molla.webp?v=6",
         "caption": "Hamid-Molla Mustapayev (1897–1929)"
       }
     ],
@@ -569,10 +569,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Şali",
     "deathPlace": "Çeçenya",
     "center": "Şali",
-    "image": "/images/people/sita-istamulov.webp?v=4",
+    "image": "/images/people/sita-istamulov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/sita-istamulov.webp?v=4",
+        "src": "/images/people/sita-istamulov.webp?v=6",
         "caption": "Şita İstamulov (1887–1931)"
       }
     ],
@@ -598,10 +598,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Şatoy",
     "deathPlace": "Çeçenya",
     "center": "Şatoy",
-    "image": "/images/people/mayrbek-seripov.webp?v=4",
+    "image": "/images/people/mayrbek-seripov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/mayrbek-seripov.webp?v=4",
+        "src": "/images/people/mayrbek-seripov.webp?v=6",
         "caption": "Mayrbek Şeripov (1905–1942)"
       }
     ],
@@ -626,10 +626,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Naşha",
     "deathPlace": "Çeçenya",
     "center": "Galançoj",
-    "image": "/images/people/hasan-israilov.webp?v=4",
+    "image": "/images/people/hasan-israilov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/hasan-israilov.webp?v=4",
+        "src": "/images/people/hasan-israilov.webp?v=6",
         "caption": "Hasan İsrailov (1910–1944)"
       }
     ],
@@ -655,10 +655,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Gaten-Kale",
     "deathPlace": "Benoy",
     "center": "Gaten-Kale, Şatoy",
-    "image": "/images/people/hasuha-magomadov.webp?v=4",
+    "image": "/images/people/hasuha-magomadov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/hasuha-magomadov.webp?v=4",
+        "src": "/images/people/hasuha-magomadov.webp?v=6",
         "caption": "Hasuha Magomadov (1907–1976)"
       }
     ],
@@ -684,10 +684,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hamzat-hankara.webp?v=4",
+    "image": "/images/people/hamzat-hankara.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/hamzat-hankara.webp?v=4",
+        "src": "/images/people/hamzat-hankara.webp?v=6",
         "caption": "Hamzat Hankarov (1964–1994)"
       }
     ],
@@ -708,10 +708,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Grozni",
     "center": "Çeçenya",
-    "image": "/images/people/umalat-dasayev.webp?v=4",
+    "image": "/images/people/umalat-dasayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/umalat-dasayev.webp?v=4",
+        "src": "/images/people/umalat-dasayev.webp?v=6",
         "caption": "Umalat Daşayev (1956–1994)"
       }
     ],
@@ -732,10 +732,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Grozni",
     "center": "Çeçenya",
-    "image": "/images/people/apti-tokayev.webp?v=4",
+    "image": "/images/people/apti-tokayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/apti-tokayev.webp?v=4",
+        "src": "/images/people/apti-tokayev.webp?v=6",
         "caption": "Apti Tokayev (1960–1995)"
       }
     ],
@@ -756,10 +756,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Yalhoroy",
     "deathPlace": "Gekhi-Çu",
     "center": "Yalhoroy",
-    "image": "/images/people/cevher-dudayev.webp?v=4",
+    "image": "/images/people/cevher-dudayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/cevher-dudayev.webp?v=4",
+        "src": "/images/people/cevher-dudayev.webp?v=6",
         "caption": "Cevher Dudayev (1944–1996)"
       }
     ],
@@ -785,10 +785,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Gekhi",
     "center": "Çeçenya",
-    "image": "/images/people/dokka-mahayev.webp?v=4",
+    "image": "/images/people/dokka-mahayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/dokka-mahayev.webp?v=4",
+        "src": "/images/people/dokka-mahayev.webp?v=6",
         "caption": "Dokka Mahayev (1955–1996)"
       }
     ],
@@ -809,10 +809,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/nurdi-bajiyev.webp?v=4",
+    "image": "/images/people/nurdi-bajiyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/nurdi-bajiyev.webp?v=4",
+        "src": "/images/people/nurdi-bajiyev.webp?v=6",
         "caption": "Nurdi Bajiyev (1964–1997)"
       }
     ],
@@ -833,10 +833,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Grozni",
     "center": "Çeçenya",
-    "image": "/images/people/leca-hultigov.webp?v=4",
+    "image": "/images/people/leca-hultigov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/leca-hultigov.webp?v=4",
+        "src": "/images/people/leca-hultigov.webp?v=6",
         "caption": "Leça Hultıgov (1972–1998)"
       }
     ],
@@ -857,10 +857,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Bamut",
     "deathPlace": "Çeçenya",
     "center": "Bamut",
-    "image": "/images/people/ruslan-hayhoroyev.webp?v=4",
+    "image": "/images/people/ruslan-hayhoroyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ruslan-hayhoroyev.webp?v=4",
+        "src": "/images/people/ruslan-hayhoroyev.webp?v=6",
         "caption": "Ruslan Hayhoroyev (1963–1999)"
       }
     ],
@@ -881,10 +881,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Urus-Martan",
     "deathPlace": "Çeçenya",
     "center": "Urus-Martan",
-    "image": "/images/people/huta-ahmadov.webp?v=4",
+    "image": "/images/people/huta-ahmadov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/huta-ahmadov.webp?v=4",
+        "src": "/images/people/huta-ahmadov.webp?v=6",
         "caption": "Huta Ahmadov (1972–1999)"
       }
     ],
@@ -905,10 +905,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Şalaji",
     "deathPlace": "Çeçenya",
     "center": "Şalaji, Urus-Martan",
-    "image": "/images/people/magomed-yutayev.webp?v=4",
+    "image": "/images/people/magomed-yutayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/magomed-yutayev.webp?v=4",
+        "src": "/images/people/magomed-yutayev.webp?v=6",
         "caption": "Magomed Yutayev (Malış) (1980–1999)"
       }
     ],
@@ -929,10 +929,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Grozni",
     "center": "Çeçenya",
-    "image": "/images/people/isa-astamirov.webp?v=4",
+    "image": "/images/people/isa-astamirov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/isa-astamirov.webp?v=4",
+        "src": "/images/people/isa-astamirov.webp?v=6",
         "caption": "İsa Astamirov (1952–2000)"
       }
     ],
@@ -953,10 +953,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Grozni",
     "deathPlace": "Alhan-Kala",
     "center": "Grozni",
-    "image": "/images/people/leca-dudayev.webp?v=4",
+    "image": "/images/people/leca-dudayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/leca-dudayev.webp?v=4",
+        "src": "/images/people/leca-dudayev.webp?v=6",
         "caption": "Leça Dudayev (1961–2000)"
       }
     ],
@@ -977,10 +977,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Alhan-Kala",
     "center": "Çeçenya",
-    "image": "/images/people/aslambek-ismayilov.webp?v=4",
+    "image": "/images/people/aslambek-ismayilov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/aslambek-ismayilov.webp?v=4",
+        "src": "/images/people/aslambek-ismayilov.webp?v=6",
         "caption": "Aslambek İsmayilov (1962–2000)"
       }
     ],
@@ -1001,10 +1001,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Auh",
     "deathPlace": "Alhan-Kala",
     "center": "Auh",
-    "image": "/images/people/hunkarpasa-israpilov.webp?v=4",
+    "image": "/images/people/hunkarpasa-israpilov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/hunkarpasa-israpilov.webp?v=4",
+        "src": "/images/people/hunkarpasa-israpilov.webp?v=6",
         "caption": "Hünkarpaşa İsrapilov (1967–2000)"
       }
     ],
@@ -1025,10 +1025,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Urus-Martan",
     "deathPlace": "Şatoy",
     "center": "Urus-Martan",
-    "image": "/images/people/apti-ahmadov.webp?v=4",
+    "image": "/images/people/apti-ahmadov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/apti-ahmadov.webp?v=4",
+        "src": "/images/people/apti-ahmadov.webp?v=6",
         "caption": "Apti Ahmadov (1961–2000)"
       }
     ],
@@ -1049,10 +1049,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Saadi-Kotar",
     "center": "Çeçenya",
-    "image": "/images/people/taus-bagurayev.webp?v=4",
+    "image": "/images/people/taus-bagurayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/taus-bagurayev.webp?v=4",
+        "src": "/images/people/taus-bagurayev.webp?v=6",
         "caption": "Taus Bagurayev (1964–2000)"
       }
     ],
@@ -1073,10 +1073,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/abusupyan-movsayev.webp?v=4",
+    "image": "/images/people/abusupyan-movsayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/abusupyan-movsayev.webp?v=4",
+        "src": "/images/people/abusupyan-movsayev.webp?v=6",
         "caption": "Abusupyan Movsayev (1959–2000)"
       }
     ],
@@ -1097,10 +1097,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Şali",
     "deathPlace": "Moskova",
     "center": "Şali",
-    "image": "/images/people/ruslan-alihaciyev.webp?v=4",
+    "image": "/images/people/ruslan-alihaciyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ruslan-alihaciyev.webp?v=4",
+        "src": "/images/people/ruslan-alihaciyev.webp?v=6",
         "caption": "Ruslan Alihaciyev (1961–2000)"
       }
     ],
@@ -1121,10 +1121,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Grozni",
     "deathPlace": "Valerik",
     "center": "Grozni",
-    "image": "/images/people/dalhan-hojayev.webp?v=4",
+    "image": "/images/people/dalhan-hojayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/dalhan-hojayev.webp?v=4",
+        "src": "/images/people/dalhan-hojayev.webp?v=6",
         "caption": "Dalhan Hojayev (1961–2000)"
       }
     ],
@@ -1145,10 +1145,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Kazakistan",
     "deathPlace": "Starye Atagi",
     "center": "Kazakistan",
-    "image": "/images/people/ramzan-ahmadov.webp?v=4",
+    "image": "/images/people/ramzan-ahmadov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ramzan-ahmadov.webp?v=4",
+        "src": "/images/people/ramzan-ahmadov.webp?v=6",
         "caption": "Ramzan Ahmadov (1970–2001)"
       }
     ],
@@ -1169,10 +1169,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Alhan-Kala",
     "deathPlace": "Alhan-Kala",
     "center": "Alhan-Kala",
-    "image": "/images/people/arbi-barayev.webp?v=4",
+    "image": "/images/people/arbi-barayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/arbi-barayev.webp?v=4",
+        "src": "/images/people/arbi-barayev.webp?v=6",
         "caption": "Arbi Barayev (1973–2001)"
       }
     ],
@@ -1193,10 +1193,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/magomed-tsagarayev.webp?v=4",
+    "image": "/images/people/magomed-tsagarayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/magomed-tsagarayev.webp?v=4",
+        "src": "/images/people/magomed-tsagarayev.webp?v=6",
         "caption": "Magomed Tsagarayev (1975–2001)"
       }
     ],
@@ -1217,10 +1217,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/adam-umalatov.webp?v=4",
+    "image": "/images/people/adam-umalatov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/adam-umalatov.webp?v=4",
+        "src": "/images/people/adam-umalatov.webp?v=6",
         "caption": "Adam Umalatov (Aba) (1975–2001)"
       }
     ],
@@ -1241,10 +1241,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/emir-hattab.webp?v=4",
+    "image": "/images/people/emir-hattab.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/emir-hattab.webp?v=4",
+        "src": "/images/people/emir-hattab.webp?v=6",
         "caption": "Emir Hattab (1969–2002)"
       }
     ],
@@ -1265,10 +1265,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aydamir-abalayev.webp?v=4",
+    "image": "/images/people/aydamir-abalayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/aydamir-abalayev.webp?v=4",
+        "src": "/images/people/aydamir-abalayev.webp?v=6",
         "caption": "Aydamir Abalayev (1964–2002)"
       }
     ],
@@ -1289,10 +1289,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Kazakistan",
     "deathPlace": "Mesker-Yurt",
     "center": "Kazakistan",
-    "image": "/images/people/rizvan-ahmadov.webp?v=4",
+    "image": "/images/people/rizvan-ahmadov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/rizvan-ahmadov.webp?v=4",
+        "src": "/images/people/rizvan-ahmadov.webp?v=6",
         "caption": "Rizvan Ahmadov (1957–2002)"
       }
     ],
@@ -1313,10 +1313,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "İtum-Kale",
     "center": "Çeçenya",
-    "image": "/images/people/huseyin-isabayev.webp?v=4",
+    "image": "/images/people/huseyin-isabayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/huseyin-isabayev.webp?v=4",
+        "src": "/images/people/huseyin-isabayev.webp?v=6",
         "caption": "Hüseyin İsabayev (1960–2002)"
       }
     ],
@@ -1337,10 +1337,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Alleroy",
     "deathPlace": "Yekaterinburg",
     "center": "Alleroy",
-    "image": "/images/people/turpal-ali-atgeriyev.webp?v=4",
+    "image": "/images/people/turpal-ali-atgeriyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/turpal-ali-atgeriyev.webp?v=4",
+        "src": "/images/people/turpal-ali-atgeriyev.webp?v=6",
         "caption": "Turpal-Ali Atgeriyev (1969–2002)"
       }
     ],
@@ -1361,10 +1361,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Şali",
     "center": "Çeçenya",
-    "image": "/images/people/aslambek-abdulhaciyev.webp?v=4",
+    "image": "/images/people/aslambek-abdulhaciyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/aslambek-abdulhaciyev.webp?v=4",
+        "src": "/images/people/aslambek-abdulhaciyev.webp?v=6",
         "caption": "Aslambek Abdulhaciyev (1962–2002)"
       }
     ],
@@ -1385,10 +1385,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Urus-Martan",
     "deathPlace": "Grozni",
     "center": "Urus-Martan",
-    "image": "/images/people/zelimhan-ahmadov.webp?v=4",
+    "image": "/images/people/zelimhan-ahmadov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/zelimhan-ahmadov.webp?v=4",
+        "src": "/images/people/zelimhan-ahmadov.webp?v=6",
         "caption": "Zelimhan Ahmadov (1975–2002)"
       }
     ],
@@ -1409,10 +1409,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Argun",
     "deathPlace": "Çeçenya",
     "center": "Argun",
-    "image": "/images/people/movsar-barayev.webp?v=4",
+    "image": "/images/people/movsar-barayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/movsar-barayev.webp?v=4",
+        "src": "/images/people/movsar-barayev.webp?v=6",
         "caption": "Movsar Barayev (1979–2002)"
       }
     ],
@@ -1433,10 +1433,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Gudermes",
     "deathPlace": "Solikamsk",
     "center": "Gudermes",
-    "image": "/images/people/salman-raduyev.webp?v=4",
+    "image": "/images/people/salman-raduyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/salman-raduyev.webp?v=4",
+        "src": "/images/people/salman-raduyev.webp?v=6",
         "caption": "Salman Raduyev (1967–2002)"
       }
     ],
@@ -1457,10 +1457,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Argun",
     "deathPlace": "Çeçenya",
     "center": "Argun",
-    "image": "/images/people/muhammed-argunski.webp?v=4",
+    "image": "/images/people/muhammed-argunski.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/muhammed-argunski.webp?v=4",
+        "src": "/images/people/muhammed-argunski.webp?v=6",
         "caption": "Muhammed Argunski (Magomed Şovhalov) (1977–2002)"
       }
     ],
@@ -1481,10 +1481,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/baudi-bakuyev.webp?v=4",
+    "image": "/images/people/baudi-bakuyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/baudi-bakuyev.webp?v=4",
+        "src": "/images/people/baudi-bakuyev.webp?v=6",
         "caption": "Baudi Bakuyev (1965–2003)"
       }
     ],
@@ -1505,10 +1505,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Doha",
     "center": "Çeçenya",
-    "image": "/images/people/zelimhan-yandarbiyev.webp?v=4",
+    "image": "/images/people/zelimhan-yandarbiyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/zelimhan-yandarbiyev.webp?v=4",
+        "src": "/images/people/zelimhan-yandarbiyev.webp?v=6",
         "caption": "Zelimhan Yandarbiyev (1952–2004)"
       }
     ],
@@ -1534,10 +1534,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Vedeno",
     "center": "Çeçenya",
-    "image": "/images/people/hamzat-tazabayev.webp?v=4",
+    "image": "/images/people/hamzat-tazabayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/hamzat-tazabayev.webp?v=4",
+        "src": "/images/people/hamzat-tazabayev.webp?v=6",
         "caption": "Hamzat Tazabayev (1978–2004)"
       }
     ],
@@ -1558,10 +1558,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Saadi-Kotar",
     "deathPlace": "Dağıstan",
     "center": "Saadi-Kotar",
-    "image": "/images/people/ruslan-gelayev.webp?v=4",
+    "image": "/images/people/ruslan-gelayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ruslan-gelayev.webp?v=4",
+        "src": "/images/people/ruslan-gelayev.webp?v=6",
         "caption": "Ruslan (Hamzat) Gelayev (1964–2004)"
       }
     ],
@@ -1582,10 +1582,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ebu-el-velid.webp?v=4",
+    "image": "/images/people/ebu-el-velid.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ebu-el-velid.webp?v=4",
+        "src": "/images/people/ebu-el-velid.webp?v=6",
         "caption": "Ebu el-Velid (1967–2004)"
       }
     ],
@@ -1606,10 +1606,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Urus-Martan",
     "deathPlace": "Grozni",
     "center": "Urus-Martan",
-    "image": "/images/people/yunadi-turcayev.webp?v=4",
+    "image": "/images/people/yunadi-turcayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/yunadi-turcayev.webp?v=4",
+        "src": "/images/people/yunadi-turcayev.webp?v=6",
         "caption": "Yunadi Turçayev (1972–2005)"
       }
     ],
@@ -1630,10 +1630,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Kazakistan",
     "deathPlace": "Tolstoy-Yurt",
     "center": "Kazakistan",
-    "image": "/images/people/aslan-mashadov.webp?v=4",
+    "image": "/images/people/aslan-mashadov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/aslan-mashadov.webp?v=4",
+        "src": "/images/people/aslan-mashadov.webp?v=6",
         "caption": "Aslan (Halid) Mashadov (1951–2005)"
       }
     ],
@@ -1659,10 +1659,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Şali",
     "deathPlace": "Şali",
     "center": "Şali",
-    "image": "/images/people/rizvan-citigov.webp?v=4",
+    "image": "/images/people/rizvan-citigov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/rizvan-citigov.webp?v=4",
+        "src": "/images/people/rizvan-citigov.webp?v=6",
         "caption": "Rizvan Çitigov (1964–2005)"
       }
     ],
@@ -1683,10 +1683,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Kazakistan",
     "deathPlace": "Grozni",
     "center": "Kazakistan",
-    "image": "/images/people/vaha-arsanov.webp?v=4",
+    "image": "/images/people/vaha-arsanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/vaha-arsanov.webp?v=4",
+        "src": "/images/people/vaha-arsanov.webp?v=6",
         "caption": "Vaha Arsanov (1950–2005)"
       }
     ],
@@ -1707,10 +1707,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Alleroy",
     "deathPlace": "Çeçenya",
     "center": "Alleroy",
-    "image": "/images/people/ahmed-avdorhanov.webp?v=4",
+    "image": "/images/people/ahmed-avdorhanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ahmed-avdorhanov.webp?v=4",
+        "src": "/images/people/ahmed-avdorhanov.webp?v=6",
         "caption": "Ahmed Avdorhanov (1971–2005)"
       }
     ],
@@ -1731,10 +1731,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Argun",
     "deathPlace": "Argun",
     "center": "Argun",
-    "image": "/images/people/abdul-halim-sadulayev.webp?v=4",
+    "image": "/images/people/abdul-halim-sadulayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/abdul-halim-sadulayev.webp?v=4",
+        "src": "/images/people/abdul-halim-sadulayev.webp?v=6",
         "caption": "Şeyh Abdul-Halim Sadulayev (1966–2006)"
       }
     ],
@@ -1755,10 +1755,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Dışne-Vedeno",
     "deathPlace": "Ekajevo",
     "center": "Dışne-Vedeno",
-    "image": "/images/people/samil-basayev.webp?v=4",
+    "image": "/images/people/samil-basayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/samil-basayev.webp?v=4",
+        "src": "/images/people/samil-basayev.webp?v=6",
         "caption": "Şamil Basayev (1965–2006)"
       }
     ],
@@ -1779,10 +1779,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Agişbatoy",
     "deathPlace": "Agişbatoy",
     "center": "Agişbatoy",
-    "image": "/images/people/suleyman-elmurzayev.webp?v=4",
+    "image": "/images/people/suleyman-elmurzayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/suleyman-elmurzayev.webp?v=4",
+        "src": "/images/people/suleyman-elmurzayev.webp?v=6",
         "caption": "Süleyman Elmurzayev (Emir Hayrullah) (1974–2007)"
       }
     ],
@@ -1803,10 +1803,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Dzhalka",
     "deathPlace": "Grozni",
     "center": "Dzhalka",
-    "image": "/images/people/rustam-basayev.webp?v=4",
+    "image": "/images/people/rustam-basayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/rustam-basayev.webp?v=4",
+        "src": "/images/people/rustam-basayev.webp?v=6",
         "caption": "Rustam Basayev (Emir Ebu Bekir) (1975–2007)"
       }
     ],
@@ -1827,10 +1827,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/usman-muntsigov.webp?v=4",
+    "image": "/images/people/usman-muntsigov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/usman-muntsigov.webp?v=4",
+        "src": "/images/people/usman-muntsigov.webp?v=6",
         "caption": "Usman Muntsigov (Emir Usman) (1975–2010)"
       }
     ],
@@ -1851,10 +1851,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "İnguşetya",
     "center": "Çeçenya",
-    "image": "/images/people/supyan-abdullayev.webp?v=4",
+    "image": "/images/people/supyan-abdullayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/supyan-abdullayev.webp?v=4",
+        "src": "/images/people/supyan-abdullayev.webp?v=6",
         "caption": "Supyan Abdullayev (1956–2011)"
       }
     ],
@@ -1875,10 +1875,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Alleroy",
     "deathPlace": "Galaytı",
     "center": "Alleroy",
-    "image": "/images/people/zaurbek-avdorhanov.webp?v=4",
+    "image": "/images/people/zaurbek-avdorhanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/zaurbek-avdorhanov.webp?v=4",
+        "src": "/images/people/zaurbek-avdorhanov.webp?v=6",
         "caption": "Zaurbek Avdorhanov (1976–2012)"
       }
     ],
@@ -1899,10 +1899,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Elistanji",
     "deathPlace": "Vedeno",
     "center": "Elistanji, Vedeno",
-    "image": "/images/people/huseyin-gakayev.webp?v=4",
+    "image": "/images/people/huseyin-gakayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/huseyin-gakayev.webp?v=4",
+        "src": "/images/people/huseyin-gakayev.webp?v=6",
         "caption": "Hüseyin Gakayev (1970–2013)"
       }
     ],
@@ -1923,10 +1923,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Elistanji",
     "deathPlace": "Vedeno",
     "center": "Elistanji",
-    "image": "/images/people/muslim-gakayev.webp?v=4",
+    "image": "/images/people/muslim-gakayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/muslim-gakayev.webp?v=4",
+        "src": "/images/people/muslim-gakayev.webp?v=6",
         "caption": "Müslim Gakayev (1973–2013)"
       }
     ],
@@ -1947,10 +1947,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Göksun",
     "deathPlace": "Ankara",
     "center": "Göksun",
-    "image": "/images/people/medet-onlu.webp?v=4",
+    "image": "/images/people/medet-onlu.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/medet-onlu.webp?v=4",
+        "src": "/images/people/medet-onlu.webp?v=6",
         "caption": "Medet Önlü (1965–2013)"
       }
     ],
@@ -1971,10 +1971,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Harsenoy",
     "deathPlace": "Çeçenya",
     "center": "Harsenoy",
-    "image": "/images/people/doku-umarov.webp?v=4",
+    "image": "/images/people/doku-umarov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/doku-umarov.webp?v=4",
+        "src": "/images/people/doku-umarov.webp?v=6",
         "caption": "Dokka (Doku) Umarov (1964–2013)"
       }
     ],
@@ -1995,10 +1995,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Urus-Martan",
     "deathPlace": "Çeçenya",
     "center": "Urus-Martan",
-    "image": "/images/people/abdul-malik-mejidov.webp?v=4",
+    "image": "/images/people/abdul-malik-mejidov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/abdul-malik-mejidov.webp?v=4",
+        "src": "/images/people/abdul-malik-mejidov.webp?v=6",
         "caption": "Abdul-Malik Mejidov (1961–2013)"
       }
     ],
@@ -2019,10 +2019,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Yandi",
     "deathPlace": "Debaltseve",
     "center": "Yandi",
-    "image": "/images/people/isa-munayev.webp?v=4",
+    "image": "/images/people/isa-munayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/isa-munayev.webp?v=4",
+        "src": "/images/people/isa-munayev.webp?v=6",
         "caption": "İsa Munayev (1965–2015)"
       }
     ],
@@ -2043,10 +2043,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Duisi",
     "deathPlace": "Berlin",
     "center": "Duisi, Pankisi Vadisi",
-    "image": "/images/people/zelimhan-hangosvili.webp?v=4",
+    "image": "/images/people/zelimhan-hangosvili.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/zelimhan-hangosvili.webp?v=4",
+        "src": "/images/people/zelimhan-hangosvili.webp?v=6",
         "caption": "Zelimhan Hangoşvili (1979–2019)"
       }
     ],
@@ -2067,10 +2067,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Katayama (Grozni)",
     "center": "Çeçenya",
-    "image": "/images/people/aslan-butukayev.webp?v=4",
+    "image": "/images/people/aslan-butukayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/aslan-butukayev.webp?v=4",
+        "src": "/images/people/aslan-butukayev.webp?v=6",
         "caption": "Aslan Bütükayev (Emir Hamzat) (1974–2021)"
       }
     ],
@@ -2091,10 +2091,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ali-mitayev.webp?v=4",
+    "image": "/images/people/ali-mitayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ali-mitayev.webp?v=4",
+        "src": "/images/people/ali-mitayev.webp?v=6",
         "caption": "Şeyh Ali Mitayev (1881–1925)"
       }
     ],
@@ -2115,10 +2115,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ibrahim-culikov.webp?v=4",
+    "image": "/images/people/ibrahim-culikov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ibrahim-culikov.webp?v=4",
+        "src": "/images/people/ibrahim-culikov.webp?v=6",
         "caption": "İbrahim Çulikov (1891–1938)"
       }
     ],
@@ -2139,10 +2139,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/cavadhan-murtazaliyev.webp?v=4",
+    "image": "/images/people/cavadhan-murtazaliyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/cavadhan-murtazaliyev.webp?v=4",
+        "src": "/images/people/cavadhan-murtazaliyev.webp?v=6",
         "caption": "Cavadhan Murtazaliyev (1879–1944)"
       }
     ],
@@ -2163,10 +2163,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/imam-alimsultanov.webp?v=4",
+    "image": "/images/people/imam-alimsultanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/imam-alimsultanov.webp?v=4",
+        "src": "/images/people/imam-alimsultanov.webp?v=6",
         "caption": "İmam Alimsultanov (1957–1996)"
       }
     ],
@@ -2191,10 +2191,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ali-itayev.webp?v=4",
+    "image": "/images/people/ali-itayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ali-itayev.webp?v=4",
+        "src": "/images/people/ali-itayev.webp?v=6",
         "caption": "Ali İtayev (1968–1998)"
       }
     ],
@@ -2215,10 +2215,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/leci-islamov.webp?v=4",
+    "image": "/images/people/leci-islamov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/leci-islamov.webp?v=4",
+        "src": "/images/people/leci-islamov.webp?v=6",
         "caption": "Leci İslamov (‘Sakal’ / Boroda) (1962–2004)"
       }
     ],
@@ -2239,10 +2239,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/daud-ahmadov.webp?v=4",
+    "image": "/images/people/daud-ahmadov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/daud-ahmadov.webp?v=4",
+        "src": "/images/people/daud-ahmadov.webp?v=6",
         "caption": "Daud Ahmadov (1944–2004)"
       }
     ],
@@ -2263,10 +2263,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Gordali, Nojay-Yurt",
     "deathPlace": "—",
     "center": "Nojay-Yurt, Gudermes",
-    "image": "/images/people/mahran-saidov.webp?v=4",
+    "image": "/images/people/mahran-saidov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/mahran-saidov.webp?v=4",
+        "src": "/images/people/mahran-saidov.webp?v=6",
         "caption": "Mahran Saidov (Emir Mahran) (1975–Günümüz)"
       }
     ],
@@ -2287,10 +2287,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/tahir-batayev.webp?v=4",
+    "image": "/images/people/tahir-batayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/tahir-batayev.webp?v=4",
+        "src": "/images/people/tahir-batayev.webp?v=6",
         "caption": "Tahir Batayev (Emir Timur) (1973–2007)"
       }
     ],
@@ -2311,10 +2311,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aslan-izrailov.webp?v=4",
+    "image": "/images/people/aslan-izrailov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/aslan-izrailov.webp?v=4",
+        "src": "/images/people/aslan-izrailov.webp?v=6",
         "caption": "Aslan İzrailov (Emir Sawab) (1977–2009)"
       }
     ],
@@ -2335,10 +2335,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/islam-uspahaciyev.webp?v=4",
+    "image": "/images/people/islam-uspahaciyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/islam-uspahaciyev.webp?v=4",
+        "src": "/images/people/islam-uspahaciyev.webp?v=6",
         "caption": "İslam Uspahaciyev (1973–2009)"
       }
     ],
@@ -2359,10 +2359,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/amina-okuyeva.webp?v=4",
+    "image": "/images/people/amina-okuyeva.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/amina-okuyeva.webp?v=4",
+        "src": "/images/people/amina-okuyeva.webp?v=6",
         "caption": "Amina Okuyeva (1983–2017)"
       }
     ],
@@ -2383,10 +2383,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "İşhoy-Yurt, Gudermes",
     "deathPlace": "—",
     "center": "Gudermes, Doğu Cephesi",
-    "image": "/images/people/aslambek-vadalov.webp?v=4",
+    "image": "/images/people/aslambek-vadalov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/aslambek-vadalov.webp?v=4",
+        "src": "/images/people/aslambek-vadalov.webp?v=6",
         "caption": "Aslambek Vadalov (Emir Aslambek) (1971–Günümüz)"
       }
     ],
@@ -2407,10 +2407,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Buğaroy, İtum-Kale",
     "deathPlace": "—",
     "center": "İtum-Kale, Güneybatı Cephesi",
-    "image": "/images/people/tarhan-gaziyev.webp?v=4",
+    "image": "/images/people/tarhan-gaziyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/tarhan-gaziyev.webp?v=4",
+        "src": "/images/people/tarhan-gaziyev.webp?v=6",
         "caption": "Tarhan Gaziyev (Emir Tarhan) (1965–Günümüz)"
       }
     ],
@@ -2431,10 +2431,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/seyh-ahmed-edilov.webp?v=4",
+    "image": "/images/people/seyh-ahmed-edilov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/seyh-ahmed-edilov.webp?v=4",
+        "src": "/images/people/seyh-ahmed-edilov.webp?v=6",
         "caption": "Şeyh-Ahmed Edilov (1965–2000)"
       }
     ],
@@ -2455,10 +2455,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "—",
     "center": "Grozni, Argun",
-    "image": "/images/people/huseyin-ishanov.webp?v=4",
+    "image": "/images/people/huseyin-ishanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/huseyin-ishanov.webp?v=4",
+        "src": "/images/people/huseyin-ishanov.webp?v=6",
         "caption": "Hüseyin İshanov (1958–Günümüz)"
       }
     ],
@@ -2479,10 +2479,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/isa-muskiyev.webp?v=4",
+    "image": "/images/people/isa-muskiyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/isa-muskiyev.webp?v=4",
+        "src": "/images/people/isa-muskiyev.webp?v=6",
         "caption": "İsa Muskiyev (Emir Halid) (1974–2006)"
       }
     ],
@@ -2503,10 +2503,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/komutan-abdulmalik.webp?v=4",
+    "image": "/images/people/komutan-abdulmalik.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/komutan-abdulmalik.webp?v=4",
+        "src": "/images/people/komutan-abdulmalik.webp?v=6",
         "caption": "Komutan Abdulmalik (1975–2008)"
       }
     ],
@@ -2527,10 +2527,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ali-muskiyev.webp?v=4",
+    "image": "/images/people/ali-muskiyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ali-muskiyev.webp?v=4",
+        "src": "/images/people/ali-muskiyev.webp?v=6",
         "caption": "Ali Muskiyev (1987–2006)"
       }
     ],
@@ -2551,10 +2551,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ebu-hafs.webp?v=4",
+    "image": "/images/people/ebu-hafs.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ebu-hafs.webp?v=4",
+        "src": "/images/people/ebu-hafs.webp?v=6",
         "caption": "Emir Ebu Hafs el-Ürdüni (1973–2006)"
       }
     ],
@@ -2575,10 +2575,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/emir-muhenned.webp?v=4",
+    "image": "/images/people/emir-muhenned.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/emir-muhenned.webp?v=4",
+        "src": "/images/people/emir-muhenned.webp?v=6",
         "caption": "Emir Mühenned (Halid Yusuf) (1969–2011)"
       }
     ],
@@ -2599,10 +2599,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/vaha-canaraliyev.webp?v=4",
+    "image": "/images/people/vaha-canaraliyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/vaha-canaraliyev.webp?v=4",
+        "src": "/images/people/vaha-canaraliyev.webp?v=6",
         "caption": "Vaha Canaraliyev (Emir Velid) (1981–2008)"
       }
     ],
@@ -2623,10 +2623,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/sultan-hadisov.webp?v=4",
+    "image": "/images/people/sultan-hadisov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/sultan-hadisov.webp?v=4",
+        "src": "/images/people/sultan-hadisov.webp?v=6",
         "caption": "Sultan Hadisov (Emir Musa) (1968–2006)"
       }
     ],
@@ -2647,10 +2647,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ilman-estamirov.webp?v=4",
+    "image": "/images/people/ilman-estamirov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ilman-estamirov.webp?v=4",
+        "src": "/images/people/ilman-estamirov.webp?v=6",
         "caption": "İlman Estamirov (1977–2011)"
       }
     ],
@@ -2671,10 +2671,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ahmad-tevzaninski.webp?v=4",
+    "image": "/images/people/ahmad-tevzaninski.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ahmad-tevzaninski.webp?v=4",
+        "src": "/images/people/ahmad-tevzaninski.webp?v=6",
         "caption": "Ahmad Tevzaninski (Ebu-Cafar) (1983–2008)"
       }
     ],
@@ -2695,10 +2695,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/saydi-tevzaninski.webp?v=4",
+    "image": "/images/people/saydi-tevzaninski.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/saydi-tevzaninski.webp?v=4",
+        "src": "/images/people/saydi-tevzaninski.webp?v=6",
         "caption": "Saydi Tevzaninski (1985–2011)"
       }
     ],
@@ -2719,10 +2719,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/isa-izerhanov.webp?v=4",
+    "image": "/images/people/isa-izerhanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/isa-izerhanov.webp?v=4",
+        "src": "/images/people/isa-izerhanov.webp?v=6",
         "caption": "İsa İzerhanov (Kara İsa) (1968–2009)"
       }
     ],
@@ -2743,10 +2743,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/musa-muskiyev.webp?v=4",
+    "image": "/images/people/musa-muskiyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/musa-muskiyev.webp?v=4",
+        "src": "/images/people/musa-muskiyev.webp?v=6",
         "caption": "Musa Muskiyev (1980–1999)"
       }
     ],
@@ -2767,10 +2767,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/soyip-muskiyev.webp?v=4",
+    "image": "/images/people/soyip-muskiyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/soyip-muskiyev.webp?v=4",
+        "src": "/images/people/soyip-muskiyev.webp?v=6",
         "caption": "Şoyip Muskiyev (1967–2002)"
       }
     ],
@@ -2791,10 +2791,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/samil-muskiyev.webp?v=4",
+    "image": "/images/people/samil-muskiyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/samil-muskiyev.webp?v=4",
+        "src": "/images/people/samil-muskiyev.webp?v=6",
         "caption": "Şamil Muskiyev (1976–2005)"
       }
     ],
@@ -2815,10 +2815,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/murad-yusuphaciyev.webp?v=4",
+    "image": "/images/people/murad-yusuphaciyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/murad-yusuphaciyev.webp?v=4",
+        "src": "/images/people/murad-yusuphaciyev.webp?v=6",
         "caption": "Murad Yusuphaciyev (Emir Ebu Sayaf) (1978–2002)"
       }
     ],
@@ -2839,10 +2839,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/rabbani-halilov.webp?v=4",
+    "image": "/images/people/rabbani-halilov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/rabbani-halilov.webp?v=4",
+        "src": "/images/people/rabbani-halilov.webp?v=6",
         "caption": "Rabbani Halilov (1969–2007)"
       }
     ],
@@ -2863,10 +2863,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aldili-ali.webp?v=4",
+    "image": "/images/people/aldili-ali.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/aldili-ali.webp?v=4",
+        "src": "/images/people/aldili-ali.webp?v=6",
         "caption": "Aldılı Ali (1980–1996)"
       }
     ],
@@ -2887,10 +2887,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/abubakar-hamurzayev.webp?v=4",
+    "image": "/images/people/abubakar-hamurzayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/abubakar-hamurzayev.webp?v=4",
+        "src": "/images/people/abubakar-hamurzayev.webp?v=6",
         "caption": "Abubakar Hamurzayev (1975–2000)"
       }
     ],
@@ -2911,10 +2911,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ilyas-pasayev.webp?v=4",
+    "image": "/images/people/ilyas-pasayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ilyas-pasayev.webp?v=4",
+        "src": "/images/people/ilyas-pasayev.webp?v=6",
         "caption": "İlyas Paşayev (1973–2000)"
       }
     ],
@@ -2935,10 +2935,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/halid-yandurkayev.webp?v=4",
+    "image": "/images/people/halid-yandurkayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/halid-yandurkayev.webp?v=4",
+        "src": "/images/people/halid-yandurkayev.webp?v=6",
         "caption": "Halid Yandurkayev (1974–2000)"
       }
     ],
@@ -2959,10 +2959,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/has-muhammed-hatuyev.webp?v=4",
+    "image": "/images/people/has-muhammed-hatuyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/has-muhammed-hatuyev.webp?v=4",
+        "src": "/images/people/has-muhammed-hatuyev.webp?v=6",
         "caption": "Has-Muhammed Hatuyev (Kaboj) (1968–1995)"
       }
     ],
@@ -2983,10 +2983,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/bay-ali-kasumov.webp?v=4",
+    "image": "/images/people/bay-ali-kasumov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/bay-ali-kasumov.webp?v=4",
+        "src": "/images/people/bay-ali-kasumov.webp?v=6",
         "caption": "Bay-Ali Kasumov (1977–2016)"
       }
     ],
@@ -3007,10 +3007,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ali-adayev.webp?v=4",
+    "image": "/images/people/ali-adayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ali-adayev.webp?v=4",
+        "src": "/images/people/ali-adayev.webp?v=6",
         "caption": "Ali Adayev (Lambada) (1966–1995)"
       }
     ],
@@ -3031,10 +3031,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/kuri-batsiyev.webp?v=4",
+    "image": "/images/people/kuri-batsiyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/kuri-batsiyev.webp?v=4",
+        "src": "/images/people/kuri-batsiyev.webp?v=6",
         "caption": "Küri Batsiyev (Gözüpek Küra) (1972–2005)"
       }
     ],
@@ -3055,10 +3055,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/huseyin-ahmadov.webp?v=4",
+    "image": "/images/people/huseyin-ahmadov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/huseyin-ahmadov.webp?v=4",
+        "src": "/images/people/huseyin-ahmadov.webp?v=6",
         "caption": "Hüseyin Ahmadov (1962–1995)"
       }
     ],
@@ -3079,10 +3079,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/zulay-ahmadova.webp?v=4",
+    "image": "/images/people/zulay-ahmadova.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/zulay-ahmadova.webp?v=4",
+        "src": "/images/people/zulay-ahmadova.webp?v=6",
         "caption": "Zulay Ahmadova (1971–1995)"
       }
     ],
@@ -3103,10 +3103,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/musa-hacimuradov.webp?v=4",
+    "image": "/images/people/musa-hacimuradov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/musa-hacimuradov.webp?v=4",
+        "src": "/images/people/musa-hacimuradov.webp?v=6",
         "caption": "Musa Hacımuradov (1956–1994)"
       }
     ],
@@ -3127,10 +3127,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/emir-iles-musafir.webp?v=4",
+    "image": "/images/people/emir-iles-musafir.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/emir-iles-musafir.webp?v=4",
+        "src": "/images/people/emir-iles-musafir.webp?v=6",
         "caption": "Emir İles Musafir (1970–1999)"
       }
     ],
@@ -3151,10 +3151,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hoj-ahmed-dusayev.webp?v=4",
+    "image": "/images/people/hoj-ahmed-dusayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/hoj-ahmed-dusayev.webp?v=4",
+        "src": "/images/people/hoj-ahmed-dusayev.webp?v=6",
         "caption": "Hoj-Ahmed Duşayev (1975–2006)"
       }
     ],
@@ -3175,10 +3175,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/kazbek-ibragimov.webp?v=4",
+    "image": "/images/people/kazbek-ibragimov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/kazbek-ibragimov.webp?v=4",
+        "src": "/images/people/kazbek-ibragimov.webp?v=6",
         "caption": "Kazbek İbragimov (1982–2008)"
       }
     ],
@@ -3199,10 +3199,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/elbrus-ibragimov.webp?v=4",
+    "image": "/images/people/elbrus-ibragimov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/elbrus-ibragimov.webp?v=4",
+        "src": "/images/people/elbrus-ibragimov.webp?v=6",
         "caption": "Elbrus İbragimov (1985–2010)"
       }
     ],
@@ -3223,10 +3223,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ahmad-canti-halifat.webp?v=4",
+    "image": "/images/people/ahmad-canti-halifat.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ahmad-canti-halifat.webp?v=4",
+        "src": "/images/people/ahmad-canti-halifat.webp?v=6",
         "caption": "Ahmad Çanti (1968–2000)"
       }
     ],
@@ -3247,10 +3247,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hasan-dolguyev.webp?v=4",
+    "image": "/images/people/hasan-dolguyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/hasan-dolguyev.webp?v=4",
+        "src": "/images/people/hasan-dolguyev.webp?v=6",
         "caption": "Hasan Dolguyev (1963–1999)"
       }
     ],
@@ -3271,10 +3271,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/rizvan-osmayev.webp?v=4",
+    "image": "/images/people/rizvan-osmayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/rizvan-osmayev.webp?v=4",
+        "src": "/images/people/rizvan-osmayev.webp?v=6",
         "caption": "Rizvan Osmayev (1976–2009)"
       }
     ],
@@ -3295,10 +3295,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hasan-ozdamirov.webp?v=4",
+    "image": "/images/people/hasan-ozdamirov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/hasan-ozdamirov.webp?v=4",
+        "src": "/images/people/hasan-ozdamirov.webp?v=6",
         "caption": "Hasan Ozdamirov (Gerat) (1983–2009)"
       }
     ],
@@ -3319,10 +3319,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/emir-mohmad-avturinski.webp?v=4",
+    "image": "/images/people/emir-mohmad-avturinski.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/emir-mohmad-avturinski.webp?v=4",
+        "src": "/images/people/emir-mohmad-avturinski.webp?v=6",
         "caption": "Emir Mohmad Avturinski (Kırk Üçüncü) (1971–2003)"
       }
     ],
@@ -3343,10 +3343,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/bislan-turgayev.webp?v=4",
+    "image": "/images/people/bislan-turgayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/bislan-turgayev.webp?v=4",
+        "src": "/images/people/bislan-turgayev.webp?v=6",
         "caption": "Bislan Turgayev (1972–2002)"
       }
     ],
@@ -3367,10 +3367,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/umar-boltukayev.webp?v=4",
+    "image": "/images/people/umar-boltukayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/umar-boltukayev.webp?v=4",
+        "src": "/images/people/umar-boltukayev.webp?v=6",
         "caption": "Umar Boltukayev (1966–2000)"
       }
     ],
@@ -3391,10 +3391,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/usman-imayev.webp?v=4",
+    "image": "/images/people/usman-imayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/usman-imayev.webp?v=4",
+        "src": "/images/people/usman-imayev.webp?v=6",
         "caption": "Usman İmayev (1957–1996)"
       }
     ],
@@ -3415,10 +3415,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/arbi-sigauri.webp?v=4",
+    "image": "/images/people/arbi-sigauri.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/arbi-sigauri.webp?v=4",
+        "src": "/images/people/arbi-sigauri.webp?v=6",
         "caption": "Arbi Sigauri (1982–2011)"
       }
     ],
@@ -3439,10 +3439,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aslanbek-didiyev.webp?v=4",
+    "image": "/images/people/aslanbek-didiyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/aslanbek-didiyev.webp?v=4",
+        "src": "/images/people/aslanbek-didiyev.webp?v=6",
         "caption": "Aslanbek Didiyev (1972–2000)"
       }
     ],
@@ -3463,10 +3463,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/amin-ibragimov.webp?v=4",
+    "image": "/images/people/amin-ibragimov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/amin-ibragimov.webp?v=4",
+        "src": "/images/people/amin-ibragimov.webp?v=6",
         "caption": "Amin İbragimov (Ebu Darr) (1972–2001)"
       }
     ],
@@ -3487,10 +3487,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muhammed-besir-dobriyev.webp?v=4",
+    "image": "/images/people/muhammed-besir-dobriyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/muhammed-besir-dobriyev.webp?v=4",
+        "src": "/images/people/muhammed-besir-dobriyev.webp?v=6",
         "caption": "Muhammed-Beşir Dobriyev (1964–2008)"
       }
     ],
@@ -3511,10 +3511,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ilyas-talhadov.webp?v=4",
+    "image": "/images/people/ilyas-talhadov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ilyas-talhadov.webp?v=4",
+        "src": "/images/people/ilyas-talhadov.webp?v=6",
         "caption": "İlyas Talhadov (1967–2000)"
       }
     ],
@@ -3535,10 +3535,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/vahid-bamatgiriyev.webp?v=4",
+    "image": "/images/people/vahid-bamatgiriyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/vahid-bamatgiriyev.webp?v=4",
+        "src": "/images/people/vahid-bamatgiriyev.webp?v=6",
         "caption": "Vahid Bamatgiriyev (1956–2000)"
       }
     ],
@@ -3559,10 +3559,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aynudin-aygumov.webp?v=4",
+    "image": "/images/people/aynudin-aygumov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/aynudin-aygumov.webp?v=4",
+        "src": "/images/people/aynudin-aygumov.webp?v=6",
         "caption": "Aynudin Aygumov (Çibuş) (1977–1997)"
       }
     ],
@@ -3583,10 +3583,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/imran-zaytimirov.webp?v=4",
+    "image": "/images/people/imran-zaytimirov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/imran-zaytimirov.webp?v=4",
+        "src": "/images/people/imran-zaytimirov.webp?v=6",
         "caption": "İmran Zaytimirov (1971–2000)"
       }
     ],
@@ -3607,10 +3607,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/borza-abdurazakov.webp?v=4",
+    "image": "/images/people/borza-abdurazakov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/borza-abdurazakov.webp?v=4",
+        "src": "/images/people/borza-abdurazakov.webp?v=6",
         "caption": "Borza Abdurazakov (1975–2000)"
       }
     ],
@@ -3631,10 +3631,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ismail-muhmadiyev.webp?v=4",
+    "image": "/images/people/ismail-muhmadiyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ismail-muhmadiyev.webp?v=4",
+        "src": "/images/people/ismail-muhmadiyev.webp?v=6",
         "caption": "İsmail Muhmadiyev (1971–1994)"
       }
     ],
@@ -3655,10 +3655,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/imam-zaytayev.webp?v=4",
+    "image": "/images/people/imam-zaytayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/imam-zaytayev.webp?v=4",
+        "src": "/images/people/imam-zaytayev.webp?v=6",
         "caption": "İmam Zaytayev (1989–2008)"
       }
     ],
@@ -3679,10 +3679,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/islam-takanayev.webp?v=4",
+    "image": "/images/people/islam-takanayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/islam-takanayev.webp?v=4",
+        "src": "/images/people/islam-takanayev.webp?v=6",
         "caption": "İslam Takanayev (1984–2003)"
       }
     ],
@@ -3703,10 +3703,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/umar-labazanov.webp?v=4",
+    "image": "/images/people/umar-labazanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/umar-labazanov.webp?v=4",
+        "src": "/images/people/umar-labazanov.webp?v=6",
         "caption": "Umar Labazanov (Emir Şadid) (1975–2000)"
       }
     ],
@@ -3727,10 +3727,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ramzan-kudayev.webp?v=4",
+    "image": "/images/people/ramzan-kudayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ramzan-kudayev.webp?v=4",
+        "src": "/images/people/ramzan-kudayev.webp?v=6",
         "caption": "Ramzan Kudayev (1960–1995)"
       }
     ],
@@ -3751,10 +3751,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/said-muhammed-visayev.webp?v=4",
+    "image": "/images/people/said-muhammed-visayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/said-muhammed-visayev.webp?v=4",
+        "src": "/images/people/said-muhammed-visayev.webp?v=6",
         "caption": "Said-Muhammed Visayev (1974–2000)"
       }
     ],
@@ -3775,10 +3775,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/emir-abdurrahman.webp?v=4",
+    "image": "/images/people/emir-abdurrahman.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/emir-abdurrahman.webp?v=4",
+        "src": "/images/people/emir-abdurrahman.webp?v=6",
         "caption": "Abdurrahman Şişani (1971–2002)"
       }
     ],
@@ -3799,10 +3799,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aslan-cabayev.webp?v=4",
+    "image": "/images/people/aslan-cabayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/aslan-cabayev.webp?v=4",
+        "src": "/images/people/aslan-cabayev.webp?v=6",
         "caption": "Aslan Cabayev (Abdus-Samad) (1985–2004)"
       }
     ],
@@ -3823,10 +3823,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/islam-saraliyev.webp?v=4",
+    "image": "/images/people/islam-saraliyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/islam-saraliyev.webp?v=4",
+        "src": "/images/people/islam-saraliyev.webp?v=6",
         "caption": "İslam Saraliyev (Emir Sayhan) (1978–2003)"
       }
     ],
@@ -3847,10 +3847,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aslambek-borcasvili.webp?v=4",
+    "image": "/images/people/aslambek-borcasvili.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/aslambek-borcasvili.webp?v=4",
+        "src": "/images/people/aslambek-borcasvili.webp?v=6",
         "caption": "Aslambek Borçaşvili (1979–2000)"
       }
     ],
@@ -3871,10 +3871,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/lom-ali-gubayev.webp?v=4",
+    "image": "/images/people/lom-ali-gubayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/lom-ali-gubayev.webp?v=4",
+        "src": "/images/people/lom-ali-gubayev.webp?v=6",
         "caption": "Lom-Ali Gubayev (1974–2000)"
       }
     ],
@@ -3895,10 +3895,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hasan-amriyev.webp?v=4",
+    "image": "/images/people/hasan-amriyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/hasan-amriyev.webp?v=4",
+        "src": "/images/people/hasan-amriyev.webp?v=6",
         "caption": "Hasan Amriyev (1966–1995)"
       }
     ],
@@ -3919,10 +3919,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/haron-babuyev.webp?v=4",
+    "image": "/images/people/haron-babuyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/haron-babuyev.webp?v=4",
+        "src": "/images/people/haron-babuyev.webp?v=6",
         "caption": "Haron Babuyev (1969–2000)"
       }
     ],
@@ -3943,10 +3943,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/movldi-kagarmanov.webp?v=4",
+    "image": "/images/people/movldi-kagarmanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/movldi-kagarmanov.webp?v=4",
+        "src": "/images/people/movldi-kagarmanov.webp?v=6",
         "caption": "Movldi Kagarmanov (1973–2000)"
       }
     ],
@@ -3967,10 +3967,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/musa-uspanov.webp?v=4",
+    "image": "/images/people/musa-uspanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/musa-uspanov.webp?v=4",
+        "src": "/images/people/musa-uspanov.webp?v=6",
         "caption": "Musa Uspanov (1971–2000)"
       }
     ],
@@ -3991,10 +3991,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/isa-saykilayev.webp?v=4",
+    "image": "/images/people/isa-saykilayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/isa-saykilayev.webp?v=4",
+        "src": "/images/people/isa-saykilayev.webp?v=6",
         "caption": "İsa Şaykilayev (1980–1999)"
       }
     ],
@@ -4015,10 +4015,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/sayd-huseyin-makaziyev.webp?v=4",
+    "image": "/images/people/sayd-huseyin-makaziyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/sayd-huseyin-makaziyev.webp?v=4",
+        "src": "/images/people/sayd-huseyin-makaziyev.webp?v=6",
         "caption": "Sayd-Hüseyin Makaziyev (1971–2000)"
       }
     ],
@@ -4039,10 +4039,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/magomed-taverdiyev.webp?v=4",
+    "image": "/images/people/magomed-taverdiyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/magomed-taverdiyev.webp?v=4",
+        "src": "/images/people/magomed-taverdiyev.webp?v=6",
         "caption": "Magomed Taverdiyev (Kurbaş) (1976–2000)"
       }
     ],
@@ -4063,10 +4063,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/islam-tasuyev.webp?v=4",
+    "image": "/images/people/islam-tasuyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/islam-tasuyev.webp?v=4",
+        "src": "/images/people/islam-tasuyev.webp?v=6",
         "caption": "İslam Tasuyev (1975–2000)"
       }
     ],
@@ -4087,10 +4087,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/zayndi-gatsayev.webp?v=4",
+    "image": "/images/people/zayndi-gatsayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/zayndi-gatsayev.webp?v=4",
+        "src": "/images/people/zayndi-gatsayev.webp?v=6",
         "caption": "Zayndi Gatsayev (1974–2000)"
       }
     ],
@@ -4111,10 +4111,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/mohmad-saralapov.webp?v=4",
+    "image": "/images/people/mohmad-saralapov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/mohmad-saralapov.webp?v=4",
+        "src": "/images/people/mohmad-saralapov.webp?v=6",
         "caption": "Mohmad Saralapov (1981–2000)"
       }
     ],
@@ -4135,10 +4135,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ramzan-darayev.webp?v=4",
+    "image": "/images/people/ramzan-darayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ramzan-darayev.webp?v=4",
+        "src": "/images/people/ramzan-darayev.webp?v=6",
         "caption": "Ramzan Darayev (1974–2000)"
       }
     ],
@@ -4159,10 +4159,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/magomed-bahtarisev.webp?v=4",
+    "image": "/images/people/magomed-bahtarisev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/magomed-bahtarisev.webp?v=4",
+        "src": "/images/people/magomed-bahtarisev.webp?v=6",
         "caption": "Magomed Bahtarişev (1975–2000)"
       }
     ],
@@ -4183,10 +4183,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ayndi-kaplanov.webp?v=4",
+    "image": "/images/people/ayndi-kaplanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ayndi-kaplanov.webp?v=4",
+        "src": "/images/people/ayndi-kaplanov.webp?v=6",
         "caption": "Ayndi Kaplanov (1973–2000)"
       }
     ],
@@ -4207,10 +4207,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/islam-ediyev.webp?v=4",
+    "image": "/images/people/islam-ediyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/islam-ediyev.webp?v=4",
+        "src": "/images/people/islam-ediyev.webp?v=6",
         "caption": "İslam Ediyev (Sahrabi) (1969–2000)"
       }
     ],
@@ -4231,10 +4231,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/rustam-haciyev.webp?v=4",
+    "image": "/images/people/rustam-haciyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/rustam-haciyev.webp?v=4",
+        "src": "/images/people/rustam-haciyev.webp?v=6",
         "caption": "Rustam Haciyev (1976–2000)"
       }
     ],
@@ -4255,10 +4255,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/kazbek-amayev.webp?v=4",
+    "image": "/images/people/kazbek-amayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/kazbek-amayev.webp?v=4",
+        "src": "/images/people/kazbek-amayev.webp?v=6",
         "caption": "Kazbek Amayev (1971–1995)"
       }
     ],
@@ -4279,10 +4279,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/tarhan-terhoyev.webp?v=4",
+    "image": "/images/people/tarhan-terhoyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/tarhan-terhoyev.webp?v=4",
+        "src": "/images/people/tarhan-terhoyev.webp?v=6",
         "caption": "Tarhan Terhoyev (1974–1995)"
       }
     ],
@@ -4303,10 +4303,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/mohmad-salah-arsamekov.webp?v=4",
+    "image": "/images/people/mohmad-salah-arsamekov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/mohmad-salah-arsamekov.webp?v=4",
+        "src": "/images/people/mohmad-salah-arsamekov.webp?v=6",
         "caption": "Mohmad-Salah Arsamekov (1977–2000)"
       }
     ],
@@ -4327,10 +4327,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/denis-dudurkayev.webp?v=4",
+    "image": "/images/people/denis-dudurkayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/denis-dudurkayev.webp?v=4",
+        "src": "/images/people/denis-dudurkayev.webp?v=6",
         "caption": "Denis Dudurkayev (1965–2000)"
       }
     ],
@@ -4351,10 +4351,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/musa-iznaurov.webp?v=4",
+    "image": "/images/people/musa-iznaurov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/musa-iznaurov.webp?v=4",
+        "src": "/images/people/musa-iznaurov.webp?v=6",
         "caption": "Musa İznaurov (1972–2000)"
       }
     ],
@@ -4375,10 +4375,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/adam-aspiyev.webp?v=4",
+    "image": "/images/people/adam-aspiyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/adam-aspiyev.webp?v=4",
+        "src": "/images/people/adam-aspiyev.webp?v=6",
         "caption": "Adam Aspiyev (1973–2000)"
       }
     ],
@@ -4399,10 +4399,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/anzor-batalov.webp?v=4",
+    "image": "/images/people/anzor-batalov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/anzor-batalov.webp?v=4",
+        "src": "/images/people/anzor-batalov.webp?v=6",
         "caption": "Anzor Batalov (1976–2000)"
       }
     ],
@@ -4423,10 +4423,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ramzan-cukayev.webp?v=4",
+    "image": "/images/people/ramzan-cukayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ramzan-cukayev.webp?v=4",
+        "src": "/images/people/ramzan-cukayev.webp?v=6",
         "caption": "Ramzan Çukayev (1976–2000)"
       }
     ],
@@ -4447,10 +4447,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/mohmad-hamzatov.webp?v=4",
+    "image": "/images/people/mohmad-hamzatov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/mohmad-hamzatov.webp?v=4",
+        "src": "/images/people/mohmad-hamzatov.webp?v=6",
         "caption": "Mohmad Hamzatov (1975–2000)"
       }
     ],
@@ -4471,10 +4471,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/mayrbek-maltsagov.webp?v=4",
+    "image": "/images/people/mayrbek-maltsagov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/mayrbek-maltsagov.webp?v=4",
+        "src": "/images/people/mayrbek-maltsagov.webp?v=6",
         "caption": "Mayrbek Maltsagov (1973–2000)"
       }
     ],
@@ -4495,10 +4495,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/visa-idigov.webp?v=4",
+    "image": "/images/people/visa-idigov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/visa-idigov.webp?v=4",
+        "src": "/images/people/visa-idigov.webp?v=6",
         "caption": "Visa İdigov (1966–1995)"
       }
     ],
@@ -4519,10 +4519,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/mohmad-salah-adamov.webp?v=4",
+    "image": "/images/people/mohmad-salah-adamov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/mohmad-salah-adamov.webp?v=4",
+        "src": "/images/people/mohmad-salah-adamov.webp?v=6",
         "caption": "Mohmad-Salah Adamov (1960–1995)"
       }
     ],
@@ -4543,10 +4543,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hamzat-sagayev.webp?v=4",
+    "image": "/images/people/hamzat-sagayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/hamzat-sagayev.webp?v=4",
+        "src": "/images/people/hamzat-sagayev.webp?v=6",
         "caption": "Hamzat Sagayev (1965–1995)"
       }
     ],
@@ -4567,10 +4567,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/semal-tabuyev.webp?v=4",
+    "image": "/images/people/semal-tabuyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/semal-tabuyev.webp?v=4",
+        "src": "/images/people/semal-tabuyev.webp?v=6",
         "caption": "Şemal Tabuyev (1975–1995)"
       }
     ],
@@ -4591,10 +4591,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ruslan-arsahanov.webp?v=4",
+    "image": "/images/people/ruslan-arsahanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ruslan-arsahanov.webp?v=4",
+        "src": "/images/people/ruslan-arsahanov.webp?v=6",
         "caption": "Ruslan Arsahanov (1972–1995)"
       }
     ],
@@ -4615,10 +4615,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muhadi-macidov.webp?v=4",
+    "image": "/images/people/muhadi-macidov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/muhadi-macidov.webp?v=4",
+        "src": "/images/people/muhadi-macidov.webp?v=6",
         "caption": "Muhadi Macidov (1963–1995)"
       }
     ],
@@ -4639,10 +4639,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muhammed-akbulatov.webp?v=4",
+    "image": "/images/people/muhammed-akbulatov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/muhammed-akbulatov.webp?v=4",
+        "src": "/images/people/muhammed-akbulatov.webp?v=6",
         "caption": "Muhammed Akbulatov (1975–1995)"
       }
     ],
@@ -4663,10 +4663,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/sayd-muhammed-elderhanov.webp?v=4",
+    "image": "/images/people/sayd-muhammed-elderhanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/sayd-muhammed-elderhanov.webp?v=4",
+        "src": "/images/people/sayd-muhammed-elderhanov.webp?v=6",
         "caption": "Sayd-Muhammed Elderhanov (1968–1995)"
       }
     ],
@@ -4687,10 +4687,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/islam-batalov.webp?v=4",
+    "image": "/images/people/islam-batalov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/islam-batalov.webp?v=4",
+        "src": "/images/people/islam-batalov.webp?v=6",
         "caption": "İslam Batalov (1972–2000)"
       }
     ],
@@ -4711,10 +4711,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/daud-arsamakov.webp?v=4",
+    "image": "/images/people/daud-arsamakov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/daud-arsamakov.webp?v=4",
+        "src": "/images/people/daud-arsamakov.webp?v=6",
         "caption": "Daud Arsamakov (1974–2000)"
       }
     ],
@@ -4735,10 +4735,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hamzat-cadayev.webp?v=4",
+    "image": "/images/people/hamzat-cadayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/hamzat-cadayev.webp?v=4",
+        "src": "/images/people/hamzat-cadayev.webp?v=6",
         "caption": "Hamzat Çadayev (1958–1994)"
       }
     ],
@@ -4759,10 +4759,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/nasho-sugaipov.webp?v=4",
+    "image": "/images/people/nasho-sugaipov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/nasho-sugaipov.webp?v=4",
+        "src": "/images/people/nasho-sugaipov.webp?v=6",
         "caption": "Naşho Sugaipov (1975–2004)"
       }
     ],
@@ -4783,10 +4783,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/musa-elmurzayev.webp?v=4",
+    "image": "/images/people/musa-elmurzayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/musa-elmurzayev.webp?v=4",
+        "src": "/images/people/musa-elmurzayev.webp?v=6",
         "caption": "Musa Elmurzayev (1977–1999)"
       }
     ],
@@ -4807,10 +4807,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/mohmad-tahir-uspanov.webp?v=4",
+    "image": "/images/people/mohmad-tahir-uspanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/mohmad-tahir-uspanov.webp?v=4",
+        "src": "/images/people/mohmad-tahir-uspanov.webp?v=6",
         "caption": "Mohmad-Tahir Uspanov (1965–2000)"
       }
     ],
@@ -4831,10 +4831,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/imran-tangiyev.webp?v=4",
+    "image": "/images/people/imran-tangiyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/imran-tangiyev.webp?v=4",
+        "src": "/images/people/imran-tangiyev.webp?v=6",
         "caption": "İmran Tangiyev (1970–1996)"
       }
     ],
@@ -4855,10 +4855,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aslan-astamirov.webp?v=4",
+    "image": "/images/people/aslan-astamirov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/aslan-astamirov.webp?v=4",
+        "src": "/images/people/aslan-astamirov.webp?v=6",
         "caption": "Aslan Astamirov (1975–2000)"
       }
     ],
@@ -4879,10 +4879,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muhammed-emin-magomadov.webp?v=4",
+    "image": "/images/people/muhammed-emin-magomadov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/muhammed-emin-magomadov.webp?v=4",
+        "src": "/images/people/muhammed-emin-magomadov.webp?v=6",
         "caption": "Muhammed-Emin Magomadov (1975–2000)"
       }
     ],
@@ -4903,10 +4903,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/alishan-amayev.webp?v=4",
+    "image": "/images/people/alishan-amayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/alishan-amayev.webp?v=4",
+        "src": "/images/people/alishan-amayev.webp?v=6",
         "caption": "Alishan Amayev (1976–2000)"
       }
     ],
@@ -4927,10 +4927,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aslan-baysangurov.webp?v=4",
+    "image": "/images/people/aslan-baysangurov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/aslan-baysangurov.webp?v=4",
+        "src": "/images/people/aslan-baysangurov.webp?v=6",
         "caption": "Aslan Baysangurov (1973–2000)"
       }
     ],
@@ -4951,10 +4951,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ramzan-hasanov.webp?v=4",
+    "image": "/images/people/ramzan-hasanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ramzan-hasanov.webp?v=4",
+        "src": "/images/people/ramzan-hasanov.webp?v=6",
         "caption": "Ramzan Hasanov (1970–1999)"
       }
     ],
@@ -4975,10 +4975,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/islam-yakubov.webp?v=4",
+    "image": "/images/people/islam-yakubov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/islam-yakubov.webp?v=4",
+        "src": "/images/people/islam-yakubov.webp?v=6",
         "caption": "İslam Yakubov (1987–2010)"
       }
     ],
@@ -4999,10 +4999,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/abubakar-basayev.webp?v=4",
+    "image": "/images/people/abubakar-basayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/abubakar-basayev.webp?v=4",
+        "src": "/images/people/abubakar-basayev.webp?v=6",
         "caption": "Abubakar Basayev (1981–2007)"
       }
     ],
@@ -5023,10 +5023,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/movlat-magomadov.webp?v=4",
+    "image": "/images/people/movlat-magomadov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/movlat-magomadov.webp?v=4",
+        "src": "/images/people/movlat-magomadov.webp?v=6",
         "caption": "Movlat Magomadov (1980–2000)"
       }
     ],
@@ -5047,10 +5047,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/sayd-huseyin-magomadov.webp?v=4",
+    "image": "/images/people/sayd-huseyin-magomadov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/sayd-huseyin-magomadov.webp?v=4",
+        "src": "/images/people/sayd-huseyin-magomadov.webp?v=6",
         "caption": "Sayd-Hüseyin Magomadov (1981–2000)"
       }
     ],
@@ -5071,10 +5071,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/balaudi-kagarmanov.webp?v=4",
+    "image": "/images/people/balaudi-kagarmanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/balaudi-kagarmanov.webp?v=4",
+        "src": "/images/people/balaudi-kagarmanov.webp?v=6",
         "caption": "Balaudi Kagarmanov (1968–2000)"
       }
     ],
@@ -5095,10 +5095,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aslanbek-baysangurov.webp?v=4",
+    "image": "/images/people/aslanbek-baysangurov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/aslanbek-baysangurov.webp?v=4",
+        "src": "/images/people/aslanbek-baysangurov.webp?v=6",
         "caption": "Aslanbek Baysangurov (1975–2000)"
       }
     ],
@@ -5119,10 +5119,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ruslan-sardalov.webp?v=4",
+    "image": "/images/people/ruslan-sardalov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ruslan-sardalov.webp?v=4",
+        "src": "/images/people/ruslan-sardalov.webp?v=6",
         "caption": "Ruslan Sardalov (1965–2000)"
       }
     ],
@@ -5143,10 +5143,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muhammed-magomadov.webp?v=4",
+    "image": "/images/people/muhammed-magomadov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/muhammed-magomadov.webp?v=4",
+        "src": "/images/people/muhammed-magomadov.webp?v=6",
         "caption": "Muhammed Magomadov (1973–2000)"
       }
     ],
@@ -5167,10 +5167,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/arbi-yevmirzayev.webp?v=4",
+    "image": "/images/people/arbi-yevmirzayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/arbi-yevmirzayev.webp?v=4",
+        "src": "/images/people/arbi-yevmirzayev.webp?v=6",
         "caption": "Arbi Yevmirzayev (1972–2010)"
       }
     ],
@@ -5191,10 +5191,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/umar-magomadov.webp?v=4",
+    "image": "/images/people/umar-magomadov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/umar-magomadov.webp?v=4",
+        "src": "/images/people/umar-magomadov.webp?v=6",
         "caption": "Umar Magomadov (1977–2000)"
       }
     ],
@@ -5215,10 +5215,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/abu-ahmadov.webp?v=4",
+    "image": "/images/people/abu-ahmadov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/abu-ahmadov.webp?v=4",
+        "src": "/images/people/abu-ahmadov.webp?v=6",
         "caption": "Abu Ahmadov (1966–2001)"
       }
     ],
@@ -5239,10 +5239,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muslim-tsagarayev.webp?v=4",
+    "image": "/images/people/muslim-tsagarayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/muslim-tsagarayev.webp?v=4",
+        "src": "/images/people/muslim-tsagarayev.webp?v=6",
         "caption": "Müslim Tsagarayev (1982–2000)"
       }
     ],
@@ -5263,10 +5263,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/abu-tsagarayev.webp?v=4",
+    "image": "/images/people/abu-tsagarayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/abu-tsagarayev.webp?v=4",
+        "src": "/images/people/abu-tsagarayev.webp?v=6",
         "caption": "Abu Tsagarayev (1984–2000)"
       }
     ],
@@ -5287,10 +5287,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/isa-ahmadov.webp?v=4",
+    "image": "/images/people/isa-ahmadov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/isa-ahmadov.webp?v=4",
+        "src": "/images/people/isa-ahmadov.webp?v=6",
         "caption": "İsa Ahmadov (1978–2000)"
       }
     ],
@@ -5311,10 +5311,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/adlan-gazuyev.webp?v=4",
+    "image": "/images/people/adlan-gazuyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/adlan-gazuyev.webp?v=4",
+        "src": "/images/people/adlan-gazuyev.webp?v=6",
         "caption": "Adlan Gazuyev (1977–2000)"
       }
     ],
@@ -5335,10 +5335,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/valid-kagarmanov.webp?v=4",
+    "image": "/images/people/valid-kagarmanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/valid-kagarmanov.webp?v=4",
+        "src": "/images/people/valid-kagarmanov.webp?v=6",
         "caption": "Valid Kagarmanov (1964–2000)"
       }
     ],
@@ -5359,10 +5359,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/salaudin-kagarmanov.webp?v=4",
+    "image": "/images/people/salaudin-kagarmanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/salaudin-kagarmanov.webp?v=4",
+        "src": "/images/people/salaudin-kagarmanov.webp?v=6",
         "caption": "Salaudin Kagarmanov (1961–2000)"
       }
     ],
@@ -5383,10 +5383,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ruhmad-hadisov.webp?v=4",
+    "image": "/images/people/ruhmad-hadisov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ruhmad-hadisov.webp?v=4",
+        "src": "/images/people/ruhmad-hadisov.webp?v=6",
         "caption": "Ruhmad Hadisov (1974–1999)"
       }
     ],
@@ -5407,10 +5407,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ahmed-mediyev.webp?v=4",
+    "image": "/images/people/ahmed-mediyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ahmed-mediyev.webp?v=4",
+        "src": "/images/people/ahmed-mediyev.webp?v=6",
         "caption": "Ahmed Mediyev (1977–2000)"
       }
     ],
@@ -5431,10 +5431,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/zaurbek-gaysumov.webp?v=4",
+    "image": "/images/people/zaurbek-gaysumov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/zaurbek-gaysumov.webp?v=4",
+        "src": "/images/people/zaurbek-gaysumov.webp?v=6",
         "caption": "Zaurbek Gaysumov (1986–2008)"
       }
     ],
@@ -5455,10 +5455,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/cambulat-sadayev.webp?v=4",
+    "image": "/images/people/cambulat-sadayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/cambulat-sadayev.webp?v=4",
+        "src": "/images/people/cambulat-sadayev.webp?v=6",
         "caption": "Cambulat Sadayev (1973–2006)"
       }
     ],
@@ -5479,10 +5479,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/arbi-naduyev.webp?v=4",
+    "image": "/images/people/arbi-naduyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/arbi-naduyev.webp?v=4",
+        "src": "/images/people/arbi-naduyev.webp?v=6",
         "caption": "Arbi Naduyev (1966–2000)"
       }
     ],
@@ -5503,10 +5503,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/abdul-vahid-gapurayev.webp?v=4",
+    "image": "/images/people/abdul-vahid-gapurayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/abdul-vahid-gapurayev.webp?v=4",
+        "src": "/images/people/abdul-vahid-gapurayev.webp?v=6",
         "caption": "Abdul-Vahid Gapurayev (1972–1999)"
       }
     ],
@@ -5527,10 +5527,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/mohmad-baysultanov.webp?v=4",
+    "image": "/images/people/mohmad-baysultanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/mohmad-baysultanov.webp?v=4",
+        "src": "/images/people/mohmad-baysultanov.webp?v=6",
         "caption": "Mohmad Baysultanov (1975–2005)"
       }
     ],
@@ -5551,10 +5551,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aslambek-tuguzov.webp?v=4",
+    "image": "/images/people/aslambek-tuguzov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/aslambek-tuguzov.webp?v=4",
+        "src": "/images/people/aslambek-tuguzov.webp?v=6",
         "caption": "Aslambek Tuguzov (1972–2000)"
       }
     ],
@@ -5575,10 +5575,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/mikail-kurbanov.webp?v=4",
+    "image": "/images/people/mikail-kurbanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/mikail-kurbanov.webp?v=4",
+        "src": "/images/people/mikail-kurbanov.webp?v=6",
         "caption": "Mikail Kurbanov (1962–2000)"
       }
     ],
@@ -5599,10 +5599,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/isa-baharciyev.webp?v=4",
+    "image": "/images/people/isa-baharciyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/isa-baharciyev.webp?v=4",
+        "src": "/images/people/isa-baharciyev.webp?v=6",
         "caption": "İsa Baharçiyev (1974–2000)"
       }
     ],
@@ -5623,10 +5623,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/zelimhan-musayev.webp?v=4",
+    "image": "/images/people/zelimhan-musayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/zelimhan-musayev.webp?v=4",
+        "src": "/images/people/zelimhan-musayev.webp?v=6",
         "caption": "Zelimhan Musayev (1975–2000)"
       }
     ],
@@ -5647,10 +5647,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/said-sabayev.webp?v=4",
+    "image": "/images/people/said-sabayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/said-sabayev.webp?v=4",
+        "src": "/images/people/said-sabayev.webp?v=6",
         "caption": "Said Şabayev (1973–2000)"
       }
     ],
@@ -5671,10 +5671,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/badruddi-ganatov.webp?v=4",
+    "image": "/images/people/badruddi-ganatov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/badruddi-ganatov.webp?v=4",
+        "src": "/images/people/badruddi-ganatov.webp?v=6",
         "caption": "Badruddi Ganatov (1965–2000)"
       }
     ],
@@ -5695,10 +5695,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ilyas-mikayev.webp?v=4",
+    "image": "/images/people/ilyas-mikayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ilyas-mikayev.webp?v=4",
+        "src": "/images/people/ilyas-mikayev.webp?v=6",
         "caption": "İlyas Mikayev (1970–1996)"
       }
     ],
@@ -5719,10 +5719,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/bekhan-abastov.webp?v=4",
+    "image": "/images/people/bekhan-abastov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/bekhan-abastov.webp?v=4",
+        "src": "/images/people/bekhan-abastov.webp?v=6",
         "caption": "Bekhan Abastov (1974–2000)"
       }
     ],
@@ -5743,10 +5743,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/rustam-timarov.webp?v=4",
+    "image": "/images/people/rustam-timarov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/rustam-timarov.webp?v=4",
+        "src": "/images/people/rustam-timarov.webp?v=6",
         "caption": "Rustam Timarov (1975–1999)"
       }
     ],
@@ -5767,10 +5767,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/isa-tusayev.webp?v=4",
+    "image": "/images/people/isa-tusayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/isa-tusayev.webp?v=4",
+        "src": "/images/people/isa-tusayev.webp?v=6",
         "caption": "İsa Tuşayev (1974–2002)"
       }
     ],
@@ -5791,10 +5791,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hizar-irishanov.webp?v=4",
+    "image": "/images/people/hizar-irishanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/hizar-irishanov.webp?v=4",
+        "src": "/images/people/hizar-irishanov.webp?v=6",
         "caption": "Hizar İrishanov (1971–2001)"
       }
     ],
@@ -5815,10 +5815,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/emi-yunusov.webp?v=4",
+    "image": "/images/people/emi-yunusov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/emi-yunusov.webp?v=4",
+        "src": "/images/people/emi-yunusov.webp?v=6",
         "caption": "Emi Yunusov (1976–2001)"
       }
     ],
@@ -5839,10 +5839,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/abdul-vahid-dibirov.webp?v=4",
+    "image": "/images/people/abdul-vahid-dibirov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/abdul-vahid-dibirov.webp?v=4",
+        "src": "/images/people/abdul-vahid-dibirov.webp?v=6",
         "caption": "Abdul-Vahid Dibirov (1968–2000)"
       }
     ],
@@ -5863,10 +5863,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ismail-gayrbekov.webp?v=4",
+    "image": "/images/people/ismail-gayrbekov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ismail-gayrbekov.webp?v=4",
+        "src": "/images/people/ismail-gayrbekov.webp?v=6",
         "caption": "İsmail Gayrbekov (1975–2000)"
       }
     ],
@@ -5887,10 +5887,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/bislan-zakriyev.webp?v=4",
+    "image": "/images/people/bislan-zakriyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/bislan-zakriyev.webp?v=4",
+        "src": "/images/people/bislan-zakriyev.webp?v=6",
         "caption": "Bislan Zakriyev (1974–2002)"
       }
     ],
@@ -5911,10 +5911,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/zayndi-elgiriyev.webp?v=4",
+    "image": "/images/people/zayndi-elgiriyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/zayndi-elgiriyev.webp?v=4",
+        "src": "/images/people/zayndi-elgiriyev.webp?v=6",
         "caption": "Zayndi Elgiriyev (1977–2001)"
       }
     ],
@@ -5935,10 +5935,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ayub-caharov.webp?v=4",
+    "image": "/images/people/ayub-caharov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ayub-caharov.webp?v=4",
+        "src": "/images/people/ayub-caharov.webp?v=6",
         "caption": "Ayub Caharov (1964–1994)"
       }
     ],
@@ -5959,10 +5959,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ramazan-saritov.webp?v=4",
+    "image": "/images/people/ramazan-saritov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ramazan-saritov.webp?v=4",
+        "src": "/images/people/ramazan-saritov.webp?v=6",
         "caption": "Ramazan Saritov (1983–2012)"
       }
     ],
@@ -5983,10 +5983,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/murad-gisayev.webp?v=4",
+    "image": "/images/people/murad-gisayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/murad-gisayev.webp?v=4",
+        "src": "/images/people/murad-gisayev.webp?v=6",
         "caption": "Murad Gişayev (1978–2004)"
       }
     ],
@@ -6007,10 +6007,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hadid-dadayev.webp?v=4",
+    "image": "/images/people/hadid-dadayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/hadid-dadayev.webp?v=4",
+        "src": "/images/people/hadid-dadayev.webp?v=6",
         "caption": "Hadid Dadayev (1963–2001)"
       }
     ],
@@ -6031,10 +6031,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/leci-haciyev.webp?v=4",
+    "image": "/images/people/leci-haciyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/leci-haciyev.webp?v=4",
+        "src": "/images/people/leci-haciyev.webp?v=6",
         "caption": "Leçi Haciyev (1976–2000)"
       }
     ],
@@ -6055,10 +6055,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/sultan-hortsayev.webp?v=4",
+    "image": "/images/people/sultan-hortsayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/sultan-hortsayev.webp?v=4",
+        "src": "/images/people/sultan-hortsayev.webp?v=6",
         "caption": "Sultan Hortsayev (1973–2000)"
       }
     ],
@@ -6079,10 +6079,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ilyas-husparov.webp?v=4",
+    "image": "/images/people/ilyas-husparov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ilyas-husparov.webp?v=4",
+        "src": "/images/people/ilyas-husparov.webp?v=6",
         "caption": "İlyas Huşparov (1972–2000)"
       }
     ],
@@ -6103,10 +6103,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/imran-oysayev.webp?v=4",
+    "image": "/images/people/imran-oysayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/imran-oysayev.webp?v=4",
+        "src": "/images/people/imran-oysayev.webp?v=6",
         "caption": "İmran Oysayev (1966–2000)"
       }
     ],
@@ -6127,10 +6127,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/samhan-avdadayev.webp?v=4",
+    "image": "/images/people/samhan-avdadayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/samhan-avdadayev.webp?v=4",
+        "src": "/images/people/samhan-avdadayev.webp?v=6",
         "caption": "Şamhan Avdadayev (1984–2009)"
       }
     ],
@@ -6151,10 +6151,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hamzat-guloyev.webp?v=4",
+    "image": "/images/people/hamzat-guloyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/hamzat-guloyev.webp?v=4",
+        "src": "/images/people/hamzat-guloyev.webp?v=6",
         "caption": "Hamzat Guloyev (1983–2012)"
       }
     ],
@@ -6175,10 +6175,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/cingishan-temerkayev.webp?v=4",
+    "image": "/images/people/cingishan-temerkayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/cingishan-temerkayev.webp?v=4",
+        "src": "/images/people/cingishan-temerkayev.webp?v=6",
         "caption": "Çingishan Temerkayev (1985–2009)"
       }
     ],
@@ -6199,10 +6199,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muhammed-yaricev.webp?v=4",
+    "image": "/images/people/muhammed-yaricev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/muhammed-yaricev.webp?v=4",
+        "src": "/images/people/muhammed-yaricev.webp?v=6",
         "caption": "Muhammed Yarıçev (1976–2000)"
       }
     ],
@@ -6223,10 +6223,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aslan-aslahanov.webp?v=4",
+    "image": "/images/people/aslan-aslahanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/aslan-aslahanov.webp?v=4",
+        "src": "/images/people/aslan-aslahanov.webp?v=6",
         "caption": "Aslan Aslahanov (1977–2000)"
       }
     ],
@@ -6247,10 +6247,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/anzor-tsurayev.webp?v=4",
+    "image": "/images/people/anzor-tsurayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/anzor-tsurayev.webp?v=4",
+        "src": "/images/people/anzor-tsurayev.webp?v=6",
         "caption": "Anzor Tsurayev (1988–2014)"
       }
     ],
@@ -6271,10 +6271,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aslan-dukuzov.webp?v=4",
+    "image": "/images/people/aslan-dukuzov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/aslan-dukuzov.webp?v=4",
+        "src": "/images/people/aslan-dukuzov.webp?v=6",
         "caption": "Aslan Dukuzov (1973–2002)"
       }
     ],
@@ -6295,10 +6295,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muhammed-salah-abubakarov.webp?v=4",
+    "image": "/images/people/muhammed-salah-abubakarov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/muhammed-salah-abubakarov.webp?v=4",
+        "src": "/images/people/muhammed-salah-abubakarov.webp?v=6",
         "caption": "Muhammed-Salah Abubakarov (1975–2002)"
       }
     ],
@@ -6319,10 +6319,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/salman-aspanov.webp?v=4",
+    "image": "/images/people/salman-aspanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/salman-aspanov.webp?v=4",
+        "src": "/images/people/salman-aspanov.webp?v=6",
         "caption": "Salman Aspanov (1980–2002)"
       }
     ],
@@ -6343,10 +6343,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/yunus-vagapov.webp?v=4",
+    "image": "/images/people/yunus-vagapov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/yunus-vagapov.webp?v=4",
+        "src": "/images/people/yunus-vagapov.webp?v=6",
         "caption": "Yunus Vagapov (1975–2001)"
       }
     ],
@@ -6367,10 +6367,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/rustam-betalgeriyev.webp?v=4",
+    "image": "/images/people/rustam-betalgeriyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/rustam-betalgeriyev.webp?v=4",
+        "src": "/images/people/rustam-betalgeriyev.webp?v=6",
         "caption": "Rustam Betalgeriyev (1976–2001)"
       }
     ],
@@ -6391,10 +6391,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ibrahim-canhotov.webp?v=4",
+    "image": "/images/people/ibrahim-canhotov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ibrahim-canhotov.webp?v=4",
+        "src": "/images/people/ibrahim-canhotov.webp?v=6",
         "caption": "İbrahim Canhotov (1978–2003)"
       }
     ],
@@ -6415,10 +6415,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/gilani-susuyev.webp?v=4",
+    "image": "/images/people/gilani-susuyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/gilani-susuyev.webp?v=4",
+        "src": "/images/people/gilani-susuyev.webp?v=6",
         "caption": "Gilani Susuyev (1965–1996)"
       }
     ],
@@ -6439,10 +6439,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/dalambek-bahayev.webp?v=4",
+    "image": "/images/people/dalambek-bahayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/dalambek-bahayev.webp?v=4",
+        "src": "/images/people/dalambek-bahayev.webp?v=6",
         "caption": "Dalambek Bahayev (1968–1996)"
       }
     ],
@@ -6463,10 +6463,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/rizvan-daayev.webp?v=4",
+    "image": "/images/people/rizvan-daayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/rizvan-daayev.webp?v=4",
+        "src": "/images/people/rizvan-daayev.webp?v=6",
         "caption": "Rizvan Daayev (1964–2000)"
       }
     ],
@@ -6487,10 +6487,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hamzat-gaurgasvili.webp?v=4",
+    "image": "/images/people/hamzat-gaurgasvili.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/hamzat-gaurgasvili.webp?v=4",
+        "src": "/images/people/hamzat-gaurgasvili.webp?v=6",
         "caption": "Hamzat Gaurgaşvili (1971–1995)"
       }
     ],
@@ -6511,10 +6511,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ruslan-elmurzayev.webp?v=4",
+    "image": "/images/people/ruslan-elmurzayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ruslan-elmurzayev.webp?v=4",
+        "src": "/images/people/ruslan-elmurzayev.webp?v=6",
         "caption": "Ruslan Elmurzayev (1968–1999)"
       }
     ],
@@ -6535,10 +6535,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muhammed-nauzov.webp?v=4",
+    "image": "/images/people/muhammed-nauzov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/muhammed-nauzov.webp?v=4",
+        "src": "/images/people/muhammed-nauzov.webp?v=6",
         "caption": "Muhammed Nauzov (1978–2006)"
       }
     ],
@@ -6559,10 +6559,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/adam-husalayev.webp?v=4",
+    "image": "/images/people/adam-husalayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/adam-husalayev.webp?v=4",
+        "src": "/images/people/adam-husalayev.webp?v=6",
         "caption": "Adam Huşalayev (1982–2013)"
       }
     ],
@@ -6583,10 +6583,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/yunus-ahmadov.webp?v=4",
+    "image": "/images/people/yunus-ahmadov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/yunus-ahmadov.webp?v=4",
+        "src": "/images/people/yunus-ahmadov.webp?v=6",
         "caption": "Yunus Ahmadov (1978–2007)"
       }
     ],
@@ -6607,10 +6607,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/dires-dadayev.webp?v=4",
+    "image": "/images/people/dires-dadayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/dires-dadayev.webp?v=4",
+        "src": "/images/people/dires-dadayev.webp?v=6",
         "caption": "Dires Dadayev (1976–2001)"
       }
     ],
@@ -6631,10 +6631,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/uvays-ahmadov.webp?v=4",
+    "image": "/images/people/uvays-ahmadov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/uvays-ahmadov.webp?v=4",
+        "src": "/images/people/uvays-ahmadov.webp?v=6",
         "caption": "Uvays Ahmadov (1975–2001)"
       }
     ],
@@ -6655,10 +6655,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/movladi-magamadov.webp?v=4",
+    "image": "/images/people/movladi-magamadov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/movladi-magamadov.webp?v=4",
+        "src": "/images/people/movladi-magamadov.webp?v=6",
         "caption": "Movladi Magamadov (1974–2006)"
       }
     ],
@@ -6679,10 +6679,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/yunus-emri.webp?v=4",
+    "image": "/images/people/yunus-emri.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/yunus-emri.webp?v=4",
+        "src": "/images/people/yunus-emri.webp?v=6",
         "caption": "Yunus Emri (1978–2003)"
       }
     ],
@@ -6703,10 +6703,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ruslan-bibulatov.webp?v=4",
+    "image": "/images/people/ruslan-bibulatov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ruslan-bibulatov.webp?v=4",
+        "src": "/images/people/ruslan-bibulatov.webp?v=6",
         "caption": "Ruslan Bibulatov (1977–1999)"
       }
     ],
@@ -6727,10 +6727,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/zayndi-ibayev.webp?v=4",
+    "image": "/images/people/zayndi-ibayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/zayndi-ibayev.webp?v=4",
+        "src": "/images/people/zayndi-ibayev.webp?v=6",
         "caption": "Zayndi İbayev (1968–2000)"
       }
     ],
@@ -6751,10 +6751,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/adam-movsarov.webp?v=4",
+    "image": "/images/people/adam-movsarov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/adam-movsarov.webp?v=4",
+        "src": "/images/people/adam-movsarov.webp?v=6",
         "caption": "Adam Movsarov (1976–2000)"
       }
     ],
@@ -6775,10 +6775,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muhammed-batsiyev.webp?v=4",
+    "image": "/images/people/muhammed-batsiyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/muhammed-batsiyev.webp?v=4",
+        "src": "/images/people/muhammed-batsiyev.webp?v=6",
         "caption": "Muhammed Batsiyev (1974–2000)"
       }
     ],
@@ -6799,10 +6799,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/timur-batalov.webp?v=4",
+    "image": "/images/people/timur-batalov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/timur-batalov.webp?v=4",
+        "src": "/images/people/timur-batalov.webp?v=6",
         "caption": "Timur Batalov (1979–2000)"
       }
     ],
@@ -6823,10 +6823,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ahmed-haciyev.webp?v=4",
+    "image": "/images/people/ahmed-haciyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ahmed-haciyev.webp?v=4",
+        "src": "/images/people/ahmed-haciyev.webp?v=6",
         "caption": "Ahmed Haciyev (1977–2000)"
       }
     ],
@@ -6847,10 +6847,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/sayd-hasan-sabayev.webp?v=4",
+    "image": "/images/people/sayd-hasan-sabayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/sayd-hasan-sabayev.webp?v=4",
+        "src": "/images/people/sayd-hasan-sabayev.webp?v=6",
         "caption": "Sayd-Hasan Şabayev (1975–2000)"
       }
     ],
@@ -6871,10 +6871,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/rizvan-akuyev.webp?v=4",
+    "image": "/images/people/rizvan-akuyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/rizvan-akuyev.webp?v=4",
+        "src": "/images/people/rizvan-akuyev.webp?v=6",
         "caption": "Rizvan Akuyev (1983–2009)"
       }
     ],
@@ -6895,10 +6895,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hamzat-batayev.webp?v=4",
+    "image": "/images/people/hamzat-batayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/hamzat-batayev.webp?v=4",
+        "src": "/images/people/hamzat-batayev.webp?v=6",
         "caption": "Hamzat Batayev (1966–2000)"
       }
     ],
@@ -6919,10 +6919,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ahmed-labazanov.webp?v=4",
+    "image": "/images/people/ahmed-labazanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ahmed-labazanov.webp?v=4",
+        "src": "/images/people/ahmed-labazanov.webp?v=6",
         "caption": "Ahmed Labazanov (1968–1999)"
       }
     ],
@@ -6943,10 +6943,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/yusi-hantiyev.webp?v=4",
+    "image": "/images/people/yusi-hantiyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/yusi-hantiyev.webp?v=4",
+        "src": "/images/people/yusi-hantiyev.webp?v=6",
         "caption": "Yusi Hantiyev (1954–1995)"
       }
     ],
@@ -6967,10 +6967,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/deni-sultanov.webp?v=4",
+    "image": "/images/people/deni-sultanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/deni-sultanov.webp?v=4",
+        "src": "/images/people/deni-sultanov.webp?v=6",
         "caption": "Deni Sultanov (1977–2000)"
       }
     ],
@@ -6991,10 +6991,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/islam-zalautdinov.webp?v=4",
+    "image": "/images/people/islam-zalautdinov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/islam-zalautdinov.webp?v=4",
+        "src": "/images/people/islam-zalautdinov.webp?v=6",
         "caption": "İslam Zalautdinov (1978–2002)"
       }
     ],
@@ -7015,10 +7015,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/turpal-ali-camalhanov.webp?v=4",
+    "image": "/images/people/turpal-ali-camalhanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/turpal-ali-camalhanov.webp?v=4",
+        "src": "/images/people/turpal-ali-camalhanov.webp?v=6",
         "caption": "Turpal-Ali Camalhanov (1990–2009)"
       }
     ],
@@ -7039,10 +7039,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/aslambek-bacayev.webp?v=4",
+    "image": "/images/people/aslambek-bacayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/aslambek-bacayev.webp?v=4",
+        "src": "/images/people/aslambek-bacayev.webp?v=6",
         "caption": "Aslambek Baçayev (1978–2002)"
       }
     ],
@@ -7063,10 +7063,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hamid-mahamasev.webp?v=4",
+    "image": "/images/people/hamid-mahamasev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/hamid-mahamasev.webp?v=4",
+        "src": "/images/people/hamid-mahamasev.webp?v=6",
         "caption": "Hamid Mahamaşev (1965–2000)"
       }
     ],
@@ -7087,10 +7087,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/isa-canaraliyev.webp?v=4",
+    "image": "/images/people/isa-canaraliyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/isa-canaraliyev.webp?v=4",
+        "src": "/images/people/isa-canaraliyev.webp?v=6",
         "caption": "İsa Canaraliyev (1980–2000)"
       }
     ],
@@ -7111,10 +7111,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/musa-magomadov.webp?v=4",
+    "image": "/images/people/musa-magomadov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/musa-magomadov.webp?v=4",
+        "src": "/images/people/musa-magomadov.webp?v=6",
         "caption": "Musa Magomadov (1980–2000)"
       }
     ],
@@ -7135,10 +7135,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/movldi-islamov.webp?v=4",
+    "image": "/images/people/movldi-islamov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/movldi-islamov.webp?v=4",
+        "src": "/images/people/movldi-islamov.webp?v=6",
         "caption": "Movldi İslamov (1958–2000)"
       }
     ],
@@ -7159,10 +7159,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/arbi-visayev.webp?v=4",
+    "image": "/images/people/arbi-visayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/arbi-visayev.webp?v=4",
+        "src": "/images/people/arbi-visayev.webp?v=6",
         "caption": "Arbi Visayev (1973–2000)"
       }
     ],
@@ -7183,10 +7183,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/vahid-visayev.webp?v=4",
+    "image": "/images/people/vahid-visayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/vahid-visayev.webp?v=4",
+        "src": "/images/people/vahid-visayev.webp?v=6",
         "caption": "Vahid Visayev (1974–2000)"
       }
     ],
@@ -7207,10 +7207,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/hamzat-bamatgiriyev.webp?v=4",
+    "image": "/images/people/hamzat-bamatgiriyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/hamzat-bamatgiriyev.webp?v=4",
+        "src": "/images/people/hamzat-bamatgiriyev.webp?v=6",
         "caption": "Hamzat Bamatgiriyev (1981–2000)"
       }
     ],
@@ -7231,10 +7231,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ebubekir-magomadov.webp?v=4",
+    "image": "/images/people/ebubekir-magomadov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ebubekir-magomadov.webp?v=4",
+        "src": "/images/people/ebubekir-magomadov.webp?v=6",
         "caption": "Ebubekir Magomadov (1971–2000)"
       }
     ],
@@ -7255,10 +7255,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/apti-cukayev.webp?v=4",
+    "image": "/images/people/apti-cukayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/apti-cukayev.webp?v=4",
+        "src": "/images/people/apti-cukayev.webp?v=6",
         "caption": "Apti Çukayev (1978–2000)"
       }
     ],
@@ -7279,10 +7279,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ilyas-umhayev.webp?v=4",
+    "image": "/images/people/ilyas-umhayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ilyas-umhayev.webp?v=4",
+        "src": "/images/people/ilyas-umhayev.webp?v=6",
         "caption": "İlyas Umhayev (1977–2000)"
       }
     ],
@@ -7303,10 +7303,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/idris-amayev.webp?v=4",
+    "image": "/images/people/idris-amayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/idris-amayev.webp?v=4",
+        "src": "/images/people/idris-amayev.webp?v=6",
         "caption": "İdris Amayev (1975–2000)"
       }
     ],
@@ -7327,10 +7327,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/umar-borcasvili.webp?v=4",
+    "image": "/images/people/umar-borcasvili.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/umar-borcasvili.webp?v=4",
+        "src": "/images/people/umar-borcasvili.webp?v=6",
         "caption": "Umar Borçaşvili (1967–2000)"
       }
     ],
@@ -7351,10 +7351,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/has-muhammed-edilsultanov.webp?v=4",
+    "image": "/images/people/has-muhammed-edilsultanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/has-muhammed-edilsultanov.webp?v=4",
+        "src": "/images/people/has-muhammed-edilsultanov.webp?v=6",
         "caption": "Has-Muhammed Edilsultanov (1976–2000)"
       }
     ],
@@ -7375,10 +7375,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/saaman-magomadov.webp?v=4",
+    "image": "/images/people/saaman-magomadov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/saaman-magomadov.webp?v=4",
+        "src": "/images/people/saaman-magomadov.webp?v=6",
         "caption": "Şaaman Magomadov (1973–1994)"
       }
     ],
@@ -7399,10 +7399,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/zambek-isayev.webp?v=4",
+    "image": "/images/people/zambek-isayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/zambek-isayev.webp?v=4",
+        "src": "/images/people/zambek-isayev.webp?v=6",
         "caption": "Zambek İsayev (1960–2000)"
       }
     ],
@@ -7423,10 +7423,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/islam-baysangurov.webp?v=4",
+    "image": "/images/people/islam-baysangurov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/islam-baysangurov.webp?v=4",
+        "src": "/images/people/islam-baysangurov.webp?v=6",
         "caption": "İslam Baysangurov (1978–2000)"
       }
     ],
@@ -7447,10 +7447,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/balavdi-movsarov.webp?v=4",
+    "image": "/images/people/balavdi-movsarov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/balavdi-movsarov.webp?v=4",
+        "src": "/images/people/balavdi-movsarov.webp?v=6",
         "caption": "Balavdi Movsarov (1974–2000)"
       }
     ],
@@ -7471,10 +7471,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/yusuf-gobi.webp?v=4",
+    "image": "/images/people/yusuf-gobi.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/yusuf-gobi.webp?v=4",
+        "src": "/images/people/yusuf-gobi.webp?v=6",
         "caption": "Yusuf Gobi (1972–2000)"
       }
     ],
@@ -7495,10 +7495,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ismail-razakov.webp?v=4",
+    "image": "/images/people/ismail-razakov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ismail-razakov.webp?v=4",
+        "src": "/images/people/ismail-razakov.webp?v=6",
         "caption": "İsmail Razakov (1969–2000)"
       }
     ],
@@ -7519,10 +7519,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/rasid-molayev.webp?v=4",
+    "image": "/images/people/rasid-molayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/rasid-molayev.webp?v=4",
+        "src": "/images/people/rasid-molayev.webp?v=6",
         "caption": "Raşid Molayev (1960–2021)"
       }
     ],
@@ -7543,10 +7543,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/isa-bazurkayev.webp?v=4",
+    "image": "/images/people/isa-bazurkayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/isa-bazurkayev.webp?v=4",
+        "src": "/images/people/isa-bazurkayev.webp?v=6",
         "caption": "İsa Bazurkayev (1979–2021)"
       }
     ],
@@ -7567,10 +7567,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/vahit-darsayev.webp?v=4",
+    "image": "/images/people/vahit-darsayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/vahit-darsayev.webp?v=4",
+        "src": "/images/people/vahit-darsayev.webp?v=6",
         "caption": "Vahit Darşayev (1987–2021)"
       }
     ],
@@ -7591,10 +7591,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/samhan-saraliyev.webp?v=4",
+    "image": "/images/people/samhan-saraliyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/samhan-saraliyev.webp?v=4",
+        "src": "/images/people/samhan-saraliyev.webp?v=6",
         "caption": "Şamhan Saraliyev (1996–2021)"
       }
     ],
@@ -7615,10 +7615,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/turpal-ali-mejidov.webp?v=4",
+    "image": "/images/people/turpal-ali-mejidov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/turpal-ali-mejidov.webp?v=4",
+        "src": "/images/people/turpal-ali-mejidov.webp?v=6",
         "caption": "Turpal-Ali Mejidov (1990–2026)"
       }
     ],
@@ -7639,10 +7639,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/leca-cemnigov.webp?v=4",
+    "image": "/images/people/leca-cemnigov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/leca-cemnigov.webp?v=4",
+        "src": "/images/people/leca-cemnigov.webp?v=6",
         "caption": "Leça Cemnigov (1972–2000)"
       }
     ],
@@ -7663,10 +7663,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/yusuf-temirhanov.webp?v=4",
+    "image": "/images/people/yusuf-temirhanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/yusuf-temirhanov.webp?v=4",
+        "src": "/images/people/yusuf-temirhanov.webp?v=6",
         "caption": "Yusuf Temirhanov (1972–2018)"
       }
     ],
@@ -7687,10 +7687,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/apti-cabrailov.webp?v=4",
+    "image": "/images/people/apti-cabrailov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/apti-cabrailov.webp?v=4",
+        "src": "/images/people/apti-cabrailov.webp?v=6",
         "caption": "Apti Cabrailov (1975–2002)"
       }
     ],
@@ -7711,10 +7711,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/rustam-labazanov.webp?v=4",
+    "image": "/images/people/rustam-labazanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/rustam-labazanov.webp?v=4",
+        "src": "/images/people/rustam-labazanov.webp?v=6",
         "caption": "Rustam Labazanov (1976–2002)"
       }
     ],
@@ -7735,10 +7735,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ilyas-zakriyev.webp?v=4",
+    "image": "/images/people/ilyas-zakriyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ilyas-zakriyev.webp?v=4",
+        "src": "/images/people/ilyas-zakriyev.webp?v=6",
         "caption": "İlyas Zakriyev (1980–2002)"
       }
     ],
@@ -7759,10 +7759,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/emir-abuzar.webp?v=4",
+    "image": "/images/people/emir-abuzar.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/emir-abuzar.webp?v=4",
+        "src": "/images/people/emir-abuzar.webp?v=6",
         "caption": "Emir Abuzar (1978–2004)"
       }
     ],
@@ -7783,10 +7783,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/olhazar-bibulatov.webp?v=4",
+    "image": "/images/people/olhazar-bibulatov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/olhazar-bibulatov.webp?v=4",
+        "src": "/images/people/olhazar-bibulatov.webp?v=6",
         "caption": "Olhazar Bibulatov (1955–1995)"
       }
     ],
@@ -7807,10 +7807,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/arsen-mejidov.webp?v=4",
+    "image": "/images/people/arsen-mejidov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/arsen-mejidov.webp?v=4",
+        "src": "/images/people/arsen-mejidov.webp?v=6",
         "caption": "Arsen Mejidov (1984–2004)"
       }
     ],
@@ -7831,10 +7831,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/kazbek-gisnurkayev.webp?v=4",
+    "image": "/images/people/kazbek-gisnurkayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/kazbek-gisnurkayev.webp?v=4",
+        "src": "/images/people/kazbek-gisnurkayev.webp?v=6",
         "caption": "Kazbek Gişnurkayev (1982–2002)"
       }
     ],
@@ -7855,10 +7855,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muhammed-guluyev.webp?v=4",
+    "image": "/images/people/muhammed-guluyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/muhammed-guluyev.webp?v=4",
+        "src": "/images/people/muhammed-guluyev.webp?v=6",
         "caption": "Muhammed Guluyev (1977–2002)"
       }
     ],
@@ -7879,10 +7879,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/ismail-eskiyev.webp?v=4",
+    "image": "/images/people/ismail-eskiyev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/ismail-eskiyev.webp?v=4",
+        "src": "/images/people/ismail-eskiyev.webp?v=6",
         "caption": "İsmail Eskiyev (1973–2003)"
       }
     ],
@@ -7903,10 +7903,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/apti-takayev.webp?v=4",
+    "image": "/images/people/apti-takayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/apti-takayev.webp?v=4",
+        "src": "/images/people/apti-takayev.webp?v=6",
         "caption": "Apti Takayev (1968–1995)"
       }
     ],
@@ -7927,10 +7927,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/idris-bakarov.webp?v=4",
+    "image": "/images/people/idris-bakarov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/idris-bakarov.webp?v=4",
+        "src": "/images/people/idris-bakarov.webp?v=6",
         "caption": "İdris Bakarov (1964–1999)"
       }
     ],
@@ -7951,10 +7951,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/timur-aslambekov.webp?v=4",
+    "image": "/images/people/timur-aslambekov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/timur-aslambekov.webp?v=4",
+        "src": "/images/people/timur-aslambekov.webp?v=6",
         "caption": "Timur Aslambekov (1981–2005)"
       }
     ],
@@ -7975,10 +7975,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muhammed-tagirov.webp?v=4",
+    "image": "/images/people/muhammed-tagirov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/muhammed-tagirov.webp?v=4",
+        "src": "/images/people/muhammed-tagirov.webp?v=6",
         "caption": "Muhammed Tagirov (1977–2001)"
       }
     ],
@@ -7999,10 +7999,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/zelim-elmurzayev.webp?v=4",
+    "image": "/images/people/zelim-elmurzayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/zelim-elmurzayev.webp?v=4",
+        "src": "/images/people/zelim-elmurzayev.webp?v=6",
         "caption": "Zelim Elmurzayev (1979–2004)"
       }
     ],
@@ -8023,10 +8023,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/islam-lecayev.webp?v=4",
+    "image": "/images/people/islam-lecayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/islam-lecayev.webp?v=4",
+        "src": "/images/people/islam-lecayev.webp?v=6",
         "caption": "İslam Leçayev (1984–2002)"
       }
     ],
@@ -8047,10 +8047,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/muhammed-denilhanov.webp?v=4",
+    "image": "/images/people/muhammed-denilhanov.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/muhammed-denilhanov.webp?v=4",
+        "src": "/images/people/muhammed-denilhanov.webp?v=6",
         "caption": "Muhammed Denilhanov (1974–2000)"
       }
     ],
@@ -8071,10 +8071,10 @@ export const PEOPLE: Person[] = [
     "birthPlace": "Çeçenya",
     "deathPlace": "Çeçenya",
     "center": "Çeçenya",
-    "image": "/images/people/arsen-tsumayev.webp?v=4",
+    "image": "/images/people/arsen-tsumayev.webp?v=6",
     "gallery": [
       {
-        "src": "/images/people/arsen-tsumayev.webp?v=4",
+        "src": "/images/people/arsen-tsumayev.webp?v=6",
         "caption": "Arsen Tsumayev (1981–2004)"
       }
     ],
