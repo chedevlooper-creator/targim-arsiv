@@ -31,7 +31,7 @@ function CollectionDirectory({
   onSelect?: (index: number) => void;
 }) {
   return (
-    <nav aria-label="Bölümler" className="collection-directory">
+    <nav aria-label="Bölümler" className="home-container collection-directory">
       <ul className="collection-directory-grid">
         {items.map((item, index) => (
           <li key={item.href}>
@@ -46,20 +46,22 @@ function CollectionDirectory({
                   src={item.image}
                   alt=""
                   fill
-                  sizes="(max-width: 639px) 60vw, (max-width: 1023px) 35vw, 24vw"
+                  sizes="(max-width: 639px) calc(100vw - 40px), (max-width: 1023px) 50vw, 33vw"
                   className="object-cover"
                 />
               </span>
-              <span className="collection-entry-overline">
-                <span className="collection-entry-index">{String(index + 1).padStart(2, "0")}</span>
-                <span>{COLLECTION_LABELS[index]}</span>
-              </span>
               <span className="collection-entry-copy">
+                <span className="collection-entry-overline">
+                  <span className="collection-entry-index">{String(index + 1).padStart(2, "0")}</span>
+                  <span>{COLLECTION_LABELS[index]}</span>
+                </span>
                 <span className="collection-entry-title">{item.title}</span>
-                <span className="collection-entry-meta">{item.sub}</span>
-              </span>
-              <span className="collection-entry-arrow" aria-hidden="true">
-                <ArrowUpRight size={20} strokeWidth={1.4} />
+                <span className="collection-entry-footer">
+                  <span className="collection-entry-meta">{item.sub}</span>
+                  <span className="collection-entry-arrow" aria-hidden="true">
+                    <ArrowUpRight size={19} strokeWidth={1.4} />
+                  </span>
+                </span>
               </span>
               <span className="collection-entry-line" aria-hidden="true" />
             </Link>
@@ -470,17 +472,18 @@ function AnimatedReel({ items }: { items: ReelItem[] }) {
 
   return (
     <section aria-labelledby="bolumler" className="relative border-t border-white/10 bg-ink py-16 md:py-24">
-      <div className="relative z-10 mx-auto max-w-[1500px] px-5 text-center md:px-12">
+      <div className="home-container relative z-10 text-center">
         <p className="eyebrow">Keşif Dizini · 6 Koleksiyon</p>
         <h2
           id="bolumler"
-          className="crt-glow mt-3 font-serif text-[2.6rem] leading-tight font-medium text-parchment md:text-[3.8rem]"
+          className="collection-heading"
         >
           Nereden başlamak istersiniz?
         </h2>
       </div>
 
-      <div className="relative mt-4 h-[330px] w-full select-none sm:h-[390px] md:h-[450px]">
+      <div className="home-container collection-reel-shell">
+      <div className="collection-reel-stage select-none">
         <canvas
           ref={canvasRef}
           aria-label="3B Arşiv Film Şeridi — döndürmek için fareyle sürükleyin"
@@ -490,7 +493,7 @@ function AnimatedReel({ items }: { items: ReelItem[] }) {
         />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink via-transparent to-ink" />
 
-        <div className="pointer-events-none absolute inset-x-0 bottom-3 z-10 flex items-center justify-center gap-3">
+        <div className="collection-reel-controls">
           <button
             type="button"
             onClick={() => stepRef.current(-1)}
@@ -513,6 +516,7 @@ function AnimatedReel({ items }: { items: ReelItem[] }) {
         </div>
       </div>
 
+      </div>
       <CollectionDirectory items={items} active={active} onSelect={show} />
     </section>
   );
@@ -524,7 +528,7 @@ function PlainReel({ items }: { items: ReelItem[] }) {
     <section aria-labelledby="bolumler" className="bg-ink py-16">
       <h2
         id="bolumler"
-        className="crt-glow text-center font-serif text-[2.6rem] leading-tight font-medium text-parchment md:text-[3.6rem]"
+        className="home-container collection-heading text-center"
       >
         Nereden başlamak istersiniz?
       </h2>

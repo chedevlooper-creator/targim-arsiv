@@ -91,32 +91,29 @@ export default function Home() {
         </div>
 
         {/* Alt Hızlı Özet Şeridi */}
-        <div className="relative mx-auto w-full max-w-[1500px] px-5 pb-8 md:px-12">
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <div className="home-container home-stats-wrap">
+          <nav className="home-stats" aria-label="Koleksiyon özeti">
             {[
-              { href: "/kisiler", num: PEOPLE.length, label: "Tarihi Portre ve Biyografi" },
-              { href: "/arsiv", num: DOCS.length, label: "Birincil Arşiv Belgesi" },
-              { href: "/harita", num: PLACES.length, label: "3B Kule ve Coğrafi Nokta" },
-              { href: "/sergiler", num: EXHIBITIONS.length, label: "Küratöryel Dijital Sergi" },
+              { href: "/kisiler", num: PEOPLE.length, label: "Portre ve biyografi" },
+              { href: "/arsiv", num: DOCS.length, label: "Arşiv belgesi" },
+              { href: "/harita", num: PLACES.length, label: "3B coğrafi nokta" },
+              { href: "/sergiler", num: EXHIBITIONS.length, label: "Tematik sergi" },
             ].map((stat) => (
               <Link
                 key={stat.href}
                 href={stat.href}
-                className="archive-stat group flex items-center justify-between border border-white/12 px-4 py-4 backdrop-blur-sm transition"
+                className="home-stat"
               >
-                <div>
-                  <span className="block font-serif text-2xl leading-none font-semibold text-gold-light md:text-3xl">
+                <span className="home-stat-top">
+                  <span className="home-stat-number">
                     {stat.num}
                   </span>
-                  <span className="mt-1 block text-[0.7rem] text-white/70">{stat.label}</span>
-                </div>
-                <ArrowRight
-                  size={14}
-                  className="text-white/40 transition-transform group-hover:translate-x-0.5 group-hover:text-gold-light"
-                />
+                  <ArrowRight size={15} aria-hidden="true" />
+                </span>
+                <span className="home-stat-label">{stat.label}</span>
               </Link>
             ))}
-          </div>
+          </nav>
         </div>
       </section>
 
