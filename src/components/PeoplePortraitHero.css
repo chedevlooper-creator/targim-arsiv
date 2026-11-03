@@ -1,0 +1,195 @@
+.people-portrait-hero {
+  padding: 106px 0 40px;
+  background: var(--color-ink);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--color-white) 10%, transparent);
+}
+
+.people-portrait-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.people-portrait-count {
+  color: var(--color-mist);
+  font: 10px var(--font-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.people-portrait-viewport {
+  --spread: 1px;
+  --card-width: 210px;
+  position: relative;
+  height: 328px;
+  max-width: 1500px;
+  margin: 8px auto 0;
+  overflow: hidden;
+  touch-action: pan-y;
+  cursor: grab;
+  user-select: none;
+}
+
+.people-portrait-viewport[data-dragging="true"] {
+  cursor: grabbing;
+}
+.people-portrait-viewport:focus-visible {
+  outline: 1px solid var(--color-gold);
+  outline-offset: -4px;
+}
+
+.people-portrait-scene {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  perspective: 1400px;
+  transform-style: preserve-3d;
+  transform: translateX(var(--drag, 0px));
+}
+
+.people-portrait-card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: var(--card-width);
+  height: calc(var(--card-width) * 1.25);
+  margin-left: calc(var(--card-width) / -2);
+  margin-top: calc(var(--card-width) * -0.625);
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--color-white) 16%, transparent);
+  border-radius: var(--radius-2xl);
+  background: var(--color-panel);
+  opacity: var(--card-opacity);
+  transform: translate3d(
+      calc(var(--card-x) * var(--spread)),
+      0,
+      var(--card-depth)
+    )
+    rotateY(var(--card-angle)) scale(var(--card-scale));
+  transition:
+    transform 0.6s cubic-bezier(0.2, 0.65, 0.3, 1),
+    opacity 0.45s ease,
+    border-color 0.25s ease;
+  backface-visibility: hidden;
+  -webkit-user-drag: none;
+}
+
+.people-portrait-card[data-selected="true"] {
+  border-color: var(--color-gold);
+}
+.people-portrait-card img {
+  pointer-events: none;
+}
+
+.people-portrait-selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 0 20px;
+  min-height: 52px;
+}
+
+.people-portrait-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 280px;
+  min-width: 0;
+  text-align: center;
+}
+
+.people-portrait-caption > a {
+  max-width: 100%;
+  color: var(--color-parchment);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.people-portrait-caption > a:hover {
+  color: var(--color-gold-light);
+}
+.people-portrait-caption > span {
+  font: 10px var(--font-mono);
+  color: var(--color-mist);
+}
+
+.people-portrait-intro {
+  margin-top: 24px;
+  text-align: center;
+}
+.people-portrait-intro h1 {
+  margin-top: 8px;
+  color: var(--color-parchment);
+  font-family: var(--font-serif);
+  font-size: clamp(38px, 4.5vw, 60px);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+.people-portrait-summary {
+  max-width: 640px;
+  margin: 12px auto 20px;
+  color: var(--color-mist);
+  font-size: 14px;
+  line-height: 1.8;
+  text-wrap: pretty;
+}
+
+@media (max-width: 1023px) {
+  .people-portrait-viewport {
+    --spread: 0.8px;
+    --card-width: 190px;
+    height: 304px;
+  }
+}
+
+@media (max-width: 639px) {
+  .people-portrait-hero {
+    padding-top: 96px;
+    padding-bottom: 32px;
+  }
+  .people-portrait-meta nav {
+    font-size: 11px;
+  }
+  .people-portrait-count {
+    font-size: 8px;
+  }
+  .people-portrait-viewport {
+    --spread: 0.58px;
+    --card-width: 150px;
+    height: 252px;
+    margin-top: 16px;
+  }
+  .people-portrait-selection {
+    gap: 16px;
+  }
+  .people-portrait-caption {
+    width: 200px;
+  }
+  .people-portrait-caption > a {
+    font-size: 13px;
+  }
+  .people-portrait-intro {
+    margin-top: 20px;
+  }
+  .people-portrait-intro h1 {
+    font-size: 38px;
+  }
+  .people-portrait-summary {
+    font-size: 13px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .people-portrait-card {
+    transition: none;
+  }
+}
