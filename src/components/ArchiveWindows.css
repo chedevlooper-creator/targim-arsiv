@@ -1,0 +1,366 @@
+/* Shared window frame: heading, one content viewport, and a separate footer. */
+.archive-dialog {
+  color: var(--color-parchment);
+  background: var(--color-night);
+  border-color: color-mix(in srgb, var(--color-white) 16%, transparent);
+  border-radius: 16px;
+  box-shadow: 0 24px 80px color-mix(in srgb, var(--color-ink) 75%, transparent);
+}
+.archive-dialog::backdrop {
+  background: color-mix(in srgb, var(--color-ink) 78%, transparent);
+  backdrop-filter: blur(4px);
+}
+.archive-dialog .dialog-heading {
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  border-color: color-mix(in srgb, var(--color-white) 10%, transparent);
+  background: var(--color-night);
+}
+.archive-dialog .dialog-heading h2 {
+  margin-top: 4px;
+  font-size: 30px;
+}
+.archive-dialog .dialog-eyebrow {
+  color: var(--color-gold);
+  font-size: 10px;
+}
+.archive-dialog .dialog-heading .icon-button {
+  margin: 0;
+}
+.archive-dialog-body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-panel-2) transparent;
+}
+.archive-dialog-body:not(.culture-dialog-body):not(.document-dialog-body):not(
+    .search-dialog-body
+  ) {
+  padding: 24px;
+}
+.archive-dialog .dialog-footnote {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 12px 24px;
+  border-top: 1px solid color-mix(in srgb, var(--color-white) 10%, transparent);
+  color: var(--color-mist);
+  background: var(--color-night);
+  font-size: 11px;
+}
+.dialog-footnote kbd {
+  border-color: color-mix(in srgb, var(--color-white) 16%, transparent);
+}
+
+/* Command-style search keeps the query and count visible while results scroll. */
+.archive-dialog:has(.search-dialog-body) {
+  width: min(720px, calc(100% - 32px));
+  height: min(620px, calc(100dvh - 64px));
+  max-height: calc(100dvh - 32px);
+}
+.archive-dialog:has(.search-dialog-body) .dialog-heading {
+  padding: 14px 24px;
+}
+.archive-dialog:has(.search-dialog-body) .dialog-heading h2 {
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+.archive-dialog .search-dialog-body {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  flex: 1;
+  min-height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.search-dialog-body .search-field {
+  gap: 12px;
+  min-height: 68px;
+  padding: 12px 24px;
+  border: 0;
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--color-white) 12%, transparent);
+  border-radius: 0;
+  background: var(--color-ink);
+  box-shadow: none;
+}
+.search-dialog-body .search-field:focus-within {
+  border-bottom-color: var(--color-gold);
+  box-shadow: inset 0 -1px 0 var(--color-gold);
+}
+.search-dialog-body .search-field > svg {
+  color: var(--color-gold);
+}
+.search-dialog-body .search-field input {
+  font-size: 17px;
+  color: var(--color-parchment);
+}
+.search-dialog-body .search-field input::placeholder {
+  color: var(--color-mist);
+}
+.search-dialog-body .search-clear {
+  width: 44px;
+  height: 44px;
+  color: var(--color-mist);
+}
+.search-dialog-body .search-clear:hover {
+  color: var(--color-parchment);
+  background: var(--color-panel-2);
+}
+.search-dialog-body .search-results {
+  min-height: 0;
+  max-height: none;
+  overflow: auto;
+  margin: 0;
+  padding: 8px 12px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-panel-2) transparent;
+}
+.search-dialog-body .search-result {
+  min-height: 76px;
+  padding: 10px 12px;
+  gap: 14px;
+  border-radius: var(--radius-lg);
+}
+.search-dialog-body .search-result:is(:hover, :focus-visible) {
+  color: var(--color-parchment);
+  background: var(--color-panel-2);
+  border-color: transparent;
+}
+.search-dialog-body .search-result:focus-visible {
+  outline: 1px solid var(--color-gold);
+  outline-offset: -1px;
+}
+.search-dialog-body .search-result-title {
+  color: var(--color-parchment);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.search-dialog-body .search-result-meta {
+  color: var(--color-mist);
+  font-size: 12px;
+}
+.search-dialog-body .search-result-image {
+  border-color: color-mix(in srgb, var(--color-white) 12%, transparent);
+  background: var(--color-ink);
+}
+.search-dialog-body .search-result > svg {
+  color: var(--color-gold);
+}
+.search-dialog-body :is(.search-suggestions-panel, .search-empty) {
+  min-height: 0;
+  padding: 24px;
+  overflow-y: auto;
+}
+.search-dialog-body .search-empty {
+  justify-content: center;
+}
+.search-dialog-body .search-empty p {
+  color: var(--color-mist);
+}
+.search-dialog-body .search-empty h3 {
+  font-size: 28px;
+}
+
+/* Navigation uses the same list surfaces as search, with a visible current page. */
+.archive-dialog--drawer {
+  width: min(440px, calc(100% - 24px));
+  height: calc(100dvh - 24px);
+  max-height: calc(100dvh - 24px);
+  margin: 12px 12px 12px auto;
+  border-radius: 16px;
+}
+.archive-dialog--drawer .archive-dialog-body {
+  padding: 12px 16px 20px;
+}
+.drawer-nav {
+  margin: 0;
+}
+.drawer-nav > a {
+  min-height: 56px;
+  padding: 12px;
+  gap: 12px;
+  border: 0;
+  border-radius: var(--radius-lg);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--color-parchment);
+  transition:
+    background-color 160ms ease,
+    color 160ms ease;
+}
+.drawer-nav > a:is(:hover, :focus-visible, [aria-current]) {
+  background: var(--color-panel-2);
+  color: var(--color-gold-light);
+}
+.drawer-nav > a:focus-visible {
+  outline: 1px solid var(--color-gold);
+  outline-offset: -1px;
+}
+.drawer-index,
+.drawer-nav > a > svg {
+  color: var(--color-mist);
+}
+.drawer-nav > a[aria-current] :is(.drawer-index, svg) {
+  color: var(--color-gold);
+}
+.drawer-footer {
+  margin-top: auto;
+  padding: 24px 12px 0;
+}
+.drawer-footer > p:not(.eyebrow) {
+  color: var(--color-mist);
+}
+
+/* Document chrome shares the frame while leaving the image canvas independent. */
+.archive-dialog--fullscreen .dialog-heading {
+  padding: 14px 24px;
+}
+.archive-dialog--fullscreen .dialog-heading h2 {
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.document-toolbar {
+  background: var(--color-night);
+  border-color: color-mix(in srgb, var(--color-white) 10%, transparent);
+}
+.document-toolbar p {
+  color: var(--color-mist);
+}
+.document-canvas {
+  background: var(--color-ink);
+}
+.citation-field {
+  background: var(--color-ink);
+  color: var(--color-parchment);
+  border-color: color-mix(in srgb, var(--color-white) 16%, transparent);
+}
+
+/* Related records are readable rows rather than truncated tags. */
+.window-record-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+}
+.window-record-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px 16px;
+  margin-top: 8px;
+}
+.window-record-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  min-height: 48px;
+  padding: 10px 4px;
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--color-white) 10%, transparent);
+  color: var(--color-parchment);
+  font-size: 13px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  transition:
+    color 160ms ease,
+    background-color 160ms ease;
+}
+.window-record-link > svg {
+  flex-shrink: 0;
+  color: var(--color-gold);
+}
+.window-record-link:is(:hover, :focus-visible) {
+  color: var(--color-gold-light);
+  background: var(--color-panel);
+}
+.window-record-link:focus-visible {
+  outline: 1px solid var(--color-gold);
+  outline-offset: 2px;
+}
+.window-record-grid > .window-record-link[href^="/sergiler/"] {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 640px) {
+  .archive-dialog {
+    width: calc(100% - 24px);
+    max-height: calc(100dvh - 24px);
+  }
+  .archive-dialog .dialog-heading {
+    padding: 16px 20px;
+  }
+  .archive-dialog-body:not(.culture-dialog-body):not(.document-dialog-body):not(
+      .search-dialog-body
+    ) {
+    padding: 20px;
+  }
+  .archive-dialog:has(.search-dialog-body) {
+    width: calc(100% - 24px);
+    height: min(640px, calc(100dvh - 24px));
+  }
+  .archive-dialog:has(.search-dialog-body) .dialog-heading {
+    padding: 12px 16px;
+  }
+  .search-dialog-body .search-field {
+    min-height: 64px;
+    padding: 10px 16px;
+  }
+  .search-dialog-body .search-field input {
+    font-size: 16px;
+  }
+  .search-dialog-body .search-results {
+    padding: 6px 8px;
+  }
+  .search-dialog-body .search-result {
+    gap: 10px;
+    padding: 10px 8px;
+  }
+  .search-dialog-body .search-result-image {
+    width: 40px;
+    height: 48px;
+  }
+  .search-dialog-body .search-result-title {
+    font-size: 13px;
+  }
+  .search-dialog-body .search-result-meta {
+    font-size: 11px;
+  }
+  .search-dialog-body :is(.search-suggestions-panel, .search-empty) {
+    padding: 20px;
+  }
+  .archive-dialog .dialog-footnote {
+    padding: 12px 16px;
+  }
+  .archive-dialog--drawer {
+    width: calc(100% - 24px);
+  }
+  .archive-dialog--drawer .archive-dialog-body {
+    padding: 12px 12px 16px;
+  }
+  .archive-dialog--fullscreen {
+    width: calc(100% - 16px);
+  }
+  .archive-dialog--fullscreen .dialog-heading {
+    padding: 12px 16px;
+  }
+  .archive-dialog--fullscreen .dialog-heading h2 {
+    font-size: 14px;
+  }
+  .window-record-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .archive-dialog[open] {
+    animation: none;
+  }
+  .drawer-nav > a {
+    transition: none;
+  }
+  .window-record-link {
+    transition: none;
+  }
+}

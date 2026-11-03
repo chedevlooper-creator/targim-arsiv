@@ -32,6 +32,7 @@ export default function ArchiveDialog({
   bodyClassName = "",
 }: ArchiveDialogProps) {
   const ref = useRef<HTMLDialogElement>(null);
+  const backdropPress = useRef(false);
   const titleId = useId();
 
   useEffect(() => {
@@ -50,11 +51,60 @@ export default function ArchiveDialog({
       ref={ref}
       aria-labelledby={titleId}
       className={`archive-dialog archive-dialog--${variant}`}
+      onKeyDown={(event) => {
+        if (event.key === "Escape") {
+          event.preventDefault();
+          event.stopPropagation();
+          onClose();
+          return;
+        }
+        if (
+          event.key !== "Tab" ||
+          event.ctrlKey ||
+          event.metaKey ||
+          event.altKey
+        )
+          return;
+        const controls = Array.from(
+          event.currentTarget.querySelectorAll<HTMLElement>(
+            "a[href], button, input, select, textarea, [tabindex]",
+          ),
+        ).filter(
+          (element) =>
+            element.tabIndex >= 0 &&
+            !element.matches(":disabled") &&
+            element.getClientRects().length > 0,
+        );
+        const first = controls[0];
+        const last = controls.at(-1);
+        if (event.shiftKey && document.activeElement === first && last) {
+          event.preventDefault();
+          last.focus();
+        } else if (
+          !event.shiftKey &&
+          document.activeElement === last &&
+          first
+        ) {
+          event.preventDefault();
+          first.focus();
+        }
+      }}
+      onPointerDown={(event) => {
+        const bounds = event.currentTarget.getBoundingClientRect();
+        backdropPress.current =
+          event.target === event.currentTarget &&
+          (event.clientX < bounds.left ||
+            event.clientX > bounds.right ||
+            event.clientY < bounds.top ||
+            event.clientY > bounds.bottom);
+      }}
       onClose={() => {
         if (!ref.current?.open) onClose();
       }}
       onClick={(event) => {
-        if (event.target !== event.currentTarget) return;
+        if (event.target !== event.currentTarget || !backdropPress.current)
+          return;
+        backdropPress.current = false;
         const { left, right, top, bottom } =
           event.currentTarget.getBoundingClientRect();
         if (

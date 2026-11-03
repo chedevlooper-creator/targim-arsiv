@@ -1,0 +1,262 @@
+/* Shared control surfaces. Layout and record content stay with each component. */
+.btn-gold,
+.btn-glass,
+.icon-button,
+.header-search-button,
+.btn-quiet,
+.chip,
+.zoom-button,
+.record-tabs button {
+  min-height: 44px;
+  border-radius: var(--radius-lg);
+  font-family: var(--font-sans);
+  transition:
+    color 0.16s ease,
+    border-color 0.16s ease,
+    background-color 0.16s ease,
+    box-shadow 0.16s ease;
+}
+
+.btn-gold {
+  color: var(--color-ink);
+  border-color: var(--color-gold-light);
+  background: var(--color-gold-light);
+  box-shadow: none;
+  filter: none;
+  transform: none;
+}
+
+.btn-gold:hover,
+.btn-gold:active {
+  color: var(--color-ink);
+  border-color: var(--color-gold-light);
+  background: var(--color-gold-light);
+  box-shadow: none;
+  filter: none;
+  transform: none;
+}
+
+.btn-gold:not(:disabled):not([aria-disabled="true"]):hover {
+  border-color: var(--color-parchment);
+  background: var(--color-parchment);
+}
+
+.btn-glass,
+.icon-button,
+.header-search-button {
+  color: var(--color-parchment);
+  border: 1px solid color-mix(in srgb, var(--color-white) 16%, transparent);
+  background: var(--color-panel);
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.icon-button {
+  width: 44px;
+  height: 44px;
+}
+
+.btn-glass:not(:disabled):not([aria-disabled="true"]):hover,
+.icon-button:not(:disabled):hover,
+.header-search-button:hover,
+.icon-button:not(:disabled):active {
+  color: var(--color-parchment);
+  border-color: color-mix(in srgb, var(--color-gold) 65%, transparent);
+  background: var(--color-panel-2);
+  box-shadow: none;
+  transform: none;
+}
+
+.btn-quiet {
+  color: var(--color-mist);
+  background: transparent;
+}
+
+.btn-quiet:not(:disabled):hover {
+  color: var(--color-parchment);
+  background: var(--color-panel-2);
+}
+
+.chip {
+  color: var(--color-mist);
+  border-color: color-mix(in srgb, var(--color-white) 16%, transparent);
+  background: var(--color-night);
+}
+
+.chip:not(:disabled):not([aria-disabled="true"]):hover {
+  color: var(--color-parchment);
+  border-color: color-mix(in srgb, var(--color-gold) 60%, transparent);
+  background: var(--color-panel);
+}
+
+.chip.chip-active,
+.chip.chip-active:not(:disabled):not([aria-disabled="true"]):hover {
+  color: var(--color-gold-light);
+  border-color: color-mix(in srgb, var(--color-gold) 75%, transparent);
+  background: color-mix(in srgb, var(--color-gold) 14%, var(--color-panel));
+}
+
+.field-control,
+.people-portrait-hero .people-portrait-toolbar :is(input, select) {
+  min-height: 44px;
+  height: 44px;
+  border-radius: var(--radius-lg);
+  color: var(--color-parchment);
+  border: 1px solid color-mix(in srgb, var(--color-white) 16%, transparent);
+  background: var(--color-panel);
+  box-shadow: none;
+  color-scheme: dark;
+  transition:
+    border-color 0.16s ease,
+    background-color 0.16s ease,
+    box-shadow 0.16s ease;
+}
+
+.field-control::placeholder,
+.people-portrait-hero .people-portrait-toolbar input::placeholder {
+  color: var(--color-mist);
+}
+
+.field-control:hover,
+.people-portrait-hero .people-portrait-toolbar :is(input, select):hover {
+  border-color: color-mix(in srgb, var(--color-white) 30%, transparent);
+}
+
+.field-control:focus-visible,
+.people-portrait-hero
+  .people-portrait-toolbar
+  :is(input, select):focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+  border-color: var(--color-gold);
+  background: var(--color-panel);
+  box-shadow: none;
+}
+
+:is(
+  .btn-gold,
+  .btn-glass,
+  .icon-button,
+  .header-search-button,
+  .btn-quiet,
+  .chip,
+  .zoom-button
+):focus-visible,
+.zoom-control button.zoom-value:focus-visible,
+.record-tabs button:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+:is(
+  .btn-gold,
+  .btn-glass,
+  .icon-button,
+  .btn-quiet,
+  .chip,
+  .zoom-button
+):disabled,
+:is(.btn-gold, .btn-glass, .icon-button, .chip)[aria-disabled="true"] {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: none;
+  filter: none;
+  transform: none;
+}
+
+.zoom-control {
+  border-radius: var(--radius-xl);
+  border-color: color-mix(in srgb, var(--color-white) 16%, transparent);
+  background: var(--color-panel);
+  box-shadow: none;
+}
+
+.zoom-button {
+  width: 44px;
+  height: 44px;
+  color: var(--color-parchment);
+}
+
+.zoom-button:not(:disabled):hover {
+  color: var(--color-gold-light);
+  background: var(--color-panel-2);
+}
+
+.zoom-control .zoom-value {
+  min-height: 44px;
+  border-radius: var(--radius-lg);
+  color: var(--color-mist);
+  font-family: var(--font-mono);
+}
+
+.record-tabs {
+  border-radius: var(--radius-xl);
+  border-color: color-mix(in srgb, var(--color-white) 12%, transparent);
+  background: var(--color-night);
+}
+
+.record-tabs button {
+  color: var(--color-mist);
+  box-shadow: none;
+}
+
+.record-tabs button:hover {
+  color: var(--color-parchment);
+  background: var(--color-panel);
+}
+
+.record-tabs button[aria-selected="true"] {
+  color: var(--color-gold-light);
+  border-color: color-mix(in srgb, var(--color-gold) 65%, transparent);
+  background: color-mix(in srgb, var(--color-gold) 14%, var(--color-panel));
+  box-shadow: none;
+}
+
+.museum-card {
+  border-color: color-mix(in srgb, var(--color-white) 12%, transparent);
+  border-radius: var(--radius-2xl);
+  background: var(--color-night);
+  box-shadow: none;
+  transition:
+    border-color 0.16s ease,
+    background-color 0.16s ease;
+}
+
+:is(a, button).museum-card:hover {
+  border-color: color-mix(in srgb, var(--color-gold) 55%, transparent);
+  background: var(--color-panel);
+  box-shadow: none;
+}
+
+:is(a, button).museum-card:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+button.museum-card[aria-pressed="true"],
+button.museum-card[aria-pressed="true"]:hover {
+  border-color: var(--color-gold);
+  background: color-mix(in srgb, var(--color-gold) 12%, var(--color-panel));
+}
+
+@media (max-width: 640px) {
+  input.field-control {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-gold,
+  .btn-glass,
+  .icon-button,
+  .header-search-button,
+  .btn-quiet,
+  .chip,
+  .field-control,
+  .people-portrait-hero .people-portrait-toolbar :is(input, select),
+  .zoom-button,
+  .record-tabs button,
+  .museum-card {
+    transition: none;
+  }
+}

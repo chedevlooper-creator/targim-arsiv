@@ -228,31 +228,29 @@ export default function CultureExplorer() {
                       <p className="text-[0.63rem] font-medium tracking-[0.2em] text-gold-light uppercase">
                         İlgili Arşiv Belgeleri
                       </p>
-                      <div className="mt-2 flex flex-wrap gap-2">
+                      <div className="window-record-list">
                         {activeLinks.docs.map((d) => (
                           <Link
                             key={d.slug}
                             href={`/arsiv/${d.slug}`}
                             onClick={() => setActiveItem(null)}
-                            className="inline-flex items-center gap-1.5 rounded-full border border-white/12 bg-white/[0.04] px-3 py-1.5 text-xs text-white/85 transition hover:border-gold-light/45 hover:bg-white/[0.08] hover:text-gold-light"
+                            className="window-record-link"
                           >
                             <ScrollText size={12} className="text-gold-light" />
-                            <span className="truncate max-w-[230px]">
-                              {d.title}
-                            </span>
+                            <span>{d.title}</span>
                           </Link>
                         ))}
                       </div>
                     </div>
                   )}
 
-                  <div className="flex flex-wrap gap-2">
+                  <div className="window-record-grid">
                     {activeLinks.exhibitions.map((ex) => (
                       <Link
                         key={ex.slug}
                         href={`/sergiler/${ex.slug}`}
                         onClick={() => setActiveItem(null)}
-                        className="inline-flex items-center gap-1.5 rounded-full border border-white/12 bg-white/[0.04] px-3 py-1.5 text-xs text-white/85 transition hover:border-gold-light/45 hover:bg-white/[0.08] hover:text-gold-light"
+                        className="window-record-link"
                       >
                         <Layers size={12} className="text-gold-light" />
                         Sergi: {ex.title}
@@ -263,7 +261,7 @@ export default function CultureExplorer() {
                         key={pl.id}
                         href={`/harita?yer=${pl.id}`}
                         onClick={() => setActiveItem(null)}
-                        className="inline-flex items-center gap-1.5 rounded-full border border-white/12 bg-white/[0.04] px-3 py-1.5 text-xs text-white/85 transition hover:border-gold-light/45 hover:bg-white/[0.08] hover:text-gold-light"
+                        className="window-record-link"
                       >
                         <MapPin size={12} className="text-gold-light" />
                         {pl.name}
@@ -276,20 +274,20 @@ export default function CultureExplorer() {
                       <p className="text-[0.63rem] font-medium tracking-[0.2em] text-gold-light uppercase">
                         Bağlantılı Tarihî Şahsiyetler
                       </p>
-                      <div className="mt-2 flex flex-wrap gap-2">
+                      <div className="window-record-grid">
                         {activeLinks.people.map((p) => (
                           <Link
                             key={p.slug}
                             href={`/kisiler/${p.slug}`}
                             onClick={() => setActiveItem(null)}
-                            className="group inline-flex items-center gap-2 rounded-full border border-white/12 bg-white/[0.04] py-1 pl-1 pr-3 text-xs text-white/85 transition hover:border-gold-light/45 hover:bg-white/[0.08] hover:text-gold-light"
+                            className="window-record-link"
                           >
-                            <span className="relative h-6 w-6 overflow-hidden rounded-full border border-white/15 bg-night">
+                            <span className="relative h-8 w-8 shrink-0 overflow-hidden rounded-lg border border-white/15 bg-night">
                               <Image
                                 src={p.image}
                                 alt={p.name}
                                 fill
-                                sizes="24px"
+                                sizes="32px"
                                 className="portrait-tone object-cover object-top"
                               />
                             </span>
