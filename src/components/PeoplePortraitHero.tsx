@@ -36,6 +36,8 @@ export type Portrait = Pick<
 >;
 const wrap = (index: number, length: number) =>
   ((index % length) + length) % length;
+const deathYear = (value: string) =>
+  /^\d{4}$/.test(value.trim()) ? Number(value) : Number.MAX_SAFE_INTEGER;
 const searchText = (value: string) =>
   value
     .toLocaleLowerCase("tr-TR")
@@ -241,8 +243,13 @@ function PortraitDeck({ people }: { people: Portrait[] }) {
           aria-live="polite"
           aria-atomic="true"
         >
-          <Link prefetch={false} href={`/kisiler/${selected.slug}`}>
-            {selected.name}
+          <Link
+            prefetch={false}
+            href={`/kisiler/${selected.slug}`}
+            aria-label={selected.name}
+            lang="tr"
+          >
+            {selected.name.toLocaleUpperCase("tr-TR")}
           </Link>
           <span>
             {selected.born} – {selected.died} <span aria-hidden="true">·</span>{" "}
@@ -277,7 +284,7 @@ export default function PeoplePortraitHero({ people }: { people: Portrait[] }) {
   const [query, setQuery] = useState("");
   const [era, setEra] = useState("all");
   const [region, setRegion] = useState("all");
-  const [sort, setSort] = useState("born");
+  const [sort, setSort] = useState("died");
   const regions = useMemo(
     () =>
       [...new Set(people.map((person) => person.region))].sort((a, b) =>
@@ -300,16 +307,19 @@ export default function PeoplePortraitHero({ people }: { people: Portrait[] }) {
       .sort((a, b) =>
         sort === "name"
           ? a.name.localeCompare(b.name, "tr")
-          : (parseInt(a.born) || 9999) - (parseInt(b.born) || 9999),
+          : sort === "died"
+            ? deathYear(a.died) - deathYear(b.died) ||
+              a.name.localeCompare(b.name, "tr")
+            : (parseInt(a.born) || 9999) - (parseInt(b.born) || 9999),
       );
   }, [people, query, era, region, sort]);
   const filtered =
-    query !== "" || era !== "all" || region !== "all" || sort !== "born";
+    query !== "" || era !== "all" || region !== "all" || sort !== "died";
   const reset = () => {
     setQuery("");
     setEra("all");
     setRegion("all");
-    setSort("born");
+    setSort("died");
   };
   return (
     <section className="people-portrait-hero" aria-labelledby="people-title">
@@ -364,6 +374,7 @@ export default function PeoplePortraitHero({ people }: { people: Portrait[] }) {
             value={sort}
             onChange={(event) => setSort(event.target.value)}
           >
+            <option value="died">Vefat tarihi</option>
             <option value="born">Doğum yılı</option>
             <option value="name">A&apos;dan Z&apos;ye</option>
           </select>

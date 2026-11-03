@@ -145,7 +145,7 @@
   align-items: center;
   gap: 24px;
   padding: 0 20px;
-  min-height: 60px;
+  min-height: 100px;
 }
 .people-portrait-selection .icon-button:disabled {
   opacity: 0.3;
@@ -155,17 +155,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
-  width: 330px;
+  gap: 10px;
+  width: 560px;
   min-width: 0;
   text-align: center;
 }
 .people-portrait-caption > a {
   max-width: 100%;
   color: var(--color-parchment);
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.4;
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 600;
+  letter-spacing: 0.045em;
+  line-height: 1.12;
+  text-wrap: balance;
   overflow-wrap: anywhere;
 }
 .people-portrait-caption > a:hover {
@@ -257,13 +260,29 @@
     margin-top: 18px;
   }
   .people-portrait-selection {
-    gap: 14px;
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr) 44px;
+    gap: 12px 14px;
   }
   .people-portrait-caption {
-    width: 224px;
+    display: contents;
+  }
+  .people-portrait-selection > button {
+    grid-row: 2;
+  }
+  .people-portrait-selection > button:last-child {
+    grid-column: 3;
   }
   .people-portrait-caption > a {
-    font-size: 16px;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    overflow-wrap: normal;
+  }
+  .people-portrait-caption > span {
+    grid-column: 2;
+    grid-row: 2;
   }
   .people-portrait-intro {
     margin-top: 28px;
