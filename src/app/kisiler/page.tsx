@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import PeoplePortraitHero from "@/components/PeoplePortraitHero";
-import PeopleGrid from "@/components/PeopleGrid";
 import { PEOPLE } from "@/lib/data";
 import { pageMetadata } from "@/lib/site";
 
@@ -14,22 +13,20 @@ export const metadata: Metadata = pageMetadata({
 
 export default function KisilerPage() {
   return (
-    <>
-      <PeoplePortraitHero
-        people={PEOPLE.map(({ slug, name, image, born, died }) => ({
+    <PeoplePortraitHero
+      people={PEOPLE.map(
+        ({ slug, name, image, born, died, era, region, title, summary }) => ({
           slug,
           name,
           image,
           born,
           died,
-        }))}
-      />
-      <section
-        id="kisi-katalogu"
-        className="mx-auto max-w-[1500px] scroll-mt-24 px-5 pb-20 pt-10 md:px-12"
-      >
-        <PeopleGrid />
-      </section>
-    </>
+          era,
+          region,
+          title,
+          summary,
+        }),
+      )}
+    />
   );
 }
