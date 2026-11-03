@@ -52,11 +52,51 @@ export default function ArchiveDialog({
       aria-labelledby={titleId}
       className={`archive-dialog archive-dialog--${variant}`}
       onKeyDown={(event) => {
+        if (event.nativeEvent.isComposing) return;
         if (event.key === "Escape") {
           event.preventDefault();
           event.stopPropagation();
           onClose();
           return;
+        }
+        const search = event.currentTarget.querySelector<HTMLInputElement>(
+          ".search-field input",
+        );
+        const results = Array.from(
+          event.currentTarget.querySelectorAll<HTMLAnchorElement>(
+            ".search-result",
+          ),
+        );
+        if (
+          search &&
+          results.length &&
+          !event.ctrlKey &&
+          !event.metaKey &&
+          !event.altKey &&
+          !event.shiftKey
+        ) {
+          const active = document.activeElement;
+          const index = results.findIndex((result) => result === active);
+          if (active === search && event.key === "Enter") {
+            event.preventDefault();
+            results[0].click();
+            return;
+          }
+          if (
+            (active === search || index !== -1) &&
+            (event.key === "ArrowDown" || event.key === "ArrowUp")
+          ) {
+            event.preventDefault();
+            const next =
+              active === search
+                ? event.key === "ArrowDown"
+                  ? 0
+                  : results.length - 1
+                : index + (event.key === "ArrowDown" ? 1 : -1);
+            if (next < 0 || next >= results.length) search.focus();
+            else results[next].focus();
+            return;
+          }
         }
         if (
           event.key !== "Tab" ||

@@ -1,4 +1,20 @@
-/* Shared control surfaces. Layout and record content stay with each component. */
+/* Neutral controls sit beside the archive's gold identity without tinting it. */
+:root {
+  --ui-ink: #090909;
+  --ui-surface: #141414;
+  --ui-raised: #202020;
+  --ui-hover: #292929;
+  --ui-stroke: #3b3b3b;
+  --ui-stroke-soft: #292929;
+  --ui-stroke-strong: #686868;
+  --ui-text: #f5f5f5;
+  --ui-muted: #ababab;
+  --ui-primary: #fafafa;
+  --ui-primary-ink: #0a0a0a;
+  --ui-focus: #f5f5f5;
+  --ui-radius: 10px;
+}
+
 .btn-gold,
 .btn-glass,
 .icon-button,
@@ -8,131 +24,156 @@
 .zoom-button,
 .record-tabs button {
   min-height: 44px;
-  border-radius: var(--radius-lg);
+  border-radius: var(--ui-radius);
   font-family: var(--font-sans);
+  font-weight: 600;
   transition:
-    color 0.16s ease,
-    border-color 0.16s ease,
-    background-color 0.16s ease,
-    box-shadow 0.16s ease;
+    color 150ms ease,
+    border-color 150ms ease,
+    background-color 150ms ease;
 }
 
+/* The class name is retained for callers; the primary action is now white. */
 .btn-gold {
-  color: var(--color-ink);
-  border-color: var(--color-gold-light);
-  background: var(--color-gold-light);
+  color: var(--ui-primary-ink);
+  border: 1px solid var(--ui-primary);
+  background: var(--ui-primary);
   box-shadow: none;
   filter: none;
   transform: none;
 }
-
 .btn-gold:hover,
 .btn-gold:active {
-  color: var(--color-ink);
-  border-color: var(--color-gold-light);
-  background: var(--color-gold-light);
+  color: var(--ui-primary-ink);
+  border-color: var(--ui-primary);
+  background: var(--ui-primary);
   box-shadow: none;
   filter: none;
   transform: none;
 }
-
 .btn-gold:not(:disabled):not([aria-disabled="true"]):hover {
-  border-color: var(--color-parchment);
-  background: var(--color-parchment);
+  border-color: #e4e4e4;
+  background: #e4e4e4;
+}
+.btn-gold:not(:disabled):not([aria-disabled="true"]):active {
+  border-color: #d4d4d4;
+  background: #d4d4d4;
 }
 
 .btn-glass,
 .icon-button,
 .header-search-button {
-  color: var(--color-parchment);
-  border: 1px solid color-mix(in srgb, var(--color-white) 16%, transparent);
-  background: var(--color-panel);
+  color: var(--ui-text);
+  border: 1px solid var(--ui-stroke);
+  background: var(--ui-surface);
   box-shadow: none;
   backdrop-filter: none;
 }
-
 .icon-button {
   width: 44px;
   height: 44px;
 }
-
 .btn-glass:not(:disabled):not([aria-disabled="true"]):hover,
 .icon-button:not(:disabled):hover,
-.header-search-button:hover,
-.icon-button:not(:disabled):active {
-  color: var(--color-parchment);
-  border-color: color-mix(in srgb, var(--color-gold) 65%, transparent);
-  background: var(--color-panel-2);
+.header-search-button:hover {
+  color: var(--ui-text);
+  border-color: var(--ui-stroke-strong);
+  background: var(--ui-raised);
   box-shadow: none;
   transform: none;
 }
-
-.btn-quiet {
-  color: var(--color-mist);
-  background: transparent;
+.btn-glass:not(:disabled):not([aria-disabled="true"]):active,
+.icon-button:not(:disabled):active,
+.header-search-button:active {
+  color: var(--ui-text);
+  border-color: var(--ui-stroke-strong);
+  background: var(--ui-hover);
+  box-shadow: none;
+  transform: none;
+}
+.header-search-button > svg {
+  color: var(--ui-text);
+}
+.header-search-button kbd {
+  color: var(--ui-muted);
+  border-color: var(--ui-stroke);
+  background: var(--ui-ink);
+}
+.header-nav-link {
+  color: var(--ui-muted);
+}
+.header-nav-link:hover,
+.header-nav-link.is-active {
+  color: var(--ui-text);
+}
+.header-nav-link.is-active::after {
+  background: var(--ui-text);
+}
+.people-portrait-hero .people-portrait-reset {
+  color: var(--ui-muted);
+}
+.people-portrait-hero .people-portrait-reset:hover {
+  color: var(--ui-text);
 }
 
+.btn-quiet {
+  color: var(--ui-muted);
+  background: transparent;
+}
 .btn-quiet:not(:disabled):hover {
-  color: var(--color-parchment);
-  background: var(--color-panel-2);
+  color: var(--ui-text);
+  background: var(--ui-raised);
 }
 
 .chip {
-  color: var(--color-mist);
-  border-color: color-mix(in srgb, var(--color-white) 16%, transparent);
-  background: var(--color-night);
+  color: var(--ui-muted);
+  border: 1px solid var(--ui-stroke);
+  background: var(--ui-surface);
 }
-
 .chip:not(:disabled):not([aria-disabled="true"]):hover {
-  color: var(--color-parchment);
-  border-color: color-mix(in srgb, var(--color-gold) 60%, transparent);
-  background: var(--color-panel);
+  color: var(--ui-text);
+  border-color: var(--ui-stroke-strong);
+  background: var(--ui-raised);
 }
-
 .chip.chip-active,
 .chip.chip-active:not(:disabled):not([aria-disabled="true"]):hover {
-  color: var(--color-gold-light);
-  border-color: color-mix(in srgb, var(--color-gold) 75%, transparent);
-  background: color-mix(in srgb, var(--color-gold) 14%, var(--color-panel));
+  color: var(--ui-primary-ink);
+  border-color: var(--ui-primary);
+  background: var(--ui-primary);
 }
 
 .field-control,
 .people-portrait-hero .people-portrait-toolbar :is(input, select) {
   min-height: 44px;
   height: 44px;
-  border-radius: var(--radius-lg);
-  color: var(--color-parchment);
-  border: 1px solid color-mix(in srgb, var(--color-white) 16%, transparent);
-  background: var(--color-panel);
+  border-radius: var(--ui-radius);
+  color: var(--ui-text);
+  border: 1px solid var(--ui-stroke);
+  background: var(--ui-surface);
   box-shadow: none;
   color-scheme: dark;
   transition:
-    border-color 0.16s ease,
-    background-color 0.16s ease,
-    box-shadow 0.16s ease;
+    border-color 150ms ease,
+    background-color 150ms ease;
 }
-
 .field-control::placeholder,
 .people-portrait-hero .people-portrait-toolbar input::placeholder {
-  color: var(--color-mist);
+  color: var(--ui-muted);
 }
-
 .field-control:hover,
 .people-portrait-hero .people-portrait-toolbar :is(input, select):hover {
-  border-color: color-mix(in srgb, var(--color-white) 30%, transparent);
+  border-color: var(--ui-stroke-strong);
 }
-
 .field-control:focus-visible,
 .people-portrait-hero
   .people-portrait-toolbar
   :is(input, select):focus-visible {
-  outline: 2px solid var(--color-gold);
+  outline: 2px solid var(--ui-focus);
   outline-offset: 2px;
-  border-color: var(--color-gold);
-  background: var(--color-panel);
+  border-color: var(--ui-focus);
+  background: var(--ui-surface);
   box-shadow: none;
 }
-
 :is(
   .btn-gold,
   .btn-glass,
@@ -144,10 +185,9 @@
 ):focus-visible,
 .zoom-control button.zoom-value:focus-visible,
 .record-tabs button:focus-visible {
-  outline: 2px solid var(--color-gold);
+  outline: 2px solid var(--ui-focus);
   outline-offset: 3px;
 }
-
 :is(
   .btn-gold,
   .btn-glass,
@@ -157,7 +197,7 @@
   .zoom-button
 ):disabled,
 :is(.btn-gold, .btn-glass, .icon-button, .chip)[aria-disabled="true"] {
-  opacity: 0.4;
+  opacity: 0.5;
   cursor: not-allowed;
   box-shadow: none;
   filter: none;
@@ -165,78 +205,71 @@
 }
 
 .zoom-control {
-  border-radius: var(--radius-xl);
-  border-color: color-mix(in srgb, var(--color-white) 16%, transparent);
-  background: var(--color-panel);
+  border-radius: 12px;
+  border-color: var(--ui-stroke);
+  background: var(--ui-surface);
   box-shadow: none;
 }
-
 .zoom-button {
   width: 44px;
   height: 44px;
-  color: var(--color-parchment);
+  color: var(--ui-text);
 }
-
 .zoom-button:not(:disabled):hover {
-  color: var(--color-gold-light);
-  background: var(--color-panel-2);
+  color: var(--ui-text);
+  background: var(--ui-hover);
 }
-
 .zoom-control .zoom-value {
   min-height: 44px;
-  border-radius: var(--radius-lg);
-  color: var(--color-mist);
+  border-radius: var(--ui-radius);
+  color: var(--ui-muted);
   font-family: var(--font-mono);
 }
 
 .record-tabs {
-  border-radius: var(--radius-xl);
-  border-color: color-mix(in srgb, var(--color-white) 12%, transparent);
-  background: var(--color-night);
+  border-radius: 12px;
+  border-color: var(--ui-stroke-soft);
+  background: var(--ui-ink);
 }
-
 .record-tabs button {
-  color: var(--color-mist);
+  color: var(--ui-muted);
   box-shadow: none;
 }
-
 .record-tabs button:hover {
-  color: var(--color-parchment);
-  background: var(--color-panel);
+  color: var(--ui-text);
+  background: var(--ui-raised);
 }
-
 .record-tabs button[aria-selected="true"] {
-  color: var(--color-gold-light);
-  border-color: color-mix(in srgb, var(--color-gold) 65%, transparent);
-  background: color-mix(in srgb, var(--color-gold) 14%, var(--color-panel));
+  color: var(--ui-primary-ink);
+  border-color: var(--ui-primary);
+  background: var(--ui-primary);
   box-shadow: none;
 }
 
 .museum-card {
-  border-color: color-mix(in srgb, var(--color-white) 12%, transparent);
-  border-radius: var(--radius-2xl);
-  background: var(--color-night);
+  border-color: var(--ui-stroke-soft);
+  border-radius: 12px;
+  background: var(--ui-surface);
   box-shadow: none;
   transition:
-    border-color 0.16s ease,
-    background-color 0.16s ease;
+    border-color 150ms ease,
+    background-color 150ms ease;
 }
-
 :is(a, button).museum-card:hover {
-  border-color: color-mix(in srgb, var(--color-gold) 55%, transparent);
-  background: var(--color-panel);
+  border-color: var(--ui-stroke-strong);
+  background: var(--ui-raised);
   box-shadow: none;
 }
-
 :is(a, button).museum-card:focus-visible {
-  outline: 2px solid var(--color-gold);
+  outline: 2px solid var(--ui-focus);
   outline-offset: 3px;
 }
-
 button.museum-card[aria-pressed="true"],
 button.museum-card[aria-pressed="true"]:hover {
-  border-color: var(--color-gold);
-  background: color-mix(in srgb, var(--color-gold) 12%, var(--color-panel));
+  color: var(--ui-text);
+  border-color: var(--ui-primary);
+  background: var(--ui-raised);
+  box-shadow: inset 0 0 0 1px var(--ui-primary);
 }
 
 @media (max-width: 640px) {
@@ -244,7 +277,6 @@ button.museum-card[aria-pressed="true"]:hover {
     font-size: 16px;
   }
 }
-
 @media (prefers-reduced-motion: reduce) {
   .btn-gold,
   .btn-glass,

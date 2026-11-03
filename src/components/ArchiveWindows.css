@@ -1,36 +1,49 @@
 /* Shared window frame: heading, one content viewport, and a separate footer. */
 .archive-dialog {
-  color: var(--color-parchment);
-  background: var(--color-night);
-  border-color: color-mix(in srgb, var(--color-white) 16%, transparent);
-  border-radius: 16px;
-  box-shadow: 0 24px 80px color-mix(in srgb, var(--color-ink) 75%, transparent);
+  color: var(--ui-text);
+  background: var(--ui-surface);
+  border-color: var(--ui-stroke);
+  border-radius: 20px;
+  box-shadow: 0 32px 120px color-mix(in srgb, var(--ui-ink) 85%, transparent);
 }
 .archive-dialog::backdrop {
-  background: color-mix(in srgb, var(--color-ink) 78%, transparent);
+  background: color-mix(in srgb, var(--ui-ink) 78%, transparent);
   backdrop-filter: blur(4px);
 }
 .archive-dialog .dialog-heading {
   align-items: center;
   gap: 16px;
-  padding: 20px 24px;
-  border-color: color-mix(in srgb, var(--color-white) 10%, transparent);
-  background: var(--color-night);
+  padding: 24px 28px;
+  border-color: var(--ui-stroke-soft);
+  background: var(--ui-surface);
 }
 .archive-dialog .dialog-heading h2 {
   margin-top: 4px;
-  font-size: 30px;
+  font-family: var(--font-sans);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.035em;
 }
 .archive-dialog .dialog-eyebrow {
-  color: var(--color-gold);
-  font-size: 10px;
+  color: var(--ui-muted);
+  font-size: 11px;
+  letter-spacing: 0.1em;
 }
 .archive-dialog .dialog-heading .icon-button {
   margin: 0;
+  background: transparent;
+  border-color: transparent;
+  border-radius: 50%;
+}
+.archive-dialog .dialog-heading .icon-button:hover {
+  color: var(--ui-text);
+  background: var(--ui-hover);
+  border-color: transparent;
 }
 .archive-dialog-body {
   scrollbar-width: thin;
-  scrollbar-color: var(--color-panel-2) transparent;
+  scrollbar-color: var(--ui-hover) transparent;
 }
 .archive-dialog-body:not(.culture-dialog-body):not(.document-dialog-body):not(
     .search-dialog-body
@@ -40,30 +53,32 @@
 .archive-dialog .dialog-footnote {
   flex-shrink: 0;
   margin: 0;
-  padding: 12px 24px;
-  border-top: 1px solid color-mix(in srgb, var(--color-white) 10%, transparent);
-  color: var(--color-mist);
-  background: var(--color-night);
-  font-size: 11px;
+  padding: 16px 28px;
+  border-top: 1px solid var(--ui-stroke-soft);
+  color: var(--ui-muted);
+  background: var(--ui-surface);
+  font-size: 12px;
 }
 .dialog-footnote kbd {
-  border-color: color-mix(in srgb, var(--color-white) 16%, transparent);
+  border-color: color-mix(in srgb, var(--ui-text) 16%, transparent);
 }
 
 /* Command-style search keeps the query and count visible while results scroll. */
 .archive-dialog:has(.search-dialog-body) {
-  width: min(720px, calc(100% - 32px));
-  height: min(620px, calc(100dvh - 64px));
+  width: min(820px, calc(100% - 48px));
+  height: min(760px, calc(100dvh - 64px));
   max-height: calc(100dvh - 32px);
 }
 .archive-dialog:has(.search-dialog-body) .dialog-heading {
-  padding: 14px 24px;
+  padding: 24px 28px 18px;
+  border-bottom: 0;
 }
 .archive-dialog:has(.search-dialog-body) .dialog-heading h2 {
   font-family: var(--font-sans);
-  font-size: 17px;
+  font-size: 26px;
+  font-weight: 600;
   line-height: 1.4;
-  letter-spacing: 0;
+  letter-spacing: -0.035em;
 }
 .archive-dialog .search-dialog-body {
   display: grid;
@@ -74,78 +89,109 @@
   overflow: hidden;
 }
 .search-dialog-body .search-field {
-  gap: 12px;
+  gap: 14px;
   min-height: 68px;
-  padding: 12px 24px;
-  border: 0;
-  border-bottom: 1px solid
-    color-mix(in srgb, var(--color-white) 12%, transparent);
-  border-radius: 0;
-  background: var(--color-ink);
+  margin: 0 28px 16px;
+  padding: 12px 16px;
+  border: 1px solid var(--ui-stroke);
+  border-radius: 12px;
+  background: var(--ui-raised);
   box-shadow: none;
 }
 .search-dialog-body .search-field:focus-within {
-  border-bottom-color: var(--color-gold);
-  box-shadow: inset 0 -1px 0 var(--color-gold);
+  border-color: var(--ui-muted);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--ui-text) 6%, transparent);
 }
 .search-dialog-body .search-field > svg {
-  color: var(--color-gold);
+  color: var(--ui-text);
+  width: 22px;
+  height: 22px;
 }
 .search-dialog-body .search-field input {
-  font-size: 17px;
-  color: var(--color-parchment);
+  font-size: 22px;
+  letter-spacing: -0.02em;
+  color: var(--ui-text);
 }
 .search-dialog-body .search-field input::placeholder {
-  color: var(--color-mist);
+  color: var(--ui-muted);
 }
 .search-dialog-body .search-clear {
   width: 44px;
   height: 44px;
-  color: var(--color-mist);
+  color: var(--ui-muted);
 }
 .search-dialog-body .search-clear:hover {
-  color: var(--color-parchment);
-  background: var(--color-panel-2);
+  color: var(--ui-text);
+  background: var(--ui-hover);
 }
 .search-dialog-body .search-results {
   min-height: 0;
   max-height: none;
   overflow: auto;
   margin: 0;
-  padding: 8px 12px;
+  padding: 4px 16px 12px;
   scrollbar-width: thin;
-  scrollbar-color: var(--color-panel-2) transparent;
+  scrollbar-color: var(--ui-hover) transparent;
 }
 .search-dialog-body .search-result {
-  min-height: 76px;
-  padding: 10px 12px;
-  gap: 14px;
-  border-radius: var(--radius-lg);
+  min-height: 92px;
+  padding: 14px 16px;
+  gap: 16px;
+  border-radius: 12px;
+  border: 1px solid transparent;
 }
 .search-dialog-body .search-result:is(:hover, :focus-visible) {
-  color: var(--color-parchment);
-  background: var(--color-panel-2);
-  border-color: transparent;
+  color: var(--ui-text);
+  background: var(--ui-hover);
+  border-color: var(--ui-stroke-soft);
 }
 .search-dialog-body .search-result:focus-visible {
-  outline: 1px solid var(--color-gold);
+  outline: 2px solid var(--ui-focus);
   outline-offset: -1px;
 }
 .search-dialog-body .search-result-title {
-  color: var(--color-parchment);
-  font-size: 14px;
-  line-height: 1.5;
+  color: var(--ui-text);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: -0.015em;
 }
 .search-dialog-body .search-result-meta {
-  color: var(--color-mist);
-  font-size: 12px;
+  color: var(--ui-muted);
+  font-size: 13px;
 }
 .search-dialog-body .search-result-image {
-  border-color: color-mix(in srgb, var(--color-white) 12%, transparent);
-  background: var(--color-ink);
+  width: 56px;
+  height: 64px;
+  border-color: var(--ui-stroke-soft);
+  border-radius: 10px;
+  background: var(--ui-ink);
 }
 .search-dialog-body .search-result > svg {
-  color: var(--color-gold);
+  color: var(--ui-text);
+  width: 34px;
+  height: 34px;
+  padding: 9px;
+  border: 1px solid var(--ui-stroke);
+  border-radius: 50%;
+}
+.search-dialog-body .search-result:is(:hover, :focus-visible) > svg,
+.search-results:not(:has(.search-result:hover)):not(:focus-within)
+  > li:first-child
+  .search-result
+  > svg {
+  color: var(--ui-primary-ink);
+  background: var(--ui-primary);
+  border-color: var(--ui-primary);
+}
+.search-results:not(:has(.search-result:hover)):not(:focus-within)
+  > li:first-child
+  .search-result {
+  background: var(--ui-raised);
+  border-color: var(--ui-stroke-soft);
+}
+.search-dialog-body .search-suggestions-panel .chip {
+  font-size: 14px;
 }
 .search-dialog-body :is(.search-suggestions-panel, .search-empty) {
   min-height: 0;
@@ -156,7 +202,7 @@
   justify-content: center;
 }
 .search-dialog-body .search-empty p {
-  color: var(--color-mist);
+  color: var(--ui-muted);
 }
 .search-dialog-body .search-empty h3 {
   font-size: 28px;
@@ -164,7 +210,7 @@
 
 /* Navigation uses the same list surfaces as search, with a visible current page. */
 .archive-dialog--drawer {
-  width: min(440px, calc(100% - 24px));
+  width: min(480px, calc(100% - 24px));
   height: calc(100dvh - 24px);
   max-height: calc(100dvh - 24px);
   margin: 12px 12px 12px auto;
@@ -183,34 +229,34 @@
   border: 0;
   border-radius: var(--radius-lg);
   font-family: var(--font-sans);
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 500;
-  color: var(--color-parchment);
+  color: var(--ui-text);
   transition:
     background-color 160ms ease,
     color 160ms ease;
 }
 .drawer-nav > a:is(:hover, :focus-visible, [aria-current]) {
-  background: var(--color-panel-2);
-  color: var(--color-gold-light);
+  background: var(--ui-hover);
+  color: var(--ui-text);
 }
 .drawer-nav > a:focus-visible {
-  outline: 1px solid var(--color-gold);
+  outline: 1px solid var(--ui-text);
   outline-offset: -1px;
 }
 .drawer-index,
 .drawer-nav > a > svg {
-  color: var(--color-mist);
+  color: var(--ui-muted);
 }
 .drawer-nav > a[aria-current] :is(.drawer-index, svg) {
-  color: var(--color-gold);
+  color: var(--ui-text);
 }
 .drawer-footer {
   margin-top: auto;
   padding: 24px 12px 0;
 }
 .drawer-footer > p:not(.eyebrow) {
-  color: var(--color-mist);
+  color: var(--ui-muted);
 }
 
 /* Document chrome shares the frame while leaving the image canvas independent. */
@@ -224,19 +270,19 @@
   letter-spacing: 0;
 }
 .document-toolbar {
-  background: var(--color-night);
-  border-color: color-mix(in srgb, var(--color-white) 10%, transparent);
+  background: var(--ui-surface);
+  border-color: color-mix(in srgb, var(--ui-text) 10%, transparent);
 }
 .document-toolbar p {
-  color: var(--color-mist);
+  color: var(--ui-muted);
 }
 .document-canvas {
-  background: var(--color-ink);
+  background: var(--ui-ink);
 }
 .citation-field {
-  background: var(--color-ink);
-  color: var(--color-parchment);
-  border-color: color-mix(in srgb, var(--color-white) 16%, transparent);
+  background: var(--ui-ink);
+  color: var(--ui-text);
+  border-color: color-mix(in srgb, var(--ui-text) 16%, transparent);
 }
 
 /* Related records are readable rows rather than truncated tags. */
@@ -258,9 +304,8 @@
   min-width: 0;
   min-height: 48px;
   padding: 10px 4px;
-  border-bottom: 1px solid
-    color-mix(in srgb, var(--color-white) 10%, transparent);
-  color: var(--color-parchment);
+  border-bottom: 1px solid color-mix(in srgb, var(--ui-text) 10%, transparent);
+  color: var(--ui-text);
   font-size: 13px;
   line-height: 1.6;
   overflow-wrap: anywhere;
@@ -270,14 +315,14 @@
 }
 .window-record-link > svg {
   flex-shrink: 0;
-  color: var(--color-gold);
+  color: var(--ui-text);
 }
 .window-record-link:is(:hover, :focus-visible) {
-  color: var(--color-gold-light);
-  background: var(--color-panel);
+  color: var(--ui-text);
+  background: var(--ui-raised);
 }
 .window-record-link:focus-visible {
-  outline: 1px solid var(--color-gold);
+  outline: 1px solid var(--ui-text);
   outline-offset: 2px;
 }
 .window-record-grid > .window-record-link[href^="/sergiler/"] {
@@ -290,7 +335,7 @@
     max-height: calc(100dvh - 24px);
   }
   .archive-dialog .dialog-heading {
-    padding: 16px 20px;
+    padding: 20px;
   }
   .archive-dialog-body:not(.culture-dialog-body):not(.document-dialog-body):not(
       .search-dialog-body
@@ -299,34 +344,44 @@
   }
   .archive-dialog:has(.search-dialog-body) {
     width: calc(100% - 24px);
-    height: min(640px, calc(100dvh - 24px));
+    height: min(720px, calc(100dvh - 24px));
   }
   .archive-dialog:has(.search-dialog-body) .dialog-heading {
-    padding: 12px 16px;
+    padding: 20px 20px 16px;
+  }
+  .archive-dialog:has(.search-dialog-body) .dialog-heading h2 {
+    font-size: 24px;
   }
   .search-dialog-body .search-field {
-    min-height: 64px;
-    padding: 10px 16px;
+    min-height: 60px;
+    margin: 0 16px 12px;
+    padding: 8px 12px;
   }
   .search-dialog-body .search-field input {
-    font-size: 16px;
+    font-size: 18px;
   }
   .search-dialog-body .search-results {
-    padding: 6px 8px;
+    padding: 4px 8px 12px;
   }
   .search-dialog-body .search-result {
-    gap: 10px;
-    padding: 10px 8px;
+    gap: 12px;
+    padding: 12px;
+    min-height: 88px;
   }
   .search-dialog-body .search-result-image {
-    width: 40px;
-    height: 48px;
+    width: 44px;
+    height: 54px;
   }
   .search-dialog-body .search-result-title {
-    font-size: 13px;
+    font-size: 14px;
   }
   .search-dialog-body .search-result-meta {
-    font-size: 11px;
+    font-size: 12px;
+  }
+  .search-dialog-body .search-result > svg {
+    width: 28px;
+    height: 28px;
+    padding: 6px;
   }
   .search-dialog-body :is(.search-suggestions-panel, .search-empty) {
     padding: 20px;
